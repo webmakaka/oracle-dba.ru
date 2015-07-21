@@ -32,6 +32,14 @@ permalink: /sitemap/
 
 
 <br/><br/>
+<h3>Upgrade Oracle DataBase:</h3>
+
+<ul>
+    <li><a href="/oracle_database_upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
+</ul>
+
+
+<br/><br/>
 <h3>Основы:</h3>
 
 <ul>
