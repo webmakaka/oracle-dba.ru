@@ -137,18 +137,29 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 # Distributed System Architectures
 
+
+### DataGuard (Standby)
+
+
 <ul>
-<li><a href="http://odba.ru/showthread.php?t=469">Oracle Data Guard: Развертывание физического Standby средствами Oracle Database</a></li>
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/">Oracle Active Data Guard (Приглашаю принять участие в настройке DataGuard, обсуждении и создании документа)</a></li>
+
+	<li><a href="http://odba.ru/showthread.php?t=469">Oracle Data Guard: Развертывание физического Standby средствами Oracle Database</a></li>
+
+</ul>
 
 
-<li><a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
 
-<li><a href="http://odba.ru/showthread.php?t=412">Real Application Cluster 10g R2 [OEL5.5 x86_64, DataBase 10.2.0.5., NFS]</a></li>
+### Real Application Cluster (RAC)
 
+<ul>
 
+	<li><a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
 
+	<li><a href="http://odba.ru/showthread.php?t=412">Real Application Cluster 10g R2 [OEL5.5 x86_64, DataBase 10.2.0.5., NFS]</a></li>
 
-<li>[HabraHabr] <a href="http://habrahabr.ru/post/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a> ( может есть что-то полезное, сам не пробовал. Я и коллеги не используем GUI не серверах.)</li>
+	<li>[HabraHabr] <a href="http://habrahabr.ru/post/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a> ( может есть что-то полезное, сам не пробовал. Я и коллеги не используем GUI не серверах.)</li>
 
 </ul>
 
