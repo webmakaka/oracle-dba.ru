@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server
-permalink: /oracle_database_installation/windows/2008/oracle/12.1/oracle-cold-backup/
+permalink: /oracle-database-installation/windows/2008/oracle/12.1/oracle-cold-backup/
 ---
 
-# <a href="/oracle_database_installation/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server]</a>: Создание резервной копии созданной базы данных (холодный бекап)
+# <a href="/oracle-database-installation/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server]</a>: Создание резервной копии созданной базы данных (холодный бекап)
 
 <br/>
 

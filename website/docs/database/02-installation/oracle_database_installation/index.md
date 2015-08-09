@@ -40,7 +40,7 @@ permalink: /oracle-database-installation/
 <h2>Инсталляция базы данных Oracle в операционной системе Microsoft Windows:</h2><br/>
 
 <ul>
-	<li><a href="/oracle_database_installation/windows/2008/oracle/12.1/"><strong>Инсталляция Oracle Database 12g Release 1 в операционной системе Microsoft Windows 2008 Server</strong></a> (может где и напутал вначале)</li>
+	<li><a href="/oracle-database-installation/windows/2008/oracle/12.1/"><strong>Инсталляция Oracle Database 12g Release 1 в операционной системе Microsoft Windows 2008 Server</strong></a> (может где и напутал вначале)</li>
 	<li><a href="http://odba.ru/showthread.php?t=294"><strong>Инсталляция Oracle Database 11g Release 2 в операционной системе Microsoft Windows 2003 Server</strong></a> </li>
 	<li><a href="http://odba.ru/showthread.php?t=297"><strong>Инсталляция Oracle Database 10g Release 2 в операционной системе Microsoft Windows 2003 Server</strong></a> </li>
 </ul>
@@ -51,8 +51,8 @@ permalink: /oracle-database-installation/
 
 <ul>
 	<li><a href="http://odba.ru/showthread.php?t=331"><strong>Команды редактора VI</strong></a></li>
-	<li><a href="/oracle_database_installation/linux/6.4/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux (6.4 x86_64)</strong></a> (Server Linux -- рабочая станция Linux)</li>
-	<li><a href="/oracle_database_installation/linux/6.3/oracle/11.2/"><strong>Инсталляция Oracle DataBase Server (11.2.0.3) в операционной системе Oracle Linux (6.3 x86_64)</strong></a> (Server Linux -- рабочая станция Windows)</li>
+	<li><a href="/oracle-database-installation/linux/6.4/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux (6.4 x86_64)</strong></a> (Server Linux -- рабочая станция Linux)</li>
+	<li><a href="/oracle-database-installation/linux/6.3/oracle/11.2/"><strong>Инсталляция Oracle DataBase Server (11.2.0.3) в операционной системе Oracle Linux (6.3 x86_64)</strong></a> (Server Linux -- рабочая станция Windows)</li>
 </li>
 </ul>
 
@@ -141,7 +141,7 @@ Instantclient - альтернатива стандартному Oracle Client.
 <li><a href="http://odba.ru/showthread.php?t=469">Oracle Data Guard: Развертывание физического Standby средствами Oracle Database</a></li>
 
 
-<li><a href="/oracle_database_installation/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
+<li><a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
 
 <li><a href="http://odba.ru/showthread.php?t=412">Real Application Cluster 10g R2 [OEL5.5 x86_64, DataBase 10.2.0.5., NFS]</a></li>
 

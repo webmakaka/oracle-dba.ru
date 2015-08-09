@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server
-permalink: /oracle_database_installation/windows/2008/oracle/12.1/oracle-change-default-datafile-location/
+permalink: /oracle-database-installation/windows/2008/oracle/12.1/oracle-change-default-datafile-location/
 ---
 
-# <a href="/oracle_database_installation/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server]</a>: Изменение расположения файлов данных
+# <a href="/oracle-database-installation/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server]</a>: Изменение расположения файлов данных
 
 <br/>
 

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase 12c Release 1 x86 64 bit в операционной системе Oracle Linux 6.4 x86_64
-permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-hdd-to-install-oracle/
+permalink: /oracle-database-installation/linux/6.4/oracle/12.1/prepare-hdd-to-install-oracle/
 ---
 
-# <a href="/oracle_database_installation/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Подготовка жестких дисков к инсталляции базы данных
+# <a href="/oracle-database-installation/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Подготовка жестких дисков к инсталляции базы данных
 
 
 

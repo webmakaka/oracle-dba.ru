@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /oracle_database_installation/rac/linux/5.8/oracle/11.2/post-installation-tasks/
+permalink: /oracle-database-installation/rac/linux/5.8/oracle/11.2/post-installation-tasks/
 ---
 
-# <a href="/oracle_database_installation/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: После инсталляции
+# <a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: После инсталляции
 
 <br/>
 

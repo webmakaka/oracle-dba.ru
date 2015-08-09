@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Поменялся IP адрес сервера Oracle
-permalink: /oracle_database_installation/ip-changed/
+permalink: /oracle-database-installation/ip-changed/
 ---
 
 # vi /etc/hosts

@@ -15,7 +15,7 @@ permalink: /docs/architecture/files/
 
 
 
-Предполагается, что вы инсталлировали базу данных, согласно <a href="/oracle_database_installation/linux/6.3/oracle/11.2/">документа</a>.
+Предполагается, что вы инсталлировали базу данных, согласно <a href="/oracle-database-installation/linux/6.3/oracle/11.2/">документа</a>.
 
 
 
@@ -167,7 +167,7 @@ permalink: /docs/architecture/files/
 
 <br/><br/>
 
-Как я могу узнать, что моя база данных использует PFILE или SPFILE?:
+Как я могу узнать, что моя база д��нных использует PFILE или SPFILE?:
 
 Выполните следующий запрос, чтобы увидеть какой файл параметров был использован:
 

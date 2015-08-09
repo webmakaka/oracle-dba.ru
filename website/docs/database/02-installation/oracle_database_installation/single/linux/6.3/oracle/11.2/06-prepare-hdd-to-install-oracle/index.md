@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
-permalink: /oracle_database_installation/linux/6.3/oracle/11.2/prepare-hdd-to-install-oracle/
+permalink: /oracle-database-installation/linux/6.3/oracle/11.2/prepare-hdd-to-install-oracle/
 ---
 
-# <a href="/oracle_database_installation/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Подготовка дисков к инсталляции базы данных
+# <a href="/oracle-database-installation/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Подготовка дисков к инсталляции базы данных
 
 
 В каталоге /u01 будет храниться программное обеспечение для работы с базами данных (Database Software) а в каталоге /u02 файлы базы данных.

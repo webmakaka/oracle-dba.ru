@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /oracle_database_installation/rac/linux/5.8/oracle/11.2/setup-dns-server/
+permalink: /oracle-database-installation/rac/linux/5.8/oracle/11.2/setup-dns-server/
 ---
 
-# <a href="/oracle_database_installation/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка DNS сервера
+# <a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка DNS сервера
 
 <br/>
 

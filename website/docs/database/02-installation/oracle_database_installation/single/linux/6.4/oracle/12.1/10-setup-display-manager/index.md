@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase 12c Release 1 x86 64 bit в операционной системе Oracle Linux 6.4 x86_64
-permalink: /oracle_database_installation/linux/6.4/oracle/12.1/setup-display-manager/
+permalink: /oracle-database-installation/linux/6.4/oracle/12.1/setup-display-manager/
 ---
 
-# <a href="/oracle_database_installation/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Настройка Display Manger
+# <a href="/oracle-database-installation/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Настройка Display Manger
 
 
 
@@ -136,4 +136,4 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/setup-display-man
 <br/><br/>
 Если процесс управления инсталляцией проводится на машине с операионной системой windows, то смотри
 
-<a href="/oracle_database_installation/linux/6.3/oracle/11.2/oracle-database-software-installation/">здесь</a>.
+<a href="/oracle-database-installation/linux/6.3/oracle/11.2/oracle-database-software-installation/">здесь</a>.

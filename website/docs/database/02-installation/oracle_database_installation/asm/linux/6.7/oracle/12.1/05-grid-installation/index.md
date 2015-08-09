@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Инсталляция GRID
-permalink: /oracle_database_installation/asm/linux/6.7/oracle/12.1/grid-installation/
+permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/grid-installation/
 ---
 
 
-# <a href="/oracle_database_installation/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Инсталляция GRID
+# <a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Инсталляция GRID
 
 
 

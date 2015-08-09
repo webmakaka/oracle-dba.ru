@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /oracle_database_installation/rac/linux/5.8/oracle/11.2/oracle-instance-creation/
+permalink: /oracle-database-installation/rac/linux/5.8/oracle/11.2/oracle-instance-creation/
 ---
 
-# <a href="/oracle_database_installation/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Создание экземпляра (instance) базы данных
+# <a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Создание экземпляра (instance) базы данных
 
 <br/>
 

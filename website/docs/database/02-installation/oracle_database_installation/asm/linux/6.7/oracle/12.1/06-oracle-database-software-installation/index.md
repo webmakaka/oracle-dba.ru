@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция СУБД Oracle (DataBase SoftWare)
-permalink: /oracle_database_installation/asm/linux/6.7/oracle/12.1/oracle-database-software-installation/
+permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/oracle-database-software-installation/
 ---
 
-# <a href="/oracle_database_installation/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
+# <a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
 
 
 Войдите в систему пользователем, от имени которого будет будет происходить инсталляция базы данных.
