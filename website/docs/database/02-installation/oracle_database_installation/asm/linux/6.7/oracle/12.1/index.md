@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase 12c Release 1 x86 64 bit в операционной системе Oracle Linux 6.4 x86_64
-permalink: /oracle_database_installation/asm/linux/6.7/oracle/12.1/
+permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/
 ---
 
 # [Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]
