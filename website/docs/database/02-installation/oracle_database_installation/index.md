@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase
-permalink: /oracle_database_installation/
+permalink: /oracle-database-installation/
 ---
 
 # Инсталляция Oracle DataBase
@@ -9,9 +9,12 @@ permalink: /oracle_database_installation/
 
 ## Для информации:
 
+
+<br/>
+
 Если нет задачи поставить Oracle на какую-то конкретную операционную систему и задача, в первую очередь, сводится к изучению Oracle,  рекомендую ставить базу на Oracle Linux. Oracle взяла исходники RedHat и собрала свой дистрибутив. В публичном репозитории Oracle Linux имеются пакеты, которые могут сильно упростить инсталляцию базы и дополнительные пакеты, расширяющие стандартные возможности. В дополнении ко всему вышесказанному, вы можете использовать допиленное ядро UEK, которое вроде как в некоторых случаях имеет некоторые преимущесва перед стандартным. Но здесь нужно проводить тесты конкретного приложения. Ссылки на дистрибутив Oracle Lunux в теме для инсталляции.
 
-<br/><br/>
+
 По поводу Centos 7.X и возможных версий Oracle Linux 7.X. <br/>
 Я пока на эту ветку смотреть не собираюсь. Подождем появления версии 7.2, не ранее.
 
@@ -63,7 +66,7 @@ permalink: /oracle_database_installation/
 
 <ul>
 
-<li><a href="https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/edit">Инсталляция Oracle DataBase 11G R2 x86 64 bit в операционной системе Oracle Linux 5.7 x86 64 bit (ASM)</a></li>
+<li><a href="/oracle_database_installation/asm/linux/6.7/oracle/12.1/">Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID</a></li>
 
 </ul>
 

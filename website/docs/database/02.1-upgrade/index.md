@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Лабораторные по обновлению и миграции на Oracle 12c
-permalink: /oracle_database_upgrade/
+permalink: /oracle-database-upgrade/
 ---
 
 ### Лабораторные по обновлению и миграции на Oracle 12c

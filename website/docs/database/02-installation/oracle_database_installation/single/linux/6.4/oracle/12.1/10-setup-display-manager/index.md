@@ -93,15 +93,12 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/setup-display-man
 <br/>
 
 	$ nc -vv 192.168.1.5 6000
-
-<br/>
-
 	Connection to 192.168.1.200 6000 port [tcp/x11] succeeded!=
 
 
 <br/>
 
-	# xhost +192.168.1.10
+	$ xhost +192.168.1.10
 
 
 ### На сервере:

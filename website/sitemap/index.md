@@ -27,7 +27,7 @@ permalink: /sitemap/
 <h3>Инсталляция Oracle DataBase:</h3>
 
 <ul>
-    <li><a href="/oracle_database_installation/"><strong>Инсталляция Oracle DataBase</strong></a></li>
+    <li><a href="/oracle-database-installation/"><strong>Инсталляция Oracle DataBase</strong></a></li>
 </ul>
 
 
@@ -35,7 +35,7 @@ permalink: /sitemap/
 <h3>Upgrade Oracle DataBase:</h3>
 
 <ul>
-    <li><a href="/oracle_database_upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
+    <li><a href="/oracle-database-upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
 </ul>
 
 

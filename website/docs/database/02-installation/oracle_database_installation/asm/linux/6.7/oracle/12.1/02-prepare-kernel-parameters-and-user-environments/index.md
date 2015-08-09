@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase 12c Release 1 x86 64 bit в операционной системе Oracle Linux 6.4 x86_64
-permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-parameters-and-user-environments/
+title: Конфигурурование системных пользователей, настройка параметров системы
+permalink: /oracle_database_installation/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/
 ---
 
-# <a href="/oracle_database_installation/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Конфигурурование системных пользователей, настройка параметров системы
+
+# <a href="/oracle_database_installation/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Конфигурурование системных пользователей, настройка параметров системы
 
 
 
@@ -29,21 +30,52 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-pa
 	# groupadd -g 1002 oper
 
 
-Создаем пользователя oracle, сообщаем, что он будет находиться в группах dba и oinstall и домашним каталогом у него будет /home/oracle
+OSASM Group
+
+	# groupadd -g 1003 asmadmin
+
+OSDBA Group
+
+	# groupadd -g 1004 asmdba
+
+OSOPER Group
+
+	# groupadd -g 1005 asmoper
+
+
+Error Messages  
+https://docs.oracle.com/html/E10880_02/giinstaller_errormessages.htm
+
+
+Создаем пользователя oracle12, сообщаем, что он будет находиться в группах dba и oinstall и домашним каталогом у него будет /home/oracle
 
 
 	# useradd \
 	-g oinstall \
 	-G dba \
-	-d /home/oracle \
-	-m oracle
+	-d /home/oracle12 \
+	-m oracle12
 
 
-Устанавливаем пароль для пользователя oracle
+Добавляю пользователя еще и в группы
 
-	# passwd oracle
+	# usermod -a -G oper oracle12
 
-Изменение параметров ядра и параметров учетной записи с правами администратора базы данных
+	# usermod -a -G asmadmin oracle12
+	# usermod -a -G asmdba oracle12
+	# usermod -a -G asmoper oracle12
+
+
+<br/>
+
+Устанавливаем пароль для пользователе oracle12
+
+	# passwd oracle12
+
+
+<br/>
+
+### Изменение параметров ядра и параметров учетной записи с правами администратора базы данных
 
 
 1) Отредактируйте файл  /etc/sysctl.conf
@@ -92,6 +124,8 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-pa
 	net.core.wmem_max = 1048586
 	vm.min_free_kbytes = 23168
 
+
+	kernel.panic_on_oops = 1
 	############################################
 
 
@@ -104,14 +138,14 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-pa
 Добавьте следующие строки
 
 	############################################
-	#### Settings required for Oracle
+	#### Settings required for Oracle 12
 
-	oracle soft nproc 2047
-	oracle hard nproc 16384
-	oracle soft nofile 1024
-	oracle hard nofile 65536
-	oracle soft stack 10240
-	oracle hard stack 32768
+	oracle12 soft nproc 2047
+	oracle12 hard nproc 16384
+	oracle12 soft nofile 1024
+	oracle12 hard nofile 65536
+	oracle12 soft stack 10240
+	oracle12 hard stack 32768
 
 	############################################
 
@@ -123,7 +157,7 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-pa
 Добавьте следующие строки
 
 	############################################
-	#### Settings required for Oracle
+	#### Settings required for Oracle 12
 
 	session required pam_limits.so
 	############################################
@@ -144,12 +178,13 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-pa
 Добавьте
 
 	###########################################
-	#### Shell limits for Oracle user accounts
+	#### Shell limits for Oracle 12 user accounts
 
-	if [ $USER = "oracle" ]; then
+	if [ $USER = "oracle12" ]; then
 	ulimit -u 16384 -n 65536
 	fi
 	############################################
+
 
 
 Применить параметры ядра без перезагрузки можно следующей командой:
@@ -157,12 +192,12 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-pa
 	# sysctl -p
 
 
-5) Отредактируйте файл /home/oracle/.bash_profile
 
+5) Отредактируйте файл /home/oracle12/.bash_profile
 
-	# su - oracle
+	# su - oracle12
 
-	$  vi /home/oracle/.bash_profile
+	$ vi /home/oracle12/.bash_profile
 
 
 После  
@@ -172,26 +207,51 @@ permalink: /oracle_database_installation/linux/6.4/oracle/12.1/prepare-kernel-pa
 
 Добавьте
 
-	############################################
-	#### Oracle Parameters
 
-	umask 022
+	#### Oracle Parameters ###########################
 
-	export ORACLE_BASE=/u01/oracle
-	export ORACLE_HOME=$ORACLE_BASE/database/12.1
-	export ORACLE_SID=orcl
-	export ORACLE_UNQNAME=orcl
-	export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
-	export NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
+	    umask 022
 
-	export PATH=$PATH:$ORACLE_HOME/bin
-	export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+	    export ORACLE_BASE=/u01/oracle
+	    export ORACLE_HOME=$ORACLE_BASE/database/12.1
 
-	alias sqlplus='rlwrap sqlplus'
-	alias rman='rlwrap rman'
+	    export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-	############################################
+	    export ORACLE_SID=ora121
+	    export ORACLE_UNQNAME=ora121
+	    export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+
+	    export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
+	    export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+
+	    alias sqlplus='rlwrap sqlplus'
+	    alias rman='rlwrap rman'
+
+	#### Oracle Parameters ###########################
+
 
 Применить переменные, определенные в файле .bash_profile к текущей сессии bash можно следующей командой:
 
 	$ source ~/.bash_profile
+
+<br/>
+
+	$ vi ~/asm.sh
+
+<br/>
+
+	export ORACLE_HOME=$GRID_HOME
+	export ORACLE_SID=+ASM
+
+<br/>
+
+	$ chmod +x ~/asm.sh
+
+Чтобы использовались переменные указанные в файле asm.sh достаточно выполнить команы:
+
+	$ . asm.sh
+
+Проверка:
+
+	$ echo $ORACLE_SID
+	+ASM
