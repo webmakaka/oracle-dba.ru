@@ -28,27 +28,21 @@ permalink: /
 
 <br/><br/>
 
-Исходники и контент сайта лежат в откртом доступе. Можно без проблем скачать и развернуть сайт у себя. 
-
-
-___
+Исходники и контент сайта лежат в откртом доступе. Можно без проблем скачать и развернуть сайт у себя.
 
 <br/>
 
 **Предыдущая версия сайта доступна по адресу <a href="http://prev.oracle-dba.ru">prev.oracle-dba.ru</a>**
-
-
-___
 
 <br/>
 
 **Поднял англоязычную версию сайта <a href="http://oracledba.net">oracledba.net</a>**. Материалы на английском будут собираться там.
 
 
-<br/><br/>
+<br/>
 
 <div style="padding:10px; border:thin solid black;">
 
-Скачал курс <a href="https://www.udemy.com/easy-way-to-set-oracle-active-dataguard/">Easy way to set Oracle Active Dataguard</a>. Хочу разобрать и сделать конспект. Кому тоже интересно, могут присоединиться. Обсуждение в <a href="/chat/">чате</a>.
+Скачал курс <a href="https://www.udemy.com/easy-way-to-set-oracle-active-dataguard/">Easy way to set Oracle Active Dataguard</a>. Хочу разобрать и сделать конспект. Кому тоже интересно, могут присоединиться. Обсуждение в <a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/">чате</a>. Разбор начинается <a href="/chat/">здесь</a>.
 
 </div>
