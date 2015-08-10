@@ -8,11 +8,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 
 
-Главный сервер:
-England -> London -> 192.168.1.11
+Главный сервер:  
+England -> Instance -> London -> 192.168.1.11
 
 StandBy:  
-Spain -> Madrid -> 192.168.1.12
+Spain -> Instance -> Madrid -> 192.168.1.12
 
 
 
@@ -27,8 +27,8 @@ http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 	# vi /etc/hosts
 
 	***
-	192.168.1.11 england.localdomain london
-	192.168.1.12 madrid.localdomain madrid
+	192.168.1.11 england.localdomain england
+	192.168.1.12 spain.localdomain spain
 
 
 <br/>
