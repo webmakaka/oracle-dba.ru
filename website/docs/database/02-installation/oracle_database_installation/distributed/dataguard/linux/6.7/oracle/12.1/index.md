@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Инсталляция Oracle DataGuard 12.1 в операционной системе Centos 6.7
+title: Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7
 permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 ---
 
-# [Инсталляция Oracle DataGuard 12.1 в операционной системе Centos 6.7]:
+# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]:
 
 
 
-Главный сервер:  
+Primary:  
 Hostname: england  
 Instance: london  
 IP: 192.168.1.11  
@@ -25,7 +25,7 @@ http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 
 <br/>
 
-### Сервер england
+### Primary
 
 
 <br/>
@@ -61,6 +61,14 @@ http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 	    alias rman='rlwrap rman'
 
 	#### Oracle Parameters ###########################
+
+
+<br/>
+
+	$ ps -edf | grep pmon
+	oracle12  6902     1  0 Aug09 ?        00:00:05 asm_pmon_+ASM
+	oracle12 13205     1  0 Aug09 ?        00:00:05 ora_pmon_london
+	oracle12 14498 14456  0 08:24 pts/1    00:00:00 grep pmon
 
 
 <br/>
