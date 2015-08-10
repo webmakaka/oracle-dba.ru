@@ -11,5 +11,45 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 Главный сервер:
 England -> London -> 192.168.1.11
 
-StandBy:
+StandBy:  
 Spain -> Madrid -> 192.168.1.12
+
+
+
+
+1) Устанавливаю сервер как здесь
+http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
+
+с инстансом london
+
+<br/>
+
+	# vi /etc/hosts
+
+	***
+	192.168.1.11 england.localdomain london
+	192.168.1.12 madrid.localdomain madrid
+
+
+<br/>
+
+	#### Oracle Parameters ###########################
+
+	    umask 022
+
+	    export ORACLE_BASE=/u01/oracle
+	    export ORACLE_HOME=$ORACLE_BASE/database/12.1
+
+	    export GRID_HOME=$ORACLE_BASE/grid/12.1
+
+	    export ORACLE_SID=london
+	    export ORACLE_UNQNAME=london
+	    export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+
+	    export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
+	    export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+
+	    alias sqlplus='rlwrap sqlplus'
+	    alias rman='rlwrap rman'
+
+	#### Oracle Parameters ###########################

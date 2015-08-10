@@ -135,7 +135,7 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 <br/>
 
-# Distributed System Architectures
+# Distributed System Architectures:
 
 
 ### DataGuard (Standby)
