@@ -9,7 +9,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 
 Главный сервер:  
-Hostname:england  
+Hostname: england  
 Instance: london  
 IP: 192.168.1.11  
 
@@ -22,9 +22,10 @@ IP: 192.168.1.12
 1) Устанавливаю сервер как здесь
 http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 
-с инстансом london
 
+<br/>
 
+### Сервер england
 
 
 <br/>
@@ -37,6 +38,8 @@ http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 
 
 <br/>
+
+Переменные окружения главного сервера.
 
 	#### Oracle Parameters ###########################
 
@@ -75,3 +78,20 @@ http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 	Current log sequence	       10
 
 <br/>
+
+
+	SQL> ALTER DATABASE ARCHIVELOG;
+
+<br/>
+
+
+	SQL> select force_logging from v$database;
+
+	FORCE_LOGGING
+	---------------------------------------
+	NO
+
+
+<br/>
+
+	SQL> ALTER DATABASE FORCE LOGGING;
