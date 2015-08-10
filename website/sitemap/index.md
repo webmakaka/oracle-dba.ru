@@ -247,6 +247,20 @@ permalink: /sitemap/
 <a href="/docs/architecture/queries/query/">Некоторые запросы к базе данных Oracle</a><br/>
 
 
+
+
+<br/><br/>
+<h3>Tricks:</h3>
+
+
+<ul>
+    <li>
+        <a href="/docs/tricks/rename-oracle-instance/">Переименование instance в Oracle 11 в linux</a>
+    </li>
+</ul>
+
+
+
 <hr>
 
 

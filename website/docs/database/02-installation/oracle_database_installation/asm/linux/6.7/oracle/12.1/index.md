@@ -51,7 +51,7 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 <br/>
 
-Шаги без ссылок, предполагают, что делается тоже самое, что и в инструкции без ASM. (дабы не писать лишнего)
+Шаги без ссылок, предполагают, что делается тоже самое, что и в <a href="http://oracle-dba.ru/oracle-database-installation/linux/6.4/oracle/12.1/">инструкции без ASM</a>. (дабы не писать лишнего)
 
 <br/>
 
