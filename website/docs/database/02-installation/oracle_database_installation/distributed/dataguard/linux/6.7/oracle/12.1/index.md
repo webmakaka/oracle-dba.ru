@@ -9,18 +9,23 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 
 Главный сервер:  
-England -> Instance -> London -> 192.168.1.11
+Hostname:england  
+Instance: london  
+IP: 192.168.1.11  
 
 StandBy:  
-Spain -> Instance -> Madrid -> 192.168.1.12
-
-
+Hostname: spain  
+Instance: madrid  
+IP: 192.168.1.12  
 
 
 1) Устанавливаю сервер как здесь
 http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 
 с инстансом london
+
+
+
 
 <br/>
 
@@ -53,3 +58,20 @@ http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 	    alias rman='rlwrap rman'
 
 	#### Oracle Parameters ###########################
+
+
+<br/>
+
+	$ sqlplus / as sysdba
+
+<br/>
+
+
+	SQL> archive log list;
+	Database log mode	       No Archive Mode
+	Automatic archival	       Disabled
+	Archive destination	       USE_DB_RECOVERY_FILE_DEST
+	Oldest online log sequence     8
+	Current log sequence	       10
+
+<br/>
