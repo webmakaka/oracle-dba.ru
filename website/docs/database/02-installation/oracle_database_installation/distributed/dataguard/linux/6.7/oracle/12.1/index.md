@@ -6,6 +6,14 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]:
 
+
+# В разработке!
+# В разработке!
+## Помогайте, кому нечем заняться!
+# В разработке!
+# В разработке!
+
+
 Для информации:
 
 db_name - одинаковое на узлах  
