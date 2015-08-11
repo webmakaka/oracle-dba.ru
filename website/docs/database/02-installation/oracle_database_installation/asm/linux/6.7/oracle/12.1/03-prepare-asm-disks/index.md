@@ -143,8 +143,3 @@ permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/prepare-asm-d
 // В некоторых случаях, необходимо перестартовать oracleasm
 
     # /etc/init.d/oracleasm restart
-
-<br/>
-
-    $ asmcmd
-    ASMCMD> lsdg

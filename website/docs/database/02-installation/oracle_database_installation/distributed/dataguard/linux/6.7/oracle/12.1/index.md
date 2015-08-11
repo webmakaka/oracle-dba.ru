@@ -20,6 +20,8 @@ db_name - одинаковое на узлах
 db_unique_name - должно быть разными на узлах  
 
 
+<br/>
+
 
 1) Устанавливаю 2 сервера как здесь:
 http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
@@ -179,24 +181,24 @@ IP: 192.168.1.12
 
 <br/>
 
-primary_orcl =
-  (DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
-    (CONNECT_DATA =
-      (SERVER = DEDICATED)
-      (SERVICE_NAME = orcl)
-    )
-  )
+	primary_orcl =
+	  (DESCRIPTION =
+	    (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
+	    (CONNECT_DATA =
+	      (SERVER = DEDICATED)
+	      (SERVICE_NAME = orcl)
+	    )
+	  )
 
 
-standby_orcl =
-  (DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = piter.localdomain)(PORT = 1521))
-    (CONNECT_DATA =
-      (SERVER = DEDICATED)
-      (SERVICE_NAME = orcl)
-    )
-  )
+	standby_orcl =
+	  (DESCRIPTION =
+	    (ADDRESS = (PROTOCOL = TCP)(HOST = piter.localdomain)(PORT = 1521))
+	    (CONNECT_DATA =
+	      (SERVER = DEDICATED)
+	      (SERVICE_NAME = orcl)
+	    )
+	  )
 
 
 
@@ -223,8 +225,6 @@ SID_LIST_LISTENER=
 			)
 
 
-
-// На обоих серверах перестартовываем
 
 	$ lsnrctl stop
 	$ lsnrctl start
@@ -345,7 +345,7 @@ orapwd fiel=orapwdlondon password=oracle entries=5
 
 
 
-# 010 Creation of the standby with Rman Duplicate
+# Creation of the standby with Rman Duplicate
 
 Нужно лучше разобраться с параметрами!
 
@@ -368,6 +368,9 @@ orapwd fiel=orapwdlondon password=oracle entries=5
 
 	$ mkdir -p /u01/oracle/admin/orcl/adump
 
+
+
+На Primary
 
 <br/>
 
@@ -402,29 +405,145 @@ fal_server - fatch archive log
 
 	$ rman target sys/manager@primary_orcl auxiliary sys/manager@standby_orcl @rmanscript.rman
 
+<br/>
 
-Словил ошибку.
-
-
-	dbms_backup_restore.restoreCancel() failed
+	***
+	Finished Duplicate Db at 11-AUG-15
 	released channel: prmy1
 	released channel: stby
-	RMAN-00571: ===========================================================
-	RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
-	RMAN-00571: ===========================================================
-	RMAN-03002: failure of Duplicate Db command at 08/11/2015 13:51:24
-	RMAN-05501: aborting duplication of target database
-	RMAN-03015: error occurred in stored script Memory Script
-	ORA-19660: some files in the backup set could not be verified
-	ORA-19661: datafile 0 could not be verified
-	ORA-19849: error while reading backup piece from service primary_orcl
-	ORA-19504: failed to create file "+DATA/standby/controlfile/control01.ctl"
-	ORA-17502: ksfdcre:3 Failed to create file +DATA/standby/controlfile/control01.ctl
-	ORA-15001: diskgroup "DATA" does not exist or is not mounted
-	ORA-29701: unable to connect to Cluster Synchronization Service
 
 	Recovery Manager complete.
 
 
-На второй ноде какие-то проблемы с кластервере.
-Будем разбираться.
+
+
+# Post Duplicate Steps
+
+
+Primary
+
+
+	SQL> show parameter arch
+
+
+	# SQL> alter system set log_archive_dest_1='LOCATION=+ARCH VALID_FOR=(all_logfiles,all_roles) DB_UNIQUE_NAME=orcl' scope=both;
+
+	SQL> alter system set log_archive_dest_2='service=standby LGWR ASYNC NOAFFIRM NET_TIMEOUT=30 valid_for=(ONLINE_LOGFILE,PRIMARY_ROLE) db_unique_name=standby';
+
+
+	SQL> alter system set LOG_ARCHIVE_CONFIG='DG_CONFIG=(orcl, standby)' scope=both;
+
+
+	SQL> show parameter log_archive_dest_state_1
+
+
+	SQL> alter system set log_archive_dest_state_2=DEFER scope=both;
+
+	# SQL> alter system set standby_archive_dest='+ARCH' scope=both;
+
+	SQL> alter system set standby_file_management= AUTO scope=both;
+
+	SQL> alter system set fal_server = orcl scope=both;
+
+	SQL> alter system set fal_client = standby scope=both;
+
+	SQL> show parameter remote_login_passwordfile
+
+
+==================
+
+НА Primary
+
+
+	SQL> select max (bytes), count (1) from v$log;
+
+	MAX(BYTES)   COUNT(1)
+	---------- ----------
+	  52428800	    3
+
+
+<br/>
+
+	$ cd ~
+	$ . asm.sh
+
+
+$ asmcmd
+
+
+ASMCMD> ls
+DATA/
+
+
+ASMCMD> mkdir +DATA/ORCL/STANDBYLOG/
+
+ASMCMD> exit
+
+
+
+source ~/.bash_profile
+
+sqlplus / as sysdba
+
+alter system set standby_file_management=manual scope=both;
+
+Количество должно быть на 1 больше, чем в primary обычных логфайлов.
+
+
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/ORCL/STANDBYLOG/stby_4.log' SIZE 100M;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/ORCL/STANDBYLOG/stby_5.log' SIZE 100M;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 '+DATA/ORCL/STANDBYLOG/stby_6.log' SIZE 100M;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 '+DATA/ORCL/STANDBYLOG/stby_7.log' SIZE 100M;
+
+
+alter system set standby_file_management=auto scope=both;
+
+
+
+==============================
+
+
+Standby
+
+
+
+<br/>
+
+	$ cd ~
+	$ . asm.sh
+
+
+$ asmcmd
+
+ASMCMD> mkdir +DATA/STANDBY/STANDBYLOG/
+
+
+ASMCMD> exit
+
+
+
+source ~/.bash_profile
+
+sqlplus / as sysdba
+
+alter system set standby_file_management=manual scope=both;
+
+Количество должно быть на 1 больше, чем в primary обычных логфайлов.
+
+
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/STANDBY/STANDBYLOG/stby_4.log' SIZE 100M;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/STANDBY/STANDBYLOG/stby_5.log' SIZE 100M;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 '+DATA/STANDBY/STANDBYLOG/stby_6.log' SIZE 100M;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 '+DATA/STANDBY/STANDBYLOG/stby_7.log' SIZE 100M;
+
+
+alter system set standby_file_management=auto scope=both;
+
+
+
+=================================================
+=================================================
+
+PRIMARY
+
+	$ cd /u01/oracle/database/12.1/network/admin
