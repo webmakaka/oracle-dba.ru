@@ -28,21 +28,12 @@ hxxp://rutracker.org/forum/viewtopic.php?t=4786605
 
 В свободном доступе можно найти почти все.
 
+<!--
 
-Видел здесь:
+Архивные ссылки, т.к. у ресурса какие-то проблемы:  
+hxxps://archive.is/qKSWi
 
-
-hxxp://ccc.hn/topic/11024-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-%C2%AB%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-oracle11g%C2%BB-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D0%B0/
-
-
-hxxp://ccc.hn/topic/11026-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-oracle-11g-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-sql/
-
-
-hxxp://ccc.hn/topic/11027-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82-oracle-11g-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-plsql/
-
-
-<br/><br/>
-
+-->
 
 <h3>Можно также посмотреть курсы Игоря Мирончика:</h3>
 

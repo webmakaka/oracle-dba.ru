@@ -102,3 +102,10 @@ permalink: /oracle-database-installation/rac/linux/5.8/oracle/11.2/
     <li><a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/tests/">Некоторые запросы и команды</a><br/></li>
     <li><a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/process/">Процессы Oracle RAC</a><br/></li>
 </ul>
+
+<br/><br/>
+
+Нужно посмотреть:
+
+### Oracle RAC – Configuring udev and device-mapper for ASM
+https://newbiedba.wordpress.com/2014/05/16/oracle-rac-configuring-udev-and-device-mapper-for-asm/

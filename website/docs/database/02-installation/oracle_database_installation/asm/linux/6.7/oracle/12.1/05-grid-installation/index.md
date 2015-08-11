@@ -172,6 +172,37 @@ permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/grid-installa
 	STATE=ONLINE on localhost
 
 
+
+	<br/>
+
+		$ crsctl stat res -t
+		--------------------------------------------------------------------------------
+		Name           Target  State        Server                   State details
+		--------------------------------------------------------------------------------
+		Local Resources
+		--------------------------------------------------------------------------------
+		ora.DATA.dg
+		               ONLINE  ONLINE       localhost                STABLE
+		ora.LISTENER.lsnr
+		               ONLINE  ONLINE       localhost                STABLE
+		ora.asm
+		               ONLINE  ONLINE       localhost                Started,STABLE
+		ora.ons
+		               OFFLINE OFFLINE      localhost                STABLE
+		--------------------------------------------------------------------------------
+		Cluster Resources
+		--------------------------------------------------------------------------------
+		ora.cssd
+		      1        ONLINE  ONLINE       localhost                STABLE
+		ora.diskmon
+		      1        OFFLINE OFFLINE                               STABLE
+		ora.evmd
+		      1        ONLINE  ONLINE       localhost                STABLE
+		ora.orcl.db
+		      1        ONLINE  ONLINE       localhost                Open,STABLE
+		-------------------------------------------------------------------------------
+
+
 <br/>
 
 	$ ps -fea | grep asm_
