@@ -404,5 +404,27 @@ fal_server - fatch archive log
 
 
 Словил ошибку.
+
+
+	dbms_backup_restore.restoreCancel() failed
+	released channel: prmy1
+	released channel: stby
+	RMAN-00571: ===========================================================
+	RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+	RMAN-00571: ===========================================================
+	RMAN-03002: failure of Duplicate Db command at 08/11/2015 13:51:24
+	RMAN-05501: aborting duplication of target database
+	RMAN-03015: error occurred in stored script Memory Script
+	ORA-19660: some files in the backup set could not be verified
+	ORA-19661: datafile 0 could not be verified
+	ORA-19849: error while reading backup piece from service primary_orcl
+	ORA-19504: failed to create file "+DATA/standby/controlfile/control01.ctl"
+	ORA-17502: ksfdcre:3 Failed to create file +DATA/standby/controlfile/control01.ctl
+	ORA-15001: diskgroup "DATA" does not exist or is not mounted
+	ORA-29701: unable to connect to Cluster Synchronization Service
+
+	Recovery Manager complete.
+
+
 На второй ноде какие-то проблемы с кластервере.
 Будем разбираться.
