@@ -4,8 +4,7 @@ title: Конфигурурование системных пользовате�
 permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/
 ---
 
-
-# <a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Конфигурурование системных пользователей, настройка параметров системы
+# <a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Конфигурурование системных пользователей, настройка параметров системы
 
 
 
