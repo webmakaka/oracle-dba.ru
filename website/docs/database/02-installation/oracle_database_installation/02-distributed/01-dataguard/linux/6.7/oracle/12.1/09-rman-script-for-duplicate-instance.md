@@ -12,6 +12,10 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-sc
 
 <br/>
 
+	$ cd /tmp/
+
+<br/>
+
 	$ vi rmanscript.rman
 
 
@@ -24,11 +28,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-sc
 			set db_unique_name='standby'
 			set control_files='+DATA/standby/controlfile/control01.ctl'
 			set log_archive_max_processes='5'
-			set fal_server='orcl'
+			set fal_server='orcl12'
 			set standby_file_management='AUTO'
-			set log_archive_config='dg_config=(orcl,standby)'
-			# set log_archive_dest_1='+ARCH'
-			set log_archive_dest_2='service=orcl LGWR ASYNC NOAFFIRM valid_for=(ONLINE_LOGFILE,PRIMARY_ROLE) db_unique_name=orcl';
+			set log_archive_config='dg_config=(orcl12,standby)'
+			set log_archive_dest_1='+ARCH'
+			set log_archive_dest_2='service=orcl12 LGWR ASYNC NOAFFIRM valid_for=(ONLINE_LOGFILE,PRIMARY_ROLE) db_unique_name=orcl12';
 	     }
 
 <br/>
@@ -39,6 +43,8 @@ fal_server - fetch archive log
 
 	$ rman CHECKSYNTAX @rmanscript.rman
 
+	***
+	The cmdfile has no syntax errors
 
 Поехали:
 
