@@ -31,7 +31,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-sc
 			set fal_server='orcl12'
 			set standby_file_management='AUTO'
 			set log_archive_config='dg_config=(orcl12,standby)'
-			set log_archive_dest_1='+ARCH'
+			set log_archive_dest_1='LOCATION=+ARCH'
 			set log_archive_dest_2='service=orcl12 LGWR ASYNC NOAFFIRM valid_for=(ONLINE_LOGFILE,PRIMARY_ROLE) db_unique_name=orcl12';
 	     }
 
@@ -53,8 +53,12 @@ fal_server - fetch archive log
 <br/>
 
 	***
-	Finished Duplicate Db at 11-AUG-15
+	Finished Duplicate Db at 12-AUG-15
 	released channel: prmy1
 	released channel: stby
 
 	Recovery Manager complete.
+
+
+
+	

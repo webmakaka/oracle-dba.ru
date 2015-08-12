@@ -15,11 +15,11 @@ background_dump_dest - расположение alert log файла
 
 ### НА Primary и Standby
 
-	$ cd /u01/oracle/diag/rdbms/orcl/orcl/trace
+	$ cd /u01/oracle/diag/rdbms/orcl12/orcl12/trace
 
 Удаляю содержимое alert лога
 
-	$ cat /dev/null > alert_orcl.log
+	$ cat /dev/null > alert_orcl12.log
 
 
 ### НА Primary
@@ -38,7 +38,7 @@ background_dump_dest - расположение alert log файла
 	SQL> alter database open;
 
 
-	$ tail -f /u01/oracle/diag/rdbms/orcl/orcl/trace/alert_orcl.log
+	$ tail -f /u01/oracle/diag/rdbms/orcl12/orcl12/trace/alert_orcl12.log
 
 
 
@@ -51,4 +51,4 @@ background_dump_dest - расположение alert log файла
 
 ### НА Secondary
 
-	$ tail -f /u01/oracle/diag/rdbms/orcl/orcl/trace/alert_orcl.log
+	$ tail -f /u01/oracle/diag/rdbms/orcl12/orcl12/trace/alert_orcl.log
