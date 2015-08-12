@@ -57,6 +57,8 @@ db_unique_name - должно быть разными на узлах
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare-env/">Предварительные шаги по настройке environment</a></li>
 
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare-instance/">Предварительные шаги по настройке параметров instance</a></li>
+
 </ul>
 
 

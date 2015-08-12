@@ -58,8 +58,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 		export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-		export ORACLE_SID=orcl
-		export ORACLE_UNQNAME=orcl
+		export ORACLE_SID=orcl12
+		export ORACLE_UNQNAME=orcl12
 		export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
 		export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
@@ -70,6 +70,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 		alias sqlplus='rlwrap sqlplus'
 		alias rman='rlwrap rman'
+		alias asmcmd='rlwrap asmcmd'
 
 
 		# my alases
@@ -78,60 +79,3 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 	#### Oracle 12.1 Parameters ###########################
 	#######################################################
-
-<br/>
-
-### Primary
-
-**ENABLE ARCHIVELOG**
-
-
-	SQL> archive log list;
-	Database log mode	       No Archive Mode
-	Automatic archival	       Disabled
-	Archive destination	       USE_DB_RECOVERY_FILE_DEST
-	Oldest online log sequence     8
-	Current log sequence	       10
-
-<br/>
-
-	SQL> shutdown immediate;
-	SQL> startup mount;
-	SQL> alter database archivelog;
-	SQL> alter database open;
-
-<br/>
-
-	SQL>  archive log list;
-	Database log mode	       Archive Mode
-	Automatic archival	       Enabled
-	Archive destination	       USE_DB_RECOVERY_FILE_DEST
-	Oldest online log sequence     8
-	Next log sequence to archive   10
-	Current log sequence	       10
-
-
-<br/>
-
-**ENABLE FORCE LOGGING**
-
-
-	SQL> select force_logging from v$database;
-
-	FORCE_LOGGING
-	---------------------------------------
-	NO
-
-
-<br/>
-
-	SQL> alter database force logging;
-
-
-<br/>
-
-	SQL> select force_logging from v$database;
-
-	FORCE_LOGGING
-	---------------------------------------
-	YES

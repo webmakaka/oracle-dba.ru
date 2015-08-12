@@ -223,8 +223,11 @@ https://docs.oracle.com/html/E10880_02/giinstaller_errormessages.htm
 	    export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
 	    export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
-	    alias sqlplus='rlwrap sqlplus'
-	    alias rman='rlwrap rman'
+		# rlwrap aliases
+
+		alias sqlplus='rlwrap sqlplus'
+		alias rman='rlwrap rman'
+		alias asmcmd='rlwrap asmcmd'
 
 	#### Oracle Parameters ###########################
 

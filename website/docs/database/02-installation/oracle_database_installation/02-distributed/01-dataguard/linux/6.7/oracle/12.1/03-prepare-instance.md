@@ -1,0 +1,93 @@
+---
+layout: page
+title: Предварительные шаги по настройке параметров instance
+permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare-instance/
+---
+
+# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Предварительные шаги по настройке параметров instance
+
+
+### Primary
+
+**ENABLE ARCHIVELOG**
+
+
+	SQL> archive log list;
+	Database log mode	       No Archive Mode
+	Automatic archival	       Disabled
+	Archive destination	       USE_DB_RECOVERY_FILE_DEST
+	Oldest online log sequence     8
+	Current log sequence	       10
+
+<br/>
+
+	SQL> shutdown immediate;
+	SQL> startup mount;
+	SQL> alter database archivelog;
+	SQL> alter database open;
+
+<br/>
+
+	SQL>  archive log list;
+	Database log mode	       Archive Mode
+	Automatic archival	       Enabled
+	Archive destination	       USE_DB_RECOVERY_FILE_DEST
+	Oldest online log sequence     8
+	Next log sequence to archive   10
+	Current log sequence	       10
+
+
+<br/>
+
+**ENABLE FORCE LOGGING**
+
+
+	SQL> select force_logging from v$database;
+
+	FORCE_LOGGING
+	---------------------------------------
+	NO
+
+
+<br/>
+
+	SQL> alter database force logging;
+
+
+<br/>
+
+	SQL> select force_logging from v$database;
+
+	FORCE_LOGGING
+	---------------------------------------
+	YES
+
+
+<br/>
+
+### Посмотреть на свежие архивлоги
+
+	SQL> alter system switch logfile;
+
+
+<br/>
+
+	$ cd ~
+	$ . asm
+
+<br/>
+
+	$ asmcmd
+
+<br/>
+
+	ASMCMD> ls
+	ARCHIVELOG/
+	CONTROLFILE/
+
+	ASMCMD> cd ARCHIVELOG
+
+	ASMCMD> cd 2015_08_12
+
+	ASMCMD> ls
+	thread_1_seq_9.260.887541937

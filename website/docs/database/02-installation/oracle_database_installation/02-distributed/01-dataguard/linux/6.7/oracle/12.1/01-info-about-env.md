@@ -20,10 +20,9 @@ http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 
 Primary:  
 Hostname: moscow  
-Instance: orcl  
+Instance: orcl12  
 IP: 192.168.1.11  
 
 StandBy:  
 Hostname: piter  
-Instance: orcl  
 IP: 192.168.1.12  
