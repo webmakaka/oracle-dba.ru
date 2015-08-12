@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
+permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/before/bkp/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]:
