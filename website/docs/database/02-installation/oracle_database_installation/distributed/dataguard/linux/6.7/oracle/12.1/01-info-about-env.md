@@ -8,12 +8,6 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/info-ab
 
 
 
-Для информации:
-
-db_name - должно быть одинаковое на узлах  
-db_unique_name - должно быть разными на узлах  
-
-
 <br/>
 
 
