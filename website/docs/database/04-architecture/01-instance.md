@@ -20,7 +20,7 @@ permalink: /docs/architecture/instance/
 <br/>
 
 <div align="center">
-<img src="http://oracle-dba.ru/images/OracleInstance.jpg" border="0" alt="Oracle Instance"><br/>
+<img src="http://img.oradba.net/architecture/OracleDatabaseFiles.jpg" border="0" alt="Oracle Instance"><br/>
 </div>
 
 

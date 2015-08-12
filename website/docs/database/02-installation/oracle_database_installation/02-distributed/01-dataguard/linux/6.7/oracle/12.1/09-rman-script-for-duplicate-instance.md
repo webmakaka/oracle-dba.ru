@@ -25,6 +25,19 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-sc
 	    allocate channel prmy1 type disk;
 		allocate auxiliary channel stby type disk;
 		duplicate target database for standby from active database spfile
+			set db_unique_name='slave';
+	    }
+
+
+DORECOVER option to recover the database after standby creation
+
+
+
+
+	run {
+	    allocate channel prmy1 type disk;
+		allocate auxiliary channel stby type disk;
+		duplicate target database for standby from active database spfile
 			set db_unique_name='standby'
 			set control_files='+DATA/standby/controlfile/control01.ctl'
 			set log_archive_max_processes='5'
@@ -34,6 +47,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-sc
 			set log_archive_dest_1='LOCATION=+ARCH'
 			set log_archive_dest_2='service=orcl12 LGWR ASYNC NOAFFIRM valid_for=(ONLINE_LOGFILE,PRIMARY_ROLE) db_unique_name=orcl12';
 	     }
+
 
 <br/>
 
@@ -48,7 +62,7 @@ fal_server - fetch archive log
 
 Поехали:
 
-	$ rman target sys/manager@primary_orcl auxiliary sys/manager@standby_orcl @rmanscript.rman
+	$ rman target sys/manager@primary auxiliary sys/manager@standby @rmanscript.rman
 
 <br/>
 
@@ -61,4 +75,5 @@ fal_server - fetch archive log
 
 
 
-	
+
+http://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm

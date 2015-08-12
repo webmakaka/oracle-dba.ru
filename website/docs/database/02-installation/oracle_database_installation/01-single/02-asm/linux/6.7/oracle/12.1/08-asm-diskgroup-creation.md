@@ -16,9 +16,6 @@ permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/asm-di
 	$ asmca
 
 
-
-
-
 <img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_01.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
 
 

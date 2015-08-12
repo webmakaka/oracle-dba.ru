@@ -69,6 +69,14 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 	SQL> alter system switch logfile;
 
+<br/>
+
+	SQL> select name from v$archived_log;
+
+	NAME
+	--------------------------------------------------------------------------------
+	+ARCH/MASTER/ARCHIVELOG/2015_08_12/thread_1_seq_8.260.887572251
+
 
 <br/>
 

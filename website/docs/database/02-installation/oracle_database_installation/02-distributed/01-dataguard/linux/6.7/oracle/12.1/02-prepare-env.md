@@ -45,7 +45,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 <br/>
 
 
-	vi /home/oracle12/.bash_profile
+	$ vi /home/oracle12/.bash_profile
 
 
 
@@ -66,8 +66,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 		export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-		export ORACLE_SID=orcl12
-		export ORACLE_UNQNAME=orcl12
+		export ORACLE_SID=master
+		export ORACLE_UNQNAME=master
 		export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
 		export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
@@ -105,8 +105,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 		export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-		export ORACLE_SID=orcl12
-		export ORACLE_UNQNAME=standby
+		export ORACLE_SID=slave
+		export ORACLE_UNQNAME=slave
 		export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
 		export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin

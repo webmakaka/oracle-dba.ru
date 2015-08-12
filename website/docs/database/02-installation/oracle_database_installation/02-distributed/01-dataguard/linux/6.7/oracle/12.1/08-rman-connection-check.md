@@ -14,14 +14,14 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-co
 manager - мой пароль, созданный при инсталляции базы данных
 
 
-	$ rman target sys/manager@primary_orcl auxiliary sys/manager@standby_orcl
+	$ rman target sys/manager@primary auxiliary sys/manager@standby
 
-	Recovery Manager: Release 12.1.0.2.0 - Production on Wed Aug 12 12:46:41 2015
+	Recovery Manager: Release 12.1.0.2.0 - Production on Wed Aug 12 19:59:07 2015
 
 	Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
 
-	connected to target database: ORCL12 (DBID=3487190055)
-	connected to auxiliary database: ORCL12 (not mounted)
+	connected to target database: MASTER (DBID=2948283414)
+	connected to auxiliary database: SLAVE (not mounted)
 
 
 
@@ -29,11 +29,11 @@ manager - мой пароль, созданный при инсталляции 
 
 ### Если не заработало, то можно на Primary и StandBy повыполнять отдельно команды:
 
-	$ rman target sys/manager@primary_orcl
+	$ rman target sys/manager@primary
 
 <br/>
 
-	$ rman target sys/manager@standby_orcl
+	$ rman target sys/manager@standby
 
 
 	<br/>

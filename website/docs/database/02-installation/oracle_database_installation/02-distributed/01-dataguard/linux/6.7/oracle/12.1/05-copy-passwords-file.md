@@ -27,23 +27,23 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/copy-pa
 
 <br/>
 
-	$ chmod 4640 $ORACLE_HOME/dbs/orapworcl12
+	$ chmod 4640 $ORACLE_HOME/dbs/orapwmaster
 
 <br/>
 
 
 // Файл паролей можно создать следующей командой. Entries - ограничить максимальное количество подключений к базе (если ничего не путаю). Я не создавал новый файл паролей.
 
-	$ orapwd fiel=orapwdorcl password=oracle12 entries=5
+	$ orapwd fiel=orapwdmaster password=oracle12 entries=5
 
 
 
 Копирую файл паролей
 
-	$ scp $ORACLE_HOME/dbs/orapworcl12 oracle12@piter:$ORACLE_HOME/dbs/orapworcl12
+	$ scp $ORACLE_HOME/dbs/orapwmaster oracle12@piter:$ORACLE_HOME/dbs/orapwslave
 
 <br/>
 
 ### Standby
 
-	$ chmod 4640 /u01/oracle/database/12.1/dbs/orapworcl
+	$ chmod 4640 /u01/oracle/database/12.1/dbs/orapwslave

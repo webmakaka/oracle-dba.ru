@@ -19,7 +19,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/info-ab
 
 Primary:  
 Hostname: moscow  
-Instance: orcl12  
+Instance: master  
 IP: 192.168.1.11  
 
 StandBy:  
