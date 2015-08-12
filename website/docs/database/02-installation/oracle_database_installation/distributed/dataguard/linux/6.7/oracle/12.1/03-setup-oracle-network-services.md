@@ -68,6 +68,9 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	$ lsnrctl start
 
 
+Как бы еще файл с описанием listener, в каталог с grid засунуть....
+
+
 <br/>
 
 **С обоих серверов должен проходить tnsping**:

@@ -13,7 +13,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/startup
 
 	$ cd $ORACLE_HOME/dbs
 
-<br/>
+Создаю pfile с единственным описанием - имя базы данных
 
 	$ echo DB_NAME=orcl > initorcl.ora
 

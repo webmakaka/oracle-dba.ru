@@ -102,19 +102,10 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 	Next log sequence to archive   10
 	Current log sequence	       10
 
-<br/>
-
-	SQL> select name, total_mb, free_mb from v$asm_diskgroup;
-
-	NAME				 TOTAL_MB    FREE_MB
-	------------------------------ ---------- ----------
-	DATA				   245754     241163
-
-
 
 <br/>
 
-**FORCE_LOGGING**
+**ENABLE FORCE LOGGING**
 
 
 	SQL> select force_logging from v$database;

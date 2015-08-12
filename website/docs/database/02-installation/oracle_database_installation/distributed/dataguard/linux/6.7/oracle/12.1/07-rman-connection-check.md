@@ -11,8 +11,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-co
 
 	$ rman target sys/manager@primary_orcl
 
-- manager - мой пароль, созданный при инсталляции базы данных
-
+manager - мой пароль, созданный при инсталляции базы данных
 
 	$ rman target sys/manager@standby_orcl
 
@@ -30,3 +29,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-co
 
 	connected to target database: ORCL (DBID=1415171842)
 	connected to auxiliary database: ORCL (not mounted)
+
+
+
+	

@@ -31,14 +31,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/copy-pa
 
 <br/>
 
-<!--
 
-Зачем-то удалили файл паролей и создали новый. Возможно, чтобы просто показать.
+// Файл паролей можно создать следующей командой. Entries - ограничить максимальное количество подключений к базе (если ничего не путаю). Я не создавал новый файл паролей.
 
-orapwd fiel=orapwdlondon password=oracle entries=5
+	$ orapwd fiel=orapwdorcl password=oracle12 entries=5
 
-
--->
 
 
 Копирую файл паролей

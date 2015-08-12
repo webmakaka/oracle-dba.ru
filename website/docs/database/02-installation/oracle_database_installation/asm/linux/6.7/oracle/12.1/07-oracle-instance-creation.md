@@ -37,3 +37,15 @@ permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/oracle-instan
 
 	+ASM:/u01/oracle/grid/12.1:Y            # line added by Agent
 	ora121:/u01/oracle/database/12.1:Y              # line added by Agent
+
+
+
+
+
+<br/>
+
+	SQL> select name, total_mb, free_mb from v$asm_diskgroup;
+
+	NAME				 TOTAL_MB    FREE_MB
+	------------------------------ ---------- ----------
+	DATA				   245754     241163

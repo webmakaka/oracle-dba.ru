@@ -33,13 +33,14 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-sc
 
 <br/>
 
-fal_server - fatch archive log
+fal_server - fetch archive log
 
 <br/>
 
 	$ rman CHECKSYNTAX @rmanscript.rman
 
-<br/>
+
+Поехали:
 
 	$ rman target sys/manager@primary_orcl auxiliary sys/manager@standby_orcl @rmanscript.rman
 

@@ -15,6 +15,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 # В разработке!  
 
+<br/><br/>
+
 У меня нет environment, где бы я постоянно работал с dataguard. Здесь я постараюсь его настроить. Буду обновлять по мере появления новых знаний.
 
 В случае обнаружения ошибок, неточностей, опечаток или вам известны лучшие способы, пишите мне на адрес эл. почты:
@@ -32,6 +34,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 <div style="padding:10px; border:thin solid black;">
 
 Для информации:
+
+<br/>
 
 db_name - должно быть одинаковое на узлах  
 db_unique_name - должно быть разными на узлах  
@@ -80,6 +84,10 @@ db_unique_name - должно быть разными на узлах
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-script-for-duplicate-instance/">Создание rman скрипта для дупликата и его выполнение</a></li>
 
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps/">Шаги, выполняемые после создания дупликата</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-primary/">Шаги, выполняемые после создания дупликата на Primary</a></li>
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-standby-redologs/">Создание standby redologs</a></li>
+
+
 
 </ul>
