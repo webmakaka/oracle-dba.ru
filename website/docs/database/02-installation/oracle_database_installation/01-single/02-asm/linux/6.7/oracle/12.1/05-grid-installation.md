@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция GRID
-permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/grid-installation/
+permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/grid-installation/
 ---
 
 

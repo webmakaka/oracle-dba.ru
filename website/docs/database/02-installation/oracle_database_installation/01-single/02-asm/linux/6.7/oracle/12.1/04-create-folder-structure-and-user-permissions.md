@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание структуры каталогов и назначение необходимых прав
-permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/create-folder-structure-and-user-permissions/
+permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/create-folder-structure-and-user-permissions/
 ---
 
 

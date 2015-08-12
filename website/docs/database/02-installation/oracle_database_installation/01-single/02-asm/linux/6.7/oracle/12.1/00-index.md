@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase 12c Release 1 x86 64 bit в операционной системе Oracle Linux 6.4 x86_64
-permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/
+permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/
 ---
 
 # [Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]
@@ -62,13 +62,13 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 	<li>Настройка актуального времени</li>
 
-	<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/asmlib-installation/">Инсталляция ASMLIB для работы ASM</a></li>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/asmlib-installation/">Инсталляция ASMLIB для работы ASM</a></li>
 
-	<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/">Конфигурурование системных пользователей, настройка параметров системы</a></li>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/">Конфигурурование системных пользователей, настройка параметров системы</a></li>
 
-	<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/prepare-asm-disks/">Подготовка ASM дисков к инсталляции базы данных</a></li>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare-asm-disks/">Подготовка ASM дисков к инсталляции базы данных</a></li>
 
-	<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/create-folder-structure-and-user-permissions/">Создание структуры каталогов и назначение необходимых прав</a></li>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/create-folder-structure-and-user-permissions/">Создание структуры каталогов и назначение необходимых прав</a></li>
 
 	<li>Автозапуск только выбранных программ</li>
 
@@ -84,7 +84,7 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 <h2>Инсталляция GRID:</h2>
 
 <ul>
-	<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/grid-installation/">Инсталляция GRID</a></li>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/grid-installation/">Инсталляция GRID</a></li>
 
 </ul>
 
@@ -96,7 +96,7 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 <h2>Инсталляция СУБД Oracle (DataBase SoftWare):</h2>
 <ul>
 
-	<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/oracle-database-software-installation/">Инсталляция СУБД Oracle (DataBase SoftWare)</a></li>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/oracle-database-software-installation/">Инсталляция СУБД Oracle (DataBase SoftWare)</a></li>
 
 </ul>
 
@@ -107,5 +107,5 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 <h2>Создание экземпляра базы данных (Instance):</h2>
 <ul>
 
-	<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/oracle-instance-creation/">Создание экземпляра базы данных (Instance)</a></li>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/oracle-instance-creation/">Создание экземпляра базы данных (Instance)</a></li>
 </ul>

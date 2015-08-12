@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Конфигурурование системных пользователей, настройка параметров системы
-permalink: /oracle-database-installation/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/
+permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/
 ---
 
 

@@ -61,12 +61,12 @@ permalink: /oracle-database-installation/
 <br/>
 <br/>
 
-<strong>Дополнительно:</strong>
+<strong>Дополнительно инсталляция с использованием ASM:</strong>
 <br/><br/>
 
 <ul>
 
-<li><a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/">Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID</a></li>
+<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID</a></li>
 
 </ul>
 
