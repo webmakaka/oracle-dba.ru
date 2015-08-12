@@ -25,7 +25,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	    (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
 	    (CONNECT_DATA =
 	      (SERVER = DEDICATED)
-	      (SERVICE_NAME = orcl)
+	      (SERVICE_NAME = orcl12)
 	    )
 	  )
 
@@ -35,7 +35,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	    (ADDRESS = (PROTOCOL = TCP)(HOST = piter.localdomain)(PORT = 1521))
 	    (CONNECT_DATA =
 	      (SERVER = DEDICATED)
-	      (SERVICE_NAME = orcl)
+	      (SERVICE_NAME = orcl12)
 	    )
 	  )
 
@@ -68,11 +68,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 
 	$ lsnrctl stop
 
-<br/>	
+<br/>
 
 	$ lsnrctl start
 
-	LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 12-AUG-2015 12:21:15
+	LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 12-AUG-2015 12:32:19
 
 	Copyright (c) 1991, 2014, Oracle.  All rights reserved.
 
@@ -89,7 +89,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	------------------------
 	Alias                     LISTENER
 	Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production
-	Start Date                12-AUG-2015 12:21:15
+	Start Date                12-AUG-2015 12:32:19
 	Uptime                    0 days 0 hr. 0 min. 0 sec
 	Trace Level               off
 	Security                  ON: Local OS Authentication

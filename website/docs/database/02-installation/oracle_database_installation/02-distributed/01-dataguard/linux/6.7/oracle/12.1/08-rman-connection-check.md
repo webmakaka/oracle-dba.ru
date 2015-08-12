@@ -7,18 +7,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-co
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Проверка подключения RMAN к обоим Instance
 
 
-### Primary и StandBy
-
-	$ rman target sys/manager@primary_orcl
-
-manager - мой пароль, созданный при инсталляции базы данных
-
-	$ rman target sys/manager@standby_orcl
-
-
-<br/>
 
 ### Primary
+
+
+manager - мой пароль, созданный при инсталляции базы данных
 
 
 	$ rman target sys/manager@primary_orcl auxiliary sys/manager@standby_orcl
@@ -29,3 +22,18 @@ manager - мой пароль, созданный при инсталляции 
 
 	connected to target database: ORCL (DBID=1415171842)
 	connected to auxiliary database: ORCL (not mounted)
+
+
+
+<br/>
+
+### Если не заработало, то можно на Primary и StandBy повыполнять отдельно команды:
+
+	$ rman target sys/manager@primary_orcl
+
+<br/>
+
+	$ rman target sys/manager@standby_orcl
+
+
+	<br/>
