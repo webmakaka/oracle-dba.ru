@@ -9,31 +9,11 @@ permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/grid-i
 
 
 
-
 Войдите в систему пользователем, от имени которого будет будет происходить инсталляция базы данных.
 
 	# su - oracle12
 
-
-Копирую дистрибутивы во временный каталог /tmp/oracle/12.1/
-
-	$ cd /tmp/oracle/12.1/
-
 <br/>
-
-	$ ls
-	linuxamd64_12102_database_1of2.zip  linuxamd64_12102_grid_1of2.zip
-	linuxamd64_12102_database_2of2.zip  linuxamd64_12102_grid_2of2.zip
-
-
-<br/>
-
-	$ unzip linuxamd64_12102_grid_1of2.zip; unzip linuxamd64_12102_grid_2of2.zip
-	$ unzip linuxamd64_12102_database_1of2.zip; unzip linuxamd64_12102_database_2of2.zip
-
-<br/>
-
-	$ cd ~
 
 	$ . asm.sh
 
@@ -249,15 +229,3 @@ permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/grid-i
 <br/>
 
 	SQL> select name, path from v$asm_disk;
-
-
-Для запуска консоли для работы с ASM дисками, выполните команду (если нужно)
-
-	$ asmca
-
-
-
-<br/>
-
-    $ asmcmd
-    ASMCMD> lsdg

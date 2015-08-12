@@ -1,0 +1,76 @@
+---
+layout: page
+title: Создание экземпляра базы данных (Instance)
+permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/oracle-instance-creation/
+---
+
+# <a href="/oracle-database-installation/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Создание экземпляра базы данных (Instance)
+
+
+	$ dbca
+
+
+<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_01.png" border="0" alt="oracle database software installation"><br/><br/>
+
+
+<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_02.png" border="0" alt="oracle database software installation"><br/><br/>
+
+
+<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_03.png" border="0" alt="oracle database software installation"><br/><br/>
+
+
+<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_04.png" border="0" alt="oracle database software installation"><br/><br/>
+
+<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_05.png" border="0" alt="oracle database software installation"><br/><br/>
+
+
+<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_06.png" border="0" alt="oracle database software installation"><br/><br/>
+
+
+<br/>
+<br/>
+
+Узнать порт подключения к EM:
+
+	SQL> select dbms_xdb_config.gethttpsport() from dual;
+
+	DBMS_XDB_CONFIG.GETHTTPSPORT()
+	------------------------------
+				  5500
+
+
+
+Можно подключиться к EM:  
+https://192.168.1.11:5500/em/
+
+
+
+
+
+
+### Пос инсталляционные шаги
+
+
+
+	$ vi /etc/oratab
+
+<br/>
+
+	+ASM:/u01/oracle/grid/12.1:N
+	orcl12:/u01/oracle/database/12.1:N
+
+меняю на
+
+	+ASM:/u01/oracle/grid/12.1:Y
+	orcl12:/u01/oracle/database/12.1:Y
+
+
+
+<br/>
+
+	SQL> select name, total_mb, free_mb from v$asm_diskgroup;
+
+	NAME				 TOTAL_MB    FREE_MB
+	------------------------------ ---------- ----------
+	DATA				   163836     159704
+	ARCH				    81918      81452

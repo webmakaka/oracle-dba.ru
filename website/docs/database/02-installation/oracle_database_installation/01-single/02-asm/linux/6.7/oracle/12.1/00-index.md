@@ -58,6 +58,9 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 <ul>
 
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare/">Установка hostname и hosts</a></li>
+
+
 	<li>Установка параметров ОС перед стартом</li>
 
 	<li>Настройка актуального времени</li>
@@ -74,6 +77,8 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 	<li>Настройка Display Manger</li>
 
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/extract-oracle-distrib-from-archives/">Извлечение дистрибутивов базы Oracle из архивов</a></li>
+
 </ul>
 
 
@@ -87,6 +92,17 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/grid-installation/">Инсталляция GRID</a></li>
 
 </ul>
+
+
+<br/><br/>
+
+<h2>Создание дисковых групп ASM:</h2>
+
+<ul>
+	<li><a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/asm-diskgroup-creation/">Создание дисковых групп ASM</a></li>
+
+</ul>
+
 
 
 

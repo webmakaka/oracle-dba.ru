@@ -217,8 +217,8 @@ https://docs.oracle.com/html/E10880_02/giinstaller_errormessages.htm
 
 	    export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-	    export ORACLE_SID=ora121
-	    export ORACLE_UNQNAME=ora121
+	    export ORACLE_SID=orcl12
+	    export ORACLE_UNQNAME=orcl12
 	    export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
 	    export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
