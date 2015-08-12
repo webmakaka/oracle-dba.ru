@@ -87,11 +87,11 @@ permalink: /docs/business-intelligence/oracle-bi-server-installation/
 
 <br/>
 
-	$ export DISPLAY=192.168.1.5:0.0<br/>
+	$ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 
-	$ ./runInstaller<br/>
+	$ ./runInstaller
 
 
 <br/><br/>

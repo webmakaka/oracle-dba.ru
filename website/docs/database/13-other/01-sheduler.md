@@ -19,7 +19,7 @@ Sheduler - помогает автоматизировать задания вн
 </ul>
 
 
-    SQL> set pagesize 0;<br/>
+    SQL> set pagesize 0;
     SQL> SELECT owner, job_name, job_type FROM dba_scheduler_jobs;
 
 <br/>

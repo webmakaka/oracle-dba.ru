@@ -161,5 +161,5 @@ SP2-0667: Message file sp1<lang>.msb not found<br/>
 
 <br/>
 
-	SQL> conn system/system@oracle11 <br/>
+	SQL> conn system/system@oracle11
 	Connected.

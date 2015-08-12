@@ -221,7 +221,7 @@ Patch already installed: 2LZX in profile: Default
     $ cd /opt/mw1033/wlserver103/server/bin
     $ . ./setWLSEnv.sh
 
-    <br/>
+<br/>
 
     $ java weblogic.version
 

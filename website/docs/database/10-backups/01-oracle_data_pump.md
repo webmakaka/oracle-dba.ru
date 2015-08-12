@@ -386,7 +386,8 @@ INCLUDE=TABLE:”NOT LIKE ‘PER%’”
 
 
 <br/>
-<h2>Мониторинг выполнения заданий Data Pump</h2>
+
+## Мониторинг выполнения заданий Data Pump
 
 Наиболее важными для мониторинга за выполнением заданий Data Pump являются
 представления DBA_DATAPUMP_JOBS и  DBA_DATAPUMP_SISSIONS.
@@ -429,7 +430,7 @@ INCLUDE=TABLE:”NOT LIKE ‘PER%’”
 Ниже приведен типичный сценарий, который можнро использовать для получения информаци
 о том, сколько времени осталось до завершения выполенения задания Data Pump:
 
-    SQL> SELECT opname, target_desc, sofar, totalwork, start_time, time_remaining<br/>
+    SQL> SELECT opname, target_desc, sofar, totalwork, start_time, time_remaining
     FROM v$session_longops;
 
 <ul>
