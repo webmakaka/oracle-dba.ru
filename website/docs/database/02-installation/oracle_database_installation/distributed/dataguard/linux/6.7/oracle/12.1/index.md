@@ -16,18 +16,18 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 Для информации:
 
-db_name - одинаковое на узлах  
+db_name - должно быть одинаковое на узлах  
 db_unique_name - должно быть разными на узлах  
 
 
 <br/>
 
 
-1) Устанавливаю 2 сервера как здесь:
+1) Устанавливаю 2 сервера как здесь:  
 http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
 
 
-На втором не создаю instance. Он будет скопирован с первого.
+На втором (StandBy) не создаю instance. Он будет скопирован с первого.
 
 
 Primary:  
@@ -41,12 +41,18 @@ Instance: orcl
 IP: 192.168.1.12  
 
 
+<br/>
+
+### Следующие шаги выполняются на Primary и Standby
+
+
 Все время забываю, где прописывается hostname сервера
 
 	# vi /etc/sysconfig/network
 
 **После переименования, лучше перезагрузить сервер или каким-то способом применить изменения, или иначе в конфигах будет прописано что-то не то и придется их потом еще и править**
 
+<br/>
 
 Устанавливаю пакет scp для копирования данных между серверами на обоих узлах
 
@@ -101,9 +107,11 @@ IP: 192.168.1.12
 	#### Oracle Parameters ###########################
 
 
+<br/>
+
 ### Primary
 
-### ENABLE ARCHIVELOG
+**ENABLE ARCHIVELOG**
 
 
 	SQL> archive log list;
@@ -140,9 +148,9 @@ IP: 192.168.1.12
 
 
 
+<br/>
 
-
-### FORCE_LOGGING
+**FORCE_LOGGING**
 
 
 	SQL> select force_logging from v$database;
@@ -165,12 +173,11 @@ IP: 192.168.1.12
 	---------------------------------------
 	YES
 
-================================================================================
-================================================================================
 
 
+<br/>
 
-// На обоих серверах
+### На обоих серверах
 
 
 	$ cd /u01/oracle/database/12.1/network/admin
@@ -202,29 +209,30 @@ IP: 192.168.1.12
 
 
 
+<br/>
 
-// Standby
+### На Standby
 
 
 $ vi listener.ora
 
 <br/>
 
-LISTENER =
-(ADDRESS_LIST=
-		(ADDRESS=(PROTOCOL=tcp)(HOST=piter.localdomain)(PORT=1521))
-		(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
+	LISTENER =
+	(ADDRESS_LIST=
+			(ADDRESS=(PROTOCOL=tcp)(HOST=piter.localdomain)(PORT=1521))
+			(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
 
-SID_LIST_LISTENER=
-			(SID_LIST=
-					(SID_DESC=
-					(GLOBAL_DBNAME=orcl)
-					(ORACLE_HOME=/u01/oracle/database/12.1)
-					(SID_NAME=orcl)
-					)
-			)
+	SID_LIST_LISTENER=
+				(SID_LIST=
+						(SID_DESC=
+						(GLOBAL_DBNAME=orcl)
+						(ORACLE_HOME=/u01/oracle/database/12.1)
+						(SID_NAME=orcl)
+						)
+				)
 
-
+<br/>
 
 	$ lsnrctl stop
 	$ lsnrctl start
@@ -232,7 +240,7 @@ SID_LIST_LISTENER=
 
 <br/>
 
-С обоих серверов:
+**С обоих серверов**:
 
 	$ tnsping primary_orcl
 	$ tnsping standby_orcl
@@ -246,7 +254,10 @@ SID_LIST_LISTENER=
 
 <br/>
 
-### Passwordfile
+### На Primary
+
+
+**Passwordfile**
 
 	SQL> show parameter remote_login_passwordfile
 
@@ -257,14 +268,12 @@ SID_LIST_LISTENER=
 
 <br/>
 
-SQL> exit
+	SQL> exit
 
 
 <br/>
 
 	$ chmod 4640 $ORACLE_HOME/dbs/orapworcl
-
-
 
 <br/>
 
@@ -277,14 +286,16 @@ orapwd fiel=orapwdlondon password=oracle entries=5
 
 -->
 
+<br/>
 
 ### Primary
 
-	Копирую файл паролей
+Копирую файл паролей
 
 	$ scp $ORACLE_HOME/dbs/orapworcl oracle12@piter:$ORACLE_HOME/dbs/orapworcl
 
 
+<br/>
 
 ### Standby
 
@@ -314,8 +325,8 @@ orapwd fiel=orapwdlondon password=oracle entries=5
 	------------------------------------
 	STARTED
 
-=================================================================================
-=================================================================================
+
+<br/>
 
 ### Primary и StandBy
 
@@ -326,6 +337,8 @@ orapwd fiel=orapwdlondon password=oracle entries=5
 
 	$ rman target sys/manager@standby_orcl
 
+
+<br/>
 
 ### Primary
 
@@ -340,17 +353,18 @@ orapwd fiel=orapwdlondon password=oracle entries=5
 	connected to auxiliary database: ORCL (not mounted)
 
 
-=================================================================================
-=================================================================================
 
-
+<br/>
 
 # Creation of the standby with Rman Duplicate
 
 Нужно лучше разобраться с параметрами!
 
 
-На Primary
+<br/>
+
+
+### На Primary
 
 	SQL> show parameter audit
 
@@ -363,14 +377,18 @@ orapwd fiel=orapwdlondon password=oracle entries=5
 	unified_audit_sga_queue_size	     integer	 1048576
 
 
-На Standby
+<br/>
+
+### На Standby
 
 
 	$ mkdir -p /u01/oracle/admin/orcl/adump
 
 
 
-На Primary
+<br/>
+
+### На Primary
 
 <br/>
 
@@ -415,12 +433,13 @@ fal_server - fatch archive log
 	Recovery Manager complete.
 
 
-
+<br/>
 
 # Post Duplicate Steps
 
+<br/>
 
-Primary
+### Primary
 
 
 	SQL> show parameter arch
@@ -450,9 +469,9 @@ Primary
 	SQL> show parameter remote_login_passwordfile
 
 
-==================
+<br/>
 
-НА Primary
+### НА Primary
 
 
 	SQL> select max (bytes), count (1) from v$log;
@@ -467,83 +486,76 @@ Primary
 	$ cd ~
 	$ . asm.sh
 
+<br/>
 
-$ asmcmd
-
-
-ASMCMD> ls
-DATA/
-
-
-ASMCMD> mkdir +DATA/ORCL/STANDBYLOG/
-
-ASMCMD> exit
+	$ asmcmd
+	ASMCMD> mkdir +DATA/ORCL/STANDBYLOG/
+	ASMCMD> exit
 
 
+<br/>
 
-source ~/.bash_profile
 
-sqlplus / as sysdba
+	$ source ~/.bash_profile
 
-alter system set standby_file_management=manual scope=both;
+	$ sqlplus / as sysdba
+
+	$ alter system set standby_file_management=manual scope=both;
 
 Количество должно быть на 1 больше, чем в primary обычных логфайлов.
 
 
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/ORCL/STANDBYLOG/stby_4.log' SIZE 100M;
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/ORCL/STANDBYLOG/stby_5.log' SIZE 100M;
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 '+DATA/ORCL/STANDBYLOG/stby_6.log' SIZE 100M;
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 '+DATA/ORCL/STANDBYLOG/stby_7.log' SIZE 100M;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/ORCL/STANDBYLOG/stby_4.log' SIZE 52428800;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/ORCL/STANDBYLOG/stby_5.log' SIZE 52428800;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 '+DATA/ORCL/STANDBYLOG/stby_6.log' SIZE 52428800;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 '+DATA/ORCL/STANDBYLOG/stby_7.log' SIZE 52428800;
 
+<br/>
 
-alter system set standby_file_management=auto scope=both;
-
-
-
-==============================
-
-
-Standby
-
+	SQL> alter system set standby_file_management=auto scope=both;
 
 
 <br/>
+
+### НА Standby
 
 	$ cd ~
 	$ . asm.sh
 
 
-$ asmcmd
+<br/>
 
-ASMCMD> mkdir +DATA/STANDBY/STANDBYLOG/
+	$ asmcmd
+	ASMCMD> mkdir +DATA/STANDBY/STANDBYLOG/
+	ASMCMD> exit
+
+<br/>
+
+	$ source ~/.bash_profile
 
 
-ASMCMD> exit
+<br/>
 
 
+	$ sqlplus / as sysdba
 
-source ~/.bash_profile
+	SQL> alter system set standby_file_management=manual scope=both;
 
-sqlplus / as sysdba
-
-alter system set standby_file_management=manual scope=both;
 
 Количество должно быть на 1 больше, чем в primary обычных логфайлов.
 
 
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/STANDBY/STANDBYLOG/stby_4.log' SIZE 100M;
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/STANDBY/STANDBYLOG/stby_5.log' SIZE 100M;
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 '+DATA/STANDBY/STANDBYLOG/stby_6.log' SIZE 100M;
-	ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 '+DATA/STANDBY/STANDBYLOG/stby_7.log' SIZE 100M;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/STANDBY/STANDBYLOG/stby_4.log' SIZE 52428800;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/STANDBY/STANDBYLOG/stby_5.log' SIZE 52428800;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 '+DATA/STANDBY/STANDBYLOG/stby_6.log' SIZE 52428800;
+	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 '+DATA/STANDBY/STANDBYLOG/stby_7.log' SIZE 52428800;
 
 
-alter system set standby_file_management=auto scope=both;
+	SQL> alter system set standby_file_management=auto scope=both;
 
 
+<br/>
 
-=================================================
-=================================================
-
-PRIMARY
+### PRIMARY
 
 	$ cd /u01/oracle/database/12.1/network/admin
