@@ -39,8 +39,9 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-du
 
 	$ alter system set standby_file_management=manual scope=both;
 
-Количество должно быть на 1 больше, чем в primary обычных логфайлов.
+<br/>
 
+Количество должно быть на 1 больше, чем в primary обычных редологфайлов (смотри первый запрос).
 
 	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/ORCL/STANDBYLOG/stby_4.log' SIZE 52428800;
 	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/ORCL/STANDBYLOG/stby_5.log' SIZE 52428800;
@@ -55,6 +56,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-du
 <br/>
 
 ### НА Standby
+
+Повторяем тоже самое на standby
 
 	$ cd ~
 	$ . asm.sh
@@ -79,7 +82,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-du
 	SQL> alter system set standby_file_management=manual scope=both;
 
 
-Количество должно быть на 1 больше, чем в primary обычных логфайлов.
+Количество должно быть на 1 больше, чем в primary обычных редологфайлов (смотри первый запрос).
 
 
 	SQL> ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/STANDBY/STANDBYLOG/stby_4.log' SIZE 52428800;

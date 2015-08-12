@@ -155,7 +155,7 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
 Реального восстановления при этом не происходит.
 
 
-    RMAN> RESTORE DATABASE VALIDATE;<br/>
+    RMAN> RESTORE DATABASE VALIDATE;
     RMAN> RESTORE DATABASE VALIDATE CHECK LOGICAL;
 
 

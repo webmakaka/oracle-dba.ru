@@ -11,6 +11,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 ## Помогайте, кому нечем заняться!  
 
+## Пока не работает!!!
+
 # В разработке!  
 
 # В разработке!  
@@ -64,7 +66,6 @@ db_unique_name - должно быть разными на узлах
 
 ## Подготовка дупликата:
 
-
 <ul>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/">Настройка сетевых служб Oracle для создания standby дупликата</a></li>
@@ -88,6 +89,6 @@ db_unique_name - должно быть разными на узлах
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-standby-redologs/">Создание standby redologs</a></li>
 
-
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-redo-apply/">Проверка применения redo</a></li>
 
 </ul>

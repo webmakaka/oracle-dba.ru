@@ -48,8 +48,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 	vi /home/oracle12/.bash_profile
 
 <br/>
-
-	#### Oracle Parameters ###########################
+	#######################################################
+	#### Oracle 12.1 Parameters ###########################
 
 		umask 022
 
@@ -65,11 +65,19 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 		export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
 		export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
+
+		# rlwrap aliases
+
 		alias sqlplus='rlwrap sqlplus'
 		alias rman='rlwrap rman'
 
-	#### Oracle Parameters ###########################
 
+		# my alases
+
+		alias alert='tail -f $ORACLE_BASE/diag/rdbms/$ORACLE_SID/$ORACLE_SID/trace/alert_$ORACLE_SID.log'
+
+	#### Oracle 12.1 Parameters ###########################
+	#######################################################
 
 <br/>
 
