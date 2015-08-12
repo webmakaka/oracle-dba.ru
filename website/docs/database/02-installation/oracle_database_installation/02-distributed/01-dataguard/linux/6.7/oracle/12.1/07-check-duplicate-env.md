@@ -29,4 +29,4 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-d
 ### На Standby
 
 
-	$ mkdir -p /u01/oracle/admin/orcl/adump
+	$ mkdir -p /u01/oracle/admin/orcl12/adump

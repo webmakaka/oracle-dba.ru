@@ -11,8 +11,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/info-ab
 <br/>
 
 
-1) Устанавливаю 2 сервера как здесь:  
-http://oracle-dba.ru/oracle-database-installation/asm/linux/6.7/oracle/12.1/
+1) Устанавливаю 2 сервера как <a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 
 На втором (StandBy) не создаю instance. Он будет скопирован с первого.

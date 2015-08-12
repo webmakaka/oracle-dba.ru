@@ -29,7 +29,3 @@ manager - мой пароль, созданный при инсталляции 
 
 	connected to target database: ORCL (DBID=1415171842)
 	connected to auxiliary database: ORCL (not mounted)
-
-
-
-	

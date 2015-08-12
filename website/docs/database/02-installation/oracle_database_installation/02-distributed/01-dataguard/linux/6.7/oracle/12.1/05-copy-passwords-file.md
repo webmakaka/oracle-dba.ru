@@ -27,7 +27,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/copy-pa
 
 <br/>
 
-	$ chmod 4640 $ORACLE_HOME/dbs/orapworcl
+	$ chmod 4640 $ORACLE_HOME/dbs/orapworcl12
 
 <br/>
 
@@ -40,7 +40,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/copy-pa
 
 Копирую файл паролей
 
-	$ scp $ORACLE_HOME/dbs/orapworcl oracle12@piter:$ORACLE_HOME/dbs/orapworcl
+	$ scp $ORACLE_HOME/dbs/orapworcl12 oracle12@piter:$ORACLE_HOME/dbs/orapworcl12
 
 <br/>
 
