@@ -21,17 +21,57 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-sc
 
 <br/>
 
-	run {
-	    allocate channel prmy1 type disk;
-		allocate auxiliary channel stby type disk;
-		duplicate target database for standby from active database spfile
-			set db_unique_name='slave';
-	    }
 
+The following example illustrates how to use DUPLICATE for active duplication. This example requires the NOFILENAMECHECK option because the primary database files have the same names as the standby database files. The SET clauses for SPFILE are required for log shipping to work properly. The db_unique_name must be set to ensure that the catalog and Data Guard can identify this database as being different from the primary.
+
+
+DUPLICATE TARGET DATABASE
+  FOR STANDBY
+  FROM ACTIVE DATABASE
+  DORECOVER
+  SPFILE
+    SET "db_unique_name"="slave" COMMENT "Is a duplicate"
+    SET LOG_ARCHIVE_DEST_2="service=slave ASYNC REGISTER
+     VALID_FOR=(online_logfile,primary_role)"
+	SET FAL_SERVER="master" COMMENT "Is primary"
+    SET FAL_CLIENT="slave" COMMENT "Is standby"
+  NOFILENAMECHECK;
+
+
+RMAN automatically copies the server parameter file to the standby host, starts the auxiliary instance with the server parameter file, restores a backup control file, and copies all necessary database files and archived redo logs over the network to the standby host. RMAN recovers the standby database, but does not place it in manual or managed recovery mode.
 
 DORECOVER option to recover the database after standby creation
 
 
+
+run {
+	allocate channel prmy1 type disk;
+	allocate auxiliary channel stby type disk;
+	DUPLICATE TARGET DATABASE
+	  FOR STANDBY
+	  FROM ACTIVE DATABASE
+	  DORECOVER
+	  SPFILE
+	    SET "db_unique_name"="slave" COMMENT "Is a duplicate"
+	    SET LOG_ARCHIVE_DEST_2="service=slave ASYNC REGISTER
+	     VALID_FOR=(online_logfile,primary_role)"
+		SET FAL_SERVER="master" COMMENT "Is primary"
+	    SET FAL_CLIENT="slave" COMMENT "Is standby"
+		set standby_file_management='AUTO'
+	  NOFILENAMECHECK;
+}
+
+
+==========================================================
+==========================================================
+
+
+run {
+	allocate channel prmy1 type disk;
+	allocate auxiliary channel stby type disk;
+	duplicate target database for standby from active database spfile
+		set db_unique_name='slave';
+	}
 
 
 	run {
@@ -74,6 +114,10 @@ fal_server - fetch archive log
 	Recovery Manager complete.
 
 
+<!--
 
+SQL>  select to_char(CURRENT_SCN) CURRENT_SCN FROM V$DATABASE;
+
+-->
 
 http://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm

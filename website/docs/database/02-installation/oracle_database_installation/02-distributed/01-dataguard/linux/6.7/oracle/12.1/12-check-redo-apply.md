@@ -15,12 +15,21 @@ background_dump_dest - расположение alert log файла
 
 ### НА Primary и Standby
 
-	$ cd /u01/oracle/diag/rdbms/orcl12/orcl12/trace
+	$ cd /u01/oracle/diag/rdbms/master/master/trace/
+
+
 
 Удаляю содержимое alert лога
 
-	$ cp alert_orcl12.log alert_orcl12.log.bkp
-	$ cat /dev/null > alert_orcl12.log
+	$ cp alert_master.log alert_master.log.bkp
+	$ cat /dev/null > alert_master.log
+
+
+
+
+	$ cd /u01/oracle/diag/rdbms/slave/slave/trace
+	$ cp alert_slave.log alert_slave.log.bkp
+	$ cat /dev/null > alert_slave.log
 
 
 ### НА Primary
@@ -30,7 +39,7 @@ background_dump_dest - расположение alert log файла
 	SQL> alter system switch logfile;
 
 
-	$ tail -f /u01/oracle/diag/rdbms/orcl12/orcl12/trace/alert_orcl12.log
+	$ tail -f /u01/oracle/diag/rdbms/master/master/trace/alert_master.log
 
 
 	Thread 1 advanced to log sequence 13 (LGWR switch)
@@ -41,7 +50,7 @@ background_dump_dest - расположение alert log файла
 
 ### НА Secondary
 
-	$ tail -f /u01/oracle/diag/rdbms/orcl12/orcl12/trace/alert_orcl12.log
+	$ tail -f /u01/oracle/diag/rdbms/slave/slave/trace/alert_slave.log
 
 
 Мда. Ничего не заработало!!!

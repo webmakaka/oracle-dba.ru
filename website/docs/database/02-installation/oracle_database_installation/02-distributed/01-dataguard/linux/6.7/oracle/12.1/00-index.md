@@ -5,6 +5,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 ---
 
 
+<a href="http://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm"> Creating a Standby Database with Active Database Duplication</a>
+
+
+
+
 # В разработке!  
 
 # В разработке!  
@@ -16,6 +21,9 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 # В разработке!  
 
 # В разработке!  
+
+
+
 
 
 Технология Oracle Data Guard предалагает решение для обеспечения высокой доступности, повышенной производительности и автоматического преодоления последствий сбоя.
