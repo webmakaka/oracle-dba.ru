@@ -265,8 +265,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-r
 <br/>
 
 
-		SQL> SELECT RECOVERY_MODE FROM V$ARCHIVE_DEST_STATUS WHERE DEST_ID=2;
+	SQL> SELECT RECOVERY_MODE FROM V$ARCHIVE_DEST_STATUS WHERE DEST_ID=2;
 
-		RECOVERY_MODE
-		-----------------------
-		IDLE
+	RECOVERY_MODE
+	-----------------------
+	IDLE
