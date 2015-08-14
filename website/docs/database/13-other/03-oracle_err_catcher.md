@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ловец ошибок
-permalink: /docs/architecture/other/oracle_err_catcher/
+permalink: /docs/architecture/other/oracle-err-catcher/
 ---
 
 

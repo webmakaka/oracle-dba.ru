@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Резервное копирование баз данных Oracle
-permalink: /docs/architecture/backups/oracle_database_backup/
+permalink: /docs/architecture/backups/oracle-database-backup/
 ---
 
 

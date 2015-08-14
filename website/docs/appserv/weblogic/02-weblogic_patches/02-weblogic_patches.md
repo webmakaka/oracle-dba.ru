@@ -1,7 +1,7 @@
 ---
 layout: page
 title: О патчах для Oracle WebLogic Server
-permalink: /docs/appserv/weblogic/weblogic_patches/
+permalink: /docs/appserv/weblogic/weblogic-patches/
 ---
 
 

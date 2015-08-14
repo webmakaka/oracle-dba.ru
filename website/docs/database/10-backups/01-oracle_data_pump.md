@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Утилиты экспорта и импорта данных Data Pump
-permalink: /docs/architecture/backups/data_pump/
+permalink: /docs/architecture/backups/oracle-data-pump/
 ---
 
 <h2>Утилиты экспорта и импорта данных Data Pump</h2>

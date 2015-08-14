@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Расширение табличных пространств (создание дополнительных файлов для табличных пространств).
-permalink: /docs/architecture/tablespaces/additional_tablespace/
+permalink: /docs/architecture/tablespaces/additional-tablespace/
 ---
 
 

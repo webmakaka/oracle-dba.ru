@@ -101,10 +101,18 @@ permalink: /docs/architecture/networking/
     lsnrctl restart
 
 
-
 <br/>
 
 ### Информация о Listener из командной строки:
+
+    $ ps -edf | grep tns
+	root        13     2  0 Aug09 ?        00:00:00 [netns]
+	oracle12  6604     1  0 Aug09 ?        00:00:02 /u01/oracle/grid/12.1/bin/tnslsnr LISTENER -no_crs_notify -inherit
+	oracle12 16991 14456  0 09:26 pts/1    00:00:00 grep tns
+
+<br/>
+
+### Информация о Listener из консоли sqlplus:
 
 <br/>
 
@@ -113,6 +121,22 @@ permalink: /docs/architecture/networking/
     NAME				     TYPE	 VALUE
     ------------------------------------ ----------- ------------------------------
     local_listener			     string	 LISTENER_ORCL12
+
+
+<br/>
+
+    SQL> show parameter listener
+
+	NAME				     TYPE
+	------------------------------------ ---------------------------------
+	VALUE
+	------------------------------
+	listener_networks		     string
+
+	local_listener			     string
+
+	remote_listener 		     string
+
 
 <br/>
 

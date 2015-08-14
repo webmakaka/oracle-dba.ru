@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Собрать статистику пользовательской сессии
-permalink: /docs/architecture/performance/session_statistic/
+permalink: /docs/architecture/performance/collect-session-statistics/
 ---
 
 

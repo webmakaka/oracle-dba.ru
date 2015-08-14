@@ -79,13 +79,13 @@ permalink: /sitemap/
         <a href="/docs/architecture/tablespaces/about-tablespaces/">Табличные пространства Oracle </a>
     </li>
     <li>
-        <a href="/docs/architecture/tablespaces/create_new_tablespace/">Создание табличных пространств</a>
+        <a href="/docs/architecture/tablespaces/create-new-tablespace/">Создание табличных пространств</a>
     </li>
     <li>
-        <a href="/docs/architecture/tablespaces/additional_tablespace/">Расширение табличных пространств (создание дополнительных файлов для табличных пространств)</a>
+        <a href="/docs/architecture/tablespaces/additional-tablespace/">Расширение табличных пространств (создание дополнительных файлов для табличных пространств)</a>
     </li>
     <li>
-        <a href="/docs/architecture/tablespaces/segments_extents_and_blocks/">Сегменты > Экстенты > Блоки</a>
+        <a href="/docs/architecture/tablespaces/segments-extents-and-blocks/">Сегменты > Экстенты > Блоки</a>
     </li>
     <li>
         <a href="/docs/architecture/tablespaces/undo-tablespace/">Команды для анализа использования UNDOTBS</a>
@@ -155,13 +155,13 @@ permalink: /sitemap/
 
 <ul>
     <li>
-        <a href="/docs/architecture/backups/data_pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
+        <a href="/docs/architecture/backups/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
     </li>
     <li>
         <a href="/docs/architecture/backups/oracle-11-transportable-tablespaces/">Транспортируемые табличные пространства в Oracle 11g</a>
     </li>
     <li>
-        <a href="/docs/architecture/backups/oracle_database_backup/">Резервное копирование баз данных Oracle</a>
+        <a href="/docs/architecture/backups/oracle-database-backup/">Резервное копирование баз данных Oracle</a>
     </li>
     <li>
         <a href="/docs/architecture/backups/oracle-rman/">Утилита RMAN (Recovery Manager)</a>
@@ -205,7 +205,7 @@ permalink: /sitemap/
         <a href="/docs/architecture/performance/performance-or-reliability/">Выбор между производительностью и надежностью ОRАСLЕ</a>
     </li>
     <li>
-        <a href="/docs/architecture/performance/session_statistic/">Собрать статистику пользовательской сессии</a>
+        <a href="/docs/architecture/performance/collect-session-statistics/">Собрать статистику пользовательской сессии</a>
     </li>
 </ul>
 
@@ -236,7 +236,7 @@ permalink: /sitemap/
         <a href="/docs/architecture/other/poisk-dublikatov/">Поиск одинаковых записей в базе данных</a>
     </li>
     <li>
-        <a href="/docs/architecture/other/oracle_err_catcher/">Создание ловца ошибок (тестим)</a>
+        <a href="/docs/architecture/other/oracle-err-catcher/">Создание ловца ошибок (тестим)</a>
     </li>
 </ul>
 
@@ -287,7 +287,7 @@ permalink: /sitemap/
         <a href="https://docs.google.com/document/d/11vBXmPQzIx2KnxuurIdVImCvyqwGca_u0j4gKmlVJuc/edit">Инсталляция сервера приложений Oracle Weblogic в операционной системе Oracle Linux</a>
     </li>
     <li>
-        <a href="/docs/appserv/weblogic/weblogic_patches/">О патчах для Oracle WebLogic Server</a>
+        <a href="/docs/appserv/weblogic/weblogic-patches/">О патчах для Oracle WebLogic Server</a>
     </li>
     <li>
         <a href="/docs/appserv/weblogic/weblogic-seminar/">Практический обучающий курс для партнеров Oracle по серверу приложений Weblogic</a>

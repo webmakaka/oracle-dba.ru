@@ -8,7 +8,9 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/queries
 
 
 
+	SQL> select name, db_unique_name, database_role, protection_mode from v$database;
 
+<br/>
 	SQL> SELECT name, value, datum_time, time_computed FROM V$DATAGUARD_STATS;
 
 <br/>

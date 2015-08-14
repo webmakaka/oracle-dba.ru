@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Сегменты > Экстенты > Блоки
-permalink: /docs/architecture/tablespaces/segments_extents_and_blocks/
+permalink: /docs/architecture/tablespaces/segments-extents-and-blocks/
 ---
 
 

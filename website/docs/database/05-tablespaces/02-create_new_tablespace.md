@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание табличных пространств
-permalink: /docs/architecture/tablespaces/create_new_tablespace/
+permalink: /docs/architecture/tablespaces/create-new-tablespace/
 ---
 
 <hr>
