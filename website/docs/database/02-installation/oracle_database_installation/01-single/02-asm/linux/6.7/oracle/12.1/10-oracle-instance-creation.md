@@ -21,6 +21,15 @@ permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/oracle
 <img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_02.png" border="0" alt="oracle database software installation"><br/><br/>
 
 
+<br/><br/>
+
+В режиме Advanced, можно более оптимально настроить параметры. Исключить из установки лишнее. Например, JVM, Enterprise Manager, Multimedia. Можно выделить побольше ресурсов памяти.  
+http://oracle-dba.ru/oracle-database-installation/linux/6.4/oracle/12.1/oracle-instance-creation/
+
+
+
+<br/><br/>
+
 <img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/04-oracle-instance-creation/oracle-instance-creation_03.png" border="0" alt="oracle database software installation"><br/><br/>
 
 

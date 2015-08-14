@@ -44,15 +44,9 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 <br/>
 
+**PRIMARY (moscow)**
 
-	$ vi /home/oracle12/.bash_profile
-
-
-
-<br/>
-
-**PRIMARY**
-
+	$ vi ~/.bash_profile
 
 <br/>
 
@@ -66,7 +60,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 		export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-		export ORACLE_SID=master
+		export ORACLE_SID=orcl12
 		export ORACLE_UNQNAME=master
 		export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
@@ -89,8 +83,24 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 	#######################################################
 
 
+<br/>
 
-**Standby**
+	$ source ~/.bash_profile
+
+
+<br/>
+
+
+**Standby (piter)**
+
+
+Разница только в ORACLE_UNQNAME и ссылке на alert.log
+(Путь до alert.log меняется при создании дупликата. Нужно как-то пофиксить позднее)
+
+
+<br/>
+
+$ vi ~/.bash_profile
 
 
 <br/>
@@ -105,7 +115,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 		export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-		export ORACLE_SID=slave
+		export ORACLE_SID=orcl12
 		export ORACLE_UNQNAME=slave
 		export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
@@ -126,3 +136,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 	#### Oracle 12.1 Parameters ###########################
 	#######################################################
+
+<br/>
+
+	$ source ~/.bash_profile

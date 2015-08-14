@@ -15,7 +15,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/startup
 
 Создаю pfile с единственным описанием - имя базы данных
 
-	$ echo DB_NAME=slave > initslave.ora
+	$ echo DB_NAME=${ORACLE_SID} > init${ORACLE_SID}.ora
 
 <br/>
 
@@ -23,7 +23,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/startup
 
 <br/>
 
-	SQL> startup nomount pfile=$ORACLE_HOME/dbs/initslave.ora
+	SQL> startup nomount pfile=$ORACLE_HOME/dbs/init${ORACLE_SID}.ora
 
 <br/>
 

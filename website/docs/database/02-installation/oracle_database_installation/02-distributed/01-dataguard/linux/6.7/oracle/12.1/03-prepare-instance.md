@@ -9,6 +9,26 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 ### Primary
 
+
+<br/>
+
+	SQL> show parameter db_name
+
+	NAME				     TYPE	 VALUE
+	------------------------------------ ----------- ------------------------------
+	db_name 			     string	 orcl12
+
+
+<br/>
+
+	SQL> show parameter db_unique_name
+
+	NAME				     TYPE	 VALUE
+	------------------------------------ ----------- ------------------------------
+	db_unique_name			     string	 master
+
+
+
 **ENABLE ARCHIVELOG**
 
 
@@ -28,7 +48,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 <br/>
 
-	SQL>  archive log list;
+	SQL> archive log list;
 	Database log mode	       Archive Mode
 	Automatic archival	       Enabled
 	Archive destination	       USE_DB_RECOVERY_FILE_DEST
@@ -41,6 +61,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 
 **ENABLE FORCE LOGGING**
 
+Режим force logging нужен для принудительной записи транзакций в redo logs даже для операций, выполняемых с опцией NOLOGGING. Отсутствие этого режима может привести к тому, что на standby базе будут повреждены некоторые файлы данных, т.к. при «накатке» архивных журналов из них нельзя будет получить данные о транзакциях, выполненных с опцией NOLOGGING.
 
 	SQL> select force_logging from v$database;
 

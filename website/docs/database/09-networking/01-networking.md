@@ -92,9 +92,28 @@ permalink: /docs/architecture/networking/
 
 
 <br/>
-<h3>Основные команды службы слушателя (Listener):</h3>
+
+### Основные команды службы слушателя (Listener):
 
     lsnrctl status
     lsnrctl stop
     lsnrctl start
     lsnrctl restart
+
+
+
+<br/>
+
+### Информация о Listener из командной строки:
+
+<br/>
+
+    SQL> show parameter local_listener;
+
+    NAME				     TYPE	 VALUE
+    ------------------------------------ ----------- ------------------------------
+    local_listener			     string	 LISTENER_ORCL12
+
+<br/>
+
+    SQL> alter system set local_listener='(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521)))' scope=both;

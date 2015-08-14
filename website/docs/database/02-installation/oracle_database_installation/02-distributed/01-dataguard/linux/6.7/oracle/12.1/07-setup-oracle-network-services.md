@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Настройка сетевых служб Oracle для создания standby дупликата
+title: Настройка сетевых служб Oracle для создания дупликата primary на standby
 permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/
 ---
 
-# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка сетевых служб Oracle для создания standby дупликата
+# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка сетевых служб Oracle для создания дупликата primary на standby
 
 
 ### Следующие шаги выполняются на Primary и Standby
 
 
-	$ cd /u01/oracle/database/12.1/network/admin
+	$ cd $ORACLE_HOME/network/admin
 
 <br/>
 
@@ -39,8 +39,6 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	    )
 	  )
 
-
-
 <br/>
 
 ### На Standby нужно еще создать listener
@@ -60,7 +58,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 						(SID_DESC=
 						(GLOBAL_DBNAME=slave)
 						(ORACLE_HOME=/u01/oracle/database/12.1)
-						(SID_NAME=slave)
+						(SID_NAME=orcl12)
 						)
 				)
 
@@ -72,7 +70,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 
 	$ lsnrctl start
 
-	LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 12-AUG-2015 19:55:11
+	LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 13-AUG-2015 17:09:11
 
 	Copyright (c) 1991, 2014, Oracle.  All rights reserved.
 
@@ -89,7 +87,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	------------------------
 	Alias                     LISTENER
 	Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production
-	Start Date                12-AUG-2015 19:55:11
+	Start Date                13-AUG-2015 17:09:11
 	Uptime                    0 days 0 hr. 0 min. 0 sec
 	Trace Level               off
 	Security                  ON: Local OS Authentication
@@ -101,12 +99,12 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
 	Services Summary...
 	Service "slave" has 1 instance(s).
-	  Instance "slave", status UNKNOWN, has 1 handler(s) for this service...
+	  Instance "orcl12", status UNKNOWN, has 1 handler(s) for this service...
 	The command completed successfully
 
 
 
-Как бы еще файл с описанием listener, в каталог с grid засунуть....
+Как бы еще этот файл с описанием listener, в каталог с grid засунуть.... Ну да ладно...
 
 
 <br/>

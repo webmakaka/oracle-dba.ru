@@ -4,26 +4,9 @@ title: Инсталляция Oracle Active DataGuard 12.1 в операцион
 permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 ---
 
+# Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7
 
-<a href="http://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm"> Creating a Standby Database with Active Database Duplication</a>
-
-
-
-
-# В разработке!  
-
-# В разработке!  
-
-## Помогайте, кому нечем заняться!  
-
-## Пока не работает!!!
-
-# В разработке!  
-
-# В разработке!  
-
-
-
+# Alfa версия. Документ пока в разработке!  
 
 
 Технология Oracle Data Guard предалагает решение для обеспечения высокой доступности, повышенной производительности и автоматического преодоления последствий сбоя.
@@ -39,7 +22,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 Логическая база данных - используется для подготовки отчетов (при подготовке отчетов требуются существенные ресурсы системы). В этом случае резервная база данных открывается только для чтения и пользователи, которым необходимо сформировать отчеты работают с ней. При этом основная база данных продолжает работать на прием данных от операторов.
 
 
-<br/><br/>
+<br/>
 
 У меня нет environment, где бы я постоянно работал с dataguard. Здесь я постараюсь его настроить. Буду обновлять по мере появления новых знаний.
 
@@ -52,22 +35,38 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 
 <br/>
-<br/>
 
-<!--
+**И да, я пока не читал Concepts Guide по DataGuard и в ближайшее время не планирую. Нигде, где бы я работал, она не использовалась, т.к. дорого. Как будут задачи, так сразу приступлю к более глубокому изучению.
+Поэтому, уточнения будут оч. полезны.**
+
+
+Суть DataGuard для человека, не читавшего Concepts Guide выглядит достаточно просто. Нужно 2 одинаковых (или приблизительно одинаковых) сервера. На одном будут выполняться какие-то повседневные задачи, на другом, например строиться отчеты, которые жрут много процессорного времени, памяти и т.д.
+
+Для этого делается копия основного сервера. Основной сервер делится архивлогами с резервным, поддерживая таким образом актуальной базу. При этом если первый сервер пиздой накроется, то можно будет их поменять местами.
+
+Можно также настроить работу сервера в режиме failover (Аварийное переключение) и switchover.
+
+
+DataGuard работает Enterprise конфигурации, цена за лицензию будет выше, чем за стандарт. Раз так, то может быть дешевле будет развернуть 2 Standart сервера и одному подкладывать архивлоги от другого, например с помощью RSYNC.
+
+Еще можно подобную задачу решить с помощью Oracle Golden Gate. Может быть решение с Golden Gate будет лучше.
+
+
+<br/>
 
 <div style="padding:10px; border:thin solid black;">
 
-Для информации:
+<strong>Для информации:</strong>
 
 <br/>
 
-db_name - должно быть одинаковое на узлах  
-db_unique_name - должно быть разными на узлах  
+db_name - имя нашей базы (одинаковое для основного и standby экземпляра).  <br/>
+
+db_unique_name - это уникальное имя для каждого экземпляра, оно не меняется при смене ролей со standby на production.
+
 
 </div>
 
--->
 
 <br/>
 
@@ -89,31 +88,50 @@ db_unique_name - должно быть разными на узлах
 <br/>
 
 
-## Подготовка дупликата:
+## Подготовка и создание DATAGUARD:
 
 <ul>
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/">Настройка сетевых служб Oracle для создания standby дупликата</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/create-foder-structure-like-on-primary/">Создание каталогов на standby, котырые есть на primary</a></li>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/copy-passwords-file/">Копирование файла паролей с primary на standby</a></li>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/startup-instance-on-standby/">Стартую instance на standby</a></li>
 
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/">Настройка сетевых служб Oracle для создания дупликата primary на standby</a></li>
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-duplicate-env/">Проверяем, что файловая система схожа на 2-х серверах</a></li>
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-instance-parameters-to-work-in-dataguard/">Настройка параметров instance на primary для работы в DataGuard конфигурации</a></li>
+
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/standby-redologs-on-primary-instance/">Создание standby redologs на primary</a></li>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-connection-check/">Проверка подключения RMAN к обоим Instance</a></li>
 
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-script-for-duplicate-instance/">Создание rman скрипта для дупликата и его выполнение</a></li>
-
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-script-for-duplicate-instance/">Создание rman скрипта для дупликата и его выполнение</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/run-rman-script-for-duplicate-instance/">Создание rman скрипта для создания дупликата primary и его выполнение</a></li>
 
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-primary/">Шаги, выполняемые после создания дупликата на Primary</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/">Настройка параметров Instance после создания дупликата на standby</a></li>
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-standby-redologs/">Создание standby redologs</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-standby-redologs/">Создание standby redologs (Не знаю, нужен этот шаг или нет. Работает и без него. Может быть еще и не получится его выполнить)</a></li>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-redo-apply/">Проверка применения redo</a></li>
 
+</ul>
+
+
+
+
+<br/>
+<br/>
+
+**Материалы по теме: (Сортирока от более полезных, к менее)**:
+
+
+<ul>
+	<li><a href="https://pierreforstmanndotcom.wordpress.com/2014/11/28/create-a-physical-standby-database-with-oracle-12-1-0-2-and-rman-active-duplication/">[ENG] Create a physical standby database with Oracle 12.1.0.2 and RMAN active duplication</a></li>
+	<li><a href="http://habrahabr.ru/post/120495/">[HabraHabr] Еще раз про Oracle standby</a></li>
+	<li><a href="http://docs.oracle.com/cd/B19306_01/server.102/b14239/toc.htm">[ENG] Data Guard Concepts and Administration</a></li>
+	<li><a href="http://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm">[ENG] Creating a Standby Database with Active Database Duplication</a></li>
 </ul>

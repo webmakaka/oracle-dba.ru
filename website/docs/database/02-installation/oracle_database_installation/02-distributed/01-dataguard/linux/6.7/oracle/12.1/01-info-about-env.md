@@ -17,11 +17,27 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/info-ab
 На втором (StandBy) не создаю instance. Он будет скопирован с первого.
 
 
-Primary:  
-Hostname: moscow  
-Instance: master  
-IP: 192.168.1.11  
+    Primary:  
+    Hostname: moscow
+    IP: 192.168.1.11  
+    DB_Name: orcl12
+    DB_UNIQUE_NAME: master
 
-StandBy:  
-Hostname: piter  
-IP: 192.168.1.12  
+
+<br/>
+
+    StandBy:  
+    Hostname: piter  
+    IP: 192.168.1.12  
+    DB_Name: orcl12
+    DB_UNIQUE_NAME: slave
+
+
+<br/>
+
+DB_UNIQUE_NAME - можно задать при создании instance. При выборе - выбрать Advanced. 
+
+<img src="http://img.oradba.net/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/db-unique-name.png" border="0" alt="oracle database software installation"><br/><br/>
+
+
+Либо манипуляциями с редактированием pfile.
