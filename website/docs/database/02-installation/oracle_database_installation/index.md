@@ -143,7 +143,7 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 <ul>
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/">Oracle Active Data Guard (Приглашаю принять участие в настройке DataGuard, обсуждении и создании документа)</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/">Oracle Active Data Guard (Альфа версия документа)</a></li>
 
 	<li><a href="http://odba.ru/showthread.php?t=469">Oracle Data Guard: Развертывание физического Standby средствами Oracle Database</a></li>
 

@@ -47,7 +47,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 Можно также настроить работу сервера в режиме failover (Аварийное переключение) и switchover.
 
 
-DataGuard работает Enterprise конфигурации, цена за лицензию будет выше, чем за стандарт. Раз так, то может быть дешевле будет развернуть 2 Standart сервера и одному подкладывать архивлоги от другого, например с помощью RSYNC.
+DataGuard работает в Enterprise конфигурации, требует GRID. Цена за лицензию будет выше, чем за стандарт. Раз так, то может быть дешевле будет развернуть 2 Standart сервера и одному подкладывать архивлоги от другого, например с помощью RSYNC.
 
 Еще можно подобную задачу решить с помощью Oracle Golden Gate. Может быть решение с Golden Gate будет лучше.
 
@@ -114,9 +114,14 @@ db_unique_name - это уникальное имя для каждого экз
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/">Настройка параметров Instance после создания дупликата на standby</a></li>
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-standby-redologs/">Создание standby redologs (Не знаю, нужен этот шаг или нет. Работает и без него. Может быть еще и не получится его выполнить)</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-standby-redologs/">Создание standby redologs (Не знаю, нужен этот шаг или нет. Работает и без него.)</a></li>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-redo-apply/">Проверка применения redo</a></li>
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/queries/">Запросы для получения данных о работе DataGuard</a></li>
+
+
+
 
 </ul>
 

@@ -28,6 +28,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 	db_unique_name			     string	 master
 
 
+<br/>
 
 **ENABLE ARCHIVELOG**
 

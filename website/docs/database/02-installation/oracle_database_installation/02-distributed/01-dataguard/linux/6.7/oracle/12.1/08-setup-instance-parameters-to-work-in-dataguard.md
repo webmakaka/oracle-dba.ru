@@ -7,6 +7,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-i
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка параметров instance на primary для работы в DataGuard конфигурации
 
 
+<br/>
 
 	SQL> alter system set LOG_ARCHIVE_CONFIG="DG_CONFIG=(master, slave)" scope=both;
 
@@ -66,7 +67,7 @@ http://docs.oracle.com/cd/B19306_01/server.102/b14239/log_arch_dest_param.htm
 
 <br/>
 
-###	Значения заданных параметров
+###	Посмотреть значения заданных параметров
 
 
 	SQL> show parameter arch

@@ -100,7 +100,7 @@ SQL>  select to_char(CURRENT_SCN) CURRENT_SCN FROM V$DATABASE;
 ### Ошибка!
 
 
-Иногда возникала ошибка.
+Иногда возникала ошибка на primary.
 
 
 	Oracle instance shut down
