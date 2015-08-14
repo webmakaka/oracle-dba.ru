@@ -34,10 +34,6 @@ permalink: /
 
 **Предыдущая версия сайта доступна по адресу <a href="http://prev.oracle-dba.ru">prev.oracle-dba.ru</a>**
 
-<br/>
-
-**Поднял англоязычную версию сайта <a href="http://oracledba.net">oracledba.net</a>**. Материалы на английском будут собираться там.
-
 
 <br/>
 
