@@ -114,10 +114,19 @@ db_unique_name - это уникальное имя для каждого экз
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/queries/">Запросы для получения данных о работе DataGuard</a></li>
 
+</ul>
 
 
+<br/>
+
+## Как в Анекдоте. А теперь еще бы и потрахаться. Да не вопрос. Брокер хуле.
+
+<ul>
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/setup/">Устанавливаю броке</a></li>
 
 </ul>
+
 
 
 

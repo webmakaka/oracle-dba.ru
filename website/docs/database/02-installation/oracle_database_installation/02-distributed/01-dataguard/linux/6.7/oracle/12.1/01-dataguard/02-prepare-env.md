@@ -73,7 +73,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/prepare
 		alias sqlplus='rlwrap sqlplus'
 		alias rman='rlwrap rman'
 		alias asmcmd='rlwrap asmcmd'
-
+		alias dgmgrl='rlwrap dgmgrl'
 
 		# my alases
 
@@ -128,7 +128,7 @@ $ vi ~/.bash_profile
 		alias sqlplus='rlwrap sqlplus'
 		alias rman='rlwrap rman'
 		alias asmcmd='rlwrap asmcmd'
-
+		alias dgmgrl='rlwrap dgmgrl'
 
 		# my alases
 
