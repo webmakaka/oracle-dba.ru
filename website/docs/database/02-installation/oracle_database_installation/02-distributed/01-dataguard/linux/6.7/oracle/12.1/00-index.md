@@ -44,7 +44,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 Для этого делается копия основного сервера. Основной сервер делится архивлогами с резервным, поддерживая таким образом актуальной базу. При этом если первый сервер пиздой накроется, то можно будет их поменять местами.
 
-Можно также настроить работу сервера в режиме failover (Аварийное переключение) и switchover.
+Можно также настроить работу сервера в режиме failover (Аварийное переключение) и switchover (переключение ролей между primary и standby instance).
 
 
 DataGuard работает в Enterprise конфигурации, требует GRID. Цена за лицензию будет выше, чем за стандарт. Раз так, то может быть дешевле будет развернуть 2 Standart сервера и одному подкладывать архивлоги от другого, например с помощью RSYNC.
@@ -119,11 +119,17 @@ db_unique_name - это уникальное имя для каждого экз
 
 <br/>
 
-## Как в Анекдоте. А теперь еще бы и потрахаться. Да не вопрос. Брокер хуле.
+## Брокер (DGMGRL)
 
 <ul>
 
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/setup/">Устанавливаю броке</a></li>
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/setup/">Установка брокера (DGMGRL)</a></li>
+
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/switchover/">switchover (переключение ролей между primary и standby instance)</a></li>
+
+
+
 
 </ul>
 

@@ -47,10 +47,13 @@ selct parameter, <span class="keyword">value</span> <span class="keyword">from</
 4. Выбор самодостаточного набора табличных пространств<br>
 Самодостаточный набор табличных пространств – это совокупность табличных пространств, объекты которых не ссылаются на какие-либо объекты, не содержащиеся в данном наборе.<br>
 Для проверки самодостаточности удобно использовать процедуру TRANSPORT_SET_CHECK(для выполнения процедуры требуется роль EXECUTE_CATALOG_ROLE). <br>
+
 <pre><code class="sql">begin
 sys.dbms_tts.transport_set_check (ts_list =&gt; 'USER_DATA', incl_constraints =&gt; true);
 end;
-</code></pre><br>
+</code></pre>
+
+<br>
 Результаты ее работы записываются во временную таблицу и их можно посмотреть через системное представление SYS.TRANSPORT_SET_VIOLATIONS:<br>
 <pre><code class="sql"><span class="operator"><span class="keyword">select</span> * <span class="keyword">from</span> sys.transport_set_violations
 </span></code></pre><br>

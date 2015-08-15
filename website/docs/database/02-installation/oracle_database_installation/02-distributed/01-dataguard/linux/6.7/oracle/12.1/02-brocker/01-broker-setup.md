@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Описание системы, которое будет настраиваться
+title: Установка брокера (DGMGRL)
 permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/setup/
 ---
 
@@ -24,7 +24,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 
 
-Запускаю bkoker
+Запускаю broker
 
     SQL> ALTER SYSTEM SET dg_broker_start=TRUE SCOPE=both;
 
@@ -183,7 +183,13 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
     DGMGRL> REMOVE CONFIGURATION;
 
 
+Получить подробную информации по базе:
 
+    DGMGRL> show database verbose master
+
+Получить подробную информации по экземпляру:
+
+    DGMGRL> show instance verbose orcl12 on database master
 
 <br/>
 
