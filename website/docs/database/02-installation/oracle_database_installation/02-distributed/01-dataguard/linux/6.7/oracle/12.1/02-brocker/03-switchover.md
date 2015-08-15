@@ -13,11 +13,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 
 
-$ dgmgrl
+    $ dgmgrl
 
 <br/>
 
-DGMGRL> connect /
+    DGMGRL> connect /
 
 <br/>
 
@@ -72,12 +72,14 @@ DGMGRL> connect /
     Database Status:
     SUCCESS
 
+<br/>
 
 **1. Ensure standby redologs are configured on all databases.**
 
-    on primary:
-    SQL> SELECT TYPE,MEMBER FROM V$LOGFILE;
+    SQL> SELECT TYPE, MEMBER FROM V$LOGFILE;
 
+
+<br/>
 
 **2. Ensure the LogXptMode Property is set to SYNC.**
 
@@ -86,23 +88,29 @@ DGMGRL> connect /
     DGMGRL> EDIT DATABASE slave SET PROPERTY 'LogXptMode'='SYNC';
 
 
+<br/>
 
 **3.Specify the FastStartFailoverTarget property**
-
 
     DGMGRL> EDIT DATABASE master SET PROPERTY FastStartFailoverTarget='slave';
     DGMGRL> EDIT DATABASE slave SET PROPERTY FastStartFailoverTarget='master';
 
+
+<br/>
 
 **4.Upgrade the protection mode to MAXAVAILABILITY, if necessary.**
 
     DGMGRL> EDIT CONFIGURATION SET PROTECTION MODE AS MAXAVAILABILITY;
 
 
+<br/>
+
 **5. Enable Flashback Database on the Primary and Standby Databases.**
 
 
-### Primary
+<br/>
+
+**Primary**
 
     SQL> ALTER SYSTEM SET UNDO_RETENTION=3600 SCOPE=SPFILE;
 
@@ -111,7 +119,9 @@ DGMGRL> connect /
     SQL> ALTER DATABASE FLASHBACK ON;
 
 
-### Standby
+<br/>
+
+**Standby**
 
 
     SQL> alter database recover managed standby database cancel;
@@ -124,13 +134,15 @@ DGMGRL> connect /
 
     SQL> alter database recover managed standby database using current logfile disconnect;
 
-==============
+
+<br/>
+
+**Primary**
 
     DGMGRL> ENABLE FAST_START FAILOVER;
     Enabled.
 
-==============
-
+<br/>
 
     DGMGRL> show database master
 
@@ -164,6 +176,9 @@ DGMGRL> connect /
 
     DGMGRL> START OBSERVER;
     Observer started
+
+На втором сервере поднимать OBSERVER не нужно.
+
 
 <br/>
 
@@ -199,9 +214,7 @@ DGMGRL> connect /
     Database Status:
     SUCCESS
 
-
-=================================
-=================================
+<br/>
 
     DGMGRL> show configuration verbose
 
@@ -243,8 +256,7 @@ DGMGRL> connect /
     Configuration Status:
     SUCCESS
 
-=================================
-=================================
+<br/>
 
     DGMGRL> switchover to slave;
     Performing switchover NOW, please wait...
@@ -276,14 +288,9 @@ DGMGRL> connect /
         Switchover succeeded, new primary is "slave"
 
 
-
-http://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker.html
-
-
 <br/>
 
-## Проверка
-
+## Проверка результатов
 
     DGMGRL> show configuration
 
@@ -342,7 +349,6 @@ http://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker
 
 ### Пробуем создать табличное пространство на ранее standby (slave)
 
-
     SQL> create tablespace test datafile '+DATA' size 10M autoextend off;
 
 
@@ -360,3 +366,7 @@ http://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker
     TEST
 
     6 rows selected.
+
+
+Помогла статья:  
+http://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker.html
