@@ -33,8 +33,6 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 ### Primary
 
-
-
     $ dgmgrl
 
 <br/>
@@ -47,6 +45,13 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
     DGMGRL> connect sys/manager
     Connected as SYSDG.
 
+или
+
+    DGMGRL> CONNECT sys@primary
+    Password:
+    Connected as SYSDBA.
+
+
 <br/>
 
     DGMGRL> show configuration
@@ -56,14 +61,18 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 <br/>
 
-    DGMGRL> create configuration 'DG_ORCL12' as primary database is 'master' connect identifier is master;
+// primary - в данном случае service прописанный в tnsnames
+
+    DGMGRL> CREATE CONFIGURATION 'DG_ORCL12' AS PRIMARY DATABASE IS 'master' CONNECT IDENTIFIER IS primary;
+
     Configuration "DG_ORCL12" created with primary database "master"
 
 <br/>
 
+
 // standby - в данном случае service прописанный в tnsnames
 
-    DGMGRL> add database 'slave' as connect identifier is standby maintained as physical;
+    DGMGRL> ADD DATABASE 'slave' AS CONNECT IDENTIFIER IS standby maintained as physical;
     Database "slave" added
 
 
@@ -85,7 +94,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 <br/>
 
-    DGMGRL> enable configuration;
+    DGMGRL> ENABLE CONFIGURATION;
 
 <br/>
 
@@ -97,14 +106,11 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
       Members:
       master - Primary database
         slave  - Physical standby database
-          Error: ORA-16664: unable to receive the result from a database
 
     Fast-Start Failover: DISABLED
 
     Configuration Status:
-    ERROR   (status updated 72 seconds ago)
-
-
+    SUCCESS   (status updated 30 seconds ago)
 
 
 <br/>
@@ -121,6 +127,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
     Database Status:
     SUCCESS
 
+
 <br/>
 
     DGMGRL> show database slave
@@ -129,17 +136,15 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
       Role:               PHYSICAL STANDBY
       Intended State:     APPLY-ON
-      Transport Lag:      (unknown)
-      Apply Lag:          (unknown)
-      Average Apply Rate: (unknown)
-      Real Time Query:    OFF
+      Transport Lag:      0 seconds (computed 1 second ago)
+      Apply Lag:          0 seconds (computed 1 second ago)
+      Average Apply Rate: 565.00 KByte/s
+      Real Time Query:    ON
       Instance(s):
         orcl12
 
     Database Status:
-    DGM-17016: failed to retrieve status for database "slave"
-    ORA-16664: unable to receive the result from a database
-
+    SUCCESS
 
 
 <br/>
@@ -150,50 +155,6 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 
 <br/>
-
-### На Standby
-
-    DGMGRL> show database master
-
-    Database - master
-
-      Role:               PRIMARY
-      Intended State:     TRANSPORT-ON
-      Instance(s):
-        orcl12
-
-    Database Status:
-    DGM-17016: failed to retrieve status for database "master"
-    ORA-16501: The Oracle Data Guard broker operation failed.
-    ORA-16625: cannot reach database "master"
-
-
-<br/>
-
-    Database - slave
-
-      Role:               PHYSICAL STANDBY
-      Intended State:     APPLY-ON
-      Transport Lag:      0 seconds (computed 1 second ago)
-      Apply Lag:          (unknown)
-      Average Apply Rate: (unknown)
-      Real Time Query:    OFF
-      Instance(s):
-        orcl12
-          Warning: ORA-16714: the value of property ArchiveLagTarget is inconsistent with the database setting
-          Warning: ORA-16714: the value of property LogArchiveMaxProcesses is inconsistent with the database setting
-          Warning: ORA-16714: the value of property LogArchiveMinSucceedDest is inconsistent with the database setting
-          Warning: ORA-16714: the value of property LogArchiveTrace is inconsistent with the database setting
-          Warning: ORA-16675: database instance restart required for property value modification to take effect
-          Warning: ORA-16714: the value of property LogArchiveFormat is inconsistent with the database setting
-
-      Database Error(s):
-        ORA-16766: Redo Apply is stopped
-
-    Database Status:
-    ERROR
-
-
 
 
 <br/>
@@ -213,10 +174,23 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
     SQL> ALTER SYSTEM SET dg_broker_start=FALSE SCOPE=both;
 
 
+Выключить конфигурацию:
+
+    DGMGRL> disable configuration;
+
+Удалить конфигурацию:
+
+    DGMGRL> REMOVE CONFIGURATION;
+
+
+
+
 <br/>
 
 ### Ошибки:
 
+
+**Ошибка 1:**
 
     DGMGRL> create configuration 'DG_ORCL12' as primary database is 'master' connect identifier is master;
     Error: ORA-16698: LOG_ARCHIVE_DEST_n parameter set for object to be added
@@ -231,3 +205,41 @@ You must clear any remote redo transport destinations on the primary database th
 <br/>
 
     SQL> ALTER SYSTEM SET LOG_ARCHIVE_DEST_2=" ";
+
+
+ **Ошибка 2**  
+
+     DGMGRL> show database slave
+
+     Database - slave
+
+       Role:               PHYSICAL STANDBY
+       Intended State:     APPLY-ON
+       Transport Lag:      0 seconds (computed 0 seconds ago)
+       Apply Lag:          (unknown)
+       Average Apply Rate: (unknown)
+       Real Time Query:    OFF
+       Instance(s):
+         orcl12
+           Warning: ORA-16714: the value of property ArchiveLagTarget is inconsistent with the database setting
+           Warning: ORA-16714: the value of property LogArchiveMaxProcesses is inconsistent with the database setting
+           Warning: ORA-16714: the value of property LogArchiveMinSucceedDest is inconsistent with the database setting
+           Warning: ORA-16714: the value of property LogArchiveTrace is inconsistent with the database setting
+           Warning: ORA-16675: database instance restart required for property value modification to take effect
+           Warning: ORA-16714: the value of property LogArchiveFormat is inconsistent with the database setting
+
+       Database Error(s):
+         ORA-16766: Redo Apply is stopped
+
+     Database Status:
+     ERROR
+
+ На standby
+
+    SQL> alter database recover managed standby database using current logfile disconnect;
+
+
+
+
+
+http://docs.oracle.com/cd/B28359_01/server.111/b28295/dgmgrl.htm#i78344
