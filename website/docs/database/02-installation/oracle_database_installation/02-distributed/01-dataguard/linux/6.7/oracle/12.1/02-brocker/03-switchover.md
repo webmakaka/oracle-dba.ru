@@ -101,132 +101,262 @@ DGMGRL> connect /
 
 **5. Enable Flashback Database on the Primary and Standby Databases.**
 
+
+### Primary
+
+    SQL> ALTER SYSTEM SET UNDO_RETENTION=3600 SCOPE=SPFILE;
+
+    SQL> ALTER SYSTEM SET UNDO_MANAGEMENT='AUTO' SCOPE=SPFILE;
+
+    SQL> ALTER DATABASE FLASHBACK ON;
+
+
+### Standby
+
+
+    SQL> alter database recover managed standby database cancel;
+
+    SQL> ALTER SYSTEM SET UNDO_RETENTION=3600 SCOPE=SPFILE;
+
+    SQL> ALTER SYSTEM SET UNDO_MANAGEMENT='AUTO' SCOPE=SPFILE;
+
+    SQL> ALTER DATABASE FLASHBACK ON;
+
+    SQL> alter database recover managed standby database using current logfile disconnect;
+
 ==============
 
     DGMGRL> ENABLE FAST_START FAILOVER;
+    Enabled.
+
+==============
 
 
+    DGMGRL> show database master
+
+    Database - master
+
+      Role:               PRIMARY
+      Intended State:     TRANSPORT-ON
+      Instance(s):
+        orcl12
+
+      Database Warning(s):
+        ORA-16819: fast-start failover observer not started
+
+    Database Status:
+    WARNING
 
 
+<br/>
+
+    DGMGRL> START OBSERVER;
+    [P001 08/15 18:00:40.19] Authentication failed.
+    DGM-16979: Unable to log on to the primary or standby database as SYSDBA
+    Failed.
+
+<br/>
+
+    $ dgmgrl
+
+    DGMGRL> connect sys/manager@primary
+    Connected as SYSDBA.
+
+    DGMGRL> START OBSERVER;
+    Observer started
+
+<br/>
 
 
+    DGMGRL> show database master
+
+    Database - master
+
+      Role:               PRIMARY
+      Intended State:     TRANSPORT-ON
+      Instance(s):
+        orcl12
+
+    Database Status:
+    SUCCESS
 
 
+<br/>
+
+    DGMGRL> show database slave
+
+    Database - slave
+
+      Role:               PHYSICAL STANDBY
+      Intended State:     APPLY-ON
+      Transport Lag:      0 seconds (computed 1 second ago)
+      Apply Lag:          0 seconds (computed 1 second ago)
+      Average Apply Rate: 60.00 KByte/s
+      Real Time Query:    ON
+      Instance(s):
+        orcl12
+
+    Database Status:
+    SUCCESS
 
 
+=================================
+=================================
+
+    DGMGRL> show configuration verbose
+
+    Configuration - DG_ORCL12
+
+      Protection Mode: MaxAvailability
+      Members:
+      master - Primary database
+        slave  - (*) Physical standby database
+
+      (*) Fast-Start Failover target
+
+      Properties:
+        FastStartFailoverThreshold      = '30'
+        OperationTimeout                = '30'
+        TraceLevel                      = 'USER'
+        FastStartFailoverLagLimit       = '30'
+        CommunicationTimeout            = '180'
+        ObserverReconnect               = '0'
+        FastStartFailoverAutoReinstate  = 'TRUE'
+        FastStartFailoverPmyShutdown    = 'TRUE'
+        BystandersFollowRoleChange      = 'ALL'
+        ObserverOverride                = 'FALSE'
+        ExternalDestination1            = ''
+        ExternalDestination2            = ''
+        PrimaryLostWriteAction          = 'CONTINUE'
+
+    Fast-Start Failover: ENABLED
+
+      Threshold:          30 seconds
+      Target:             slave
+      Observer:           moscow.localdomain
+      Lag Limit:          30 seconds (not in use)
+      Shutdown Primary:   TRUE
+      Auto-reinstate:     TRUE
+      Observer Reconnect: (none)
+      Observer Override:  FALSE
+
+    Configuration Status:
+    SUCCESS
+
+=================================
+=================================
+
+    DGMGRL> switchover to slave;
+    Performing switchover NOW, please wait...
+    Operation requires a connection to instance "orcl12" on database "slave"
+    Connecting to instance "orcl12"...
+    ORA-01017: invalid username/password; logon denied
+
+    Warning: You are no longer connected to ORACLE.
+
+    	connect to instance "orcl12" of database "slave"
 
 
+<br/>
 
-show configuration verbose
+### Поехали
 
+        DGMGRL> connect sys/manager@primary
+        Connected as SYSDBA.
 
+<br/>
+
+        DGMGRL> switchover to slave;
+        Performing switchover NOW, please wait...
+        Operation requires a connection to instance "orcl12" on database "slave"
+        Connecting to instance "orcl12"...
+        Connected as SYSDBA.
+        New primary database "slave" is opening...
+        Oracle Clusterware is restarting database "master" ...
+        Switchover succeeded, new primary is "slave"
 
 
 
 http://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker.html
 
 
+<br/>
 
-    Use the SHOW DATABASE VERBOSE command to check the state, health, and properties of the primary database, as follows:
-
-    state
-    health
-
-
-    LogXptMode - 'SYNC'
-
-
-
-
-
-You can switch the role of the primary database and a standby database using the SWITCHOVER command. Before you issue the SWITCHOVER command, you must ensure:
-
-* The state of the primary and standby databases are TRANSPORT-ON and APPLY-ON, respectively.
-
-* All participating databases are in good health, without any errors or warnings present.
-
-* The standby database properties were set on the primary database, so that the primary database can function correctly when transitioning to a standby database (shown in the following examples in boldface type).
-
-* Standby redo log files on the primary database are set up, and the LogXptMode configurable database property is set to SYNC if the configuration is operating in either maximum availability mode or maximum protection mode.
-
-* If fast-start failover is enabled, you can perform a switchover only to the standby database that was specified as the target standby database.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Проверка
 
 
     DGMGRL> show configuration
 
     Configuration - DG_ORCL12
 
-      Protection Mode: MaxPerformance
+      Protection Mode: MaxAvailability
       Members:
-      master - Primary database
-        slave  - Physical standby database
+      slave  - Primary database
+        master - (*) Physical standby database
 
-    Fast-Start Failover: DISABLED
+    Fast-Start Failover: ENABLED
 
     Configuration Status:
-    SUCCESS   (status updated 12 seconds ago)
+    SUCCESS   (status updated 50 seconds ago)
 
 
 <br/>
 
-    DGMGRL> switchover to slave;
+
+### На бывшем primary (master)
+
+
+    SQL> select open_mode, database_role from v$database;
+
+    OPEN_MODE	     DATABASE_ROLE
+    -------------------- ----------------
+    READ ONLY WITH APPLY PHYSICAL STANDBY
+
+
+### На бывшем standby (slave)
+
+    SQL> select open_mode, database_role from v$database;
+
+    OPEN_MODE	     DATABASE_ROLE
+    -------------------- ----------------
+    READ WRITE	     PRIMARY
 
 <br/>
 
-    DGMGRL> show configuration
-
-    Configuration - DG_ORCL12
-
-      Protection Mode: MaxPerformance
-      Members:
-      master - Primary database
-        slave  - Physical standby database
-
-    Fast-Start Failover: DISABLED
-
-    Configuration Status:
-    SUCCESS   (status updated 30 seconds ago)
+    SQL> alter system switch logfile;
 
 
+На обоих инстансах одинаковое количество архивлогов.
+
+    SQL> select max(sequence#) from v$archived_log;
+
+    MAX(SEQUENCE#)
+    --------------
+    	    66
+
+Если нет, то можно включить на ранее primary (master)
+
+    SQL> alter databaser recover manager current logfile disconnect
 
 
 
-=======================================
-
-на primary (бывшем) master
-alter databaser recover manager current logfile disconnect
+### Пробуем создать табличное пространство на ранее standby (slave)
 
 
-select open_mode, database_role from v$database;
+    SQL> create tablespace test datafile '+DATA' size 10M autoextend off;
 
 
-на slave
+### Проверяем результат на ранее primary (master)
 
-create tablespace test datafile '+DATA' size 10M autoextend off;
+    SQL> select name from v$tablespace;
 
+    NAME
+    ------------------------------
+    SYSTEM
+    SYSAUX
+    UNDOTBS1
+    TEMP
+    USERS
+    TEST
 
-select name from v$tablespace;
-
-
-    SQL> SELECT 'Last Applied : ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
-    FROM v$archived_log
-    WHERE sequence# = (select max(sequence#) FROM v$archived_log where applied='YES')
-    UNION
-    SELECT 'Last Received : ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
-    FROM v$archived_log
-    WHERE sequence# = (select max(sequence#) FROM v$archived_log)
+    6 rows selected.

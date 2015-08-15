@@ -17,6 +17,25 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/queries
 
 <br/>
 
+
+	SQL> SELECT 'Last Applied: ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
+	FROM v$archived_log
+	WHERE sequence# = (select max(sequence#) FROM v$archived_log where applied='YES')
+	UNION
+	SELECT 'Last Received: ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
+	FROM v$archived_log
+	WHERE sequence# = (select max(sequence#) FROM v$archived_log);
+
+<br/>
+
+	LOGS		TIME
+	--------------- -----------------------------
+	Last Applied:	15-AUG-2015:17:27:19
+	Last Received:	15-AUG-2015:17:27:19
+
+
+<br/>
+
 	SQL> SELECT name, value, datum_time, time_computed FROM V$DATAGUARD_STATS;
 
 <br/>
