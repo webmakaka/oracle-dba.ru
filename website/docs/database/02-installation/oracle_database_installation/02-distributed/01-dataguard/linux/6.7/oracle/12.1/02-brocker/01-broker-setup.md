@@ -169,7 +169,21 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 ### Команды для информации:
 
-    -- остановить bkoker (пока не делаю)
+
+    SQL> show parameter broker
+
+    NAME				     TYPE	 VALUE
+    ------------------------------------ ----------- ------------------------------
+    connection_brokers		     string	 ((TYPE=DEDICATED)(BROKERS=1)),
+    						  ((TYPE=EMON)(BROKERS=1))
+    dg_broker_config_file1		     string	 +DATA/db_brocker1.dat
+    dg_broker_config_file2		     string	 +ARCH/db_brocker2.dat
+    dg_broker_start 		     boolean	 TRUE
+    use_dedicated_broker		     boolean	 FALSE
+
+
+
+Остановить bkoker
 
     SQL> ALTER SYSTEM SET dg_broker_start=FALSE SCOPE=both;
 
@@ -212,6 +226,8 @@ You must clear any remote redo transport destinations on the primary database th
 
     SQL> ALTER SYSTEM SET LOG_ARCHIVE_DEST_2=" ";
 
+
+<br/>
 
  **Ошибка 2**  
 

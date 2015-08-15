@@ -1,6 +1,6 @@
 ---
 layout: page
-title: С чего начать изучение Oracle?
+title: Библиотека Oracle DBA
 permalink: /docs/library/
 ---
 

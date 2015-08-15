@@ -9,7 +9,9 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 
 <br/>
 
-### Следующие шаги выполняются на Primary
+
+
+### Настройка Listener на Primary
 
 	$ vi listener.ora
 
@@ -29,7 +31,9 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 						)
 				)
 
-### Следующие шаги выполняются на Standby
+<br/>
+
+### Настройка Listener на Standby
 
 
 	$ vi listener.ora
@@ -52,8 +56,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 
 <br/>
 
-
-### Следующие шаги выполняются на Primary и Standby
+### Настройка tnsnames.ora на Primary и Standby
 
 
 	$ cd $ORACLE_HOME/network/admin

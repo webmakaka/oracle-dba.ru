@@ -1,81 +1,121 @@
 ---
 layout: page
-title: switchover (переключение ролей между primary и standby instance)
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/switchover/
+title: Переконфигурирование Listener для Switchover
+permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/switchover-listener-config/
 ---
 
-# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Устанавливаем Broker
+# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Переконфигурирование Listener для Switchover
 
 
 
 <br/>
 
-### Primary и Standby
+### Перенастройка Listener на Primary
+
+    $ cd /u01/oracle/database/12.1/network/admin/
+    $ cp listener.ora listener.ora.bkp
+
+<br/>
+
+	$ vi listener.ora
+
+<br/>
+
+LISTENER =
+(ADDRESS_LIST=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=moscow.localdomain)(PORT=1521))
+		(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
+
+SID_LIST_LISTENER=
+			(SID_LIST=
+					(SID_DESC=
+						(GLOBAL_DBNAME=master_DGMGRL)
+						(ORACLE_HOME=/u01/oracle/database/12.1)
+						(SID_NAME=orcl12)
+					)
+                    (SID_DESC=
+                        (GLOBAL_DBNAME=slave_DGMGRL)
+                        (ORACLE_HOME=/u01/oracle/database/12.1)
+                        (SID_NAME=orcl12)
+                    )
+			)
+
+<br/>
+
+### Перенастройка Listener на Standby
 
 
-
-$ lsnrctl status
-
-LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 15-AUG-2015 12:52:32
-
-Copyright (c) 1991, 2014, Oracle.  All rights reserved.
-
-Connecting to (ADDRESS=(PROTOCOL=tcp)(HOST=piter.localdomain)(PORT=1521))
-STATUS of the LISTENER
-------------------------
-Alias                     LISTENER
-Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production
-Start Date                14-AUG-2015 07:48:36
-Uptime                    1 days 5 hr. 3 min. 56 sec
-Trace Level               off
-Security                  ON: Local OS Authentication
-SNMP                      OFF
-Listener Parameter File   /u01/oracle/database/12.1/network/admin/listener.ora
-Listener Log File         /u01/oracle/diag/tnslsnr/piter/listener/alert/log.xml
-Listening Endpoints Summary...
-  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=piter.localdomain)(PORT=1521)))
-  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
-Services Summary...
-Service "+ASM" has 1 instance(s).
-  Instance "+ASM", status READY, has 1 handler(s) for this service...
-Service "slave" has 1 instance(s).
-  Instance "orcl12", status UNKNOWN, has 1 handler(s) for this service...
-The command completed successfully
+*_DGMGRL - название взято из конфига брокера.
 
 
+    $ cd /u01/oracle/database/12.1/network/admin/
+    $ cp listener.ora listener.ora.bkp
+
+<br/>
+
+	$ vi listener.ora
+
+<br/>
+
+    LISTENER =
+    (ADDRESS_LIST=
+            (ADDRESS=(PROTOCOL=tcp)(HOST=piter.localdomain)(PORT=1521))
+            (ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
+
+    SID_LIST_LISTENER=
+                (SID_LIST=
+                        (SID_DESC=
+                            (GLOBAL_DBNAME=master_DGMGRL)
+                            (ORACLE_HOME=/u01/oracle/database/12.1)
+                            (SID_NAME=orcl12)
+                        )
+                        (SID_DESC=
+                            (GLOBAL_DBNAME=slave_DGMGRL)
+                            (ORACLE_HOME=/u01/oracle/database/12.1)
+                            (SID_NAME=orcl12)
+                        )
+                )
+
+<br/>
+
+    $ lsnrctl stop
+    $ lsnrctl start
 
 
+<br/>
 
+    $ lsnrctl status
 
+    LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 15-AUG-2015 16:30:21
 
+    Copyright (c) 1991, 2014, Oracle.  All rights reserved.
 
-
-swithchover to "NODUDAS"
-
-
-show configuration
-
-
-
-на primary (бывшем) master
-alter databaser recover manager current logfile disconnect
-
-
-select open_mode, database_role from v$database;
-
-
-на slave
-
-create tablespace test datafile '+DATA' size 10M autoextend off;
-
-
-select name from v$tablespace;
-
-
-SELECT 'Last Applied : ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
-FROM v$archived_log
-WHERE sequence# = (select max(sequence#) FROM v$archived_log where applied='YES')
-UNION
-SELECT 'Last Received : ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
-FROM v$archived_log
-WHERE sequence# = (select max(sequence#) FROM v$archived_log)
+    Connecting to (ADDRESS=(PROTOCOL=tcp)(HOST=moscow.localdomain)(PORT=1521))
+    STATUS of the LISTENER
+    ------------------------
+    Alias                     LISTENER
+    Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production
+    Start Date                15-AUG-2015 16:29:31
+    Uptime                    0 days 0 hr. 0 min. 49 sec
+    Trace Level               off
+    Security                  ON: Local OS Authentication
+    SNMP                      OFF
+    Listener Parameter File   /u01/oracle/database/12.1/network/admin/listener.ora
+    Listener Log File         /u01/oracle/diag/tnslsnr/moscow/listener/alert/log.xml
+    Listening Endpoints Summary...
+      (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=moscow.localdomain)(PORT=1521)))
+      (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
+    Services Summary...
+    Service "+ASM" has 1 instance(s).
+      Instance "+ASM", status READY, has 1 handler(s) for this service...
+    Service "master" has 1 instance(s).
+      Instance "orcl12", status READY, has 1 handler(s) for this service...
+    Service "master_DGB" has 1 instance(s).
+      Instance "orcl12", status READY, has 1 handler(s) for this service...
+    Service "master_DGMGRL" has 1 instance(s).
+      Instance "orcl12", status UNKNOWN, has 1 handler(s) for this service...
+    Service "orcl12XDB" has 1 instance(s).
+      Instance "orcl12", status READY, has 1 handler(s) for this service...
+    Service "slave_DGMGRL" has 1 instance(s).
+      Instance "orcl12", status UNKNOWN, has 1 handler(s) for this service...
+    The command completed successfully
