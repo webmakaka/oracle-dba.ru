@@ -15,7 +15,9 @@ A standby redo log is required for the maximum protection and maximum availabili
 > Standby redo logs нужны только на standby базе для записи данных, сохраняемых в redo logs на основной базе. На основной базе они нам понадобятся, если мы будем переключать ее в режим standby и при этом использовать real-time apply redo. Файлы standby redo logs должны быть такого же размера как и online redo logs.
 
 
-При этом в других инструкциях, как раз делают на primary.
+При этом в других инструкциях, как раз делают на primary.<br/>
+Я давно делал по инструкции на сайте oracle на primary. В последний раз использовал документ, человека который по всей видимости читал профессиональную литературу.
+
 
 <br/>
 
