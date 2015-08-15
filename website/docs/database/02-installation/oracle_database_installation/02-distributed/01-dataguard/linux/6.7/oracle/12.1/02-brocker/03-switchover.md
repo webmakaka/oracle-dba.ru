@@ -310,7 +310,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 <br/>
 
 
-### На бывшем primary (master)
+**На бывшем primary (master)**
 
 
     SQL> select open_mode, database_role from v$database;
@@ -320,7 +320,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
     READ ONLY WITH APPLY PHYSICAL STANDBY
 
 
-### На бывшем standby (slave)
+**На бывшем standby (slave)**
 
     SQL> select open_mode, database_role from v$database;
 
@@ -329,6 +329,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
     READ WRITE	     PRIMARY
 
 <br/>
+
+Попереключаем журналы
 
     SQL> alter system switch logfile;
 
@@ -345,14 +347,15 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
     SQL> alter databaser recover manager current logfile disconnect
 
+<br/>
 
-
-### Пробуем создать табличное пространство на ранее standby (slave)
+**Пробуем создать табличное пространство на ранее standby (slave)**
 
     SQL> create tablespace test datafile '+DATA' size 10M autoextend off;
 
+<br/>
 
-### Проверяем результат на ранее primary (master)
+**Проверяем результат на ранее primary (master)**
 
     SQL> select name from v$tablespace;
 
@@ -367,9 +370,10 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
     6 rows selected.
 
+<br/><br/>
 
 Помогла статья:  
 http://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker.html
 
 Что такое OBSERVER и зачем он нужен я пока не знаю.  
-Можно ли сделать проще? Этого я тоже не знаю. 
+Можно ли сделать проще? Этого я тоже не знаю.
