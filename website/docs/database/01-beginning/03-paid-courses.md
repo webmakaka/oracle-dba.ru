@@ -5,7 +5,40 @@ permalink: /docs/library/paid-courses/
 ---
 
 
-<h3>Pluralsight Oracle Courses</h3>
+<br/>
+
+
+### cbtnuggets.com:
+
+
+<ul>
+	<li>Oracle Database 11g SQL Fundamentals 1 (1Z0-051)</li>
+	<li>Oracle Database 11g: Administration I (1Z0-052)</li>
+	<li>Oracle Database 11g: Administration 2 (1Z0-053)</li>
+
+</ul>
+
+
+
+<br/>
+
+### Udemy
+
+На udemy имеются платные и бесплатные видеокурсы.
+
+Но так как делали (скорее всего индусы), они там очень интересно защитили скачивание своих материалов.
+
+Вообщем любой курс можно скачать с помощью вот этой программы:  
+https://github.com/gaganpreet/udemy-dl
+
+Видео:  
+https://www.youtube.com/watch?v=6wgykHNp6vQ
+
+
+
+<br/>
+
+### Pluralsight Oracle Courses
 
 <br/>
 Beginner:
@@ -40,10 +73,20 @@ Intermediate:
 	<li><strong>Introduction to Dates, Times and Intervals in Oracle</strong></li>
 </ul>
 
+
+
 <br/><br/>
 
-<strong>+ InfiniteSkills - Learning Oracle 12c Training Video</strong>
-<strong>+ Infinite Skills - Oracle 11g Real Application Cluster Training Video</strong><br/>
+
+### InfiniteSkills:
+
+
+<ul>
+	<li>Learning Oracle 12c Training Video</li>
+	<li>Oracle 11g Real Application Cluster Training Video</li>
+</ul>
+
+
 
 
 <br/><br/>

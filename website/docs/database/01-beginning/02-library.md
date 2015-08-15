@@ -26,7 +26,7 @@ hxxp://rutracker.org/forum/viewtopic.php?t=4786605
 
 Вы можете постараться найти курсы от обучающего центра специалист. <br/>
 
-В свободном доступе можно найти почти все.
+В свободном доступе можно найти почти все. По крайней мере раньше было можно найти точно.
 
 <!--
 
@@ -35,30 +35,23 @@ hxxps://archive.is/qKSWi
 
 -->
 
-<h3>Можно также посмотреть курсы Игоря Мирончика:</h3>
+### Можно также посмотреть курсы Игоря Мирончика:
 
 
 <ul>
-<li><a href="http://www.youtube.com/view_play_list?p=D0A648F8F65684BF"><strong>Основы администрирования БД Oracle</strong></a></li>
-<li><a href="http://www.youtube.com/view_play_list?p=6F78CB4058D30626"><strong>Администрирование Oracle 10g, 11g</strong></a></li>
-</ul>
+	<li><a href="http://www.youtube.com/view_play_list?p=D0A648F8F65684BF"><strong>Основы администрирования БД Oracle</strong></a></li>
 
-
-<br/>
-<h3>Видеоматериалы на английском от [cbtnuggets.com]:</h3>
-
-
-<ul>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3834836"><strong>Oracle Database 11g SQL Fundamentals 1 (1Z0-051)</strong></a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3872547"><strong> Oracle Database 11g: Administration I (1Z0-052)</strong></a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=4212455"><strong> Oracle Database 11g: Administration 2 (1Z0-053)</strong></a></li>
-
+	<li><a href="http://www.youtube.com/view_play_list?p=6F78CB4058D30626"><strong>Администрирование Oracle 10g, 11g</strong></a></li>
 </ul>
 
 
 
+
+
+
 <br/>
-<h3>Книги полезные для администратора баз данных Oracle (на русском языке):</h3>
+
+### Книги полезные для администратора баз данных Oracle (на русском языке):
 
 
 <ul>
@@ -71,7 +64,8 @@ hxxps://archive.is/qKSWi
 
 
 <br/>
-<h3>Книги полезные для администратора баз данных Oracle (на английском языке):</h3>
+
+### Книги полезные для администратора баз данных Oracle (на английском языке):
 
 
 <ul>
