@@ -100,21 +100,15 @@ db_unique_name - это уникальное имя для каждого экз
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/">Настройка сетевых служб Oracle для создания дупликата primary на standby</a></li>
 
-
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-instance-parameters-to-work-in-dataguard/">Настройка параметров instance на primary для работы в DataGuard конфигурации</a></li>
-
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/standby-redologs-on-primary-instance/">Создание standby redologs на primary</a></li>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/rman-connection-check/">Проверка подключения RMAN к обоим Instance</a></li>
 
-
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/run-rman-script-for-duplicate-instance/">Создание rman скрипта для создания дупликата primary и его выполнение</a></li>
 
-
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/">Настройка параметров Instance после создания дупликата на standby</a></li>
-
-	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-standby-redologs/">Создание standby redologs (Не знаю, нужен этот шаг или нет. Работает и без него.)</a></li>
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-redo-apply/">Проверка применения redo</a></li>
 
