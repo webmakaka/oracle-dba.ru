@@ -9,10 +9,6 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
 <br/>
 
-### Приступаем к switchover на Primary
-
-
-
     $ dgmgrl
 
 <br/>
