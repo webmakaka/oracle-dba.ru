@@ -100,6 +100,26 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-r
 
 <br/>
 
+### Open Standby Database Read Only
+
+	SQL> shutdown immediate;
+	SQL> startup mount;
+	SQL> alter database open read only;
+
+
+<br/>
+
+	SQL> select name, open_mode, log_mode, database_role from v$database;
+
+	NAME	  OPEN_MODE	       LOG_MODE     DATABASE_ROLE
+	--------- -------------------- ------------ ----------------
+	ORCL12	  READ ONLY WITH APPLY ARCHIVELOG   PHYSICAL STANDBY
+
+
+
+
+<br/>
+
 ### Ошибка:
 
 

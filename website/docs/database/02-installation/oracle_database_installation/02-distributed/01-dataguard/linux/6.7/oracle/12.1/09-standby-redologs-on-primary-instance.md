@@ -15,8 +15,7 @@ A standby redo log is required for the maximum protection and maximum availabili
 > Standby redo logs нужны только на standby базе для записи данных, сохраняемых в redo logs на основной базе. На основной базе они нам понадобятся, если мы будем переключать ее в режим standby и при этом использовать real-time apply redo. Файлы standby redo logs должны быть такого же размера как и online redo logs.
 
 
-При этом в других инструкциях, как раз делают на primary.<br/>
-Я давно делал по инструкции на сайте oracle на primary. В последний раз использовал документ, человека который по всей видимости читал профессиональную литературу.
+При этом в инструкциях обычно, делают на primary, а далее при создании дубликата они создаются и на Standby экземпляре. По-видимому для того, чтобы можно было без лишних манипуляций переключиться с одной базы на другую.
 
 
 <br/>
@@ -39,7 +38,8 @@ A standby redo log is required for the maximum protection and maximum availabili
 <br/>
 
 	$ asmcmd
-	ASMCMD> mkdir +DATA/MASTER/STANDBYLOG/
+	ASMCMD> mkdir +DATA/MASTER/STANDBYLOGS/
+	ASMCMD> mkdir +ARCH/MASTER/STANDBYLOGS/
 	ASMCMD> exit
 
 
@@ -61,11 +61,21 @@ A standby redo log is required for the maximum protection and maximum availabili
 Количество должно быть на 1 больше, чем в primary обычных редолог групп (смотри первый запрос).
 ХЗ почему, потом покопаюсь, хотя врятли.
 
+<!--
+
 	SQL>
 	ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 '+DATA/MASTER/STANDBYLOG/stby_4.log' SIZE 52428800;
 	ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 '+DATA/MASTER/STANDBYLOG/stby_5.log' SIZE 52428800;
 	ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 '+DATA/MASTER/STANDBYLOG/stby_6.log' SIZE 52428800;
 	ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 '+DATA/MASTER/STANDBYLOG/stby_7.log' SIZE 52428800;
+
+-->
+
+	SQL>
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 ('+ARCH/MASTER/STANDBYLOGS/stby_4.log', '+DATA/MASTER/STANDBYLOG/stby_4.log') SIZE 52428800;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 ('+ARCH/MASTER/STANDBYLOGS/stby_5.log', '+DATA/MASTER/STANDBYLOG/stby_5.log') SIZE 52428800;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 ('+ARCH/MASTER/STANDBYLOGS/stby_6.log', '+DATA/MASTER/STANDBYLOG/stby_6.log') SIZE 52428800;
+	ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 ('+ARCH/MASTER/STANDBYLOGS/stby_7.log', '+DATA/MASTER/STANDBYLOG/stby_7.log') SIZE 52428800;
 
 <br/>
 
@@ -78,11 +88,24 @@ A standby redo log is required for the maximum protection and maximum availabili
 // Какую-то полезную информацию можно посмотреть в представлении v$standby_log.
 
 
-	SQL> select LAST_CHANGE#, STATUS from V$STANDBY_LOG;
+	show parameter standby_file_management
 
-	LAST_CHANGE# STATUS
-	------------ ----------
-		     UNASSIGNED
-		     UNASSIGNED
-		     UNASSIGNED
-		     UNASSIGNED
+	NAME				     TYPE	 VALUE
+	------------------------------------ ----------- ------------------------------
+	standby_file_management 	     string	 AUTO
+
+
+<br/>
+
+	SQL> select group#,status,bytes/1024/1024 mb from v$standby_log;
+
+	    GROUP# STATUS	      MB
+	---------- ---------- ----------
+		 4 UNASSIGNED	      50
+		 5 UNASSIGNED	      50
+		 6 UNASSIGNED	      50
+		 7 UNASSIGNED	      50
+
+
+
+		SQL> select TYPE, MEMBER from v$logfile where TYPE='STANDBY';

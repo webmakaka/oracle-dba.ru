@@ -10,7 +10,13 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/queries
 
 	SQL> select name, db_unique_name, database_role, protection_mode from v$database;
 
+	NAME	  DB_UNIQUE_NAME		 DATABASE_ROLE	  PROTECTION_MODE
+	--------- ------------------------------ ---------------- --------------------
+	ORCL12	  slave 			 PHYSICAL STANDBY MAXIMUM PERFORMANCE
+
+
 <br/>
+
 	SQL> SELECT name, value, datum_time, time_computed FROM V$DATAGUARD_STATS;
 
 <br/>
@@ -57,14 +63,15 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/queries
 	---------- --------- --------------- ---------- -----------------------
 	PROTECTION_MODE 	   SRLs     ACTIVE ARCHIVED_SEQ#
 	-------------------- ---------- ---------- -------------
-	1 BAD PARAM MOUNTED-STANDBY ARCH	IDLE
-	MAXIMUM PERFORMANCE	      0 	 0	       0
+	1 VALID     OPEN_READ-ONLY  ARCH	MANAGED REAL TIME APPLY
+	MAXIMUM PERFORMANCE	      0 	 0	      50
 
-	2 VALID     MOUNTED-STANDBY ARCH	IDLE
+	2 DEFERRED  UNKNOWN	     LGWR	IDLE
 	MAXIMUM PERFORMANCE	      0 	 0	       0
 
 	32 VALID     UNKNOWN	     ARCH	IDLE
-	MAXIMUM PERFORMANCE	      0 	 0	       0
+	MAXIMUM PERFORMANCE	      0 	 0	      50
+
 
 
 
@@ -84,14 +91,17 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/queries
 
 	PROCESS   STATUS	  THREAD#  SEQUENCE#	 BLOCK#     BLOCKS
 	--------- ------------ ---------- ---------- ---------- ----------
+	ARCH	  CLOSING		1	  49	      1 	 2
 	ARCH	  CONNECTED		0	   0	      0 	 0
 	ARCH	  CONNECTED		0	   0	      0 	 0
-	ARCH	  CONNECTED		0	   0	      0 	 0
-	ARCH	  CONNECTED		0	   0	      0 	 0
-	ARCH	  CONNECTED		0	   0	      0 	 0
-	MRP0	  WAIT_FOR_LOG		1	  36	      0 	 0
+	ARCH	  CLOSING		1	  50	      1 	26
+	MRP0	  APPLYING_LOG		1	  51	   2486     102400
+	RFS	  IDLE			0	   0	      0 	 0
+	RFS	  IDLE			1	  51	   2486 	 1
+	RFS	  IDLE			0	   0	      0 	 0
 
-	6 rows selected.
+	8 rows selected.
+
 
 
 
