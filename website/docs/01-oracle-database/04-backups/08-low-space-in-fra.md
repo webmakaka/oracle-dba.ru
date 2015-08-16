@@ -20,7 +20,7 @@ permalink: /docs/oracle-database/backup-and-restore/low-space-in-fra/
 Посмотреть данные Fast Recovery:
 
 
-    select ROUND((SPACE_USED)/1024/1024/1024) as "Used GB",
+    SQL> select ROUND((SPACE_USED)/1024/1024/1024) as "Used GB",
     ROUND((SPACE_LIMIT)/1024/1024/1024) as "MAX GB",
     ROUND(((SPACE_LIMIT)-(SPACE_USED))/1024/1024/1024) as "FREE GB"  
     from V$recovery_File_Dest;
@@ -39,7 +39,7 @@ permalink: /docs/oracle-database/backup-and-restore/low-space-in-fra/
 
 
 
-Алгоритм:
+Алгоритм (очень старый, применялся на "игрушечных" базах данных):
 
 Подключиться к RMAN
 1) CMD> rman target /
@@ -56,7 +56,7 @@ permalink: /docs/oracle-database/backup-and-restore/low-space-in-fra/
 
 3) backup database
 
-Установить 1 день для хранения
+Количество бекапо, которые нужно оставить указываем в 1.
 
 4) RMAN> CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
 

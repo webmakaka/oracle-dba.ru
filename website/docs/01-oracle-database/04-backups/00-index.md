@@ -41,6 +41,9 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/fra/">Fast Recovery Area (FRA)</a>
+    </li>
+    <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/">Утилита RMAN (Recovery Manager)</a>
     </li>
     <li>

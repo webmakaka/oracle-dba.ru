@@ -11,14 +11,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 
 <strong>RMAN [Recovery Manager] </strong> - (утилита для резервного копирования и восстановление данных).
 
-
-<strong>FRA [Fast Recovery Area] </strong> - область на диске для резервных копий и архивных журналов.
-
-
-<strong>ARCHIVELOG </strong> - режим работы базы данных, при котором после переключения активной журнальной группы,
-копия журнала архивируется и сохраняется на диск. Redo-лог журналы постепенно перезаписываются, а информация которая в них хранилась может быть получена из архивлогов.
-
-
 Команда <strong>Restore </strong> выполняет восстановление файлов из бекапа. Данные восстанавливаются
 на момент создания бекапа.
 
@@ -103,23 +95,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 
 
 
-// Установить предельный размер flash_recovery_area
-
-    SQL> alter system set db_recovery_file_dest_size = 60G;
-
-// Изменить расположение flash_recovery_area
-
-    SQL> alter system set db_recovery_file_dest='/u03/oracle_backups/fra';
-
-// Влючить archivelog (если нужно)
-
-    SQL> shutdown immediate;
-    SQL> startup mount;
-    SQL> alter database archivelog;
-    SQL> shutdown immediate;
-    SQL> startup;
-
-
 
 // Основные представления:
 
@@ -149,7 +124,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 
 <br/>
 
-### В 11 версии.
+### В 11 версии работа еще больше упростилась. 
 
     RMAN> list failure;
     RMAN> advise failure;
