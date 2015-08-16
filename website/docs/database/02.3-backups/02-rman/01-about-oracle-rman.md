@@ -8,12 +8,13 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 <h2>Утилита RMAN (Recovery Manager)</h2><br/>
 
 <strong>RMAN [Recovery Manager] </strong> - (утилита для резервного копирования и восстановление данных).
-<br/><br/>
+
+
 <strong>FRA [Fast Recovery Area] </strong> - область на диске для резервных копий и архивных журналов.
-<br/><br/>
+
+
 <strong>ARCHIVELOG </strong> - режим работы базы данных, при котором после переключения активной журнальной группы,
-копия журнала архивируется и сохраняется на диск. Redo-лог журналы постепенно перезаписываются, а информация которая в них хранилась
-может быть получена из архивлогов.
+копия журнала архивируется и сохраняется на диск. Redo-лог журналы постепенно перезаписываются, а информация которая в них хранилась может быть получена из архивлогов.
 
 
 Команда <strong>Restore </strong> выполняет восстановление файлов из бекапа. Данные восстанавливаются
@@ -28,7 +29,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 
 
 <br/>
-<h3>Посмотреть режим работы баз данных ORacle (archivelog | noarchivelog), flashback (on | off)</h3>
+<h3>Посмотреть режим работы баз данных Oracle (archivelog | noarchivelog), flashback (on | off)</h3>
 
 
     SQL> select db_unique_name, log_mode, flashback_on from v$database;
@@ -94,9 +95,9 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
     select * from v$backup_spfile;
 
 
-===================================
+<br/>
 
-В 11 версии.
+### В 11 версии.
 
     RMAN> list failure;
     RMAN> advise failure;

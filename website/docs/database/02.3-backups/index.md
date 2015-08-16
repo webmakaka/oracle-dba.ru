@@ -37,9 +37,6 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/oracle-database-backup/">Резервное копирование баз данных Oracle</a>
-    </li>
-    <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/">Утилита RMAN (Recovery Manager)</a>
     </li>
     <li>

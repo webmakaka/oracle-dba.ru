@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Записи вебинаров по Oracle
-permalink: /docs/webinars/
+permalink: /docs/oracle-database/beginning/webinars/
 ---
 
 <h3>Записи вебинаров по Oracle:</h3>>

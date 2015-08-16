@@ -8,21 +8,10 @@ permalink: /sitemap/
 <h1>Oracle DataBase</h1>
 
 <br/>
-<h3>Введение:</h3>
+<h3>Первое знакомство с Oracle DataBase:</h3>
 
 <ul>
-    <li><a href="/docs/intro/">Пара слов о базах данных Oracle</a></li>
-    <li><a href="/docs/starting-on/">С чего начать изучение Oracle?</a> (мнение администратора сайта)</li>
-    <li><a href="/docs/library/">Библиотека</a> (Каталог обучающих материалов)</li>
-    <li><a href="/docs/library/paid-courses/">Oracle Видеокурсы на английском (без ссылок на скачку, сами найдете если нужно)</a> (Каталог обучающих материалов)</li>
-    <li><a href="/docs/doccumentation/">Ссылки на документацию по Oracle</a></li>
-    <li><a href="/docs/webinars/">Записи вебинаров по Oracle</a></li>
-    <li><a href="/docs/questions-on-interview/">Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях</a></li>
-
-    <li><a href="/docs/database/certification/">Сертификация Oracle</a></li>
-
-    <li><a href="/docs/requirements-on-international-companies/">Требования к кандидатам на позицию Oracle DBA в иностранных компаниях</a></li>
-
+    <li><a href="/docs/oracle-database/beginning/">Первое знакомство с Oracle DataBase</a></li>
 </ul>
 
 

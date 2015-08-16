@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Библиотека Oracle DBA
-permalink: /docs/library/
+permalink: /docs/oracle-database/beginning/library/
 ---
 
 # С чего начать изучение Oracle?
