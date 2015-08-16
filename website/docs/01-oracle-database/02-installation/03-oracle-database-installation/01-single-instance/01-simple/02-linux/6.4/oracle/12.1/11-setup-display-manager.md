@@ -136,4 +136,4 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 <br/><br/>
 Если процесс управления инсталляцией проводится на машине с операионной системой windows, то смотри
 
-<a href="/oracle-database-installation/linux/6.3/oracle/11.2/oracle-database-software-installation/">здесь</a>.
+<a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-database-software-installation/">здесь</a>.

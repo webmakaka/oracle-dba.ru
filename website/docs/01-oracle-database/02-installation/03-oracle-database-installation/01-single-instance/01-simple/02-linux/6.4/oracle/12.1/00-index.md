@@ -36,7 +36,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 <br/><br/>
 Инсталляция происходит на удаленный сервер без GUI.
 
-Управление процессом установки и настройки происходит с рабочей станции под управлением Linux по SSH. Если вы будете управлять процессом установки базы данных с рабочей станции под windows, скорее всего вам понадобятся putty и xming. Именно таким образом описывалась установка <a href="/oracle-database-installation/linux/6.3/oracle/11.2/">Oracle 11.2</a>.
+Управление процессом установки и настройки происходит с рабочей станции под управлением Linux по SSH. Если вы будете управлять процессом установки базы данных с рабочей станции под windows, скорее всего вам понадобятся putty и xming. Именно таким образом описывалась установка <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/">Oracle 11.2</a>.
 
 
 <br/><br/>

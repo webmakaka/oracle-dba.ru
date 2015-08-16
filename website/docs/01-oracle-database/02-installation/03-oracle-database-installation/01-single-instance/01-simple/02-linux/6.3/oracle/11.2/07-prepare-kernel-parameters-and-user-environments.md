@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
-permalink: /oracle-database-installation/linux/6.3/oracle/11.2/prepare-kernel-parameters-and-user-environments/
+permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/prepare-kernel-parameters-and-user-environments/
 ---
 
-# <a href="/oracle-database-installation/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Конфигурурование системных пользователей, настройка параметров системы
+# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Конфигурурование системных пользователей, настройка параметров системы
 
 
 Перед тем как вносить изменения в конфигурационные файлы, рекомедуется сделать их резервные копии:
