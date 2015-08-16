@@ -114,7 +114,7 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 
 <ul>
 	<li><a href="https://docs.google.com/document/d/1VTV0bBZff-lyXmRTXE67tuZjXcHAlWTrq4g_c2mfoJI/edit">Инсталляция Oracle Client 11G R2 32 bit в операционной системе Windows XP 32 bit</a></li>
-	<li><a href="/oracle_client_installation/linux/6.3/oracle/11.2/">Инсталляция Oracle Instantclient в OEL 6.3 x86-64</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-client-installation/linux/6.3/oracle/11.2/">Инсталляция Oracle Instantclient в OEL 6.3 x86-64</a></li>
 </ul>
 
 

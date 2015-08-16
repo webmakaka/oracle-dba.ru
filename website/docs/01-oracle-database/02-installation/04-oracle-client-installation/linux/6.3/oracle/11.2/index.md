@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle Instant Client 11.2 в Oracle Linux
-permalink: /oracle_client_installation/linux/6.3/oracle/11.2/
+permalink: /docs/oracle-database/installation/oracle-client-installation/linux/6.3/oracle/11.2/
 ---
 
 ### [Инсталляция Oracle Instant Client 11.2 в Oracle Linux]
