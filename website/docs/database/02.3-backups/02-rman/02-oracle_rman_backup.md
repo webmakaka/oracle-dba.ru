@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание резервных копий с помощью утилиты RMAN (Recovery Manager)
-permalink: /docs/architecture/backups/oracle-rman-backup/
+permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 ---
 
 <h2>Создание резервных копий с помощью утилиты RMAN (Recovery Manager)</h2><br/>

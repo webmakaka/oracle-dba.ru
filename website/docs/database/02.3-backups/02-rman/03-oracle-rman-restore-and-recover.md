@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Восстановление из резервой копий с помощью утилиты RMAN (Recovery Manager)
-permalink: /docs/architecture/backups/oracle-rman-restore-and-recover/
+permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-restore-and-recover/
 ---
 
 

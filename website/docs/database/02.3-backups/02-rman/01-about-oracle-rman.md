@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Утилита RMAN (Recovery Manager)
-permalink: /docs/architecture/backups/oracle-rman/
+permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 ---
 
 

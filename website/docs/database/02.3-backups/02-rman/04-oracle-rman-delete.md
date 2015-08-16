@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Удаление объектов RMAN (Recovery Manager)
-permalink: /docs/architecture/backups/oracle-rman-delete/
+permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-delete/
 ---
 
 
