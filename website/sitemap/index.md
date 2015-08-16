@@ -40,7 +40,7 @@ permalink: /sitemap/
 
 <div align="center">
 
-    <a href="/docs/oracle-application-server/weblogic/"><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi.png" border="0" alt="Oracle Business Intelligence  Logo"></a>
+    <a href="/docs/business-intelligence/"><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi.png" border="0" alt="Oracle Business Intelligence  Logo"></a>
 
 </div>
 
