@@ -187,6 +187,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	export PATH=$PATH:$ORACLE_HOME/bin
 	export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
+	export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
+
 	alias sqlplus='rlwrap sqlplus'
 	alias rman='rlwrap rman'
 

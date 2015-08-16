@@ -14,7 +14,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 1) Устанавливаю 2 сервера как <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 
-На втором (StandBy) не создаю instance. Он будет скопирован с первого.
+**На втором (StandBy) не создаю instance. Он будет скопирован с первого**
 
 
     Primary:  

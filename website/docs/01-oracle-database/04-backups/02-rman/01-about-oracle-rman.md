@@ -5,7 +5,9 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 ---
 
 
-<h2>Утилита RMAN (Recovery Manager)</h2><br/>
+## Утилита RMAN (Recovery Manager)
+
+<br/>
 
 <strong>RMAN [Recovery Manager] </strong> - (утилита для резервного копирования и восстановление данных).
 
@@ -29,19 +31,75 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 
 
 <br/>
-<h3>Посмотреть режим работы баз данных Oracle (archivelog | noarchivelog), flashback (on | off)</h3>
 
+// Подключиться к консоли rman
 
-    SQL> select db_unique_name, log_mode, flashback_on from v$database;
+    $rman target /
 
 <br/>
 
-    DB_UNIQUE_NAME                 LOG_MODE     FLASHBACK_ON
-    ------------------------------ ------------ ------------------
-    ora112                         ARCHIVELOG   YES
+    $ rman target sys/manager@service
 
 
-При включении FLASHBACK - возможно, необходимо расширить табличное пространство UNDO не менее, чем до 2GB.
+// Писать output в файл
+
+    $ rman target / Log /tmp/rman.log
+
+
+// Писать output в консоль и в лог
+
+    $ rman target / | tee /tmp/rman.log
+
+
+// Посмотреть значения параметров бекапа, установленных по умолчанию.
+
+    RMAN> show all;
+
+<br/>
+
+    RMAN configuration parameters for database with db_unique_name MASTER are:
+    CONFIGURE RETENTION POLICY TO REDUNDANCY 1; # default
+    CONFIGURE BACKUP OPTIMIZATION ON;
+    CONFIGURE DEFAULT DEVICE TYPE TO DISK; # default
+    CONFIGURE CONTROLFILE AUTOBACKUP OFF; # default
+    CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE DISK TO '%F'; # default
+    CONFIGURE DEVICE TYPE DISK PARALLELISM 1 BACKUP TYPE TO BACKUPSET; # default
+    CONFIGURE DATAFILE BACKUP COPIES FOR DEVICE TYPE DISK TO 1; # default
+    CONFIGURE ARCHIVELOG BACKUP COPIES FOR DEVICE TYPE DISK TO 1; # default
+    CONFIGURE CHANNEL DEVICE TYPE DISK FORMAT   '+ARCH/%d_DB_%u_%s_%p';
+    CONFIGURE MAXSETSIZE TO UNLIMITED; # default
+    CONFIGURE ENCRYPTION FOR DATABASE OFF; # default
+    CONFIGURE ENCRYPTION ALGORITHM 'AES128'; # default
+    CONFIGURE COMPRESSION ALGORITHM 'BASIC' AS OF RELEASE 'DEFAULT' OPTIMIZE FOR LOAD TRUE ; # default
+    CONFIGURE RMAN OUTPUT TO KEEP FOR 7 DAYS; # default
+    CONFIGURE ARCHIVELOG DELETION POLICY TO NONE;
+    CONFIGURE SNAPSHOT CONTROLFILE NAME TO '/u01/oracle/database/12.1/dbs/snapcf_orcl12.f'; # default
+
+
+<br/>
+
+// Задать значение (просто пример)
+
+    RMAN> CONFIGURE RETENTION POLICY TO RECOVERY WINDOW OF 2 DAYS;
+
+<br/>
+
+    RMAN> show all;
+
+    RMAN configuration parameters for database with db_unique_name MASTER are:
+    CONFIGURE RETENTION POLICY TO RECOVERY WINDOW OF 2 DAYS;
+    ***
+
+<br/>
+
+
+// Сбросить
+
+    RMAN> CONFIGURE RETENTION POLICY CLEAR;
+
+
+Но все это, как мне видится не особо и нужно.
+Параметры бекапа следует явно задавать в скриптах.
 
 
 
@@ -53,7 +111,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 
     SQL> alter system set db_recovery_file_dest='/u03/oracle_backups/fra';
 
-// Влючить archivelog (если выключен)
+// Влючить archivelog (если нужно)
 
     SQL> shutdown immediate;
     SQL> startup mount;
@@ -61,12 +119,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
     SQL> shutdown immediate;
     SQL> startup;
 
-// Влючить flashback (если выключен)
-
-    SQL> shutdown immediate;
-    SQL> startup mount exclusive;
-    SQL> alter database flashback on;
-    SQL> alter database open;
 
 
 // Основные представления:
@@ -184,34 +236,9 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
     2    2048     MY_TEMP              2048        /u02/oradata/ora112/my_temp01.dbf
 
 
-<br/>
-<h3>Параметры RMAN по умолчанию </h3>
-
-
-    RMAN> show all;
 
 <br/>
 
-
-    RMAN configuration parameters for database with db_unique_name ORA112 are:
-    CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
-    CONFIGURE BACKUP OPTIMIZATION OFF; # default
-    CONFIGURE DEFAULT DEVICE TYPE TO DISK; # default
-    CONFIGURE CONTROLFILE AUTOBACKUP OFF; # default
-    CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE DISK TO '%F'; # default
-    CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET PARALLELISM 1;
-    CONFIGURE DATAFILE BACKUP COPIES FOR DEVICE TYPE DISK TO 1; # default
-    CONFIGURE ARCHIVELOG BACKUP COPIES FOR DEVICE TYPE DISK TO 1; # default
-    CONFIGURE MAXSETSIZE TO UNLIMITED; # default
-    CONFIGURE ENCRYPTION FOR DATABASE OFF; # default
-    CONFIGURE ENCRYPTION ALGORITHM 'AES128'; # default
-    CONFIGURE COMPRESSION ALGORITHM 'BASIC' AS OF RELEASE 'DEFAULT' OPTIMIZE FOR LOAD TRUE ; # default
-    CONFIGURE ARCHIVELOG DELETION POLICY TO NONE; # default
-    CONFIGURE SNAPSHOT CONTROLFILE NAME TO '/u01/app/oracle/product/11.2/dbs/snapcf_ora112.f'; # default
-
-
-
-<br/>
 <strong>Проверка базы с помощью утилиты RMAN:</strong>
 
     RMAN> VALIDATE DATABASE;

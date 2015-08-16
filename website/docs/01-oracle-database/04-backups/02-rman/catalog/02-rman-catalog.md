@@ -1,13 +1,33 @@
 ---
 layout: page
-title: Утилита RMAN (Recovery Manager)
-permalink: /docs/architecture/backups/rman/video-course/
+title: RMAN Catalog (Хранение бекапов базы в другой базе)
+permalink: /docs/oracle-database/backup-and-restore/rman/catalog/
 ---
 
-### Create repository:
+
+<br/>
 
 
-$ sqlplus / as sysdba
+1) Устанавливаю 2 сервера как <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
+
+
+    Типичный сервер баз данных oracle:  
+    Hostname: moscow
+    IP: 192.168.1.11  
+    Instance Name: orcl12
+
+
+<br/>
+
+    Сервер хранения бекапов:  
+    Hostname: piter  
+    IP: 192.168.1.12  
+    Instance Name: catalog
+
+
+### На piter создаю репозиторий:
+
+    $ sqlplus / as sysdba
 
 <br/>
 
@@ -59,7 +79,7 @@ $ sqlplus / as sysdba
 
 
 
-### Настройка tnsnames.ora на Primary и Standby
+### Настройка tnsnames.ora на piter
 
 
 	$ cd $ORACLE_HOME/network/admin
@@ -77,10 +97,13 @@ $ sqlplus / as sysdba
 	    (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
 	    (CONNECT_DATA =
 	      (SERVER = DEDICATED)
-	      (SERVICE_NAME = neptune)
+	      (SERVICE_NAME = catalog)
 	    )
 	  )
 
 <br/>
 
     $ lsnrclt restart
+
+
+Продолжение следует...

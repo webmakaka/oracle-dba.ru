@@ -14,9 +14,6 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 Рекомендуется время от времени восстанавливать копию базы данных из бекапов, чтобы убедиться, что все в актуальном состоянии, да и вообще всегда нужно иметь подготовленную инструкцию по восстановлению.
 
-Можно делать
-
-
 
 <ul>
     <li>
@@ -54,6 +51,9 @@ permalink: /docs/oracle-database/backup-and-restore/
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-delete/">Удаление объектов RMAN (Recovery Manager)</a>
+    </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/catalog/">RMAN Catalog (Хранение бекапов базы в другой базе)</a>
     </li>
 </ul>
 

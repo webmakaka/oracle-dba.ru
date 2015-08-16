@@ -67,6 +67,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 		export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
 		export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
+		export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
+
 
 		# rlwrap aliases
 
@@ -121,6 +123,8 @@ $ vi ~/.bash_profile
 
 		export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
 		export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+
+		export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
 
 
 		# rlwrap aliases
