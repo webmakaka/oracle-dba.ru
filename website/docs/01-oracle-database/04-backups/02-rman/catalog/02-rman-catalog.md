@@ -25,7 +25,9 @@ permalink: /docs/oracle-database/backup-and-restore/rman/catalog/
     Instance Name: catalog
 
 
-### На piter создаю репозиторий:
+<br/>
+
+### На piter создаю репозиторий для бекапов:
 
     $ sqlplus / as sysdba
 

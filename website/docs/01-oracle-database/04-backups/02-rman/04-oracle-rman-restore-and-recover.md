@@ -6,10 +6,10 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-restore-and
 
 
 
-<h2>Восстановление из резервой копий с помощью утилиты RMAN (Recovery Manager)</h2>
+## Восстановление из резервой копий с помощью утилиты RMAN (Recovery Manager)
 
 
-<h3>Получить информацию об имеющихся бекапах.</h3>
+### Получить информацию об имеющихся бекапах.
 
 
     set pagesize 200;
