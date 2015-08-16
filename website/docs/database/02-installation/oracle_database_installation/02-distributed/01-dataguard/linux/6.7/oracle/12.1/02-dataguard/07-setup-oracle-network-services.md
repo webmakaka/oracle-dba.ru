@@ -135,6 +135,8 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/setup-o
 	The command completed successfully
 
 
+Нужно, чтобы поднялся сервис master и slave на каждом из серверов. Стартуют не сразу. Иногда нужно минут 5 подождать.
+
 <br/>
 
 **С обоих серверов должен проходить tnsping**:

@@ -7,7 +7,6 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Переконфигурирование Listener для Switchover
 
 
-
 <br/>
 
 ### Перенастройка Listener на Primary
@@ -110,12 +109,6 @@ SID_LIST_LISTENER=
       Instance "+ASM", status READY, has 1 handler(s) for this service...
     Service "master" has 1 instance(s).
       Instance "orcl12", status READY, has 1 handler(s) for this service...
-    Service "master_DGB" has 1 instance(s).
-      Instance "orcl12", status READY, has 1 handler(s) for this service...
-    Service "master_DGMGRL" has 1 instance(s).
-      Instance "orcl12", status UNKNOWN, has 1 handler(s) for this service...
     Service "orcl12XDB" has 1 instance(s).
       Instance "orcl12", status READY, has 1 handler(s) for this service...
-    Service "slave_DGMGRL" has 1 instance(s).
-      Instance "orcl12", status UNKNOWN, has 1 handler(s) for this service...
     The command completed successfully

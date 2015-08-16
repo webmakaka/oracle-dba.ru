@@ -38,17 +38,22 @@ https://www.youtube.com/watch?v=6wgykHNp6vQ
 
 <ul>
 
+	<li><strong>Oracle Performance Tuning</strong></li>
+
 	<li><strong>Easy way to set Oracle Active Dataguard</strong></li>
 
 	<li><strong>Oracle Real Application Cluster</strong></li>
 
 	<li><strong>Oracle Business Intelligence Enterprise Edition (OBIEE) 11g</strong></li>
 
-	<li><strong>Oracle Coherence Quickstart</strong></li>
-
 	<li><strong>Oracle E-Business Suite R12 Applications DBA</strong></li>
 
 	<li><strong>Practice with Oracle RMAN</strong></li>
+
+	<li><strong>Oracle WebLogic 12c for Administrators</strong></li>
+
+	<li><strong>Oracle Coherence Quickstart</strong></li>
+
 </ul>
 
 <br/>

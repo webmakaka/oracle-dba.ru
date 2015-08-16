@@ -6,7 +6,7 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/
 
 # Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7
 
-# Alfa версия. Документ пока в разработке!  
+# Beta версия докумена. Необходимо проверить на реальных серверах! Если кто будет делать по этой версии, отпишитесь, что да как, где и что поправить.
 
 
 Технология Oracle Data Guard предалагает решение для обеспечения высокой доступности, повышенной производительности и автоматического преодоления последствий сбоя.
@@ -70,7 +70,7 @@ db_unique_name - это уникальное имя для каждого экз
 
 <br/>
 
-## Подготовка виртуальных машин:
+## Подготовка виртуальных машин и instance:
 
 
 <ul>
@@ -130,13 +130,18 @@ db_unique_name - это уникальное имя для каждого экз
 
 	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/switchover/">Switchover (переключение ролей между primary и standby instance)</a></li>
 
-
-
-
 </ul>
 
 
+<br/>
 
+## Backups
+
+<ul>
+
+	<li><a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/backups/">BACKUPы на DataGuard</a></li>
+
+</ul>
 
 
 <br/>

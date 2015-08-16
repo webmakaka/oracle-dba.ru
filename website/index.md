@@ -39,11 +39,6 @@ permalink: /
 
 <div style="padding:10px; border:thin solid black;">
 
-Скачал курс <a href="https://www.udemy.com/easy-way-to-set-oracle-active-dataguard/">Easy way to set Oracle Active Dataguard</a>. Хочу разобрать и сделать конспект. Кому тоже интересно, могут присоединиться. Обсуждение в <a href="/chat/">чате</a>. Разбор начинается <a href="/oracle-database-installation/dataguard/linux/6.7/oracle/12.1/">здесь</a>. Мда, похоже этот испано индус не особо далеко от меня ушел.
-
-
-<br/><br/>
-
-Потом, планирую изучить курс oracle-business-intelligence-enterprise-edition-obiee-11g  и oracle-e-business-suite-r12-applications-dba
+Планируется к изучению курсы:   oracle-business-intelligence-enterprise-edition-obiee-11g  и oracle-e-business-suite-r12-applications-dba
 
 </div>

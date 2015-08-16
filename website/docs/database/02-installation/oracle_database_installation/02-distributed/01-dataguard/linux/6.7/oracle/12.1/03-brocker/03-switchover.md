@@ -366,6 +366,73 @@ permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/
 
     6 rows selected.
 
+
+<br/>
+
+### Делаю  Switchover обратно, чтобы работало как прежде
+
+
+    $ dgmgrl
+
+    DGMGRL> connect sys/manager@primary
+    DGMGRL> switchover to master;
+
+
+При switchover у меня один из инстансов отвалился. Пришлось его руками поднимать и перестартовывать listener. Я сначала подумал, что придется выполнять операцию заново но не пришлось.
+
+
+
+    DGMGRL> show configuration
+
+    Configuration - DG_ORCL12
+
+      Protection Mode: MaxAvailability
+      Members:
+      master - Primary database
+        slave  - (*) Physical standby database
+
+    Fast-Start Failover: ENABLED
+
+    Configuration Status:
+    SUCCESS   (status updated 13 seconds ago)
+
+
+<br/>
+
+    DGMGRL> show database master
+
+    Database - master
+
+      Role:               PRIMARY
+      Intended State:     TRANSPORT-ON
+      Instance(s):
+        orcl12
+
+    Database Status:
+    SUCCESS
+
+<br/>
+
+    DGMGRL> show database slave
+
+    Database - slave
+
+      Role:               PHYSICAL STANDBY
+      Intended State:     APPLY-ON
+      Transport Lag:      0 seconds (computed 1 second ago)
+      Apply Lag:          0 seconds (computed 1 second ago)
+      Average Apply Rate: 3.00 KByte/s
+      Real Time Query:    ON
+      Instance(s):
+        orcl12
+
+    Database Status:
+    SUCCESS
+
+
+
+
+
 <br/><br/>
 
 Помогла статья:  
