@@ -53,7 +53,6 @@ permalink: /oracle-database-installation/linux/6.3/oracle/11.2/
 
 <ul>
 	<li><a href="/oracle-database-installation/linux/6.3/oracle/11.2/distrib/">Дистрибутивы баз данных и дополнительное программное обеспечение</a><br/></li>
-	<!--<li><a href="oracle_virtual_mashine.php">Виртуальная машина Virtual Box с установленной Oracle Database (11.2.0.3) в операционной системе Oracle Linux 6.2 (x86_64)</a><br/></li>-->
 </ul>
 
 <br/><br/>
