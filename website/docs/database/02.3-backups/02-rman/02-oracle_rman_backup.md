@@ -8,7 +8,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 
 
 <br/>
-<h3>Бекапы могут храниться как backup set (по умолчанию) и image copies:</h3>
+<h3>Бекапы могут храниться в backup set (по умолчанию) и image copies:</h3>
 
 <ul>
 <li>backup set  - данные хранятся в формате понятном только для RMAN.  В Backup set состоит из  Backup piece, каждый из которых может представлять из себя копию файла данных или копию управляющего файла, или копию архивлогов. </li>
