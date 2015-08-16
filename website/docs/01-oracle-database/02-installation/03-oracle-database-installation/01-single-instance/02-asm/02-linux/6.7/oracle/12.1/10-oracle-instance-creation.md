@@ -24,7 +24,7 @@ permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/oracle
 <br/><br/>
 
 В режиме Advanced, можно более оптимально настроить параметры. Исключить из установки лишнее. Например, JVM, Enterprise Manager, Multimedia. Можно выделить побольше ресурсов памяти.  
-http://oracle-dba.ru/oracle-database-installation/linux/6.4/oracle/12.1/oracle-instance-creation/
+http://oracle-dba.ru/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-instance-creation/
 
 
 

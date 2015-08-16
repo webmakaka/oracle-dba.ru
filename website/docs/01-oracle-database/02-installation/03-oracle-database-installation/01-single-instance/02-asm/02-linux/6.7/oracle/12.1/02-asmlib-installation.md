@@ -9,7 +9,7 @@ permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/asmlib
 <br/>
 
 Обязательные для установки пакеты:  
-http://oracle-dba.ru/oracle-database-installation/linux/6.4/oracle/12.1/install-mandatory-packages/
+http://oracle-dba.ru/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/install-mandatory-packages/
 
 
 <br/><br/>
