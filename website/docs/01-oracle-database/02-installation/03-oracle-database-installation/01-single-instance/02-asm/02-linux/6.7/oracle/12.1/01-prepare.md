@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Установка hostname и hosts
-permalink: /oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare/
+permalink: /docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare/
 ---
 
-# <a href="/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Установка hostname и hosts
+# <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Установка hostname и hosts
 
 <br/>
 
