@@ -32,9 +32,9 @@ permalink: /docs/oracle-database/beginning/database/certification/
 
 <br/><br/>
 <ul>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3255395">OCA Oracle Database 11g SQL Fundamentals I Exam Guide (Exam 1Z0-051)</a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3255365">OCA Oracle Database 11g Administration I Exam Guide (Exam 1Z0-052)</a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=2359523">OCP Oracle Database 11g. Administration II Exam Guide (Exam 1Z0-053)</a></li>
+	<li>OCA Oracle Database 11g SQL Fundamentals I Exam Guide (Exam 1Z0-051)</li>
+	<li>OCA Oracle Database 11g Administration I Exam Guide (Exam 1Z0-052)</li>
+	<li>OCP Oracle Database 11g. Administration II Exam Guide (Exam 1Z0-053)</li>
 </ul>
 
 <br/><br/>

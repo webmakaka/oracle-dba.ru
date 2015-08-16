@@ -2,8 +2,10 @@
 layout: page
 title: Ссылки на документацию по Oracle
 permalink: /docs/oracle-database/beginning/doccumentation/
+---
 
-<h3>Ссылки на документацию по Oracle:</h3>>
+
+### Ссылки на документацию по Oracle:
 
 <br/>
 <h3>Документация</h3>
