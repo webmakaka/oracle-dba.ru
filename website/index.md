@@ -39,6 +39,7 @@ permalink: /
 
 <div style="padding:10px; border:thin solid black;">
 
+
 Планируется к изучению курсы:   oracle-business-intelligence-enterprise-edition-obiee-11g  и oracle-e-business-suite-r12-applications-dba
 
 </div>
