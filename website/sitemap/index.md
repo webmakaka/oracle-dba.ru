@@ -21,41 +21,31 @@ permalink: /sitemap/
 # Oracle Fusion Middleware
 
 
-<h3>Сервер приложений Oracle Weblogic:</h3>
-
-
-<ul>
-    <li>
-        <a href="/docs/appserv/weblogic/weblogic-versions/">Версии Weblogic</a>
-    </li>
-    <li>
-        <a href="https://docs.google.com/document/d/11vBXmPQzIx2KnxuurIdVImCvyqwGca_u0j4gKmlVJuc/edit">Инсталляция сервера приложений Oracle Weblogic в операционной системе Oracle Linux</a>
-    </li>
-    <li>
-        <a href="/docs/appserv/weblogic/weblogic-patches/">О патчах для Oracle WebLogic Server</a>
-    </li>
-    <li>
-        <a href="/docs/appserv/weblogic/weblogic-seminar/">Практический обучающий курс для партнеров Oracle по серверу приложений Weblogic</a>
-    </li>
-
-</ul>
-
-
-<br/><br/>
-<h3>Oracle Business Intelligence:</h3>
+### Сервер приложений Oracle Weblogic:
 
 
 
-<ul>
-    <li>
-        <a href="/docs/business-intelligence/installation/">Инсталляция Oracle Business Intelligence Enterprise Edition (OBIEE)</a>
-    </li>
-    <li>
-        <a href="http://www.oracle.com/technetwork/middleware/bi-foundation/obiee-samples-167534.html">Oracle Business Intelligence Enterprise Edition Samples</a>
-    </li>
-</ul>
+<div align="center">
+
+    <a href="/docs/oracle-application-server/weblogic/"><img src="http://img.oradba.net/img/oracle/middleware/weblogic/weblogic.jpg" border="0" alt="Oracle Weblogic Logo"></a>
+
+</div>
 
 
+
+<br/>
+
+### Oracle Business Intelligence Enterprise Edition (OBIEE):
+
+
+<div align="center">
+
+    <a href="/docs/oracle-application-server/weblogic/"><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi.png" border="0" alt="Oracle Business Intelligence  Logo"></a>
+
+</div>
+
+
+<br/>
 
 <hr>
 

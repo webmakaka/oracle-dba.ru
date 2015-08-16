@@ -5,7 +5,7 @@ permalink: /docs/oracle-database/
 ---
 
 
-<h1>Oracle DataBase</h1>
+# Oracle DataBase
 
 <br/>
 <h3>Первое знакомство с Oracle DataBase:</h3>
