@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /oracle-database-installation/rac/linux/5.8/oracle/11.2/prepare-iscsi-discs/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/prepare-iscsi-discs/
 ---
 
-# <a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция ISCSI и монтирование iscsi дисков
+# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция ISCSI и монтирование iscsi дисков
 
 
 <br/>

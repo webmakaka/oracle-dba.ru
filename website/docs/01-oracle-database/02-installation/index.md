@@ -168,7 +168,7 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 <ul>
 
-	<li><a href="/oracle-database-installation/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
 
 	<li><a href="http://odba.ru/showthread.php?t=412">Real Application Cluster 10g R2 [OEL5.5 x86_64, DataBase 10.2.0.5., NFS]</a></li>
 
