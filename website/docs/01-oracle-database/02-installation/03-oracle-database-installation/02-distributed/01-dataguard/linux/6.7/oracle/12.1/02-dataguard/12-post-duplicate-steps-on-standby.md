@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Настройка параметров Instance после создания дупликата на standby
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка параметров Instance после создания дупликата на standby

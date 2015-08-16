@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Стартую instance на standby
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/startup-instance-on-standby/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/startup-instance-on-standby/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Стартую instance на standby

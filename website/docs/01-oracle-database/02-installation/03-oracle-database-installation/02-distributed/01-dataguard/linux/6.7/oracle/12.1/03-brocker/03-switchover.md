@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Приступаем к switchover на Primary
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/switchover/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/broker/switchover/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Приступаем к switchover на Primary

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Установка брокера (DGMGRL)
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/broker/setup/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/broker/setup/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Устанавливаем Broker

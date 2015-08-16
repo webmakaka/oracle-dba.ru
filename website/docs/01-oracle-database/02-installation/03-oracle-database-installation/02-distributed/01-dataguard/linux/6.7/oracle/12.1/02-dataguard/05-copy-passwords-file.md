@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Копирование файла паролей с primary на standby
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/copy-passwords-file/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/copy-passwords-file/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Копирование файла паролей с primary на standby

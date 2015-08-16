@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Проверка применения redo
-permalink: /oracle-database-installation/dataguard/linux/6.7/oracle/12.1/check-redo-apply/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/check-redo-apply/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Проверка применения redo
