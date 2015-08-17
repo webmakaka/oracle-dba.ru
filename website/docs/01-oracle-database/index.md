@@ -229,12 +229,24 @@ permalink: /docs/oracle-database/
 
 <ul>
     <li>
-        <a href="/docs/tricks/rename-oracle-instance/">Переименование instance в Oracle 11 в linux</a>
+        <a href="/docs/oracle-database/tricks/rename-oracle-instance/">Переименование instance в Oracle 11 в linux</a>
     </li>
     <li>
         <a href="https://newbiedba.wordpress.com/2013/05/17/oracle-11gr2-using-rman-to-duplicate-a-live-database/">Oracle 11gR2 – Using RMAN to duplicate a live database (нужно проверить)</a>
     </li>
     <li>
         <a href="http://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmdupdb.htm#BRADV168">Duplicating a Database 11G</a>
+    </li>
+</ul>
+
+
+
+<br/><br/>
+<h3>Байки:</h3>
+
+
+<ul>
+    <li>
+        <a href="/docs/oracle-database/humor/">Все рано или поздно косячат</a>
     </li>
 </ul>
