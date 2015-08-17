@@ -29,7 +29,7 @@ permalink: /docs/oracle-database/
 ### Upgrade Oracle DataBase:
 
 <ul>
-    <li><a href="/oracle-database-upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
+    <li><a href="/docs/oracle-database/upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
 </ul>
 
 
