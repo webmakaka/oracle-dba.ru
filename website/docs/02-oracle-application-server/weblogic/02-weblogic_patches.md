@@ -5,7 +5,7 @@ permalink: /docs/oracle-application-server/weblogic/weblogic-patches/
 ---
 
 
-<h2>Применение патчей к серверу приложений Oracle WebLogic</h2><br/>
+## Применение патчей к серверу приложений Oracle WebLogic
 
 
 
