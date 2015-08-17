@@ -80,8 +80,9 @@ permalink: /docs/oracle-database/backup-and-restore/rman/catalog/
     SQL> select * from rc_database;
 
 
+<br/>
 
-### Настройка tnsnames.ora на piter
+### Настройка tnsnames.ora на piter (если нужно)
 
 
 	$ cd $ORACLE_HOME/network/admin
@@ -94,18 +95,20 @@ permalink: /docs/oracle-database/backup-and-restore/rman/catalog/
 
 	***
 
-	RMAN12G =
-	  (DESCRIPTION =
-	    (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
-	    (CONNECT_DATA =
-	      (SERVER = DEDICATED)
-	      (SERVICE_NAME = catalog)
-	    )
-	  )
+    RMAN12 =
+      (DESCRIPTION =
+        (ADDRESS = (PROTOCOL = TCP)(HOST = piter.localdomain)(PORT = 1521))
+        (CONNECT_DATA =
+          (SERVER = DEDICATED)
+          (SERVICE_NAME = catalog)
+        )
+      )
 
 <br/>
 
-    $ lsnrclt restart
+    $ sqlplus system/manager@rman12
 
+
+<br/>
 
 Продолжение следует...
