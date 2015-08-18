@@ -5,7 +5,8 @@ permalink: /docs/oracle-database/beginning/database/certification/
 ---
 
 
-<h3>Сертификация Oracle DBA</h3><br/>
+### Сертификация Oracle DBA
+
 
 
 Если есть желание работать на международном уровне, а не на локальном и получать за свою работу более достойную З/П, необходимо продемонстрировать свою профессиональную подготовку. Собственно админам Oracle нужно получить OCP. Для этого нужно сдать экзамены 1Z0-051, 1Z0-052, 1Z0-053.
@@ -14,7 +15,7 @@ permalink: /docs/oracle-database/beginning/database/certification/
 <div align="center">
 <p>
 <img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/sql.jpg" border="0">
-<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/07-cert/administration1.jpg" border="0">
+<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration1.jpg" border="0">
 
 </p>
 
@@ -30,7 +31,7 @@ permalink: /docs/oracle-database/beginning/database/certification/
 <br/><br/>
 <strong>Книги по сертификации:</strong>
 
-<br/><br/>
+
 <ul>
 	<li>OCA Oracle Database 11g SQL Fundamentals I Exam Guide (Exam 1Z0-051)</li>
 	<li>OCA Oracle Database 11g Administration I Exam Guide (Exam 1Z0-052)</li>

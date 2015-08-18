@@ -56,11 +56,17 @@ permalink: /docs/oracle-database/backup-and-restore/
         <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-delete/">Удаление объектов RMAN (Recovery Manager)</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/catalog/">RMAN Catalog (Хранение бекапов базы в другой базе)</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/rman-catalog-installation/">Создание RMAN Catalog (Для хранение бекапов баз в специальной базе для бекапов)</a>
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/rman-incarnations-sample/">Пример с инкарнациями</a>
     </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/change-db-unique-name-in-catalog/">Поменять db_unique_name в RMAN каталоге</a>
+    </li>
+
+
+
 </ul>
 
 

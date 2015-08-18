@@ -5,8 +5,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/rman-incarnations-sampl
 ---
 
 
-
-
 ### Инкарнации базы данных
 
 
