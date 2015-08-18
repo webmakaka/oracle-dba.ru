@@ -25,6 +25,16 @@ permalink: /docs/oracle-database/backup-and-restore/rman/catalog/
     Instance Name: catalog
 
 
+
+<br/>
+
+### На moscow перевожу базу в режим работы ARCHIVELOG:
+
+    SQL> shutdown immediate;
+    SQL> startup mount;
+    SQL> alter database archivelog;
+    SQL> alter database open;
+
 <br/>
 
 ### На piter создаю репозиторий для бекапов:
@@ -209,9 +219,12 @@ permalink: /docs/oracle-database/backup-and-restore/rman/catalog/
 
     SQL> show parameter db_unique_name
 
+<br/>
+
     $ rman target / catalog rman/rman123@rman12
 
 
+</br>
 
     RMAN> LIST DB_UNIQUE_NAME OF DATABASE;
 
@@ -225,121 +238,3 @@ permalink: /docs/oracle-database/backup-and-restore/rman/catalog/
 // Если нужно поменять уникальное имя базы данных в rman каталоге.
 
     RMAN> CHANGE DB_UNIQUE_NAME FROM ORCL12 TO ORCL12C
-
-
-
-
-
-### Инкарнации базы данных
-
-Инкарнация - при неполном восстновлении базы, когда база открывается с опцией resetlogs. Т.е. данные из redologs удаляются. Вроде как у базы, начинается новая жизнь. Историю жизней базы, можно посмотреть следующими способами. Вообщем смысл инкарнаций в том, что база откатывается на какое-то состояние в прошлом и уже с этого состояния идет новая работа. Как снапшоты на виртуалках, когда то к одному состоянию откатился, потом к другому. В результате получается какое-то дерево с разными ветками. Насколько это часто используется в базах? нечасто. Ну вот сами подумайте, как можно на production базе делать какие-то откаты и работать с какой-то точки? Должны быть серьезные причины. Видел один или два раза давно как потерян был архив лог а база требовала восстановления. Вот откатывали на состояние предшествующее этому архивлогу и делали инкарнацию. Но, как мне видится, это все были костыли из за того, что подготовили сервер с доп избыточностью.
-
-
-    RMAN> LIST INCARNATION OF DATABASE;
-
-
-    List of Database Incarnations
-    DB Key  Inc Key DB Name  DB ID            STATUS  Reset SCN  Reset Time
-    ------- ------- -------- ---------------- --- ---------- ----------
-    1       16      ORCL12   3487575625       PARENT  1          07/07/2014 05:38:47
-    1       2       ORCL12   3487575625       CURRENT 1594143    16/08/2015 21:29:45
-
-
-<br/>
-
-        SQL> select incarnation#, resetlogs_change# from v$database_incarnation;
-
-        INCARNATION# RESETLOGS_CHANGE#
-        ------------ -----------------
-        	   1		     1
-        	   2	       1594143
-
-
-
-<br/>
-
-    backup database;
-
-
-    create table test as select * from all_objects;
-
-
-    select count(1) from test;
-
-    slect current_scn from v$database;
-
-    delete from test;
-
-    commit;
-
-    slect current_scn from v$database;
-
-    drop table test;
-
-
-    slect current_scn from v$database;
-
-
-    alter system swithc logfile;
-
-
-
-    SQL> select incarnation#, resetlogs_change# from v$database_incarnation;
-
-
-    shutdow immediate;
-    startup mount;
-
-
-    scn после delete from test; commit;
-
-    RUN {
-        set until scn=;
-        restore database;
-        recover database;
-    }
-
-
-    rman target / catalog rman/rman123@rman12
-
-    alter database open resetlogs;
-
-    desc test;
-
-
-    slect count(1) from test;
-
-
-
-
-    scn до delete from test; commit;
-
-    RUN {
-        set until scn=;
-        restore database;
-        recover database;
-    }
-
-    ошибка
-
-    RMAN> LIST INCARNATION OF DATABASE;
-
-
-    shutdown immediate
-    startup mount
-    reset database to incarnation "Inc Key"
-
-
-
-    scn до delete from test; commit;
-
-    RUN {
-        set until scn=;
-        restore database;
-        recover database;
-    }
-
-    alter database open resetlogs;
-
-
-    slect count(1) from test;

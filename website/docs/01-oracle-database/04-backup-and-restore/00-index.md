@@ -58,6 +58,9 @@ permalink: /docs/oracle-database/backup-and-restore/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/catalog/">RMAN Catalog (Хранение бекапов базы в другой базе)</a>
     </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/rman-incarnations-sample/">Пример с инкарнациями</a>
+    </li>
 </ul>
 
 
