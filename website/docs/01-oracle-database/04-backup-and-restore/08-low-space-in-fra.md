@@ -7,9 +7,8 @@ permalink: /docs/oracle-database/backup-and-restore/low-space-in-fra/
 # Специфицеское решение, когда база работает в ARCHIVELOG режиме
 
 
-<h3>Недостаточно свободного места в Fast Recovery Area</h3><br/>
+### Недостаточно свободного места в Fast Recovery Area
 
-<br/><br/>
 
 База данных переставала работать т.к. не могла записать файл архивлога в
 специально отведенное для этого место.
@@ -38,6 +37,7 @@ permalink: /docs/oracle-database/backup-and-restore/low-space-in-fra/
         FROM V$RECOVERY_FILE_DEST;
 
 
+<br/>
 
 Алгоритм (очень старый, применялся на "игрушечных" базах данных):
 
