@@ -5,7 +5,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 ---
 
 
-### Backup и Restore Oracle DataBase
+## Backup и Restore Oracle DataBase
 
 
 <br/>
@@ -16,17 +16,28 @@ permalink: /docs/oracle-database/backup-and-restore/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/oracle-database-backup/">Вводная информация о резервном копировании баз данных Oracle</a>
     </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/fra/">Fast Recovery Area (FRA)</a>
+    </li>
 </ul>
 
 
 <br/>
 
-### Oracle Recomery Manager (Rman)
+### Резервное копирование базы Oracle средствами операционной системы:
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/fra/">Fast Recovery Area (FRA)</a>
+        <a href="/docs/oracle-database/backup-and-restore/copy/">Пример резервного копирования базы Oracle средствами операционной системы (холодный бекап, NOARCHIVELOG)</a>
     </li>
+</ul>
+
+
+<br/>
+
+### Oracle Recovery Manager (Rman)
+
+<ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/">Утилита RMAN (Recovery Manager)</a>
     </li>
@@ -51,8 +62,6 @@ permalink: /docs/oracle-database/backup-and-restore/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/low-space-in-fra/">Недостаточно свободного места в Fast Recovery Area</a>
     </li>
-
-
 </ul>
 
 
