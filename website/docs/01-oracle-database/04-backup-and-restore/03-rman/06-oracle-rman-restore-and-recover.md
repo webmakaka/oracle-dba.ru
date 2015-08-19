@@ -201,3 +201,81 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
 // Восстановливать до того места, где возникает ошибка (например, отстутсвует архивный журнал или он испорчен).
 
     recover database until cancel;
+
+
+<br/>
+
+### В случае потери всего, включая файлы данных, spfile, но при бекапах. (Пока не тестировалось на реальных базах. Пока просто для информации.)
+
+    $ export ORACLE_SID=XXXX
+    $ rman target / nocatalog
+
+<br/>
+
+    RMAN> startup force nomount;
+
+<br/>
+
+    RMAN> list backupset;
+
+<br/>
+
+    RMAN> restore spfile to pfile '/tmp/initora12.ora' from '+ARCH/ORCL12/BACKUPSET/2015_08_19/nnsnf0_full_database_spfile_0.289.888163613';
+
+<br/>
+
+    RMAN> restore spfile from '+ARCH/ORCL12/BACKUPSET/2015_08_19/nnsnf0_full_database_spfile_0.289.888163613';
+
+<br/>
+
+Восстановили spfile.
+
+    SQL> shutdown immediate;
+    SQL> startup nomount;
+
+<br/>
+
+    $ rmant rarget / nocatalog
+    RMAN> restore controlfile from '+ARCH/ORCL12/BACKUPSET/2015_08_19/nnsnf0_full_database_spfile_0.289.888163613';
+
+<br/>
+
+    SQL> alter database mount;
+
+<br/>
+
+    $ rman rarget / nocatalog
+    RMAN> restore controlfile from '+ARCH/ORCL12/BACKUPSET/2015_08_19/nnsnf0_full_database_spfile_0.289.888163613';
+
+
+База в состоянии: Mounted
+
+    RMAN> crosscheck backup;
+
+    RMAN> catalog start with '+ARCH/ORCL12/BACKUPSET/2015_08_19/';
+
+    RMAN> crosscheck archivelog all;
+
+// Если нужно восстановить в каталог в котором были файлы данных
+
+    RMAN> restore database;
+    RMAN> recover database;
+
+
+// Если нужно восстановить в каталог отличный от того, который был.
+
+    RMAN> RUN {
+        set newname for datafile 1 to '...../system*.dbf';
+        set newname for datafile 2 to '...../sysadux*.dbf';
+        set newname for datafile 3 to '...../undo*.dbf';
+        set newname for datafile 4 to '...../user*.dbf';
+
+        restore datafile 1,2,3,4;
+        switch datafile all;
+        recover datafile 1,2,3,4;
+
+    }
+
+<br/>
+
+    RMAN> alter database open resetlogs;

@@ -4,6 +4,7 @@ title: О Сайте
 permalink: /about/
 ---
 
+### О Сайте
 
 Сайт построен на технологии "static pages". Такие проекты можно бысплатно
 хранить прямо на GitHub.
@@ -32,3 +33,12 @@ ___
     <li><a href="http://www.youtube.com/watch?v=lbLdbvIMHvw">Webcast • Getting Started with Code Collaboration (December 2014)</a></li>
 
 </ul>
+
+<br/>
+
+
+<div style="padding:10px; border:thin solid black;">
+
+<a href="/info/how-to-add-information-on-site/">Если кто захочет присоединиться и добавить свои знания на сайт</a>
+
+</div>

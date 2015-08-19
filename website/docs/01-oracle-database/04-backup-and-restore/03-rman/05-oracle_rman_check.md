@@ -9,9 +9,11 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-check/
 
     RMAN> CROSSCHECK backup;
     RMAN> CROSSCHECK copy;
-    RMAN> CROSSCHECK backup of database;
-    RMAN> CROSSCHECK backup of controlfile;
     RMAN> CROSSCHECK archivelog all;
+    RMAN> CROSSCHECK backup of controlfile;
+    RMAN> CROSSCHECK backup of database;
+
+
 
 
 

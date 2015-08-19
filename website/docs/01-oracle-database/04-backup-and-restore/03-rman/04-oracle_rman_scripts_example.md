@@ -58,7 +58,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
     RMAN> LIST BACKUPSET TAG="FULL_DATABASE_DATAFILES";
 
 <br/>
-    
+
     RMAN> LIST BACKUP SUMMARY;
 
 
@@ -71,6 +71,9 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
     51      B  F  A DISK        19/08/2015 15:35:07 1       1       YES        FULL_DATABASE_CONTROLFILE
     52      B  F  A DISK        19/08/2015 15:35:08 1       1       YES        FULL_DATABASE_SPFILE
 
+<br/>
+
+    RMAN> list backupset summary;
 
 <!--
 
