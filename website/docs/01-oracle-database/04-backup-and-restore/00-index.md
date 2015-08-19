@@ -15,30 +15,31 @@ permalink: /docs/oracle-database/backup-and-restore/
 Рекомендуется время от времени восстанавливать копию базы данных из бекапов, чтобы убедиться, что все в актуальном состоянии, да и вообще всегда нужно иметь подготовленную инструкцию по восстановлению.
 
 
-Бекапы следует хранить на другом компьютере, желательно не в том же самом помещении. Если такой возможности нет, то следует хранить на каком-нибудь другом диске, отличном от того, где хранятся файлы базы данных.
+Бекапы следует хранить на другом сервере, желательно не в том же самом помещении. Если такой возможности нет, то следует хранить на каком-нибудь другом диске, отличном от того, где хранятся файлы базы данных.
 
 
-<!--Для центролизованного хранения бекапов большого количества баз данных, Oracle предлагает использовать Oracle Catalog - еще одна база, созданная специально для бекапов.
--->
+
+Резервное копирование баз данных Oracle подразумевает создание резервных копий файлов данных, управляющих файлов и файлов архивных журналов.
+Вдобавок в состав запасного набора могут включать файлы spfile, init.ora, listener.ora и tnsnames.ora
+
+
+Резервное копирование выполняеся:
 
 <ul>
-    <li>
-        <a href="/docs/oracle-database/backup-and-restore/oracle-database-backup/">Резервное копирование баз данных Oracle</a>
-    </li>
+<li>Средствами операционной системы. </li>
+<li>Средствами RMAN (Recovery Manager). </li>
 </ul>
 
-<br/>
 
-### Oracle Data Pump (Export / Import схем) (с 11 версии Oracle)
+Для центролизованного хранения бекапов большого количества баз данных, Oracle предлагает использовать Oracle Catalog - еще одна база, созданная специально для бекапов (Что в ней хранится пока сказать не могу. Не использовал никогда). Почему-то я думал, что в ней хранятся бекапы. Но чего-то стал сомневаться в этом.
 
-До 11 версии использовались похожие утилиты - IMP/EXP.
+
+Помимо бекапов, можно делать экспорт нужной схемы в файл. После при желании ее можно также импортировать. При этом не нужны никакие другие файлы, кроме самого файла дампа.
+
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
-    </li>
-    <li>
-        <a href="http://odba.ru/showthread.php?t=28">Утилиты exp и imp</a>
+        <a href="/docs/oracle-database/backup-and-restore/oracle-database-backup/">Вводная информация о резервном копировании баз данных Oracle</a>
     </li>
 </ul>
 
@@ -46,7 +47,6 @@ permalink: /docs/oracle-database/backup-and-restore/
 <br/>
 
 ### Oracle Recomery Manager (Rman)
-
 
 <ul>
     <li>
@@ -73,10 +73,29 @@ permalink: /docs/oracle-database/backup-and-restore/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/change-db-unique-name-in-catalog/">Поменять db_unique_name в RMAN каталоге</a>
     </li>
-
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/low-space-in-fra/">Недостаточно свободного места в Fast Recovery Area</a>
+    </li>
 
 
 </ul>
+
+
+<br/>
+
+### Oracle Data Pump (Export / Import схем) (с 11 версии Oracle)
+
+До 11 версии использовались похожие утилиты - IMP/EXP.
+
+<ul>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
+    </li>
+    <li>
+        <a href="http://odba.ru/showthread.php?t=28">Утилиты exp и imp</a>
+    </li>
+</ul>
+
 
 
 
@@ -88,8 +107,5 @@ permalink: /docs/oracle-database/backup-and-restore/
 
     <li>
         <a href="/docs/oracle-database/backup-and-restore/oracle-11-transportable-tablespaces/">[Habrahabr] Транспортируемые табличные пространства в Oracle 11g</a>
-    </li>
-    <li>
-        <a href="/docs/oracle-database/backup-and-restore/low-space-in-fra/">Недостаточно свободного места в Fast Recovery Area</a>
     </li>
 </ul>
