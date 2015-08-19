@@ -186,5 +186,6 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 
 <ul>
+<li><a href="http://odba.ru/forumdisplay.php?f=116">GoldenGate</a></li>
 <li>[HabraHabr] <a href="http://habrahabr.ru/post/238521/">Настройка двухсторонней синхронизации БД Oracle (Oracle Streams)</a></li>
 </ul>

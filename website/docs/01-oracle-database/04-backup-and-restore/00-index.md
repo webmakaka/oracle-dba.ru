@@ -31,11 +31,14 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 ### Oracle Data Pump (Export / Import схем) (с 11 версии Oracle)
 
-До 11 версии использовались похожие утилиты.
+До 11 версии использовались похожие утилиты - IMP/EXP.
 
 <ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
+    </li>
+    <li>
+        <a href="http://odba.ru/showthread.php?t=28">Утилиты exp и imp</a>
     </li>
 </ul>
 
