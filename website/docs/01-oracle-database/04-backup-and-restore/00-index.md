@@ -17,7 +17,7 @@ permalink: /docs/oracle-database/backup-and-restore/
         <a href="/docs/oracle-database/backup-and-restore/oracle-database-backup/">Вводная информация о резервном копировании баз данных Oracle</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/fra/">Fast Recovery Area (FRA)</a>
+        <a href="/docs/oracle-database/backup-and-restore/fra/">Fast Recovery Area (FRA)</a>
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/low-space-in-fra/">Недостаточно свободного места в Fast Recovery Area</a>
@@ -73,7 +73,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/block-change tracking/">Enable block change tracking</a>
+        <a href="/docs/oracle-database/backup-and-restore/block-change/ tracking/">Enable block change tracking</a>
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/oracle-11-transportable-tablespaces/">[Habrahabr] Транспортируемые табличные пространства в Oracle 11g</a>

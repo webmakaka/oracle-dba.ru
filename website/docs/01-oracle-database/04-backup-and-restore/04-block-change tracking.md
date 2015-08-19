@@ -4,6 +4,9 @@ title: Enable block change tracking
 permalink: /docs/oracle-database/backup-and-restore/block-change tracking/
 ---
 
+### Enable block change tracking
+
+
     SQL> alter database enable block change tracking using file '/home/oracle/block_tracki/block_change_traning.trc';
 
 
