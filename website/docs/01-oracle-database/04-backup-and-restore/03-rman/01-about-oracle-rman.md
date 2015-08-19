@@ -39,6 +39,46 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
     $ rman target / | tee /tmp/rman.log
 
 
+// Показывает с какими файлами данных можно выполнять резервные копии. Т.е. того инстанса к которому подключились.
+
+<br/>
+
+    RMAN> report schema;
+
+<br/>
+
+    Report of database schema for database with db_unique_name ORA112
+
+    List of Permanent Datafiles
+    ===========================
+    File Size(MB) Tablespace           RB segs Datafile Name
+    ---- -------- -------------------- ------- ------------------------
+    1    780      SYSTEM               ***     /u02/oradata/ora112/system01.dbf
+    2    850      SYSAUX               ***     /u02/oradata/ora112/sysaux01.dbf
+    3    75       UNDOTBS1             ***     /u02/oradata/ora112/undotbs01.dbf
+    4    5        USERS                ***     /u02/oradata/ora112/users01.dbf
+    5    2048     MY_INDEXES           ***     /u02/oradata/ora112/my_indexes01.dbf
+    6    2048     MY_DATA              ***     /u02/oradata/ora112/my_data01.dbf
+    7    2048     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data02.dbf
+    8    1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data03.dbf
+    9    1024     MY_DATA2             ***     /u01/app/oracle/product/11.2/dbs/my_data04.dbf
+    10   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data05.dbf
+    11   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data06.dbf
+    12   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data07.dbf
+    13   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data08.dbf
+    14   10       MY_DATA              ***     /u02/oradata/ORA112/datafile/o1_mf_my_data_7oy0k0vr_.dbf
+
+    List of Temporary Files
+    =======================
+    File Size(MB) Tablespace           Maxsize(MB) Tempfile Name
+    ---- -------- -------------------- ----------- --------------------
+    1    537      TEMP                 32767       /u02/oradata/ora112/temp01.dbf
+    2    2048     MY_TEMP              2048        /u02/oradata/ora112/my_temp01.dbf
+
+
+
+
+
 // Посмотреть значения параметров бекапа, установленных по умолчанию.
 
     RMAN> show all;
@@ -90,139 +130,8 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 Параметры бекапа следует явно задавать в скриптах.
 
 
-
-
-// Основные представления:
-
-    select * from v$database; --
-    select * from v$recovery_file_dest; -- месторасположение FRA.
-    select * from v$flash_recovery_area_usage; -- использованный объем
-    select * from v$rman_backup_job_details; -- информация по бекапам
-    select * from v$rman_backup_subjob_details;
-    select * from v$rman_configuration;
-    select * from v$rman_status;
-    select * from v$rman_backup_type;
-
-    select * from v$rman_configuration;
-
-    select * from v$archived_log;
-
-    select * from v$backup_corruption;
-    select * from v$copy_corruption;
-
-    select * from v$backup_files;
-    select * from v$backup_device;
-    select * from v$backup_set;
-    select * from v$backup_piece;
-    select * from v$backup_redolog;
-    select * from v$backup_spfile;
-
-
-<br/>
-
 ### В 11 версии работа еще больше упростилась.
 
     RMAN> list failure;
     RMAN> advise failure;
     RMAN> repair failure;
-
-
-
-// Команды для проверки
-
-    RMAN> CROSSCHECK backup;
-    RMAN> CROSSCHECK copy;
-    RMAN> CROSSCHECK backup of database;
-    RMAN> CROSSCHECK backup of controlfile;
-    RMAN> CROSSCHECK archivelog all;
-
-
-<br/>
-<h3>Простой пример создания и восстановление базы данных из резервных копий с помощью утилиты RMAN:</h3>
-
-Для создания резервной копии базы данных Oracle с помощью данной утилиты,
-достаточно подключиться к экземпляру базы данных и выполнить команду backup database:
-
-
-    $ rman target /
-    RMAN> BACKUP FULL DATABASE;
-
-
-<br/><br/>
-Для восстановление базы данных из бекапа:
-<br/><br/>
-
-
-    $ rman target /
-
-    RMAN> RESTORE DATABASE;
-    RMAN> RECOVER DATABASE;
-
-
-<br/>
-
-Показать устаревшие бэкапы
-
-    RMAN> report obsolete;
-
-<br/><br/>
-
-Показать полный список архивных журналов
-
-    RMAN> list archivelog all;
-
-
-<br/>
-
-    RMAN> report schema;
-
-<br/>
-
-    Report of database schema for database with db_unique_name ORA112
-
-    List of Permanent Datafiles
-    ===========================
-    File Size(MB) Tablespace           RB segs Datafile Name
-    ---- -------- -------------------- ------- ------------------------
-    1    780      SYSTEM               ***     /u02/oradata/ora112/system01.dbf
-    2    850      SYSAUX               ***     /u02/oradata/ora112/sysaux01.dbf
-    3    75       UNDOTBS1             ***     /u02/oradata/ora112/undotbs01.dbf
-    4    5        USERS                ***     /u02/oradata/ora112/users01.dbf
-    5    2048     MY_INDEXES           ***     /u02/oradata/ora112/my_indexes01.dbf
-    6    2048     MY_DATA              ***     /u02/oradata/ora112/my_data01.dbf
-    7    2048     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data02.dbf
-    8    1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data03.dbf
-    9    1024     MY_DATA2             ***     /u01/app/oracle/product/11.2/dbs/my_data04.dbf
-    10   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data05.dbf
-    11   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data06.dbf
-    12   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data07.dbf
-    13   1024     MY_DATA              ***     /u01/app/oracle/product/11.2/dbs/my_data08.dbf
-    14   10       MY_DATA              ***     /u02/oradata/ORA112/datafile/o1_mf_my_data_7oy0k0vr_.dbf
-
-    List of Temporary Files
-    =======================
-    File Size(MB) Tablespace           Maxsize(MB) Tempfile Name
-    ---- -------- -------------------- ----------- --------------------
-    1    537      TEMP                 32767       /u02/oradata/ora112/temp01.dbf
-    2    2048     MY_TEMP              2048        /u02/oradata/ora112/my_temp01.dbf
-
-
-
-<br/>
-
-<strong>Проверка базы с помощью утилиты RMAN:</strong>
-
-    RMAN> VALIDATE DATABASE;
-
-
-<br/>
-<h3>Проверка файлов, хранящихся в FRA:</h3>
-
-    RMAN> VALIDATE RECOVERY AREA;
-
-
-RMAN читает все блоки и проверяет их на поврежденность. <br/>
-Если находятся поврежденные блоки, то информация о них попадает в V$DATABASE_BLOCK_CORRUPTION<br/>
-
-    RMAN> BACKUP VALIDATE DATABASE;
-    RMAN> BACKUP VALIDATE DATABASE ARCHIVELOG ALL;

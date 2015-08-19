@@ -16,6 +16,11 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 </ul>
 
 
+Показать полный список архивных журналов
+
+  RMAN> list archivelog all;
+
+
 Команда:<br/>
 
     RMAN> BACKUP AS BACKUPSET DATABASE;
@@ -52,6 +57,11 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 	<li>EXPIRED (Истекшие) - RMAN маркирует бекапы и копии данных как expired в случае, если при запуске CROSSCHECK (проверка бекапов) будут найдены ссылки на отсутсвующие или недоступные файлы.</li>
 	<li>OBSOLETE (Устаревшие) - резервная копия считается устаревшей, если она уже больше не требуется для восстановления базы данных согласно используемой политике сохранности (retention policy).</li>
 </ul>
+
+
+    RMAN> report obsolete;
+    RMAN> list expired backup;
+
 
 <br/>
 <h3>Получить информацию о файлах, которые нуждаются в бекапе</h3>
@@ -296,6 +306,8 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
       Control File Included: Ckp SCN: 8639845      Ckp time: 13.04.2012 18:46:45
 
 
+
+
 <br/>
 <h3>Создание сразу нескольких копий:</h3>
 
@@ -304,8 +316,6 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
 
 <br/>
 <h3>Получить данные по результам выполнения команд резервного копирования:</h3>
-
-
 
 
     SQL> set pagesize 0;

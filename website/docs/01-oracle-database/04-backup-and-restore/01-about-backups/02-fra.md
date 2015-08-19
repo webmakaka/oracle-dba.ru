@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FRA [Fast Recovery Area]
-permalink: /docs/oracle-database/backup-and-restore/rman/fra/
+permalink: /docs/oracle-database/backup-and-restore/fra/
 ---
 
 
@@ -23,6 +23,12 @@ permalink: /docs/oracle-database/backup-and-restore/rman/fra/
 // Изменить расположение FRA
 
     SQL> alter system set db_recovery_file_dest='/u03/oracle_backups/fra';
+
+
+// Посмотреть заданные значения
+
+    SQL> show parameter recov
+
 
 // Влючить archivelog (если нужно)
 

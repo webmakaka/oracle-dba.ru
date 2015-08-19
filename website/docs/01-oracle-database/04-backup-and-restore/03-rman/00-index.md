@@ -35,7 +35,15 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
     </li>
 </ul>
 
+<br/>
 
+###  Проверки с помощью RMAN (Recovery Manager)
+
+<ul>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-check/">Проверки с помощью RMAN (Recovery Manager)</a>
+    </li>
+</ul>
 
 <br/>
 
