@@ -4,11 +4,10 @@ title: Создание резервных копий с помощью утил
 permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 ---
 
-<h2>Создание резервных копий с помощью утилиты RMAN (Recovery Manager)</h2><br/>
+## Создание резервных копий с помощью утилиты RMAN (Recovery Manager)
 
 
-<br/>
-<h3>Бекапы могут храниться в backup set (по умолчанию) и image copies:</h3>
+### Бекапы могут храниться в backup set (по умолчанию) и image copies:
 
 <ul>
 <li>backup set  - данные хранятся в формате понятном только для RMAN. Backup set состоит из Backup piece, каждый из которых может представлять из себя копию файла данных или копию управляющего файла, или копию архивлогов. </li>
@@ -50,6 +49,27 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 Предоставит информацию о имеющихся image copies
 
 
+Можно сделать бекап отдельно datafile.
+
+    RMAN> backup datafile 6;
+
+
+Нормер можно посмотреть в
+
+    RMAN> report schema;
+
+
+Можно сделать бекап отдельно tablespace.
+
+    RMAN> backup tablespace USERS, TEMP;
+
+
+Можно также для экономии места делать архивировать бекапы
+
+    RMAN> CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
+    RMAN> BACKUP AS COMPRESSED BACKUPSET DATAFILE 1;
+
+
 <br/>
 <h3>Бекапы могут иметь статус:</h3>
 
@@ -88,6 +108,16 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 
 TAG "ARCHIVELOG_BACKUP" - определяет имя для создаваетого бекапа архивлогов как  "ARCHIVELOG_BACKUP".
 <br/>
+
+С указанием временных интервалов
+
+    RMAN> backup archivelog from time 'SYSDATE -1' DELETE ALL INPUT;
+
+
+// Затрудняюсь сказать, что значат парамерты в коце
+
+    RMAN> backup as compressed backupset archivelog from time 'sysdate -2' not backed up 3 times;
+
 
 Если ввести команду:
 

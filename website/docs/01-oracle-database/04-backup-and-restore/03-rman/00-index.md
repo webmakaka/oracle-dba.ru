@@ -26,9 +26,14 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
 
 ### Создание резервных копий с помощью утилиты RMAN
 
+
+
 <ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/">Создание резервных копий с помощью утилиты RMAN (Recovery Manager)</a>
+    </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/">Скрипт RMAN для создания бекапов</a>
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/incremental-backup/">Создание инкрементальной копии базы данных с помощью RMAN</a>

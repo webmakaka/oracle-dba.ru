@@ -4,12 +4,8 @@ title: Проверки с помощью RMAN
 permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-check/
 ---
 
-<h2>Проверки с помощью RMAN</h2><br/>
+### Проверки с помощью RMAN
 
-
-
-
-// Команды для проверки
 
     RMAN> CROSSCHECK backup;
     RMAN> CROSSCHECK copy;
