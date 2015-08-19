@@ -116,20 +116,23 @@ permalink: /docs/oracle-database/backup-and-restore/rman/rman-catalog-installati
 
   <br/>
 
-  ### Регистрация в каталоге
+### Регистрация в каталоге
+
+<!--
+
+$ sqlplus system/manager@rman12
+$ sqlplus rman/rman123@rman12
+
+-->
 
 
 // Проверка подключения
-
-    $ sqlplus system/manager@rman12
-    $ sqlplus rman/rman123@rman12
-
 
     $ rman catalog rman/rman123@rman12 target /
     RMAN> register database;
 
 
-/// Удалить регистрацию можно следующим образом
+// Удалить регистрацию можно следующим образом
 
     RUN {
         SET DBID 3487575625;
@@ -159,11 +162,11 @@ permalink: /docs/oracle-database/backup-and-restore/rman/rman-catalog-installati
 
  <br/>
 
- Можно сделать экспорт схемы на сервере с каталогом, т.е. схемы со всеми бекапами.
+ Можно сделать экспорт схемы на сервере с каталогом.
 
  ### на piter
 
- $ expdb system/manager DIRECTORY=DATA_PUMP_DIR SCHEMAS=RMAN DUMPFILE=rman_dump.dmp LOGFILE=rman_log.log
+     $ expdb system/manager DIRECTORY=DATA_PUMP_DIR SCHEMAS=RMAN DUMPFILE=rman_dump.dmp LOGFILE=rman_log.log
 
 
  ### на moscow
