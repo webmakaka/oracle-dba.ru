@@ -139,4 +139,4 @@ permalink: /docs/oracle-database/backup-and-restore/copy/
 
 
 Восстановление опишу позднее.
-Нужно будет создавать TEMP Datafile с таблиыным пространством TEMP.
+Нужно будет создавать TEMP Datafile с таблиыным пространством TEMP, редологи.
