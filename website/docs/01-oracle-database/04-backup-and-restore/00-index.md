@@ -72,7 +72,9 @@ permalink: /docs/oracle-database/backup-and-restore/
 ### Другое:
 
 <ul>
-
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/block-change tracking/">Enable block change tracking</a>
+    </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/oracle-11-transportable-tablespaces/">[Habrahabr] Транспортируемые табличные пространства в Oracle 11g</a>
     </li>

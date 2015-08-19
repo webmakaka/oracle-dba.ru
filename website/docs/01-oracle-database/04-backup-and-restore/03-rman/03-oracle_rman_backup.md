@@ -15,9 +15,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 </ul>
 
 
-Показать полный список архивных журналов
-
-  RMAN> list archivelog all;
 
 
 Команда:<br/>
@@ -47,6 +44,12 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
     RMAN> LIST COPY
 
 Предоставит информацию о имеющихся image copies
+
+
+
+Показать полный список архивных журналов
+
+    RMAN> list archivelog all;
 
 
 Можно сделать бекап отдельно datafile.

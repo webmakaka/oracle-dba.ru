@@ -35,5 +35,4 @@ permalink: /docs/oracle-database/backup-and-restore/fra/
     SQL> shutdown immediate;
     SQL> startup mount;
     SQL> alter database archivelog;
-    SQL> shutdown immediate;
-    SQL> startup;
+    SQL> alter database open;
