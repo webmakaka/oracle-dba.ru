@@ -37,6 +37,11 @@ permalink: /docs/oracle-database/backup-and-restore/
 Помимо бекапов, можно делать экспорт нужной схемы в файл. После при желании ее можно также импортировать. При этом не нужны никакие другие файлы, кроме самого файла дампа.
 
 
+
+<br/>
+
+### Базовые знания о бекапах в Oracle
+
 <ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/oracle-database-backup/">Вводная информация о резервном копировании баз данных Oracle</a>
@@ -50,7 +55,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/fra/">Fast Recovery Area (FRA)</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/fra/">Fast Recovery Area (FRA)</a>
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/">Утилита RMAN (Recovery Manager)</a>
