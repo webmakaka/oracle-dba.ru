@@ -183,6 +183,7 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
     startup mount;
     set until time "sysdate-15/(24*60)";
     -- set until time "to_date('2010-06-01 12:50:30', 'yyyy-mm-dd hh24:mi:ss')";
+    -- set until scn=1891093;
     restore database;
     recover database;
     alter database open resetlogs;}
@@ -200,17 +201,3 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
 // Восстановливать до того места, где возникает ошибка (например, отстутсвует архивный журнал или он испорчен).
 
     recover database until cancel;
-
-
-<br/>
-<h3>Получить список инкарнаций.</h3>
-
-    RMAN> list incarnation of database;
-
-<br/>
-
-    List of Database Incarnations
-    DB Key  Inc Key DB Name  DB ID            STATUS  Reset SCN  Reset Time
-    ------- ------- -------- ---------------- --- ---------- ----------
-    1       1       ORA112   289829761        PARENT  1          17.09.2011 09:46:04
-    2       2       ORA112   289829761        CURRENT 995548     20.11.2011 03:20:36
