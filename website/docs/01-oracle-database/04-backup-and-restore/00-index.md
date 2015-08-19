@@ -38,7 +38,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 <br/>
 
 
-### Oracle Recovery Manager (Rman)
+### Backup и Restore Oracle DataBase с помощью RMAN
 
 
 <ul>

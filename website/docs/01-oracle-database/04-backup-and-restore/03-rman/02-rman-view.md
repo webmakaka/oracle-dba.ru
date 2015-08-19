@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Основные представления RMAN
+title: Основные view RMAN
 permalink: /docs/oracle-database/backup-and-restore/rman/rman-view/
 ---
 
 
-### Основные представления RMAN
+### Основные view RMAN
 
     select * from v$database; --
     select * from v$recovery_file_dest; -- месторасположение FRA.

@@ -16,7 +16,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
         <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/">Утилита RMAN (Recovery Manager)</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/rman-view/"> Основные представления RMAN</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/rman-view/"> Основные view RMAN</a>
     </li>
 </ul>
 
@@ -41,7 +41,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
 
 ### Восстановление из резервой копий с помощью утилиты RMAN (Recovery Manager)
 
-</ul>
+<ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-restore-and-recover/">Восстановление из резервой копий с помощью утилиты RMAN (Recovery Manager)</a>
     </li>
@@ -52,7 +52,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
 
 ### Удаление объектов RMAN (Recovery Manager)
 
-</ul>
+<ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-delete/">Удаление объектов RMAN (Recovery Manager)</a>
     </li>
@@ -63,7 +63,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
 
 ### Пример с инкарнациями
 
-</ul>
+<ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/rman-incarnations-sample/">Пример с инкарнациями</a>
     </li>
