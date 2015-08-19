@@ -22,19 +22,21 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
 <br/>
 
-    RUN {
+    RMAN> RUN {
 
     ALLOCATE CHANNEL c1 DEVICE TYPE DISK;
 
     CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
 
-    BACKUP FULL DATABASE TAG "FULL_DATABASE";
+    BACKUP FULL DATABASE TAG "FULL_DATABASE_DATAFILES";
 
     SQL 'ALTER SYSTEM ARCHIVE LOG CURRENT';
 
     BACKUP ARCHIVELOG ALL TAG "FULL_DATABASE_ARCHIVELOGS";
 
-    BACKUP CURRENT CONTROLFILE TAG "FULL_DATABASE";
+    BACKUP CURRENT CONTROLFILE TAG "FULL_DATABASE_CONTROLFILE";
+
+    BACKUP SPFILE TAG "FULL_DATABASE_SPFILE";
 
     RELEASE CHANNEL c1;
 
@@ -49,6 +51,25 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
 
 	$ rman target / @backup-rman-script.rman
+
+
+<br/>
+
+    RMAN> LIST BACKUPSET TAG="FULL_DATABASE_DATAFILES";
+
+<br/>
+    
+    RMAN> LIST BACKUP SUMMARY;
+
+
+    List of Backups
+    ===============
+    Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
+    ------- -- -- - ----------- ------------------- ------- ------- ---------- ---
+    48      B  F  A DISK        19/08/2015 15:34:49 1       1       YES        FULL_DATABASE_DATAFILES
+    50      B  A  A DISK        19/08/2015 15:35:03 1       1       YES        FULL_DATABASE_ARCHIVELOGS
+    51      B  F  A DISK        19/08/2015 15:35:07 1       1       YES        FULL_DATABASE_CONTROLFILE
+    52      B  F  A DISK        19/08/2015 15:35:08 1       1       YES        FULL_DATABASE_SPFILE
 
 
 <!--
