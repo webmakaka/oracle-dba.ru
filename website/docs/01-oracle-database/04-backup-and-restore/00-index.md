@@ -19,6 +19,9 @@ permalink: /docs/oracle-database/backup-and-restore/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/fra/">Fast Recovery Area (FRA)</a>
     </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/low-space-in-fra/">Недостаточно свободного места в Fast Recovery Area</a>
+    </li>
 </ul>
 
 
@@ -32,10 +35,11 @@ permalink: /docs/oracle-database/backup-and-restore/
     </li>
 </ul>
 
-
 <br/>
 
+
 ### Oracle Recovery Manager (Rman)
+
 
 <ul>
     <li>
@@ -56,13 +60,23 @@ permalink: /docs/oracle-database/backup-and-restore/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/rman-incarnations-sample/">Пример с инкарнациями</a>
     </li>
+</ul>
+
+
+
+<br/>
+
+### RMAN Catalog
+
+<ul>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/rman-catalog-installation/">Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)</a>
+    </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/change-db-unique-name-in-catalog/">Поменять db_unique_name в RMAN каталоге</a>
     </li>
-    <li>
-        <a href="/docs/oracle-database/backup-and-restore/low-space-in-fra/">Недостаточно свободного места в Fast Recovery Area</a>
-    </li>
 </ul>
+
 
 
 <br/>
