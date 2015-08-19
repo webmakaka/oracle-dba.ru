@@ -298,29 +298,8 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
 
 <br/>
 <h3>Создание сразу нескольких копий:</h3>
-RMAN> BACKUP AS BACKUPSET COPIES 2 DATABASE FORMAT '/tmp/1/%U' , '/tmp/2/%U';
 
-
-<br/>
-<h3>Создание инкрементальной копии базы данных:</h3>
-
-
-    RUN {
-    CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
-    BACKUP INCREMENTAL LEVEL 0 TAG "LEVEL 0" DATABASE PLUS ARCHIVELOG;
-    BACKUP CURRENT CONTROLFILE SPFILE;
-    }
-
-<br/>
-
-    BACKUP INCREMENTAL LEVEL 1 TAG "LEVEL 1" DATABASE PLUS ARCHIVELOG;
-
-
-
-Создать кумулятивный (включает в себя измениния отраженные в инкрементальных бекапах ) бекап с уровнем 1
-
-    RMAN> backup incremental level 1 cumulative database;
-
+    RMAN> BACKUP AS BACKUPSET COPIES 2 DATABASE FORMAT '/tmp/1/%U' , '/tmp/2/%U';
 
 
 <br/>

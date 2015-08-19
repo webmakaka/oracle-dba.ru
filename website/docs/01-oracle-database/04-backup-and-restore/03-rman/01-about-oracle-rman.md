@@ -17,10 +17,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 Команда <strong>Recover </strong>- примененяет к восстановленной из бекапа базе данных сохраненные архивные журналы,
 чтобы база данных была актуальна на какой-то более приемлемый момент времени, нежели чем на момент создания бекапа.
 
-При выполнении неполного восстановления, необходимо открывать базу данных командой:
-
-    ALTER DATABASE OPEN RESETLOGS;
-
 
 <br/>
 
@@ -124,7 +120,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/about-oracle-rman/
 
 <br/>
 
-### В 11 версии работа еще больше упростилась. 
+### В 11 версии работа еще больше упростилась.
 
     RMAN> list failure;
     RMAN> advise failure;
