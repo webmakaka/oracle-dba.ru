@@ -41,7 +41,8 @@ permalink: /docs/oracle-database/backup-and-restore/low-space-in-fra/
 
 Алгоритм (очень старый, применялся на "игрушечных" базах данных):
 
-Подключиться к RMAN
+Подключиться к RMAN  
+
 1) CMD> rman target /
 
 Убедиться, что база работает в режиме Archivelog
