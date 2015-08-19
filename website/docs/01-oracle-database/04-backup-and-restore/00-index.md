@@ -46,6 +46,9 @@ permalink: /docs/oracle-database/backup-and-restore/
         <a href="/docs/oracle-database/backup-and-restore/rman/about-oracle-rman/">Утилита RMAN (Recovery Manager)</a>
     </li>
     <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/rman-view/"> Основные представления RMAN</a>
+    </li>
+    <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/">Создание резервных копий с помощью утилиты RMAN (Recovery Manager)</a>
     </li>
     <li>
