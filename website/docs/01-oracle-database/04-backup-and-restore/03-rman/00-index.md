@@ -18,6 +18,9 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/rman-view/"> Основные view RMAN</a>
     </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/low-space-in-fra/">Недостаточно свободного места в Fast Recovery Area</a>
+    </li>
 </ul>
 
 
@@ -85,7 +88,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
 
 <br/>
 
-### RMAN Catalog
+### RMAN Catalog (так я и не понял зачем он нужен)
 
 <ul>
     <li>
@@ -94,4 +97,22 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/change-db-unique-name-in-catalog/">Поменять db_unique_name в RMAN каталоге</a>
     </li>
+</ul>
+
+
+
+<br/>
+
+### Создание копии базы данных с помощью RMAN
+
+<ul>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/duplicate-database/">Создание копии базы данных из бекапа с помощью RMAN на том же сервере</a>
+    </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/duplicate-active-database/">Создание копии активной базы данных с помощью RMAN на том же сервере</a>
+    </li>
+
+
+
 </ul>

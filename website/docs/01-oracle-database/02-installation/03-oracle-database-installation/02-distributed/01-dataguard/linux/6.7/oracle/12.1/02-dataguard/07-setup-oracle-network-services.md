@@ -13,6 +13,23 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 ### Настройка Listener на Primary
 
+
+<!--
+
+Наверное нужно создавать листенер на GRID_HOME а не $ORACLE_HOME
+
+    $ cd $GRID_HOME/network/admin
+
+<br/>
+
+    $ cp listener.ora listener.ora.bkp
+
+-->
+
+	$ cd $ORACLE_HOME/network/admin
+
+<br/>
+
 	$ vi listener.ora
 
 <br/>
@@ -35,6 +52,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 ### Настройка Listener на Standby
 
+	$ cd $ORACLE_HOME/network/admin
+
+<br/>
 
 	$ vi listener.ora
 
@@ -58,10 +78,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 ### Настройка tnsnames.ora на Primary и Standby
 
-
-	$ cd $ORACLE_HOME/network/admin
-
-<br/>
 
 	$ vi tnsnames.ora
 

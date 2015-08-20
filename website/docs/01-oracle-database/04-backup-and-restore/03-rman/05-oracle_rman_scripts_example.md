@@ -6,6 +6,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
 ### Скрипт RMAN для создания бекапов
 
+<br/>
 
 	$ mkdir -p $ORACLE_HOME/scripts
 
@@ -26,6 +27,8 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
     ALLOCATE CHANNEL c1 DEVICE TYPE DISK;
 
+    CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
+    CONFIGURE BACKUP OPTIMIZATION ON;
     CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
 
     BACKUP FULL DATABASE TAG "FULL_DATABASE_DATAFILES";
@@ -38,6 +41,13 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
     BACKUP SPFILE TAG "FULL_DATABASE_SPFILE";
 
+    DELETE NOPROMPT OBSOLETE;
+
+
+    CONFIGURE RETENTION POLICY CLEAR;
+    CONFIGURE BACKUP OPTIMIZATION CLEAR;
+    CONFIGURE DEVICE TYPE DISK CLEAR;
+
     RELEASE CHANNEL c1;
 
     }
@@ -49,8 +59,11 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
 Выполнение скрипта резервного копирования
 
-
 	$ rman target / @backup-rman-script.rman
+
+Если используется Oracle Catalog, команда может выглядеть следующим образом
+
+    $ rman target / catalog rman/rman123@rman12 @backup-rman-script.rman
 
 
 <br/>

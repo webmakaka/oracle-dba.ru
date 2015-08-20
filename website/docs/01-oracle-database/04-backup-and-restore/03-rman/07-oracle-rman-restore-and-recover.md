@@ -273,7 +273,6 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
         restore datafile 1,2,3,4;
         switch datafile all;
         recover datafile 1,2,3,4;
-
     }
 
 <br/>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Enable block change tracking
-permalink: /docs/oracle-database/backup-and-restore/block-change tracking/
+permalink: /docs/oracle-database/backup-and-restore/block-change-tracking/
 ---
 
 ### Enable block change tracking

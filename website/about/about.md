@@ -37,7 +37,7 @@ ___
 <br/>
 
 
-<div style="padding:10px; border:thin solid black;">
+<div align="center" style="padding:10px; border:thin solid black;">
 
 <a href="/info/how-to-add-information-on-site/">Если кто захочет присоединиться и добавить свои знания на сайт</a>
 
