@@ -57,7 +57,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
     RMAN> backup datafile 6;
 
 
-Нормер можно посмотреть в
+Номер можно посмотреть в
 
     RMAN> report schema;
 
