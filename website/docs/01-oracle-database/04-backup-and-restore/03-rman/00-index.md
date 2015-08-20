@@ -113,7 +113,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
         <a href="/docs/oracle-database/backup-and-restore/rman/duplicate-database/">Создание копии базы данных из бекапа с помощью RMAN на том же сервере</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/duplicate-active-database/">Создание копии активной базы данных с помощью RMAN на том же сервере</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/duplicate-active-database/">Создание копии активной базы данных с помощью RMAN</a>
     </li>
 
 
