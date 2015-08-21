@@ -14,8 +14,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
 	$ cd $ORACLE_HOME/scripts
 
-
-
 <br/>
 
 	$ vi backup-rman-script.rman
@@ -23,7 +21,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
 <br/>
 
-    RMAN> RUN {
+    RUN {
 
     ALLOCATE CHANNEL c1 DEVICE TYPE DISK;
 
@@ -53,7 +51,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
     }
 
 Проверка синтаксиса созданного файла сценария
-
 
 	$ rman CHECKSYNTAX @backup-rman-script.rman
 
@@ -88,6 +85,57 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
     RMAN> list backupset summary;
 
+
+
+<br/>
+
+### Rman Script экспорта в каталог файловой системы:
+
+
+
+	$ mkdir -p /tmp/backups/ORCL12/{DATAFILE,ARCHIVELOG,CONTROLFILE,PARAMETERFILE}
+
+
+	$ cd $ORACLE_HOME/scripts
+
+<br/>
+
+	$ vi backup-to-folder-rman-script.rman
+
+<br/>
+
+	RUN {
+
+	ALLOCATE CHANNEL c1 DEVICE TYPE DISK;
+
+	BACKUP AS COMPRESSED BACKUPSET FULL DATABASE TAG "FULL_DATABASE_DATAFILES" FORMAT '/tmp/backups/ORCL12/DATAFILE/bkp_%D_%T_%s_%p_DATA';
+
+	SQL 'ALTER SYSTEM ARCHIVE LOG CURRENT';
+
+	BACKUP ARCHIVELOG ALL FORMAT '/tmp/backups/ORCL12/ARCHIVELOG/bkp_%D_%T_%s_%p_ARCHIVELOG' TAG "FULL_DATABASE_ARCHIVELOGS";
+
+	BACKUP CURRENT CONTROLFILE FORMAT '/tmp/backups/ORCL12/CONTROLFILE/bkp_%D_%T_%s_%p_CONTROL' TAG "FULL_DATABASE_CONTROLFILE";
+
+	BACKUP SPFILE FORMAT '/tmp/backups/ORCL12/PARAMETERFILE/bkp_%D_%T_%s_%p_PARAM' TAG "FULL_DATABASE_SPFILE";
+
+	RELEASE CHANNEL c1;
+
+	}
+
+%t = 4 bytes time stamp  
+%s = backup set number  
+%p = backup piece number  
+
+
+
+Проверка синтаксиса созданного файла сценария
+
+	$ rman CHECKSYNTAX @backup-to-folder-rman-script.rman
+
+Выполнение скрипта резервного копирования
+
+	$ rman target / @backup-to-folder-rman-script.rman
+
 <!--
 
 
@@ -100,9 +148,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
     }
 
 
-%t = 4 bytes time stamp  
-%s = backup set number  
-%p = backup piece number  
+
 
 
 
