@@ -30,19 +30,22 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
 
 <br/>
 
-### Создание резервных копий с помощью утилиты RMAN
+### Создание резервных копий с помощью утилиты Recovery Manager (RMAN)
 
 
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/">Создание резервных копий с помощью утилиты RMAN (Recovery Manager)</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/">Создание резервных копий с помощью утилиты RMAN </a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/example1/">Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/">Создание резервных копий с помощью утилиты RMAN (NOARCHIVELOG)</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/example2/">Скрипт RMAN для создания бекапов. Пример 2. Бекап в каталог</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/example1/">Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA (ARCHIVELOG)</a>
+    </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/example2/">Скрипт RMAN для создания бекапов. Пример 2. Бекап в каталог (ARCHIVELOG)</a>
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/incremental-backup/">Создание инкрементальной копии базы данных с помощью RMAN</a>

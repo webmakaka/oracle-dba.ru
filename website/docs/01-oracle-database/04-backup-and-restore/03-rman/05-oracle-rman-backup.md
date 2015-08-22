@@ -15,8 +15,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 </ul>
 
 
-
-
 Команда:<br/>
 
     RMAN> BACKUP AS BACKUPSET DATABASE;

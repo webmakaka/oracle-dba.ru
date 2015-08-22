@@ -28,7 +28,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/copy/">Пример резервного копирования базы Oracle средствами операционной системы (холодный бекап, NOARCHIVELOG)</a>
+        <a href="/docs/oracle-database/backup-and-restore/copy/">Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)</a>
     </li>
 </ul>
 
@@ -50,14 +50,13 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 ### Oracle Data Pump (Export / Import схем) (с 11 версии Oracle)
 
-До 11 версии использовались похожие утилиты - IMP/EXP.
 
 <ul>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
     </li>
     <li>
-        <a href="http://odba.ru/showthread.php?t=28">Утилиты exp и imp</a>
+        <a href="http://odba.ru/showthread.php?t=28">Утилиты IMP/EXP</a> (Для версий до 11)
     </li>
 </ul>
 

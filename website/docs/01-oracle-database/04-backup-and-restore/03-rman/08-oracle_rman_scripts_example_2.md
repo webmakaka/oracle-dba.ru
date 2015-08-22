@@ -178,7 +178,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_exa
 
 Если меяется то:
 
-	RMAN> restore spfile from '/tmp/initorcl12.ora'
+	RMAN> startup nomount pfile='/tmp/initorcl12.ora'
 
 
 
