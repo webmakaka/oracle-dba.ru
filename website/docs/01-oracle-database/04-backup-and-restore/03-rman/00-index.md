@@ -39,7 +39,10 @@ permalink: /docs/oracle-database/backup-and-restore/rman/
         <a href="/docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/">Создание резервных копий с помощью утилиты RMAN (Recovery Manager)</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/">Скрипт RMAN для создания бекапов</a>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/example1/">Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA</a>
+    </li>
+    <li>
+        <a href="/docs/oracle-database/backup-and-restore/rman/oracle_rman_scripts_example/example2/">Скрипт RMAN для создания бекапов. Пример 2. Бекап в каталог</a>
     </li>
     <li>
         <a href="/docs/oracle-database/backup-and-restore/rman/incremental-backup/">Создание инкрементальной копии базы данных с помощью RMAN</a>

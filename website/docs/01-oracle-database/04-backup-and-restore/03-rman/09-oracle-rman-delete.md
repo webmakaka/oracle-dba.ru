@@ -30,6 +30,6 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-delete/
     RMAN> delete backupset 20;
 
 
-// Удалить архивные журналы.
+// Удалить все архивные журналы.
 
     RMAN> delete archivelog all;

@@ -34,14 +34,14 @@ permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-backup/
 
 Команда:
 
-    RMAN> LIST BACKUP
+    RMAN> LIST BACKUP;
 
 Предоставит информацию о имеющихся backup set
 
 
 Команда:
 
-    RMAN> LIST COPY
+    RMAN> LIST COPY;
 
 Предоставит информацию о имеющихся image copies
 
@@ -181,29 +181,32 @@ TAG "ARCHIVELOG_BACKUP" - определяет имя для создавает�
 
 
 <br/>
-<h3>Создать копию текущего CONTROLFILE</h3>
+
+### Создать копию текущего CONTROLFILE
 
     RMAN> BACKUP CURRENT CONTROLFILE TAG "CONTROLFILE";
 
 
 <br/>
-<h3>Создать копию SPFILE</h3>
+
+### Создать копию SPFILE
 
     RMAN> BACKUP SPFILE TAG "SPFILE";
 
 <br/>
-<h3>Создание полного бекапа:</h3>
+
+### Создание полного бекапа:
 
 Полный бекап (FULL BACKUP) - включает все файлы данных, управляющий файл (controlfile) и файл серверных параметров (spfile).
 
 
     RMAN> BACKUP FULL DATABASE TAG "FULL_DATABASE_BACKUP" PLUS ARCHIVELOG TAG "FULL_ARCHIVELOGS_BACKUP";
 
-<br/><br/>
+<br/>
 
     RMAN> LIST BACKUP SUMMARY;
 
-<br/><br/>
+<br/>
 
 
     List of Backups
@@ -339,16 +342,16 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
       Control File Included: Ckp SCN: 8639845      Ckp time: 13.04.2012 18:46:45
 
 
-
-
 <br/>
-<h3>Создание сразу нескольких копий:</h3>
+
+### Создание сразу нескольких копий:
 
     RMAN> BACKUP AS BACKUPSET COPIES 2 DATABASE FORMAT '/tmp/1/%U' , '/tmp/2/%U';
 
 
 <br/>
-<h3>Получить данные по результам выполнения команд резервного копирования:</h3>
+
+### Получить данные по результам выполнения команд резервного копирования:
 
 
     SQL> set pagesize 0;

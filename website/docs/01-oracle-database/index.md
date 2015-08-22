@@ -45,8 +45,9 @@ permalink: /docs/oracle-database/
 
 
 
-<br/><br/>
-<h3>Основы:</h3>
+<br/>
+
+### Основы:
 
 <ul>
     <li>

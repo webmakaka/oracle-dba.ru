@@ -21,3 +21,10 @@ permalink: /docs/oracle-database/backup-and-restore/rman/incremental-backup/
 Создать кумулятивный (включает в себя измениния отраженные в инкрементальных бекапах ) бекап с уровнем 1
 
     RMAN> backup incremental level 1 cumulative database;
+
+
+
+
+// Сброс базы данных до инкарнации 3
+
+    RMAN> reset database to incarnation 3;
