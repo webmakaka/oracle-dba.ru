@@ -152,6 +152,7 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 # Distributed System Architectures:
 
+<br/>
 
 ### DataGuard (Standby)
 
@@ -165,16 +166,13 @@ Instantclient - альтернатива стандартному Oracle Client.
 </ul>
 
 
+<br/>
 
 ### Real Application Cluster (RAC)
 
 <ul>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
-
-	<li><a href="http://odba.ru/showthread.php?t=412">Real Application Cluster 10g R2 [OEL5.5 x86_64, DataBase 10.2.0.5., NFS]</a></li>
-
-	<li>[HabraHabr] <a href="http://habrahabr.ru/post/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a> ( может есть что-то полезное, сам не пробовал. Я и коллеги не используем GUI не серверах.)</li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/">Инсталляция Real Application Cluster (RAC)</a></li>
 
 </ul>
 

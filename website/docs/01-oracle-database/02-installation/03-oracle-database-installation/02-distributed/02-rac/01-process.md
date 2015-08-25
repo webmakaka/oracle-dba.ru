@@ -1,30 +1,30 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/process/
+title: Процессы Oracle RAC
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/process/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Процессы Oracle RAC
+
+#№№ Процессы Oracle RAC
 
 <br/>
 
-<xmp>
 
 Oracle Real Application Clusters (RAC) Specific Background Processes
 
 Oracle RAC is composed of two or more database instances. They are composed of memory structures and background processes same as the single instance database.
 
 
-Oracle RAC instances are composed of following background processes:
-ACMS    — Atomic Control file to Memory Service (ACMS)
-GTX0-j  — Global Transaction Process
-LMON    — Global Enqueue Service Monitor
-LMD     — Global Enqueue Service Daemon
-LMS     — Global Cache Service Process
-LCK0    — Instance Enqueue Process
-DIAG    — Diagnosability Daemon
-RMSn    — Oracle RAC Management Processes (RMSn)
-RSMN    — Remote Slave Monitor
+    Oracle RAC instances are composed of following background processes:
+    ACMS    — Atomic Control file to Memory Service (ACMS)
+    GTX0-j  — Global Transaction Process
+    LMON    — Global Enqueue Service Monitor
+    LMD     — Global Enqueue Service Daemon
+    LMS     — Global Cache Service Process
+    LCK0    — Instance Enqueue Process
+    DIAG    — Diagnosability Daemon
+    RMSn    — Oracle RAC Management Processes (RMSn)
+    RSMN    — Remote Slave Monitor
 
 
 These processes spawned for supporting the multi-instance coordination.
@@ -78,6 +78,3 @@ This process is called as Remote Slave Monitor. This process manages background 
 Oracle RAC instances use two processes GES(Global Enqueue Service), GCS(Global Cache Service) that enable cache fusion. The GES and GCS maintain records of the statuses of each datafile and each cached block using global resource directory (GRD). This process is referred to as cache fusion and helps in data integrity.
 
 Oracle RAC is composed of two or more instances. When a block of data is read from datafile by an instance within the cluster and another instance is in need of the same block, it is easy to get the block image from the instance which has the block in its SGA rather than reading from the disk. To enable inter instance communication Oracle RAC makes use of interconnects. The Global Enqueue Service(GES) monitors and Instance enqueue process manages the cache fusion.
-
-
-</xmp>

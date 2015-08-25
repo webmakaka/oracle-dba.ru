@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/network-interfaces/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/network-interfaces/
 ---
 
 # <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка сетевых интерфейсов
@@ -25,32 +25,36 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	###############################################
 	## Virtual VIP IPs Public Network (hosts file, DNS)
 
-	192.168.1.21 node1-vip.localdomain node1-vip
-	192.168.1.22 node2-vip.localdomain node2-vip
+	192.168.1.21 rac1-vip.localdomain rac1-vip
+	192.168.1.22 rac2-vip.localdomain rac2-vip
 
 	###############################################
 	## eth0 Public Network (hosts file, DNS)
 
-	192.168.1.11 node1.localdomain node1
-	192.168.1.12 node2.localdomain node2
+	192.168.1.11 rac1.localdomain rac1
+	192.168.1.12 rac2.localdomain rac2
 	192.168.1.15 storage.localdomain storage
 
 	################################################
 	## eth1 Interconnect Private Network  (hosts file, DNS)
 
-	192.168.2.11 node1-priv
-	192.168.2.12 node2-priv
+	192.168.2.11 rac1-priv-interconnect
+	192.168.2.12 rac2-priv-interconnect
 
 	#################################################
 	## eth2 Network to nas Private Network (hosts file, DNS)
 
-	192.168.3.11 node1-priv-storage
-	192.168.3.12 node2-priv-storage
+	192.168.3.11 rac1-priv-storage
+	192.168.3.12 rac2-priv-storage
 
 	#################################################
 	## SCAN and GNS (DNS, DHCP)
 
-	# empty
+	## Прописаны в DNS
+
+	# 192.168.1.31	rac-scan.localdomain	rac-scan
+	# 192.168.1.32	rac-scan.localdomain	rac-scan
+	# 192.168.1.33	rac-scan.localdomain	rac-scan
 
 	#################################################
 	#################################################
@@ -69,7 +73,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-### Настройка сети узел 1 (node1):
+### Настройка сети узел 1 (rac1):
 
 
 	# vi /etc/sysconfig/network
@@ -78,8 +82,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	NETWORKING=yes
 	NETWORKING_IPV6=no
-	HOSTNAME=node1.localdomain
+	HOSTNAME=rac1.localdomain
+	NOZEROCONF=yes
 
+<br/>
 
 (public)
 
@@ -127,7 +133,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-### Настройка сети узел 2 (node2):
+### Настройка сети узел 2 (rac2):
 
 
 	# vi /etc/sysconfig/network
@@ -136,8 +142,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	NETWORKING=yes
 	NETWORKING_IPV6=no
-	HOSTNAME=node2.localdomain
+	HOSTNAME=rac2.localdomain
 
+
+<br/>
 
 (public)
 
@@ -166,6 +174,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	IPADDR=192.168.2.12
 	NETMASK=255.255.255.0
 
+<br/>
 
 (private-storage)
 
@@ -196,6 +205,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	NETWORKING_IPV6=no
 	HOSTNAME=storage.localdomain
 
+<br/>
 
 (public)
 
@@ -210,6 +220,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	NETMASK=255.255.255.0
 	GATEWAY=192.168.1.1
 
+<br/>
 
 (private-storage)
 

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/tests/
+title:  Некоторые запросы и команды
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/tests/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Некоторые запросы и команды
+### Некоторые запросы и команды
 
 <br/>
 

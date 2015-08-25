@@ -35,18 +35,3 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 Устанавливаем пароль для пользователе oracle11
 
 	# passwd oracle11
-
-
-
-
-==============
-
-P.S.
-
-Видел как на однром из сайтов создают следующих пользователей и групп. Наверное это более правильно.
-
-
-	groupadd -g 1020 asmadmin
-	groupadd -g 1021 asmdba
-	useradd -u 1100 -g oinstall -G asmadmin,asmdba grid
-	useradd -u 1101 -g oinstall -G dba,asmdba oracle11

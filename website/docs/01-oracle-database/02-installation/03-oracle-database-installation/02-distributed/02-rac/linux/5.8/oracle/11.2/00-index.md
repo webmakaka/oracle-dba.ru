@@ -22,16 +22,16 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/><br/>
 
-## Документация:
+### Документация:
 
 <ul>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/docs/">Официальная документация</a><br/></li>
 </ul>
 
 
-<br/><br/>
+<br/>
 
-## Описание окружения для инсталляции Oracle RAC:
+### Описание окружения для инсталляции Oracle RAC:
 
 <ul>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/environment-description/">Описание окружения для инсталляции Oracle RAC</a><br/></li>
@@ -48,12 +48,11 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/><br/>
 
-## Подготовка окружения для инсталляции RAC:
-
+### Подготовка окружения для инсталляции RAC:
 
 <ul>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-os-parameters-before-begin/">Предварительные настройки</a><br/></li>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-actual-time/">Настройка актуального времени на серверах</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-actual-time/">Настройка сервисов отвечающих за синхронизацию времени</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-dns-server/">Настройка DNS сервера</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/network-interfaces/">Настройка конфигурации сетевых интерфейсов</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/users-and-groups-creation/">Создание пользователя oracle11 и групп</a><br/></li>
@@ -69,9 +68,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a><br/></li>
 </ul>
 
-<br/><br/>
 
-## Инсталляция RAC и создание экземпляров баз данных:
+<br/>
+
+### Инсталляция RAC и создание экземпляров баз данных:
 
 
 <ul>
@@ -81,9 +81,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </ul>
 
 
-<br/><br/>
+<br/>
 
-## Шаги, выполняемые после развертывания:
+### Шаги, выполняемые после развертывания RAC:
 
 
 <ul>
@@ -93,15 +93,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </ul>
 
 
-<br/><br/>
-
-## Дополнительно:
-
-
-<ul>
-    <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/tests/">Некоторые запросы и команды</a><br/></li>
-    <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/process/">Процессы Oracle RAC</a><br/></li>
-</ul>
 
 <br/><br/>
 

@@ -1,14 +1,12 @@
 ---
 layout: page
-title: RAC 11.2 Linux Настройка сервисов отвечающих за синхронизацию времени
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-actual-time/
+title: Настройка сервисов отвечающих за синхронизацию времени
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/setup-actual-time/
 ---
 
 # <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка сервисов отвечающих за синхронизацию времени
 
 <br/>
-
-
 
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);"><strong>Настройка времени</strong></span>
@@ -22,29 +20,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </table>
 
 
-Указать доступные ntp сервера
-
-    # vi /etc/ntp.conf
-
-<br/>
-
-    server 0.rhel.pool.ntp.org
-    server 1.rhel.pool.ntp.org
-    server 2.rhel.pool.ntp.org
-
-
-<!--
-Настраиваем планировщик заданий
-
-Сервера ru.pool.ntp.org выбраны в качестве примера
-
-# crontab -e
-
-# Set the date and time via NTP
-*/15 * * * * /usr/sbin/ntpdate 0.ru.pool.ntp.org 1.ru.pool.ntp.org 2.ru.pool.ntp.org 3.ru.pool.ntp.org   > /var/log/time.log
-
-
--->
 
 Внесите изменения в файл параметров ntpd
 
@@ -53,15 +28,22 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 замените
 
     # Drop root to id 'ntp:ntp' by default.
-    OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid"
+    OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid -g"
 
 на
 
-    # Drop root to id 'ntp:ntp' by default.
-    # OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid"
-    OPTIONS="-x -u ntp:ntp -p /var/run/ntpd.pid"
+	# Drop root to id 'ntp:ntp' by default.
+	# OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid -g"
+	OPTIONS="-x -u ntp:ntp -p /var/run/ntpd.pid -g"
 
 <br/>
 
 
-    # service ntpd restart
+	# chkconfig --level 345 ntpd on
+	# service ntpd restart
+
+
+Проверка:
+
+	# ntpq -pn
+	# ntpq -c peers
