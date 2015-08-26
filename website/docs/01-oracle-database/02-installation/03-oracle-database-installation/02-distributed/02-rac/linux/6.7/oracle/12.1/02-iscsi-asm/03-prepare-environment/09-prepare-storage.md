@@ -1,38 +1,49 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Подготовка сервера storage
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/prepare-storage/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Подготовка сервера storage (RAID, NFS)
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Подготовка сервера storage (ISCSI)
 
 
-В реальной жизни все должно быть сделано аппаратно.
-Прочем и я мог изначально создать большой диск.
+<br/>
 
-По факту. Имеем группу дисков, которую хотим объединить в 1 диск и расшарить его на узлах кластера.
 
-### Создание RAID массива
+<ul>
+	<li>iSCSI target — программа или контроллер, осуществляющие эмуляцию диска и выполняющие запросы iSCSI.</li>
+	<li>iSCSI initiator — программа, осуществляющая клиентский доступ к SCSI.</li>
+</ul>
+
+<br/><br/>
+
+<span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
+<strong>Инсталляция iSCSI target</strong></span>
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
-
-
-<tr>
-<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
-<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>storage</strong></span></td>
-</tr>
-
+	<tr>
+	<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+	<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>storage</strong></span></td>
+	</tr>
 </table>
 
 
+	# yum install -y \
+	scsi-target-utils
+
+
+<br/>
 
 	# ls /dev/sd*
+
+<br/>
+
 	/dev/sda   /dev/sda2  /dev/sdc  /dev/sde  /dev/sdg
 	/dev/sda1  /dev/sdb   /dev/sdd  /dev/sdf  /dev/sdh
 
 
-<br/>
+Повторяем последовательно команды:
 
 	# fdisk /dev/sdb
 	# fdisk /dev/sdc
@@ -42,8 +53,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# fdisk /dev/sdg
 	# fdisk /dev/sdh
 
-Повторяем на всех вышеперечисленных дискахдисках
 
+<br/>
 
 	WARNING: DOS-compatible mode is deprecated. It's strongly recommended to
 	         switch off the mode (command 'c') and change display units to
@@ -66,11 +77,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	Last sector, +sectors or +size{K,M,G} (2048-83886079, default 83886079):
 	Using default value 83886079
 
-	Command (m for help): t
-	Selected partition 1
-	Hex code (type L to list codes): fd
-	Changed system type of partition 1 to fd (Linux raid autodetect)
-
 	Command (m for help): w
 	The partition table has been altered!
 
@@ -78,193 +84,310 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	Syncing disks.
 
 
+<br/>
+
+	# ls /dev/sd*
 
 <br/>
 
+	/dev/sda   /dev/sdb   /dev/sdc1  /dev/sde   /dev/sdf1  /dev/sdh
+	/dev/sda1  /dev/sdb1  /dev/sdd   /dev/sde1  /dev/sdg   /dev/sdh1
+	/dev/sda2  /dev/sdc   /dev/sdd1  /dev/sdf   /dev/sdg1
 
-	#  fdisk -l
+<br/>
 
-	Disk /dev/sdc: 42.9 GB, 42949672960 bytes
-	171 heads, 5 sectors/track, 98112 cylinders
-	Units = cylinders of 855 * 512 = 437760 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x000ac338
+	# vi /etc/tgt/targets.conf
 
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sdc1               3       98113    41942016   fd  Linux raid autodetect
+Обязательно должна быть разкомментирована строка:
 
-	Disk /dev/sda: 42.9 GB, 42949672960 bytes
-	255 heads, 63 sectors/track, 5221 cylinders
-	Units = cylinders of 16065 * 512 = 8225280 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x0004fc99
+	default-driver iscsi
 
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sda1   *           1          64      512000   83  Linux
-	Partition 1 does not end on cylinder boundary.
-	/dev/sda2              64        5222    41430016   8e  Linux LVM
+<br/>
 
-	Disk /dev/sdb: 42.9 GB, 42949672960 bytes
-	171 heads, 5 sectors/track, 98112 cylinders
-	Units = cylinders of 855 * 512 = 437760 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x0007dff7
-
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sdb1               3       98113    41942016   fd  Linux raid autodetect
-
-	Disk /dev/sdd: 42.9 GB, 42949672960 bytes
-	171 heads, 5 sectors/track, 98112 cylinders
-	Units = cylinders of 855 * 512 = 437760 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x000cf6ea
-
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sdd1               3       98113    41942016   fd  Linux raid autodetect
-
-	Disk /dev/sdf: 42.9 GB, 42949672960 bytes
-	171 heads, 5 sectors/track, 98112 cylinders
-	Units = cylinders of 855 * 512 = 437760 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x0003bbef
-
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sdf1               3       98113    41942016   fd  Linux raid autodetect
-
-	Disk /dev/sdg: 42.9 GB, 42949672960 bytes
-	171 heads, 5 sectors/track, 98112 cylinders
-	Units = cylinders of 855 * 512 = 437760 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x0005d150
-
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sdg1               3       98113    41942016   fd  Linux raid autodetect
-
-	Disk /dev/sdh: 42.9 GB, 42949672960 bytes
-	171 heads, 5 sectors/track, 98112 cylinders
-	Units = cylinders of 855 * 512 = 437760 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x000743bd
-
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sdh1               3       98113    41942016   fd  Linux raid autodetect
-
-	Disk /dev/sde: 42.9 GB, 42949672960 bytes
-	171 heads, 5 sectors/track, 98112 cylinders
-	Units = cylinders of 855 * 512 = 437760 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x0000a2ae
-
-	   Device Boot      Start         End      Blocks   Id  System
-	/dev/sde1               3       98113    41942016   fd  Linux raid autodetect
-
-	Disk /dev/mapper/VolGroup-lv_root: 38.3 GB, 38260441088 bytes
-	255 heads, 63 sectors/track, 4651 cylinders
-	Units = cylinders of 16065 * 512 = 8225280 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x00000000
-
-
-	Disk /dev/mapper/VolGroup-lv_swap: 4160 MB, 4160749568 bytes
-	255 heads, 63 sectors/track, 505 cylinders
-	Units = cylinders of 16065 * 512 = 8225280 bytes
-	Sector size (logical/physical): 512 bytes / 512 bytes
-	I/O size (minimum/optimal): 512 bytes / 512 bytes
-	Disk identifier: 0x00000000
+	<target ru.oracle-dba:disk1>
+	        backing-store /dev/sdb1
+	        initiator-address 192.168.3.11
+	        initiator-address 192.168.3.12
+	</target>
+	<target ru.oracle-dba:disk2>
+	        backing-store /dev/sdc1
+	        initiator-address 192.168.3.11
+	        initiator-address 192.168.3.12
+	</target>
+	<target ru.oracle-dba:disk3>
+	        backing-store /dev/sdd1
+	        initiator-address 192.168.3.11
+	        initiator-address 192.168.3.12
+	</target>
+	<target ru.oracle-dba:disk4>
+	        backing-store /dev/sde1
+	        initiator-address 192.168.3.11
+	        initiator-address 192.168.3.12
+	</target>
+	<target ru.oracle-dba:disk5>
+	        backing-store /dev/sdf1
+	        initiator-address 192.168.3.11
+	        initiator-address 192.168.3.12
+	</target>
+	<target ru.oracle-dba:disk6>
+	        backing-store /dev/sdg1
+	        initiator-address 192.168.3.11
+	        initiator-address 192.168.3.12
+	</target>
+	<target ru.oracle-dba:disk7>
+	        backing-store /dev/sdh1
+	        initiator-address 192.168.3.11
+	        initiator-address 192.168.3.12
+	</target>
 
 
 <br/>
 
+	# chkconfig --level 345 tgtd on
+	# service tgtd restart
 
-### Создание RAID-массива
 
-	# mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sdb1 /dev/sdc1 /dev/sdd1 /dev/sde1
-	mdadm: layout defaults to left-symmetric
-	mdadm: layout defaults to left-symmetric
-	mdadm: chunk size defaults to 512K
-	mdadm: size set to 41909248K
-	mdadm: Defaulting to version 1.2 metadata
-	mdadm: array /dev/md0 started.
+Посмотреть результаты:
+
+	# tgt-admin --show
 
 <br/>
 
-Создание файловой системы поверх RAID-массива
-
-
-	# mkfs.ext4 /dev/md0
-
-<br/>
-
-	# mdadm --detail --scan --verbose
-
-	ARRAY /dev/md0 level=raid5 num-devices=4 metadata=1.2 spares=1 name=storage.localdomain:0 UUID=8e3f5ae7:79a8160a:cbcad47a:ae3d9ccd
-	   devices=/dev/sdb1,/dev/sdc1,/dev/sdd1,/dev/sde1
-
-
-Создание конфигурационного файла mdadm.conf
-
-	# mkdir /etc/mdadm
-	# echo "DEVICE partitions" > /etc/mdadm/mdadm.conf
-	# mdadm --detail --scan --verbose | awk '/ARRAY/ {print}' >> /etc/mdadm/mdadm.conf
-
-
-
-
-
-Создание каталога, куда будет смонтировал RAID локально
-
-	# mkdir /raid
-	# chown -R oracle12:oinstall /raid
-	# chmod -R 777 /raid
-
-
-Создание каталога, куда будет смонтировал RAID локально
-
-	# vi /etc/fstab
-
-добавляем
-
-	/dev/md0              /raid          ext4      defaults
-
-
-<br/>
-
-	# mount /raid
-
-<br/>
-
-	# df -h
-	Filesystem            Size  Used Avail Use% Mounted on
-	/dev/mapper/VolGroup-lv_root
-	                       35G  1.8G   32G   6% /
-	tmpfs                 1.9G     0  1.9G   0% /dev/shm
-	/dev/sda1             477M  140M  308M  32% /boot
-	/dev/md0              118G   60M  112G   1% /raid
-
-
-<br/>
-
-### Расшариваем диск
-
-	# vi /etc/exports
-
-добавить
-
-	/raid *(rw,sync,no_wdelay,insecure_locks,no_root_squash)
-
-<br/>
-
-	# service  rpcbind restart
-	# chkconfig --level 345 rpcbind on
-
-	# chkconfig --level 345 nfs on
-	# service nfs restart
+	Target 1: ru.oracle-dba:disk1
+	    System information:
+	        Driver: iscsi
+	        State: ready
+	    I_T nexus information:
+	    LUN information:
+	        LUN: 0
+	            Type: controller
+	            SCSI ID: IET     00010000
+	            SCSI SN: beaf10
+	            Size: 0 MB, Block size: 1
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: null
+	            Backing store path: None
+	            Backing store flags:
+	        LUN: 1
+	            Type: disk
+	            SCSI ID: IET     00010001
+	            SCSI SN: beaf11
+	            Size: 42949 MB, Block size: 512
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: rdwr
+	            Backing store path: /dev/sdb1
+	            Backing store flags:
+	    Account information:
+	    ACL information:
+	        192.168.3.11
+	        192.168.3.12
+	Target 2: ru.oracle-dba:disk2
+	    System information:
+	        Driver: iscsi
+	        State: ready
+	    I_T nexus information:
+	    LUN information:
+	        LUN: 0
+	            Type: controller
+	            SCSI ID: IET     00020000
+	            SCSI SN: beaf20
+	            Size: 0 MB, Block size: 1
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: null
+	            Backing store path: None
+	            Backing store flags:
+	        LUN: 1
+	            Type: disk
+	            SCSI ID: IET     00020001
+	            SCSI SN: beaf21
+	            Size: 42949 MB, Block size: 512
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: rdwr
+	            Backing store path: /dev/sdc1
+	            Backing store flags:
+	    Account information:
+	    ACL information:
+	        192.168.3.11
+	        192.168.3.12
+	Target 3: ru.oracle-dba:disk3
+	    System information:
+	        Driver: iscsi
+	        State: ready
+	    I_T nexus information:
+	    LUN information:
+	        LUN: 0
+	            Type: controller
+	            SCSI ID: IET     00030000
+	            SCSI SN: beaf30
+	            Size: 0 MB, Block size: 1
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: null
+	            Backing store path: None
+	            Backing store flags:
+	        LUN: 1
+	            Type: disk
+	            SCSI ID: IET     00030001
+	            SCSI SN: beaf31
+	            Size: 42949 MB, Block size: 512
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: rdwr
+	            Backing store path: /dev/sdd1
+	            Backing store flags:
+	    Account information:
+	    ACL information:
+	        192.168.3.11
+	        192.168.3.12
+	Target 4: ru.oracle-dba:disk4
+	    System information:
+	        Driver: iscsi
+	        State: ready
+	    I_T nexus information:
+	    LUN information:
+	        LUN: 0
+	            Type: controller
+	            SCSI ID: IET     00040000
+	            SCSI SN: beaf40
+	            Size: 0 MB, Block size: 1
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: null
+	            Backing store path: None
+	            Backing store flags:
+	        LUN: 1
+	            Type: disk
+	            SCSI ID: IET     00040001
+	            SCSI SN: beaf41
+	            Size: 42949 MB, Block size: 512
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: rdwr
+	            Backing store path: /dev/sde1
+	            Backing store flags:
+	    Account information:
+	    ACL information:
+	        192.168.3.11
+	        192.168.3.12
+	Target 5: ru.oracle-dba:disk5
+	    System information:
+	        Driver: iscsi
+	        State: ready
+	    I_T nexus information:
+	    LUN information:
+	        LUN: 0
+	            Type: controller
+	            SCSI ID: IET     00050000
+	            SCSI SN: beaf50
+	            Size: 0 MB, Block size: 1
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: null
+	            Backing store path: None
+	            Backing store flags:
+	        LUN: 1
+	            Type: disk
+	            SCSI ID: IET     00050001
+	            SCSI SN: beaf51
+	            Size: 42949 MB, Block size: 512
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: rdwr
+	            Backing store path: /dev/sdf1
+	            Backing store flags:
+	    Account information:
+	    ACL information:
+	        192.168.3.11
+	        192.168.3.12
+	Target 6: ru.oracle-dba:disk6
+	    System information:
+	        Driver: iscsi
+	        State: ready
+	    I_T nexus information:
+	    LUN information:
+	        LUN: 0
+	            Type: controller
+	            SCSI ID: IET     00060000
+	            SCSI SN: beaf60
+	            Size: 0 MB, Block size: 1
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: null
+	            Backing store path: None
+	            Backing store flags:
+	        LUN: 1
+	            Type: disk
+	            SCSI ID: IET     00060001
+	            SCSI SN: beaf61
+	            Size: 42949 MB, Block size: 512
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: rdwr
+	            Backing store path: /dev/sdg1
+	            Backing store flags:
+	    Account information:
+	    ACL information:
+	        192.168.3.11
+	        192.168.3.12
+	Target 7: ru.oracle-dba:disk7
+	    System information:
+	        Driver: iscsi
+	        State: ready
+	    I_T nexus information:
+	    LUN information:
+	        LUN: 0
+	            Type: controller
+	            SCSI ID: IET     00070000
+	            SCSI SN: beaf70
+	            Size: 0 MB, Block size: 1
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: null
+	            Backing store path: None
+	            Backing store flags:
+	        LUN: 1
+	            Type: disk
+	            SCSI ID: IET     00070001
+	            SCSI SN: beaf71
+	            Size: 42949 MB, Block size: 512
+	            Online: Yes
+	            Removable media: No
+	            Prevent removal: No
+	            Readonly: No
+	            Backing store type: rdwr
+	            Backing store path: /dev/sdh1
+	            Backing store flags:
+	    Account information:
+	    ACL information:
+	        192.168.3.11
+	        192.168.3.12
