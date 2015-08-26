@@ -24,13 +24,11 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# yum search oracleasmlib
 	# yum search oracleasm-support
 
-<br/><br/>
 
 Те пакеты, которые не удастся найти в репозитории Oracle, рекомендуется скачать с официального сайта:<br/>
 http://www.oracle.com/technetwork/server-storage/linux/downloads/rhel5-084877.html
 
-<br/><br/>
-
+<br/>
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
 <strong>Инсталляция пакетов ASMlib</strong></span>
@@ -278,15 +276,6 @@ node2:
 Нужно убедиться что диски подмонтированы на обоих серверах.
 Если нет, перезагрузить узлы (после установки приоритетов автостарта пакетов, см. ниже)
 
-
-================== OFFTOPIC BEGIN =================
-
-P.S.  
-Если нужно выделить отдельно место на ASM под FRA и Data данные.  
-Воспользуйтес утилитой asmca.  
-Насколько я помню, это делается уже после инсталляции GRID.  
-
-================== OFFTOPIC END =================
 
 <br/><br/>
 

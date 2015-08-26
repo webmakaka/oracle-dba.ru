@@ -19,8 +19,14 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
+
 	# cd /tmp/oracle/12.1/database/rpm
 	# rpm -Uvh cvuqdisk-1.0.9-1.rpm
+
+	# scp ./cvuqdisk-1.0.9-1.rpm root@rac2:/tmp/
+	$ ssh rac2 rpm -Uvh /tmp/cvuqdisk-1.0.9-1.rpm
+
+
 
 <br/>
 
@@ -94,7 +100,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	</tr>
 </table>
 
-
+	# su - oracle12
 	$ cd /tmp/oracle/12.1/grid
 	$ ./runcluvfy.sh stage -pre crsinst -n rac1,rac2 -r 12.1
 

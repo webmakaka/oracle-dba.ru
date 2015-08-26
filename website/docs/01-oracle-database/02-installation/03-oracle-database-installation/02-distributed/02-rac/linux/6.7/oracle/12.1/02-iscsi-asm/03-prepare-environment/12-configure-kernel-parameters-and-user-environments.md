@@ -144,7 +144,7 @@ unset pathmunge
 <br/>
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
-<strong>Настройка параметров окружения пользователя oracle11 на узлах кластера</strong></span>
+<strong>Настройка параметров окружения пользователя oracle12 на узлах кластера</strong></span>
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -161,7 +161,7 @@ unset pathmunge
 
 	# su - oracle12
 
-	#  vi ~/.bash_profile
+	$  vi ~/.bash_profile
 
 Сразу после:
 

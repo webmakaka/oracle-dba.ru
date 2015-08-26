@@ -26,7 +26,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 ## Документация:
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/docs/">Официальная документация</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/docs/">Официальная документация</a></li>
 </ul>
 
 
@@ -36,7 +36,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 ## Описание окружения для инсталляции Oracle RAC:
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/environment-description/">Описание окружения для инсталляции Oracle RAC</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/environment-description/">Описание окружения для инсталляции Oracle RAC</a></li>
 </ul>
 
 
@@ -46,7 +46,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/distrib/">Дистрибутивы баз данных и дополнительное программное обеспечение</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/distrib/">Дистрибутивы баз данных и дополнительное программное обеспечение</a></li>
 </ul>
 
 <br/>
@@ -56,7 +56,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <ul>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/vm/">Конфиги виртуальных машин virtualbox</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/vm/">Конфиги виртуальных машин virtualbox</a></li>
 
 </ul>
 
@@ -69,41 +69,51 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <ul>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/network-interfaces/">Настройка сетевых интерфейсов</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/network-interfaces/">Настройка сетевых интерфейсов</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-os-parameters-before-begin/">Предварительные настройки</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-os-parameters-before-begin/">Предварительные настройки</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-dns-server/">Настройка DNS сервера</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-dns-server/">Настройка DNS сервера</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/install-mandatory-packages/">Инсталляция обязательных пакетов</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/install-mandatory-packages/">Инсталляция обязательных пакетов</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/autostart-only-packages-what-needed/">Выбор пакетов для автозапуска</a> (Необязательный шаг, можно пропустить)<br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/autostart-only-packages-what-needed/">Выбор пакетов для автозапуска</a> (Необязательный шаг, можно пропустить)</li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-actual-time/">Настройка сервисов отвечающих за синхронизацию времени</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-actual-time/">Настройка сервисов отвечающих за синхронизацию времени</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/users-and-groups-creation/">Создание пользователя oracle12 и административных групп</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/users-and-groups-creation/">Создание пользователя oracle12 и административных групп</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/secure-shell-between-nodes/">Настройка Secure Shell между узлами кластера</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/secure-shell-between-nodes/">Настройка Secure Shell между узлами кластера</a></li>
 
 
 <br/><br/><br/><br/><br/><br/>
 
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/">Подготовка сервера storage (ISCSI)</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/">Подготовка сервера storage (ISCSI)</a></li>
 
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-hdd-to-install-oracle/">Подготовка дисков на узлах кластера</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-hdd-to-install-oracle/">Подготовка дисков на узлах кластера</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-raid-on-nodes/">Монтирование RAID на узлах кластера</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/">Монтирование ISCSI на узлах кластера</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/configure-kernel-parameters-and-user-environments/">Изменение параметров ядра и параметров учетной записи администратора базы данных</a><br/></li>
-
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/create-folder-structure-and-user-permissions/">Создание структуры каталогов и назначение необходимых прав</a><br/></li>
-
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/asmlib-installation/">Инсталляция ASMLIB на узлах кластера</a></li>
 
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/check-environment-before-install/">Проверка конфигурации кластера перед инсталляцией RAC</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/">Настройка конфигурации для работы в ASM</a></li>
+
+
+<br/><br/><br/><br/><br/><br/>
+
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/configure-kernel-parameters-and-user-environments/">Изменение параметров ядра и параметров учетной записи администратора базы данных</a></li>
+
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/create-folder-structure-and-user-permissions/">Создание структуры каталогов и назначение необходимых прав</a></li>
+
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a></li>
+
+
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/check-environment-before-install/">Проверка конфигурации кластера перед инсталляцией RAC</a></li>
+
+	<li>Проверка работы Display Manager</li>
 
 
 </ul>
@@ -114,11 +124,11 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/grid-installation/">Инсталляция Grid</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/grid-installation/">Инсталляция Grid</a></li>
 
-	<li><a href=" /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/">Инсталляция Oracle Database Software</a><br/></li>
+	<li><a href=" /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/">Инсталляция Oracle Database Software</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-instance-creation/">Создание экземпляра (instance) базы данных</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-instance-creation/">Создание экземпляра (instance) базы данных</a></li>
 
 </ul>
 
@@ -129,5 +139,5 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/post-installation-tasks/">После инсталляции</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/post-installation-tasks/">После инсталляции</a></li>
 </ul>
