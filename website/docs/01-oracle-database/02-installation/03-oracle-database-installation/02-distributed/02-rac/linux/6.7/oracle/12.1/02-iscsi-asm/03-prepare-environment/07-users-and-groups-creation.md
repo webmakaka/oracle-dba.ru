@@ -30,7 +30,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# groupadd -g 1002 oper
 
 
-Вроде как мы не используем здесь ASM, но группы почему-то требуются.
+Создаем группы для работы с ASM.
 
 OSASM Group
 
