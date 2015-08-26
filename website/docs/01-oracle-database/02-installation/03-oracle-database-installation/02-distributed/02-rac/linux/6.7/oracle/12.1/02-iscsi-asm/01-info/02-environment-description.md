@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Описание окружения для инсталляции Oracle RAC
+title: Oracle RAC 12.1 ISCSI + ASM - Описание окружения для инсталляции Oracle RAC
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/environment-description/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Описание окружения для инсталляции Oracle RAC
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Описание окружения для инсталляции Oracle RAC
 
 <br/>
 

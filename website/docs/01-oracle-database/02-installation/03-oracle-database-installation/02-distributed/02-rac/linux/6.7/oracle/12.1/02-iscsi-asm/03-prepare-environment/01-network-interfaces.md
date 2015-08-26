@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка сетевых интерфейсов
+title: Oracle RAC 12.1 ISCSI + ASM - Настройка сетевых интерфейсов
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/network-interfaces/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка сетевых интерфейсов
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка сетевых интерфейсов
 
 
 <br/>

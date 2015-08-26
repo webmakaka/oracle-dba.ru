@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция Database Software
+title: Oracle RAC 12.1 ISCSI + ASM - Инсталляция Database Software
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Инсталляция Database Software
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Инсталляция Database Software
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">

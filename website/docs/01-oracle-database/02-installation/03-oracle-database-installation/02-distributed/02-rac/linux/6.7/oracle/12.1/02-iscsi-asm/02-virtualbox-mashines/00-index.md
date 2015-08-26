@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Конфиги виртуальных машин
+title: Oracle RAC 12.1 ISCSI + ASM - Конфиги виртуальных машин
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/vm/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Конфиги виртуальных машин
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Конфиги виртуальных машин
 
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри здесь.

@@ -70,6 +70,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	/dev/dm-1                               partition	4194300	0	-1
 	/root/swapfile                          file		4301832	0	-2
 
+<br/>
 
 	# vi /etc/fstab
 

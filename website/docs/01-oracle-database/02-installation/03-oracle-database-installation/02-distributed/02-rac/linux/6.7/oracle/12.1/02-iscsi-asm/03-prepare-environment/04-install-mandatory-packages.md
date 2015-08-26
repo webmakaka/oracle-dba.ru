@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция обязательных пакетов
+title: Oracle RAC 12.1 ISCSI + ASM - Инсталляция обязательных пакетов
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/install-mandatory-packages/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Инсталляция обязательных пакетов
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Инсталляция обязательных пакетов
 
 
 

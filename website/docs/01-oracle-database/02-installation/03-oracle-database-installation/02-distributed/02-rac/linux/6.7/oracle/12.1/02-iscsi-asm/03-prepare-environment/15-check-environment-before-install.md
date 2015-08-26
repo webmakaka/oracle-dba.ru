@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Проверка конфигурации кластера перед инсталляцией RAC
+title: Oracle RAC 12.1 ISCSI + ASM - Проверка конфигурации кластера перед инсталляцией RAC
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/check-environment-before-install/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Проверка конфигурации кластера перед инсталляцией RAC
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Проверка конфигурации кластера перед инсталляцией RAC
 
 
 

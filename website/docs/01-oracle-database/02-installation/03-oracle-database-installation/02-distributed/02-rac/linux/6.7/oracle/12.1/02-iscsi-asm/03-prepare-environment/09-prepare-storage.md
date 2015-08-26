@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Подготовка сервера storage
+title: Oracle RAC 12.1 ISCSI + ASM - Подготовка сервера storage
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Подготовка сервера storage (ISCSI)
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Подготовка сервера storage (ISCSI)
 
 
 <br/>

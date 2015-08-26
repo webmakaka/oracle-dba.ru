@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Дистрибутивы и дополнительное ПО
+title: Oracle RAC 12.1 ISCSI + ASM - Дистрибутивы и дополнительное ПО
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/distrib/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Дистрибутивы и дополнительное ПО
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Дистрибутивы и дополнительное ПО
 
 <br/>
 

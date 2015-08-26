@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Копирование дистрибутивов базы данных на сервер
+title: Oracle RAC 12.1 ISCSI + ASM - Копирование дистрибутивов базы данных на сервер
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/copy-oracle-distrib-on-server/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Копирование дистрибутивов базы данных на сервер
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Копирование дистрибутивов базы данных на сервер
 
 
 

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Создание экземпляра (instance) базы данных
+title: Oracle RAC 12.1 ISCSI + ASM - Создание экземпляра (instance) базы данных
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-instance-creation/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Создание экземпляра (instance) базы данных
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Создание экземпляра (instance) базы данных
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">

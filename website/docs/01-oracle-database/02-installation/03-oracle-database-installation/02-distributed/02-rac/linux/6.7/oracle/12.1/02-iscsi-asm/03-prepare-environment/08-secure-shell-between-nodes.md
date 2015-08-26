@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка Secure Shell между узлами кластера
+title: Oracle RAC 12.1 ISCSI + ASM - Настройка Secure Shell между узлами кластера
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/secure-shell-between-nodes/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка Secure Shell между узлами кластера
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка Secure Shell между узлами кластера
 
 
 <br/>
