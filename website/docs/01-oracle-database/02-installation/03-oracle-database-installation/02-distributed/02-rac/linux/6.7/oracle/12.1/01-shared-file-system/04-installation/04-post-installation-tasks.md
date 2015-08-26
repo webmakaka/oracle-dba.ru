@@ -10,7 +10,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-1)
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 

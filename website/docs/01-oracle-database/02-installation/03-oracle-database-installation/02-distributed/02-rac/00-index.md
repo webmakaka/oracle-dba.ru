@@ -6,6 +6,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
+RAC - несколько инстансов на разных серверах при общем storage. Количество инстансов может меняться. Можно добавлять и удалять. 
+
+<br/>
+
 ### Инсталляция Oracle RAC 12.1
 
 <ul>
