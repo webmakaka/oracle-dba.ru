@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/prepare-kernel-parameters-and-user-environments/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Изменение параметров ядра и параметров учетной записи администратора базы данных
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/configure-kernel-parameters-and-user-environments/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Изменение параметров ядра и параметров учетной записи администратора базы данных
+
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Изменение параметров ядра и параметров учетной записи администратора базы данных
+
 
 
 <br/>
@@ -16,7 +18,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
 		<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
-		<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>node1, node2</strong></span></td>
+		<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1, rac2</strong></span></td>
 	</tr>
 </table>
 
@@ -46,12 +48,12 @@ kernel.shmmax = 50% of RAM (in bytes) / 2
 Добавьте в конец документа следующие параметры ядра.
 
 	#################################################
-	#### New Oracle 12 Kernel Parameters
+	#### Oracle 12 Kernel Parameters
 
 	kernel.sem = 250 32000 100 128
 
 	kernel.shmall = 2097152
-	kernel.shmmax = 2073176064
+	kernel.shmmax = 2202540032
 	kernel.shmmni = 4096
 	fs.file-max = 6815744
 	fs.aio-max-nr = 1048576
@@ -91,9 +93,8 @@ kernel.shmmax = 50% of RAM (in bytes) / 2
 	oracle12 hard stack 32768
 
 
-	### New Parameters
-
-	oracle12  hard  memlock  3145728
+	### Maximum locked memory
+	oracle12  hard  memlock  3871653
 	################################################
 
 
@@ -164,8 +165,8 @@ unset pathmunge
 
 	   # Different Parameters
 
-	    export ORACLE_SID=rac1
-	    export ORACLE_UNQNAME=rac1
+	    export ORACLE_SID=rac121
+	    export ORACLE_UNQNAME=rac121
 	    export ORACLE_HOSTNAME=rac1.localdomain
 
 	   # Grid
@@ -221,8 +222,8 @@ unset pathmunge
 
 	   # Different Parameters
 
-		export ORACLE_SID=rac2
-		export ORACLE_UNQNAME=rac2
+		export ORACLE_SID=rac122
+		export ORACLE_UNQNAME=rac122
 		export ORACLE_HOSTNAME=rac2.localdomain
 
 	   # Grid

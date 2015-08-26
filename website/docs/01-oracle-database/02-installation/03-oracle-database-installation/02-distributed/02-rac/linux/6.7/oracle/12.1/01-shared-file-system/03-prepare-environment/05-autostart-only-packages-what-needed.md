@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/autostart-only-packages-what-needed/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Выбор пакетов для автозапуска
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/autostart-only-packages-what-needed/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Выбор пакетов для автозапуска
+
+
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Выбор пакетов для автозапуска
 
 
 <br/>

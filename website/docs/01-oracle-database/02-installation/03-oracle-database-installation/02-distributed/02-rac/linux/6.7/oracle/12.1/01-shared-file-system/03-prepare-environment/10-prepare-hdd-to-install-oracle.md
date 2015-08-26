@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Подготовка дисков на узлах кластера
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/prepare-hdd-to-install-oracle/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Подготовка дисков на узлах кластера
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/prepare-hdd-to-install-oracle/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Подготовка дисков
+
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Подготовка дисков на узлах кластера
 
 
 <br/>
@@ -14,16 +15,12 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <tr>
 <td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
-<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>node1, node2</strong></span></td>
+<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1, rac2</strong></span></td>
 </tr>
 
 </table>
 
 
-	# fdisk /dev/sdb
-
-
-<br/>
 
 	# fdisk /dev/sdb
 

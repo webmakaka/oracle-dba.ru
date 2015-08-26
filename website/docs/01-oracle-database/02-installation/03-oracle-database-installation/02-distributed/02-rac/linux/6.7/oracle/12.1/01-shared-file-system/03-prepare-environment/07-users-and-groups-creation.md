@@ -1,10 +1,13 @@
 ---
 layout: page
-title: Создание пользователя oracle12 и административных групп
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/users-and-groups-creation/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Создание пользователя oracle12 и административных групп
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/users-and-groups-creation/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Создание пользователя oracle12 и административных групп
+
+
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Создание пользователя oracle12 и административных групп
+
 
 <br/>
 
@@ -36,9 +39,24 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# groupadd -g 1002 oper
 
 
+Вроде как мы не используем здесь ASM, но группы почему-то требуются.
+
+	OSASM Group
+
+		# groupadd -g 1003 asmadmin
+
+	OSDBA Group
+
+		# groupadd -g 1004 asmdba
+
+	OSOPER Group
+
+		# groupadd -g 1005 asmoper
+
+
 Создаем пользователя oracle12, сообщаем, что он будет членом групп dba и oinstall и домашним каталогом у него будет /home/oracle12
 
-	# useradd -g oinstall -G dba,oper -d /home/oracle12 oracle12
+	# useradd -g oinstall -G dba,oper,asmadmin,asmdba,asmoper -d /home/oracle12 oracle12
 
 Устанавливаем пароль для пользователе oracle12
 

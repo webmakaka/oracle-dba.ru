@@ -128,16 +128,14 @@ DNS сервер настраивается только с целью, чтоб
 
 	 // ## Localdomain without domain prefix
 
-	        zone "." IN  {
-	                 type master;
-	                 file "localdomain.zone";
-	                 allow-update {none;};
-	        };
+	#        zone "." IN  {
+	#                 type master;
+	#                 file "localdomain.zone";
+	#                 allow-update {none;};
+	#        };
 
 
 	       // ## Localdomain with domain prefix
-
-
 
 	        zone "localdomain" IN  {
 	                 type master;
@@ -161,7 +159,7 @@ DNS сервер настраивается только с целью, чтоб
 	        };
 
 
-	           zone "3.168.192.in-addr.arpa" IN  {
+	        zone "3.168.192.in-addr.arpa" IN  {
 	                type master;
 	                file "192.168.3.in-addr.arpa";
 	        };

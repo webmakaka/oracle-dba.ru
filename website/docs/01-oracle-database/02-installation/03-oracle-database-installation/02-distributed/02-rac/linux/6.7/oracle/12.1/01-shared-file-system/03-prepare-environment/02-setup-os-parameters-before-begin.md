@@ -1,14 +1,26 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (NAS)
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/setup-os-parameters-before-begin/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Предварительные настройки
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/setup-os-parameters-before-begin/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Предварительные настройки
+
+
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Предварительные настройки
+
 
 <br/>
 
-Следующие команды выполняются на всех виртаульных машинах
+<table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
+
+<tr>
+<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1, rac2, storage, dnsserv</strong></span></td>
+</tr>
+
+</table>
+
+<br/>
 
 Некоторые комментарии к следующим 2 командам - 1 создает резервную копию файла /etc/selinux/config, а вторая заменяет значение парамета SELINUX с enforcing на disabled
 

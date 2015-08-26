@@ -1,10 +1,22 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/setup-dns-server/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка DNS сервера
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/setup-dns-server/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка DNS сервера
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка DNS сервера
+
+
+<br/>
+
+<table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
+
+<tr>
+<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>dnsserv</strong></span></td>
+</tr>
+
+</table>
 
 <br/>
 
@@ -13,66 +25,6 @@ DNS сервер настраивается только с целью, чтоб
 
 <br/>
 
-## Настройка сети:
-
-	# vi /etc/hosts
-
-<br/>
-
-	###############################################
-	## Localdomain and Localhost (hosts file, DNS)
-
-	127.0.0.1 localhost.localdomain localhost
-	::1            localhost6.localdomain6 localhost6
-
-	###############################################
-
-
-<br/>
-
-	# vi /etc/resolv.conf
-
-<br/>
-
-	search localdomain
-	nameserver 192.168.1.1
-	nameserver 192.168.1.10
-	options attempts: 2
-	options timeout: 1
-
-<br/>
-
-	# vi /etc/sysconfig/network
-
-<br/>
-
-	NETWORKING=yes
-	NETWORKING_IPV6=no
-	HOSTNAME=dnsserv.localdomain
-
-
-<br/>
-
-(public)
-
-	# vi /etc/sysconfig/network-scripts/ifcfg-eth0
-
-<br/>
-
-	DEVICE="eth0"
-	ONBOOT="yes"
-	BOOTPROTO="static"
-	IPADDR=192.168.1.10
-	NETMASK=255.255.255.0
-	GATEWAY=192.168.1.1
-
-
-Перестартовать сетевые интерфейсы, можно с помощью следующей команды:
-
-	# service network restart
-
-
-<br/>
 
 ### Инсталляция DNS сервера:
 
@@ -109,44 +61,17 @@ DNS сервер настраивается только с целью, чтоб
 
 	options
 	{
-	        directory "/var/named";
-
+	    directory "/var/named";
 	};
 
-	       // ## Localhost
 
-	       zone "localhost" IN {
-	              type master;
-	              file "localhost.zone";
-	              allow-update { none; };
-	       };
-
-	        zone "0.0.127.in-addr.arpa" IN {
-	                type master;
-	                file "127.0.0.in-addr.arpa";
-	        allow-update {none;};
-	        };
-
-
-	 // ## Localdomain without domain prefix
-
-	        zone "." IN  {
-	                 type master;
-	                 file "localdomain.zone";
-	                 allow-update {none;};
-	        };
-
-
-	       // ## Localdomain with domain prefix
-
-
+	// ## Localdomain with domain prefix
 
 	        zone "localdomain" IN  {
 	                 type master;
 	                 file "localdomain.zone";
 	                 allow-update {none;};
 	        };
-
 
 
 	// ## zone ARPA
@@ -171,42 +96,6 @@ DNS сервер настраивается только с целью, чтоб
 
 <br/>
 
-	# vi /var/named/localhost.zone
-
-<br/>
-
-	$TTL 1D
-	$ORIGIN localhost.
-	@              IN  SOA   @  root (
-	                         1   ; Serial
-	                         8H  ; Refresh
-	                         15M ; Retry
-	                         1W  ; Expire
-	                         1D) ; Minimum TTL
-	               IN   NS   @
-	               IN   A    127.0.0.1
-
-
-<br/>
-
-	# vi /var/named/127.0.0.in-addr.arpa
-
-<br/>
-
-	$TTL 1D
-	$ORIGIN 0.0.127.in-addr.arpa.
-	@    IN   SOA  localhost. root.localhost. (
-	               1    ; serial
-	               8H   ; refresh
-	               15M  ; retry
-	               1W   ; expire
-	               1D ) ; minimum
-	      IN   NS   localhost.
-	1    IN   PTR  localhost.
-
-
-<br/>
-
 	# vi /var/named/localdomain.zone
 
 
@@ -223,9 +112,9 @@ DNS сервер настраивается только с целью, чтоб
 	localhost           	IN                  	A           	127.0.0.1
 	ns1                 	IN                  	A           	192.168.1.10
 
-	rac-scan               	IN                  	A           	192.168.1.31
-	rac-scan               	IN                  	A           	192.168.1.32
-	rac-scan               	IN                  	A           	192.168.1.33
+	rac12-scan             	IN                  	A           	192.168.1.31
+	rac12-scan             	IN                  	A           	192.168.1.32
+	rac12-scan             	IN                  	A           	192.168.1.33
 
 
 	rac1-vip            	IN                  	A           	192.168.1.21
@@ -262,10 +151,10 @@ DNS сервер настраивается только с целью, чтоб
 	                    	3600000 ; expiry
 	                    	86400 ) ; minimum
 	@      	IN   	NS   	ns1.localdomain.
-	
-	31     	IN   	PTR  	rac-scan.localdomain.
-	32     	IN   	PTR  	rac-scan.localdomain.
-	33     	IN   	PTR  	rac-scan.localdomain.
+
+	31     	IN   	PTR  	rac12-scan.localdomain.
+	32     	IN   	PTR  	rac12-scan.localdomain.
+	33     	IN   	PTR  	rac12-scan.localdomain.
 
 	21     	IN   	PTR  	rac1-vip.localdomain.
 	22     	IN   	PTR  	rac2-vip.localdomain.

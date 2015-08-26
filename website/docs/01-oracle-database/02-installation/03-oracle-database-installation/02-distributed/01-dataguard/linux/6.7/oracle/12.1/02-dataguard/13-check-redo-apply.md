@@ -36,8 +36,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	SQL> select max(sequence#) from v$archived_log;
 
 
-
-
 <br/>
 
 	SQL> select recovery_mode from v$archive_dest_status;

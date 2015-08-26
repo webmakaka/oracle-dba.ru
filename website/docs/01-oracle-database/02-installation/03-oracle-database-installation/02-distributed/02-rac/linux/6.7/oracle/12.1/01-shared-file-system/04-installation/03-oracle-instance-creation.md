@@ -1,20 +1,34 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/oracle-instance-creation/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Создание экземпляра (instance) базы данных
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/oracle-instance-creation/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Создание экземпляра (instance) базы данных
+
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Создание экземпляра (instance) базы данных
+
+
+<table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
+	<tr>
+		<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+		<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1</strong></span></td>
+	</tr>
+</table>
 
 <br/>
-
-
-
 
 	# mkdir -p /u02/fast_recovery_area
 	# chown -R oracle12:dba /u02/fast_recovery_area
 
 
+	# mkdir -p /u02/oradata
+	# chown -R oracle12:dba /u02/oradata
+
+<br/>
+
+	# su - oracle12
+
+<br/>
 
 	$ export DISPLAY=192.168.1.5:0.0
 
@@ -53,44 +67,57 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	$ sqlplus / as sysdba
 
-	SQL*Plus: Release 11.2.0.3.0 Production on Fri May 25 16:20:47 2012
+	SQL*Plus: Release 12.1.0.2.0 Production on Tue Aug 25 20:08:26 2015
 
-	Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+	Copyright (c) 1982, 2014, Oracle.  All rights reserved.
 
 
 	Connected to:
-	Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
-	With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
-	Data Mining and Real Application Testing options
+	Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+	With the Partitioning, Real Application Clusters, OLAP, Advanced Analytics
+	and Real Application Testing options
+
 
 <br/>
 
 	SQL> select status from v$instance;
 
-<br/>
-
 	STATUS
-	------------------------------------
+	------------
 	OPEN
 
-<br/>
-
-	col  INST_NUMBER format 5;
-	col  INST_NAME format a30;
 
 <br/>
 
-	SELECT * FROM v$active_instances;
+	SQL> col INST_NUMBER format 5;
+	SQL> col INST_NAME format a30;
 
 <br/>
 
-	INST_NUMBER INST_NAME
-	----------- ------------------------------
-	          1 node1.localdomain:racnode1
-	          2 node2.localdomain:racnode2
+	SQL> SELECT * FROM v$active_instances;
+
+<br/>
+
+	INST_NUMBER INST_NAME			       CON_ID
+	----------- ------------------------------ ----------
+		  0 rac1.localdomain:rac121		    0
 
 
-<br/><br/>
+		  0 rac2.localdomain:rac122		    0
+
+
+
+<br/>
+
+	https://192.168.1.11:5500/em/
+	https://192.168.1.12:5500/em/
+
+	https://rac12-scan:5500/em/
+
+
+
+
+<br/>
 
 <img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_installation_completed_01.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
 <img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_installation_completed_02.PNG" border="0" alt="Oracle RAC installation"><br/><br/>

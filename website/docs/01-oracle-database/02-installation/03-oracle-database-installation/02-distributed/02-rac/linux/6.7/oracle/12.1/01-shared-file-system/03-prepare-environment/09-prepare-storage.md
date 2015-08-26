@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Подготовка сервера storage
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/prepare-storage/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Подготовка сервера storage
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/prepare-storage/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Подготовка сервера storage.
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Подготовка сервера storage (RAID, NFS)
 
 
 В реальной жизни все должно быть сделано аппаратно.
@@ -13,6 +13,18 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 По факту. Имеем группу дисков, которую хотим объединить в 1 диск и расшарить его на узлах кластера.
 
 ### Создание RAID массива
+
+
+<table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
+
+
+<tr>
+<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>storage</strong></span></td>
+</tr>
+
+</table>
+
 
 
 	# ls /dev/sd*
@@ -193,6 +205,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 <br/>
 
 	# mdadm --detail --scan --verbose
+
 	ARRAY /dev/md0 level=raid5 num-devices=4 metadata=1.2 spares=1 name=storage.localdomain:0 UUID=8e3f5ae7:79a8160a:cbcad47a:ae3d9ccd
 	   devices=/dev/sdb1,/dev/sdc1,/dev/sdd1,/dev/sde1
 
@@ -248,7 +261,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	/raid *(rw,sync,no_wdelay,insecure_locks,no_root_squash)
 
-
+<br/>
 
 	# service  rpcbind restart
 	# chkconfig --level 345 rpcbind on

@@ -1,28 +1,29 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/grid-installation/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция Grid
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/grid-installation/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция Grid
+
+
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Инсталляция Grid
 
 
 <br/>
 
 
-Инсталляция ПО Oracle (GRID)
+
+<table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
+	<tr>
+		<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+		<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1</strong></span></td>
+	</tr>
+</table>
 
 
 Войдите в систему пользователем, от имени которого будет будет происходить инсталляция базы данных.
 
 	# su - oracle12
-
-Выполните команду
-
-	$ id
-	uid=500(oracle12) gid=1000(oinstall) groups=1000(oinstall),1001(dba),1002(oper)
-
-
 
 <br/>
 
@@ -35,8 +36,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 В данном случае 192.168.1.5 - ip адрес компьютера, с которого происходит процесс управления установкой.  
-
-На 192.168.1.5 инсталлирован и стартован Xming
 
 
 <br/>

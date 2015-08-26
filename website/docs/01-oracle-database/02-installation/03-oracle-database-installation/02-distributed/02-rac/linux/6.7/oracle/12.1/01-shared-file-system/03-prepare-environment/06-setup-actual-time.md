@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Настройка сервисов отвечающих за синхронизацию времени
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/setup-actual-time/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка сервисов отвечающих за синхронизацию времени
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/setup-actual-time/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка сервисов отвечающих за синхронизацию времени
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка сервисов отвечающих за синхронизацию времени
 
 <br/>
 

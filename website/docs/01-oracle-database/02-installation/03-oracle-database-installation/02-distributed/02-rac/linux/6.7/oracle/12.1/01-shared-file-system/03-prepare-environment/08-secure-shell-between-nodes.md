@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nas/secure-shell-between-nodes/
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка Secure Shell между узлами кластера
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/secure-shell-between-nodes/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка Secure Shell между узлами кластера
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка Secure Shell между узлами кластера
 
 
 <br/>
@@ -16,7 +16,16 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 ### Настраиваем secure shell (ssh)
 
-rac1
+
+<table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
+
+
+<tr>
+<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1</strong></span></td>
+</tr>
+
+</table>
 
 	# su - oracle12
 
@@ -110,3 +119,7 @@ rac1
 
 	$ ssh rac1.localdomain date
 	$ ssh rac2.localdomain date
+
+<br/>
+
+	$ ssh rac1
