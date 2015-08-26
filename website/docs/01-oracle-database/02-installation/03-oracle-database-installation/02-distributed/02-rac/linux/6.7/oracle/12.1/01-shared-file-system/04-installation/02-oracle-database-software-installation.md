@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция Database Software
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/oracle-database-software-installation/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-database-software-installation/
 ---
 
 
@@ -31,18 +31,38 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/><br/>
 
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_01.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_02.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_03.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_04.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_05.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_06.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_07.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_08.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_09.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_10.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_11.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_12.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_01.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_02.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_03.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_04.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_05.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_06.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_07.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_08.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_09.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_10.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_11.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_12.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_13.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_14.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
+
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - После инсталляции
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/post-installation-tasks/
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/post-installation-tasks/
 ---
 
 
@@ -25,16 +25,16 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 Заменить:
 
-+ASM1:/u01/app/grid/12.1:N
--MGMTDB:/u01/app/grid/12.1:N
-rac12:/u01/app/oracle/product/rac/12.1:N
+	+ASM1:/u01/app/grid/12.1:N
+	-MGMTDB:/u01/app/grid/12.1:N
+	rac12:/u01/app/oracle/product/rac/12.1:N
 
 
 на
 
-+ASM1:/u01/app/grid/12.1:Y
--MGMTDB:/u01/app/grid/12.1:Y
-rac12:/u01/app/oracle/product/rac/12.1:Y
+	+ASM1:/u01/app/grid/12.1:Y
+	-MGMTDB:/u01/app/grid/12.1:Y
+	rac12:/u01/app/oracle/product/rac/12.1:Y
 
 
 Правда я пока не знаю каким боком здесь ASM и что за MGMTDB.

@@ -9,7 +9,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 ### Инсталляция Oracle RAC 12.1
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/nfs/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (SHARED FILE SYSTEM)</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (SHARED FILE SYSTEM)</a></li>
 
 </ul>
 
