@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RAC 11.2 Linux Настройка сервисов отвечающих за синхронизацию времени
+title: Oracle RAC 11.2 ISCSI + ASM - Настройка сервисов отвечающих за синхронизацию времени
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-actual-time/
 ---
 

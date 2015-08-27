@@ -69,7 +69,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <ul>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/network-interfaces/">Настройка сетевых интерфейсов</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/network-interfaces/">Настройка сетевых интерфейсов и файл hosts</a></li>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/setup-os-parameters-before-begin/">Предварительные настройки</a></li>
 

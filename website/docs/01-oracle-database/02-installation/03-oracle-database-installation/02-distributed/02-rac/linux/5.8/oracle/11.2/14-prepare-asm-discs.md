@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
+title: Oracle RAC 11.2 ISCSI + ASM - Инсталляция asmlib
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/prepare-asm-discs/
 ---
 

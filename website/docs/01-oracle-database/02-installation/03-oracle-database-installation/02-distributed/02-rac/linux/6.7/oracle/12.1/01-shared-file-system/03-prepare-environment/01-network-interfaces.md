@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка сетевых интерфейсов
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка сетевых интерфейсов и файл hosts
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/network-interfaces/
 ---
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка сетевых интерфейсов
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка сетевых интерфейсов и файл hosts
 
 
 <br/>

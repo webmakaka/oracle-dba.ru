@@ -54,7 +54,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-os-parameters-before-begin/">Предварительные настройки</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-actual-time/">Настройка сервисов отвечающих за синхронизацию времени</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-dns-server/">Настройка DNS сервера</a><br/></li>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/network-interfaces/">Настройка конфигурации сетевых интерфейсов</a><br/></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/network-interfaces/">Настройка сетевых интерфейсов и файл hosts</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/users-and-groups-creation/">Создание пользователя oracle11 и групп</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/secure-shell-between-nodes/">Настройка Secure Shell между узлами кластера</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/install-mandatory-packages/">Инсталляция необходимых пакетов</a><br/></li>
