@@ -68,7 +68,23 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-### Вариант 2: С помощь udev правил
+### Eсли использовался вариант 2: С помощь udev правил
+
+
+Какое-то абсолютное непонимание, почему так. Да еще и на 2-х серверах.
+Наверное, что-то неправильное делаю.
+
+    # fdisk /dev/asm-disk1
+    # fdisk /dev/asm-disk2
+    # fdisk /dev/asm-disk3
+    # fdisk /dev/asm-disk4
+    # fdisk /dev/asm-disk5
+    # fdisk /dev/asm-disk6
+    # fdisk /dev/asm-disk7
+
+
+
+<br/>
 
 
     # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/asm-disk1
@@ -102,7 +118,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
     # ls /dev/oracleasm/disks/
     ASMDISK1  ASMDISK2  ASMDISK3  ASMDISK4  ASMDISK5  ASMDISK6  ASMDISK7
 
-<br/>
+
+
+Посмотреть конфиг
 
     # /usr/sbin/oracleasm configure
     ORACLEASM_ENABLED=true
@@ -113,16 +131,15 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
     ORACLEASM_SCANEXCLUDE=""
     ORACLEASM_USE_LOGICAL_BLOCK_SIZE="false"
 
-<br/>
+Конфиг в текстовом формате
 
-# vi /etc/sysconfig/oracleasm
+    # vi /etc/sysconfig/oracleasm
 
 <br/>
 
     # /etc/init.d/oracleasm querydisk -p ASMDISK1
     Disk "ASMDISK1" is a valid ASM disk
-    /dev/sdd: LABEL="ASMDISK1" TYPE="oracleasm"
-    /dev/mapper/iscsi1: LABEL="ASMDISK1" TYPE="oracleasm"
+    /dev/sdd1: LABEL="ASMDISK1" TYPE="oracleasm"
 
 
 <br/>

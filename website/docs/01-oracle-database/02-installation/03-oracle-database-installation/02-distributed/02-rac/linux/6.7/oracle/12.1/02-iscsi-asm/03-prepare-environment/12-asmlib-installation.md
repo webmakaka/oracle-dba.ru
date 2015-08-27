@@ -17,7 +17,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </table>
 
 
-### Необходимо установить 3 пакета для ASM:
+From Oracle Linux 6 onward, the oracleasm kernel driver is built into UEK, so it doesn't need to be installed separately.
+
 
 Необходимо с сайта Oracle:
 
