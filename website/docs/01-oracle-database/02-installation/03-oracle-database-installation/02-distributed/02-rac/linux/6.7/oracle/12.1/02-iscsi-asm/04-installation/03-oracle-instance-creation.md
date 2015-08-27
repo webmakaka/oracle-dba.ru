@@ -15,14 +15,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	</tr>
 </table>
 
-<br/>
-
-	# mkdir -p /u02/fast_recovery_area
-	# chown -R oracle12:dba /u02/fast_recovery_area
-
-
-	# mkdir -p /u02/oradata
-	# chown -R oracle12:dba /u02/oradata
 
 <br/>
 

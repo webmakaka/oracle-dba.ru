@@ -78,6 +78,28 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
     # ls /dev/oracleasm/disks/
     ASMDISK1  ASMDISK2  ASMDISK3  ASMDISK4  ASMDISK5  ASMDISK6  ASMDISK7
 
+<br/>
+
+    # /usr/sbin/oracleasm configure
+    ORACLEASM_ENABLED=true
+    ORACLEASM_UID=oracle12
+    ORACLEASM_GID=dba
+    ORACLEASM_SCANBOOT=true
+    ORACLEASM_SCANORDER=""
+    ORACLEASM_SCANEXCLUDE=""
+    ORACLEASM_USE_LOGICAL_BLOCK_SIZE="false"
+
+<br/>
+
+# vi /etc/sysconfig/oracleasm
+
+<br/>
+
+    # /etc/init.d/oracleasm querydisk -p ASMDISK1
+    Disk "ASMDISK1" is a valid ASM disk
+    /dev/sdd: LABEL="ASMDISK1" TYPE="oracleasm"
+    /dev/mapper/iscsi1: LABEL="ASMDISK1" TYPE="oracleasm"
+
 
 <br/>
 

@@ -78,7 +78,7 @@ http://www.oracle.com/technetwork/database/clustering/downloads/cvu-download-hom
 
 Если возникли ошибки, можно получить лог с более детальным отчетом о возникших проблемах:
 
-	$ ./cluvfy stage -pre crsinst -n node1,node2 -r 11gR2  -verbose
+	$ ./cluvfy stage -pre crsinst -n node1,node2 -r 11gR2  -verbose > /tmp/log.log
 
 <br/>
 

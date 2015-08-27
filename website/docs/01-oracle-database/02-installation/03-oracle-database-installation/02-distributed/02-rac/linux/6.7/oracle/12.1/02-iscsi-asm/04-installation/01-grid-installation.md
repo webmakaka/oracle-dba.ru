@@ -32,7 +32,13 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 Определите системную переменную DISPLAY следующим образом.
 
+
+	$ export ORACLE_HOME=/u01/app/grid/12.1
+
+<br/>
+
 	$ export DISPLAY=192.168.1.5:0.0
+
 
 
 В данном случае 192.168.1.5 - ip адрес компьютера, с которого происходит процесс управления установкой.  

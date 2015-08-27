@@ -34,7 +34,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 Если возникли ошибки, можно получить лог с более детальным отчетом о возникших проблемах:
 
-	$ ./runcluvfy.sh stage -pre crsinst -n rac1,rac2 -r 12.1  -verbose
+	$ ./runcluvfy.sh stage -pre crsinst -n rac1,rac2 -r 12.1  -verbose > /tmp/log.log
 
 
 <br/>
