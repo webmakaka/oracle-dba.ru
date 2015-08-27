@@ -89,7 +89,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/prepare-storage/">Подготовка сервера storage (RAID, NFS)</a></li>
 
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/prepare-hdd-to-install-oracle/">Подготовка дисков на узлах кластера</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/prepare-hdd-to-install-oracle/">Подготовка локальных дисков на узлах кластера для инсталляции на них Oracle Database Software</a></li>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/mount-raid-on-nodes/">Монтирование RAID на узлах кластера</a></li>
 

@@ -44,7 +44,7 @@ http://www.oracle.com/technetwork/server-storage/linux/asmlib/rhel6-1940776.html
     oracleasm-support-2.1.8-1.el6.x86_64
     oracleasmlib-2.0.4-1.el6.x86_64
 
-Стал устанавливать (от большого ума)
+Не уверен, что нужен следующий пакет. Если не будет работать, поставьте и его.
 
     # yum install -y \
     kmod-oracleasm.x86_64

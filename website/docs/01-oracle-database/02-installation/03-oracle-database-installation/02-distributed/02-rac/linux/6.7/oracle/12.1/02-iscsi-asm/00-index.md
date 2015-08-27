@@ -92,9 +92,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/">Подготовка сервера storage (ISCSI)</a></li>
 
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-hdd-to-install-oracle/">Подготовка дисков на узлах кластера</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-hdd-to-install-oracle/">Подготовка локальных дисков на узлах кластера для инсталляции на них Oracle Database Software</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/">Монтирование ISCSI на узлах кластера</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/">Монтирование SCSI дисков на узлах кластера</a></li>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/asmlib-installation/">Инсталляция ASMLIB на узлах кластера</a></li>
 

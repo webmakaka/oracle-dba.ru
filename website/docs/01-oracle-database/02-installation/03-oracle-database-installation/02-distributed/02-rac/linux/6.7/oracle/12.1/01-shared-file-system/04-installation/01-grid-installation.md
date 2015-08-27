@@ -30,6 +30,12 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	$ cd /tmp/oracle/12.1/grid
 
 
+
+Чтобы не набирать путь установки grid в окне, выполните команду
+
+	$ export ORACLE_HOME=/u01/app/grid/12.1
+
+
 Определите системную переменную DISPLAY следующим образом.
 
 	$ export DISPLAY=192.168.1.5:0.0

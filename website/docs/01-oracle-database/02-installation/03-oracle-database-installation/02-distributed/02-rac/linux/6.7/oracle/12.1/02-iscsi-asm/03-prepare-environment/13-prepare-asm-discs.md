@@ -45,18 +45,42 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 <br/>
-Маркируем диски как ASM диски:
 
 
-    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/mapper/iscsi1
-    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/mapper/iscsi2
-    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/mapper/iscsi3
-    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/mapper/iscsi4
-    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/mapper/iscsi5
-    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/mapper/iscsi6
-    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/mapper/iscsi7
+# Маркируем диски как ASM диски:
+
+
+<br/>
+
+### Eсли использовался вариант 1: С помощь device-mapper
+
+
+    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/mapper/asm-disk1
+    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/mapper/asm-disk2
+    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/mapper/asm-disk3
+    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/mapper/asm-disk4
+    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/mapper/asm-disk5
+    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/mapper/asm-disk6
+    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/mapper/asm-disk7
 
     Marking disk "ASMDISK" as an ASM disk:                        [  OK  ]
+
+
+<br/>
+
+### Вариант 2: С помощь udev правил
+
+
+    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/asm-disk1
+    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/asm-disk2
+    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/asm-disk3
+    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/asm-disk4
+    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/asm-disk5
+    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/asm-disk6
+    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/asm-disk7
+
+    Marking disk "ASMDISK" as an ASM disk:                        [  OK  ]
+
 
 
 <br/>

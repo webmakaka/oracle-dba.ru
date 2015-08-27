@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Oracle RAC 12.1 SHARED FILE SYSTEM - Подготовка дисков на узлах кластера
+title: Oracle RAC 12.1 SHARED FILE SYSTEM - Подготовка локальных дисков на узлах кластера для инсталляции на них Oracle Database Software
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/prepare-hdd-to-install-oracle/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Подготовка дисков на узлах кластера
+# [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Подготовка локальных дисков на узлах кластера для инсталляции на них Oracle Database Software
 
 
 <br/>
