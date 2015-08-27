@@ -94,11 +94,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	1IET_00030001
 
 
-Есть несколько вариантов сделать так, чтобы не порядок монтируемых устройств не менялся.
-
 <br/>
 
-### Вариант 1: С помощь device-mapper
+### device-mapper
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -170,23 +168,48 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# chkconfig --level 345 multipathd on
 	# service multipathd restart
 
-
-Чтобы проверить делаем ребут
-
-	# reboot
-
 <br/>
 
 	# ls /dev/mapper
-
+	asm-disk1  asm-disk3  asm-disk5  asm-disk7  VolGroup-lv_root
+	asm-disk2  asm-disk4  asm-disk6  control    VolGroup-lv_swap
 
 <br/>
 
 	# multipath -ll
+	asm-disk7 (1IET_00070001) dm-7 IET,VIRTUAL-DISK
+	size=40G features='0' hwhandler='0' wp=rw
+	`-+- policy='round-robin 0' prio=1 status=active
+	  `- 9:0:0:1 sdh 8:112 active ready running
+	asm-disk6 (1IET_00060001) dm-4 IET,VIRTUAL-DISK
+	size=40G features='0' hwhandler='0' wp=rw
+	`-+- policy='round-robin 0' prio=1 status=active
+	  `- 6:0:0:1 sde 8:64  active ready running
+	asm-disk5 (1IET_00050001) dm-6 IET,VIRTUAL-DISK
+	size=40G features='0' hwhandler='0' wp=rw
+	`-+- policy='round-robin 0' prio=1 status=active
+	  `- 7:0:0:1 sdg 8:96  active ready running
+	asm-disk4 (1IET_00040001) dm-2 IET,VIRTUAL-DISK
+	size=40G features='0' hwhandler='0' wp=rw
+	`-+- policy='round-robin 0' prio=1 status=active
+	  `- 3:0:0:1 sdc 8:32  active ready running
+	asm-disk3 (1IET_00030001) dm-8 IET,VIRTUAL-DISK
+	size=40G features='0' hwhandler='0' wp=rw
+	`-+- policy='round-robin 0' prio=1 status=active
+	  `- 8:0:0:1 sdi 8:128 active ready running
+	asm-disk2 (1IET_00020001) dm-5 IET,VIRTUAL-DISK
+	size=40G features='0' hwhandler='0' wp=rw
+	`-+- policy='round-robin 0' prio=1 status=active
+	  `- 5:0:0:1 sdf 8:80  active ready running
+	asm-disk1 (1IET_00010001) dm-3 IET,VIRTUAL-DISK
+	size=40G features='0' hwhandler='0' wp=rw
+	`-+- policy='round-robin 0' prio=1 status=active
+	  `- 4:0:0:1 sdd 8:48  active ready running
 
+<!--
 <br/>
 
-### Вариант 2: С помощь udev правил
+### Вариант 2: С помощью udev правил
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -256,7 +279,7 @@ Restart UDEV Service
 	/dev/asm-disk1  /dev/asm-disk3  /dev/asm-disk5  /dev/asm-disk7
 	/dev/asm-disk2  /dev/asm-disk4  /dev/asm-disk6
 
-
+-->
 
 Почитать здесь:
 

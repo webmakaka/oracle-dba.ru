@@ -1,13 +1,12 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Настройка конфигурации для работы в ASM
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/
+title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кластера, маркировка дисков как ASM /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/
 ---
 
 
 <br/>
 
-### [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка конфигурации для работы в ASM
+### [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка ASM на узлах кластера, маркировка дисков как ASM
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -49,6 +48,12 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 # Маркируем диски как ASM диски:
 
+<table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
+
+<tr>
+<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1</strong></span></td>
+</tr>
 
 <br/>
 
@@ -68,9 +73,11 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
+<!--
+
 ### Eсли использовался вариант 2: С помощь udev правил
 
-<!--
+
 
 Какое-то абсолютное непонимание, почему так. Да еще и на 2-х серверах.
 Наверное, что-то неправильное делаю.
@@ -83,7 +90,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
     # fdisk /dev/asm-disk6
     # fdisk /dev/asm-disk7
 
--->
+
 
 <br/>
 
@@ -101,6 +108,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 <br/>
+
+-->
 
 // Посмотреть список дисков
 
@@ -121,71 +130,20 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 
-Посмотреть конфиг
-
-    # /usr/sbin/oracleasm configure
-    ORACLEASM_ENABLED=true
-    ORACLEASM_UID=oracle12
-    ORACLEASM_GID=dba
-    ORACLEASM_SCANBOOT=true
-    ORACLEASM_SCANORDER=""
-    ORACLEASM_SCANEXCLUDE=""
-    ORACLEASM_USE_LOGICAL_BLOCK_SIZE="false"
-
-Конфиг в текстовом формате
-
-    # vi /etc/sysconfig/oracleasm
-
-<br/>
-
-    # /etc/init.d/oracleasm querydisk -p ASMDISK1
-    Disk "ASMDISK1" is a valid ASM disk
-    /dev/sdd1: LABEL="ASMDISK1" TYPE="oracleasm"
-
-
-<br/>
-
-// файл логов
-
-    # less /var/log/oracleasm
-
-<br/>
-
-// В некоторых случаях, необходимо перестартовать oracleasm
-
-    # /etc/init.d/oracleasm restart
-
-
-
-
-<span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
-<strong>Проверка правильности инсталляции и конфигурирования ASM</strong></span>
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 
 <tr>
 	<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
-	<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1, rac2</strong></span></td>
+	<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac2</strong></span></td>
 </tr>
 
 </table>
 
 
-rac1:
-
 	# /etc/init.d/oracleasm scandisks
-
-rac2:
-
-	# /etc/init.d/oracleasm scandisks
-
-rac1:
-
 	# /etc/init.d/oracleasm listdisks
 
-rac2:
-
-	# /etc/init.d/oracleasm listdisks
 
 
 Нужно убедиться что диски подмонтированы на обоих серверах.
@@ -218,3 +176,38 @@ rac2:
     # mv S13iscsi S60iscsi
     # mv S07iscsid S65iscsid
     # mv S29oracleasm S80oracleasm
+
+
+<br/>
+
+### Дополнительно для информации
+
+
+    # /etc/init.d/oracleasm querydisk -p ASMDISK1
+    Disk "ASMDISK1" is a valid ASM disk
+    /dev/mapper/asm-disk1: LABEL="ASMDISK1" TYPE="oracleasm"
+
+
+
+Посмотреть конфиг
+
+    # /usr/sbin/oracleasm configure
+    ORACLEASM_ENABLED=true
+    ORACLEASM_UID=oracle12
+    ORACLEASM_GID=dba
+    ORACLEASM_SCANBOOT=true
+    ORACLEASM_SCANORDER=""
+    ORACLEASM_SCANEXCLUDE=""
+    ORACLEASM_USE_LOGICAL_BLOCK_SIZE="false"
+
+Конфиг в текстовом формате
+
+    # vi /etc/sysconfig/oracleasm
+
+Файл логов
+
+    # less /var/log/oracleasm
+
+Перестартовать oracleasm
+
+    # /etc/init.d/oracleasm restart

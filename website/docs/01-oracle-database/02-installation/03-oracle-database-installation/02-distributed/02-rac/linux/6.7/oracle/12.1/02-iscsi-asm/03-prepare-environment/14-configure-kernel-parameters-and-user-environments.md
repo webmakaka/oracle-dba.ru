@@ -168,6 +168,8 @@ unset pathmunge
 	# User specific environment and startup programs
 
 
+<br/>
+
 	############################################
 	#### Oracle 12 Parameters rac1
 

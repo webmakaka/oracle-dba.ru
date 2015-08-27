@@ -19,6 +19,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
+Устанавливаю пакет для тестирования на оба узла кластера.
+
 
 	# cd /tmp/oracle/12.1/database/rpm
 	# rpm -Uvh cvuqdisk-1.0.9-1.rpm
