@@ -26,7 +26,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 Те пакеты, которые не удастся найти в репозитории Oracle, рекомендуется скачать с официального сайта:<br/>
+
 http://www.oracle.com/technetwork/server-storage/linux/downloads/rhel5-084877.html
+
+(по этой ссылке, уже скорее всего ничего не скачать)
 
 <br/>
 
@@ -162,50 +165,35 @@ oracleasm-2.6.18-308.el5.x86_64
 	</tr>
 </table>
 
-<!--
 
-# fdisk /dev/iscsi_A
-# fdisk /dev/iscsi_B
-# fdisk /dev/iscsi_C
-# fdisk /dev/iscsi_D
-# fdisk /dev/iscsi_E
-# fdisk /dev/iscsi_F
-# fdisk /dev/iscsi_G
-
-
-Мне не удалось в версии 5.8 получить идентификатор подключаемых разделов.
-Как следствие я не смог их смонтировать с нужными для меня именами.
-
--->
 
 	# fdisk /dev/{подмонтированный диск1}
 
 <br/>
 
-	# ls /dev/sd*
-	/dev/sda   /dev/sdb   /dev/sdd  /dev/sdg   /dev/sdj1  /dev/sdm1
-	/dev/sda1  /dev/sdb1  /dev/sde  /dev/sdh   /dev/sdk1  /dev/sdn1
-	/dev/sda2  /dev/sdc   /dev/sdf  /dev/sdi1  /dev/sdl1  /dev/sdo1
+	# ls /dev/asm*
 
 
 Маркируем диски как ASM диски:
 
 
-	# /etc/init.d/oracleasm createdisk VOL1 /dev/sdi1
-	# /etc/init.d/oracleasm createdisk VOL2 /dev/sdj1
-	# /etc/init.d/oracleasm createdisk VOL3 /dev/sdk1
-	# /etc/init.d/oracleasm createdisk VOL4 /dev/sdl1
-	# /etc/init.d/oracleasm createdisk VOL5 /dev/sdm1
-	# /etc/init.d/oracleasm createdisk VOL6 /dev/sdn1
-	# /etc/init.d/oracleasm createdisk VOL7 /dev/sdo1
+	# /etc/init.d/oracleasm createdisk VOL1 /dev/asm-disk1
+	# /etc/init.d/oracleasm createdisk VOL2 /dev/asm-disk2
+	# /etc/init.d/oracleasm createdisk VOL3 /dev/asm-disk3
+	# /etc/init.d/oracleasm createdisk VOL4 /dev/asm-disk4
+	# /etc/init.d/oracleasm createdisk VOL5 /dev/asm-disk5
+	# /etc/init.d/oracleasm createdisk VOL6 /dev/asm-disk6
+	# /etc/init.d/oracleasm createdisk VOL7 /dev/asm-disk7
 
 	Marking disk "VOL1" as an ASM disk:                    	[  OK  ]
 
 
-
+<!--
 // Посмотреть метку диска
 
 	# oracleasm querydisk /dev/sdi1
+
+-->
 
 // Если нужно удалить
 

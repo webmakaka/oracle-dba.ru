@@ -29,11 +29,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </table>
 
 
-	# yum install -y scsi-target-utils
-
-
-<br/>
-
 ================== OFFTOPIC BEGIN =================
 
 ASM не поддерживает устройства более 2097152 MBs.  
@@ -54,7 +49,14 @@ ASM не поддерживает устройства более 2097152 MBs.
 	parted -l
 
 
+К чему я это написал? Просто если нужно разбить диск на меньший, лучше подумать об этом заранее.
+
 ================== OFFTOPIC END =================
+
+
+	# yum install -y scsi-target-utils
+
+
 
 <br/>
 
@@ -387,53 +389,13 @@ default-driver iscsi
 
 </table>
 
-
-Рекомендую отказаться от использования правил UDEV.<br/>
-В некоторых случаях возникают проблемы при монтированни разделов ASM на других узлах кластера.<br/>
-По крайней мере пока я не откючил правила, появлялась ошибка: <br/><br/>
+При задании имен, иногда возникала ошибка.
 
 	oracleasm-read-label: Unable to open device "/dev/sdb": No such file or directory
 
+Попробуйте настроить правила, подобным образом, что и в инструкции для Oracle 12C.
+http://oracle-dba.ru/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/
 
-Более того, ядро RedHat с версии 5.8 и 6.x не возвращают идентификатор подмонтированного iSCSI устройства.
-
-
-Если есть способы обойти, дайте мне знать!
-
-
-<!--
-<pre>
-
-# cp /etc/scsi_id.config /etc/scsi_id.config.bkp
-# echo "vendor="NETAPP", model=LUN, options=-g" >> /etc/scsi_id.config
-
-# vi /etc/udev/rules.d/99-static-scsi-names.rules
-
-#----------------------------
-# External DISKS
-#----------------------------
-# SCSI1
-KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_00010001", NAME="iscsi_A", OWNER="oracle11", GROUP="dba", MODE="0640"
-# SCSI2
-KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_00020001", NAME="iscsi_B", OWNER="oracle11", GROUP="dba", MODE="0640"
-# SCSI3
-KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_00030001", NAME="iscsi_C", OWNER="oracle11", GROUP="dba", MODE="0640"
-# SCSI4
-KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_00040001", NAME="iscsi_D", OWNER="oracle11", GROUP="dba", MODE="0640"
-# SCSI5
-KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_00050001", NAME="iscsi_E", OWNER="oracle11", GROUP="dba", MODE="0640"
-# SCSI6
-KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_00060001", NAME="iscsi_F", OWNER="oracle11", GROUP="dba", MODE="0640"
-# SCSI7
-KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_00070001", NAME="iscsi_G", OWNER="oracle11", GROUP="dba", MODE="0640"
-
-
-# udevcontrol reload_rules
-
-# start_udev
-
-
--->
 
 <br/><br/>
 
@@ -464,15 +426,7 @@ KERNEL=="sd*", BUS=="scsi", PROGRAM=="/sbin/scsi_id -g -u -s %p", RESULT=="1IET_
 
 <br/>
 
-<!--
 
-Получить список подключенных дисков
-
-# ls /dev/iscsi*
-/dev/iscsi_A  /dev/iscsi_C  /dev/iscsi_E  /dev/iscsi_G
-/dev/iscsi_B  /dev/iscsi_D  /dev/iscsi_F
-
--->
 
 	# chkconfig --level 345 iscsi on
 	# chkconfig --level 345 iscsid on

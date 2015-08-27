@@ -91,12 +91,3 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/post-installation-tasks/">После инсталляции</a><br/></li>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/patching/">Применение патчей (11.2.0.3.2)</a><br/></li>
 </ul>
-
-
-
-<br/><br/>
-
-Нужно посмотреть:
-
-### Oracle RAC – Configuring udev and device-mapper for ASM
-https://newbiedba.wordpress.com/2014/05/16/oracle-rac-configuring-udev-and-device-mapper-for-asm/
