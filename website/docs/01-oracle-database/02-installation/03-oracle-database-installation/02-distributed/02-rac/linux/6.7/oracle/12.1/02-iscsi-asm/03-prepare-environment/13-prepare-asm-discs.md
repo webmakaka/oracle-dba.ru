@@ -70,6 +70,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 ### Eсли использовался вариант 2: С помощь udev правил
 
+<!--
 
 Какое-то абсолютное непонимание, почему так. Да еще и на 2-х серверах.
 Наверное, что-то неправильное делаю.
@@ -82,7 +83,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
     # fdisk /dev/asm-disk6
     # fdisk /dev/asm-disk7
 
-
+-->
 
 <br/>
 
