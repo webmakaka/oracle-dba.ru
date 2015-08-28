@@ -57,9 +57,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	# mkfs.ext4 /dev/sdb1
 
-<br/>
-
-	# mkdir /u01
 
 <br/>
 
@@ -68,6 +65,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
+	# mkdir /u01
 	# mount /u01
 
 <br/>

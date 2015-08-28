@@ -38,3 +38,14 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# mkdir -p /u01/app/oracle/product/rac/12.1
 	# chown -R oracle12:oinstall /u01/app/oracle
 	# chmod -R 775 /u01/app/oracle
+
+
+<!--
+
+	UPD
+
+	# mkdir -p /u01/app/12.1.0/grid
+	# chown -R oracle12:oinstall /u01/app/12.1.0/grid
+	# chmod -R 775 /u01/app/12.1.0/grid
+
+-->

@@ -30,7 +30,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-// Получить список экспортированных дисков с storage:
+Получить список экспортированных дисков с storage:
 
     # iscsiadm -m discovery -t sendtargets -p 192.168.3.15:3260
 
@@ -206,7 +206,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	`-+- policy='round-robin 0' prio=1 status=active
 	  `- 4:0:0:1 sdd 8:48  active ready running
 
-<!--
+
 <br/>
 
 ### Вариант 2: С помощью udev правил
@@ -220,6 +220,11 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </tr>
 
 </table>
+
+
+	# yum install -y \
+	parted
+
 
 
 Make SCSI Devices Trusted
@@ -279,8 +284,70 @@ Restart UDEV Service
 	/dev/asm-disk1  /dev/asm-disk3  /dev/asm-disk5  /dev/asm-disk7
 	/dev/asm-disk2  /dev/asm-disk4  /dev/asm-disk6
 
--->
+
 
 Почитать здесь:
 
 http://www.linuxtopia.org/online_books/rhel6/rhel_6_virtualization/rhel_6_virtualization_sect-Virtualization-Virtualized_block_devices-Configuring_persistent_storage_in_Red_Hat_Enterprise_Linux_5.html
+
+
+
+
+	echo "options=-g" > /etc/scsi_id.config
+
+
+<br/>
+
+	i=1
+	cmd="/sbin/scsi_id -g -u -d"
+	for disk in sdc sdd sde sdf sdg sdh sdi ; do
+	         cat <<EOF >> /etc/udev/rules.d/99-oracle-asmdevices.rules
+	KERNEL=="sd?1", BUS=="scsi", PROGRAM=="$cmd /dev/\$parent", \
+	 RESULT=="`$cmd /dev/$disk`", NAME="asm-disk$i", OWNER="oracle12", GROUP="dba", MODE="0660"
+	EOF
+	         i=$(($i+1))
+	done
+
+
+<br/>
+
+
+	# fdisk /dev/sdc
+	# fdisk /dev/sdd
+	# fdisk /dev/sde
+	# fdisk /dev/sdf
+	# fdisk /dev/sdg
+	# fdisk /dev/sdh
+	# fdisk /dev/sdi
+
+<br/>
+
+	# /sbin/partprobe /dev/sdc1 /dev/sdd1 /dev/sde1 /dev/sdf1 /dev/sdg1 /dev/sdh1 /dev/sdi1
+
+<br/>
+
+	# /sbin/udevadm test /block/sdc/sdc1
+
+
+<br/>
+
+	# /sbin/udevadm control --reload-rules
+	# /sbin/start_udev
+
+
+<br/>
+
+
+	# ls /dev/asm*
+	/dev/asm-disk1  /dev/asm-disk3  /dev/asm-disk5  /dev/asm-disk7
+	/dev/asm-disk2  /dev/asm-disk4  /dev/asm-disk6
+
+<br/>
+
+	# scp /etc/udev/rules.d/99-oracle-asmdevices.rules root@rac2:/etc/udev/rules.d/99-oracle-asmdevices.rules
+
+
+rac2
+
+	# /sbin/udevadm control --reload-rules
+	# /sbin/start_udev

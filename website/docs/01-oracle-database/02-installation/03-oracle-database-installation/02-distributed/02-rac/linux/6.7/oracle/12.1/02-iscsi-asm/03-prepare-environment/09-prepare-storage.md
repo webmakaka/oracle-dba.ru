@@ -102,7 +102,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	default-driver iscsi
 
-<br/>
+Добавляю в конец файла:
 
 	<target ru.oracle-dba:disk1>
 	        backing-store /dev/sdb1

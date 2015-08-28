@@ -49,6 +49,7 @@ P$. С каждым релизом Oracle, инструкции от меня в
 ### Ссылки на другие ресурсы:
 
 <ul>
+	<li><a href="https://en.wikibooks.org/wiki/RAC_Attack_-_Oracle_Cluster_Database_at_Home/RAC_Attack_12c/Create_VirtualBox_VM">RAC Attack - Oracle Cluster Database at Home/RAC Attack 12c/Create VirtualBox VM</a></li>
 	<li><a href="http://www.lab128.com/rac12_installation_using_vb/article_text.html">Oracle RAC 12c Database on Linux Using VirtualBox (GUI, Sharde Virtual Disk)</a></li>
 	<li>[HabraHabr] <a href="http://habrahabr.ru/post/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a> ( может есть что-то полезное, сам не пробовал. Я и коллеги не используем GUI не серверах.)</li>
 

@@ -85,7 +85,6 @@ kernel.shmmax = 50% of RAM (in bytes) / 2
 	# sysctl -p
 
 
-
 2) Отредактируйте файл /etc/security/limits.conf
 
 	# vi /etc/security/limits.conf

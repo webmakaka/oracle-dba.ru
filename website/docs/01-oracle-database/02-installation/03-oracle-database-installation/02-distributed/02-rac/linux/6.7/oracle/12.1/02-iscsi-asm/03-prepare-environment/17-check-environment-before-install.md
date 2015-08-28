@@ -26,7 +26,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# rpm -Uvh cvuqdisk-1.0.9-1.rpm
 
 	# scp ./cvuqdisk-1.0.9-1.rpm root@rac2:/tmp/
-	$ ssh rac2 rpm -Uvh /tmp/cvuqdisk-1.0.9-1.rpm
+	# ssh rac2 rpm -Uvh /tmp/cvuqdisk-1.0.9-1.rpm
 
 
 
@@ -78,6 +78,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	/dev/dm-1                               partition	4194300	0	-1
 	/root/swapfile                          file		4301832	0	-2
 
+
+<br/>
 
 	# vi /etc/fstab
 

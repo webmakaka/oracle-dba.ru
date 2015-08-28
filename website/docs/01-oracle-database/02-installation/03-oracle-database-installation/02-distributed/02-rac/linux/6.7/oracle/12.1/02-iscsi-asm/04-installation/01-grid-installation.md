@@ -36,6 +36,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	$ export ORACLE_HOME=/u01/app/grid/12.1
 
 
+
+	unset ORACLE_HOME
+
+
 Определите системную переменную DISPLAY следующим образом.
 
 	$ export DISPLAY=192.168.1.5:0.0

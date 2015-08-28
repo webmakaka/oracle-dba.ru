@@ -73,22 +73,9 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 
 <br/>
 
-<!--
+
 
 ### Eсли использовался вариант 2: С помощь udev правил
-
-
-
-Какое-то абсолютное непонимание, почему так. Да еще и на 2-х серверах.
-Наверное, что-то неправильное делаю.
-
-    # fdisk /dev/asm-disk1
-    # fdisk /dev/asm-disk2
-    # fdisk /dev/asm-disk3
-    # fdisk /dev/asm-disk4
-    # fdisk /dev/asm-disk5
-    # fdisk /dev/asm-disk6
-    # fdisk /dev/asm-disk7
 
 
 
@@ -109,7 +96,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 
 <br/>
 
--->
+
 
 // Посмотреть список дисков
 
