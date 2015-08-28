@@ -91,6 +91,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/">Монтирование SCSI дисков на узлах кластера</a></li>
 
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules/">Настройка правил монтирования SCSI дисков на узлах кластера</a></li>
+
+
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/asmlib-installation/">Инсталляция ASMLIB на узлах кластера</a></li>
 
 

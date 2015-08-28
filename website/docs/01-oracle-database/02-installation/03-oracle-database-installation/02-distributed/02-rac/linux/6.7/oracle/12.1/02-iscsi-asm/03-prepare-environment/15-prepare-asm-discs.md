@@ -37,8 +37,6 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 
     # /etc/init.d/oracleasm status
 
-<br/>
-
     Checking if ASM is loaded: yes
     Checking if /dev/oracleasm is mounted: yes
 
