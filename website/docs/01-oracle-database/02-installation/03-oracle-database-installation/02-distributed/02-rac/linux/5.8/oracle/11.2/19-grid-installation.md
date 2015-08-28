@@ -21,16 +21,13 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	$ id
 	uid=500(oracle11) gid=1001(dba) groups=1000(oinstall),1001(dba)
-	Убедитесь, что gid (dba)
+
+
+Убедитесь, что gid (dba)
 
 <br/>
 
-	$ cd /tmp
-
-<br/>
-
-	$ unzip p10404530_112030_Linux-x86-64_1of7.zip; unzip p10404530_112030_Linux-x86-64_2of7.zip; unzip p10404530_112030_Linux-x86-64_3of7.zip
-
+	$ /tmp/oracle/11.2.0.3
 
 
 Удалите текущие переменные окружения ORACLE_BASE ORACLE_HOME. Они в настоящее время заданы неправильно.
@@ -49,9 +46,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 На 192.168.1.200 инсталлирован и стартован Xming
 
-	$ cd /tmp/grid/
-
-<br/>
 
 	$ ./runInstaller
 

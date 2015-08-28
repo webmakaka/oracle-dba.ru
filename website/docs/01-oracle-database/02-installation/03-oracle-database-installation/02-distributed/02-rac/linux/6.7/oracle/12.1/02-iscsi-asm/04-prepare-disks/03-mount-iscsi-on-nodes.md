@@ -45,6 +45,5 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-
 	# service iscsid restart
 	# service iscsi restart

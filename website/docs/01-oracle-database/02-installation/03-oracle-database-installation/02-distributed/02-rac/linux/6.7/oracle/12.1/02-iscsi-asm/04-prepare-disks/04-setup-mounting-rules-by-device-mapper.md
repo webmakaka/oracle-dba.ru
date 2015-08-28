@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Настройка правил монтирования SCSI дисков на узлах кластера
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules/
+title: Oracle RAC 12.1 ISCSI + ASM - Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-device-mapper/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка правил монтирования SCSI дисков на узлах кластера
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper
 
 
 ### Настрока правил монтирования iSCSI дисков нодам кластера.
 
-Вообщем если не настроить, могут произвольно подключаться.
+Вообщем если не настроить, могут произвольно подключаться, как следствие не исключаю возможность потери данных.
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -50,7 +50,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-### device-mapper
+### Device Mapper
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -68,36 +68,61 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-
 	# vi /etc/multipath.conf
 
 <br/>
 
 	defaults {
-	    user_friendly_names no
-	    getuid_callout      "/sbin/scsi_id --whitelisted --replace-whitespace --device=/dev/%n"
+		udev_dir              /dev
+		polling_interval      10
+		path_selector         "round-robin 0"
+		path_grouping_policy  multibus
+		getuid_callout        "/lib/udev/scsi_id --whitelisted --replace-whitespace --device=/dev/%n"
+	#    prio                  alua
+		path_checker          readsector0
+		rr_min_io             100
+		max_fds               8192
+		rr_weight             priorities
+		failback              immediate
+		no_path_retry         fail
+		user_friendly_names   yes
+	}
+
+	blacklist {
+		# Blacklist by WWID
+		wwid "*"
+	}
+	blacklist_exceptions {
+		wwid "1IET_00010001"
+		wwid "1IET_00020001"
+		wwid "1IET_00030001"
+		wwid "1IET_00040001"
+		wwid "1IET_00050001"
+		wwid "1IET_00060001"
+		wwid "1IET_00070001"
+
 	}
 
 	multipaths {
-	    multipath {
-	            wwid                    1IET_00010001
-	            alias                   asm-disk1
-	    }
+		multipath {
+				wwid                    1IET_00010001
+				alias                   asm-disk1
+		}
 
-	    multipath {
-	            wwid                    1IET_00020001
-	            alias                   asm-disk2
-	    }
+		multipath {
+				wwid                    1IET_00020001
+				alias                   asm-disk2
+		}
 
-	    multipath {
-	            wwid                    1IET_00030001
-	            alias                   asm-disk3
-	    }
+		multipath {
+				wwid                    1IET_00030001
+				alias                   asm-disk3
+		}
 
-	    multipath {
-	            wwid                    1IET_00040001
-	            alias                   asm-disk4
-	    }
+		multipath {
+				wwid                    1IET_00040001
+				alias                   asm-disk4
+		}
 
 		multipath {
 				wwid                    1IET_00050001
@@ -113,7 +138,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 				wwid                    1IET_00070001
 				alias                   asm-disk7
 		}
-	}
 
 
 <br/>
@@ -159,3 +183,12 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	size=40G features='0' hwhandler='0' wp=rw
 	`-+- policy='round-robin 0' prio=1 status=active
 	  `- 4:0:0:1 sdd 8:48  active ready running
+
+
+
+
+<!--
+
+http://www.hhutzler.de/blog/rac-11-2-0-4-setup-using-openfiler-with-multipathed-iscsi-disks/
+
+-->

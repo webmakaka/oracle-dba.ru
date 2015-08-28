@@ -33,13 +33,28 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
     Scanning the system for Oracle ASMLib disks:               [  OK  ]
 
 
-<br/>
+Проверка:
 
     # /etc/init.d/oracleasm status
 
     Checking if ASM is loaded: yes
     Checking if /dev/oracleasm is mounted: yes
 
+
+Если используется Divice Mapper, то выполняем следующий шаг, иначе при инсталляции возникнет ошибка: <a href="http://oracledba.net/docs/errors/ins-32148/Execution-of-GI-Install-script-failed-on-nodes/">[INS-32148] Execution of 'GI Install' script failed on nodes: [rac2]</a>
+
+
+
+    # vi /etc/sysconfig/oracleasm
+
+    ***
+	ORACLEASM_SCANORDER=”dm”
+	ORACLEASM_SCANEXCLUDE=”sd”
+    ***
+
+Перестартовываем сервис asmlib:
+
+	# /etc/init.d/oracleasm restart
 
 <br/>
 
@@ -55,7 +70,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 
 <br/>
 
-### Eсли использовался вариант 1: С помощь device-mapper
+### Маркируем диски как ASM:
 
 
     # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/mapper/asm-disk1
@@ -72,31 +87,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 <br/>
 
 
-
-### Eсли использовался вариант 2: С помощь udev правил
-
-
-
-<br/>
-
-
-    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/asm-disk1
-    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/asm-disk2
-    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/asm-disk3
-    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/asm-disk4
-    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/asm-disk5
-    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/asm-disk6
-    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/asm-disk7
-
-    Marking disk "ASMDISK" as an ASM disk:                        [  OK  ]
-
-
-
-<br/>
-
-
-
-// Посмотреть список дисков
+Посмотреть список дисков
 
     # /etc/init.d/oracleasm listdisks
     ASMDISK1
@@ -107,7 +98,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
     ASMDISK6
     ASMDISK7
 
-// Или так
+Или так
 
 
     # ls /dev/oracleasm/disks/
@@ -127,11 +118,19 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 
 
 	# /etc/init.d/oracleasm scandisks
-	# /etc/init.d/oracleasm listdisks
+    # /etc/init.d/oracleasm listdisks
+    ASMDISK1
+    ASMDISK2
+    ASMDISK3
+    ASMDISK4
+    ASMDISK5
+    ASMDISK6
+    ASMDISK7
 
 
 
-Нужно убедиться что диски подмонтированы на обоих серверах.
+
+Нужно убедиться что диски подмонтированы на всех узлах кластера.
 Если нет, перезагрузить узлы (после установки приоритетов автостарта пакетов, см. ниже)
 
 
@@ -192,7 +191,3 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 Файл логов
 
     # less /var/log/oracleasm
-
-Перестартовать oracleasm
-
-    # /etc/init.d/oracleasm restart

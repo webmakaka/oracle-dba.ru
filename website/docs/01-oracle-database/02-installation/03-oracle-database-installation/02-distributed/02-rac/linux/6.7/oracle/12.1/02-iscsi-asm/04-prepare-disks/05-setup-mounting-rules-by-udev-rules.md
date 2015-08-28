@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Настройка правил монтирования SCSI дисков на узлах кластера
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules/
+title: Oracle RAC 12.1 ISCSI + ASM - Настройка правил монтирования SCSI дисков на узлах кластера с помощью правил Udev
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-uder-rules/
 ---
 
 
-# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка правил монтирования SCSI дисков на узлах кластера
+# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка правил монтирования SCSI дисков на узлах кластера с помощью правил Udev
 
 
-### Вариант 2: С помощью udev правил
+### Вариант монтирования дисков с помощью udev правил
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -43,6 +43,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# /sbin/udevadm test /block/sdc/sdc1
 	# /sbin/udevadm test /block/sdd/sdd1
 	# /sbin/udevadm test /block/sde/sde1
+	# /sbin/udevadm test /block/sdf/sdf1
+	# /sbin/udevadm test /block/sdgsdg1
+	# /sbin/udevadm test /block/sdh/sdh1
+	# /sbin/udevadm test /block/sdi/sdi1
 
 
 <br/>
@@ -83,14 +87,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	/dev/asm-disk2  /dev/asm-disk4  /dev/asm-disk6
 
 
-
-
-===================================
-===================================
-====================================
-
-
-
+<!--
 
 Make SCSI Devices Trusted
 
@@ -150,6 +147,33 @@ Restart UDEV Service
 	/dev/asm-disk2  /dev/asm-disk4  /dev/asm-disk6
 
 
+<br/>
+
+-->
+
+### Eсли использовался вариант 2: С помощь udev правил
+
+
+    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/asm-disk1
+    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/asm-disk2
+    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/asm-disk3
+    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/asm-disk4
+    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/asm-disk5
+    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/asm-disk6
+    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/asm-disk7
+
+    Marking disk "ASMDISK" as an ASM disk:                        [  OK  ]
+
+
+
+<br/>
+
+На второй ноде тоже нужно создавать разделы на подмонтированных дисках?
+Так и сделал. И даже установку запустил. Установка завершилась ошибкой, очень похожей на ту, что и ошибки при использовании Device Mapper.
+
+
+Попробую установить этим способо позднее.  
+Консультации были бы кстати.
 
 Почитать здесь:
 

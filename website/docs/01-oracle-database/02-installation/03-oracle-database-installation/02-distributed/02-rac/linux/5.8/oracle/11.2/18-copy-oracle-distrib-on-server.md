@@ -10,11 +10,30 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 <br/>
 
 
-Необходимо скопировать следующие архивы на сервер (в каталог /tmp):
 
-p10404530_112030_Linux-x86-64_1of7.zip  
-p10404530_112030_Linux-x86-64_2of7.zip  
-p10404530_112030_Linux-x86-64_3of7.zip  
+Войдите в систему пользователем, от имени которого будет будет происходить инсталляция базы данных.
+
+	# su - oracle11
+
+
+Скопируйте дистрибутивы Oracle во временный каталог /tmp/oracle/11.2.0.3
+
+	$ cd /tmp/oracle/11.2.0.3
+
+<br/>
+
+	$  ls
+	p10404530_112030_Linux-x86-64_1of7.zip  
+	p10404530_112030_Linux-x86-64_2of7.zip  
+	p10404530_112030_Linux-x86-64_3of7.zip  
+
+
+<br/>
+
+	$ unzip p10404530_112030_Linux-x86-64_1of7.zip; unzip p10404530_112030_Linux-x86-64_2of7.zip; unzip p10404530_112030_Linux-x86-64_3of7.zip
+
+
+<!--
 
 <br/>
 
@@ -23,3 +42,5 @@ p10404530_112030_Linux-x86-64_3of7.zip
 <br/>
 
 	# chown -R oracle11:oinstall /tmp/p10404530_112030_Linux-x86-64_*
+
+-->

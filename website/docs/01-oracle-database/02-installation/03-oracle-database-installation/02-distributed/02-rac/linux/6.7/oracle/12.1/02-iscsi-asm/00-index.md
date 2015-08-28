@@ -85,19 +85,42 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/secure-shell-between-nodes/">Настройка Secure Shell между узлами кластера</a></li>
 
+</ul>
+
+
+<br/>
+
+### Подготовка дисковой подсистемы создаваемого RAC:
+
+
+<ul>
+
+
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/">Подготовка сервера storage (ISCSI)</a></li>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-hdd-to-install-oracle/">Подготовка локальных дисков на узлах кластера для инсталляции на них Oracle Database Software</a></li>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/">Монтирование SCSI дисков на узлах кластера</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules/">Настройка правил монтирования SCSI дисков на узлах кластера</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-device-mapper/">Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper</a></li>
+
+	<li>[Вопрос. Как это правильно делается? Ничего не получилось. Стал использовать Device Mapper]<a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-uder-rules/">Настройка правил монтирования SCSI дисков на узлах кластера с помощью правил Udev</a> (Если выполнен предыдущий шаг, этот выполнять не нужно)</li>
 
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/asmlib-installation/">Инсталляция ASMLIB на узлах кластера</a></li>
 
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/">Настройка ASM на узлах кластера, маркировка дисков как ASM</a></li>
+
+
+</ul>
+
+
+<br/>
+
+### Заключительные шаги по конфигурированию и проверка готовности подготовленного окружения к инсталляции RAC:
+
+<ul>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/create-folder-structure-and-user-permissions/">Создание структуры каталогов и назначение необходимых прав</a></li>
 
@@ -108,7 +131,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/check-environment-before-install/">Проверка конфигурации кластера перед инсталляцией RAC</a></li>
 
 	<li>Проверка работы Display Manager</li>
-
 
 </ul>
 
