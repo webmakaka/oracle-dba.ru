@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase 12c Release 1 x86 64 bit в операционной системе Oracle Linux 6.4 x86_64
+title: Oracle DataBase 12c - Linux - Создание структуры каталогов и назначение необходимых прав
 permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/create-folder-structure-and-user-permissions/
 ---
 

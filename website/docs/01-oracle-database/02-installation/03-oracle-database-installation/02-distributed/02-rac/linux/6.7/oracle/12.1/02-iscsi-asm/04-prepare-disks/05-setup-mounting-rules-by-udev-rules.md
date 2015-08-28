@@ -44,7 +44,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# /sbin/udevadm test /block/sdd/sdd1
 	# /sbin/udevadm test /block/sde/sde1
 	# /sbin/udevadm test /block/sdf/sdf1
-	# /sbin/udevadm test /block/sdgsdg1
+	# /sbin/udevadm test /block/sdg/sdg1
 	# /sbin/udevadm test /block/sdh/sdh1
 	# /sbin/udevadm test /block/sdi/sdi1
 
