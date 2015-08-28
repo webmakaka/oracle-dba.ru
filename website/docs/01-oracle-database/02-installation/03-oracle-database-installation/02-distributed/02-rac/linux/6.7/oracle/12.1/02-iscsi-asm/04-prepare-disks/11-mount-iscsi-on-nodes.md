@@ -18,7 +18,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </table>
 
 
-
 	# yum install -y \
     iscsi-initiator-utils.x86_64
 

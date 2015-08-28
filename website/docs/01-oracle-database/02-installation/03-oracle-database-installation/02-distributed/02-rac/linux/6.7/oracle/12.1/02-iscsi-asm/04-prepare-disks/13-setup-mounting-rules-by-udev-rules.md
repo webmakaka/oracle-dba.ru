@@ -41,7 +41,11 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 <br/>
 
 	# /sbin/udevadm test /block/sdc/sdc1
+	# /sbin/udevadm test /block/sdd/sdd1
+	# /sbin/udevadm test /block/sde/sde1
 
+
+<br/>
 
 
 	# echo "options=-g" > /etc/scsi_id.config
@@ -62,8 +66,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-
-
+	# scp /etc/udev/rules.d/99-oracle-asmdevices.rules root@rac2:/etc/udev/rules.d/99-oracle-asmdevices.rules
 
 
 <br/>
@@ -78,29 +81,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# ls /dev/asm*
 	/dev/asm-disk1  /dev/asm-disk3  /dev/asm-disk5  /dev/asm-disk7
 	/dev/asm-disk2  /dev/asm-disk4  /dev/asm-disk6
-
-<br/>
-
-	# scp /etc/udev/rules.d/99-oracle-asmdevices.rules root@rac2:/etc/udev/rules.d/99-oracle-asmdevices.rules
-
-
-rac2
-
-	# /sbin/udevadm control --reload-rules
-	# /sbin/start_udev
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
