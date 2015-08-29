@@ -25,7 +25,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 <br/>
 
     Default user to own the driver interface []: oracle12
-    Default group to own the driver interface []: dba
+    Default group to own the driver interface []: asmadmin
     Start Oracle ASM library driver on boot (y/n) [n]: y
     Scan for Oracle ASM disks on boot (y/n) [y]: y
     Writing Oracle ASM library driver configuration: done
@@ -87,6 +87,19 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 <br/>
 
 
+    # ls -l /dev/disk/by-label/
+    total 0
+    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK1 -> ../../asm-disk1
+    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK2 -> ../../asm-disk2
+    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK3 -> ../../asm-disk3
+    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK4 -> ../../asm-disk4
+    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK5 -> ../../asm-disk5
+    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK6 -> ../../asm-disk6
+    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK7 -> ../../asm-disk7
+
+<br/>
+
+
 Посмотреть список дисков
 
     # /etc/init.d/oracleasm listdisks
@@ -117,7 +130,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 </table>
 
 
-	# /etc/init.d/oracleasm scandisks
+	# /etc/init.d/oracleasm scandisks --verbose
     # /etc/init.d/oracleasm listdisks
     ASMDISK1
     ASMDISK2

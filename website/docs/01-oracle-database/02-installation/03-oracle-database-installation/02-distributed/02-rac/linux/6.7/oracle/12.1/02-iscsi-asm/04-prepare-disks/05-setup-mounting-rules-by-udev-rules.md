@@ -4,8 +4,49 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка правил монти�
 permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-uder-rules/
 ---
 
-
 # [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка правил монтирования SCSI дисков на узлах кластера с помощью правил Udev
+
+
+<!--
+
+ERROR
+
+# oracleasm scandisks -v
+Reloading disk partitions: done
+Cleaning any stale ASM disks...
+Scanning system for ASM disks...
+oracleasm-read-label: Unable to open device "/dev/sr0": No medium found
+oracleasm-read-label: Unable to open device "/dev/sdc1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdc1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdc1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdc1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdd1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdd1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdd1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdd1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdf1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdf1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdf1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdf1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sde1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sde1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sde1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sde1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdg1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdg1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdg1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdg1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdh1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdh1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdh1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdh1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdi1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdi1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdi1": No such file or directory
+oracleasm-read-label: Unable to open device "/dev/sdi1": No such file or directory
+
+
+-->
 
 
 ### Вариант монтирования дисков с помощью udev правил
@@ -87,6 +128,47 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	/dev/asm-disk2  /dev/asm-disk4  /dev/asm-disk6
 
 
+
+
+
+	# ls -l /dev/disk/by-id/
+
+rac1
+
+	lrwxrwxrwx 1 root root  9 Aug 29 01:46 scsi-1IET_00010001 -> ../../sdd
+	lrwxrwxrwx 1 root root 15 Aug 29 01:46 scsi-1IET_00010001-part1 -> ../../asm-disk2
+	lrwxrwxrwx 1 root root  9 Aug 29 01:46 scsi-1IET_00020001 -> ../../sde
+	lrwxrwxrwx 1 root root 15 Aug 29 01:46 scsi-1IET_00020001-part1 -> ../../asm-disk3
+	lrwxrwxrwx 1 root root  9 Aug 29 01:46 scsi-1IET_00030001 -> ../../sdi
+	lrwxrwxrwx 1 root root 15 Aug 29 01:46 scsi-1IET_00030001-part1 -> ../../asm-disk7
+	lrwxrwxrwx 1 root root  9 Aug 29 01:46 scsi-1IET_00040001 -> ../../sdc
+	lrwxrwxrwx 1 root root 15 Aug 29 01:46 scsi-1IET_00040001-part1 -> ../../asm-disk1
+	lrwxrwxrwx 1 root root  9 Aug 29 01:46 scsi-1IET_00050001 -> ../../sdg
+	lrwxrwxrwx 1 root root 15 Aug 29 01:46 scsi-1IET_00050001-part1 -> ../../asm-disk5
+	lrwxrwxrwx 1 root root  9 Aug 29 01:46 scsi-1IET_00060001 -> ../../sdf
+	lrwxrwxrwx 1 root root 15 Aug 29 01:46 scsi-1IET_00060001-part1 -> ../../asm-disk4
+	lrwxrwxrwx 1 root root  9 Aug 29 01:46 scsi-1IET_00070001 -> ../../sdh
+	lrwxrwxrwx 1 root root 15 Aug 29 01:46 scsi-1IET_00070001-part1 -> ../../asm-disk6
+
+
+rac2
+
+	lrwxrwxrwx 1 root root  9 Aug 29 01:56 scsi-1IET_00010001 -> ../../sdd
+	lrwxrwxrwx 1 root root 15 Aug 29 01:56 scsi-1IET_00010001-part1 -> ../../asm-disk2
+	lrwxrwxrwx 1 root root  9 Aug 29 01:56 scsi-1IET_00020001 -> ../../sde
+	lrwxrwxrwx 1 root root 15 Aug 29 01:56 scsi-1IET_00020001-part1 -> ../../asm-disk3
+	lrwxrwxrwx 1 root root  9 Aug 29 01:56 scsi-1IET_00030001 -> ../../sdh
+	lrwxrwxrwx 1 root root 15 Aug 29 01:56 scsi-1IET_00030001-part1 -> ../../asm-disk7
+	lrwxrwxrwx 1 root root  9 Aug 29 01:55 scsi-1IET_00040001 -> ../../sdc
+	lrwxrwxrwx 1 root root 15 Aug 29 01:55 scsi-1IET_00040001-part1 -> ../../asm-disk1
+	lrwxrwxrwx 1 root root  9 Aug 29 01:56 scsi-1IET_00050001 -> ../../sdg
+	lrwxrwxrwx 1 root root 15 Aug 29 01:56 scsi-1IET_00050001-part1 -> ../../asm-disk5
+	lrwxrwxrwx 1 root root  9 Aug 29 01:56 scsi-1IET_00060001 -> ../../sdf
+	lrwxrwxrwx 1 root root 15 Aug 29 01:56 scsi-1IET_00060001-part1 -> ../../asm-disk4
+	lrwxrwxrwx 1 root root  9 Aug 29 01:56 scsi-1IET_00070001 -> ../../sdi
+	lrwxrwxrwx 1 root root 15 Aug 29 01:56 scsi-1IET_00070001-part1 -> ../../asm-disk6
+
+
 <!--
 
 Make SCSI Devices Trusted
@@ -151,19 +233,21 @@ Restart UDEV Service
 
 -->
 
-### Eсли использовался вариант 2: С помощь udev правил
+<br/>
 
+### Шаг уже после настройки ASM, но предшествующий маркировки дисков
 
-    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/asm-disk1
-    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/asm-disk2
-    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/asm-disk3
-    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/asm-disk4
-    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/asm-disk5
-    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/asm-disk6
-    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/asm-disk7
+Выполняю только на rac1. При выполнении на rac2, получаю в логах сообщение, что диски уже маркированы как ASM.
 
-    Marking disk "ASMDISK" as an ASM disk:                        [  OK  ]
-
+    # {
+		/etc/init.d/oracleasm createdisk ASMDISK1 /dev/asm-disk1
+	    /etc/init.d/oracleasm createdisk ASMDISK2 /dev/asm-disk2
+	    /etc/init.d/oracleasm createdisk ASMDISK3 /dev/asm-disk3
+	    /etc/init.d/oracleasm createdisk ASMDISK4 /dev/asm-disk4
+	    /etc/init.d/oracleasm createdisk ASMDISK5 /dev/asm-disk5
+	    /etc/init.d/oracleasm createdisk ASMDISK6 /dev/asm-disk6
+	    /etc/init.d/oracleasm createdisk ASMDISK7 /dev/asm-disk7
+	}
 
 
 <br/>

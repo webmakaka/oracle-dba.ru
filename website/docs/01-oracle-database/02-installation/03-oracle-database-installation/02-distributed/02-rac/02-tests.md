@@ -9,6 +9,205 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 <br/>
 
 
+
+	$ crsctl stat res -t
+	--------------------------------------------------------------------------------
+	Name           Target  State        Server                   State details
+	--------------------------------------------------------------------------------
+	Local Resources
+	--------------------------------------------------------------------------------
+	ora.ASMNET1LSNR_ASM.lsnr
+	               ONLINE  ONLINE       rac1                     STABLE
+	               ONLINE  ONLINE       rac2                     STABLE
+	ora.DATA.dg
+	               ONLINE  ONLINE       rac1                     STABLE
+	               ONLINE  ONLINE       rac2                     STABLE
+	ora.FRA.dg
+	               ONLINE  ONLINE       rac1                     STABLE
+	               ONLINE  ONLINE       rac2                     STABLE
+	ora.LISTENER.lsnr
+	               ONLINE  ONLINE       rac1                     STABLE
+	               ONLINE  ONLINE       rac2                     STABLE
+	ora.OCR.dg
+	               ONLINE  ONLINE       rac1                     STABLE
+	               ONLINE  ONLINE       rac2                     STABLE
+	ora.net1.network
+	               ONLINE  ONLINE       rac1                     STABLE
+	               ONLINE  ONLINE       rac2                     STABLE
+	ora.ons
+	               ONLINE  ONLINE       rac1                     STABLE
+	               ONLINE  ONLINE       rac2                     STABLE
+	--------------------------------------------------------------------------------
+	Cluster Resources
+	--------------------------------------------------------------------------------
+	ora.LISTENER_SCAN1.lsnr
+	      1        ONLINE  ONLINE       rac2                     STABLE
+	ora.LISTENER_SCAN2.lsnr
+	      1        ONLINE  ONLINE       rac1                     STABLE
+	ora.LISTENER_SCAN3.lsnr
+	      1        ONLINE  ONLINE       rac1                     STABLE
+	ora.MGMTLSNR
+	      1        ONLINE  ONLINE       rac1                     169.254.32.178 192.1
+	                                                             68.2.11,STABLE
+	ora.asm
+	      1        ONLINE  ONLINE       rac1                     Started,STABLE
+	      2        ONLINE  ONLINE       rac2                     Started,STABLE
+	      3        OFFLINE OFFLINE                               STABLE
+	ora.cvu
+	      1        ONLINE  ONLINE       rac1                     STABLE
+	ora.mgmtdb
+	      1        ONLINE  ONLINE       rac1                     Open,STABLE
+	ora.oc4j
+	      1        ONLINE  ONLINE       rac1                     STABLE
+	ora.rac1.vip
+	      1        ONLINE  ONLINE       rac1                     STABLE
+	ora.rac12.db
+	      1        ONLINE  ONLINE       rac1                     Open,STABLE
+	      2        ONLINE  ONLINE       rac2                     Open,STABLE
+	ora.rac2.vip
+	      1        ONLINE  ONLINE       rac2                     STABLE
+	ora.scan1.vip
+	      1        ONLINE  ONLINE       rac2                     STABLE
+	ora.scan2.vip
+	      1        ONLINE  ONLINE       rac1                     STABLE
+	ora.scan3.vip
+	      1        ONLINE  ONLINE       rac1                     STABLE
+	--------------------------------------------------------------------------------
+
+<br/>
+
+	$ srvctl config database -d rac12
+	Database unique name: rac12
+	Database name: rac12
+	Oracle home: /u01/app/oracle/product/rac/12.1
+	Oracle user: oracle12
+	Spfile: +DATA/RAC12/PARAMETERFILE/spfile.268.888906665
+	Password file: +DATA/RAC12/PASSWORD/pwdrac12.256.888904179
+	Domain:
+	Start options: open
+	Stop options: immediate
+	Database role: PRIMARY
+	Management policy: AUTOMATIC
+	Server pools:
+	Disk Groups: DATA,FRA
+	Mount point paths:
+	Services:
+	Type: RAC
+	Start concurrency:
+	Stop concurrency:
+	OSDBA group: dba
+	OSOPER group: oper
+	Database instances: rac121,rac122
+	Configured nodes: rac1,rac2
+	Database is administrator managed
+
+
+
+<br/>
+
+
+
+	$ srvctl config nodeapps -a -g -s
+	PRKO-2207 : Warning:-gsdonly option has been deprecated and will be ignored.
+	Network 1 exists
+	Subnet IPv4: 192.168.1.0/255.255.255.0/eth0, static
+	Subnet IPv6:
+	Ping Targets:
+	Network is enabled
+	Network is individually enabled on nodes:
+	Network is individually disabled on nodes:
+	VIP exists: network number 1, hosting node rac1
+	VIP Name: rac1-vip.localdomain
+	VIP IPv4 Address: 192.168.1.21
+	VIP IPv6 Address:
+	VIP is enabled.
+	VIP is individually enabled on nodes:
+	VIP is individually disabled on nodes:
+	VIP exists: network number 1, hosting node rac2
+	VIP Name: rac2-vip.localdomain
+	VIP IPv4 Address: 192.168.1.22
+	VIP IPv6 Address:
+	VIP is enabled.
+	VIP is individually enabled on nodes:
+	VIP is individually disabled on nodes:
+	ONS exists: Local port 6100, remote port 6200, EM port 2016, Uses SSL false
+	ONS is enabled
+	ONS is individually enabled on nodes:
+	ONS is individually disabled on nodes:
+
+<br/>
+
+
+	$ srvctl config listener -a -l LISTENER
+	Name: LISTENER
+	Type: Database Listener
+	Network: 1, Owner: oracle12
+	Home: <CRS home>
+	  /u01/app/grid/12.1 on node(s) rac2,rac1
+	End points: TCP:1521
+	Listener is enabled.
+	Listener is individually enabled on nodes:
+	Listener is individually disabled on nodes:
+
+
+<br/>
+
+
+	$ srvctl config scan -i 1
+	SCAN name: rac12-scan, Network: 1
+	Subnet IPv4: 192.168.1.0/255.255.255.0/eth0, static
+	Subnet IPv6:
+	SCAN 1 IPv4 VIP: 192.168.1.42
+	SCAN VIP is enabled.
+	SCAN VIP is individually enabled on nodes:
+	SCAN VIP is individually disabled on nodes:
+
+<br/>
+
+	$ srvctl status scan
+	SCAN VIP scan1 is enabled
+	SCAN VIP scan1 is running on node rac2
+	SCAN VIP scan2 is enabled
+	SCAN VIP scan2 is running on node rac1
+	SCAN VIP scan3 is enabled
+	SCAN VIP scan3 is running on node rac1
+
+
+<br/>
+
+
+	$ srvctl config scan_listener
+	SCAN Listener LISTENER_SCAN1 exists. Port: TCP:1521
+	Registration invited nodes:
+	Registration invited subnets:
+	SCAN Listener is enabled.
+	SCAN Listener is individually enabled on nodes:
+	SCAN Listener is individually disabled on nodes:
+	SCAN Listener LISTENER_SCAN2 exists. Port: TCP:1521
+	Registration invited nodes:
+	Registration invited subnets:
+	SCAN Listener is enabled.
+	SCAN Listener is individually enabled on nodes:
+	SCAN Listener is individually disabled on nodes:
+	SCAN Listener LISTENER_SCAN3 exists. Port: TCP:1521
+	Registration invited nodes:
+	Registration invited subnets:
+	SCAN Listener is enabled.
+	SCAN Listener is individually enabled on nodes:
+	SCAN Listener is individually disabled on nodes:
+
+<br/>
+
+	$ srvctl stop instance -i rac121 -d rac12
+	$ srvctl start instance -i rac121 -d rac12
+
+
+
+
+
+
+<br/>
+
 	$ srvctl status nodeapps
 
 	VIP node1-vip is enabled
@@ -56,6 +255,156 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	ora.scan1.vip  ora....ip.type ONLINE    ONLINE    node1
 	ora.scan2.vip  ora....ip.type ONLINE    ONLINE    node2
 	ora.scan3.vip  ora....ip.type ONLINE    ONLINE    node2
+
+
+<br/>
+
+
+	$ crsctl stat res ora.rac12.db -f
+	NAME=ora.rac12.db
+	TYPE=ora.database.type
+	STATE=ONLINE
+	TARGET=ONLINE
+	ACL=owner:oracle12:rwx,pgrp:oinstall:r--,other::r--,group:dba:r-x,group:oper:r-x,user:oracle12:r-x
+	ACTIONS=startoption,group:"oinstall",user:"oracle12",group:"dba",group:"oper"
+	ACTION_SCRIPT=
+	ACTION_START_OPTION=
+	ACTION_TIMEOUT=600
+	ACTIVE_PLACEMENT=0
+	AGENT_FILENAME=%CRS_HOME%/bin/oraagent%CRS_EXE_SUFFIX%
+	AUTO_START=restore
+	CARDINALITY=2
+	CARDINALITY_ID=0
+	CHECK_INTERVAL=1
+	CHECK_TIMEOUT=30
+	CLEAN_TIMEOUT=60
+	CLUSTER_DATABASE=true
+	CONFIG_VERSION=1
+	DATABASE_TYPE=RAC
+	DB_UNIQUE_NAME=rac12
+	DEGREE=1
+	DELETE_TIMEOUT=60
+	DESCRIPTION=Oracle Database resource
+	ENABLED=1
+	FAILOVER_DELAY=0
+	FAILURE_INTERVAL=60
+	FAILURE_THRESHOLD=1
+	GEN_AUDIT_FILE_DEST=/u01/app/oracle/admin/rac12/adump
+	GEN_START_OPTIONS=
+	GEN_USR_ORA_INST_NAME=
+	GEN_USR_ORA_INST_NAME@SERVERNAME(rac1)=rac121
+	GEN_USR_ORA_INST_NAME@SERVERNAME(rac2)=rac122
+	HOSTING_MEMBERS=
+	ID=ora.rac12.db
+	INSTANCE_COUNT=2
+	INSTANCE_FAILOVER=0
+	INTERMEDIATE_TIMEOUT=0
+	LOAD=1
+	LOGGING_LEVEL=1
+	MANAGEMENT_POLICY=AUTOMATIC
+	MODIFY_TIMEOUT=60
+	NLS_LANG=
+	OFFLINE_CHECK_INTERVAL=0
+	ONLINE_RELOCATION_TIMEOUT=0
+	ORACLE_HOME=/u01/app/oracle/product/rac/12.1
+	ORACLE_HOME_OLD=
+	PLACEMENT=restricted
+	PWFILE=+DATA/RAC12/PASSWORD/pwdrac12.256.888904179
+	RANK=0
+	RELOCATE_ACTION=0
+	RELOCATE_BY_DEPENDENCY=1
+	RESTART_ATTEMPTS=2
+	ROLE=PRIMARY
+	SCRIPT_TIMEOUT=60
+	SERVER_CATEGORY=
+	SERVER_POOLS=ora.rac12
+	SERVER_POOLS_PQ=
+	SPFILE=+DATA/RAC12/PARAMETERFILE/spfile.268.888906665
+	START_CONCURRENCY=0
+	START_DEPENDENCIES=hard(global:uniform:ora.DATA.dg, global:uniform:ora.FRA.dg) pullup(global:ora.DATA.dg, global:ora.FRA.dg) weak(type:ora.listener.type,global:type:ora.scan_listener.type,uniform:ora.ons,global:ora.gns)
+	START_TIMEOUT=600
+	STOP_CONCURRENCY=0
+	STOP_DEPENDENCIES=hard(global:intermediate:ora.asm,global:shutdown:ora.DATA.dg,global:shutdown:ora.FRA.dg)
+	STOP_TIMEOUT=600
+	TYPE_VERSION=3.3
+	UPTIME_THRESHOLD=1h
+	USER_WORKLOAD=yes
+	USE_STICKINESS=0
+	USR_ORA_DB_NAME=rac12
+	USR_ORA_DOMAIN=
+	USR_ORA_ENV=
+	USR_ORA_FLAGS=
+	USR_ORA_INST_NAME=
+	USR_ORA_INST_NAME@SERVERNAME(rac1)=rac121
+	USR_ORA_INST_NAME@SERVERNAME(rac2)=rac122
+	USR_ORA_OPEN_MODE=open
+	USR_ORA_OPI=false
+	USR_ORA_STOP_MODE=immediate
+
+
+
+<br/>
+
+	$ crsctl query css votedisk
+	##  STATE    File Universal Id                File Name Disk group
+	--  -----    -----------------                --------- ---------
+	1. ONLINE   1f5590501e834f00bfffb717022f5746 (ORCL:ASMDISK1) [OCR]
+	2. ONLINE   effa884850594f98bf43e29bd20fbb0b (ORCL:ASMDISK2) [OCR]
+	3. ONLINE   e639ffd640c74ff2bf148cfe0d432463 (ORCL:ASMDISK3) [OCR]
+	Located 3 voting disk(s).
+
+<br/>
+
+	$ olsnodes -n -i -s -t
+	rac1	1	rac1-vip.localdomain	Active	Unpinned
+	rac2	2	rac2-vip.localdomain	Active	Unpinned
+
+<br/>
+
+	$ oifcfg getif
+	eth0  192.168.1.0  global  public
+	eth1  192.168.2.0  global  cluster_interconnect,asm
+
+<br/>
+
+	$ ocrcheck
+	Status of Oracle Cluster Registry is as follows :
+		 Version                  :          4
+		 Total space (kbytes)     :     409568
+		 Used space (kbytes)      :       1688
+		 Available space (kbytes) :     407880
+		 ID                       : 1367113341
+		 Device/File Name         :       +OCR
+	                                    Device/File integrity check succeeded
+
+	                                    Device/File not configured
+
+	                                    Device/File not configured
+
+	                                    Device/File not configured
+
+	                                    Device/File not configured
+
+		 Cluster registry integrity check succeeded
+
+		 Logical corruption check bypassed due to non-privileged user
+
+
+<br/>
+
+	$ ocrconfig -showbackup
+
+	rac1     2015/08/28 20:40:20     /u01/app/grid/12.1/cdata/rac12/backup00.ocr     0
+
+	rac1     2015/08/28 16:40:19     /u01/app/grid/12.1/cdata/rac12/backup01.ocr     0
+
+	rac1     2015/08/28 12:40:19     /u01/app/grid/12.1/cdata/rac12/backup02.ocr     0
+
+	rac1     2015/08/28 08:40:18     /u01/app/grid/12.1/cdata/rac12/day.ocr     0
+
+	rac1     2015/08/28 08:40:18     /u01/app/grid/12.1/cdata/rac12/week.ocr     0
+	PROT-25: Manual backups for the Oracle Cluster Registry are not available
+
 
 
 <br/>
@@ -208,14 +557,27 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-	./crsctl check cluster -all
-	./crsctl stat res -t
+	$ crsctl check cluster -all
+	**************************************************************
+	rac1:
+	CRS-4537: Cluster Ready Services is online
+	CRS-4529: Cluster Synchronization Services is online
+	CRS-4533: Event Manager is online
+	**************************************************************
+	rac2:
+	CRS-4537: Cluster Ready Services is online
+	CRS-4529: Cluster Synchronization Services is online
+	CRS-4533: Event Manager is online
+	**************************************************************
+
+
+
 	./crsctl start resource -all
 
 <br/>
 
 	cd /tmp/grid
-	./runcluvfy.sh stage -post crsinst -n devsp037,devsp037 -verbose
+	./runcluvfy.sh stage -post crsinst -n rac1,rac2 -verbose
 
 <br/>
 
@@ -241,16 +603,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	         Cluster registry integrity check failed
 
 	         Logical corruption check bypassed due to insufficient quorum
-
-
-<br/>
-
-	$ srvctl config scan
-
-	SCAN name: devsp037-scan.netcracker.com, Network: 1/10.232.0.0/255.255.0.0/eth0
-	SCAN VIP name: scan1, IP: /devsp037-scan.netcracker.com/10.232.2.204
-	SCAN VIP name: scan2, IP: /devsp037-scan.netcracker.com/10.232.2.205
-	SCAN VIP name: scan3, IP: /devsp037-scan.netcracker.com/10.232.2.206
 
 
 <br/>

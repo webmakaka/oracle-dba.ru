@@ -47,6 +47,13 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# scsi_id --whitelisted --replace-whitespace --device=/dev/sdi
 	1IET_00030001
 
+<br/>
+
+	# for i in c d e f g h i
+	do
+	scsi_id –whitelisted –replace-whitespace –device=/dev/sd$i
+	done
+
 
 <br/>
 

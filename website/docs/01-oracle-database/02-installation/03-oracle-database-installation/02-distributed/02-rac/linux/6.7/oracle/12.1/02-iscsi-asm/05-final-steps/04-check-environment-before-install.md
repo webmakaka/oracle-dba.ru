@@ -16,6 +16,10 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </table>
 
 
+Возможно, что лучше скачать с сайта Oracle последнюю версию «Oracle Cluster Verification Utility»  
+
+http://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-homepage-099973.html
+
 
 <br/>
 
