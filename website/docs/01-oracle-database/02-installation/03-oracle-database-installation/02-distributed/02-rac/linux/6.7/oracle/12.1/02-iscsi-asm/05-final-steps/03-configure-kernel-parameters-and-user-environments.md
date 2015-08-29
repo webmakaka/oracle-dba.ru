@@ -8,7 +8,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 # [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Изменение параметров ядра и параметров учетной записи администратора базы данных
 
 
-
 <br/>
 
 

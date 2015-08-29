@@ -95,6 +95,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <ul>
 
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/asmlib-installation/">Инсталляция ASMLIB на узлах кластера</a></li>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/">Подготовка сервера storage (ISCSI)</a></li>
 
@@ -102,13 +103,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/">Монтирование SCSI дисков на узлах кластера</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-device-mapper/">Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-device-mapper/">[Вариант 1] Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper</a></li>
 
-	<li>[Вопрос. Как это правильно делается? Ничего не получилось. Стал использовать Device Mapper]<a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-uder-rules/">Настройка правил монтирования SCSI дисков на узлах кластера с помощью правил Udev</a> (Если выполнен предыдущий шаг, этот выполнять не нужно)</li>
-
-
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/asmlib-installation/">Инсталляция ASMLIB на узлах кластера</a></li>
-
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-uder-rules/">[Вариант 2] Настройка правил монтирования SCSI дисков на узлах кластера с помощью правил Udev</a> (Если выполнен предыдущий шаг, этот выполнять не нужно)</li>
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/">Настройка ASM на узлах кластера, маркировка дисков как ASM</a></li>
 

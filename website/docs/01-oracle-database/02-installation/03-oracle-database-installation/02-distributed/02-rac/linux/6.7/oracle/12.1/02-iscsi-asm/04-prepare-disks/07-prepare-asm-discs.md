@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кластера, маркировка дисков как ASM /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/
+title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кластера, маркировка дисков как ASM
+permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/
 ---
 
 
@@ -73,31 +74,33 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 ### Маркируем диски как ASM:
 
 
-    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/mapper/asm-disk1
-    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/mapper/asm-disk2
-    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/mapper/asm-disk3
-    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/mapper/asm-disk4
-    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/mapper/asm-disk5
-    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/mapper/asm-disk6
-    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/mapper/asm-disk7
+Если используется Device Mapper то:
+
+
+    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/mapper/iscsi-disk1
+    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/mapper/iscsi-disk2
+    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/mapper/iscsi-disk3
+    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/mapper/iscsi-disk4
+    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/mapper/iscsi-disk5
+    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/mapper/iscsi-disk6
+    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/mapper/iscsi-disk7
 
     Marking disk "ASMDISK" as an ASM disk:                        [  OK  ]
 
 
-<br/>
 
+Если используются правила Udev то:
 
-    # ls -l /dev/disk/by-label/
-    total 0
-    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK1 -> ../../asm-disk1
-    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK2 -> ../../asm-disk2
-    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK3 -> ../../asm-disk3
-    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK4 -> ../../asm-disk4
-    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK5 -> ../../asm-disk5
-    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK6 -> ../../asm-disk6
-    lrwxrwxrwx 1 root root 15 Aug 29 03:09 ASMDISK7 -> ../../asm-disk7
+    # {
+		/etc/init.d/oracleasm createdisk ASMDISK1 /dev/iscsi-disk1
+	    /etc/init.d/oracleasm createdisk ASMDISK2 /dev/iscsi-disk2
+	    /etc/init.d/oracleasm createdisk ASMDISK3 /dev/iscsi-disk3
+	    /etc/init.d/oracleasm createdisk ASMDISK4 /dev/iscsi-disk4
+	    /etc/init.d/oracleasm createdisk ASMDISK5 /dev/iscsi-disk5
+	    /etc/init.d/oracleasm createdisk ASMDISK6 /dev/iscsi-disk6
+	    /etc/init.d/oracleasm createdisk ASMDISK7 /dev/iscsi-disk7
+	}
 
-<br/>
 
 
 Посмотреть список дисков
@@ -113,11 +116,8 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 
 Или так
 
-
     # ls /dev/oracleasm/disks/
     ASMDISK1  ASMDISK2  ASMDISK3  ASMDISK4  ASMDISK5  ASMDISK6  ASMDISK7
-
-
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -130,8 +130,10 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 </table>
 
 
-	# /etc/init.d/oracleasm scandisks --verbose
-    # /etc/init.d/oracleasm listdisks
+Нужно убедиться что диски подмонтированы на всех узлах кластера. И при вводе следующей команды, возвращают следующие данные на обоих узлах.
+
+
+    # oracleasm listdisks
     ASMDISK1
     ASMDISK2
     ASMDISK3
@@ -142,9 +144,20 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
 
 
 
+Если используется Device Mapper то:
 
-Нужно убедиться что диски подмонтированы на всех узлах кластера.
-Если нет, перезагрузить узлы (после установки приоритетов автостарта пакетов, см. ниже)
+    # oracleasm scandisks
+    # oracleasm listdisks
+
+
+Если используются правила Ude то, нужно явно указать, где лежат эти самые диски:  
+
+    # oracleasm scandisks /dev/iscsi-disk* --verbose
+    # oracleasm listdisks
+
+Я пока не нашел способа, как автоматизировать процесс сканирования дисков. В этом случае если узлы перезагрузятся, сами они не поднимутся.
+
+Буду признателен за помощь.
 
 
 <br/><br/>
@@ -191,7 +204,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кл
     # /usr/sbin/oracleasm configure
     ORACLEASM_ENABLED=true
     ORACLEASM_UID=oracle12
-    ORACLEASM_GID=dba
+    ORACLEASM_GID=asmadmin
     ORACLEASM_SCANBOOT=true
     ORACLEASM_SCANORDER=""
     ORACLEASM_SCANEXCLUDE=""
