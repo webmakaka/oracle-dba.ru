@@ -92,7 +92,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 
 
-
 <br/>
 
 ### Настрока правил монтирования iSCSI дисков нодам кластера.

@@ -69,4 +69,7 @@ RAC - несколько инстансов на разных серверах �
     <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/process/">Процессы Oracle RAC</a><br/></li>
 
     <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/tests/"> Некоторые запросы и команды</a><br/></li>
+
+    <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/ocfs/">Инсталляция OCFS2 для RAC в Oracle Linux 6.7 для версий RAC 10,11</a><br/></li>
+
 </ul>

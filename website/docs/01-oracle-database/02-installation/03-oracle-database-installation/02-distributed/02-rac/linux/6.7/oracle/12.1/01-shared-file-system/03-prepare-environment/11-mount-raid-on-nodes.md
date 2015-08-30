@@ -29,8 +29,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 <br/>
 
-    # service  rpcbind restart
     # chkconfig --level 345 rpcbind on
+    # service  rpcbind restart
 
     # chkconfig --level 345 nfs on
     # service nfs restart
