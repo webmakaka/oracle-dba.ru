@@ -102,7 +102,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/check-environment-before-install/">Проверка конфигурации кластера перед инсталляцией RAC</a></li>
 
-	<li>Проверка работы Display Manager</li>
+	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/check-display-manager/">Проверка работы Display Manager на компьютере с GUI</a></li>
 
 
 </ul>

@@ -30,8 +30,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 <strong>Самые последние версии (на момент написания):</strong>
 
 <ul>
-	<li>Oracle Linux - 6.3</li>
-	<li>Oracle DataBase - 11.2.0.3</li>
+	<li>Oracle Linux - 6.3 (лучше ставьте 6.7)</li>
+	<li>Oracle DataBase - 11.2.0.3 (лучше ставьте 11.2.0.4)</li>
 </ul>
 
 <br/>

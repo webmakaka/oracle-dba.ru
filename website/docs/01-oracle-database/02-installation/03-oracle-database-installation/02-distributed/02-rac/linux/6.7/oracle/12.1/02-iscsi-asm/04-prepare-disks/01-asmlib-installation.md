@@ -17,8 +17,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 </table>
 
 
-From Oracle Linux 6 onward, the oracleasm kernel driver is built into UEK, so it doesn't need to be installed separately.
-
+В Oracle Linux 6 oracleasm kernel driver встроены в ядро UEK и как следствиет не требует инсталляции.
 
 Необходимо с сайта Oracle:
 
