@@ -4,6 +4,7 @@ title: Коллекция скриптов для Oracle DBA
 permalink: /oracle-dba-scripts/
 ---
 
+<br/>
 
 ### [Jeffrey M. Hunter]
 
@@ -12,5 +13,21 @@ permalink: /oracle-dba-scripts/
 
 https://github.com/plsql/DBA-Scripts-Archive-for-Oracle
 
-Пока нет особого желания разбирать коллекцию, определять, что важно а что нет.
+
+<br/>
+
+### Другие авторы:
+
+
+https://github.com/plsql/oracle_sql_scripts
+
+https://github.com/plsql/Oracle-DBA-Scripts
+
+https://github.com/plsql/Oracle-DBA-Scripts-1
+
+https://github.com/plsql/OracleDBA
+
+
+
+Пока нет особого желания разбирать коллекции, определять, что важно а что нет.
 Если кто поможет.
