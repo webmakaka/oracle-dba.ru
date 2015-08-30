@@ -56,27 +56,40 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	# ls -l /dev/disk/by-path/
 	total 0
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk1-lun-1 -> ../../sdd
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk2-lun-1 -> ../../sde
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk3-lun-1 -> ../../sdh
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk4-lun-1 -> ../../sdc
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk5-lun-1 -> ../../sdg
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk6-lun-1 -> ../../sdf
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk7-lun-1 -> ../../sdi
-	***
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk1-lun-1 -> ../../sdd
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk2-lun-1 -> ../../sde
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk3-lun-1 -> ../../sdi
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk4-lun-1 -> ../../sdc
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk5-lun-1 -> ../../sdg
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk6-lun-1 -> ../../sdf
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 ip-192.168.3.15:3260-iscsi-ru.oracle-dba:disk7-lun-1 -> ../../sdh
+	lrwxrwxrwx 1 root root  9 Aug 30  2015 pci-0000:00:01.1-scsi-0:0:0:0 -> ../../sr0
+	lrwxrwxrwx 1 root root  9 Aug 30  2015 pci-0000:00:16.0-sas-0x00060504030201a0-lun-0 -> ../../sda
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 pci-0000:00:16.0-sas-0x00060504030201a0-lun-0-part1 -> ../../sda1
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 pci-0000:00:16.0-sas-0x00060504030201a0-lun-0-part2 -> ../../sda2
+	lrwxrwxrwx 1 root root  9 Aug 30  2015 pci-0000:00:16.0-sas-0x01060504030201a0-lun-0 -> ../../sdb
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 pci-0000:00:16.0-sas-0x01060504030201a0-lun-0-part1 -> ../../sdb1
+
 
 <br/>
 
 	# ls -l /dev/disk/by-id/
 
-	***
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 scsi-1IET_00010001 -> ../../sdd
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 scsi-1IET_00020001 -> ../../sde
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 scsi-1IET_00030001 -> ../../sdh
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 scsi-1IET_00040001 -> ../../sdc
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 scsi-1IET_00050001 -> ../../sdg
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 scsi-1IET_00060001 -> ../../sdf
-	lrwxrwxrwx 1 root root  9 Aug 29 01:30 scsi-1IET_00070001 -> ../../sdi
+	total 0
+	lrwxrwxrwx 1 root root  9 Aug 30  2015 ata-VBOX_CD-ROM_VB0-01f003f6 -> ../../sr0
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 dm-name-VolGroup-lv_root -> ../../dm-0
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 dm-name-VolGroup-lv_swap -> ../../dm-1
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 dm-uuid-LVM-xT7O36GGtKKaYDOOvFqcFZv9nknGEjgDbc4YIbNz0Eg8W0FMUTFfuFD2eUCKdR8r -> ../../dm-0
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 dm-uuid-LVM-xT7O36GGtKKaYDOOvFqcFZv9nknGEjgDvumafwdAzDL9wD2ldsyTHuwfu3r6v0o0 -> ../../dm-1
+	lrwxrwxrwx 1 root root 10 Aug 30  2015 lvm-pv-uuid-iZA9q9-she5-tJvn-f75F-MZsB-spCV-HQ8Q0P -> ../../sda2
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 scsi-1IET_00010001 -> ../../sdd
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 scsi-1IET_00020001 -> ../../sde
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 scsi-1IET_00030001 -> ../../sdi
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 scsi-1IET_00040001 -> ../../sdc
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 scsi-1IET_00050001 -> ../../sdg
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 scsi-1IET_00060001 -> ../../sdf
+	lrwxrwxrwx 1 root root  9 Aug 29 23:03 scsi-1IET_00070001 -> ../../sdh
+
 
 
 
@@ -108,18 +121,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 
 	# scsi_id --whitelisted --replace-whitespace --device=/dev/sdc
 	1IET_00040001
-	# scsi_id --whitelisted --replace-whitespace --device=/dev/sdd
-	1IET_00010001
-	# scsi_id --whitelisted --replace-whitespace --device=/dev/sde
-	1IET_00020001
-	# scsi_id --whitelisted --replace-whitespace --device=/dev/sdf
-	1IET_00060001
-	# scsi_id --whitelisted --replace-whitespace --device=/dev/sdg
-	1IET_00050001
-	# scsi_id --whitelisted --replace-whitespace --device=/dev/sdh
-	1IET_00070001
-	# scsi_id --whitelisted --replace-whitespace --device=/dev/sdi
-	1IET_00030001
 
 <br/>
 
@@ -128,5 +129,12 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	scsi_id --whitelisted --replace-whitespace --device=/dev/sd$i
 	done
 
-
 <br/>
+
+	1IET_00040001
+	1IET_00010001
+	1IET_00020001
+	1IET_00060001
+	1IET_00050001
+	1IET_00070001
+	1IET_00030001

@@ -14,7 +14,7 @@ RAC - несколько инстансов на разных серверах �
 
 <ul>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (SHARED FILE SYSTEM)</a></li>
-	
+
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)</a></li>
 
 </ul>
@@ -48,11 +48,14 @@ RAC - несколько инстансов на разных серверах �
 
 <ul>
 	<li><a href="https://en.wikibooks.org/wiki/RAC_Attack_-_Oracle_Cluster_Database_at_Home/RAC_Attack_12c/Create_VirtualBox_VM">RAC Attack - Oracle Cluster Database at Home/RAC Attack 12c/Create VirtualBox VM</a></li>
+
 	<li><a href="http://www.lab128.com/rac12_installation_using_vb/article_text.html">Oracle RAC 12c Database on Linux Using VirtualBox (GUI, Sharde Virtual Disk)</a></li>
-	<li>[HabraHabr] <a href="http://habrahabr.ru/post/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a> ( может есть что-то полезное, сам не пробовал. Я и коллеги не используем GUI не серверах.)</li>
 
+	<li><a href="http://www.idevelopment.info/data/Oracle/DBA_tips/Oracle11gRAC/CLUSTER_12.shtml">Building an Inexpensive Oracle RAC 11g R2 on Linux - (RHEL 5)</a></li>
 
+	<li><a href="http://www.idevelopment.info/data/Oracle/DBA_tips/Oracle10gRAC/CLUSTER_12.shtml">Building an Inexpensive Oracle RAC 10g R2 on Linux - (RHEL 5.3 / iSCSI)</a></li>
 
+	<li>[HabraHabr] <a href="http://habrahabr.ru/post/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a></li>
 
 </ul>
 

@@ -77,30 +77,17 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 Если используется Device Mapper то:
 
 
-    # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/mapper/iscsi-disk1
-    # /etc/init.d/oracleasm createdisk ASMDISK2 /dev/mapper/iscsi-disk2
-    # /etc/init.d/oracleasm createdisk ASMDISK3 /dev/mapper/iscsi-disk3
-    # /etc/init.d/oracleasm createdisk ASMDISK4 /dev/mapper/iscsi-disk4
-    # /etc/init.d/oracleasm createdisk ASMDISK5 /dev/mapper/iscsi-disk5
-    # /etc/init.d/oracleasm createdisk ASMDISK6 /dev/mapper/iscsi-disk6
-    # /etc/init.d/oracleasm createdisk ASMDISK7 /dev/mapper/iscsi-disk7
+    # {
+        /etc/init.d/oracleasm createdisk ASMDISK1 /dev/mapper/iscsi-disk1
+        /etc/init.d/oracleasm createdisk ASMDISK2 /dev/mapper/iscsi-disk2
+        /etc/init.d/oracleasm createdisk ASMDISK3 /dev/mapper/iscsi-disk3
+        /etc/init.d/oracleasm createdisk ASMDISK4 /dev/mapper/iscsi-disk4
+        /etc/init.d/oracleasm createdisk ASMDISK5 /dev/mapper/iscsi-disk5
+        /etc/init.d/oracleasm createdisk ASMDISK6 /dev/mapper/iscsi-disk6
+        /etc/init.d/oracleasm createdisk ASMDISK7 /dev/mapper/iscsi-disk7
+    }
 
     Marking disk "ASMDISK" as an ASM disk:                        [  OK  ]
-
-
-
-Если используются правила Udev то:
-
-    # {
-		/etc/init.d/oracleasm createdisk ASMDISK1 /dev/iscsi-disk1
-	    /etc/init.d/oracleasm createdisk ASMDISK2 /dev/iscsi-disk2
-	    /etc/init.d/oracleasm createdisk ASMDISK3 /dev/iscsi-disk3
-	    /etc/init.d/oracleasm createdisk ASMDISK4 /dev/iscsi-disk4
-	    /etc/init.d/oracleasm createdisk ASMDISK5 /dev/iscsi-disk5
-	    /etc/init.d/oracleasm createdisk ASMDISK6 /dev/iscsi-disk6
-	    /etc/init.d/oracleasm createdisk ASMDISK7 /dev/iscsi-disk7
-	}
-
 
 
 Посмотреть список дисков
@@ -150,15 +137,21 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
     # oracleasm listdisks
 
 
+
+--------------------
+
 Если используются правила Udev то, нужно явно указать, где лежат эти самые диски:  
 
-    # oracleasm scandisks /dev/iscsi-disk* --verbose
+    # oracleasm scandisks /dev/mapper/iscsi-disk* --verbose
     # oracleasm listdisks
 
 
 Я пока не нашел способа, как настроить сканирование дисков без доп параметров. Скорее всего это явно прописывается в файле /etc/sysconfig/oracleasm. Но мне пока не удалось добиться нужно результата.
 
 Поэтому, дополнительно прописываю в cron задание, которое должно быть выполнено при перезагрузке.
+
+--------------------
+
 
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -175,7 +168,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
     # service crond restart
 
     # crontab -e
-    @reboot /usr/sbin/oracleasm scandisks /dev/iscsi-disk*
+    @reboot /usr/sbin/oracleasm scandisks /dev/mapper/iscsi-disk*
 
 
 

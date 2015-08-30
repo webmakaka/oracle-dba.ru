@@ -85,18 +85,21 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	server rac2-priv-storage
 	restrict rac2-priv-storage mask 255.255.255.255 nomodify notrap noquery
 
-	<br/>
+<br/>
 
 	# service ntpd restart
 
 
 Проверка:
 
-	# ntpq -pn
-	# ntpq -c peers
-
 
 	# ntpq -p
 	     remote           refid      st t when poll reach   delay   offset  jitter
 	==============================================================================
 	 rac1-priv-stora .INIT.          16 u    -   64    0    0.000    0.000   0.000
+
+
+<br/>
+
+	# ntpq -pn
+ 	# ntpq -c peers

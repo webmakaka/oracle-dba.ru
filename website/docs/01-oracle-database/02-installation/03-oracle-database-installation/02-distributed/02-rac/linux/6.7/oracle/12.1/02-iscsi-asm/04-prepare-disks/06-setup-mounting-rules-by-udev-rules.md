@@ -56,14 +56,16 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# echo "options=-g" > /etc/scsi_id.config
 
 
-<br/>
+**Следующую команду выполняю на rac1**
+
+
 
 	i=1
 	cmd="/sbin/scsi_id -g -u -d"
 	for disk in sdc sdd sde sdf sdg sdh sdi ; do
 	         cat <<EOF >> /etc/udev/rules.d/99-oracle-asmdevices.rules
 	KERNEL=="sd?1", BUS=="scsi", PROGRAM=="$cmd /dev/\$parent", \
-	 RESULT=="`$cmd /dev/$disk`", NAME="iscsi-disk$i", OWNER="oracle12", GROUP="asmadmin", MODE="0660"
+	 RESULT=="`$cmd /dev/$disk`", NAME="iscsi-disk$i", OWNER="oracle12", GROUP="asmadmin", MODE="0660", SYMLINK+="mapper/iscsi-disk$i"
 	EOF
 	         i=$(($i+1))
 	done
@@ -74,7 +76,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 	# scp /etc/udev/rules.d/99-oracle-asmdevices.rules root@rac2:/etc/udev/rules.d/99-oracle-asmdevices.rules
 
 
-<br/>
+Перезагрузка правил Udev
 
 	# /sbin/udevadm control --reload-rules
 	# /sbin/start_udev
@@ -83,18 +85,15 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 <br/>
 
 
-	# ls /dev/iscsi*
-	/dev/iscsi-disk1  /dev/iscsi-disk3  /dev/iscsi-disk5  /dev/iscsi-disk7
-	/dev/iscsi-disk2  /dev/iscsi-disk4  /dev/iscsi-disk6
-
+	# ls /dev/mapper/iscsi*
+	/dev/mapper/iscsi-disk1  /dev/mapper/iscsi-disk4  /dev/mapper/iscsi-disk7
+	/dev/mapper/iscsi-disk2  /dev/mapper/iscsi-disk5
+	/dev/mapper/iscsi-disk3  /dev/mapper/iscsi-disk6
 
 
 Проверить можно следующей командой на rac1 и rac2, что диски правильно подмонтировались.
 
 	# ls -l /dev/disk/by-id/
-
-
-
 
 
 <!--
@@ -105,6 +104,8 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 http://www.linuxtopia.org/online_books/rhel6/rhel_6_virtualization/rhel_6_virtualization_sect-Virtualization-Virtualized_block_devices-Configuring_persistent_storage_in_Red_Hat_Enterprise_Linux_5.html
 
 
+
+РАБОТАЕТ, ПОЭТОМУ И НЕ УДАЛИЛ.
 
 
 Make SCSI Devices Trusted
