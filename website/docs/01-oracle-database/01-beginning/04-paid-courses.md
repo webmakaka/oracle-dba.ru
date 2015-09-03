@@ -26,13 +26,6 @@ permalink: /docs/oracle-database/beginning/library/paid-video-courses/
 
 На udemy имеются платные и бесплатные видеокурсы.
 
-Любой курс, как оказалось, можно скачать с помощью вот этой программы:  
-https://github.com/gaganpreet/udemy-dl
-
-Видео:  
-https://www.youtube.com/watch?v=6wgykHNp6vQ
-
-<br/>
 
 **Что заинтересовало меня по теме Oracle:**
 
