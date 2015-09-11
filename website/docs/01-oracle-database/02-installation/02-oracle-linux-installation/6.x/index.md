@@ -42,7 +42,7 @@ P.S. Вроде еще есть команда linux remote, которая по
 
 <img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_09.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
 <img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_10.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_11.pn" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_12.pn" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_13.pn" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_14.pn" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_11.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_12.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_13.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
+<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_14.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>

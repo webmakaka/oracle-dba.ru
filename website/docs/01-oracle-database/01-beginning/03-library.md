@@ -129,7 +129,7 @@ hxxp://rutracker.org/forum/viewtopic.php?t=3222256
 
 <div style="padding:10px; border:thin solid black;" align="center">
 
-  <h3><a href="http://plsql.ru/content/plsql_books_and_videos/">Ссылки на материалы по изучению Oracle SQL и PL/SQL теперь собираются здесь</a></h3>
+  <h3><a href="http://plsql.ru/docs/beginning/library/">Ссылки на материалы по изучению Oracle SQL и PL/SQL теперь собираются здесь</a></h3>
 
 </div>
 
