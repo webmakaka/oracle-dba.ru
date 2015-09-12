@@ -64,4 +64,4 @@ UNDO_RETENTION - (при включенном FLASHBACK) определяет м
 
 <br/>
 
-SQL> quit
+	SQL> quit
