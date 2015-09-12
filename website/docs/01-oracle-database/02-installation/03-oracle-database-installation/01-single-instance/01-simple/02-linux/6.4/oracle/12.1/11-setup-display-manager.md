@@ -101,6 +101,26 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	$ xhost +192.168.1.10
 
 
+
+<br/>
+
+# Windows
+
+Устанавливаем XMing и доп шрифты. :<br/>
+http://sourceforge.net/projects/xming/<br/>
+http://sourceforge.net/projects/xming/files/Xming-fonts/
+
+Перезагружаемся. Если не перезагрузить, при инсталляции в 10 версии RAC, возникали проблемы (кнопка не отображались на последнем шаге инсталляции).
+
+Далее, необходимо настроить правила доступа.<br/>
+В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)
+
+
+<img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+
+
+<br/>
+
 ### На сервере:
 
 Проверить работу можно установив xterm или xclock
@@ -131,9 +151,4 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 
 <br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation"><br/>
-
-<br/><br/>
-Если процесс управления инсталляцией проводится на машине с операионной системой windows, то смотри
-
-<a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-database-software-installation/">здесь</a>.
+<br/><img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
