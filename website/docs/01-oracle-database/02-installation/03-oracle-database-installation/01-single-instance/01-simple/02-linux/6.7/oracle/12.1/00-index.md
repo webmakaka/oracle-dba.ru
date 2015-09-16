@@ -64,8 +64,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.7/oracle/12.1/virtual-mashine/">Создание виртуальной машины VirtualBox для инсталляции базы данных</a><br/></li>
 </ul>
 
-<br/><br/>
-
 
 ## Инсталляция Oracle Linux 6.7:
 
@@ -73,6 +71,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 <ul>
 	<li><a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.7/oracle/12.1/oel67-installation/">Инсталляция Oracle Linux 6.7</a><br/></li>
 </ul>
+
 
 <br/><br/>
 

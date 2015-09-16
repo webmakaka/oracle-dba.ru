@@ -28,6 +28,11 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_09.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
 
+
+<strong>Оставляю звездочку только на sda</strong>
+
+<br/><br/>
+
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_10.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_11.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
