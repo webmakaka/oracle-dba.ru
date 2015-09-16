@@ -57,6 +57,8 @@ Oracle предлагает создать экземпляр базы данн�
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_10.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
 
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_11.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
 <pre>
 
 Предлагается выбрать дополнительные компоненты. Если не предполагается их использовать, то скорее всего их и не следует устанавливать.
@@ -81,10 +83,12 @@ Application Express -  приложение, с помощью которого 
 
 <br/><br/>
 
-<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_11.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_12.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_13.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
 
 <pre>
@@ -96,19 +100,23 @@ Application Express -  приложение, с помощью которого 
 
 <br/><br/>
 
-<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_13.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
 
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_14.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
 
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_15.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
 <pre>
-Если в базе будут использоваться русские буквы, рекомендуется выбрать кодировку, которая поддерживает данную возможность. Unicode, где каждый символ кодируется 2 байтами, вполне подходит для этой задачи.
+Если в базе будет использоваться кириллица, рекомендуется выбрать кодировку, которая поддерживает данную возможность. Unicode, где каждый символ кодируется 2 байтами, вполне подходит для этой задачи.
 
 </pre>
 <br/><br/>
 
-<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_15.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_16.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
 
 <ul>
 	<li>Dedicated Server Mode - для каждого соединения создается отдельный сервис. </li>
@@ -117,7 +125,7 @@ Application Express -  приложение, с помощью которого 
 
 <br/><br/>
 
-<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_16.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_17.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
@@ -125,18 +133,17 @@ Application Express -  приложение, с помощью которого 
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_19.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_20.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
-
-На этом шаге прогресс установки как бы останавливается и ничего не происходит какое-то время.
+На этом шаге прогресс установки как бы останавливается и ничего не происходит какое-то время. Нужно подождать.
 <br/><br/>
 
 
 
-<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_20.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_21.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
-<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_22.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
 
 
 Под Firefox у меня Enterprise Manager не запустился. Правда он у меня перегружен всякими плагинами, блокирующими и активные компоненты сайтов.
@@ -149,7 +156,9 @@ https://192.168.1.11:5500/em
 
 <br/><br/>
 
-<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_23.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_22.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
+
 
 <img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_24.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 

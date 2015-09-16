@@ -24,6 +24,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	NOARCHIVELOG
 
 
+<br/>
 
 Влючить archivelog (если выключен)
 
@@ -32,8 +33,6 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
     SQL> startup mount exclusive;
     SQL> alter database archivelog;
     SQL> alter database open;
-
-<br/>
 
 <br/>
 

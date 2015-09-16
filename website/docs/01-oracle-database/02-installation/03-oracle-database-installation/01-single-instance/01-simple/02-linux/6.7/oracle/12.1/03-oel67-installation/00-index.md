@@ -4,5 +4,31 @@ title: Oracle DataBase 12c - Linux - Инсталляция Oracle Linux 6.7
 permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.7/oracle/12.1/oel67-installation/
 ---
 
+При старте, нужно успень нажать tab и дописать linux text. Иначе установка стартует в графическом режиме и в конечном итоге GUI бует также установлен на сервере.
 
-img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_01.png
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_01.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_02.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_03.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_04.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_05.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_06.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_07.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_08.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_09.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_10.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_11.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_12.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_13.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>

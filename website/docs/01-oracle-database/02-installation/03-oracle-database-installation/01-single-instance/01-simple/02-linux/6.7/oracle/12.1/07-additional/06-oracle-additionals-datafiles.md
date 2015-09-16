@@ -20,7 +20,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	FROM v$datafile;
 
 
-1) Создание нового табличное пространство для индексов и данных:
+<br/>
+
+**1) Создание нового табличное пространство для индексов и данных:**
 
 
 	SQL> CREATE TABLESPACE "MY_DATA"
@@ -48,8 +50,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	ADD DATAFILE  '/u02/oracle/oradata/12.1/orcl12/DATAFILE/indexes/my_indexes02.dbf' SIZE 2G AUTOEXTEND OFF;
 
 
+<br/>
 
-2) Иногда, нужно создать дополнительное табличное пространство для табличного пространства отмены (undo).
+**2) Иногда, нужно создать дополнительное табличное пространство для табличного пространства отмены (undo).**
 
 
 	SQL> CREATE undo tablespace "UNDO" datafile '/u02/oracle/oradata/12.1/orcl12/DATAFILE/undo/undo01.dbf' size 1G autoextend off;
@@ -67,7 +70,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	SQL> drop tablespace UNDOTBS1;
 
 
-3) Создать новое табличное пространство для временных данных.
+<br/>
+
+**3) Создать новое табличное пространство для временных данных.**
 
 
 	SQL> CREATE TEMPORARY TABLESPACE "MY_TEMP"

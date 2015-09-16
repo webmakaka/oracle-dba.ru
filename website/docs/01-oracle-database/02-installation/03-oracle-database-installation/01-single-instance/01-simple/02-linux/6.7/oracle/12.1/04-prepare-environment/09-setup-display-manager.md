@@ -13,6 +13,33 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 192.168.1.5 -  ip адрес компьютера, с которого происходит процесс управления установкой.<br/>
 192.168.1.11 - ip адрес сервера<br/>
 
+
+
+<br/>
+
+## Если установка происходит с Windows машины
+
+Устанавливаем XMing и доп шрифты. :<br/>
+http://sourceforge.net/projects/xming/<br/>
+http://sourceforge.net/projects/xming/files/Xming-fonts/
+
+Перезагружаемся. Если не перезагрузить, при инсталляции в 10 версии RAC, возникали проблемы (кнопка не отображались на последнем шаге инсталляции).
+
+Далее, необходимо настроить правила доступа.<br/>
+В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)
+
+
+<img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+
+
+<br/>
+
+
+<br/>
+
+## Если установка происходит с Linux машины
+
+
 ### На клиенте:
 
 	$ sudo apt-get install -y gdm
@@ -100,27 +127,9 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	$ xhost +192.168.1.11
 
 
-
 <br/>
 
-# Windows
-
-Устанавливаем XMing и доп шрифты. :<br/>
-http://sourceforge.net/projects/xming/<br/>
-http://sourceforge.net/projects/xming/files/Xming-fonts/
-
-Перезагружаемся. Если не перезагрузить, при инсталляции в 10 версии RAC, возникали проблемы (кнопка не отображались на последнем шаге инсталляции).
-
-Далее, необходимо настроить правила доступа.<br/>
-В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)
-
-
-<img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
-
-
-<br/>
-
-### На сервере:
+## На сервере:
 
 Проверить работу можно установив xterm или xclock
 

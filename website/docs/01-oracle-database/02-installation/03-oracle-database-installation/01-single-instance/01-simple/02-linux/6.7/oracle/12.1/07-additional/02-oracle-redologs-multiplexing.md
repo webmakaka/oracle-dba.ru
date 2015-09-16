@@ -55,12 +55,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 
 <br/>
 
-u02/oracle/oradata/12.1/
-
-
 	$ rm /u02/oracle/oradata/12.1/orcl12/redo01.log
-
-
 
 <br/>
 
