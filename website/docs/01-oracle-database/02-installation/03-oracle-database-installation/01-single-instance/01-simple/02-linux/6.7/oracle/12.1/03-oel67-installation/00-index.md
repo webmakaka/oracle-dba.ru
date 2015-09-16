@@ -4,6 +4,9 @@ title: Oracle DataBase 12c - Linux - Инсталляция Oracle Linux 6.7
 permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.7/oracle/12.1/oel67-installation/
 ---
 
+# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Инсталляция Oracle Linux 6.7
+
+
 При старте, нужно успень нажать tab и дописать linux text. Иначе установка стартует в графическом режиме и в конечном итоге GUI бует также установлен на сервере.
 
 

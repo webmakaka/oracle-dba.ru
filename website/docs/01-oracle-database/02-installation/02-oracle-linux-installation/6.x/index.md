@@ -20,29 +20,41 @@ permalink: /docs/oracle-database/installation/oracle-linux-installation/6.x/
 
 
 
-P.S. Вроде еще есть команда linux remote, которая позволит установить операционную систему удаленно.
 
-<br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_01.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/02-installation/oracle_linux_installation/6.x/oracle_linux_installation_step_02.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_03.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_04.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_05.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_06.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_07.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_08.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
 
-<br/><br/>
+
+При старте, нужно успень нажать tab и дописать linux text. Иначе установка стартует в графическом режиме и в конечном итоге GUI бует также установлен на сервере.
+
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_01.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_02.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_03.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_04.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_05.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_06.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_07.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_08.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_09.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
 
 <strong>Оставляю звездочку только на sda</strong>
 
 <br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_09.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_10.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_11.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_12.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_13.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-oracle-linux-installation/6.x/oracle_linux_installation_step_14.png" border="0" alt="Инсталляция Oracle Linux 6.4 x86 64 bit"><br/><br/>
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_10.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_11.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_12.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
+
+<img src="http://img.oradba.net/docs/01-oracle-database/02-installation/03-oracle-database-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_13.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
