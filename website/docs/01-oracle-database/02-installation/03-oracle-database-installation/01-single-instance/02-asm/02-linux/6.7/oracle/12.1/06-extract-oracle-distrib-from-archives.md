@@ -15,7 +15,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 	# su - oracle12
 
 
-Копирую дистрибутивы во временный каталог /tmp/oracle/12.1/
+Скопируйте дистрибутивы во временный каталог /tmp/oracle/12.1/
 
 	$ cd /tmp/oracle/12.1/
 
