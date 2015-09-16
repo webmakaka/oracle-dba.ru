@@ -8,7 +8,7 @@ permalink: /docs/oracle-database/installation/oracle-linux-installation/6.x/
 
 <br/>
 
-## [Инсталляция Oracle Linux 6.4 x86 64 bit]:
+## [Инсталляция Oracle Linux 6.7 x86 64 bit]:
 
 
 

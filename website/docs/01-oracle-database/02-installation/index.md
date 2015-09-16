@@ -29,7 +29,7 @@ permalink: /docs/oracle-database/installation/
 
 	<li><a href="/docs/oracle-database/installation/virtualbox-mashines/oracle-linux/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Linux</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-linux-installation/6.x/">Инсталляция Oracle Linux 6.4 x86 64 bit</a></li>
+	<li><a href="/docs/oracle-database/installation/oracle-linux-installation/6.x/">Инсталляция Oracle Linux 6.7 x86 64 bit</a></li>
 
 	<li><a href="https://docs.google.com/document/d/1awpSIKnu2akCwEh7fbe4bY_W9G3VIr1t5Ps4hg2q2gs/edit">Инсталляция Oracle Linux 5.8 x86 64 bit</a></li>
 </ul>
