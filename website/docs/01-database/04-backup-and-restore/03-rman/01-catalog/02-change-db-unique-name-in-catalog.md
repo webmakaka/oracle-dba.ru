@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Поменять db_unique_name в RMAN каталоге
-permalink: /docs/oracle-database/backup-and-restore/rman/change-db-unique-name-in-catalog/
+permalink: /database/backup-and-restore/rman/change-db-unique-name-in-catalog/
 ---
 
 

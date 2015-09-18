@@ -9,7 +9,7 @@ permalink: /sitemap/
 
 <div align="center">
 
-    <a href="/docs/oracle-database/"><img src="http://img.oradba.net/img/oracle/database/oracle-database.jpg" border="0" alt="Oracle DataBase Logo"></a>
+    <a href="/database/"><img src="http://img.oradba.net/img/oracle/database/oracle-database.jpg" border="0" alt="Oracle DataBase Logo"></a>
 
 </div>
 

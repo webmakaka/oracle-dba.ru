@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание копии базы данных из бекапа с помощью RMAN на том же сервере
-permalink: /docs/oracle-database/backup-and-restore/rman/duplicate-database/
+permalink: /database/backup-and-restore/rman/duplicate-database/
 ---
 
 ### Создание копии базы данных из бекапа с помощью RMAN на том же сервере:

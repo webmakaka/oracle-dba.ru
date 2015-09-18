@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Backup и Restore Oracle DataBase
-permalink: /docs/oracle-database/backup-and-restore/
+permalink: /database/backup-and-restore/
 ---
 
 
@@ -14,10 +14,10 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/oracle-database-backup/">Вводная информация о резервном копировании баз данных Oracle</a>
+        <a href="/database/backup-and-restore/oracle-database-backup/">Вводная информация о резервном копировании баз данных Oracle</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/fra/">Fast Recovery Area (FRA)</a>
+        <a href="/database/backup-and-restore/fra/">Fast Recovery Area (FRA)</a>
     </li>
 </ul>
 
@@ -28,7 +28,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/copy/">Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)</a>
+        <a href="/database/backup-and-restore/copy/">Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)</a>
     </li>
 </ul>
 
@@ -40,7 +40,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/rman/">Backup и Restore Oracle DataBase с помощью RMAN</a>
+        <a href="/database/backup-and-restore/rman/">Backup и Restore Oracle DataBase с помощью RMAN</a>
     </li>
 </ul>
 
@@ -53,7 +53,7 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
+        <a href="/database/backup-and-restore/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
     </li>
     <li>
         <a href="http://odba.ru/showthread.php?t=28">Утилиты IMP/EXP</a> (Для версий до 11)
@@ -69,9 +69,9 @@ permalink: /docs/oracle-database/backup-and-restore/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/block-change-tracking/">Enable block change tracking</a>
+        <a href="/database/backup-and-restore/block-change-tracking/">Enable block change tracking</a>
     </li>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/oracle-11-transportable-tablespaces/">[Habrahabr] Транспортируемые табличные пространства в Oracle 11g</a>
+        <a href="/database/backup-and-restore/oracle-11-transportable-tablespaces/">[Habrahabr] Транспортируемые табличные пространства в Oracle 11g</a>
     </li>
 </ul>

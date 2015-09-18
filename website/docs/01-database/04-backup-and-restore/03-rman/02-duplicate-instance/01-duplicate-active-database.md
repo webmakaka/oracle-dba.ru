@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание копии активной базы данных с помощью RMAN
-permalink: /docs/oracle-database/backup-and-restore/rman/duplicate-active-database/
+permalink: /database/backup-and-restore/rman/duplicate-active-database/
 ---
 
 ### Создание копии активной базы данных с помощью RMAN:

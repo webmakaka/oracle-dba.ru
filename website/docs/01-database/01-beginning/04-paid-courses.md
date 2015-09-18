@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle Видеокурсы на английском (без ссылок на скачку)
-permalink: /docs/oracle-database/beginning/library/paid-video-courses/
+permalink: /database/beginning/library/paid-video-courses/
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Fast Recovery Area (FRA)
-permalink: /docs/oracle-database/backup-and-restore/fra/
+permalink: /database/backup-and-restore/fra/
 ---
 
 ### Fast Recovery Area (FRA)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Недостаточно свободного места в Fast Recovery Area
-permalink: /docs/oracle-database/backup-and-restore/rman/low-space-in-fra/
+permalink: /database/backup-and-restore/rman/low-space-in-fra/
 ---
 
 # Специфицеское решение, когда база работает в ARCHIVELOG режиме

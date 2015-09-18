@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Транспортируемые табличные пространства (Transportable tablespaces) в Oracle 11g
-permalink: /docs/oracle-database/backup-and-restore/oracle-11-transportable-tablespaces/
+permalink: /database/backup-and-restore/oracle-11-transportable-tablespaces/
 ---
 
 

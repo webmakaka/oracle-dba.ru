@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle DataBase
-permalink: /docs/oracle-database/
+permalink: /database/
 ---
 
 
@@ -11,7 +11,7 @@ permalink: /docs/oracle-database/
 <h3>Первое знакомство с Oracle DataBase:</h3>
 
 <ul>
-    <li><a href="/docs/oracle-database/beginning/">Первое знакомство с Oracle DataBase</a></li>
+    <li><a href="/database/beginning/">Первое знакомство с Oracle DataBase</a></li>
 </ul>
 
 
@@ -29,7 +29,7 @@ permalink: /docs/oracle-database/
 ### Upgrade Oracle DataBase:
 
 <ul>
-    <li><a href="/docs/oracle-database/upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
+    <li><a href="/database/upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
 </ul>
 
 
@@ -39,7 +39,7 @@ permalink: /docs/oracle-database/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/backup-and-restore/">Backup и Restore Oracle DataBase</a>
+        <a href="/database/backup-and-restore/">Backup и Restore Oracle DataBase</a>
     </li>
 </ul>
 
@@ -230,7 +230,7 @@ permalink: /docs/oracle-database/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/tricks/rename-oracle-instance/">Переименование instance в Oracle 11 в linux</a>
+        <a href="/database/tricks/rename-oracle-instance/">Переименование instance в Oracle 11 в linux</a>
     </li>
     <li>
         <a href="https://newbiedba.wordpress.com/2013/05/17/oracle-11gr2-using-rman-to-duplicate-a-live-database/">Oracle 11gR2 – Using RMAN to duplicate a live database (нужно проверить)</a>
@@ -248,6 +248,6 @@ permalink: /docs/oracle-database/
 
 <ul>
     <li>
-        <a href="/docs/oracle-database/humor/">Все рано или поздно косячат</a>
+        <a href="/database/humor/">Все рано или поздно косячат</a>
     </li>
 </ul>

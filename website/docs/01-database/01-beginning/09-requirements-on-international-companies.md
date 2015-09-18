@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Требования к кандидатам на позицию Oracle DBA в иностранных компаниях
-permalink: /docs/oracle-database/beginning/requirements-on-international-companies/
+permalink: /database/beginning/requirements-on-international-companies/
 ---
 
 <h3>Требования к кандидатам на позицию Oracle DBA в иностранных компаниях:</h3>>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях
-permalink: /docs/oracle-database/beginning/questions-on-interview/
+permalink: /database/beginning/questions-on-interview/
 ---
 
 <h3>Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях:</h3>>

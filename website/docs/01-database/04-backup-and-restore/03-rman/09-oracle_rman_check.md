@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Проверки с помощью RMAN
-permalink: /docs/oracle-database/backup-and-restore/rman/oracle-rman-check/
+permalink: /database/backup-and-restore/rman/oracle-rman-check/
 ---
 
 ### Проверки с помощью RMAN

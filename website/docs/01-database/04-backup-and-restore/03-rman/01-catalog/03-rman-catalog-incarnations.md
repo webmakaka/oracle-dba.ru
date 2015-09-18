@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Пример с инкарнациями
-permalink: /docs/oracle-database/backup-and-restore/rman/rman-incarnations-sample/
+permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
 ---
 
 

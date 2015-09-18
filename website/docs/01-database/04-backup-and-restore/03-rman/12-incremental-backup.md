@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание инкрементальной копии базы данных с помощью RMAN
-permalink: /docs/oracle-database/backup-and-restore/rman/incremental-backup/
+permalink: /database/backup-and-restore/rman/incremental-backup/
 ---
 
 ### Создание инкрементальной копии базы данных с помощью RMAN:

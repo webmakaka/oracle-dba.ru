@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Вводная информация о резервном копировании баз данных Oracle
-permalink: /docs/oracle-database/backup-and-restore/oracle-database-backup/
+permalink: /database/backup-and-restore/oracle-database-backup/
 ---
 
 ## Вводная информация о резервном копировании баз данных Oracle

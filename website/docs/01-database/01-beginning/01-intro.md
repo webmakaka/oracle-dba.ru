@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Пара слов о базах данных Oracle
-permalink: /docs/oracle-database/beginning/intro/
+permalink: /database/beginning/intro/
 ---
 
 # Пара слов о базах данных Oracle

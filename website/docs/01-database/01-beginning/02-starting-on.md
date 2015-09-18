@@ -1,7 +1,7 @@
 ---
 layout: page
 title: С чего начать изучение Oracle? (мнение администратора сайта)
-permalink: /docs/oracle-database/beginning/starting-on/
+permalink: /database/beginning/starting-on/
 ---
 
 <br/>

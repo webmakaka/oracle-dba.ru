@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)
-permalink: /docs/oracle-database/backup-and-restore/copy/
+permalink: /database/backup-and-restore/copy/
 ---
 
 

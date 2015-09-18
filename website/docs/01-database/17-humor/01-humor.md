@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Все рано или поздно косячат
-permalink: /docs/oracle-database/humor/
+permalink: /database/humor/
 ---
 
 

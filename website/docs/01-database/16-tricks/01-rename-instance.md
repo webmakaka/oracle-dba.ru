@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Переименование instance в Oracle 11 в linux
-permalink: /docs/oracle-database/tricks/rename-oracle-instance/
+permalink: /database/tricks/rename-oracle-instance/
 ---
 
 

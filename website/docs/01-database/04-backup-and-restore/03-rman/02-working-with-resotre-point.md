@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Работа с точками восстановления
-permalink: /docs/oracle-database/backup-and-restore/rman/restore-points/
+permalink: /database/backup-and-restore/rman/restore-points/
 ---
 
 ## Работа с точками восстановления

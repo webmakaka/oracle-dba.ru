@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
-permalink: /docs/oracle-database/backup-and-restore/rman/rman-catalog-installation/
+permalink: /database/backup-and-restore/rman/rman-catalog-installation/
 ---
 
 

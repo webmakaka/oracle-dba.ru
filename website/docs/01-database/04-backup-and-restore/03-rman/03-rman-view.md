@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Основные view RMAN
-permalink: /docs/oracle-database/backup-and-restore/rman/rman-view/
+permalink: /database/backup-and-restore/rman/rman-view/
 ---
 
 

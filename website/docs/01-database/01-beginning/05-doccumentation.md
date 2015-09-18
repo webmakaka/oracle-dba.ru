@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ссылки на документацию по Oracle
-permalink: /docs/oracle-database/beginning/doccumentation/
+permalink: /database/beginning/doccumentation/
 ---
 
 
