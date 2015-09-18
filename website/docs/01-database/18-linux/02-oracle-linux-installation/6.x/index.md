@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle Linux 6.x
-permalink: /docs/oracle-database/installation/oracle-linux-installation/6.x/
+permalink: /database/installation/oracle-linux-installation/6.x/
 ---
 
 ### [Инсталляция Oracle Linux 6.X]

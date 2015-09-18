@@ -20,7 +20,7 @@ permalink: /docs/oracle-database/
 ### Инсталляция Oracle DataBase:
 
 <ul>
-    <li><a href="/docs/oracle-database/installation/"><strong>Инсталляция Oracle DataBase</strong></a></li>
+    <li><a href="/database/installation/"><strong>Инсталляция Oracle DataBase</strong></a></li>
 </ul>
 
 

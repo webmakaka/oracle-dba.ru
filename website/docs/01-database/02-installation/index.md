@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase
-permalink: /docs/oracle-database/installation/
+permalink: /database/installation/
 ---
 
 # Инсталляция Oracle DataBase
@@ -25,11 +25,11 @@ permalink: /docs/oracle-database/installation/
 	<li><a href="http://sysadm.ru/linux/virtual/virtualbox/installation/centos/6/">Инсталляция VirtualBox на Centos 6.4 Server без графического интерфейса (GUI)</a></li>
 	<li><a href="http://sysadm.ru/linux/virtual/virtualbox/installation/ubuntu/14.04/">Инсталляция VirtualBox в операционной системе Ubuntu в консоли</a></li>
 
-	<li><a href="/docs/oracle-database/installation/virtualbox-mashines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Windows</a></li>
+	<li><a href="/database/installation/virtualbox-mashines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Windows</a></li>
 
-	<li><a href="/docs/oracle-database/installation/virtualbox-mashines/oracle-linux/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Linux</a></li>
+	<li><a href="/database/installation/virtualbox-mashines/oracle-linux/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Linux</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-linux-installation/6.x/">Инсталляция Oracle Linux 6.7 x86 64 bit</a></li>
+	<li><a href="/database/installation/oracle-linux-installation/6.x/">Инсталляция Oracle Linux 6.7 x86 64 bit</a></li>
 
 	<li><a href="https://docs.google.com/document/d/1awpSIKnu2akCwEh7fbe4bY_W9G3VIr1t5Ps4hg2q2gs/edit">Инсталляция Oracle Linux 5.8 x86 64 bit</a></li>
 </ul>
@@ -117,7 +117,7 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 
 <ul>
 	<li><a href="https://docs.google.com/document/d/1VTV0bBZff-lyXmRTXE67tuZjXcHAlWTrq4g_c2mfoJI/edit">Инсталляция Oracle Client 11G R2 32 bit в операционной системе Windows XP 32 bit</a></li>
-	<li><a href="/docs/oracle-database/installation/oracle-client-installation/linux/6.3/oracle/11.2/">Инсталляция Oracle Instantclient в OEL 6.3 x86-64</a></li>
+	<li><a href="/database/installation/oracle-client-installation/linux/6.3/oracle/11.2/">Инсталляция Oracle Instantclient в OEL 6.3 x86-64</a></li>
 </ul>
 
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Подготовка окружения (виртуальной машины VirtualBox) для инсталляции базы данных Oracle в Windows 2008 Server
-permalink: /docs/oracle-database/installation/virtualbox-mashines/windows/2008/
+permalink: /database/installation/virtualbox-mashines/windows/2008/
 ---
 
 ### [Подготовка окружения (виртуальной машины VirtualBox) для инсталляции базы данных Oracle в Windows 2008 Server]
