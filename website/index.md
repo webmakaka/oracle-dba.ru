@@ -32,10 +32,6 @@ permalink: /
 
 <br/>
 
-**Предыдущая версия сайта доступна по адресу <a href="http://prev.oracle-dba.ru">prev.oracle-dba.ru</a>**
-
-
-<br/>
 
 <!--
 <div style="padding:10px; border:thin solid black;">
