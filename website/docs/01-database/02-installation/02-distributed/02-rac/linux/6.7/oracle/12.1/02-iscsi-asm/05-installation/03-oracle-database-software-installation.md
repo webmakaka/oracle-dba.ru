@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 ISCSI + ASM - Инсталляция Database Software
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/
 ---
 
 

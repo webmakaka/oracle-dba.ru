@@ -18,7 +18,7 @@ permalink: /docs/business-intelligence/installation/
 <hr/>
 
 
-Для инсталляции Oracle BI используется сервер баз дынных, описание инсталляции которого приведено <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/">здесь</a>.<br/><br/>
+Для инсталляции Oracle BI используется сервер баз дынных, описание инсталляции которого приведено <a href="/database/installation/single-instance/simple/linux/6.3/oracle/12.1/">здесь</a>.<br/><br/>
 
 
 

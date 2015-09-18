@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle RAC 11.2 ISCSI + ASM - Выбор пакетов для автозапуска
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/autostart-only-packages-what-needed/
+permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/autostart-only-packages-what-needed/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Выбор пакетов для автозапуска
+# <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Выбор пакетов для автозапуска
 
 
 <br/>

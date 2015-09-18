@@ -48,7 +48,7 @@ permalink: /docs/oracle-database/installation/
 <br/>
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/windows/2008/oracle/12.1/"><strong>Инсталляция Oracle Database 12g Release 1 в операционной системе Microsoft Windows 2008 Server</strong></a> (может где и напутал вначале)</li>
+	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/"><strong>Инсталляция Oracle Database 12g Release 1 в операционной системе Microsoft Windows 2008 Server</strong></a> (может где и напутал вначале)</li>
 
 	<li><a href="http://odba.ru/showthread.php?t=294"><strong>Инсталляция Oracle Database 11g Release 2 в операционной системе Microsoft Windows 2003 Server</strong></a></li>
 
@@ -65,8 +65,8 @@ permalink: /docs/oracle-database/installation/
 <ul>
 	<li><a href="http://odba.ru/showthread.php?t=331"><strong>Команды редактора VI</strong></a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux 6.7</strong></a></li>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux (6.4 x86_64)</strong></a> (Server Linux -- рабочая станция Linux) (Предыдущий документ!)</li>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/"><strong>Инсталляция Oracle DataBase Server (11.2.0.3) в операционной системе Oracle Linux (6.3 x86_64)</strong></a> (Server Linux -- рабочая станция Windows)</li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux (6.4 x86_64)</strong></a> (Server Linux -- рабочая станция Linux) (Предыдущий документ!)</li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (11.2.0.3) в операционной системе Oracle Linux (6.3 x86_64)</strong></a> (Server Linux -- рабочая станция Windows)</li>
 </li>
 </ul>
 
@@ -82,7 +82,7 @@ permalink: /docs/oracle-database/installation/
 
 <li><a href="http://odba.ru/showthread.php?t=60">Информация о ASM (Automatic Storage Management) </a></li>
 
-<li><a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID</a></li>
+<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID</a></li>
 
 </ul>
 
@@ -160,7 +160,7 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 <ul>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/">Oracle Active Data Guard (Beta версия докумена)</a></li>
+	<li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/">Oracle Active Data Guard (Beta версия докумена)</a></li>
 
 	<li><a href="http://odba.ru/showthread.php?t=469">Oracle Data Guard: Развертывание физического Standby средствами Oracle Database</a></li>
 
@@ -173,7 +173,7 @@ Instantclient - альтернатива стандартному Oracle Client.
 
 <ul>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/">Инсталляция Real Application Cluster (RAC)</a></li>
+	<li><a href="/database/installation/distributed/rac/">Инсталляция Real Application Cluster (RAC)</a></li>
 
 </ul>
 

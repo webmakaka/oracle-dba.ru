@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/copy-oracle-distrib-on-server/
+permalink: /database/installation/single-instance/simple/linux/6.3/oracle/12.1/copy-oracle-distrib-on-server/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>:  Копирование дистрибутивов базы данных на сервер (в каталог /tmp)
+# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/12.1/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>:  Копирование дистрибутивов базы данных на сервер (в каталог /tmp)
 
 
 Необходимо скопировать следующие архивы на сервер в каталог /tmp:

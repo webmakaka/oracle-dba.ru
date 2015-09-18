@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle RAC 11.2 ISCSI + ASM - Настройка DNS сервера
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/setup-dns-server/
+permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-dns-server/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка DNS сервера
+# <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Настройка DNS сервера
 
 <br/>
 

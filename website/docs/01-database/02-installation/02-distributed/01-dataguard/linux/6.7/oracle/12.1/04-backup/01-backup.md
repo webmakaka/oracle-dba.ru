@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BACKUPы на DataGuard
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/backups/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/backups/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: BACKUPы на DataGuard

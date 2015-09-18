@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 ISCSI + ASM - Создание пользователя oracle12 и административных групп
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/users-and-groups-creation/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/users-and-groups-creation/
 ---
 
 

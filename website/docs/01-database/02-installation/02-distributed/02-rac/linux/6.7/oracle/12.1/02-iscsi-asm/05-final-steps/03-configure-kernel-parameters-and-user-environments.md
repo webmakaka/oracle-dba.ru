@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 ISCSI + ASM - Изменение параметров ядра и параметров учетной записи администратора базы данных
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/configure-kernel-parameters-and-user-environments/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/configure-kernel-parameters-and-user-environments/
 ---
 
 

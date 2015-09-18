@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC OCFS2
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/ocfs/
+permalink: /database/installation/distributed/rac/linux/6.7/ocfs/
 ---
 
 # [Инсталляция Oracle RAC]: OCFS2

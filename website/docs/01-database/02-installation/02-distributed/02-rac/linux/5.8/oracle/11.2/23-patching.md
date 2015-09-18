@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle RAC 11.2 ISCSI + ASM - Применение патчей PSU 11.2.0.3.2 к $GRID_HOME и $ORACLE_HOME
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/patching/
+permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/patching/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Применение патчей PSU 11.2.0.3.2 к $GRID_HOME и $ORACLE_HOME
+# <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Применение патчей PSU 11.2.0.3.2 к $GRID_HOME и $ORACLE_HOME
 
 <br/>
 

@@ -9,7 +9,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/duplicate-database/
 
 <br/>
 
-### Имеется 1 сервер Oracle 12c, установленный как <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
+### Имеется 1 сервер Oracle 12c, установленный как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 
 <br/>

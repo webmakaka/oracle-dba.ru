@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Описание системы, которое будет настраиваться
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/info-about-env/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/info-about-env/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Описание системы, которое будет настраиваться
@@ -11,7 +11,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/distr
 <br/>
 
 
-1) Устанавливаю 2 сервера как <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
+1) Устанавливаю 2 сервера как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 
 **На втором (StandBy) не создаю instance. Он будет скопирован с первого**

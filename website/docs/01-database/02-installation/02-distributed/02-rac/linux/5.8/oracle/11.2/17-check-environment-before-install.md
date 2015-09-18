@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle RAC 11.2 ISCSI + ASM - Проверка конфигурации кластера перед инсталляцией RAC
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/check-environment-before-install/
+permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/check-environment-before-install/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Проверка конфигурации кластера перед инсталляцией RAC
+# <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Проверка конфигурации кластера перед инсталляцией RAC
 
 
 <br/>

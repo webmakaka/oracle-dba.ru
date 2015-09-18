@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание дисковых групп ASM
-permalink: /docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/asm-disk-groups-creation/
+permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asm-disk-groups-creation/
 ---
 
 # [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Создание ASM дисковых групп

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Настройка Secure Shell между узлами кластера
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/secure-shell-between-nodes/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/secure-shell-between-nodes/
 ---
 
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Настройка Secure Shell между узлами кластера

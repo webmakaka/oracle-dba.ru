@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Подготовка жестких дисков к инсталляции базы данных
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/prepare-hdd-to-install-oracle/
+permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/prepare-hdd-to-install-oracle/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Подготовка жестких дисков к инсталляции базы данных
+# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Подготовка жестких дисков к инсталляции базы данных
 
 
 

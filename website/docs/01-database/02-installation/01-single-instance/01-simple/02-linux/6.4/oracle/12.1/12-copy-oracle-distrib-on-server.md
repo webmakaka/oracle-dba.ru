@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Копирование дистрибутивов базы данных на сервер 
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/copy-oracle-distrib-on-server/
+permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/copy-oracle-distrib-on-server/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Копирование дистрибутивов базы данных на сервер (в каталог /tmp)
+# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Копирование дистрибутивов базы данных на сервер (в каталог /tmp)
 
 
 

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Мультиплексирование archivelog
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-multiplex-archivelogs/
+permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-multiplex-archivelogs/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Мультиплексирование archivelog
+# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Мультиплексирование archivelog
 
 
 

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Инсталляция СУБД Oracle (DataBase SoftWare)
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-database-software-installation/
+permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-database-software-installation/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
+# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
 
 
 ### Проверка конфигурации перед инсталляцией:

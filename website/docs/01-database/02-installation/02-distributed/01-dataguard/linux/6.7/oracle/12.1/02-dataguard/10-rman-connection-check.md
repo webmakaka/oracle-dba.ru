@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Проверка подключения RMAN к обоим Instance
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/rman-connection-check/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/rman-connection-check/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Проверка подключения RMAN к обоим Instance

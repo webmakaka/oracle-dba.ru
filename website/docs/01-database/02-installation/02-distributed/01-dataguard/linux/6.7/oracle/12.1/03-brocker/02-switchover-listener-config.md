@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Переконфигурирование Listener для Switchover
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/broker/switchover-listener-config/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/broker/switchover-listener-config/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Переконфигурирование Listener для Switchover

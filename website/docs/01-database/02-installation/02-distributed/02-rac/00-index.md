@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle RAC
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/
+permalink: /database/installation/distributed/rac/
 ---
 
 <br/>
@@ -13,9 +13,9 @@ RAC - несколько инстансов на разных серверах �
 ### Инсталляция Oracle RAC 12.1
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (SHARED FILE SYSTEM)</a></li>
+	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (SHARED FILE SYSTEM)</a></li>
 
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)</a></li>
+	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)</a></li>
 
 </ul>
 
@@ -26,7 +26,7 @@ RAC - несколько инстансов на разных серверах �
 
 
 <ul>
-	<li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
+	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
 
 </ul>
 
@@ -66,10 +66,10 @@ RAC - несколько инстансов на разных серверах �
 ### Доп Информация:
 
 <ul>
-    <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/process/">Процессы Oracle RAC</a><br/></li>
+    <li><a href="/database/installation/distributed/rac/process/">Процессы Oracle RAC</a><br/></li>
 
-    <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/tests/"> Некоторые запросы и команды</a><br/></li>
+    <li><a href="/database/installation/distributed/rac/tests/"> Некоторые запросы и команды</a><br/></li>
 
-    <li><a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/ocfs/">Инсталляция OCFS2 для RAC в Oracle Linux 6.7 для версий RAC 10,11</a><br/></li>
+    <li><a href="/database/installation/distributed/rac/linux/6.7/ocfs/">Инсталляция OCFS2 для RAC в Oracle Linux 6.7 для версий RAC 10,11</a><br/></li>
 
 </ul>

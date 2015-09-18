@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Извлечение дистрибутивов базы Oracle из архивов
-permalink: /docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/extract-oracle-distrib-from-archives/
+permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/extract-oracle-distrib-from-archives/
 ---
 
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>:  Извлечение дистрибутивов базы Oracle из архивов
+# <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>:  Извлечение дистрибутивов базы Oracle из архивов
 
 
 

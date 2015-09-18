@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle RAC 11.2 ISCSI + ASM - Инсталляция Grid
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/grid-installation/
+permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/grid-installation/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция Grid
+# <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция Grid
 
 
 <br/>

@@ -15,7 +15,7 @@ permalink: /docs/architecture/files/
 
 
 
-Предполагается, что вы инсталлировали базу данных, согласно <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/">документа</a>.
+Предполагается, что вы инсталлировали базу данных, согласно <a href="/database/installation/single-instance/simple/linux/6.3/oracle/12.1/">документа</a>.
 
 
 

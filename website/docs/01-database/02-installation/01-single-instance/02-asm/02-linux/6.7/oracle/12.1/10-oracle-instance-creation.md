@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Создание экземпляра базы данных (Instance)
-permalink: /docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/oracle-instance-creation/
+permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/oracle-instance-creation/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Создание экземпляра базы данных (Instance)
+# <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Создание экземпляра базы данных (Instance)
 
 
 Определите системную переменную DISPLAY следующим образом (если она не поределена).
@@ -24,7 +24,7 @@ permalink: /docs/oracle-database/installation/oracle-database-installation/singl
 <br/><br/>
 
 В режиме Advanced, можно более оптимально настроить параметры. Исключить из установки лишнее. Например, JVM, Enterprise Manager, Multimedia. Можно выделить побольше ресурсов памяти.  
-http://oracle-dba.ru/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-instance-creation/
+http://oracle-dba.ru/database/installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-instance-creation/
 
 
 

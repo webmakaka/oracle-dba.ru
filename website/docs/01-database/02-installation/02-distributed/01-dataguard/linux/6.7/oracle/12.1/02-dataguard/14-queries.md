@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Запросы для получения данных о работе DataGuard
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/queries/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/queries/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Запросы для получения данных о работе DataGuard

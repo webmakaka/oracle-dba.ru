@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 ISCSI + ASM - Конфиги виртуальных машин для dns сервера
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/vm/dns-server/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/vm/dns-server/
 ---
 
 # [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Конфиги виртуальных машин для dns сервера

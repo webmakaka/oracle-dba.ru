@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Расширение табличных пространств (создание дополнительных файлов для табличных пространств)
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-additionals-datafiles/
+permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-additionals-datafiles/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Расширение табличных пространств (создание дополнительных файлов для табличных пространств)
+# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Расширение табличных пространств (создание дополнительных файлов для табличных пространств)
 
 
 	$ sqlplus / as sysdba

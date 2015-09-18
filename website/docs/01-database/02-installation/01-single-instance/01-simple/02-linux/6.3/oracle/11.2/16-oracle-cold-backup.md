@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-cold-backup/
+permalink: /database/installation/single-instance/simple/linux/6.3/oracle/12.1/oracle-cold-backup/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Создание резервной копии созданной базы данных (холодный backup):
+# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/12.1/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Создание резервной копии созданной базы данных (холодный backup):
 
 
 <br/>

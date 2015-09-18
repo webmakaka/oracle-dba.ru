@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Создание каталогов на standby, котырые есть на primary
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/create-foder-structure-like-on-primary/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/create-foder-structure-like-on-primary/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Создание каталогов на standby, котырые есть на primary

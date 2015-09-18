@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Процессы Oracle RAC
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/process/
+permalink: /database/installation/distributed/rac/process/
 ---
 
 

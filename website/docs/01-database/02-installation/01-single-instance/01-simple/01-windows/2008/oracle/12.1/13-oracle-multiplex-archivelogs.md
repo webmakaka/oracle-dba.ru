@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/windows/2008/oracle/12.1/oracle-multiplex-archivelogs/
+permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-multiplex-archivelogs/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server]</a>: Мультиплексирование archivelog
+# <a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12g Release 1 в Microsoft Windows 2008 Server]</a>: Мультиплексирование archivelog
 
 <br/>
 

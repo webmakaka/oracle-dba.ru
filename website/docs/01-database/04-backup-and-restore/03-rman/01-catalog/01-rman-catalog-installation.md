@@ -8,7 +8,7 @@ permalink: /docs/oracle-database/backup-and-restore/rman/rman-catalog-installati
 ### Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
 
 
-1) Устанавливаю 2 сервера как <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
+1) Устанавливаю 2 сервера как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 
     Типичный сервер баз данных oracle:  

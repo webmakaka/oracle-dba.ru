@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Некоторые запросы и команды
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/tests/
+permalink: /database/installation/distributed/rac/tests/
 ---
 
 ### Некоторые запросы и команды

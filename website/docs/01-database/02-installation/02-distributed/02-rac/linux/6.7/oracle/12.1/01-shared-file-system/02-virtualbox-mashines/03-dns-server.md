@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Конфиги виртуальных машин для dns сервера
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/vm/dns-server/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/vm/dns-server/
 ---
 
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Конфиги виртуальных машин для dns сервера

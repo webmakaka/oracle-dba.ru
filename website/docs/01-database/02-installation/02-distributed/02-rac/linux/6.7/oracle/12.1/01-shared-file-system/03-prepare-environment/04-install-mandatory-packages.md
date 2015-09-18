@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция обязательных пакетов
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/install-mandatory-packages/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/install-mandatory-packages/
 ---
 
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Инсталляция обязательных пакетов

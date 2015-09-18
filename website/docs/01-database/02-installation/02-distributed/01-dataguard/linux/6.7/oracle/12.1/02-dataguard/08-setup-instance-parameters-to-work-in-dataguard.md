@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Настройка параметров instance на primary для работы в DataGuard конфигурации
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/setup-instance-parameters-to-work-in-dataguard/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/setup-instance-parameters-to-work-in-dataguard/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка параметров instance на primary для работы в DataGuard конфигурации

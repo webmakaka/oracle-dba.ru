@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle RAC 11.2 ISCSI + ASM - Инсталляция ISCSI и монтирование iscsi дисков
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/prepare-iscsi-discs/
+permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/prepare-iscsi-discs/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция ISCSI и монтирование iscsi дисков
+# <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция ISCSI и монтирование iscsi дисков
 
 
 <br/>
@@ -394,7 +394,7 @@ default-driver iscsi
 	oracleasm-read-label: Unable to open device "/dev/sdb": No such file or directory
 
 Попробуйте настроить правила, подобным образом, что и в инструкции для Oracle 12C.
-http://oracle-dba.ru/docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/
+http://oracle-dba.ru/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/
 
 
 <br/><br/>

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Создание структуры каталогов и назначение необходимых прав
-permalink: /docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/create-folder-structure-and-user-permissions/
+permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/create-folder-structure-and-user-permissions/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Создание структуры каталогов и назначение необходимых прав
+# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Создание структуры каталогов и назначение необходимых прав
 
 
 	# mkdir -p /u01/oracle/database/12.1

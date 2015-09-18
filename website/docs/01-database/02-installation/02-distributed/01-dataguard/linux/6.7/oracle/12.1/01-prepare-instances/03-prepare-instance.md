@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Предварительные шаги по настройке параметров instance
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/prepare-instance/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/prepare-instance/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Предварительные шаги по настройке параметров instance

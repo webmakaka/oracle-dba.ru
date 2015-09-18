@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Создание экземпляра (instance) базы данных
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-instance-creation/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-instance-creation/
 ---
 
 

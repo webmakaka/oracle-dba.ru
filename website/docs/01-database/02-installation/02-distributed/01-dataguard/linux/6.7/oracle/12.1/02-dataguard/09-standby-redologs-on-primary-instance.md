@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Создание standby redologs на primary
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/standby-redologs-on-primary-instance/
+permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/standby-redologs-on-primary-instance/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Создание standby redologs на primary

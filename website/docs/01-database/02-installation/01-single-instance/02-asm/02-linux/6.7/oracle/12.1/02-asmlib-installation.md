@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Инсталляция ASMLIB для работы ASM
-permalink: /docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/asmlib-installation/
+permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-installation/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Инсталляция ASMLIB для работы ASM
+# <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Инсталляция ASMLIB для работы ASM
 
 <br/>
 
 Обязательные для установки пакеты:  
-http://oracle-dba.ru/docs/oracle-database/installation/oracle-database-installation/single-instance/simple/linux/6.4/oracle/12.1/install-mandatory-packages/
+http://oracle-dba.ru/database/installation/single-instance/simple/linux/6.4/oracle/12.1/install-mandatory-packages/
 
 
 <br/><br/>

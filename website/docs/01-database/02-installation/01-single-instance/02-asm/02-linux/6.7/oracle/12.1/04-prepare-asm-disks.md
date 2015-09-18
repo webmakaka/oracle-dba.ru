@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Подготовка ASM дисков к инсталляции базы данных
-permalink: /docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/prepare-asm-disks/
+permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/prepare-asm-disks/
 ---
 
-# <a href="/docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Подготовка ASM дисков к инсталляции базы данных
+# <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Подготовка ASM дисков к инсталляции базы данных
 
 
 

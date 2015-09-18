@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle RAC 12.1 ISCSI + ASM - Настройка сервисов отвечающих за синхронизацию времени
-permalink: /docs/oracle-database/installation/oracle-database-installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-actual-time/
+permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-actual-time/
 ---
 
 # [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка сервисов отвечающих за синхронизацию времени
