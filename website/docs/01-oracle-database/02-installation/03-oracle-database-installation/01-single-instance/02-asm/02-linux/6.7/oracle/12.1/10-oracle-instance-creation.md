@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Создание экземпляра базы данных (Instance)
+title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Создание экземпляра базы данных (Instance)
 permalink: /docs/oracle-database/installation/oracle-database-installation/single/asm/linux/6.7/oracle/12.1/oracle-instance-creation/
 ---
 
