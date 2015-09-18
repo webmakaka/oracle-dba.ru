@@ -1,7 +1,7 @@
 ---
 layout: page
 title: О Сайте
-permalink: /about/
+permalink: /info/info/contacts/
 ---
 
 ### О Сайте
