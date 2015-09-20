@@ -42,6 +42,9 @@ winnt_12102_client32.zip
 
 https://www.microsoft.com/en-gb/download/details.aspx?id=5555
 
+
+<br/>
+
 **hosts**
 
 Отредактируйте файл hosts, таким образом, чтобы не приходилось обращаться к серверу баз данных по его IP
@@ -50,46 +53,31 @@ https://www.microsoft.com/en-gb/download/details.aspx?id=5555
 
 C:\WINDOWS\system32\drivers\etc\hosts
 
-127.0.0.1   	localhost
-192.168.1.11	oracle12.localdomain oracle12
-
+    127.0.0.1   	localhost
+    192.168.1.11	oracle12.localdomain oracle12
 
 
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/01-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
 
-<br/>
 
-### Инсталляция Oracle Client
-
-
-
-Вместо AMERICAN_AMERICA.WE8MSWIN1252 устанавливаю AMERICAN_AMERICA.AL32UTF8
-
-
-<br/>
-
-### Проверка
-
-
-system - login  
-manager - password  
-
-    C:\>sqlplus /nolog  
-    SQL> conn system/manager@oracle12
-
-
-
-<br/>
-
-### Подкючимся к базе с помощью PL/SQL Developer
-
-
+<br/><br/>
 
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/02-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
+
+
+
+<br/>
+
+
+
+
+### Инсталляция Oracle Client
+
+
 
 
 <div>
@@ -122,9 +110,24 @@ manager - password
 </div>
 
 
+Вообще нужен только Oracle Call Interface. Но для удобства настройки и работы, лично я устанавливают 3 компонента:
+
+<ul>
+<li>SQL Plus</li>
+<li>Oracle Call Interface (OCI)</li>
+<li>Connection Manager</li>
+</ul>
+
+
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/09-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
+
+
+<br/>
+
+### Настрока подключения к базе:
+
 
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/10-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
@@ -170,6 +173,9 @@ manager - password
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/20-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
+
+
+Параметры подключения можно посмотреть на сервере в файле tnsnames.ora
 
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/21-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
@@ -231,6 +237,17 @@ manager - password
 </div>
 
 
+### Проверка
+
+
+system - login  
+manager - password  
+
+    C:\>sqlplus /nolog  
+    SQL> conn system/manager@oracle12
+
+
+
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/34-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
@@ -247,9 +264,23 @@ manager - password
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/37-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
 
+
+    ORCL12 =
+      (DESCRIPTION =
+        (ADDRESS_LIST =
+          (ADDRESS = (PROTOCOL = TCP)(HOST = oracle12.localdomain)(PORT = 1521))
+        )
+        (CONNECT_DATA =
+          (SERVICE_NAME = orcl12.localdomain)
+        )
+      )
+
+
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/38-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
+
+
 
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/39-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
@@ -263,6 +294,12 @@ manager - password
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/41-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
+
+
+
+<br/>
+
+### Подкючимся к базе с помощью PL/SQL Developer
 
 
 <div>
@@ -279,11 +316,9 @@ manager - password
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/44-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
 
-<div>
-	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/45-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
-</div>
 
 
-<div>
-	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/46-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
-</div>
+Вместо AMERICAN_AMERICA.WE8MSWIN1252 устанавливаю AMERICAN_AMERICA.AL32UTF8
+
+
+<br/>
