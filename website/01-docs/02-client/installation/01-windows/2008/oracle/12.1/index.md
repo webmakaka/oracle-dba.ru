@@ -290,9 +290,22 @@ C:\WINDOWS\system32\drivers\etc\hosts
 </div>
 
 
+    ORCL12 =
+      (DESCRIPTION =
+        (ADDRESS_LIST =
+          (ADDRESS = (PROTOCOL = TCP)(HOST = oracle12.localdomain)(PORT = 1521))
+        )
+        (CONNECT_DATA =
+          (SERVICE_NAME = orcl12.localdomain)
+        )
+      )
+
 <br/>
 
 ### Проверка
+
+
+    C:\> tnsping oracl12
 
 
 system - login  
@@ -311,17 +324,7 @@ manager - password
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/37-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
 </div>
 
-
-    ORCL12 =
-      (DESCRIPTION =
-        (ADDRESS_LIST =
-          (ADDRESS = (PROTOCOL = TCP)(HOST = oracle12.localdomain)(PORT = 1521))
-        )
-        (CONNECT_DATA =
-          (SERVICE_NAME = orcl12.localdomain)
-        )
-      )
-
+<br/><br/>
 
 <div>
 	<img src="http://img.oradba.net/02-client/installation/windows/2008/oracle/12.1/38-oracle_client_12_installation_on_windows_2008.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)">
