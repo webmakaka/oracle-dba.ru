@@ -150,8 +150,11 @@ permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/
 
 
 
-
-
 <br/><br/>
-Если вы захотите подключиться к базе данных с помощью программы <strong>SQL Developer, PL/SQL Developer, TOAD, SQL Navigator</strong> и другие,
-возможно вам поможет вот <a href="http://odba.ru/showthread.php?t=294">этот материал</a>.
+<h2>Подключиться к базе с клиентского компьютера:</h2>
+
+<ul>
+
+	<li><a href="/client/installation/windows/2008/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
+
+</ul>

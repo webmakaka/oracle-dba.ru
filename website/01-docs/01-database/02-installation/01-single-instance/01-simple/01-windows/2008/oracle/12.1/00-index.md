@@ -90,3 +90,13 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-final-hot-backup/">Контрольный backup (горячий backup)</a></li>
 
 </ul>
+
+
+<br/><br/>
+<h2>Подключиться к базе с клиентского компьютера:</h2>
+
+<ul>
+
+	<li><a href="/client/installation/windows/2008/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
+
+</ul>

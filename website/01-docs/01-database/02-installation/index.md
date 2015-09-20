@@ -158,7 +158,6 @@ Instantclient - альтернатива стандартному Oracle Client.
 	<li><a href="http://odba.ru/showthread.php?t=400"><strong>Инструкция по инсталляции базы данных Oracle 10g XE на сервер Oracle Enterprise Linux 4.8</strong></a></li>
 	<li><a href="http://odba.ru/showthread.php?t=296"><strong>Инсталляция Oracle Database 10g Express Edition в ОС Windows 2003 Server </strong></a></li>
 
-
 </ul>
 
 
