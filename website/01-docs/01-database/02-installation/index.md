@@ -53,7 +53,7 @@ permalink: /database/installation/
 <br/>
 
 <ul>
-	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/"><strong>Инсталляция Oracle Database 12g Release 1 в операционной системе Microsoft Windows 2008 Server</strong></a> (может где и напутал вначале)</li>
+	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/"><strong>Инсталляция Oracle Database 12c Release 1 в операционной системе Microsoft Windows 2008 Server</strong></a> (может где и напутал вначале)</li>
 
 	<li><a href="http://odba.ru/showthread.php?t=294"><strong>Инсталляция Oracle Database 11g Release 2 в операционной системе Microsoft Windows 2003 Server</strong></a></li>
 
@@ -70,7 +70,12 @@ permalink: /database/installation/
 <ul>
 	<li><a href="http://odba.ru/showthread.php?t=331"><strong>Команды редактора VI</strong></a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux 6.7</strong></a></li>
+
+	<!--
 	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux (6.4 x86_64)</strong></a> (Server Linux -- рабочая станция Linux) (Предыдущий документ!)</li>
+
+	-->
+
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (11.2.0.3) в операционной системе Oracle Linux (6.3 x86_64)</strong></a> (Server Linux -- рабочая станция Windows)</li>
 </li>
 </ul>

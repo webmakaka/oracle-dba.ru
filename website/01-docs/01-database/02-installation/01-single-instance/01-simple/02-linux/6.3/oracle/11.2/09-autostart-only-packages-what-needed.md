@@ -40,7 +40,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/12.1/a
 
 Позднее будет также добавлен:
 
-	# chkconfig --level 345 startupOracleDatabase12GR2 on
+	# chkconfig --level 345 startupOracleDatabase12CR2 on
 
 
 Обязательно убедиться, что ssh будет запущен при автозапуске!.
