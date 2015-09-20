@@ -22,7 +22,7 @@ permalink: /database/installation/virtualbox-mashines/oracle-linux/
 
 Создаем каталоги для виртуальной машины и для snapshots
 
-	$ mkdir -p ${vm_home}/${vm}/snapshots
+	$ mkdir -p ${VM_HOME}/${vm}/snapshots
 
 
 ### Создание и регистрация виртуальной машины:
@@ -39,7 +39,7 @@ permalink: /database/installation/virtualbox-mashines/oracle-linux/
     $ VBoxManage createvm \
     --name ${vm} \
     --ostype Oracle_64 \
-    --basefolder ${vm_home}/${vm} \
+    --basefolder ${VM_HOME}/${vm} \
     --register
 
 
@@ -87,7 +87,7 @@ Virtual machine 'vm_oel6.4_oradb12.1' is created and registered.
 Создаю виртуальные жесткие диски. Размер (size), рекомендуется задавать согласно имеющихся ресурсов. Иначе возможны проблемы и крах виртуальной машины):
 
 
-	$ cd ${vm_home}/${vm}/${vm}
+	$ cd ${VM_HOME}/${vm}/${vm}
 
 
 Если не хочется копипастить 8 раз одно и тоже, можно воспользоваться всего одной командой:
@@ -369,7 +369,7 @@ $ VBoxManage storageattach ${vm} \<br/>
 
 
     $ VBoxManage modifyvm ${vm} \
-    --snapshotfolder ${vm_home}/${vm}/snapshots
+    --snapshotfolder ${VM_HOME}/${vm}/snapshots
 
 
 Предоставим возможность подключения к машине по RDP:

@@ -16,7 +16,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Создаем каталоги для виртуальной машины и для snapshots
 
-	$ mkdir -p ${vm_home}/${vm}/snapshots
+	$ mkdir -p ${VM_HOME}/${vm}/snapshots
 
 <br/>
 
@@ -35,7 +35,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
     $ VBoxManage createvm \
     --name ${vm} \
     --ostype Windows2008_64  \
-    --basefolder ${vm_home}/${vm} \
+    --basefolder ${VM_HOME}/${vm} \
     --register
 
 
@@ -70,7 +70,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Создаю виртуальные жесткие диски. Размер (size), рекомендуется задавать согласно имеющихся ресурсов. Иначе возможны проблемы и крах виртуальной машины):
 
-	$ cd ${vm_home}/${vm}/${vm}
+	$ cd ${VM_HOME}/${vm}/${vm}
 
 
 Если не хочется копипастить 8 раз одно и тоже, можно воспользоваться всего одной командой:
@@ -161,7 +161,7 @@ $ VBoxManage storageattach ${vm} \
 
 
     $ VBoxManage modifyvm ${vm} \
-    --snapshotfolder ${vm_home}/${vm}/snapshots
+    --snapshotfolder ${VM_HOME}/${vm}/snapshots
 
 <br/>
 
