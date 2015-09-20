@@ -155,6 +155,6 @@ permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/
 
 <ul>
 
-	<li><a href="/client/installation/windows/2008/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
+	<li><a href="/client/installation/windows/7/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
 
 </ul>

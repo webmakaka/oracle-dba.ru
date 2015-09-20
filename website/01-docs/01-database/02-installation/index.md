@@ -126,7 +126,7 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 Программой SQL Developer от Oracle можно подключиться без установки Oracle Client.
 
 <ul>
-	<li><a href="/client/installation/windows/2008/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 2008 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
+	<li><a href="/client/installation/windows/7/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
 
 	<li><a href="https://docs.google.com/document/d/1VTV0bBZff-lyXmRTXE67tuZjXcHAlWTrq4g_c2mfoJI/edit">Инсталляция Oracle Client 11G R2 32 bit в операционной системе Windows XP 32 bit</a></li>
 
