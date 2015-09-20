@@ -98,12 +98,12 @@ permalink: /database/installation/virtualbox-mashines/windows/2008/
 
 Подключаю к IDE контроллеру DVD образ инсталлируемой операционной системы:
 
-$ VBoxManage storageattach ${vm} \
---storagectl "IDE Controller" \
---port 0 \
---device 0 \
---type dvddrive \
---medium /mnt/dsk2/_ISO/_Microsoft/win2k8/x64/en_windows_server_2008_with_sp2_x64_dvd_342336.iso
+    $ VBoxManage storageattach ${vm} \
+    --storagectl "IDE Controller" \
+    --port 0 \
+    --device 0 \
+    --type dvddrive \
+    --medium /mnt/dsk2/_ISO/_Microsoft/win2k8/x64/en_windows_server_2008_with_sp2_x64_dvd_342336.iso
 
 ### Подключение сетевых интерфейсов:
 

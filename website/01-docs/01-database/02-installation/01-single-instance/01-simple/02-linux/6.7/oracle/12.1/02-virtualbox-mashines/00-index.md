@@ -6,8 +6,8 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/v
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных
 
-О том как инсталлировал virtualbox, переменные и каталоги, смотри здесь.  
-http://sysadm.ru/linux/virtual/virtualbox/
+О том как инсталлировал virtualbox, переменные и каталоги, смотри
+<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 
 <br/>
@@ -167,14 +167,22 @@ Name:                eth0
 --vrdeport - порт к которому можно будет подключиться при старте виртуальной машины.  
 
 
-
 ### Показать результат созданной виртаульной машины:
 
     $ VBoxManage showvminfo ${vm}
 
+
+### Создание снапшота перед инсталляцией ОС
+
+    $ VBoxManage snapshot ${vm} take before_os_installation
+
 <br/>
 
 ## ВИРТУАЛЬНАЯ МАШИНА ГОТОВА ДЛЯ ИНСТАЛЛЯЦИИ ОПЕРАЦИОННОЙ СИСТЕМЫ
+
+
+Более подробный документ с созданием снапшотов и резервных коиий виртуальных машин смотри
+<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 <br/>
 

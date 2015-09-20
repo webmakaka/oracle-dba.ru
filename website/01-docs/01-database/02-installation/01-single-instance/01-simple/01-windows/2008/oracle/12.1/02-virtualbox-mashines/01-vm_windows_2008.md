@@ -7,6 +7,10 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 # <a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server
 
 
+О том как инсталлировал virtualbox, переменные и каталоги, смотри
+<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+
+
 Задаем переменную с именем создаваемой виртуальной машины, чтобы в дальнейшем лишний раз не подставлять данное значение в команды.
 
     # su - vmadm
@@ -98,12 +102,12 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Подключаю к IDE контроллеру DVD образ инсталлируемой операционной системы:
 
-$ VBoxManage storageattach ${vm} \
---storagectl "IDE Controller" \
---port 0 \
---device 0 \
---type dvddrive \
---medium /mnt/dsk2/_ISO/_Microsoft/win2k8/x64/en_windows_server_2008_with_sp2_x64_dvd_342336.iso
+    $ VBoxManage storageattach ${vm} \
+    --storagectl "IDE Controller" \
+    --port 0 \
+    --device 0 \
+    --type dvddrive \
+    --medium /mnt/dsk2/_ISO/_Microsoft/win2k8/x64/en_windows_server_2008_with_sp2_x64_dvd_342336.iso
 
 ### Подключение сетевых интерфейсов:
 
@@ -138,15 +142,6 @@ $ VBoxManage storageattach ${vm} \
     --nictype2 82540EM \
     --nic2 bridged \
     --bridgeadapter2 eth0
-
-
-(Если планируется инсталлировать RAC, рекомендуется установить 3-й интерфейс)
-
-
-    $ VBoxManage modifyvm ${vm} \
-    --nictype3 82540EM \
-    --nic3 bridged \
-    --bridgeadapter3 eth0
 
 
 Определяем порядок устройств, с которых будет произведена попытка стартовать систему
@@ -185,20 +180,18 @@ $ VBoxManage storageattach ${vm} \
 --vrdeport порт к которому можно будет подключиться при старте виртуальной машины.  
 
 
-Создание снапшота перед инсталляцией ОС
+Показать результат созданной виртаульной машины:
 
+    $ VBoxManage showvminfo ${vm}  | less
+
+
+Создание снапшота перед инсталляцией ОС
 
     $ VBoxManage snapshot ${vm} take before_os_installation
 
 
+## ВИРТУАЛЬНАЯ МАШИНА ГОТОВА ДЛЯ ИНСТАЛЛЯЦИИ ОПЕРАЦИОННОЙ СИСТЕМЫ
 
-ВИРТУАЛЬНАЯ МАШИНА ГОТОВА ДЛЯ ИНСТАЛЛЯЦИИ ОПЕРАЦИОННОЙ СИСТЕМЫ
-
-
-Показать результат созданной виртаульной машины:
-
-
-    $ VBoxManage showvminfo ${vm}  | less
 
 Стартуем виртуальную машину с возможность подключения по RDP
 
@@ -235,5 +228,9 @@ http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 В Windows для этого вполне подойдет Remote Desktop Connecton (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 
 
-Более подробный документ с созданием снапшотов и резервных коиий виртуальных машин:<br/>
-https://docs.google.com/document/d/1ZU6Hk5DYitFYwlRFqN2qmJr6maPpvgsVc6ZTiZ1kYVA/edit
+Более подробный документ с созданием снапшотов и резервных коиий виртуальных машин смотри
+<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+
+
+Для нормальной работы в Windows также нужно будет установить VirtualBox Guest Additions  
+http://download.virtualbox.org/virtualbox/4.3.30/
