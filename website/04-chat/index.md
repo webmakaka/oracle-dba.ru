@@ -37,7 +37,7 @@ Server для подключения: irc.freenode.net
 <br/><br/>
 
 <div align="center">
-    <img src="/website/chat/pigdig.png" border="0" alt="PigDig chat"
+    <img src="/website/04-chat/pigdig.png" border="0" alt="PigDig chat"
     />
 </div>
 
