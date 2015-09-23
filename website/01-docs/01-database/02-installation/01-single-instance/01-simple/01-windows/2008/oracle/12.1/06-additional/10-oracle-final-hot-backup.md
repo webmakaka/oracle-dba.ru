@@ -20,8 +20,10 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <br/>
 
 	RUN {
-	CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
-	BACKUP FULL DATABASE TAG "FULL_DATABASE" PLUS ARCHIVELOG TAG "FULL_DATABASE_ARCHIVELOGS";
+		CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
+		BACKUP FULL DATABASE TAG "FULL_DATABASE" PLUS ARCHIVELOG TAG "FULL_DATABASE_ARCHIVELOGS";
+		BACKUP CURRENT CONTROLFILE TAG "FULL_DATABASE_CONTROLFILE";
+		BACKUP SPFILE TAG "FULL_DATABASE_SPFILE";
 	}
 
 
@@ -42,18 +44,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-RMAN> list backup of database summary;
-
-<br/>
-
-	List of Backups
-	===============
-	Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
-	------- -- -- - ----------- ------------------- ------- ------- ---------- ---
-	1       B  F  A DISK        10.06.2012 22:05:45 1       1       NO         TAG20120610T220429
-	6       B  F  A DISK        10.06.2012 22:12:46 1       1       NO         TAG20120610T221132
-	10      B  F  A DISK        10.06.2012 23:21:10 1       1       YES        FULL_DATABASE
-
+	RMAN> list backup of database summary;
 
 
 <br/>
@@ -72,13 +63,6 @@ RMAN> list backup of database summary;
 
 	RMAN> list backup of database summary;
 
-<br/>
-
-	List of Backups
-	===============
-	Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
-	------- -- -- - ----------- ------------------- ------- ------- ---------- ---
-	10      B  F  A DISK        10.06.2012 23:21:10 1       1       YES        FULL_DATABASE
 
 <br/>
 
