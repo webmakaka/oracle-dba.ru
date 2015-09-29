@@ -23,8 +23,6 @@ permalink: /database/beginning/
 
     <li><a href="/database/beginning/questions-on-interview/">Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях</a></li>
 
-    <li><a href="/database/beginning/database/certification/">Сертификация Oracle</a></li>
-
     <li><a href="/database/beginning/requirements-on-international-companies/">Требования к кандидатам на позицию Oracle DBA в иностранных компаниях</a></li>
 
 </ul>

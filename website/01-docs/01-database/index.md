@@ -57,7 +57,8 @@ permalink: /database/
 
 
 <br/><br/>
-<h3>Архитектура баз данных Oracle:</h3>
+
+### Архитектура баз данных Oracle:
 
 
 <ul>
@@ -187,7 +188,8 @@ permalink: /database/
 
 
 <br/><br/>
-<h3>Мониторинг:</h3>
+
+### Мониторинг:
 
 Я мониторил: свободное место в FRA, актуальность бекапов, чтобы не было такого, что бекап не делался более 3 дней + бизнес задачи.
 
@@ -196,6 +198,18 @@ permalink: /database/
         <a href="http://odba.ru/showthread.php?t=744">Инсталляция Oracle Enterprise Manager Cloud control 12c в операционной системе Oracle Linux 5.8 x86 64 bit</a>
     </li>
 </ul>
+
+
+<br/><br/>
+
+### Сертификация Oracle:
+
+<ul>
+    <li>
+        <li><a href="/database/beginning/database/certification/">Сертификация Oracle</a></li>
+    </li>
+</ul>
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Сертификация Oracle DBA
-permalink: /database/beginning/database/certification/
+permalink: /database/certification/
 ---
 
 
