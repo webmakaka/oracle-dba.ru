@@ -206,7 +206,7 @@ permalink: /database/
 
 <ul>
     <li>
-        <li><a href="/database/beginning/database/certification/">Сертификация Oracle</a></li>
+        <a href="/database/certification/">Сертификация Oracle</a>
     </li>
 </ul>
 
