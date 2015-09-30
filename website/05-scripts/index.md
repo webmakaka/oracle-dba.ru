@@ -18,6 +18,7 @@ https://github.com/plsql/DBA-Scripts-Archive-for-Oracle
 
 ### Другие авторы:
 
+https://github.com/plsql/OracleScripts
 
 https://github.com/plsql/oracle_sql_scripts
 
