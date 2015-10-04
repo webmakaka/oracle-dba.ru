@@ -12,10 +12,10 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/prepare-kerne
 
 
 	# {
-	cp /etc/sysctl.conf /etc/sysctl.conf.bkp
-	cp /etc/security/limits.conf /etc/security/limits.conf.bkp
-	cp /etc/pam.d/login /etc/pam.d/login.bkp
-	cp /etc/profile /etc/profile.bkp
+	cp /etc/sysctl.conf /etc/sysctl.conf.bkp.$(date +%Y-%m-%d)
+	cp /etc/security/limits.conf /etc/security/limits.conf.bkp.$(date +%Y-%m-%d)
+	cp /etc/pam.d/login /etc/pam.d/login.bkp.$(date +%Y-%m-%d)
+	cp /etc/profile /etc/profile.bkp.$(date +%Y-%m-%d)
 	}
 
 

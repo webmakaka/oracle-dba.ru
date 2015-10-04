@@ -8,8 +8,8 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-instal
 
 <br/>
 
-Обязательные для установки пакеты:  
-http://oracle-dba.ru/database/installation/single-instance/simple/linux/6.4/oracle/12.1/install-mandatory-packages/
+
+ <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/install-mandatory-packages/">Обязательные для установки Oracle DataBase пакеты должны быть установлены</a>
 
 
 <br/><br/>
@@ -62,6 +62,3 @@ http://www.oracle.com/technetwork/server-storage/linux/asmlib/rhel6-1940776.html
 Проверяем инсталлированные пакеты:
 
     # rpm -qa | grep oracleasm
-    oracleasm-support-2.1.8-1.el6.x86_64
-    oracleasmlib-2.0.4-1.el6.x86_64
-    kmod-oracleasm-2.0.8-5.el6_7.x86_64

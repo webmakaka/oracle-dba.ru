@@ -23,9 +23,9 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/oracle-instan
 
 <br/><br/>
 
-В режиме Advanced, можно более оптимально настроить параметры. Исключить из установки лишнее. Например, JVM, Enterprise Manager, Multimedia. Можно выделить побольше ресурсов памяти.  
-http://oracle-dba.ru/database/installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-instance-creation/
+В режиме Advanced, можно более оптимально настроить параметры. Исключить из установки лишнее. Например, JVM, Enterprise Manager, Multimedia. Можно выделить побольше ресурсов памяти и д.р.
 
+ <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-instance-creation/">Посмотреть можно здесь</a>
 
 
 <br/><br/>
