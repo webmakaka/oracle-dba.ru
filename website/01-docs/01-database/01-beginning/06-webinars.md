@@ -4,7 +4,44 @@ title: Записи вебинаров по Oracle
 permalink: /database/beginning/webinars/
 ---
 
-<h3>Записи вебинаров по Oracle:</h3>>
+### Записи вебинаров по Oracle:
+
+
+<div style="padding:10px; border:thin solid black;">
+
+    <h3>Dev Labs 2014 - Oracle. New feature of Oracle Database 11g... (Валерий Ковальчук)</h3>
+
+
+    <br/><br/>
+
+    <div align="center">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/gMnNIwh3XCs" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+    <br/><br/>
+
+    <h3>Dev Labs 2014 - Oracle. Oracle Database In-memory: не просто кэш (Александр Брейман)</h3>
+
+    <br/><br/>
+
+    <iframe width="640" height="480" src="https://www.youtube.com/embed/6lSyqJXXM8s" frameborder="0" allowfullscreen></iframe>
+
+    <br/><br/>
+
+    <h3>Dev Labs 2014 - Oracle. Match Recognize (Денис Креп)</h3>
+
+    <br/><br/>
+
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/F4Mf0YiyFPI" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
+
+
+<br/><br/>
+<hr>
+<br/><br/>
 
 
 
