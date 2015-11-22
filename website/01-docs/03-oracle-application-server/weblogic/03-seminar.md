@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Практический обучающий курс для партнеров Oracle по серверу приложений Weblogic
-permalink: /docs/oracle-application-server/weblogic/weblogic-seminar/
+permalink: /weblogic/weblogic-seminar/
 ---
 
 

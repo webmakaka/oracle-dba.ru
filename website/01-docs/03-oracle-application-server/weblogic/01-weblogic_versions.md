@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Версии Weblogic
-permalink: /docs/oracle-application-server/weblogic/weblogic-versions/
+permalink: /weblogic/weblogic-versions/
 ---
 
 

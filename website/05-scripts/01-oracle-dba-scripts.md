@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Коллекция скриптов для Oracle DBA
-permalink: /oracle-dba-scripts/
+permalink: /scripts/oracle-dba-scripts/
 ---
 
 <br/>
@@ -31,4 +31,3 @@ https://github.com/plsql/OracleDBA
 
 
 Пока нет особого желания разбирать коллекции, определять, что важно а что нет.
-Если кто поможет.
