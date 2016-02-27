@@ -31,6 +31,7 @@ permalink: /database/beginning/library/paid-video-courses/
 
 <ul>
 
+    <li><strong>Learning Oracle 12c - A Beginners Oracle Training Video</strong></li>
 
     <li><strong>Oracle 11g Certified Professional Exam Prep I</strong></li>
 
