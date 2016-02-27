@@ -31,21 +31,26 @@ permalink: /database/beginning/library/paid-video-courses/
 
 <ul>
 
+
+    <li><strong>Oracle 11g Certified Professional Exam Prep I</strong></li>
+
+    <li><strong>Oracle 11g Certified Professional Exam Prep II</strong></li>
+
 	<li><strong>Oracle Performance Tuning</strong></li>
 
-	<li><strong>Easy way to set Oracle Active Dataguard</strong></li>
+	<li><strong>Easy way to set Oracle Active Dataguard</strong> (можно посмотреть начинающим)</li>
 
-	<li><strong>Oracle Real Application Cluster</strong></li>
-
-	<li><strong>Oracle Business Intelligence Enterprise Edition (OBIEE) 11g</strong></li>
-
-	<li><strong>Oracle E-Business Suite R12 Applications DBA</strong></li>
+	<li><strong>Oracle Real Application Cluster</strong> (можно посмотреть начинающим)</li>
 
 	<li><strong>Practice with Oracle RMAN</strong></li>
 
 	<li><strong>Oracle WebLogic 12c for Administrators</strong></li>
 
 	<li><strong>Oracle Coherence Quickstart</strong></li>
+
+    <li><strong>Oracle Business Intelligence Enterprise Edition (OBIEE) 11g</strong> (так себе)</li>
+
+    <li><strong>Oracle E-Business Suite R12 Applications DBA</strong> (так себе)</li>
 
 </ul>
 
