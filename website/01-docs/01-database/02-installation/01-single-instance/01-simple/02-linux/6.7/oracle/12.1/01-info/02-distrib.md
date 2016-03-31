@@ -61,7 +61,14 @@ http://www.putty.org/
 http://sourceforge.net/projects/xming/<br/>
 http://sourceforge.net/projects/xming/files/Xming-fonts/
 
-<br/>
+<br/><br/>
+
+<p>Далее, необходимо настроить правила доступа.<br />
+В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)</p>
+
+<p><img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing" /></p>
+
+<br/><br/>
 
 <strong>winscp (Для копирования файлов на сервер):</strong><br/>
 http://winscp.net/eng/download.php
