@@ -27,7 +27,7 @@ permalink: /sitemap/
 
 <div align="center">
 
-    <a href="/docs/oracle-application-server/weblogic/"><img src="http://img.oradba.net/img/oracle/middleware/weblogic/weblogic.jpg" border="0" alt="Oracle Weblogic Logo"></a>
+    <a href="/weblogic/"><img src="http://img.oradba.net/img/oracle/middleware/weblogic/weblogic.jpg" border="0" alt="Oracle Weblogic Logo"></a>
 
 </div>
 
