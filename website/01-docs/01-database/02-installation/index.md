@@ -77,7 +77,6 @@ permalink: /database/installation/
 	-->
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/"><strong>Инсталляция Oracle DataBase Server (11.2.0.3) в операционной системе Oracle Linux (6.3 x86_64)</strong></a> (Server Linux -- рабочая станция Windows)</li>
-</li>
 </ul>
 
 
