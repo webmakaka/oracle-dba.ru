@@ -11,40 +11,7 @@ permalink: /
 
 
 
-<p><br/></p>
 
-<div align="center" style="border-width: 4px; padding: 10px; border-style: inset; border-color: yellow; ">
-
-
-<h3 id="section">Предлагаю сыграть в игру!</h3>
-
-1) Сборка и деплой на weblogic Oracle ADF проекта с помощью maven в консольной строке. Наверное, нужно, чтобы на Weblogic также создавались DataSourses и что еще там нужно.<br />
-2) Авторизация пользователей на Weblogic.
-
-<br />
-<br />
-
-Кому интересно, могут поучавствовать. Ведь это практически реальная задача, в которой используются достаточно серьезные решения от Oracle - Virtualbox, Linux, Database, Weblogic, JDeveloper, Java с их ADF фреймворком.
-
-<br />
-
-Для меня это задача, которая позволит перенять у одного опытного разработчика, знания которые, я надеюсь, что мне пригодятся.
-<br />
-
-Думаю использовать <a href="https://github.com/oracle-adf/Summit-ADF">ADF SUmmit</a>для этих целей.
-
-</div>
-
-
-<p><br/></p>
-
-<div align="center" style="border-width: 4px; padding: 10px; border-style: inset; border-color: green; ">
-
-
-<h3 id="section">Можете предложить свою игру! Договоримся о времени, технологиях, и т.д. Есть же еще и SOA, BI и д.р.</h3>
-
-
-</div>
 
 <br/>
 
@@ -67,6 +34,46 @@ permalink: /
 	<img src="/website/pictures/kritika.jpg" alt="Oracle DBA" border="0" />
 </div>
 
+
+
+<br/><br/>
+
+<div align="center" style="border-width: 4px; padding: 10px; border-style: inset; border-color: yellow; ">
+
+
+<h3 id="section">Предлагаю сыграть в игру!</h3>
+
+1) Сборка и деплой на weblogic Oracle ADF проекта с помощью maven в консольной строке. Наверное, нужно, чтобы на Weblogic также создавались DataSourses и что еще там нужно.<br />
+2) Авторизация пользователей на Weblogic.
+
+<br />
+<br />
+
+Кому интересно, могут поучавствовать. Ведь это практически реальная задача, в которой используются достаточно серьезные решения от Oracle - Virtualbox, Linux, Database, Weblogic, JDeveloper, Java с их ADF фреймворком.
+
+<br />
+
+Для меня это задача, которая позволит перенять у одного опытного разработчика, знания которые, я надеюсь, что мне пригодятся и позволят мне выйте на следующий уровень автоматизации автодеплоя.
+<br />
+
+Я думаю, что данная задача затянется, не менее, чем на месяц, т.к. технологий, которые должны совместно работать достаточно много.
+
+<br />
+
+Думаю использовать <a href="https://github.com/oracle-adf/Summit-ADF">ADF SUmmit</a> для этих целей.
+
+</div>
+
+
+<p><br/></p>
+
+<div align="center" style="border-width: 4px; padding: 10px; border-style: inset; border-color: green; ">
+
+
+<h3 id="section">Можете предложить свою игру! Договоримся о времени, технологиях, и т.д. Есть же еще и SOA, BI и д.р.</h3>
+
+
+</div>
 
 <br/><br/>
 
