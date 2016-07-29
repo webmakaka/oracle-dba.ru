@@ -11,7 +11,7 @@ permalink: /
 
 
 
-<p><br /></p>
+<p><br/></p>
 
 <div align="center" style="border-width: 4px; padding: 10px; border-style: inset; border-color: yellow; ">
 
@@ -28,11 +28,22 @@ permalink: /
 
 <br />
 
-Для меня это задача, которая позволит прокачать знания по данному направлению до следующего уровня. 
+Для меня это задача, которая позволит прокачать знания по данному направлению до следующего уровня.
 
 <br />
 
 Думаю использовать ADF SUmmit для этих целей. Если будет кому-нибудь интересно, дам ссылку на гитхаб. Сечас просто искать не хочется.
+
+</div>
+
+
+<p><br/></p>
+
+<div align="center" style="border-width: 4px; padding: 10px; border-style: inset; border-color: green; ">
+
+
+<h3 id="section">Можете предложить свою игру! Забить дату время, собраться и пройти ее...</h3>
+
 
 </div>
 
