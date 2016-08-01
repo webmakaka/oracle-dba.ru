@@ -7,12 +7,6 @@ permalink: /
 ### Доброго времени суток, уважаемые посетители сайта Oracle DBA!
 
 
-
-
-
-
-
-
 <br/>
 
 На данном ресурсе собираются записи, связанные с администрированием баз данных Oracle и технологий тесно с ними связанными (Oracle DataBase, Weblogic, Oracle Golden Gate, etc.).<br/>
@@ -70,7 +64,7 @@ permalink: /
 <div align="center" style="border-width: 4px; padding: 10px; border-style: inset; border-color: green; ">
 
 
-<h3 id="section">Можете предложить свою игру! Договоримся о времени, технологиях, и т.д. Есть же еще и SOA, BI и д.р.</h3>
+<h3 id="section">Можете предложить свою игру! Договоримся о времени, технологиях, и т.д. Есть же еще и SOA, BI и д.р или даже Oracle 12 на Oracle Linux 7.2</h3>
 
 
 </div>

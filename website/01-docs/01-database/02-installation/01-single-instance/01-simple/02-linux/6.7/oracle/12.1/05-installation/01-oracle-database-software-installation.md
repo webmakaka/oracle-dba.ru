@@ -12,10 +12,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 
 	$ cd /tmp/oracle/12.1/database/
 
-<br/>
-
-	$ export DISPLAY=192.168.1.5:0.0
-
 
 <br/>
 
@@ -36,6 +32,13 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 <br/>
 
 ### Запуск программы инсталляции базы данных:
+
+
+Если переменная DISPLAY не задана.
+
+	$ export DISPLAY=192.168.1.5:0.0
+
+<br/>
 
 	$ ./runInstaller
 

@@ -7,6 +7,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Инсталляция обязательных пакетов
 
 
+<br/>
 
 База данных Oracle, требует, чтобы в системе были обязательно установлены некоторые компоненты. Пакеты можно скачать с публичного репозитория (из интернет) или взять с диска, на котором и располагается дистрибутив операционной системы.
 
@@ -34,7 +35,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
     baseurl=file:///mnt/cdrom/Server/
     gpgcheck=0
     enabled=1
-
 
 
 <br/>
@@ -85,6 +85,7 @@ Offtopic: (Рекомендуется пропустить! Просто для 
 
 
 Offtopic: END
+
 ======================================
 
 
@@ -116,12 +117,13 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 
 <br/><br/>
-Посмотреть пакеты в репозитории:
+Посмотреть пакеты в репозитории можно следующей командой:
 
 	# yum search all binutils
 
 <br/>
 
+Инсталляция всех необходимых пакетов одной командой:
 
 	# yum install -y \
 	binutils.x86_64 \
@@ -158,7 +160,7 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 <br/>
 
-Дополнительные пакеты:
+Дополнительные пакеты, не являющиеся необходимыми для инсталляции базы данных:
 
     # yum install -y \
     vim \
@@ -168,6 +170,7 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
     ntp \
     unzip
 
+<br/>
 
 ### Инсталляция rlwrap
 

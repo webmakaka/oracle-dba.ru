@@ -27,15 +27,21 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/c
 
 	$ unzip linuxamd64_12102_database_1of2.zip; unzip linuxamd64_12102_database_2of2.zip
 
+
+
+
 <br/>
 
 ### OFFTOPIC
 
-Самый простой способ скопировать файлы - подключиться к серверу по протоколу sftp://192.168.1.11
+Самый простой способ скопировать файлы в linux - подключиться к серверу по протоколу sftp://192.168.1.11
 
 Вы можете также воспользоваться утилитой scp. Например, следующей командой можно забрать дистрибутивы базы данных с другого сервера linux и положить их в каталог /tmp/oracle/12.1/:
 
 	# scp marley@192.168.1.5:/oracle/linuxamd64_12c_database_*.zip /tmp/oracle/12.1/
+
+
+<br/>
 
 Если Вы работаете под Windows, самый простой способ - воспользоваться winscp.
 
