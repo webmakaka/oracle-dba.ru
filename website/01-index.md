@@ -54,7 +54,14 @@ permalink: /
 
 <br />
 
-Думаю использовать <a href="https://github.com/oracle-adf/Summit-ADF">ADF SUmmit</a> для этих целей.
+Думаю использовать <a href="https://github.com/oracle-adf/Summit_ADF_Core_12_2_1_MAVEN">ADF SUmmit</a> для этих целей.
+
+
+<br />
+
+Стартанул  <a href="http://oracle-adf.ru/exercises/adf-summit/">здесь</a>. Уже есть ошибки, которые не знаю как победить.
+
+Жду помощи.
 
 </div>
 
