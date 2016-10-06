@@ -23,8 +23,8 @@ http://docs.oracle.com/cd/E11882_01/server.112/e16638/toc.htm
 <h3>SQL and PL/SQL:</h3>
 
   <ul>
-    <li><a href="http://download.oracle.com/docs/cd/E11882_01/server.112/e17118/title.htm">Oracle® Database SQL Language Reference 11g Release 2 (11.2)</a></li>
-    <li><a href="http://download.oracle.com/docs/cd/E11882_01/appdev.112/e17126/toc.htm">Oracle® Database PL/SQL Language Reference 11g Release 2 (11.2)</a></li>
+    <li>Oracle® Database SQL Language Reference 11g Release 2 (11.2)</li>
+    <li><Oracle® Database PL/SQL Language Reference 11g Release 2 (11.2)</a></li>
 
   </ul>
 
