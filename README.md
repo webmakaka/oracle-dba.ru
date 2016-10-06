@@ -1,5 +1,8 @@
 # Исходные коды сайта <a href="http://oracle-dba.ru">oracle-dba.ru</a>
 
+
+[![Build Status](https://travis-ci.org/plsql/oracle-dba.ru.svg?branch=gh-pages)](https://travis-ci.org/plsql/oracle-dba.ru)
+
 [![Join the chat at https://gitter.im/oracle-dba-ru/Lobby](https://badges.gitter.im/oracle-dba-ru/Lobby.svg)](https://gitter.im/oracle-dba-ru/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Как скопировать и запустить oracle-dba.ru на свой хост с использованием docker контейнера:
