@@ -115,7 +115,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 <ul>
 	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/grid-installation/">Инсталляция Grid</a></li>
 
-	<li><a href=" /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-database-software-installation/">Инсталляция Oracle Database Software</a></li>
+	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-database-software-installation/">Инсталляция Oracle Database Software</a></li>
 
 	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-instance-creation/">Создание экземпляра (instance) базы данных</a></li>
 

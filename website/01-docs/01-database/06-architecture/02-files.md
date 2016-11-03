@@ -104,7 +104,7 @@ permalink: /docs/architecture/files/
 
 
 <br/>
-<h3><a name="files2">Управляющие файлы (Control Files)</a></h3>
+<h3><a name="files3">Управляющие файлы (Control Files)</a></h3>
 <br/>
 
 
