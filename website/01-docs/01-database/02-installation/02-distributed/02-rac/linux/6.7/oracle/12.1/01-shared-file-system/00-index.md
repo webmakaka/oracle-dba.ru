@@ -16,7 +16,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 
 <div>
-	<img src="http://img.fotografii.org/a3333333mail.gif" border="0">
+	<img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 <br/><br/>
