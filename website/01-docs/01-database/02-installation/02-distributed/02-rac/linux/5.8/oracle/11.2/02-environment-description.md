@@ -11,7 +11,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/environm
 RAC выглядит приблизительно следующим образом:
 
 <div align="center">
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/OracleRac_11.2.jpg" border="0">
+<img src="http://img.oradba.net/img/oracle/database/rac/11.2/OracleRac_11.2.jpg" alt="oracle rac" border="0">
 </div>
 
 <br/><br/>
