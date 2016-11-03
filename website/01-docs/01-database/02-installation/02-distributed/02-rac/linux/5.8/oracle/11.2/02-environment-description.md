@@ -25,7 +25,7 @@ https://docs.google.com/document/d/1ZU6Hk5DYitFYwlRFqN2qmJr6maPpvgsVc6ZTiZ1kYVA/
 <br/><br/>
 
 <div align="center">
-	<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac1.png" border="0">
+	<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac1.png" alt="oracle rac" border="0">
 </div>
 
 <br/><br/>
