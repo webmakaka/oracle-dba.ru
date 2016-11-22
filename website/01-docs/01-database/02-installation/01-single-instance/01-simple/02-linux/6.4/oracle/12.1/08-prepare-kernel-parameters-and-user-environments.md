@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Конфигурурование системных пользователей, настройка параметров системы
+title: Oracle DataBase 12c - Linux - Конфигурирование системных пользователей, настройка параметров системы
 permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/prepare-kernel-parameters-and-user-environments/
 ---
 
-# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Конфигурурование системных пользователей, настройка параметров системы
+# <a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.4]</a>: Конфигурирование системных пользователей, настройка параметров системы
 
 
 

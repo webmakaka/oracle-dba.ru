@@ -10,7 +10,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 
 <div style="padding:10px; border:thin solid black;">
 
-**Предупреждение** Из-за перевода времени нашим "Руковоством". Время на сервере может работать по-старому. В некоторых случаях из-за этого неправильно работает Enterprise Manager. Все это исправляется патчами, которые могут скачать счастливые обладатели доступа к support oracle. У меня сейчас нет такой возможности. Если кто скинет, прикреплю патчи к теме. На момент написания статьи такой проблемы не было и на момент написания у меня самого был доступ к support oracle. Проблема патчится патчем с кодовым названием DST v23.
+**Предупреждение** Из-за перевода времени нашим "Руководством". Время на сервере может работать по-старому. В некоторых случаях из-за этого неправильно работает Enterprise Manager. Все это исправляется патчами, которые могут скачать счастливые обладатели доступа к support oracle. У меня сейчас нет такой возможности. Если кто скинет, прикреплю патчи к теме. На момент написания статьи такой проблемы не было и на момент написания у меня самого был доступ к support oracle. Проблема патчится патчем с кодовым названием DST v23.
 
 </div>
 
@@ -38,7 +38,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 
 Инсталляция происходит на удаленный сервер без GUI.
 
-Управление процессом установки и настройки происходит с рабочей станции под управлением Windows, на которой устанавлены putty и xming.
+Управление процессом установки и настройки происходит с рабочей станции под управлением Windows, на которой установлены putty и xming.
 
 При помощью консоли putty на сервере выполняются команды. Xming нужен для получения графических изображений.
 
@@ -73,7 +73,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/install-mandatory-packages/">Инсталляция обязательных пакетов</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/setup-actual-time/">Настройка актуального времени</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/prepare-hdd-to-install-oracle/">Подготовка дисков к инсталляции базы данных</a></li>
-	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/prepare-kernel-parameters-and-user-environments/">Конфигурурование системных пользователей, настройка параметров системы</a></li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/prepare-kernel-parameters-and-user-environments/">Конфигурирование системных пользователей, настройка параметров системы</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/autostart-only-packages-what-needed/">Автозапуск только выбранных программ</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/create-folder-structure-and-user-permissions/">Создание структуры каталогов и назначение необходимых прав</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a></li>
@@ -97,7 +97,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/autorstart-oracle-after-restart/">Настройка автозапуска Oracle после перезагрузки</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-cold-backup/">Создание резервной копии созданной базы данных (холодный backup)</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-psu-update/">Обновление базы патчами, рекомендованными Oracle</a></li>
-	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-restrict-root-access/">Запретить удаленное подключение к сереверу баз данных пользователем root</a></li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-restrict-root-access/">Запретить удаленное подключение к серверу баз данных пользователем root</a></li>
 </ul>
 
 <br/><br/>

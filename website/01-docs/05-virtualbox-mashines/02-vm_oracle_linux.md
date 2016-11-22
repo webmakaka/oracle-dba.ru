@@ -400,7 +400,7 @@ $ VBoxManage modifyvm ${vm} \
 ВИРТУАЛЬНАЯ МАШИНА ГОТОВА ДЛЯ ИНСТАЛЛЯЦИИ ОПЕРАЦИОННОЙ СИСТЕМЫ
 
 
-Показать результат созданной виртаульной машины:
+Показать результат созданнойвиртуальной машины:
 
 
     $ VBoxManage showvminfo ${vm}  | less
@@ -440,5 +440,5 @@ http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html
 В Windows для этого вполне подойдет Remote Desktop Connecton (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 
 
-Более подробный документ с созданием снапшотов и резервных коиий виртуальных машин:<br/>
+Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин:<br/>
 https://docs.google.com/document/d/1ZU6Hk5DYitFYwlRFqN2qmJr6maPpvgsVc6ZTiZ1kYVA/edit

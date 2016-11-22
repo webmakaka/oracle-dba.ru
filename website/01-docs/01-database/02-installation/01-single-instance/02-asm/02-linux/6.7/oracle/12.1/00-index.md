@@ -68,7 +68,7 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 	<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-installation/">Инсталляция ASMLIB для работы ASM</a></li>
 
-	<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/">Конфигурурование системных пользователей, настройка параметров системы</a></li>
+	<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/prepare-kernel-parameters-and-user-environments/">Конфигурирование системных пользователей, настройка параметров системы</a></li>
 
 	<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/prepare-asm-disks/">Подготовка ASM дисков к инсталляции базы данных</a></li>
 

@@ -368,7 +368,7 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
 
 <br/>
 
-### Проверям результаты копирования
+### Проверяем результаты копирования
 
     $ export ORACLE_SID=COPY12
 

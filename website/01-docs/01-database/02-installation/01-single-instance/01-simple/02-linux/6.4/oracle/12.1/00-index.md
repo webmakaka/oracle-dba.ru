@@ -71,7 +71,7 @@ permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/prepare-hdd-to-install-oracle/">Подготовка жестких дисков к инсталляции базы данных</a></li>
 
-	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/prepare-kernel-parameters-and-user-environments/">Конфигурурование системных пользователей, настройка параметров системы</a></li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/prepare-kernel-parameters-and-user-environments/">Конфигурирование системных пользователей, настройка параметров системы</a></li>
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/autostart-only-packages-what-needed/">Автозапуск только выбранных программ</a></li>
 
@@ -115,7 +115,7 @@ permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/
 	<li>Обновление базы патчами, рекомендованными Oracle (Демонстрировалось в предыдущей версии документа)</li>
 
 
-	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-restrict-root-access/">Запретить удаленное подключение к сереверу баз данных пользователем root</a></li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/oracle-restrict-root-access/">Запретить удаленное подключение к серверу баз данных пользователем root</a></li>
 
 	<li>Разрешить удаленное подключение к серверу по ssh только с определенных ip адресов, создав правила в iptables</li>
 

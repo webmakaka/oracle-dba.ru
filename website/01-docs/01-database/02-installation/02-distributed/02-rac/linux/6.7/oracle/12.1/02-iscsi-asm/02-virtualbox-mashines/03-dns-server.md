@@ -136,7 +136,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
     --vrdeaddress 192.168.1.5 \
     --vrdeport 3389
 
-### Показать результат созданной виртаульной машины:
+### Показать результат созданнойвиртуальной машины:
 
 
     $ VBoxManage showvminfo ${vm}

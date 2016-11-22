@@ -180,7 +180,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 --vrdeport порт к которому можно будет подключиться при старте виртуальной машины.  
 
 
-Показать результат созданной виртаульной машины:
+Показать результат созданнойвиртуальной машины:
 
     $ VBoxManage showvminfo ${vm}  | less
 
@@ -228,7 +228,7 @@ http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 В Windows для этого вполне подойдет Remote Desktop Connecton (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 
 
-Более подробный документ с созданием снапшотов и резервных коиий виртуальных машин смотри
+Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
 <a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 

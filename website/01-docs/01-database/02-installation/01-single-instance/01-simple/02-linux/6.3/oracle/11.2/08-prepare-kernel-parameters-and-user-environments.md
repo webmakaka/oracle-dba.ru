@@ -4,7 +4,7 @@ title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операц�
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/prepare-kernel-parameters-and-user-environments/
 ---
 
-# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Конфигурурование системных пользователей, настройка параметров системы
+# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Конфигурирование системных пользователей, настройка параметров системы
 
 
 Перед тем как вносить изменения в конфигурационные файлы, рекомедуется сделать их резервные копии:

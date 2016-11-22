@@ -140,7 +140,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 
 
-### Показать результат созданной виртаульной машины:
+### Показать результат созданнойвиртуальной машины:
 
 
     $ VBoxManage showvminfo ${vm}
