@@ -18,7 +18,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 
 <div>
-	<img src="http://img.fotografii.org/a3333333mail.gif" border="0">
+	<img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 <br/><br/>
@@ -146,7 +146,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 	<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/asm-disk-groups-creation/">Создание ASM дисковых групп</a></li>
 
 
-	<li><a href=" /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/">Инсталляция Oracle Database Software</a></li>
+	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/">Инсталляция Oracle Database Software</a></li>
 
 	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-instance-creation/">Создание экземпляра (instance) базы данных</a></li>
 

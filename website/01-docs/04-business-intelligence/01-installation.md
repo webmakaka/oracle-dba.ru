@@ -11,7 +11,7 @@ permalink: /docs/business-intelligence/installation/
 В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, пишите мне адрес эл. почты:
 
 <div>
-	<img src="http://img.fotografii.org/a3333333mail.gif" border="0">
+	<img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 

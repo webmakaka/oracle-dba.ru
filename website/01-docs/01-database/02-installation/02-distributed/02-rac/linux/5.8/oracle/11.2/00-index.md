@@ -17,7 +17,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 
 
 <div>
-	<img src="http://img.fotografii.org/a3333333mail.gif" border="0">
+	<img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 <br/><br/>
@@ -76,7 +76,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 
 <ul>
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/grid-installation/">Инсталляция Grid</a><br/></li>
-	<li><a href=" /database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-database-software-installation/">Инсталляция Oracle Database Software</a><br/></li>
+	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-database-software-installation/">Инсталляция Oracle Database Software</a><br/></li>
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-instance-creation/">Создание экземпляра (instance) базы данных</a><br/></li>
 </ul>
 

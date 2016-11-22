@@ -8,6 +8,8 @@ permalink: /database/backup-and-restore/rman/rman-catalog-installation/
 ### Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
 
 
+<br/>
+
 1) Устанавливаю 2 сервера как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 
@@ -132,12 +134,13 @@ $ sqlplus rman/rman123@rman12
     RMAN> register database;
 
 
+<br/>
+
 // Удалить регистрацию можно следующим образом
 
     RUN {
         SET DBID 3487575625;
         UNREGISTER DATABASE ORCL12 NOPROMPT;
-
     }
 
 <br/>
@@ -164,12 +167,12 @@ $ sqlplus rman/rman123@rman12
 
  Можно сделать экспорт схемы на сервере с каталогом.
 
- ### на piter
+### на piter
 
      $ expdb system/manager DIRECTORY=DATA_PUMP_DIR SCHEMAS=RMAN DUMPFILE=rman_dump.dmp LOGFILE=rman_log.log
 
 
- ### на moscow
+### на moscow
 
     $ rman target / catalog rman/rman123@rman12
 

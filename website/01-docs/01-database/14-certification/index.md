@@ -14,8 +14,8 @@ permalink: /database/certification/
 
 <div align="center">
 <p>
-<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/sql.jpg" border="0">
-<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration1.jpg" border="0">
+<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/sql.jpg" alt="sql" border="0">
+<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration1.jpg" alt="administration" border="0">
 
 </p>
 
@@ -23,7 +23,7 @@ permalink: /database/certification/
 
 <p>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration2.jpg" border="0">
+<img src="http://img.oradba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration2.jpg" alt="administration" border="0">
 
 </p>
 </div>

@@ -79,15 +79,15 @@ http://download.oracle.com/otn/nt/middleware/11g/111170/ofm_rcu_win_11.1.1.7.0_3
 
 <br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_01.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_02.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_04.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_05.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_06.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_07.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_08.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_09.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_10.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_11.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_12.png"><br/><br/>
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_13.png"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_01.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_02.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_04.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_05.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_06.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_07.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_08.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_09.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_10.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_11.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_12.png" alt="Repository Creation Utility"><br/><br/>
+<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/repository_creation_utility/Repository_Creation_Utility_13.png" alt="Repository Creation Utility">

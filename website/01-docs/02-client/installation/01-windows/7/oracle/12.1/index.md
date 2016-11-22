@@ -11,7 +11,7 @@ permalink: /client/installation/windows/7/oracle/12.1/
 
 
 <div>
-	<img src="http://img.fotografii.org/a3333333mail.gif" border="0">
+	<img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 
