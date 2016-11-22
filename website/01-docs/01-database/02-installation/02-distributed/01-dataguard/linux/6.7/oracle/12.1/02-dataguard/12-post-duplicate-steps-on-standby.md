@@ -15,7 +15,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/po
     SQL> alter system set LOG_ARCHIVE_CONFIG="DG_CONFIG=(master, slave)" scope=both;
 
 
-Сам я хрен знает сколько времени сидел из-за того, что неправильно указывал SERVICE. Вообщем значение SERVICE из tnanames.ora. Я же ставил в поле SERVICE - db_unique_name.
+Сам я хрен знает сколько времени сидел из-за того, что неправильно указывал SERVICE. В общем значение SERVICE из tnanames.ora. Я же ставил в поле SERVICE - db_unique_name.
 
     SQL> alter system set log_archive_dest_2="SERVICE=primary LGWR SYNC VALID_FOR=(ONLINE_LOGFILES,PRIMARY_ROLE) db_unique_name=master" scope=both;
 

@@ -167,7 +167,7 @@ permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example
 	*.undo_tablespace='UNDOTBS1'
 
 
-Вообщем обязательно нужно создать каталог для audit_file_dest
+В общем обязательно нужно создать каталог для audit_file_dest
 
 	$ mkdir -p /u01/oracle/admin/ORCL12/adump
 
