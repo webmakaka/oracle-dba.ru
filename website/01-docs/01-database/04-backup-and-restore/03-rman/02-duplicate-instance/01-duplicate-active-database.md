@@ -6,7 +6,7 @@ permalink: /database/backup-and-restore/rman/duplicate-active-database/
 
 ### Создание копии активной базы данных с помощью RMAN:
 
-Тоже самое, что и в предыдушем документе, тоже самое, что и при dataguard.
+Тоже самое, что и в предыдущем документе, тоже самое, что и при dataguard.
 
 Только RMAN script другой.
 
