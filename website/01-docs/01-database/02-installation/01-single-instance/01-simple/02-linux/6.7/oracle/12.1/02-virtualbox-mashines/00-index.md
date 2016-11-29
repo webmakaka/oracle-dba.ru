@@ -7,7 +7,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/v
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри
-<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 
 <br/>
@@ -182,7 +182,7 @@ Name:                eth0
 
 
 Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
-<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 <br/>
 

@@ -8,7 +8,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри
-<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 
 Задаем переменную с именем создаваемой виртуальной машины, чтобы в дальнейшем лишний раз не подставлять данное значение в команды.
@@ -229,7 +229,7 @@ http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 
 
 Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
-<a href="http://sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 
 Для нормальной работы в Windows также нужно будет установить VirtualBox Guest Additions  

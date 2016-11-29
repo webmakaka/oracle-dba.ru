@@ -27,8 +27,8 @@ permalink: /database/installation/
 (Использовать, если в самом документе отстуствует информация о том как это делается)
 
 <ul>
-	<li><a href="http://sysadm.ru/linux/virtual/virtualbox/installation/centos/6/">Инсталляция VirtualBox на Centos 6.4 Server без графического интерфейса (GUI)</a></li>
-	<li><a href="http://sysadm.ru/linux/virtual/virtualbox/installation/ubuntu/14.04/">Инсталляция VirtualBox в операционной системе Ubuntu в консоли</a></li>
+	<li><a href="//sysadm.ru/linux/virtual/virtualbox/installation/centos/6/">Инсталляция VirtualBox на Centos 6.4 Server без графического интерфейса (GUI)</a></li>
+	<li><a href="//sysadm.ru/linux/virtual/virtualbox/installation/ubuntu/14.04/">Инсталляция VirtualBox в операционной системе Ubuntu в консоли</a></li>
 
 	<li><a href="/database/installation/virtualbox-mashines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Windows</a></li>
 
