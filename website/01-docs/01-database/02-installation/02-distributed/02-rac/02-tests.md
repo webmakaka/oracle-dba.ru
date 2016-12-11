@@ -4,7 +4,7 @@ title:  Некоторые запросы и команды
 permalink: /database/installation/distributed/rac/tests/
 ---
 
-### Некоторые запросы и команды
+# Некоторые запросы и команды
 
 <br/>
 

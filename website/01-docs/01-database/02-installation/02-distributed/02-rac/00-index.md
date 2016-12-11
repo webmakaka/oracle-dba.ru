@@ -4,6 +4,8 @@ title: Инсталляция Oracle RAC
 permalink: /database/installation/distributed/rac/
 ---
 
+# Инсталляция Oracle RAC
+
 <br/>
 
 RAC - несколько инстансов на разных серверах при общем storage. Количество инстансов может меняться. Можно добавлять и удалять.

@@ -5,7 +5,7 @@ permalink: /docs/architecture/schemas/sessions/
 ---
 
 
-<h2>Сессии к базе данных Oracle</h2>
+# Сессии к базе данных Oracle
 
 
 <h3>Список:</h3>

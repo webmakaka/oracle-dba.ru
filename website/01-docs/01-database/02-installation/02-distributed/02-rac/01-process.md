@@ -5,7 +5,7 @@ permalink: /database/installation/distributed/rac/process/
 ---
 
 
-#№№ Процессы Oracle RAC
+# Процессы Oracle RAC
 
 <br/>
 
