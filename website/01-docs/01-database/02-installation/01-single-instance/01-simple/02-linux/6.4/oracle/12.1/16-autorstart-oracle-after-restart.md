@@ -27,18 +27,22 @@ permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/a
 
 ### Создание скрипта, стартующего и останавливающего базу данных при старте и перезапуске операционной системы
 
-
+<!--
 Скрипт следующего содержания мы добавим в автозагрузку (выполнив команды после данного скрипта):
 
 
-<script src="http://gist-it.appspot.com/https://github.com/oradev/oracle-dba-scripts/blob/master/oracle_12R1_startup_and_shutdown_script">
-</script>
+ <script src="http://gist-it.appspot.com/https://github.com/oradev/oracle-dba-scripts/blob/master/oracle_12R1_startup_and_shutdown_script">
+</script> -->
 
 
-<br/><br/>
 
 	# cd /tmp
-	# wget -O startupOracleDatabase12R1 https://github.com/oradev/oracle-dba-scripts/raw/master/oracle_12R1_startup_and_shutdown_script
+
+    # vi startupOracleDatabase12R1
+
+https://bitbucket.org/plsql/oracle-dba-startup-and-shutdown-scripts/raw/b6be770160490abcc906953237985ddcfa2c7224/oracle_12R1_startup_and_shutdown_script
+
+	<!-- # wget -O startupOracleDatabase12R1 https://github.com/oradev/oracle-dba-scripts/raw/master/oracle_12R1_startup_and_shutdown_script -->
 	# mv startupOracleDatabase12R1 /etc/rc.d/init.d/
 	# chmod +x /etc/rc.d/init.d/startupOracleDatabase12R1
 	# chkconfig --add startupOracleDatabase12R1

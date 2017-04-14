@@ -11,22 +11,22 @@ permalink: /scripts/oracle-dba-scripts/
 Коллекция скриптов от Sr.Oracle DBA
 
 
-https://github.com/plsql/DBA-Scripts-Archive-for-Oracle
+https://bitbucket.org/plsql/dba-scripts-archive-for-oracle
 
 
 <br/>
 
 ### Другие авторы:
 
-https://github.com/plsql/OracleScripts
+https://bitbucket.org/plsql/oraclescripts
 
-https://github.com/plsql/oracle_sql_scripts
+https://bitbucket.org/plsql/oracle_sql_scripts
 
-https://github.com/plsql/Oracle-DBA-Scripts
+https://bitbucket.org/plsql/oracle-dba-scripts
 
-https://github.com/plsql/Oracle-DBA-Scripts-1
+https://bitbucket.org/plsql/oracle-dba-scripts-1
 
-https://github.com/plsql/OracleDBA
+https://bitbucket.org/plsql/oracledba
 
 
 
