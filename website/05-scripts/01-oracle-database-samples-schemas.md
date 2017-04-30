@@ -6,7 +6,7 @@ permalink: /scripts/oracle-database-samples-schemas/
 
 <br/>
 
-### Демонстрационные схемы Oracle
+# Демонстрационные схемы Oracle
 
 SCOTT/TIGER, HR/HR etc.
 
