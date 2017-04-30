@@ -4,6 +4,9 @@ title: Коллекция скриптов для Oracle DBA
 permalink: /scripts/oracle-dba-scripts/
 ---
 
+# Коллекция скриптов для Oracle DBA
+
+
 <br/>
 
 ### [Jeffrey M. Hunter]
