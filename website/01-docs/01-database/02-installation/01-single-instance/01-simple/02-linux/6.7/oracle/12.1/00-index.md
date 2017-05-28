@@ -135,9 +135,9 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-restrict-root-access/">Запретить удаленное подключение к серверу баз данных пользователем root</a></li>
 
-	<li>Разрешить удаленное подключение к серверу по ssh только с определенных ip адресов, создав правила в iptables</li>
+	<li>Разрешить удаленное подключение к серверу по ssh только с определенных ip адресов, создав правила в iptables (возможное улучшение, здесь не описывается)</li>
 
-	<li>Блокировать возможность подключения к серверу при вводе неправильного пароля более 5 раз (Fail2ban)</li>
+	<li>Блокировать возможность подключения к серверу при вводе неправильного пароля более 5 раз (Fail2ban) (возможное улучшение, здесь не описывается)</li>
 </ul>
 
 
@@ -167,10 +167,20 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 
 
 <br/><br/>
-<h2>Подключиться к базе с клиентского компьютера:</h2>
+
+## Подключиться к базе с клиентского компьютера:
 
 <ul>
 
 	<li><a href="/client/installation/windows/7/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
 
 </ul>
+
+
+<br/><br/>
+
+<div style="padding:10px; border:thin solid black;" align="center">
+
+  <h3>Есди есть предложения по улучшению, пишите!</h3>
+
+</div>
