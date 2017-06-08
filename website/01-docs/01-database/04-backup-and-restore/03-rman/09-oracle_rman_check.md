@@ -4,7 +4,7 @@ title: Проверки с помощью RMAN
 permalink: /database/backup-and-restore/rman/oracle-rman-check/
 ---
 
-### Проверки с помощью RMAN
+# Проверки с помощью RMAN
 
 
 You can get detailed information using PREVIEW like which files the backup set contains, which archivelogs will be used, etc...
@@ -51,7 +51,6 @@ With VALIDATE you can be sure that you will be able to use that backup to restor
     RMAN> CROSSCHECK archivelog all;
     RMAN> CROSSCHECK backup of controlfile;
     RMAN> CROSSCHECK backup of database;
-
 
 
 <br/>

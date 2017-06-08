@@ -4,8 +4,7 @@ title: Основные view RMAN
 permalink: /database/backup-and-restore/rman/rman-view/
 ---
 
-
-### Основные view RMAN
+# Основные view RMAN
 
     select * from v$database; --
     select * from v$recovery_file_dest; -- месторасположение FRA.

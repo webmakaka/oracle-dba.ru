@@ -125,7 +125,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 <ul>
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/autorstart-oracle-after-restart/">Настройка автозапуска Oracle после перезагрузки</a></li>
 
-	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-setup-fast-recovery-area-params/">Задание параметров FAST RECOVERY AREA</a></li>
+	<li><a href="/database/iaclnstallation/single-instance/simple/linux/6.7/oracle/12.1/oracle-setup-fast-recovery-area-params/">Задание параметров FAST RECOVERY AREA</a></li>
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-cold-backup/">Создание резервной копии созданной базы данных (холодный backup)</a></li>
 

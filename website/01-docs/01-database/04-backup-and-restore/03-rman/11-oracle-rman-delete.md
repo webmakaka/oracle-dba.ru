@@ -5,7 +5,7 @@ permalink: /database/backup-and-restore/rman/oracle-rman-delete/
 ---
 
 
-<h2>Удаление объектов RMAN (Recovery Manager)</h2>
+# Удаление объектов RMAN (Recovery Manager)
 
 
 // Удалить устаревшие бэкапы с подтверждением удаления

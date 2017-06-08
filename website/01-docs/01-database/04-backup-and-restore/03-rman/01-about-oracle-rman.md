@@ -4,8 +4,7 @@ title: Утилита RMAN (Recovery Manager)
 permalink: /database/backup-and-restore/rman/about-oracle-rman/
 ---
 
-
-## Утилита RMAN (Recovery Manager)
+# Утилита RMAN (Recovery Manager)
 
 <br/>
 

@@ -5,7 +5,7 @@ permalink: /database/backup-and-restore/rman/change-db-unique-name-in-catalog/
 ---
 
 
-### Поменять db_unique_name в RMAN каталоге (нужно, если поменялось db_unique_name инстанса)
+# Поменять db_unique_name в RMAN каталоге (нужно, если поменялось db_unique_name инстанса)
 
 Сначала нужно поменять уникальное имя инстанса базы.
 

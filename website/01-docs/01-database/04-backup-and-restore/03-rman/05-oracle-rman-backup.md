@@ -4,7 +4,7 @@ title: Создание резервных копий с помощью утил
 permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 ---
 
-## Создание резервных копий с помощью утилиты RMAN (Recovery Manager)
+# Создание резервных копий с помощью утилиты RMAN (Recovery Manager)
 
 
 ### Бекапы могут храниться в backup set (по умолчанию) и image copies:

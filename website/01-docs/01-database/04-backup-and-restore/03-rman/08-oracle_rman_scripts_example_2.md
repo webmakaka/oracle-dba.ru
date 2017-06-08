@@ -4,10 +4,15 @@ title: Скрипт RMAN для создания бекапов. Пример 2.
 permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example2/
 ---
 
-### Скрипт RMAN для создания бекапов. Пример 2. Бекап в каталог:
+# Скрипт RMAN для создания бекапов.
 
-База 12С. Работает в режиме работы ARCHIVELOG
+### Пример 2. Бекап в каталог:
 
+<br/>
+
+**База 12С. Работает в режиме работы ARCHIVELOG**
+
+<br/>
 
 	$ mkdir -p /tmp/backups/ORCL12/{DATAFILE,ARCHIVELOG,CONTROLFILE,PARAMETERFILE}
 

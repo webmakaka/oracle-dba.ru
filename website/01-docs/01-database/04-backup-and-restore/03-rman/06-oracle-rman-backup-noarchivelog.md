@@ -4,7 +4,7 @@ title: Создание резервных копий с помощью утил
 permalink: /database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/
 ---
 
-### Создание резервных копий с помощью утилиты RMAN (NOARCHIVELOG)
+# Создание резервных копий с помощью утилиты RMAN (NOARCHIVELOG)
 
 <br/>
 

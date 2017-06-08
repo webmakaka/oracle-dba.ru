@@ -4,9 +4,15 @@ title: Скрипт RMAN для создания бекапов. Пример 1.
 permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example1/
 ---
 
-### Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA
+# Скрипт RMAN для создания бекапов.
 
-База в режиме работы ARCHIVELOG
+### Пример 1. Бекап в FRA
+
+<br/>
+
+**База в режиме работы ARCHIVELOG**
+
+<br/>
 
 <br/>
 
@@ -85,3 +91,31 @@ permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example
 <br/>
 
     RMAN> list backupset summary;
+
+
+<br/>
+<br/>
+
+
+### ALTER SYSTEM SWITCH LOGFILE vs ALTER SYSTEM ARCHIVE LOG CURRENT
+
+В чём состоит разница между командами ALTER SYSTEM SWITCH LOGFILE и ALTER SYSTEM ARCHIVE LOG CURRENT?
+На первый взгляд, эти команды выполняют одно и то же:
+
+1) Вызывают событие checkpoint
+2) Процесс LGWR перестаёт писать в текущий лог и начинает писать в следующий
+3) Процесс ARCH архивирует старый лог
+
+Но делают они это немного по-разному.
+
+**ALTER SYSTEM SWITCH LOGFILE** -
+Работает асинхронно, и возвращает управление вызвавшей сессии до того, как ARCH заархивирует лог. В случае, если используется RAC, переключит лог только на текущем экземпляре.
+
+**ALTER SYSTEM ARCHIVE LOG CURRENT** -
+Дожидается завершения архивирования и возвращает управление только когда все 3 пункта выполнены. Если используется RAC, то переключит и заархивирует логи на всех экземплярах.
+
+
+Основная опасность при использовании ALTER SYSTEM SWITCH LOGFILE в скриптах (в первую очередь это относится к скриптам резервного копирования с помощью RMAN) - вероятность того, что в силу асинхронности этой команды управление будет передано скрипту сразу и скрипт будет выполняться дальше, хотя архивирование ещё не завершено. Таким образом, безопаснее всегда использовать ALTER SYSTEM ARCHIVE LOG CURRENT.
+
+
+https://dba-notes.org/2011/11/18/alter-system-switch-logfile-vs-alter-system-archive-log-current/

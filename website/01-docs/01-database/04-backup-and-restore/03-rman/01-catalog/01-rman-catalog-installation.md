@@ -5,7 +5,7 @@ permalink: /database/backup-and-restore/rman/rman-catalog-installation/
 ---
 
 
-### Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
+# Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
 
 
 <br/>

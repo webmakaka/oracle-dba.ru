@@ -4,8 +4,7 @@ title: Backup и Restore Oracle DataBase с помощью RMAN
 permalink: /database/backup-and-restore/rman/
 ---
 
-
-## Backup и Restore Oracle DataBase с помощью RMAN
+# Backup и Restore Oracle DataBase с помощью RMAN
 
 <br/>
 

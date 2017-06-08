@@ -5,8 +5,7 @@ permalink: /database/backup-and-restore/rman/oracle-rman-restore-and-recover/
 ---
 
 
-## Восстановление из резервной копий с помощью утилиты RMAN (Recovery Manager)
-
+# Восстановление из резервной копий с помощью утилиты RMAN (Recovery Manager)
 
 ### Получить информацию об имеющихся бекапах.
 

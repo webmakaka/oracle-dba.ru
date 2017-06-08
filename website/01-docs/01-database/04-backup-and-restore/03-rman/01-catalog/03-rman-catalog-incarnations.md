@@ -5,7 +5,7 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
 ---
 
 
-### Инкарнации базы данных
+# Инкарнации базы данных
 
 
     $ rman target / catalog rman/rman123@rman12
