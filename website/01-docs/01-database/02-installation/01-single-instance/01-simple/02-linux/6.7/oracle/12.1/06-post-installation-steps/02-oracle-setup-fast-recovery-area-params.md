@@ -7,10 +7,11 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Задание параметров FAST RECOVERY AREA
 
 
-
+<br/>
 
 Fast Recovery Area (FRA) - это пространство для резервных копий базы данных и файлов архивных журналов (если включен рехим создания архивов redo журналов). Необходимо следить за тем, чтобы у базы данных оставалось место для записи в него своих данных. При необходимости, его можно увеличивать и/или очищать от устаревших данных. Чистить можно только средствами RMAN.
 
+<br/>
 
 	$ sqlplus / as sysdba
 

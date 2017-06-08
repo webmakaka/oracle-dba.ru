@@ -102,9 +102,9 @@ permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example
 В чём состоит разница между командами ALTER SYSTEM SWITCH LOGFILE и ALTER SYSTEM ARCHIVE LOG CURRENT?
 На первый взгляд, эти команды выполняют одно и то же:
 
-1) Вызывают событие checkpoint
-2) Процесс LGWR перестаёт писать в текущий лог и начинает писать в следующий
-3) Процесс ARCH архивирует старый лог
+1) Вызывают событие checkpoint  
+2) Процесс LGWR перестаёт писать в текущий лог и начинает писать в следующий  
+3) Процесс ARCH архивирует старый лог  
 
 Но делают они это немного по-разному.
 
