@@ -268,4 +268,15 @@ https://192.168.1.10:1158/em
 <img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_22.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 <img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_23.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
+
 <br/><br/>
+<br/><br/>
+
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>

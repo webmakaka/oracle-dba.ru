@@ -13,3 +13,17 @@ http://www.oracle.com/technetwork/database/enterprise-edition/documentation/data
 
 <h3>Oracle Database Quick Installation Guide</h3>
 http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm
+
+
+
+<br/><br/>
+<br/><br/>
+
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>

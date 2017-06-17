@@ -26,3 +26,16 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/c
 Далее нужно назначить владельцем скачанных архивов пользователя oracle11
 
 	# chown -R oracle11:oinstall /tmp/p10404530_112030_Linux-x86-64_*
+
+
+<br/><br/>
+<br/><br/>
+
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>

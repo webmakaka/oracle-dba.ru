@@ -195,3 +195,17 @@ kernel.shmmax = RAM (in bytes) / 2
 Применить переменные, определенные в файле .bash_profile к текущей сессии bash можно следующей командой:
 
 	# source ~/.bash_profile
+
+
+
+<br/><br/>
+<br/><br/>
+
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>

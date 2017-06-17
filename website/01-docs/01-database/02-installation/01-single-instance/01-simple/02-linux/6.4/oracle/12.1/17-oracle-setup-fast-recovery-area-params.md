@@ -49,3 +49,17 @@ Fast Recovery Area (FRA) - это пространство для резервн
 	------------------------------------ ----------- ------------------------------
 	db_recovery_file_dest		     string	 /u03/oracle/oradata/orcl/backups
 	db_recovery_file_dest_size	     big integer 20G
+
+
+
+<br/><br/>
+<br/><br/>
+
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>

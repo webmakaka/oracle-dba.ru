@@ -6,3 +6,4 @@ permalink: robots.txt
 User-agent: *
 Allow: /
 Host: oracle-dba.ru
+Sitemap: http://oracle-dba.ru/sitemap.xml

@@ -130,3 +130,17 @@ unzip linuxamd64_12c_database_2of2.zip
 <br/><br/>
 
 <img src="http://img.oradba.net/img/oracle/database/simple/12.1/software/oracle12R1_database_software_installation_15.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+
+
+
+<br/><br/>
+<br/><br/>
+
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>
