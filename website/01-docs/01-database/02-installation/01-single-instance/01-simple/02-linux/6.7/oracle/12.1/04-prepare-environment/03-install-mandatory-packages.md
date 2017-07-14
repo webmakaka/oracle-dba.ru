@@ -70,8 +70,9 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
 
 ### Инсталляция обязательных пакетов
 
+<br/>
 
-======================================
+<div style="padding:10px; border:thin solid black;">
 
 Offtopic: (Рекомендуется пропустить! Просто для информации)
 
@@ -86,10 +87,12 @@ Offtopic: (Рекомендуется пропустить! Просто для 
 
 Offtopic: END
 
-======================================
+</div>
+
+<br/><br/>
 
 
-Следующие пакеты должны быть установлены: (http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
+Следующие пакеты должны быть установлены:   (http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
 
 binutils-2.20.51.0.2-5.11.el6 (x86_64)<br/>
 compat-libcap1-1.10-1 (x86_64)<br/>
@@ -117,6 +120,7 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 
 <br/><br/>
+
 Посмотреть пакеты в репозитории можно следующей командой:
 
 	# yum search all binutils
