@@ -45,8 +45,27 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 	$ sudo apt-get install -y gdm
 
 
-<br/><img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation"><br/>
+<br/>
 
+<img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
+
+<br/>
+
+
+<br/>
+
+Думаю, лучше выбрать gdm (lightdm в последний раз у меня не захотел рабоать).
+
+<br/>
+
+Если что можно потом переключиться командами:
+
+<br/>
+
+    # dpkg-reconfigure gdm3
+    # dpkg-reconfigure lightdm
+
+<br/>
 
 ### Если выбран gdm
 
@@ -66,6 +85,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 	###########################
 
 
+<br/>
 
 ### Если выбран lightgdm
 
@@ -83,10 +103,29 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 	###########################
 
+
+<!--
+<br/>
+
+Возможно, что достаточно перестартовать сервисы командами:
+
+    # service gdm status
+
+    # service gdm restart (или уже даже # service gdm3 restart)
+
+<br/>
+
+Если выбран lightdm
+
+    # service gdm lightgdm
+
+Если не поможет, то: -->
+
 <br/>
 
 	# reboot
 
+<br/>
 
 ### Команды проверки
 
@@ -138,6 +177,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 -- если не установили ранее, установите пакет xdpyinfo. Он нужен для отображения окон на клиентской машине.
 
+<br/>
 
 	# yum install -y xdpyinfo
 
