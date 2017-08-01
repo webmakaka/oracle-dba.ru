@@ -6,8 +6,9 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 # <a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server
 
+<br/>
 
-О том как инсталлировал virtualbox, переменные и каталоги, смотри
+О том как инсталлировал virtualbox, переменные и каталоги, смотри  
 <a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 

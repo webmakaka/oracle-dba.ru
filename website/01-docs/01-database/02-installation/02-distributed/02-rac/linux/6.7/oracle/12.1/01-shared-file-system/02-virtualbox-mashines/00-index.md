@@ -6,8 +6,9 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Конфиги виртуальных машин
 
+<br/>
 
-О том как инсталлировал virtualbox, переменные и каталоги, смотри здесь.
+О том как инсталлировал virtualbox, переменные и каталоги, смотри здесь.  
 http://sysadm.ru/linux/virtual/virtualbox/
 
 
