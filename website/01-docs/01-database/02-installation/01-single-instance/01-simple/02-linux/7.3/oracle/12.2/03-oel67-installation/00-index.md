@@ -22,6 +22,15 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/o
 При старте, нужно успеть нажать tab и дописать linux text. Иначе установка стартует в графическом режиме и в конечном итоге GUI будет также установлен на сервере.
 
 
+2) 1 --> 8 --> 33
+5) 1 --> c --> 2 --> c --> 1 --> c
+8)
+
+b
+
+
+
+
 <img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_01.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>
 
 <img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/01-oel67-installation/oel67-installation_02.png" border="0" alt="Инсталляция Oracle linux 6.7"><br/><br/>

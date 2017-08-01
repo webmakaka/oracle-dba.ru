@@ -25,9 +25,42 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/n
 
 <br/>
 
-    # vi /etc/sysconfig/network-scripts/ifcfg-eth0
+    # cd /etc/sysconfig/network-scripts/
+    # vi ifcfg-enp0s3
 
 <br/>
+
+В последней строке заменил
+
+ONBOOT=no
+
+на
+
+ONBOOT="yes"
+
+И перестартовал сетевой сервис
+
+    # service network restart
+
+<br/>
+
+    # ping ya.ru (OK)
+
+<br/>
+
+Нет утилит для работы с сетью. Ставлю.
+
+    # yum install -y iputils-ping net-tools
+
+<br/>
+
+    # cd /etc/sysconfig/network-scripts/
+    # cp ifcfg-enp0s3 ifcfg-enp0s3.orig
+
+
+<br/>
+
+    # vi ifcfg-enp0s3
 
     DEVICE="eth0"
     ONBOOT="yes"
@@ -37,8 +70,8 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/n
     GATEWAY=192.168.1.1
 
 
-
 <br/><br/>
+
 Если вы подключились к серверу по RDP, я бы рекомендовал после ввода настроек сетевого интерфейса, перестартовать службу network и подключиться к серверу по ssh. И дальнейшие команды выполнять командами copy + paste.
 
 <br/>

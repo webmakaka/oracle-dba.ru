@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux 6.7 - Создание виртуальной машины VirtualBox для инсталляции базы данных
-permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/
+title: Oracle DataBase 12.2 - Oracle Linux 7.3 - Создание виртуальной машины VirtualBox для инсталляции базы данных
+permalink: /database/installation/single-instance/simple/oel/7.3/oracle/db/12.2/
 ---
 
 
@@ -17,7 +17,7 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/
 
 <br/>
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных
+# <a href="/database/installation/single-instance/simple/oel/7.3/db/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.3]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных
 
 
 
@@ -25,9 +25,6 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри  
 <a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
-
-
-
 
 
 <br/>
@@ -38,7 +35,7 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/
 
 Задаем имя виртуальной машине:
 
-    $ vm=vm_oel6.7_oracle12.1
+    $ vm=vm_oel7.3_oracle_db_12.2
 
 
 Создаем каталоги для виртуальной машины  и для snapshots
@@ -123,7 +120,7 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/
     --port 0 \
     --device 0 \
     --type dvddrive \
-    --medium  /mnt/dsk1/oracle/OracleLinux6U7/x64/OracleLinux-R6-U7-Server-x86_64-dvd.iso
+    --medium  /mnt/dsk1/oracle/OracleLinux/7.3/Oracle_Linux-7.3.iso
 
 
 ### Подключение сетевых интерфейсов:
@@ -213,6 +210,19 @@ Name:                eth0
 
 
 Подключаюсь по RDP к виртуальной машине. В Windows это консоль для удаленного подключения mstsc, в linux remmina или rdesktop.
+
+
+Делаю в Ubuntu 12.04
+
+    $ sudo apt-get install -y rdesktop
+
+<br/>
+
+    $ rdesktop \
+    -r sound:local \
+    -k common  \
+    -g  1600x1024 \
+    192.168.1.5:3389
 
 
 В первом окне нажимаю tab и дописываю linux text, чтобы инсталляция проходила в удобном для меня режиме. Устанавливать операционную следует на 1 диск.
