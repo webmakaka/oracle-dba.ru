@@ -22,7 +22,7 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/o
 ### Проверка конфигурации перед инсталляцией:
 
 
-	$ cd /tmp/oracle/12.1/database/
+	$ cd /distrib/oracle/12.2/database/
 
 
 <br/>

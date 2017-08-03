@@ -26,7 +26,13 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/n
 <br/>
 
     # cd /etc/sysconfig/network-scripts/
-    # vi ifcfg-enp0s3
+    # cp ifcfg-enp0s3 ifcfg-enp0s3.orig
+    # cp ifcfg-enp0s8 ifcfg-enp0s8.orig
+
+
+в
+
+    # vi ifcfg-enp0s3 и ifcfg-enp0s8
 
 <br/>
 
@@ -50,12 +56,39 @@ ONBOOT="yes"
 
 Нет утилит для работы с сетью. Ставлю.
 
-    # yum install -y iputils-ping net-tools
+    # yum install -y net-tools
 
 <br/>
 
-    # cd /etc/sysconfig/network-scripts/
-    # cp ifcfg-enp0s3 ifcfg-enp0s3.orig
+    # ifconfig enp0s3
+    возвращает, что IP у меня 192.168.56.101
+
+<br/>
+
+
+Далее подключаюсь уже к серверу по SSH и работаю с ним удаленно:
+
+    $ ssh root@192.168.56.101
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------
+
 
 
 <br/>
@@ -89,26 +122,24 @@ ONBOOT="yes"
 
     $ ssh root@192.168.1.11
 
+
+-------------------------------------------------------------------------
+
+
+
+
 <br/>
 
 ### Продолжаем настраивать параметры сетевого окружения
 
 Необходимо выбрать подходящее имя для сервера, которое бы отражало его роль и назначение в сети.
 
-Для этого, с помощью редактора (например, vi) отредактируйте файл /etc/sysconfig/network
 
-<br/><br/>
+    # hostnamectl set-hostname oracle12serv.localdomain
 
-Не рекомендуется в hostname использовать знак нижнего подчеркивания (_).(Enterprise Manager и другие web приложения не смогут подключиться к базе по http/https)
+Проверка:
 
-
-    # vi /etc/sysconfig/network
-
-<br/>
-
-    NETWORKING=yes
-    NETWORKING_IPV6=no
-    HOSTNAME=oracle12serv.localdomain
+    # hostnamectl
 
 
 <br/>
@@ -117,8 +148,7 @@ ONBOOT="yes"
 
 <br/>
 
-
-    nameserver 192.168.1.1
+    nameserver 192.168.56.1
 
 
 <br/>
@@ -132,9 +162,4 @@ ONBOOT="yes"
     127.0.0.1 localhost.localdomain localhost
 
     ## IPs Public Network (hosts file, DNS)
-    192.168.1.11 oracle12serv.localdomain oracle12serv
-
-
-Проверяем правильно ли все работает.
-
-    # ping google.com
+    192.168.56.101 oracle12serv.localdomain oracle12serv

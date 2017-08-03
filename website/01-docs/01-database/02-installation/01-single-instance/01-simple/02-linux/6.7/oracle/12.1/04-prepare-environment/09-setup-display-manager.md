@@ -13,8 +13,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/s
 192.168.1.5 -  ip адрес компьютера, с которого происходит процесс управления установкой.<br/>
 192.168.1.11 - ip адрес сервера<br/>
 
-
-
 <br/>
 
 ## Если установка происходит с Windows машины
@@ -28,8 +26,11 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 Далее, необходимо настроить правила доступа.<br/>
 В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)
 
+<br/>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+<div align="center">
+    <img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+</div>
 
 
 <br/>
@@ -47,42 +48,23 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
+<div align="center">
+    <img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
+</div>
+
+<br/>
+<br/>
+
+Думаю, лучше выбрать lightdm  (gdm в последний раз у меня не захотел рабоать). Точнее, я настроил gdm также как описано здесь, далее копался хрен знает сколько времени и потом решил попробоваь lightdm. После перезагрузки service стал слушать порт 6000).
 
 <br/>
 
+Если что, можно потом переключиться командами:
 
 <br/>
 
-Думаю, лучше выбрать gdm (lightdm в последний раз у меня не захотел рабоать).
-
-<br/>
-
-Если что можно потом переключиться командами:
-
-<br/>
-
-    # dpkg-reconfigure gdm3
+    # dpkg-reconfigure gdm
     # dpkg-reconfigure lightdm
-
-<br/>
-
-### Если выбран gdm
-
-	# vi /etc/gdm/custom.conf
-
-<br/>
-
-	###########################
-	[xdmcp]
-
-	[chooser]
-
-	[security]
-	DisallowTCP=false
-
-	[debug]
-	###########################
 
 
 <br/>
@@ -103,6 +85,39 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 	###########################
 
+<br/>
+
+### Если выбран gdm
+
+	# vi /etc/gdm/custom.conf
+
+<br/>
+
+Добавляю в блоки:
+
+    [security]
+    DisallowTCP=false
+
+    [xdmcp]
+    Enable=true
+
+<!-- <br/>
+
+	###########################
+	[xdmcp]
+    Enable=true
+
+	[chooser]
+
+	[security]
+	DisallowTCP=false
+
+	[debug]
+	########################### -->
+
+
+
+
 
 <!--
 <br/>
@@ -121,14 +136,27 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 Если не поможет, то: -->
 
+
 <br/>
 
-	# reboot
+    # sudo restart lightdm
+
+
+или
+
+    # service gdm restart
 
 <br/>
 
 ### Команды проверки
 
+    $ ps ax | grep dm
+    $ ps lf -C Xorg
+
+
+Должна быть строчка "listen tcp"
+
+<br/>
 
 	$ sudo apt-get install -y nmap nc
 
@@ -199,4 +227,8 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
+<br/>
+
+<div align="center">
+    <img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
+</div>

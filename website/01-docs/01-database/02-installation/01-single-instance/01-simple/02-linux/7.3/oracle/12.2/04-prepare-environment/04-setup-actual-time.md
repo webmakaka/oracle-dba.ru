@@ -20,6 +20,14 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/s
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Настройка сервисов отвечающих за синхронизацию времени
 
 
+
+=============================================
+
+Пока не стал настраивать !!!!
+
+=============================================
+
+
 Указать доступные ntp сервера
 
 

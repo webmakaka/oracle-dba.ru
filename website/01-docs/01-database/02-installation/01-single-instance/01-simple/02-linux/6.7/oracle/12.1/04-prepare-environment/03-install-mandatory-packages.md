@@ -27,7 +27,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
 	# vi /etc/yum.repos.d/oracleLinuxRepoDVD.repo
 
 
-
 <br/>
 
     [OEL67_DVD]
@@ -186,6 +185,8 @@ rlwrap - пакет, который позволяет хранить истор
 
 <br/>
 
+**Если сайт будет недоступен, можно попробовать вариант установки rlwrap из github ниже, но он пока не тестировался !!!**
+
 	# cd /tmp
 	# wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
 
@@ -195,3 +196,24 @@ rlwrap - пакет, который позволяет хранить истор
 	# cd rlwrap-0.37
 	# ./configure
 	# make && make check && make install
+
+
+<br/>
+
+### Установка rlwrap из github (не тестировалось!)
+
+
+<br/>
+
+    # yum install -y git
+    # cd /tmp
+    # git clone --depth=1 https://github.com/hanslub42/rlwrap
+
+    # cd rlwrap/
+
+
+    # yum install automake
+    # autoreconf --install
+    # automake  --add-missing
+    # ./configure
+    # make && make check && make install

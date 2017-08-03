@@ -125,6 +125,71 @@ permalink: /database/installation/single-instance/simple/oel/7.3/oracle/db/12.2/
 
 ### Подключение сетевых интерфейсов:
 
+**Вариант 1:**
+
+Вариант настройки, когда сервер будет работать на моем компьютере и не должен быть доступен за ее пределами.
+
+
+Понадобился 1 hostonly адаптер для подключения к виртуальной машине по SSH с хоста.
+
+    $ VBoxManage modifyvm ${vm} \
+    --nictype2 82540EM \
+    --nic1 hostonly \
+    --hostonlyadapter1 vboxnet0
+
+
+И 1  адаптер с NAT, чтобы компьютер мог выходить в интернет.
+
+    $ VBoxManage modifyvm ${vm} \
+    --nictype1 82540EM \
+    --nic2 nat
+
+<br/>
+
+ifconfig на хост машине должен выводить vboxnet0.
+
+vboxnet0 - виртуальный адаптер хостовой машины.
+
+Если виртуального адаптера нет, нуно его самостоятельно создать.
+
+
+    $ VBoxManage hostonlyif create
+
+<br/>
+
+    $ vboxmanage list hostonlyifs
+    Name:            vboxnet0
+    GUID:            786f6276-656e-4074-8000-0a0027000000
+    DHCP:            Disabled
+    IPAddress:       192.168.56.1
+    NetworkMask:     255.255.255.0
+    IPV6Address:
+    IPV6NetworkMaskPrefixLength: 0
+    HardwareAddress: 0a:00:27:00:00:00
+    MediumType:      Ethernet
+    Status:          Down
+    VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+Присвоить ip, если у него нет.
+
+    $ VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.1
+
+Стартовать, если нужно
+
+    $ sudo ifconfig vboxnet0 up
+
+
+Если что-то пошло не так, можно удалить созданный интерфейс командой:
+
+    $ VBoxManage modifyvm ${vm} --nic2 none
+
+
+<br/>
+
+**Вариант 2:**
+
+С обычным вариантом, когда сервер доступен в сети. Имеет свой IP адрес.
+
 
 Наберите команду;
 

@@ -44,32 +44,34 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/p
 <br/>
 
 
-	WARNING: DOS-compatible mode is deprecated. It's strongly recommended to
-	         switch off the mode (command 'c') and change display units to
-	         sectors (command 'u').
+# fdisk /dev/sdb
 
-	Command (m for help): c
-	DOS Compatibility flag is not set
 
-	Command (m for help): u
-	Changing display/entry units to sectors
+    Welcome to fdisk (util-linux 2.23.2).
 
-	Command (m for help): n
-	Command action
-	   e   extended
-	   p   primary partition (1-4)
-	p
-	Partition number (1-4): 1
-	First sector (2048-83886079, default 2048):
-	Using default value 2048
-	Last sector, +sectors or +size{K,M,G} (2048-83886079, default 83886079):
-	Using default value 83886079
+    Changes will remain in memory only, until you decide to write them.
+    Be careful before using the write command.
 
-	Command (m for help): w
-	The partition table has been altered!
+    Device does not contain a recognized partition table
+    Building a new DOS disklabel with disk identifier 0x32ddb4e2.
 
-	Calling ioctl() to re-read partition table.
-	Syncing disks.
+    Command (m for help): n
+    Partition type:
+       p   primary (0 primary, 0 extended, 4 free)
+       e   extended
+    Select (default p): p
+    Partition number (1-4, default 1): 1
+    First sector (2048-83886079, default 2048):
+    Using default value 2048
+    Last sector, +sectors or +size{K,M,G} (2048-83886079, default 83886079):
+    Using default value 83886079
+    Partition 1 of type Linux and of size 40 GiB is set
+
+    Command (m for help): w
+    The partition table has been altered!
+
+    Calling ioctl() to re-read partition table.
+    Syncing disks.
 
 
 

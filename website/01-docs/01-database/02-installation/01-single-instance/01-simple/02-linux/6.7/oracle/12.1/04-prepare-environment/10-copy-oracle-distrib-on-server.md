@@ -7,8 +7,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/c
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Копирование дистрибутивов базы данных на сервер (в каталог /tmp)
 
 
-
-
 Войдите в систему пользователем, от имени которого будет будет происходить инсталляция базы данных.
 
 	# su - oracle12

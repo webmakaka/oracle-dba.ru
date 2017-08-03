@@ -61,8 +61,8 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/i
 
     [OEL_INTERNET]
     name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
+    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL7/latest/$basearch/
+    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol7
     gpgcheck=1
     enabled=1
 
@@ -168,6 +168,13 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 <br/>
 
+Для версии 12.2 теперь также нужен следующий пакет:
+
+    # yum install -y smartmontools
+
+
+<br/>
+
 
 Следующий пакет нужен для старта графической консоли
 
@@ -192,18 +199,20 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 rlwrap - пакет, который позволяет хранить историю команд в SQL*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
 
-
 	# yum install -y \
 	readline-devel.x86_64
 
 <br/>
 
-	# cd /tmp
-	# wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+    # yum install -y git
+    # cd /tmp
+    # git clone --depth=1 https://github.com/hanslub42/rlwrap
 
-<br/>
+    # cd rlwrap/
 
-	# tar zxvf rlwrap-0.37.tar.gz
-	# cd rlwrap-0.37
-	# ./configure
-	# make && make check && make install
+
+    # yum install automake
+    # autoreconf --install
+    # automake  --add-missing
+    # ./configure
+    # make && make check && make install

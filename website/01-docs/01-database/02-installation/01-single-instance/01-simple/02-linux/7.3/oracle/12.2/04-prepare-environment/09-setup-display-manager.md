@@ -24,7 +24,7 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/s
 ### Подготовка и проверка
 
 192.168.1.5 -  ip адрес компьютера, с которого происходит процесс управления установкой.<br/>
-192.168.1.11 - ip адрес сервера<br/>
+192.168.56.101 - ip адрес сервера<br/>
 
 
 
@@ -41,8 +41,12 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 Далее, необходимо настроить правила доступа.<br/>
 В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)
 
+<br/>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+<div align="center">
+    <img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+</div>
+
 
 
 <br/>
@@ -58,24 +62,22 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 	$ sudo apt-get install -y gdm
 
 
-<br/>
-
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
-
-<br/>
+<div align="center">
+    <img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
+</div>
 
 
 <br/>
 
-Думаю, лучше выбрать gdm (lightdm в последний раз у меня не захотел рабоать).
+Думаю, лучше выбрать lightdm  (gdm в последний раз у меня не захотел рабоать). Точнее, я настроил gdm также как описано здесь, далее копался хрен знает сколько времени и потом решил попробоваь lightdm. После перезагрузки service стал слушать порт 6000).
 
 <br/>
 
-Если что можно потом переключиться командами:
+Если что, можно потом переключиться командами:
 
 <br/>
 
-    # dpkg-reconfigure gdm3
+    # dpkg-reconfigure gdm
     # dpkg-reconfigure lightdm
 
 <br/>
@@ -86,17 +88,13 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/>
 
-	###########################
-	[xdmcp]
+Добавляю в блоки:
 
-	[chooser]
+    [security]
+    DisallowTCP=false
 
-	[security]
-	DisallowTCP=false
-
-	[debug]
-	###########################
-
+    [xdmcp]
+    Enable=true
 
 <br/>
 
@@ -136,12 +134,25 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/>
 
-	# reboot
+    # sudo restart lightdm
+
+
+или
+
+    # service gdm restart
 
 <br/>
 
 ### Команды проверки
 
+    $ ps ax | grep dm
+    $ ps lf -C Xorg
+
+
+Должна быть строчка "listen tcp"
+
+
+<br/>
 
 	$ sudo apt-get install -y nmap nc
 
@@ -161,11 +172,23 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/>
 
+    Starting Nmap 6.40 ( http://nmap.org ) at 2017-08-02 13:25 MSK
+    Nmap scan report for marley.corp.local (10.14.3.105)
+    Host is up (0.000047s latency).
+    PORT     STATE  SERVICE
+    6000/tcp closed X11
+
+<br/>
+<!--
+    $ sudo ufw disable
+
+<br/>
+
 	Starting Nmap 5.21 ( http://nmap.org ) at 2013-08-18 04:13 MSK
 	Nmap scan report for 192.168.1.5
 	Host is up (0.000044s latency).
 	PORT     STATE SERVICE
-	6000/tcp open  X11
+	6000/tcp open  X11 -->
 
 
 <br/>
@@ -212,4 +235,39 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
+<br/>
+
+<div align="center">
+    <img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
+</div>
+
+<br/>
+
+### Если часы не появились, можно попробовать следующее:
+
+
+Выполнил команду на сервере:
+
+    $ xdpyinfo
+    No protocol specified
+    xdpyinfo:  unable to open display "<ip клиента ubuntu :0.0".
+
+
+<br/>
+
+Потом на клиенте под root сделал:
+
+    # xhost +
+
+<br/>
+
+И снова на сервере:
+
+    $ xdpyinfo
+
+С выводом каких-то сообщений, но сообщения об ошибке уже не было.
+
+
+При запуске  ./runInstaller окно с приглашением появилось.
+
+А вот часы так и не появились у меня.
