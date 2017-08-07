@@ -42,7 +42,9 @@ permalink: /database/installation/single-instance/simple/linux/6.4/oracle/12.1/a
 
 https://bitbucket.org/plsql/oracle-dba-startup-and-shutdown-scripts/raw/b6be770160490abcc906953237985ddcfa2c7224/oracle_12R1_startup_and_shutdown_script
 
-	<!-- # wget -O startupOracleDatabase12R1 https://github.com/oradev/oracle-dba-scripts/raw/master/oracle_12R1_startup_and_shutdown_script -->
+<!-- # wget -O startupOracleDatabase12R1 https://github.com/oradev/oracle-dba-scripts/raw/master/oracle_12R1_startup_and_shutdown_script -->
+
+
 	# mv startupOracleDatabase12R1 /etc/rc.d/init.d/
 	# chmod +x /etc/rc.d/init.d/startupOracleDatabase12R1
 	# chkconfig --add startupOracleDatabase12R1

@@ -89,24 +89,33 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/p
 Добавьте в конец файла /etc/sysctl.conf следующие параметры ядра.
 
 
-	############################################
-	#### Kernel Parameters for Oracle 12
 
-	kernel.sem = 250 32000 100 128
-	kernel.shmall = 2097152
-	kernel.shmmax = 2076311552
-	kernel.shmmni = 4096
-	fs.file-max = 6815744
-	fs.aio-max-nr = 1048576
-	net.ipv4.ip_local_port_range = 20000 65500
-	net.core.rmem_default = 262144
-	net.core.rmem_max = 4194304
-	net.core.wmem_default = 262144
-	net.core.wmem_max = 1048586
-	vm.min_free_kbytes = 23168
+    <!-- # echo 250 32000 100 128 > /proc/sys/kernel/sem
+    # echo 2097152 > /proc/sys/kernel/shmall
+    # echo 2076311552 > /proc/sys/kernel/shmmax
+    # echo 4096 > /proc/sys/kernel/shmmni -->
 
-	############################################
 
+    # echo 2076311552 > /proc/sys/kernel/shmmax    
+
+    # echo 6815744 > /proc/sys/fs/file-max
+    # echo 1048576 > /proc/sys/fs/aio-max-nr
+
+
+    # echo 262144 > /proc/net/core/rmem_default
+    # echo 4194304 > /proc/net/core/rmem_max
+
+    # echo 262144 > /proc/net/core/wmem_default
+    # echo 1048586 > /proc/net/core/wmem_max
+
+
+    Применить параметры ядра без перезагрузки можно следующей командой:
+
+    	# sysctl -p
+
+Посмотреть результат:
+
+    # sysctl -a | grep file-max
 
 
 2) Отредактируйте файл  /etc/security/limits.conf
@@ -165,9 +174,6 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/p
 	############################################
 
 
-Применить параметры ядра без перезагрузки можно следующей командой:
-
-	# sysctl -p
 
 
 5) Отредактируйте файл /home/oracle/.bash_profile
@@ -193,7 +199,7 @@ permalink: /database/installation/single-instance/simple/linux/7.3/oracle/12.2/p
 	umask 022
 
 	export ORACLE_BASE=/u01/oracle
-	export ORACLE_HOME=$ORACLE_BASE/database/12.1
+	export ORACLE_HOME=$ORACLE_BASE/database/12.2
 	export ORACLE_SID=orcl12
 	export ORACLE_UNQNAME=orcl12
 	export NLS_LANG=AMERICAN_AMERICA.AL32UTF8

@@ -179,6 +179,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
     6000/tcp closed X11
 
 <br/>
+
 <!--
     $ sudo ufw disable
 
@@ -206,7 +207,17 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 ## На сервере:
 
-Проверить работу можно установив xterm или xclock
+
+Почему бы и не проверить на сервере, открыт ли порт
+
+<br/>
+
+	# nmap -p 6000 192.168.1.5
+
+
+<br/>
+
+Можно также установив xterm или xclock
 
 <br/>
 

@@ -151,12 +151,9 @@ Application Express -  приложение, с помощью которого 
 <br/><br/>
 
 
+<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_21.png" border="0" alt="Oracle 12 relese 1 Instance Creation">
 
-
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_21.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
-
-
+<br/><br/>
 
 Под Firefox у меня Enterprise Manager не запустился. Правда он у меня перегружен всякими плагинами, блокирующими и активные компоненты сайтов.
 <br/><br/>
@@ -164,7 +161,12 @@ Application Express -  приложение, с помощью которого 
 
 <br/><br/>
 
-https://192.168.1.11:5500/em
+
+**По http не слушает! Только по https**
+
+https://192.168.56.101:5500/em
+
+
 
 <br/><br/>
 

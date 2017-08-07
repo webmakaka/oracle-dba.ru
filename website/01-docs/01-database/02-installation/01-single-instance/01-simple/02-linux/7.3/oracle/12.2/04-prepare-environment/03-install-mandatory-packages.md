@@ -210,8 +210,9 @@ rlwrap - пакет, который позволяет хранить истор
 
     # cd rlwrap/
 
+<br/>
 
-    # yum install automake
+    # yum install -y automake
     # autoreconf --install
     # automake  --add-missing
     # ./configure
