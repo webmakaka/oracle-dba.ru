@@ -33,7 +33,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/a
 
 содержимое:
 
-https://bitbucket.org/plsql/oracle-dba-startup-and-shutdown-scripts/raw/b6be770160490abcc906953237985ddcfa2c7224/oracle_11GR2_startup_and_shutdown_script
+https://bitbucket.org/oracle-dba/oracle-dba-startup-and-shutdown-scripts/raw/b6be770160490abcc906953237985ddcfa2c7224/oracle_11GR2_startup_and_shutdown_script
 
 
 	# chmod +x /etc/rc.d/init.d/startupOracleDatabase11GR2

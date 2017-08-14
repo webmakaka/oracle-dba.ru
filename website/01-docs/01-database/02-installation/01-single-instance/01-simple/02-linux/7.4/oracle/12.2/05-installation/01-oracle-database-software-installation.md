@@ -1,8 +1,20 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Инсталляция СУБД Oracle (DataBase SoftWare)
-permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-database-software-installation/
+permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-database-software-installation/
 ---
+
+<br/>
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>
+
+<br/>
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
 
@@ -10,7 +22,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 ### Проверка конфигурации перед инсталляцией:
 
 
-	$ cd /tmp/oracle/12.1/database/
+	$ cd /distrib/oracle/12.2/database/
 
 
 <br/>
@@ -90,41 +102,9 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 <img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_14.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
 
-	# /u01/oraInventory/orainstRoot.sh
 
-
-<br/>
-
-
-	Changing permissions of /u01/oraInventory.
-	Adding read,write permissions for group.
-	Removing read,write,execute permissions for world.
-
-	Changing groupname of /u01/oraInventory to oinstall.
-	The execution of the script is complete.
-
-
-<br/>
-
-	# /u01/oracle/database/12.1/root.sh
-    
-	Performing root user operation.
-
-	The following environment variables are set as:
-	    ORACLE_OWNER= oracle12
-	    ORACLE_HOME=  /u01/oracle/database/12.1
-
-	Enter the full pathname of the local bin directory: [/usr/local/bin]: [Enter]
-	   Copying dbhome to /usr/local/bin ...
-	   Copying oraenv to /usr/local/bin ...
-	   Copying coraenv to /usr/local/bin ...
-
-
-	Creating /etc/oratab file...
-	Entries will be added to the /etc/oratab file as needed by
-	Database Configuration Assistant when a database is created
-	Finished running generic part of root script.
-	Now product-specific root actions will be performed.
+    # /u01/oraInventory/orainstRoot.sh
+    # /u01/oracle/database/12.2/root.sh
 
 
 

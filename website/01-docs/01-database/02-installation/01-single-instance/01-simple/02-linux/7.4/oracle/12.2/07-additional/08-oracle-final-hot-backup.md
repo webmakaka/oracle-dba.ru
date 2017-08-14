@@ -1,18 +1,30 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux - Контрольный backup (горячий backup)
-permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-final-hot-backup/
+permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-final-hot-backup/
 ---
+
+<br/>
+
+<div style="padding:10px; border:thin solid black;">
+
+	<h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
+
+    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
+
+</div>
+
+<br/>
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Контрольный backup (горячий backup):
 
 
 
-	$ mkdir -p /u02/oracle/oradata/12.1/${ORACLE_SID}/scripts
+	$ mkdir -p /u02/oracle/oradata/12.2/${ORACLE_SID}/scripts
 
 <br/>
 
-	$ cd /u02/oracle/oradata/12.1/${ORACLE_SID}/scripts
+	$ cd /u02/oracle/oradata/12.2/${ORACLE_SID}/scripts
 
 
 
@@ -46,19 +58,14 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 
 ### Посмотреть список бекапов
 
-
 	RMAN> rman target /
-
 
 
 <br/>
 
 	RMAN> list backup of database summary;
 
-
 <br/>
-
-
 
 Следующей командой я сообщаю, что все бекапы кроме последного, следует поменить как obsolete.
 
@@ -75,8 +82,14 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 
 	RMAN> list backup of database summary;
 
+    List of Backups
+    ===============
+    Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
+    ------- -- -- - ----------- ------------------- ------- ------- ---------- ---
+    1       B  F  A DISK        14/08/2017 14:31:28 1       1       NO         FULL_DATABASE_DATAFILES
+    8       B  F  A DISK        14/08/2017 15:15:39 1       1       YES        FULL_DATABASE
+
 
 <br/>
-
 
 	RMAN>  quit

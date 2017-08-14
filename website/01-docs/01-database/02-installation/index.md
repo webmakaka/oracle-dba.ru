@@ -15,14 +15,6 @@ permalink: /database/installation/
 Если нет задачи поставить Oracle на какую-то конкретную операционную систему и задача, в первую очередь, сводится к изучению Oracle,  рекомендую ставить базу на Oracle Linux. Oracle взяла исходники RedHat и собрала свой дистрибутив. В публичном репозитории Oracle Linux имеются пакеты, которые могут сильно упростить инсталляцию базы и дополнительные пакеты, расширяющие стандартные возможности. В дополнении ко всему вышесказанному, вы можете использовать допиленное ядро UEK, которое вроде как в некоторых случаях имеет некоторые преимущесва перед стандартным. Но здесь нужно проводить тесты конкретного приложения. Ссылки на дистрибутив Oracle Lunux в теме для инсталляции.
 
 
-По поводу Centos 7.X и возможных версий Oracle Linux 7.X. <br/>
-Я пока на эту ветку смотреть не собираюсь. Подождем появления версии 7.2, не ранее.
-
-UPD.
-
--- Так появилась уже версия 7.2. Не пора ли изучать как устанавливать на эту версию Oracle.<br/>
--- Пора. Но только впадлу. Может подождем 13 версии Oracle?
-
 <br/><br/>
 
 ## Подготовка к инсталляции базы данных Oracle:
@@ -74,7 +66,10 @@ UPD.
 
 <ul>
 	<li><a href="http://odba.ru/showthread.php?t=331"><strong>Команды редактора VI</strong></a></li>
-	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux 6.7</strong></a></li>
+
+    <!-- <li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/"><strong>Инсталляция Oracle DataBase Server 12.2 в операционной системе Oracle Linux 7.4</strong></a> (инструкция по версии 6.7 предпочтительнее)</li> -->
+
+    <li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux 6.7</strong></a></li>
 
 	<!--
 	<li><a href="/database/installation/single-instance/simple/linux/6.4/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux (6.4 x86_64)</strong></a> (Server Linux -- рабочая станция Linux) (Предыдущий документ!)</li>
