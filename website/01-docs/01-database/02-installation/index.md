@@ -67,7 +67,7 @@ permalink: /database/installation/
 <ul>
 	<li><a href="http://odba.ru/showthread.php?t=331"><strong>Команды редактора VI</strong></a></li>
 
-    <!-- <li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/"><strong>Инсталляция Oracle DataBase Server 12.2 в операционной системе Oracle Linux 7.4</strong></a> (инструкция по версии 6.7 предпочтительнее)</li> -->
+    <li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/"><strong>Инсталляция Oracle DataBase Server 12.2 в операционной системе Oracle Linux 7.4</strong></a> (инструкция по версии 6.7 предпочтительнее!)</li>
 
     <li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/"><strong>Инсталляция Oracle DataBase Server (12.1.0.1) в операционной системе Oracle Linux 6.7</strong></a></li>
 

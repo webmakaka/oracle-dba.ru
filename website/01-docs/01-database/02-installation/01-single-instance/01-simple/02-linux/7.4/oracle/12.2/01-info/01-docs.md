@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Официальная документация
-permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/
+permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/docs/
 ---
 
 <br/>
