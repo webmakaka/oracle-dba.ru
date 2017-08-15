@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.3 - Создание виртуальной машины VirtualBox для инсталляции базы данных
-permalink: /database/installation/single-instance/simple/oel/7.3/oracle/db/12.2/
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Создание виртуальной машины VirtualBox для инсталляции базы данных
+permalink: /database/installation/single-instance/simple/oel/7.4/oracle/db/12.2/
 ---
 
 
@@ -17,7 +17,7 @@ permalink: /database/installation/single-instance/simple/oel/7.3/oracle/db/12.2/
 
 <br/>
 
-# <a href="/database/installation/single-instance/simple/oel/7.3/db/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.3]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных
 
 
 
@@ -125,7 +125,6 @@ permalink: /database/installation/single-instance/simple/oel/7.3/oracle/db/12.2/
 
 ### Подключение сетевых интерфейсов:
 
-**Вариант 1:**
 
 Вариант настройки, когда сервер будет работать на моем компьютере и не должен быть доступен за ее пределами.
 
@@ -183,35 +182,6 @@ vboxnet0 - виртуальный адаптер хостовой машины.
 
     $ VBoxManage modifyvm ${vm} --nic2 none
 
-
-<br/>
-
-**Вариант 2:**
-
-С обычным вариантом, когда сервер доступен в сети. Имеет свой IP адрес.
-
-
-Наберите команду;
-
-    $ VBoxManage list bridgedifs
-
-Обратите внимание на значение:
-
-Name:                eth0
-
-Я использую eth0 как основной физический интерфейс, который будут использовать виртуальные машины в качестве моста.
-
-Подключаю к виртуальной машине 2 виртуальных сетевых “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridget:
-
-    $ VBoxManage modifyvm ${vm} \
-    --nictype1 82540EM \
-    --nic1 bridged \
-    --bridgeadapter1 eth0
-
-    $ VBoxManage modifyvm ${vm} \
-    --nictype2 82540EM \
-    --nic2 bridged \
-    --bridgeadapter2 eth0
 
 <br/>
 

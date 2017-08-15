@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Инсталляция СУБД Oracle (DataBase SoftWare)
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Инсталляция СУБД Oracle (DataBase SoftWare)
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-database-software-installation/
 ---
 
@@ -16,7 +16,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
 
 
 ### Проверка конфигурации перед инсталляцией:
@@ -66,31 +66,27 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_01.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_01.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_02.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_02.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_03.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_03.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_04.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_04.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_05.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_05.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_06.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_06.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_07.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_07.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_08.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_08.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_09.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_09.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_10.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_10.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_11.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
-
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_12.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
-
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_13.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_11.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
 
 <br/><br/>
@@ -99,7 +95,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_14.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_12.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
 
 
@@ -110,4 +106,4 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_15.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_13.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>

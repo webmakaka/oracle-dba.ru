@@ -99,6 +99,8 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/setup-display-manager/">Настройка Display Manger</a></li>
 
+    <li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a></li>
+
 </ul>
 
 
@@ -107,7 +109,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 ## Инсталляция базы данных:
 
 <ul>
-	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a></li>
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-database-software-installation/">Инсталляция СУБД Oracle (DataBase SoftWare)</a></li>
 
@@ -155,7 +156,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-archivelogs-multiplexing/">Мультиплексирование archivelog</a></li>
 
-	<li><a href="oracle-change-default-datafile-location">Изменение расположения файлов данных</a></li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-change-default-datafile-location/">Изменение расположения файлов данных</a></li>
 
 	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-additionals-datafiles/">Расширение табличных пространств (создание дополнительных файлов для табличных пространств)</a></li>
 

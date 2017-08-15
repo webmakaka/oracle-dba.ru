@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux 6.7 - Дистрибутивы и дополнительное ПО
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Дистрибутивы и дополнительное ПО
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/
 ---
 
@@ -16,7 +16,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/
 
 <br/>
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Дистрибутивы и дополнительное ПО
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Дистрибутивы и дополнительное ПО
 
 Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам  с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
 
@@ -35,7 +35,7 @@ http://www.virtualbox.org/wiki/Downloads
 
 <br/>
 
-<strong>Дистрибутивы операционной системы Oracle Linux Server 6 Update 7 (x86_x64):</strong><br/>
+<strong>Дистрибутивы операционной системы Oracle Linux Server 7 Update 4 (x86_x64):</strong><br/>
 http://linux.oracle.com
 
 <strong>Резервный источники для скачивания:</strong><br/>

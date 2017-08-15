@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Создание службы удаленного подключения к серверу (Listener)
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Создание службы удаленного подключения к серверу (Listener)
 permalink: /database/installation/single-instance/linux/7.3/oracle/12.2/oracle-listener-creation/
 ---
 
@@ -16,7 +16,7 @@ permalink: /database/installation/single-instance/linux/7.3/oracle/12.2/oracle-l
 
 <br/>
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Создание службы удаленного подключения к серверу (Listener)
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Создание службы удаленного подключения к серверу (Listener)
 
 
 	$ netca
@@ -24,21 +24,23 @@ permalink: /database/installation/single-instance/linux/7.3/oracle/12.2/oracle-l
 
 <br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_01.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_02.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_01.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_03.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_04.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_02.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_05.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_03.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_06.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_04.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_07.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_05.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/03_listener_creation/oracle12R1_database_listener_creation_08.png" border="0" alt="Oracle 12 relese 1 Listener installation"><br/><br/>
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_06.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
+
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_07.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
+
+<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/03-listener-creation/listener-creation_08.png" border="0" alt="Oracle 12.2 Listener installation"><br/><br/>
 
 
 <br/><br/>

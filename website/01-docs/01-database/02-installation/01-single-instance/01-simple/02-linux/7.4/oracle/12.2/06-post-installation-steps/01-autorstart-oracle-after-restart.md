@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Настройка автозапуска Oracle после перезагрузки
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Настройка автозапуска Oracle после перезагрузки
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/autorstart-oracle-after-restart/
 ---
 
@@ -16,7 +16,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/a
 
 <br/>
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Настройка автозапуска Oracle после перезагрузки
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Настройка автозапуска Oracle после перезагрузки
 
 
 
@@ -49,13 +49,13 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/a
 
 	# cd /tmp
 
-    # vi startupOracleDatabase12.2
+    # vi oracle_12.2_startup_and_shutdown_script
 
-https://bitbucket.org/oracle-dba/oracle-dba-startup-and-shutdown-scripts/raw/b6be770160490abcc906953237985ddcfa2c7224/oracle_12R1_startup_and_shutdown_script
+https://bitbucket.org/oracle-dba/oracle-dba-startup-and-shutdown-scripts/src/14797e3bf31c47d9b70b98539e8f248650666a97/oracle_12.2_startup_and_shutdown_script?at=master&fileviewer=file-view-default
 
 <!-- # wget -O startupOracleDatabase12R1 https://github.com/oradev/oracle-dba-scripts/raw/master/oracle_12R1_startup_and_shutdown_script -->
 
-	# mv startupOracleDatabase12.2 /etc/rc.d/init.d/
-	# chmod +x /etc/rc.d/init.d/startupOracleDatabase12.2
-	# chkconfig --add startupOracleDatabase12.2
-	# chkconfig --level 345 startupOracleDatabase12.2 on
+	# mv oracle_12.2_startup_and_shutdown_script /etc/rc.d/init.d/
+	# chmod +x /etc/rc.d/init.d/oracle_12.2_startup_and_shutdown_script
+	# chkconfig --add oracle_12.2_startup_and_shutdown_script
+	# chkconfig --level 345 oracle_12.2_startup_and_shutdown_script on

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Мультиплексирование redologs
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Мультиплексирование redologs
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-redologs-multiplexing/
 ---
 
@@ -16,7 +16,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Мультиплексирование redologs
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Мультиплексирование redologs
 
 
 	$ mkdir -p /u02/oracle/oradata/12.2/${ORACLE_SID}/REDOLOGS

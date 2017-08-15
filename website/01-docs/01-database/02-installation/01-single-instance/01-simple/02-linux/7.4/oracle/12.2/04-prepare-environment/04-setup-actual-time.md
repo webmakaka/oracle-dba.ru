@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Настройка сервисов отвечающих за синхронизацию времени
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Настройка сервисов отвечающих за синхронизацию времени
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/setup-actual-time/
 ---
 
@@ -17,7 +17,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/s
 <br/>
 
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Настройка сервисов отвечающих за синхронизацию времени
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Настройка сервисов отвечающих за синхронизацию времени
 
 
 

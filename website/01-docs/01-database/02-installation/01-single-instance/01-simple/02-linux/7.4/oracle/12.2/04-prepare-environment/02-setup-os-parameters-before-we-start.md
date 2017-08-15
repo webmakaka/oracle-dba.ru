@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Установка параметров ОС перед стартом
+title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Установка параметров ОС перед стартом
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/setup-os-parameters-before-we-start/
 ---
 
@@ -17,7 +17,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/s
 <br/>
 
 
-# <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Установка параметров ОС перед стартом
+# <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Установка параметров ОС перед стартом
 
 
 Некоторые комментарии к следующей команде. Создаю резервную копию файла /etc/selinux/config, и меняю значение парамета SELINUX с enforcing на disabled
