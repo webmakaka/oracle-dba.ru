@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server
-permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/virtualbox-mashines/windows/2008/
+permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/virtualbox-machines/windows/2008/
 ---
 
 # <a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server

@@ -52,7 +52,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <h2>Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server:</h2>
 
 <ul>
-	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/virtualbox-mashines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server</a></li>
+	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/virtualbox-machines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server</a></li>
 </ul>
 
 

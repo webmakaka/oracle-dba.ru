@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Linux
-permalink: /database/installation/virtualbox-mashines/oracle-linux/
+permalink: /database/installation/virtualbox-machines/oracle-linux/
 ---
 
 ### [Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Linux]

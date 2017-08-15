@@ -61,7 +61,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 
 
 <ul>
-	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/virtual-mashine/">Создание виртуальной машины VirtualBox для инсталляции базы данных</a><br/></li>
+	<li><a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/virtual-machine/">Создание виртуальной машины VirtualBox для инсталляции базы данных</a><br/></li>
 </ul>
 
 

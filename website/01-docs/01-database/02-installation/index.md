@@ -27,9 +27,9 @@ permalink: /database/installation/
 	<li><a href="//sysadm.ru/linux/virtual/virtualbox/installation/centos/6/">Инсталляция VirtualBox на Centos 6.4 Server без графического интерфейса (GUI)</a></li>
 	<li><a href="//sysadm.ru/linux/virtual/virtualbox/installation/ubuntu/14.04/">Инсталляция VirtualBox в операционной системе Ubuntu в консоли</a></li>
 
-	<li><a href="/database/installation/virtualbox-mashines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Windows</a></li>
+	<li><a href="/database/installation/virtualbox-machines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Windows</a></li>
 
-	<li><a href="/database/installation/virtualbox-mashines/oracle-linux/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Linux</a></li>
+	<li><a href="/database/installation/virtualbox-machines/oracle-linux/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Linux</a></li>
 
 	<li><a href="/database/installation/oracle-linux-installation/6.x/">Инсталляция Oracle Linux 6.7 x86 64 bit</a></li>
 

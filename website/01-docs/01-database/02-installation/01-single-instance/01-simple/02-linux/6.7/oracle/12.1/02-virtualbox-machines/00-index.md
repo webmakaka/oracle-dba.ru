@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle DataBase 12c - Linux 6.7 - Создание виртуальной машины VirtualBox для инсталляции базы данных
-permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/virtual-mashine/
+permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/virtual-machine/
 ---
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Создание виртуальной машины VirtualBox для инсталляции базы данных
