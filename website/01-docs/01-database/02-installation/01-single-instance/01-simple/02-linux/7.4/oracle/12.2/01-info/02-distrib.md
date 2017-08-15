@@ -18,6 +18,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/d
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Дистрибутивы и дополнительное ПО
 
+<br/>
+
 Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам  с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
 
 

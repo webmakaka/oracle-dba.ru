@@ -18,6 +18,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>:: Инсталляция Oracle Linux 7.4
 
+<br/>
 
 При старте, нужно успеть нажать tab и дописать linux text. Иначе установка стартует в графическом режиме и в конечном итоге GUI будет также установлен на сервере.
 

@@ -18,6 +18,7 @@ permalink: /database/installation/single-instance/linux/7.3/oracle/12.2/oracle-l
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Создание службы удаленного подключения к серверу (Listener)
 
+<br/>
 
 	$ netca
 

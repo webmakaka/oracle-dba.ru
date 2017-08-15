@@ -19,6 +19,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/s
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Установка параметров ОС перед стартом
 
+<br/>
 
 Некоторые комментарии к следующей команде. Создаю резервную копию файла /etc/selinux/config, и меняю значение парамета SELINUX с enforcing на disabled
 

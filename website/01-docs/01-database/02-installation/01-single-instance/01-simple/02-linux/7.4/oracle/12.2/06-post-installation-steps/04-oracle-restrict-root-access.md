@@ -19,6 +19,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Запретить удаленное подключение к серверу баз данных пользователем root
 
 
+<br/>
+
 Запрет входа root по SSH
 
 

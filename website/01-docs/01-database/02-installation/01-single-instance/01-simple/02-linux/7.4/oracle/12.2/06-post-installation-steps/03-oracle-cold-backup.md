@@ -19,6 +19,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Создание резервной копии созданной базы данных (холодный бекап)
 
 
+<br/>
 
 Выполните следующие команды:
 

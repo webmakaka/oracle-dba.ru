@@ -18,7 +18,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Подготовка жестких дисков к инсталляции базы данных
 
-
+<br/>
 
 В каталоге /u01 будет храниться программное обеспечение для работы с базами данных (Database Software) а в каталоге /u02 файлы базы данных.
 
@@ -44,7 +44,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 <br/>
 
 
-# fdisk /dev/sdb
+    # fdisk /dev/sdb
 
 
     Welcome to fdisk (util-linux 2.23.2).

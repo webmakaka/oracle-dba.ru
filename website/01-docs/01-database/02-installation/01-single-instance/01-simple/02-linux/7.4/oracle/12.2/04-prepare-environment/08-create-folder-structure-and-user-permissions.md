@@ -18,6 +18,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/c
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Создание структуры каталогов и назначение необходимых прав
 
+<br/>
+
 	# mkdir -p /u01/oracle/database/12.2
 	# chown -R oracle12:dba /u01/oracle
 	# chmod -R 775 /u01/oracle/database/12.2

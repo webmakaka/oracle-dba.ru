@@ -19,6 +19,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Расширение табличных пространств (создание дополнительных файлов для табличных пространств)
 
 
+<br/>
+
 	$ sqlplus / as sysdba
 
 

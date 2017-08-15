@@ -18,7 +18,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Мультиплексирование archivelog
 
-
+<br/>
 
 Создание каталога для хранения файлов резервных копий и архивных журналов
 

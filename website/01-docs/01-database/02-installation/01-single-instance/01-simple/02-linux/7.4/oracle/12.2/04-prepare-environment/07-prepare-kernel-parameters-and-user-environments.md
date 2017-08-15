@@ -19,18 +19,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>:: Конфигурирование системных пользователей, настройка параметров системы
 
-
-<!--
-Перед тем как вносить изменения в конфигурационные файлы, рекомедуется сделать их резервные копии:
-
-
-	# {
-	cp /etc/sysctl.conf /etc/sysctl.conf.bkp.$(date +%Y-%m-%d)
-	cp /etc/security/limits.conf /etc/security/limits.conf.bkp.$(date +%Y-%m-%d)
-	cp /etc/pam.d/login /etc/pam.d/login.bkp.$(date +%Y-%m-%d)
-	cp /etc/profile /etc/profile.bkp.$(date +%Y-%m-%d)
-	} -->
-
+<br/>
 
 ### Создание пользователей и групп
 
@@ -56,46 +45,10 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 	# passwd oracle12
 
-Изменение параметров ядра и параметров учетной записи с правами администратора базы данных
-
-
-<!--
-
-1) Отредактируйте файл  /etc/sysctl.conf
-
-
-Рекомендуется закомментировать (поставить перед ними знак #) имеющиеся параметры kernel.shmmax и kernel.shmall. Далее они будут добавлены в качестве параметров вместе с остальными параметрами Oracle. Для этого выполните следующие команды:
-
-
-	# sed -i.gres "s/kernel.shmmax/#kernel.shmmax/g" /etc/sysctl.conf
-	# sed -i.gres "s/kernel.shmall/#kernel.shmall/g" /etc/sysctl.conf
 
 <br/>
 
-	# vi /etc/sysctl.conf
-
-<br/>
-
-	kernel.shmmax = RAM (in bytes) / 2
-
-<br/>
-
-
-Количество байт отперативной памяти, можно узнать командой
-
-
-	# free -b
-	4152623104 / 2 = 2076311552
-
-
-Добавьте в конец файла /etc/sysctl.conf следующие параметры ядра. -->
-
-
-
-    <!-- # echo 250 32000 100 128 > /proc/sys/kernel/sem
-    # echo 2097152 > /proc/sys/kernel/shmall
-    # echo 2076311552 > /proc/sys/kernel/shmmax
-    # echo 4096 > /proc/sys/kernel/shmmni -->
+### Изменение параметров ядра и параметров учетной записи с правами администратора базы данных
 
 
     # echo 2076311552 > /proc/sys/kernel/shmmax    

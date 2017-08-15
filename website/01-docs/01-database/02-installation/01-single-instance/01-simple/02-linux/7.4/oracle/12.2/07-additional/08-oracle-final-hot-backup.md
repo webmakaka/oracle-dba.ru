@@ -19,6 +19,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Контрольный backup (горячий backup):
 
 
+<br/>
 
 	$ mkdir -p /u02/oracle/oradata/12.2/${ORACLE_SID}/scripts
 
@@ -73,7 +74,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 	RMAN> CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
 
 
-Теперь прошу RMAN удалить устаревшие бекапы (без подтверждения).
+Теперь говорю RMAN удалить устаревшие бекапы (без подтверждения).
 
 
 	RMAN> delete noprompt obsolete;

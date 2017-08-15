@@ -94,7 +94,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
     SQL> ALTER DATABASE RENAME FILE '/u02/oracle/oradata/12.2/orcl/users01.dbf'  TO '/u02/oracle/oradata/12.2/orcl12/DATAFILE/data/users01.dbf';
 
 
-
+<br/>
 
 	SQL> ALTER DATABASE RENAME FILE '/u02/oracle/oradata/12.2/orcl/undotbs01.dbf' TO '/u02/oracle/oradata/12.2/orcl12/DATAFILE/undo/undotbs01.dbf';
 

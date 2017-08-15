@@ -18,6 +18,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/n
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>:: Настройка сетевых интерфейсов
 
+<br/>
 
 ### Настраиваем сетевые интерфейсы и параметры работы сетевых служб.
 

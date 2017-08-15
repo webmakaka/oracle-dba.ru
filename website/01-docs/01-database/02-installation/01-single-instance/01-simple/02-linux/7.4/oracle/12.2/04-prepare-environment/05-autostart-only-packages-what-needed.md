@@ -20,6 +20,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/a
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Автозапуск только выбранных программ
 
 
+<br/>
 
 Следующая команда отключает автозапуск сразу всех пакетов.
 

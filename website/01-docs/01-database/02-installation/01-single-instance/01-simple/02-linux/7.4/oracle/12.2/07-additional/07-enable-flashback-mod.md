@@ -18,8 +18,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/e
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Включить режим работы FLASH BACK
 
-
-
+<br/>
 
 FlashBack бывает полезен, когда нужно откатить изменения или посмотреть предыдущее состояние объектов в базе данных.
 Как следствие растет нагрузка на сервер, т.к. приходится хранить дополнительную информацию.

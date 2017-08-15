@@ -19,6 +19,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Мультиплексирование controlfiles
 
 
+<br/>
 
 	$ mkdir -p /u02/oracle/oradata/12.2/${ORACLE_SID}/CONTROLFILE
 	$ mkdir -p /u03/oracle/oradata/12.2/${ORACLE_SID}/CONTROLFILE
