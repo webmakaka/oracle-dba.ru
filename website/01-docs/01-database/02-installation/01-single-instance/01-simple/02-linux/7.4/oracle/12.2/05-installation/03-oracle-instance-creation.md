@@ -62,7 +62,6 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/04-instance-creation/instance-creation_16.png" border="0" alt="Oracle 12.2 Instance Creation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/04-instance-creation/instance-creation_01.png" border="0" alt="Oracle 12.2 Instance Creation"><br/><br/>
 
 <img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/04-instance-creation/instance-creation_17.png" border="0" alt="Oracle 12.2 Instance Creation"><br/><br/>
 
