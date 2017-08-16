@@ -5,9 +5,9 @@ permalink: /database/certification/
 ---
 
 
-### Сертификация Oracle DBA
+# Сертификация Oracle DBA
 
-
+<br/>
 
 Если есть желание работать на международном уровне, а не на локальном и получать за свою работу более достойную З/П, необходимо продемонстрировать свою профессиональную подготовку. Собственно админам Oracle нужно получить OCP. Для этого нужно сдать экзамены 1Z0-051, 1Z0-052, 1Z0-053.
 
@@ -53,7 +53,7 @@ permalink: /database/certification/
 
 ### Примерные вопросы:
 
-
+<br/>
 
 <ul>
 	<li><a href="http://img.oradba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-007.pdf">1Z0-007</a></li>
@@ -108,4 +108,17 @@ permalink: /database/certification/
 	<li><a href="http://img.oradba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-615.pdf">1Z0-615</a></li>
 	<li><a href="http://img.oradba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-620.pdf">1Z0-620</a></li>
 	<li><a href="http://img.oradba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-640.pdf">1Z0-640</a></li>
+</ul>
+
+
+
+<br/>
+
+### Oracle ADF Exam (1Z0-554):
+
+<br/>
+
+<ul>
+    <li><a href="//files.oracle-adf.com/pdf/exam/1z0-554-exam-study-guide.pdf" rel="nofollow">Oracle Application Development Framework 11g Essentials – Exam Guide</a></li>
+    <li><a href="//files.oracle-adf.com/pdf/exam/1Z0-554.pdf" rel="nofollow">Oracle 1z0-554</a></li>
 </ul>
