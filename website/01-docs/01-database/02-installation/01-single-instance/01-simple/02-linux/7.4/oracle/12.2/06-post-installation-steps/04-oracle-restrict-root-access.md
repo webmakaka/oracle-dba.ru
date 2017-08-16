@@ -39,4 +39,4 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
-	# service sshd restart
+	# /bin/systemctl restart sshd.service

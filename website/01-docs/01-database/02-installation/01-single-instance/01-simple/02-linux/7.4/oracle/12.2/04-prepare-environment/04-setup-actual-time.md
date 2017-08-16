@@ -22,46 +22,23 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/s
 
 <br/>
 
-=============================================
-
-Пока не стал настраивать !!!!
-
-=============================================
-
-
-Указать доступные ntp сервера
-
-
-	# vi /etc/ntp.conf
-
-
-Например:
-
-server 0.rhel.pool.ntp.org<br/>
-server 1.rhel.pool.ntp.org<br/>
-server 2.rhel.pool.ntp.org<br/>
-
-
-<br/><br/>
-Нужно внести изменения в файл параметров ntpd
-
-	# vi /etc/sysconfig/ntpd
-
-
-заменить
-
-	# Drop root to id 'ntp:ntp' by default.
-	OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid"
-
-
-на
-
-	# Drop root to id 'ntp:ntp' by default.
-	# OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid"
-	OPTIONS="-x -u ntp:ntp -p /var/run/ntpd.pid"
+    # systemctl start ntpd
+    # systemctl enable ntpd
+    # systemctl status ntpd
 
 
 
 <br/>
 
-	# service ntpd restart
+При необходимости разрешить на фаерволе
+
+    # firewall-cmd --add-service=ntp --permanent
+    # firewall-cmd --reload
+
+
+<br/>
+
+Проверка
+
+    # ntpq -p
+    # date -R
