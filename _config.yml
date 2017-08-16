@@ -8,5 +8,5 @@ url: "http://oracle-dba.ru" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-plugins_dir:
+gems:
   - jekyll-sitemap
