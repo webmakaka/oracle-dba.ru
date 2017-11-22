@@ -22,6 +22,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 При старте, нужно успеть нажать tab и дописать linux text. Иначе установка стартует в графическом режиме и в конечном итоге GUI будет также установлен на сервере.
 
+UPD. Можно и в графическом режиме установить сервер без GUI.
+
 
 <img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-01.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
 
@@ -31,10 +33,15 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
+В скобках пункт меню, который я вибираю. Далее последовательность того, что я выбираю.
 
-    (2) 1 --> 1 --> 33
-    (5) 1 --> c --> 2 --> c --> 1 --> c
-    (8)
+    (2) --> 1 --> 1 --> 33
+    (5) --> 1 --> c --> 2 --> c --> 1 --> c
+    (8) --> Установить пароль пользователю root
+
+<br/>
+
+Все. Поехали устанавливать.
 
     (b)
 

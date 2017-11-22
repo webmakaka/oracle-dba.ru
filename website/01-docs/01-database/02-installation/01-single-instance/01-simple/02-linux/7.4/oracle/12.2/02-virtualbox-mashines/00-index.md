@@ -46,10 +46,9 @@ permalink: /database/installation/single-instance/simple/oel/7.4/oracle/db/12.2/
 
     $ VBoxManage createvm \
     --name ${vm} \
-    --ostype RedHat_64 \
+    --ostype Oracle_64 \
     --basefolder ${VM_HOME}/${vm} \
     --register
-
 
 
 ### Устанавливаем планку оперативной памяти:
@@ -243,12 +242,29 @@ vboxnet0 - виртуальный адаптер хостовой машины.
     $ VBoxHeadless --startvm ${vm}
 
 
-Подключаюсь по RDP к виртуальной машине. В Windows это консоль для удаленного подключения mstsc, в linux remmina или rdesktop.
+
+<br/>
+
+### Подключаюсь по RDP к виртуальной машине.
+
+
+В Windows это может быть консоль для удаленного подключения (start --> RUN --> mstsc).
+В linux - remmina или rdesktop и еще куча всего.
 
 
 Делаю в Ubuntu 12.04
 
     $ sudo apt-get install -y rdesktop
+
+<br/>
+
+В Oracle Linux пакета нет в подключенных мной стандартных репо.
+
+Делал так:
+
+    # rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+    # rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+    # yum install rdesktop
 
 <br/>
 
