@@ -37,15 +37,17 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 
 	# fdisk /dev/sdb
-	# fdisk /dev/sdc
-	# fdisk /dev/sdd
-
 
 <br/>
 
 
     # fdisk /dev/sdb
 
+<br/>
+
+Если коротко, последовательность: [n, p, 1, [Enter], [Enter], w]
+
+<br/>
 
     Welcome to fdisk (util-linux 2.23.2).
 
@@ -74,6 +76,14 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
     Syncing disks.
 
 
+<br/>
+
+Повторить для:
+
+    # fdisk /dev/sdc
+	# fdisk /dev/sdd
+
+<br/>
 
 Создаем файловую систему на созданных разделах.
 
@@ -88,6 +98,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 	# mkdir /u02
 	# mkdir /u03
 
+
+<br/>
 
 Записываем информацию о том, куда следует монтировать разделы при загрузки операционной системы.
 

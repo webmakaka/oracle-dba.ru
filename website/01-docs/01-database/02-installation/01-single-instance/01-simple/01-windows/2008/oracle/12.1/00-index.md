@@ -6,6 +6,8 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 # [Инсталляция Oracle DataBase Server 12.1 в Microsoft Windows 2008 Server]
 
+
+
 <br/>
 
 В документе описывается один из способов инсталляции базы данных Oracle в операционной системе Microsoft Windows 2008 Server.

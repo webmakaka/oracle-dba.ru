@@ -30,24 +30,14 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/c
 
 	$ cd /distrib/oracle/12.2/
 
-<br/>
-
-	$ ls
-	linuxx64_12201_database.zip
-
-Разархивируем DataBase
-
-	$ unzip linuxx64_12201_database.zip
-
-Удаляю архив
-
-	$ rm linuxx64_12201_database.zip
 
 <br/>
 
 ### OFFTOPIC
 
-Самый простой способ скопировать файлы в linux - подключиться к серверу по протоколу sftp://192.168.56.101
+Самый простой способ скопировать файлы в linux - подключиться к серверу по протоколу sftp
+Клавиша Widows + L и в заголовке ввести: sftp://192.168.56.101
+
 
 Вы можете также воспользоваться утилитой scp. Например, следующей командой можно забрать дистрибутивы базы данных с другого сервера linux и положить их в каталог /tmp/oracle/12.2/:
 
@@ -62,3 +52,19 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/c
 Если нужно назначить владельцем скачанных архивов пользователя oracle12
 
 	# chown -R oracle12:oinstall /tmp/linuxamd64_12c_database_*.zip
+
+
+### OFFTOPIC END
+
+<br/>
+
+	$ ls
+	linuxx64_12201_database.zip
+
+Разархивируем DataBase
+
+	$ unzip linuxx64_12201_database.zip
+
+Удаляю архив
+
+	$ rm linuxx64_12201_database.zip

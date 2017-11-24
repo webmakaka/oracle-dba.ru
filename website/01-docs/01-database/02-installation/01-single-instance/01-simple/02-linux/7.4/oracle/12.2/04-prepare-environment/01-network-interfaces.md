@@ -71,8 +71,6 @@ ONBOOT="yes"
 
     $ ssh root@192.168.56.101
 
-
-
 <br/>
 
 ### Продолжаем настраивать параметры сетевого окружения
@@ -86,18 +84,6 @@ ONBOOT="yes"
 
     # hostnamectl
 
-
-<!-- <br/>
-
-    # vi /etc/resolv.conf
-
-<br/>
-
-добавить:
-
-    nameserver 192.168.56.1 -->
-
-
 <br/>
 
     # vi /etc/hosts
@@ -105,9 +91,6 @@ ONBOOT="yes"
 <br/>
 
 Добавляю:
-
-    ## Localdomain and Localhost (hosts file, DNS)
-    127.0.0.1 localhost.localdomain localhost
 
     ## IPs Public Network (hosts file, DNS)
     192.168.56.101 oracle12serv.localdomain oracle12serv

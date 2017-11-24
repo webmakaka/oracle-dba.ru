@@ -73,6 +73,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
     # sysctl -a | grep file-max
 
+<br/>
 
 2) Отредактируйте файл  /etc/security/limits.conf
 
@@ -93,6 +94,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 	############################################
 
+<br/>
 
 3) Отредактируйте файл  /etc/pam.d/login
 
@@ -106,31 +108,34 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 	session required pam_limits.so
 	############################################
 
-
+<br/>
 
 4) Отредактируйте файл /etc/profile
 
 	# vi /etc/profile
 
 
-Перед
+В конце файла перед следующими командами.
 
 	unset i
 	unset pathmunge
 
 
-Добавьте
+Добавьте:
 
-	###########################################
-	#### Shell limits for Oracle 12 user accounts
+{% highlight shell %}
 
-	if [ $USER = "oracle12" ]; then
-	ulimit -u 16384 -n 65536
-	fi
-	############################################
+###########################################
+#### Shell limits for Oracle 12 user accounts
 
+if [ $USER = "oracle12" ]; then
+ulimit -u 16384 -n 65536
+fi
+############################################
 
+{% endhighlight %}
 
+<br/>
 
 5) Отредактируйте файл /home/oracle/.bash_profile
 
@@ -149,27 +154,33 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 Добавьте
 
-	############################################
-	#### Oracle 12 Parameters
+{% highlight shell %}
 
-	umask 022
+############################################
+#### Oracle 12 Parameters
 
-	export ORACLE_BASE=/u01/oracle
-	export ORACLE_HOME=$ORACLE_BASE/database/12.2
-	export ORACLE_SID=orcl12
-	export ORACLE_UNQNAME=orcl12
-	export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
-	export NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
+umask 022
 
-	export PATH=$PATH:$ORACLE_HOME/bin
-	export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export ORACLE_BASE=/u01/oracle
+export ORACLE_HOME=$ORACLE_BASE/database/12.2
+export ORACLE_SID=orcl12
+export ORACLE_UNQNAME=orcl12
+export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+export NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
 
-	export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
+export PATH=$PATH:$ORACLE_HOME/bin
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
-	alias sqlplus='rlwrap sqlplus'
-	alias rman='rlwrap rman'
+export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
 
-	############################################
+alias sqlplus='rlwrap sqlplus'
+alias rman='rlwrap rman'
+
+############################################
+
+{% endhighlight %}
+
+
 
 Применить переменные, определенные в файле .bash_profile к текущей сессии bash можно следующей командой:
 

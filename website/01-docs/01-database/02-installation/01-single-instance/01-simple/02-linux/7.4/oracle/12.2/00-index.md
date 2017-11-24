@@ -96,11 +96,6 @@ Oracle linux можно скачать на сайте linux.oracle.com. Обр�
 
 	<li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/setup-actual-time/">Настройка сервисов отвечающих за синхронизацию времени</a></li>
 
-    <!-- 
-
-	<li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/autostart-only-packages-what-needed/">Автозапуск только выбранных программ</a></li> -->
-
-
 	<li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/prepare-hdd-to-install-oracle/">Подготовка жестких дисков к инсталляции базы данных</a></li>
 
 	<li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/prepare-kernel-parameters-and-user-environments/">Конфигурирование системных пользователей, настройка параметров системы</a></li>

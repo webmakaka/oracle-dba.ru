@@ -9,8 +9,12 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <br/>
 
 <strong>Подключаемся под учетной записью Administrator</strong>
+
+
 <br/><br/>
+
 (Пытался установить Oracle под учетной записью созданной специально для инсталляции базы данных, получал ошибки).
+
 <br/><br/>
 
 <img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_01.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>

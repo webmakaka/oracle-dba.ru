@@ -5,7 +5,7 @@ permalink: /docs/business-intelligence/repository-creation-utility/
 ---
 
 
-<h2>Создание схемы в базе данных для приложения OBIEE с помощью Repository Creation Utility (RCU):</h2>
+# Создание схемы в базе данных для приложения OBIEE с помощью Repository Creation Utility (RCU):
 
 
 Дистрибутив RCU спраятали, что его не так просто и найти.

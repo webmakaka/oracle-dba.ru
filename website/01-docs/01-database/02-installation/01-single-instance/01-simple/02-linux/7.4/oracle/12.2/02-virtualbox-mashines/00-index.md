@@ -143,9 +143,10 @@ permalink: /database/installation/single-instance/simple/oel/7.4/oracle/db/12.2/
 
 <br/>
 
-ifconfig на хост машине должен выводить vboxnet0.
-
+ifconfig на хост машине должен выводить vboxnet0.  
 vboxnet0 - виртуальный адаптер хостовой машины.
+
+    $ ifconfig vboxnet0
 
 Если виртуального адаптера нет, нуно его самостоятельно создать.
 
@@ -174,6 +175,20 @@ vboxnet0 - виртуальный адаптер хостовой машины.
 Стартовать, если нужно
 
     $ sudo ifconfig vboxnet0 up
+
+<br/>
+
+    $ ifconfig vboxnet0
+    vboxnet0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+            inet 192.168.56.1  netmask 255.255.255.0  broadcast 192.168.56.255
+            ether 0a:00:27:00:00:00  txqueuelen 1000  (Ethernet)
+            RX packets 0  bytes 0 (0.0 B)
+            RX errors 0  dropped 0  overruns 0  frame 0
+            TX packets 0  bytes 0 (0.0 B)
+            TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+<br/>
 
 
 Если что-то пошло не так, можно удалить созданный интерфейс командой:

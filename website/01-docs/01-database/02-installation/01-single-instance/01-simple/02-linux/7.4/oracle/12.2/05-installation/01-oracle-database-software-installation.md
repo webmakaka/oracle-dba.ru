@@ -24,8 +24,13 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 ### Проверка конфигурации перед инсталляцией:
 
 
-	$ cd /distrib/oracle/12.2/database/
+Если переменная DISPLAY не задана.
 
+	$ export DISPLAY=192.168.1.5:0.0
+
+<br/>
+
+	$ cd /distrib/oracle/12.2/database/
 
 <br/>
 
@@ -47,10 +52,6 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 ### Запуск программы инсталляции базы данных:
 
-
-Если переменная DISPLAY не задана.
-
-	$ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 
