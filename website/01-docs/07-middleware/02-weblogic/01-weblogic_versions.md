@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Версии Weblogic
-permalink: /weblogic/weblogic-versions/
+permalink: /middleware/weblogic/weblogic-versions/
 ---
 
 

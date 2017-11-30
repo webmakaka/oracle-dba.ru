@@ -6,20 +6,12 @@ permalink: /middleware/rcu/
 
 # Repository Creation Utility (RCU)
 
-Offtopic:
-
-<ul>
-    <li><a href="/docs/business-intelligence/repository-creation-utility/">Создание схемы в базе данных для приложения OBIEE с помощью Repository Creation Utility (RCU)</a></li>
-</ul>
-
-
-Offtopic end
-
 
 <br/>
-<br/>
 
-Устанавливаю 27.11.2017
+**Устанавливаю 27.11.2017**
+
+<br/>
 
 Ранее база данных была установлена по этому документу:
 
@@ -28,11 +20,16 @@ Offtopic end
 </ul>
 
 
+<br/>
+<br/>
+
 Скачиваю отсюда:  
 http://www.oracle.com/technetwork/middleware/data-integrator/downloads/index.html
 
 Repository Creation Utility (RCU) (11.1.1.9.0) для Linux (x64)
 
+
+<br/>
 
 Скопировал ofm_rcu_linux_11.1.1.9.0_64_disk1_1of1.zip на сервер.
 
@@ -44,9 +41,9 @@ Repository Creation Utility (RCU) (11.1.1.9.0) для Linux (x64)
 
 <br/>
 
-### ORA-28040: No matching authentication protocol
+Чтобы избежать ошибки "ORA-28040: No matching authentication protocol"
 
-Фиксим:
+Делаю следующее:
 
     $ cd /u01/oracle/database/12.2/network/admin/sqlnet.ora
 
@@ -90,3 +87,19 @@ SQLNET.ALLOWED_LOGON_VERSION_SERVER=8
 <br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic11.png" border="0" alt="RCU Installation">
 <br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic12.png" border="0" alt="RCU Installation">
 <br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic13.png" border="0" alt="RCU Installation">
+
+
+
+
+
+<br/>
+<br/>
+
+**Возможно будет полезно:**
+
+
+<br/>
+
+<ul>
+    <li><a href="/docs/business-intelligence/repository-creation-utility/">Создание схемы в базе данных для приложения OBIEE с помощью Repository Creation Utility (RCU)</a></li>
+</ul>

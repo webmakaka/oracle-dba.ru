@@ -27,7 +27,7 @@ permalink: /sitemap/
 
 <div align="center">
 
-    <a href="/weblogic/"><img src="http://img.oradba.net/img/oracle/middleware/weblogic/weblogic.jpg" border="0" alt="Oracle Weblogic Logo"></a>
+    <a href="/middleware/weblogic/"><img src="http://img.oradba.net/img/oracle/middleware/weblogic/weblogic.jpg" border="0" alt="Oracle Weblogic Logo"></a>
 
 </div>
 
@@ -43,6 +43,18 @@ permalink: /sitemap/
     <a href="/docs/business-intelligence/"><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi.png" border="0" alt="Oracle Business Intelligence  Logo"></a>
 
 </div>
+
+
+<br/>
+
+<hr>
+
+
+### Материалы по Oracle Golden Gate:
+
+<ul>
+	<li><a href="/golden-gate/">Материалы по Oracle Golden Gate</a></li>
+</ul>
 
 
 <br/>
