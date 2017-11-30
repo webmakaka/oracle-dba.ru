@@ -7,13 +7,13 @@ permalink: /middleware/
 # Middleware
 
 
+<br/>
+
 <ul>
     <li><a href="/middleware/weblogic/">Weblogic</a></li>
 </ul>
 
 
-
-<br/>
 <br/>
 
 <ul>

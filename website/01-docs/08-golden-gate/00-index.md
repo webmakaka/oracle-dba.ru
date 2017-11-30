@@ -20,10 +20,6 @@ permalink: /golden-gate/
     </li>
 
     <li>
-        <a href="https://yadi.sk/i/wtiypvGrromeu">скачать запись вебинара </a>
-    </li>
-
-    <li>
         <a href="http://www.osp.ru/netcat_files/18/10/GoldenGate_BigData_and_Cloud_public.pdf">презентация: Новые возможности платформы Oracle 12c для хранилищ данных и интеграции</a>
     </li>
     <li>
