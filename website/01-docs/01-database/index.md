@@ -8,7 +8,8 @@ permalink: /database/
 # Oracle DataBase
 
 <br/>
-<h3>Первое знакомство с Oracle DataBase:</h3>
+
+### Первое знакомство с Oracle DataBase:
 
 <ul>
     <li><a href="/database/beginning/">Первое знакомство с Oracle DataBase</a></li>
