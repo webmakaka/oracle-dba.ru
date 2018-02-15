@@ -37,7 +37,7 @@ permalink: /database/installation/single-instance/simple/oel/7.4/oracle/db/12.2/
     $ vm=vm_oel_7.4_oracle_db_12.2
 
 
-Создаем каталоги для виртуальной машины  и для snapshots
+Создаем каталоги для виртуальной машины и для snapshots
 
     $ mkdir -p ${VM_HOME}/${vm}/snapshots
 
@@ -120,6 +120,7 @@ permalink: /database/installation/single-instance/simple/oel/7.4/oracle/db/12.2/
     --type dvddrive \
     --medium  /mnt/dsk1/oracle/OracleLinux/7.4/V921569-01.iso
 
+<br/>
 
 ### Подключение сетевых интерфейсов:
 
