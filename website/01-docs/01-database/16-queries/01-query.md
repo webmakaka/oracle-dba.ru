@@ -5,15 +5,16 @@ permalink: /docs/architecture/queries/query/
 ---
 
 
-<h2>Некоторые запросы к базе данных Oracle: </h2>
+# Некоторые запросы к базе данных Oracle:
 
-<br/><br/>
-
+<br/>
 
 // Какие компоненты установлены:
 
     SQL> select comp_id, comp_name, version, status from dba_registry;
 
+
+<br/>
 
 // Tracking Oracle Option Usage (Какие опции Oracle DataBase использовались):
 
@@ -38,12 +39,14 @@ permalink: /docs/architecture/queries/query/
 http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
 
-
+<br/>
 
 Отключение корзины
 
     SQL> alter system set RECYCLEBIN=off scope=BOTH;
 
+
+<br/>
 
 Найти невалидные объекты
 
@@ -51,14 +54,21 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
     WHERE status = 'INVALID';
 
 
+<br/>
+
 Задать каталог где будут создаваться фийлы
 
     SQL> alter system set db_create_file_dest="/u01/datafiles";  
+
+
+<br/>
 
 Посмотреть параметры
 
     SQL> show parameter db_create_file_dest
 
+
+<br/>
 
 Выявление пользоавтелей, наиболее интенсивно эксплуатирующих ресурсы ЦП
 
@@ -70,12 +80,17 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
     ORDER BY s.value desc;
 
 
+<br/>
+
 Создание и использование последовательностей (sequence)
 
     create sequence dept_seq start with 200 increment by 10;
     insert into departments valuse (dept_seq.netxval, .......)
 
-вывести залоченные объекты
+
+<br/>
+
+Показать залоченные объекты
 
     select * from source_locked l
     where l.object_name = 'PRINT'
