@@ -43,9 +43,9 @@ https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g/
     $ docker run -d --shm-size=2g -p 1521:1521 -p 8080:8080 alexeiled/docker-oracle-xe-11g
 
 
-Видим 2 команды. 
-1) взять контейнер
-2) запустить
+Видим 2 команды.  
+1) взять контейнер  
+2) запустить  
 
 Остается только подключиться, как сделал я с помощью бесплатного SQLDeveloper, который можно скачать с сайта oracle.
 
@@ -58,9 +58,9 @@ https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g/
     sid: xe
     username: system
     password: oracle
-    Password for SYS user
-
-    oracle
+    
+    username: sys
+    password: oracle
 
 <br/>
 
