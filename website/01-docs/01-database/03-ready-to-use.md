@@ -19,4 +19,4 @@ permalink: /database/ready-to-use/
 
 ### Подготовленный Docker контейнер с базой 11 XE
 
-Если вы работаете в Linux, то базу можно запустить парой команд  <a href="/database/installation/single-instance/simple/linux/docker/oracle/11/xe/">в docker контейнере</a>. Под Windows докер тоже работает, но там не так очевидны преимущества, всили того, что приходится использовать VirtualBox.
+<a href="/database/installation/single-instance/simple/linux/docker/oracle/11/xe/">Информация здесь</a>

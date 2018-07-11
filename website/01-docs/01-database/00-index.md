@@ -66,7 +66,7 @@ permalink: /database/
 
 <br/>
 
-### Некоторые запросы к базе данных Oracle:</h3>
+### Некоторые запросы к базе данных Oracle:
 
 <ul>
     <li><a href="/docs/architecture/queries/query/">Некоторые запросы к базе данных Oracle</a></li>
