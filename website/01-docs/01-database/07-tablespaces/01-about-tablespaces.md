@@ -6,7 +6,6 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 
 <h2>Табличные пространства Oracle</h2><br/>
 
-
 <table class="FormalWide" title="Tablespace Names Used with Oracle Real Application Clusters Databases" summary="This table is described in the preceding text" dir="ltr" frame="border" rules="all" width="100%" cellpadding="3" cellspacing="0" border="1">
 <colgroup><col width="24%">
 <col width="*">
@@ -68,10 +67,9 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 </tbody>
 </table>
 
+<br/>
 
 Посмотреть, какие табличные пространства имеются в базе данных можно следующим запросом.
-
-
 
     SQL> select TABLESPACE_NAME from dba_tablespaces;
 
@@ -88,39 +86,34 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 
     8 rows selected.
 
-
 <br/>
 
-В каких файла хранятся табличные пространства.
+В каких файлах хранятся табличные пространства.
 
-    select file_name, tablespace_name FROM DBA_DATA_FILES;
+    SQL> select file_name, tablespace_name FROM DBA_DATA_FILES;
 
 <br/>
 <h3>Табличное пространство system</h3>
 
 В табличном пространстве system хранится «Словарь данных Oracle»
 
-
 Каждая база данных Oracle содержит набор таблиц, доступных только для чтения и известных как словарь данных (data dictionary), который содержит метаданные (информацию о различных компонентах базы данных). Словарь данных Oracle – сердце системы управления базой данных.
+
 Словарь данных создается при создании экземпляра базы данных выполнением инструкций в файле $ORACLE_HOME/rdbms/admin/catalog.sql
 
 Oracle не позволяет обращаться к таблицам словаря данных напрямую. Он создает представления на базе этих таблиц и общедоступные синонины для тих представлений, к которым могут обращаться пользователи. Существует три набора представлений словаря данных: USER, ALL и DBA – каждый из которых содержит сходный набор представлений со сходным набором столбцов.
 
-
-    select * from dictionary;
+    SQL> select * from dictionary;
 
 <br/>
 
 <strong>Посмотреть содержимое табличного пространства system</strong>
 
-
-    select segment_name,owner, sum(bytes) from dba_segments where tablespace_name = 'SYSTEM'  group by segment_name, owner order by 3,2 desc;
-
+    SQL> select segment_name,owner, sum(bytes) from dba_segments where tablespace_name = 'SYSTEM'  group by segment_name, owner order by 3,2 desc;
 
 <br/>
 <h3>Табличное пространство sysaux</h3>
 Табличное пространство sysaux служит вспомогательным табличным пространством по отношению к табличному пространству system.
-
 
     SQL> set pagesize 0;
     SQL> set linesize 200;
@@ -128,7 +121,6 @@ Oracle не позволяет обращаться к таблицам слов
 <br/>
 
     SQL> select occupant_desc,space_usage_kbytes from V$SYSAUX_OCCUPANTS order by space_usage_kbytes;
-
 
 <br/>
 
@@ -166,7 +158,7 @@ Oracle не позволяет обращаться к таблицам слов
 
     31 rows selected.
 
-
+<br/>
 
 Табличное пространство USERS – табличное пространство, где по умолчанию хранятся пользовательские данные.
 
@@ -176,20 +168,16 @@ Oracle не позволяет обращаться к таблицам слов
 
 Остальные табличные пространства MY_DATA, MY_INDEXES, MY_TEMP – созданы исключительно для удобства.
 
-
 <br/>
 <h2>Размер и свободное место для всех табличных пространств</h2>
 
-
-
-    SELECT a.tablespace_name, "Free, MB", "Total, MB" FROM
+    SQL> SELECT a.tablespace_name, "Free, MB", "Total, MB" FROM
       (SELECT tablespace_name, ROUND(SUM(bytes)/1024/1024) AS "Total, MB" FROM dba_data_files GROUP BY tablespace_name
       UNION
       SELECT tablespace_name, ROUND(SUM(bytes)/1024/1024) AS "Total, MB" FROM dba_temp_files GROUP BY tablespace_name) a,
       (SELECT tablespace_name, ROUND(SUM(bytes)/1024/1024) AS "Free, MB" FROM dba_free_space GROUP BY tablespace_name) b
     WHERE a.tablespace_name = b.tablespace_name (+)
     ORDER BY a.tablespace_name;
-
 
 <br/>
 <strong>Result:</strong>
@@ -207,11 +195,13 @@ Oracle не позволяет обращаться к таблицам слов
 
     8 rows selected.
 
+<br/>
 
 Или такой вариант:
 
+<br/>
 
-    select 	a.TABLESPACE_NAME tablespace_name, b.BYTES total_bytes, a.BYTES free_bytes,
+    SQL> select 	a.TABLESPACE_NAME tablespace_name, b.BYTES total_bytes, a.BYTES free_bytes,
             round(a.BYTES*100/b.BYTES,2) percent_free,
             round((b.BYTES-a.BYTES)*100/b.BYTES,2) percent_used
     from  (select TABLESPACE_NAME, sum(BYTES) BYTES from dba_free_space group by TABLESPACE_NAME) a,
@@ -219,10 +209,7 @@ Oracle не позволяет обращаться к таблицам слов
     where a.TABLESPACE_NAME=b.TABLESPACE_NAME
     order by a.TABLESPACE_NAME;
 
-
-
 <br/>
-
 
     TABLESPACE_NAME                TOTAL_BYTES FREE_BYTES PERCENT_FREE PERCENT_USED
     ------------------------------ ----------- ---------- ------------ ------------
@@ -240,14 +227,12 @@ Oracle не позволяет обращаться к таблицам слов
 
 ## Размер и свободное место для временных табличных пространств
 
-
-    SELECT a.tablespace_name, total_bytes/1024/1024 AS "Total, MB", used_mbytes AS "Used, MB",
+    SQL> SELECT a.tablespace_name, total_bytes/1024/1024 AS "Total, MB", used_mbytes AS "Used, MB",
       (total_bytes/1024/1024 - used_mbytes) AS "Free, MB" FROM
         (SELECT tablespace_name, SUM(bytes_used + bytes_free) AS total_bytes
           FROM v$temp_space_header GROUP BY tablespace_name) a,
         (SELECT tablespace_name, used_blocks*8/1024 AS used_mbytes FROM v$sort_segment) b
     WHERE a.tablespace_name=b.tablespace_name;
-
 
 <br/>
 <strong>Result:</strong>

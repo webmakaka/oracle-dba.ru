@@ -4,13 +4,13 @@ title: Команды для анализа использования UNDOTBS
 permalink: /docs/architecture/tablespaces/undo-tablespace/
 ---
 
+# Команды для анализа использования UNDOTBS
 
-<h3>Команды для анализа использования UNDOTBS</h3><br/>
+<br/>
 
 Display sizes of active, unexpired and expired UNDO extents
 
     select status, round(sum(bytes)/1024/1024) as "Size, MB" from dba_undo_extents group by status;
-
 
 Display UNDO utilization details per user session (SID, User Name)
 

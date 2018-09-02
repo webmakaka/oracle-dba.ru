@@ -4,13 +4,9 @@ title: Собрать статистику пользовательской се
 permalink: /docs/architecture/performance/collect-session-statistics/
 ---
 
-
-
-<h2>Собрать статистику пользовательской сессии:</h2>
-
+# Собрать статистику пользовательской сессии:
 
 Т.е. получить максимально полный отчет по тому, какие действия проводились пользователем и каким образом на эти действия реагировала база.
-
 
 Показать текущие сессии
 
@@ -20,21 +16,17 @@ permalink: /docs/architecture/performance/collect-session-statistics/
     --where status='ACTIVE' and osuser!='SYSTEM' -- посмотреть пользовательские сессии
     order by 4 asc;
 
-
 Включить трассировку
 
     begin
     dbms_system.set_sql_trace_in_session(sid => 139 , serial# => 40063, sql_trace => true);
     end;
 
-
 Выключить трассировку
 
     begin
     dbms_system.set_sql_trace_in_session(sid => 139 , serial# => 40063, sql_trace => false);
     end;
-
-
 
 Преобразовать трассировочный файл в понятный для человека вид.
 
