@@ -9,7 +9,10 @@ permalink: /database/beginning/library/
 Если Вы только приступаете к изучению основ работы с базами данных Oracle, я бы рекомендовал следующее:
 
 <br/>
-<h3>Настольная книга Администратора БД Oracle</h3>
+
+### Настольная книга Администратора БД Oracle
+
+Возможно, книга покажется достаточно сложной.
 
 <strong>
 
@@ -24,7 +27,8 @@ permalink: /database/beginning/library/
 Разумеется я говорю о книге Сема Алапати: Oracle DataBase 11g Руководство Администратора Баз Данных. Качество книги - отличное.
 
 <br/>
-<h3>Видеокурсы от "Специалист":</h3>
+
+### Видеокурсы от "Специалист":
 
 Вы можете постараться найти курсы от обучающего центра специалист.
 
@@ -37,9 +41,8 @@ permalink: /database/beginning/library/
 ### Можно также посмотреть курсы Игоря Мирончика:
 
 <ul>
-	<li><a href="http://www.youtube.com/view_play_list?p=D0A648F8F65684BF"><strong>Основы администрирования БД Oracle</strong></a></li>
-
-    <li><a href="http://www.youtube.com/view_play_list?p=6F78CB4058D30626"><strong>Администрирование Oracle 10g, 11g</strong></a></li>
+	<li><strong>Основы администрирования БД Oracle</strong></li>
+    <li><a href="http://www.youtube.com/view_play_list?p=6F78CB4058D30626"><strong>[Мирончик И.] Администрирование Oracle 10g, 11g</strong></a></li>
 
 </ul>
 
@@ -48,8 +51,8 @@ permalink: /database/beginning/library/
 ### Книги полезные для администратора баз данных Oracle (на русском языке):
 
 <ul>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=1286064"><strong>Oracle 10g администрирование часть 1 (rus)</strong></a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=2575109"><strong>Oracle 10g администрирование часть 2 (rus)</strong></a></li>
+	<li><strong>Oracle 10g администрирование часть 1 (rus)</strong></li>
+	<li><strong>Oracle 10g администрирование часть 2 (rus)</strong></li>
 
 </ul>
 
@@ -58,37 +61,27 @@ permalink: /database/beginning/library/
 ### Книги полезные для администратора баз данных Oracle (на английском языке):
 
 <ul>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3081992"><strong>Expert Oracle Database 11g Administration</strong></a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3083606"><strong>Expert's Voice in Oracle - Kyte T. - Expert Oracle Database Architecture, Second Edition [2010, PDF, ENG]</strong></a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3890465"><strong>Expert's Voice in Oracle - Alapati S., Kuhn D., Padfield B. - Oracle Database 11g Performance Tuning Recipes. A Problem-Solution Approach [2011, PDF, ENG]</strong></a></li>
-
-</ul>
-
-<br/>
-См. Также:
-
-<ul>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3487264"><strong>Linux System Architecture [2011, ENG]</strong></a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=3555861"><strong>Eterprise Linux 6 Edition [2011, ENG]</strong></a></li>
-	<li><a href="http://rutracker.org/forum/viewtopic.php?t=253153"><strong>Видеокурс по основам работы с Solaris 10 (eng)</strong></a> (стоит изучать, если предполагается работать с серверами работающими на данной платформе)<br/></li>
-</ul>
-
-<br/><br/>
-
-<h3>Классика Oracle:</h3>
-
-<ul>
-<li><a href="http://rutracker.org/forum/viewtopic.php?t=937697">Oracle. Проектирование баз данных</a> (RUS 1999)</li>
-<li><a href="http://rutracker.org/forum/viewtopic.php?t=1907447">Том Кайт - Oracle для профессионалов</a>(RUS 2003)</li>
+	<li><strong>Expert Oracle Database 11g Administration</strong></li>
+	<li><strong>Expert's Voice in Oracle - Kyte T. - Expert Oracle Database Architecture, Second Edition [2010, PDF, ENG]</strong></li>
+	<li><strong>Expert's Voice in Oracle - Alapati S., Kuhn D., Padfield B. - Oracle Database 11g Performance Tuning Recipes. A Problem-Solution Approach [2011, PDF, ENG]</strong></li>
 
 </ul>
 
 <br/>
 
-<h3>Книги, рекомендованные моими коллегами, разработчиками Oracle:</h3>
+### Классика Oracle:
 
-<strong>Cost-Based Oracle Foundaments/Oracle основы стоимостной оптимизации</strong><br/>
-hxxp://rutracker.org/forum/viewtopic.php?t=3222256
+<ul>
+<li>Oracle. Проектирование баз данных (RUS 1999)</li>
+<li>Том Кайт - Oracle для профессионалов (RUS 2003)</li>
+
+</ul>
+
+<br/>
+
+### Книги, рекомендованные моими коллегами, разработчиками Oracle:
+
+<strong>Cost-Based Oracle Foundaments/Oracle основы стоимостной оптимизации</strong>
 
 <br/><br/>
 
@@ -102,25 +95,21 @@ hxxp://rutracker.org/forum/viewtopic.php?t=3222256
 
 <div style="padding:10px; border:thin solid black;">
 
-    <h3>Порекомендуйте хорошие материалы по изучению технологий Oracle.</h3>
+    <h3>Порекомендуйте хорошие материалы по изучению базы данных Oracle, серверов приложений, BI , etc</h3>
 
-    Базы данных, сервера приложений, BI, Java, etc
+</div>
 
-    <br/><br/>
-    Если есть записи каких-нибудь тренингов (не для начинающих по базам), напишите.
-    Может быть мы обменяемся с Вами, тем что есть у Нас. Я бы посмотрел по DataWarehousing, проектированию.
+<br/>
 
-    <br/><img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0" />
+<div style="padding:10px; border:thin solid black;" align="center">
 
-    <br/>
+  <h3>Активизировались правообладатели, материалы ищите самостоятельно.</h3>
 
 </div>
 
 <br/><br/>
 
 <div style="padding:10px; border:thin solid black;">
-
-    <h3></h3>
 
 ~Вопрос (человек работает в компании, где используются сервера баз данных Oracle):<br/><br/>
 
