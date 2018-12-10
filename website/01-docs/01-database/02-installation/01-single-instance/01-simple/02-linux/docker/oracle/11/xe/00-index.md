@@ -27,10 +27,10 @@ Docker - наверное, лучшее решение, когда нужно п
 Например, следующим образом, это можно сделать в:  
 
 **Ubuntu like дистрибутивах:**  
-http://sysadm.ru/linux/containers/docker/installation/ubuntu/
+http://sysadm.ru/linux/servers/containers/docker/installation/ubuntu/
 
 **CentOS 7.3 like дистрибутивах:**  
-http://sysadm.ru/linux/containers/docker/installation/centos/7/
+http://sysadm.ru/linux/servers/containers/docker/installation/centos/7/
 
 
 <br/>
