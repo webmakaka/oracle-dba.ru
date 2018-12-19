@@ -1,0 +1,21 @@
+[Unit]
+Description=oracle-dba.ru
+
+Requires=docker.service
+After=docker.service
+
+[Service]
+
+Restart=always
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill oracle-dba.ru
+ExecStartPre=-/usr/bin/docker rm oracle-dba.ru
+ExecStartPre=-/usr/bin/docker pull marley/oracle-dba.ru:latest
+ExecStart=/bin/sh -c '/usr/bin/docker run --name oracle-dba.ru   \
+ -p 4009:80                        \
+ marley/oracle-dba.ru'
+ExecStop=-/usr/bin/docker kill oracle-dba.ru
+ExecStop=-/usr/bin/docker rm oracle-dba.ru
+
+[Install]
+WantedBy=multi-user.target

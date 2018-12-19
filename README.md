@@ -1,27 +1,20 @@
-# Исходные коды сайта <a href="http://oracle-dba.ru">oracle-dba.ru</a>
+# Исходные коды сайта <a href="https://oracle-dba.ru">oracle-dba.ru</a>
 
+Запустить sysadm.ru на своем хосте с использованием docker контейнера:
 
-[![Build Status](https://travis-ci.org/plsql/oracle-dba.ru.svg?branch=gh-pages)](https://travis-ci.org/plsql/oracle-dba.ru)
-[![Join the chat at https://gitter.im/oracle-dba-ru/Lobby](https://badges.gitter.im/oracle-dba-ru/Lobby.svg)](https://gitter.im/oracle-dba-ru/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-Как скопировать и запустить oracle-dba.ru на свой хост с использованием docker контейнера:
-
-Инсталлируете docker, далее:
-
-    $ docker pull marley/centos6-for-dev
-    $ docker run -i -t –rm -p 80:8080 –-name oradev marley/centos6-for-dev /bin/bash
+    $ docker run -i -t -p 80:80 --name oracle-dba.ru marley/oracle-dba.ru
 
 <br/>
 
-    $ source ~/.bash_profile
-    $ cd /projects
-    $ git clone --depth=1 https://github.com/plsql/oracle-dba.ru
-    $ cd oracle-dba.ru
-    $ gem install jekyll
-    $ jekyll serve --watch --host 0.0.0.0 --port 8080
+### Как сервис
+
+    # vi /etc/systemd/system/oracle-dba.ru.service
+
+вставить содержимое файла oracle-dba.ru.service
+    
+    # systemctl enable oracle-dba.ru.service
+    # systemctl start  oracle-dba.ru.service
+    # systemctl status oracle-dba.ru.service
 
 
-<br/>
-<br/>
-
-Остается в браузере подключиться к localhost
+http://localhost:4009
