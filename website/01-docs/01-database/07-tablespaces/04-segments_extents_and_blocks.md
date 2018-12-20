@@ -46,25 +46,25 @@ KByte, в котором содержатся интересующие четы�
 <col width="*" />
 <thead>
 <tr align="left" valign="top">
-<th align="left" valign="bottom" id="r1c1-t33">View</th>
-<th align="left" valign="bottom" id="r1c2-t33">Description</th>
+<th align="left" valign="bottom">View</th>
+<th align="left" valign="bottom">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr align="left" valign="top">
-<td align="left" id="r2c1-t33" headers="r1c1-t33"><code>DBA_SEGMENTS</code>
+<td align="left" headers="r1c1-t33"><code>DBA_SEGMENTS</code>
 <p><code>USER_SEGMENTS</code></p>
 </td>
 <td align="left" headers="r2c1-t33 r1c2-t33"><span class="bold"><a id="sthref1724" name="sthref1724"></a></span>DBA view describes storage allocated for all database segments. User view describes storage allocated for segments for the current user.</td>
 </tr>
 <tr align="left" valign="top">
-<td align="left" id="r3c1-t33" headers="r1c1-t33"><code>DBA_EXTENTS</code>
+<td align="left" headers="r1c1-t33"><code>DBA_EXTENTS</code>
 <p><code>USER_EXTENTS</code></p>
 </td>
 <td align="left" headers="r3c1-t33 r1c2-t33"><span class="bold"><a id="sthref1725" name="sthref1725"></a></span>DBA view describes extents comprising all segments in the database. User view describes extents comprising segments for the current user.</td>
 </tr>
 <tr align="left" valign="top">
-<td align="left" id="r4c1-t33" headers="r1c1-t33"><code>DBA_FREE_SPACE</code>
+<td align="left" headers="r1c1-t33"><code>DBA_FREE_SPACE</code>
 <p><code>USER_FREE_SPACE</code></p>
 </td>
 <td align="left" headers="r4c1-t33 r1c2-t33">DBA view lists free extents in all tablespaces. User view shows free space information for tablespaces for which the user has quota.</td>
