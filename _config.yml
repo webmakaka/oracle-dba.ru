@@ -3,7 +3,7 @@ title: oracle-dba.ru
 
 description: Администрирование баз данных Oracle
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://oracle-dba.ru" # the base hostname & protocol for your site
+url: "https://oracle-dba.ru" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
