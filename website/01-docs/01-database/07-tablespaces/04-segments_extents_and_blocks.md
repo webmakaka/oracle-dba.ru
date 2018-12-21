@@ -55,13 +55,13 @@ KByte, в котором содержатся интересующие четы�
 <td align="left" headers="r1c1-t33"><code>DBA_SEGMENTS</code>
 <p><code>USER_SEGMENTS</code></p>
 </td>
-<td align="left" headers="r2c1-t33 r1c2-t33"><span class="bold"><a id="sthref1724" name="sthref1724"></a></span>DBA view describes storage allocated for all database segments. User view describes storage allocated for segments for the current user.</td>
+<td align="left" headers="r2c1-t33 r1c2-t33"><span class="bold"><a name="sthref1724"></a></span>DBA view describes storage allocated for all database segments. User view describes storage allocated for segments for the current user.</td>
 </tr>
 <tr align="left" valign="top">
 <td align="left" headers="r1c1-t33"><code>DBA_EXTENTS</code>
 <p><code>USER_EXTENTS</code></p>
 </td>
-<td align="left" headers="r3c1-t33 r1c2-t33"><span class="bold"><a id="sthref1725" name="sthref1725"></a></span>DBA view describes extents comprising all segments in the database. User view describes extents comprising segments for the current user.</td>
+<td align="left" headers="r3c1-t33 r1c2-t33"><span class="bold"><a name="sthref1725"></a></span>DBA view describes extents comprising all segments in the database. User view describes extents comprising segments for the current user.</td>
 </tr>
 <tr align="left" valign="top">
 <td align="left" headers="r1c1-t33"><code>DBA_FREE_SPACE</code>
