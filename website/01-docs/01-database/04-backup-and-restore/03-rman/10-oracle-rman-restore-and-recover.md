@@ -4,11 +4,11 @@ title: Восстановление из резервной копий с пом
 permalink: /database/backup-and-restore/rman/oracle-rman-restore-and-recover/
 ---
 
-
 # Восстановление из резервной копий с помощью утилиты RMAN (Recovery Manager)
 
-### Получить информацию об имеющихся бекапах.
+<br/>
 
+### Получить информацию об имеющихся бекапах.
 
     set pagesize 200;
 
@@ -17,15 +17,11 @@ permalink: /database/backup-and-restore/rman/oracle-rman-restore-and-recover/
 
 <br/>
 
-
-<h3>Получить список файлов, необходимых для восстановления из бекапа.</h3>
-
+### Получить список файлов, необходимых для восстановления из бекапа.
 
     RMAN> RESTORE DATABASE PREVIEW SUMMARY;
 
 <br/>
-
-
 
     Starting restore at 13.04.2012 18:48:51
     using channel ORA_DISK_1
@@ -53,12 +49,10 @@ permalink: /database/backup-and-restore/rman/oracle-rman-restore-and-recover/
     Recovery must be done beyond SCN 8639822 to clear datafile fuzziness
     Finished restore at 13.04.2012 18:48:51
 
-
 <br/><br/>
-Команда:<br/>
+**Команда:**<br/>
 
 RESTORE DATABASE PREVIEW - представляет детальный отчет обо всех резервных копиях, которые потребуются для успешного выолпнения команды RESTORE.
-
 
     RMAN> RESTORE DATABASE PREVIEW;
 
@@ -143,51 +137,46 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
     Recovery must be done beyond SCN 8639822 to clear datafile fuzziness
     Finished restore at 13.04.2012 18:51:29
 
-
 <br/><br/>
 
 <strong>Применение команды RESTORE..VALIDATE</strong>
 
-
 Утилита RMAN проверит, сможет ли она восстановить данные из бекапа.<br/>
 Реального восстановления при этом не происходит.
-
 
     RMAN> RESTORE DATABASE VALIDATE;
     RMAN> RESTORE DATABASE VALIDATE CHECK LOGICAL;
 
-
 <br/>
-<h3>Полное восстановление</h3>
 
+### Полное восстановление
 
-    RMAN>restore database;
-    RMAN>recover database;
-
+    RMAN> restore database;
+    RMAN> recover database;
 
 <br/>
 
-Восстановление только табличного пространства system на время последнего бекапа<br/>
+### Восстановление только табличного пространства system на время последнего бекапа
 
     RMAN> run{restore tablespace system; recover database;}
 
+<br/>
+
+### Неполное восстановление из последнего бекапа на 15 минут назад
+
+```shell
+RMAN> run{
+shutdown immediate;
+startup mount;
+set until time "sysdate-15/(24*60)";
+-- set until time "to_date('2010-06-01 12:50:30', 'yyyy-mm-dd hh24:mi:ss')";
+-- set until scn=1891093;
+restore database;
+recover database;
+alter database open resetlogs;}
+```
 
 <br/>
-<h3>Неполное восстановление из последнего бекапа на 15 минут назад</h3>
-
-
-
-    RMAN> run{
-    shutdown immediate;
-    startup mount;
-    set until time "sysdate-15/(24*60)";
-    -- set until time "to_date('2010-06-01 12:50:30', 'yyyy-mm-dd hh24:mi:ss')";
-    -- set until scn=1891093;
-    restore database;
-    recover database;
-    alter database open resetlogs;}
-
-
 
 При выполнении неполного восстановления, необходимо открывать базу данных командой:
 
@@ -195,12 +184,9 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
 
 При выполнении resetlogs, меняется инкарнация базы данных.
 
-
-
 // Восстановливать до того места, где возникает ошибка (например, отстутсвует архивный журнал или он испорчен).
 
     RMAN> recover database until cancel;
-
 
 <!--
 
