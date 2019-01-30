@@ -4,18 +4,15 @@ title: Запуск Oracle XE 11 в Docker контейнере под Linux
 permalink: /database/installation/single-instance/simple/linux/docker/oracle/11/xe/
 ---
 
-
 <br/>
 
 # Запуск Oracle XE 11 в Docker контейнере под Linux
 
-Делаю: 
+Делаю:
 
 11.07.2018
 
-
 Если вы работаете в Linux, то базу можно запустить парой команд. Под Windows docker тоже работает, но там не так очевидны преимущества, всилу того, что приходится использовать VirtualBox или VmWare как промежуточное звено виртуализации.
-
 
 Docker - наверное, лучшее решение, когда нужно просто и быстро запустить базу для каких-нибудь тестовых целей. (Особенно, если вы работаете под Linux).
 
@@ -24,14 +21,13 @@ Docker - наверное, лучшее решение, когда нужно п
 База данных Oracle бесплатной верии может быть запущена в контейнере парой команд. (Можно даже одной командой, не суть.)
 
 Должен быть установлен Docker.  
-Например, следующим образом, это можно сделать в:  
+Например, следующим образом, это можно сделать в:
 
 **Ubuntu like дистрибутивах:**  
-http://sysadm.ru/linux/servers/containers/docker/installation/ubuntu/
+https://sysadm.ru/linux/servers/containers/docker/installation/ubuntu/
 
 **CentOS 7.3 like дистрибутивах:**  
-http://sysadm.ru/linux/servers/containers/docker/installation/centos/7/
-
+https://sysadm.ru/linux/servers/containers/docker/installation/centos/7/
 
 <br/>
 
@@ -42,7 +38,7 @@ https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g/
 
     -- скачать/обновить имидж к себе на компьютер
     $ docker pull alexeiled/docker-oracle-xe-11g
-    
+
     -- создать и запустить на основе скачанного имиджа контейнер (наверное, имеет смысл еще задать имя контейнера)
     $ docker run -d --shm-size=2g -p 1521:1521 -p 8080:8080 alexeiled/docker-oracle-xe-11g
 
@@ -59,7 +55,7 @@ https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g/
     sid: xe
     username: system
     password: oracle
-    
+
     username: sys
     password: oracle
 
@@ -82,4 +78,4 @@ https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g/
 
 <br/>
 
-Как обстоят дела с продуктовыми базами в контейнерах, мне пока неизвестно. 
+Как обстоят дела с продуктовыми базами в контейнерах, мне пока неизвестно.
