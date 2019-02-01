@@ -8,9 +8,9 @@ permalink: /database/installation/single-instance/simple/linux/docker/oracle/11/
 
 # Запуск Oracle XE 11 в Docker контейнере под Linux
 
-Делаю:
+**Делаю:**
 
-11.07.2018
+01.02.2019 (Обновлено без тщательной проверки. Если что-то не будет работать, ознакомьтесь с <a href="https://github.com/wnameless/docker-oracle-xe-11g">инструкцией</a> от автора или задайте вопрос в телеграме).
 
 Если вы работаете в Linux, то базу можно запустить парой команд. Под Windows docker тоже работает, но там не так очевидны преимущества, всилу того, что приходится использовать VirtualBox или VmWare как промежуточное звено виртуализации.
 
@@ -23,24 +23,25 @@ Docker - наверное, лучшее решение, когда нужно п
 Должен быть установлен Docker.  
 Например, следующим образом, это можно сделать в:
 
-**Ubuntu like дистрибутивах:**  
-https://sysadm.ru/linux/servers/containers/docker/installation/ubuntu/
+**Ubuntu like дистрибутивах:**
 
-**CentOS 7.3 like дистрибутивах:**  
-https://sysadm.ru/linux/servers/containers/docker/installation/centos/7/
+<a href="https://sysadm.ru/linux/servers/containers/docker/install/ubuntu/">ссылка</a>
+
+**CentOS 7.3 like дистрибутивах:**
+
+<a href="https://sysadm.ru/linux/servers/containers/docker/install/centos/7/">ссылка</a>
 
 <br/>
 
-Информацию о подготовленном контейнере, можно посмотреть здесь (Можно и не смотреть, а сразу заняться запуском):  
-https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g/
+Информацию о подготовленном контейнере, можно посмотреть <a href="https://github.com/wnameless/docker-oracle-xe-11g">здесь</a> (Можно и не смотреть, а сразу заняться запуском):
 
 <br/>
 
     -- скачать/обновить имидж к себе на компьютер
-    $ docker pull alexeiled/docker-oracle-xe-11g
+    $ docker pull wnameless/oracle-xe-11g
 
     -- создать и запустить на основе скачанного имиджа контейнер (наверное, имеет смысл еще задать имя контейнера)
-    $ docker run -d --shm-size=2g -p 1521:1521 -p 8080:8080 alexeiled/docker-oracle-xe-11g
+    $ docker run -d --shm-size=2g -p 1521:1521 -p 8080:8080 wnameless/oracle-xe-11g
 
 <br/>
 
@@ -78,4 +79,4 @@ https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g/
 
 <br/>
 
-Как обстоят дела с продуктовыми базами в контейнерах, мне пока неизвестно.
+Продуктовые базы Oracle в контейнерах Docker уже есть. По поводу использования ничего сказать не могу.
