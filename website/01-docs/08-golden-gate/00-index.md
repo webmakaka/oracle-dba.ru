@@ -6,6 +6,10 @@ permalink: /golden-gate/
 
 # Материалы по Oracle Golden Gate
 
+<br/>
+
+### Введение в Oracle GoldenGate:Интеграция данных в реальном времени
+
 <ul>
     <li>
         <a href="https://www.youtube.com/watch?v=nv3Ccs-_4vo">[Вебинар] Введение в Oracle GoldenGate:Интеграция данных в реальном времени</a>
