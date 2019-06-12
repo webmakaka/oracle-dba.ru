@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 (SHARED FILE SYSTEM)
+title: Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/
 ---
 
-# Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM  в операционной системе Oracle Linux 6.7
+# Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)
 
 
 <br/>

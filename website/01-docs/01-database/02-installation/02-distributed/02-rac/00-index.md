@@ -17,7 +17,7 @@ RAC - несколько инстансов на разных серверах �
 <ul>
 	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (SHARED FILE SYSTEM)</a></li>
 
-    <li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)</a></li>
+  <li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)</a></li>
 
 </ul>
 
