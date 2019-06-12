@@ -153,9 +153,8 @@ db_unique_name - это уникальное имя для каждого экз
 
 **Материалы по теме: (Сортирока от более полезных, к менее)**:
 
-
 <ul>
-	<li><a href="https://pierreforstmanndotcom.wordpress.com/2014/11/28/create-a-physical-standby-database-with-oracle-12-1-0-2-and-rman-active-duplication/" rel="nofollow">[ENG] Create a physical standby database with Oracle 12.1.0.2 and RMAN active duplication</a></li>
+	<!-- <li><a href="https://pierreforstmanndotcom.wordpress.com/2014/11/28/create-a-physical-standby-database-with-oracle-12-1-0-2-and-rman-active-duplication/" rel="nofollow">[ENG] Create a physical standby database with Oracle 12.1.0.2 and RMAN active duplication</a></li> -->
 
 	<li><a href="http://habrahabr.ru/post/120495/" rel="nofollow">[HabraHabr] Еще раз про Oracle standby</a></li>
 
