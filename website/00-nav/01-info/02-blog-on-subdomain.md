@@ -27,4 +27,4 @@ P.S. Индусы (и не только они) раскручивают сво�
 
 
 email:  
-<img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0" />
+<img src="http:///img/a3333333mail.gif" alt="Marley" border="0" />

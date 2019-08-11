@@ -42,7 +42,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
     Checking if /dev/oracleasm is mounted: yes
 
 
-Если используется Divice Mapper, то выполняем следующий шаг, иначе при инсталляции возникнет ошибка: <a href="http://oracledba.net/docs/errors/ins-32148/Execution-of-GI-Install-script-failed-on-nodes/">[INS-32148] Execution of 'GI Install' script failed on nodes: [rac2]</a>
+Если используется Divice Mapper, то выполняем следующий шаг, иначе при инсталляции возникнет ошибка: <a href="https://oracledba.net/docs/errors/ins-32148/Execution-of-GI-Install-script-failed-on-nodes/">[INS-32148] Execution of 'GI Install' script failed on nodes: [rac2]</a>
 
 
 

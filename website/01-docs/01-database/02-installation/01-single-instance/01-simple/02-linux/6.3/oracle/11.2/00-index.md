@@ -23,7 +23,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, пишите мне адрес эл. почты:
 
 <div>
-	<img src="http://img.fotografii.org/a3333333mail.gif" alt="Marley" border="0">
+	<img src="http:///img/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 
