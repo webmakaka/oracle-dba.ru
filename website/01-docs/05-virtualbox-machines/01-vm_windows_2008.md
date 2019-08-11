@@ -124,7 +124,6 @@ permalink: /database/installation/virtualbox-machines/windows/2008/
 
 Подключаю к виртуальной машине 2 виртуальных сетевых интерфеса “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridget:
 
-Подключаю к IDE контроллеру DVD образ инсталлируемой операционной системы:
 
     $ VBoxManage modifyvm ${vm} \
     --nictype1 82540EM \
