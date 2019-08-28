@@ -19,4 +19,4 @@ permalink: /database/ready-to-use/
 
 ### Подготовленный Docker контейнер с базой 11 XE
 
-<a href="/database/installation/single-instance/simple/linux/docker/oracle/11/xe/">Информация здесь</a>
+<a href="/docker/xe/">Информация здесь</a>
