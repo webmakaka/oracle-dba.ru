@@ -31,7 +31,7 @@ permalink: /database/
 ### Что-то новенькое, связанное с DataBase (по крайней мере для меня):
 
 <ul>
-    <li><a href="//files.oradba.net/docs/ru/multitenant/multitenant-wp-t-2995359-ru.pdf"><strong>Архитектура Oracle Multitenant</strong></a></li>
+    <li><a href="//files.oracledba.net/docs/ru/multitenant/multitenant-wp-t-2995359-ru.pdf"><strong>Архитектура Oracle Multitenant</strong></a></li>
 </ul>
 
 

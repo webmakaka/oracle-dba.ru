@@ -38,16 +38,16 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/grid-installa
 
 <br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_01.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_01.png" border="0" alt="Grid installation"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_02.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_02.png" border="0" alt="Grid installation"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_03.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_03.png" border="0" alt="Grid installation"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_04.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_04.png" border="0" alt="Grid installation"><br/><br/>
 
 
 
@@ -62,31 +62,31 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/grid-installa
 <br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_05.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_05.png" border="0" alt="Grid installation"><br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_06.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_06.png" border="0" alt="Grid installation"><br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_07.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_07.png" border="0" alt="Grid installation"><br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_08.png" border="0" alt="Grid installation"><br/><br/>
-
-
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_09.png" border="0" alt="Grid installation"><br/><br/>
-
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_10.png" border="0" alt="Grid installation"><br/><br/>
-
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_11.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_08.png" border="0" alt="Grid installation"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_12.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_09.png" border="0" alt="Grid installation"><br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_13.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_10.png" border="0" alt="Grid installation"><br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_14.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_11.png" border="0" alt="Grid installation"><br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_15.png" border="0" alt="Grid installation"><br/><br/>
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_16.png" border="0" alt="Grid installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_12.png" border="0" alt="Grid installation"><br/><br/>
+
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_13.png" border="0" alt="Grid installation"><br/><br/>
+
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_14.png" border="0" alt="Grid installation"><br/><br/>
+
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_15.png" border="0" alt="Grid installation"><br/><br/>
+
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_16.png" border="0" alt="Grid installation"><br/><br/>
 
 
 

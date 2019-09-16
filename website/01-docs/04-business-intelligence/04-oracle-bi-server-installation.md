@@ -77,7 +77,7 @@ permalink: /docs/business-intelligence/oracle-bi-server-installation/
 
 <br/><br/>
 
-<img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation-next-disk.png" alt="oracle bi installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation-next-disk.png" alt="oracle bi installation"><br/><br/>
 
 
 
@@ -97,9 +97,9 @@ permalink: /docs/business-intelligence/oracle-bi-server-installation/
 <br/><br/>
 
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_01.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_01.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_02.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_02.png" alt="oracle bi installation"><br/><br/>
 
 
 	# cd /u01/app/oracle/oraclebi/oraInventory/
@@ -123,41 +123,41 @@ MD5 Schema Username: dev_MDS
 <br/><br/>
 
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_03.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_03.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_04.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_04.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_05.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_05.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_06.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_06.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_07.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_07.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_08.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_08.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_09.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_09.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_10.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_10.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_11.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_11.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_12.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_12.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_13.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_13.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_14.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_14.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_15.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_15.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_16.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_16.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_17.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_17.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_18.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_18.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_19.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_19.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_20.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_20.png" alt="oracle bi installation"><br/><br/>
 
 <br/><br/>
 
@@ -204,28 +204,28 @@ Type: Enterprise Install - Create New BI System
 
 
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_21.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_21.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_22.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_22.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_23.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_23.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_24.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_24.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_25.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_25.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_26.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_26.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_27.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_27.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_28.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_28.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_29.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_29.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_30.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_30.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_31.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_31.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_32.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_32.png" alt="oracle bi installation"><br/><br/>
 
-<br/><img src="http://img.oradba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_33.png" alt="oracle bi installation"><br/><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_33.png" alt="oracle bi installation"><br/><br/>

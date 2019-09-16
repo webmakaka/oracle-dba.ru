@@ -69,27 +69,27 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_01.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_01.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_02.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_02.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_03.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_03.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_04.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_04.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_05.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_05.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_06.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_06.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_07.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_07.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_08.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_08.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_09.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_09.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_10.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_10.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_11.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_11.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
 
 <br/><br/>
@@ -98,7 +98,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_12.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_12.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
 
 
@@ -109,4 +109,4 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/><br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_13.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_13.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>

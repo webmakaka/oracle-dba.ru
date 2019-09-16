@@ -37,7 +37,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/in
 
 DB_UNIQUE_NAME - можно задать при создании instance. При выборе - выбрать Advanced.
 
-<img src="http://img.oradba.net/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/db-unique-name.png" border="0" alt="oracle database software installation"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/db-unique-name.png" border="0" alt="oracle database software installation"><br/><br/>
 
 
 Либо манипуляциями с редактированием pfile.

@@ -25,10 +25,10 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 UPD. Можно и в графическом режиме установить сервер без GUI.
 
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-01.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-01.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
 
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-02.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-02.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
 
 
 <br/>
@@ -48,4 +48,4 @@ UPD. Можно и в графическом режиме установить �
 
 <br/>
 
-<img src="//img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-03.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
+<img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-03.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>

@@ -20,7 +20,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 	$ sudo apt-get install -y gdm
 
 
-<br/><img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation"><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation"><br/>
 
 
 ### Если выбран gdm
@@ -117,7 +117,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+<img src="https://img.oracledba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
 
 
 <br/>
@@ -149,6 +149,6 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 	$ xclock -display 192.168.1.5:0
 
 
-<br/><img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation"><br/>
+<br/><img src="https://img.oracledba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation"><br/>
 
 Далее все формы, использующиеся при инсталляции отображаются точно таким же способом.

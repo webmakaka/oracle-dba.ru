@@ -16,19 +16,19 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asm-diskgroup
 	$ asmca
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_01.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_01.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_02.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_02.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_03.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_03.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_04.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_04.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
 
 
-<img src="http://img.oradba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_05.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
+<img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/02-asm-diskgroup/asm-diskgroup_05.png" border="0" alt="ASM DISKGROUPS"><br/><br/>
 
 
 

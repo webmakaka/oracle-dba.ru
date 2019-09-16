@@ -75,7 +75,7 @@ SHUTDOWN [NORMAL | TRANSACTIONAL | IMMEDIATE | ABORT]
 
 <div align="center">
 
-<img src="http://img.oradba.net/architecture/shutdown.jpg" border="0" alt="Oracle Instance"><br/>
+<img src="https://img.oracledba.net/architecture/shutdown.jpg" border="0" alt="Oracle Instance"><br/>
 
 </div>
 

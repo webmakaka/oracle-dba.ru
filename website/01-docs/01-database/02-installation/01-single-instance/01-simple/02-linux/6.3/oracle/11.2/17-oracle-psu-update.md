@@ -20,10 +20,10 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 <br/><br/>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/OraclePatches_01.PNG" border="0" alt="Oracle Patches"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/OraclePatches_02.PNG" border="0" alt="Oracle Patches"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/OraclePatches_03.PNG" border="0" alt="Oracle Patches"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/OraclePatches_04.PNG" border="0" alt="Oracle Patches"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/OraclePatches_01.PNG" border="0" alt="Oracle Patches"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/OraclePatches_02.PNG" border="0" alt="Oracle Patches"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/OraclePatches_03.PNG" border="0" alt="Oracle Patches"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/OraclePatches_04.PNG" border="0" alt="Oracle Patches"><br/><br/>
 
 
 
@@ -40,8 +40,8 @@ https://updates.oracle.com/ARULink/PatchDetails/process_form?patch_num=6880880
 <br/><br/>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/OraclePatches_05.PNG" border="0" alt="Oracle Patches"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/OraclePatches_06.PNG" border="0" alt="Oracle Patches"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/OraclePatches_05.PNG" border="0" alt="Oracle Patches"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/OraclePatches_06.PNG" border="0" alt="Oracle Patches"><br/><br/>
 
 
 <br/><br/>

@@ -52,79 +52,79 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 <br/>
 <br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_01.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_01.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_02.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_02.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_03.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_03.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_04.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_04.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_05.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_05.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_06.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
-
-
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_07.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_06.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_08.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_07.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_09.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_08.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_10.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_09.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_11.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_10.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+
+
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_11.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
 Если ASM диски не отображаются, можно следать следующее:
 
 <br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_12.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_12.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_13.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_13.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_14.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_14.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
 Продолжаем
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_15.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_15.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_16.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_16.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_17.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_17.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_18.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_18.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_19.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
-
-
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_20.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_19.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_21.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_20.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_22.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_21.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_23.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_22.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_24.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_23.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_25.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_24.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_26.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_25.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
+
+
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_26.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>

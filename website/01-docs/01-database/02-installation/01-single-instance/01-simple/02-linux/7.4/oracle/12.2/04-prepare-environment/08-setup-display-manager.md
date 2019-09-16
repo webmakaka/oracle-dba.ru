@@ -43,7 +43,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 <br/>
 
 <div align="center">
-    <img src="http://img.oradba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
+    <img src="https://img.oracledba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
 </div>
 
 
@@ -88,7 +88,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 <br/>
 
 <div align="center">
-    <img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
+    <img src="https://img.oracledba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
 </div>
 
 <br/>
@@ -103,7 +103,7 @@ $ sudo apt-get install -y nmap nc xclock
 
 
 <div align="center">
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
 </div>
 
 
@@ -154,7 +154,7 @@ xserver-allow-tcp=true
 <br/>
 
 <div align="center">
-    <img src="http://img.oradba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
+    <img src="https://img.oracledba.net/img/oracle/database/simple/11.2/xclock.png" border="0" alt="Oracle installation">
 </div>
 
 <br/>

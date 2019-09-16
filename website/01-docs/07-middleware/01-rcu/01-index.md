@@ -74,19 +74,19 @@ SQLNET.ALLOWED_LOGON_VERSION_SERVER=8
     $ ./rcu
 
 
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic01.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic02.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic03.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic04.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic05.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic06.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic07.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic08.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic09.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic10.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic11.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic12.png" border="0" alt="RCU Installation">
-<br/><br/><img src="http://img.oradba.net/03-middleware/rcu/pic13.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic01.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic02.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic03.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic04.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic05.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic06.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic07.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic08.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic09.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic10.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic11.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic12.png" border="0" alt="RCU Installation">
+<br/><br/><img src="https://img.oracledba.net/03-middleware/rcu/pic13.png" border="0" alt="RCU Installation">
 
 
 

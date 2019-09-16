@@ -9,7 +9,7 @@ permalink: /docs/architecture/tablespaces/segments-extents-and-blocks/
 <br/><br/>
 
 <div align="center">
-<img src="http://img.oradba.net/images/docs/01-oracle-database/07-tablespaces/04-segments_extents_and_blocks/blocks-extents-segments.gif" alt="Блоки Экстенты Сегменты" border="0" />
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/07-tablespaces/04-segments_extents_and_blocks/blocks-extents-segments.gif" alt="Блоки Экстенты Сегменты" border="0" />
 </div>
 
 <br/>

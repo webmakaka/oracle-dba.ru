@@ -15,12 +15,12 @@ $ netca
 
 <br/><br/>
 
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_01.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_02.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_03.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_04.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_05.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_06.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_07.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_08.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_09.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_01.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_02.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_03.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_04.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_05.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_06.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_07.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_08.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/listener/oracle12R1_database_listener_creation_09.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>

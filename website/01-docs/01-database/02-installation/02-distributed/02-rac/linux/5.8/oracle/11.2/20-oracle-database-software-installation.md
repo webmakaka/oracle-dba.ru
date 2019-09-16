@@ -18,18 +18,18 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-d
 
 <br/><br/>
 
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_01.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_02.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_03.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_04.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_05.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_06.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_07.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_08.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_09.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_10.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_11.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_database_software_installation_12.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_01.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_02.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_03.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_04.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_05.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_06.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_07.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_08.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_09.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_10.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_11.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_12.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
 
 
 

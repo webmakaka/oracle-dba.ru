@@ -22,7 +22,7 @@ https://updates.oracle.com/ARULink/PatchDetails/process_form?patch_num=13696251
 
 
 <div align="center">
-	<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_patching_01.PNG" alt="oracle rac patching" border="0">
+	<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_patching_01.PNG" alt="oracle rac patching" border="0">
 </div>
 
 <br/><br/>
@@ -31,13 +31,13 @@ https://updates.oracle.com/ARULink/PatchDetails/process_form?patch_num=13696251
 GRID INFRASTRUCTURE PATCH SET UPDATE 11.2.0.3.2 (INCLUDES DB PSU 11.2.0.3.2)
 
 <div align="center">
-	<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_patching_02.PNG" alt="oracle rac patching" border="0">
+	<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_patching_02.PNG" alt="oracle rac patching" border="0">
 </div>
 
 <br/><br/>
 
 <div align="center">
-	<img src="http://img.oradba.net/img/oracle/database/rac/11.2/rac_patching_03.PNG" alt="oracle rac patching" border="0">
+	<img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_patching_03.PNG" alt="oracle rac patching" border="0">
 </div>
 
 <br/><br/>

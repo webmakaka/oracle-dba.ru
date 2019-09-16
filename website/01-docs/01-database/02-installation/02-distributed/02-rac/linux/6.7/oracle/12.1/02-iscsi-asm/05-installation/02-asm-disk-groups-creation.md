@@ -13,15 +13,15 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asm-disk-grou
 	$ asmca
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_01.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_01.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_02.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
-
-
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_03.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_02.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
 
 
-<img src="http://img.oradba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_04.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_03.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
+
+
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_04.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
 
 
 

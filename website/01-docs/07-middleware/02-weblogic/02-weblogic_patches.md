@@ -252,12 +252,12 @@ export DISPLAY=ip:0.0
 
 <br/><br/>
 
-<img src="http://img.oradba.net/images/docs/02-oracle-application-server/weblogic/02-weblogic_patches/metalink01.png" alt="metalink" border="0">
+<img src="https://img.oracledba.net/images/docs/02-oracle-application-server/weblogic/02-weblogic_patches/metalink01.png" alt="metalink" border="0">
 
 <br/><br/>
 
-<img src="http://img.oradba.net/images/docs/02-oracle-application-server/weblogic/02-weblogic_patches/metalink02.png" alt="metalink" border="0">
+<img src="https://img.oracledba.net/images/docs/02-oracle-application-server/weblogic/02-weblogic_patches/metalink02.png" alt="metalink" border="0">
 
 <br/><br/>
 
-<img src="http://img.oradba.net/images/docs/02-oracle-application-server/weblogic/02-weblogic_patches/metalink03.png" alt="metalink" border="0">
+<img src="https://img.oracledba.net/images/docs/02-oracle-application-server/weblogic/02-weblogic_patches/metalink03.png" alt="metalink" border="0">

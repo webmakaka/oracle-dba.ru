@@ -14,7 +14,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 <br/><br/>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_01.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_01.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <pre>
@@ -24,7 +24,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_02.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_02.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 <pre>
 
@@ -33,7 +33,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_03.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_03.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 <pre>
 
@@ -57,7 +57,7 @@ Oracle предлагает создать экземпляр базы данн�
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_04.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_04.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <pre>
@@ -81,8 +81,8 @@ Oracle предлагает задать имя для создаваемого 
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_05.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_06.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_05.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_06.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 
@@ -92,7 +92,7 @@ Oracle предлагает задать имя для создаваемого 
 <strong>Step 5: Database Credentials</strong>
 </pre>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_07.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_07.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 <pre>
 
@@ -113,7 +113,7 @@ Oracle предлагает задать имя для создаваемого 
 <strong>Step 6: Database File Locations</strong>
 </pre>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_08.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_08.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 <pre>
 Далее необходимо указать место, где база данных будет хранить файлы базы данных - т.е. те файлы в которых собственно и будут храниться данные.
@@ -127,7 +127,7 @@ Oracle предлагает задать имя для создаваемого 
 <strong>Step 7: Recovery Configuration</strong>
 </pre>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_09.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_09.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <pre>
@@ -144,9 +144,9 @@ Enable Archiving - включить режим работы базы данны�
 <strong>Step 8: Database Content</strong>
 </pre>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_10.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_11.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_12.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_10.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_11.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_12.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <pre>
@@ -181,7 +181,7 @@ Application Express -  приложение, с помощью которого 
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_13.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_13.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 <pre>
 
@@ -195,14 +195,14 @@ Application Express -  приложение, с помощью которого 
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_14.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_14.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 <pre>
 <strong>Step 9: Initialization Parameters: Character sets</strong>
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_15.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_15.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 <pre>
 Если в базе будут использоваться русские буквы, рекомендуется выбрать кодировку, которая поддерживает данную возможность. Unicode, где каждый символ кодируется 2 байтами, вполне подходит для этой задачи.
@@ -216,7 +216,7 @@ Application Express -  приложение, с помощью которого 
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_16.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_16.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <ul>
@@ -230,7 +230,7 @@ Application Express -  приложение, с помощью которого 
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_17.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_17.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 
@@ -244,7 +244,7 @@ Application Express -  приложение, с помощью которого 
 <strong>Step 11: Creation Options</strong>
 </pre>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_18.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_18.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <pre>
@@ -253,9 +253,9 @@ Application Express -  приложение, с помощью которого 
 
 </pre>
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_19.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_20.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_21.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_19.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_20.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_21.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <pre>
@@ -265,8 +265,8 @@ https://192.168.1.10:1158/em
 </pre>
 
 
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_22.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
-<img src="http://img.oradba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_23.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_22.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
+<img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_instance_creation_23.PNG" border="0" alt="Oracle Instance creation"><br/><br/>
 
 
 <br/><br/>

@@ -54,31 +54,31 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 
 <br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_01.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_01.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_02.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_02.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_03.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_03.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_04.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_04.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_05.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_05.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_06.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_06.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_07.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_07.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_08.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_08.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_09.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_09.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_10.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_10.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_11.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_11.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_12.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_12.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_13.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_13.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
 
 <br/><br/>
@@ -87,7 +87,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 
 <br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_14.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_14.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
 
 
 	# /u01/oraInventory/orainstRoot.sh
@@ -130,4 +130,4 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 
 <br/><br/>
 
-<img src="http://img.oradba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_15.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>
+<img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/02_database_software_installation/oracle12R1_database_software_installation_15.png" border="0" alt="Oracle 12 relese 1 installation on Linux"><br/><br/>

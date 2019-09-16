@@ -17,24 +17,24 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/><br/>
 
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_01.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_01.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
 
 <br/><br/>
 <strong>Инициируем жесткие диски</strong>
 <br/><br/>
 
 
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_02.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_02.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
 
 
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_03.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_03.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
 
 <br/><br/>
 <strong>Убеждаемся, что сервер имеет статический IP адрес</strong>
 <br/><br/>
 
 
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_04.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_04.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
 
 
 <br/><br/>
@@ -42,7 +42,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <br/><br/>
 
 
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_05.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_05.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
 
 
 
@@ -50,4 +50,4 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <strong>Копируем дистрибутивы базы данных на сервер</strong>
 <br/><br/>
 
-<img src="http://img.oradba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_06.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
+<img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_06.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
