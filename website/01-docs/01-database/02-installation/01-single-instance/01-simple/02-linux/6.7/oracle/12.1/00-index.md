@@ -20,7 +20,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 
 
 <div>
-	<img src="http:///img/a3333333mail.gif" alt="Marley" border="0">
+	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 <br/>

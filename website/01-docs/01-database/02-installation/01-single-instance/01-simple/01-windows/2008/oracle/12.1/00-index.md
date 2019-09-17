@@ -18,7 +18,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 
 <div>
-	<img src="http:///img/a3333333mail.gif" alt="Marley" border="0">
+	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 
