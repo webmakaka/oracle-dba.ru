@@ -78,7 +78,7 @@ permalink: /docs/architecture/networking/
 
 <br/><br/>
 
-<img src="http://img.fotografii.org/images/odba/oracleInstallation/_Windows/Oracle_Database_10g_Release_2_Installation/Oracle_Database_10g_Release_2_Installation_114.png" border="0" alt="tnsnames.ora">
+<img src="https://img.oracledba.net/odba/oracleInstallation/_Windows/Oracle_Database_10g_Release_2_Installation/Oracle_Database_10g_Release_2_Installation_114.png" border="0" alt="tnsnames.ora">
 
 <br/>
 
