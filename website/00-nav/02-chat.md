@@ -8,7 +8,7 @@ permalink: /chat/
 
 <br/>
 
-https://t.me/oracledba_net
+https://t.me/oracle_dba_ru
 
 <br/>
 
