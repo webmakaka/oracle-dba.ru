@@ -6,16 +6,13 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
 
 # Создание копии базы данных из бекапа с помощью RMAN на том же сервере:
 
-
 <br/>
 
 ### Имеется 1 сервер Oracle 12c, установленный как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
-
 <br/>
 
 ### Создаю password file для нового instance COPY12
-
 
     $ cd $ORACLE_HOME/dbs/
     $ cp orapworcl12 orapwcopy12
@@ -32,16 +29,16 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
 
 <br/>
 
-    COPY12 =
-      (DESCRIPTION =
-        (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
-        (CONNECT_DATA =
-          (SERVER = DEDICATED)
-          (SERVICE_NAME = copy12)
-        )
-      )
-
-
+```
+COPY12 =
+    (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
+    (CONNECT_DATA =
+        (SERVER = DEDICATED)
+        (SERVICE_NAME = copy12)
+    )
+    )
+```
 
 <br/>
 
@@ -99,7 +96,6 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
     oracle12 25992     1  0 09:31 ?        00:00:00 ora_mmnl_copy12
     oracle12 26005 15234  0 09:31 pts/0    00:00:00 grep copy12
 
-
 <br/>
 
 ### Настройка Listener для создания нового сервиса COPY12
@@ -117,7 +113,7 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
 
 <br/>
 
-	$ vi listener.ora
+    $ vi listener.ora
 
 <br/>
 
@@ -173,7 +169,6 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
              LOCAL SERVER
     ***
 
-
 <br/>
 
     $ lsnrctl status;
@@ -209,17 +204,22 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
       Instance "orcl12", status READY, has 1 handler(s) for this service...
     The command completed successfully
 
-
 <br/>
 
 ### Подготовка RMAN скрипта для создания копии сервера
 
 <br/>
 
-   $ export ORACLE_SID=orcl12
+```
+$ export ORACLE_SID=orcl12
+```
 
-   $ echo $ORACLE_SID
-   orcl12
+<br/>
+
+```
+$ echo $ORACLE_SID
+orcl12
+```
 
 Значения размера файлов журналов, которые нужно будет указать в скрипте.
 
@@ -229,11 +229,9 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
     ---------- ----------
      52428800	    3
 
-
 <br/>
 
     $ rman target /
-
 
 Если используется Oracle Catalog
 
@@ -262,7 +260,6 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
     ---- -------- -------------------- ----------- --------------------
     1    197      TEMP                 32767       +DATA/ORCL12/TEMPFILE/temp.265.887923853
 
-
 <br/>
 
     set lin 180
@@ -272,7 +269,6 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
     select a.GROUP#, a.THREAD#, a.BYTES/1024/1024 as MB, a.status, b.member
     from v$log a, v$logfile b
     where a.GROUP#=b.GROUP#;
-
 
 <br/>
 
@@ -286,7 +282,6 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
      1	    1	      50 INACTIVE +ARCH/ORCL12/ONLINELOG/group_1.257.888049595
 
 <br/>
-
 
 **Создание каталогов в ASM**
 
@@ -344,16 +339,13 @@ permalink: /database/backup-and-restore/rman/duplicate-database/
 
     }
 
-
 Проверка синтаксиса созданного файла сценария
 
-	$ rman CHECKSYNTAX @duplicate-rman-script.rman
-
+    $ rman CHECKSYNTAX @duplicate-rman-script.rman
 
 Выполнение скрипта резервного копирования
 
     $ rman target sys/manager@orcl12 auxiliary sys/manager@copy12 @duplicate-rman-script.rman
-
 
 Если используется Oracle Catalog, команда может выглядеть следующим образом
 
