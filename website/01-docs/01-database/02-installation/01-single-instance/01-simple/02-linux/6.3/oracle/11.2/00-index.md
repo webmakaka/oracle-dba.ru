@@ -91,7 +91,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 
 <br/><br/>
 
-<h2>После инсталляции:</h2>
+## После инсталляции:
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/autorstart-oracle-after-restart/">Настройка автозапуска Oracle после перезагрузки</a></li>
@@ -102,7 +102,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 
 <br/><br/>
 
-<h2>Обеспечение дополнительной отказоустойчивости и надежности:</h2>
+## Обеспечение дополнительной отказоустойчивости и надежности:
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-multiplex-controlfiles/">Мультиплексирование controlfiles</a></li>

@@ -1,11 +1,13 @@
 ---
 layout: page
 title: Backup и Restore Oracle DataBase
+description: Создание и восстановление бекапов Oracle
+keywords: oracle, backup, restore
 permalink: /database/backup-and-restore/
 ---
 
 
-## Backup и Restore Oracle DataBase
+# Backup и Restore Oracle DataBase
 
 
 <br/>
@@ -59,8 +61,6 @@ permalink: /database/backup-and-restore/
         <a href="http://odba.ru/showthread.php?t=28">Утилиты IMP/EXP</a> (Для версий до 11)
     </li>
 </ul>
-
-
 
 
 <br/>

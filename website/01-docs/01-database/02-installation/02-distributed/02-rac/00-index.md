@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Инсталляция Oracle RAC
+description: Документ описывает вариант инсталляции базы данных oracle в кластерной конфигурации 
+keywords: oracle linux, oracle rac, инсталляция
 permalink: /database/installation/distributed/rac/
 ---
 
@@ -18,7 +20,6 @@ RAC - несколько инстансов на разных серверах �
 	<li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (SHARED FILE SYSTEM)</a></li>
 
   <li><a href="/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/">Инсталляция Oracle RAC 12.1 в операционной системе Oracle Linux 6.7 x86_64 (ISCSI + ASM)</a></li>
-
 </ul>
 
 <br/>
@@ -70,5 +71,4 @@ RAC - несколько инстансов на разных серверах �
     <li><a href="/database/installation/distributed/rac/tests/"> Некоторые запросы и команды</a><br/></li>
 
     <li><a href="/database/installation/distributed/rac/linux/6.7/ocfs/">Инсталляция OCFS2 для RAC в Oracle Linux 6.7 для версий RAC 10,11</a><br/></li>
-
 </ul>

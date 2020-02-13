@@ -32,7 +32,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/
 В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, пишите мне адрес эл. почты:
 
 <div>
-	<img src="///img/a3333333mail.gif" alt="Marley" border="0">
+	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
 <br/>
@@ -105,7 +105,7 @@ Oracle linux можно скачать на сайте linux.oracle.com. Обр�
 
 	<li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/setup-display-manager/">Настройка Display Manger</a></li>
 
-    <li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a></li>
+  <li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a></li>
 
 </ul>
 
@@ -115,8 +115,6 @@ Oracle linux можно скачать на сайте linux.oracle.com. Обр�
 ## Инсталляция базы данных:
 
 <ul>
-
-
 	<li><a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-database-software-installation/">Инсталляция СУБД Oracle (DataBase SoftWare)</a></li>
 
 	<li><a href="/database/installation/single-instance/linux/7.3/oracle/12.2/oracle-listener-creation/">Создание службы удаленного подключения к серверу (Listener)</a></li>

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Backup и Restore Oracle DataBase с помощью RMAN
+description: Создание и восстановление бекапов Oracle с помощью RMAN
+keywords: oracle, backup, restore, rman
 permalink: /database/backup-and-restore/rman/
 ---
 

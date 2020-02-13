@@ -26,6 +26,14 @@
 
         <!-- Google Analinics  -->
 
+        <div align="center">
+            {% if page.keywords %}
+            <p>
+              <strong>Tags:</strong> {{ page.keywords | strip_html | strip_newlines |
+              truncate: 160 }} {% endif %}
+            </p>
+          </div>
+
         <br />
 
         <div align="center">
