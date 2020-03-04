@@ -25,13 +25,17 @@ permalink: /database/installation/single-instance/centos/7/oracle/xe/18c/
 https://www.oracle.com/database/technologies/xe-downloads.html
 
 
-<br/>
 
 Поднять чистую виртуальную машину, предлагаю с помощью vagrant скрипта
 
-<br/>
 
 <a href="https://sysadm.ru/linux/virtual/vagrant/install/ubuntu/">Инсталляция Vargant в Ubuntu 18.04</a>
+
+
+<br/>
+
+	// Также потребуется доп. плагин
+	$ vagrant plugin install vagrant-hostmanager
 
 <br/>
 
