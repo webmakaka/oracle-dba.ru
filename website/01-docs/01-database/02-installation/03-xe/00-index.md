@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Инсталляция базы данных Oracle 18c XE на сервер Centos 7
+title: Инсталляция бесплатной, но ограниченной по ресурсам, базы данных Oracle 18c XE на сервер Centos 7
 description: Инструкция по инсталляции бесплатной, но ограниченной по ресурсам, базы данных Oracle 18c XE на сервер Centos 7
 keywords: бесплатная база oracle с ограничениями, oracle xe, centos 7, инсталляция
 permalink: /database/installation/single-instance/centos/7/oracle/xe/18c/
@@ -10,9 +10,10 @@ permalink: /database/installation/single-instance/centos/7/oracle/xe/18c/
 
 # Инсталляция бесплатной, но ограниченной по ресурсам, базы данных Oracle 18c XE на сервер Centos 7
 
+<br/>
 
 Делаю:  
-04.03.2020
+05.03.2020
 
 <br/>
 
@@ -36,7 +37,7 @@ https://www.oracle.com/database/technologies/xe-downloads.html
 
 
 	$ mkdir ~/vagrant-oracle-xe-centos7 && cd ~/vagrant-oracle-xe-centos7
-	$ git clone https://oracle-dba@bitbucket.org/oracle-dba/vagrant-centos7.git .
+	$ git clone https://bitbucket.org/oracle-dba/vagrant-centos7.git .
 	$ cd centos7/
 
 <br/>
@@ -157,9 +158,7 @@ rlwrap - пакет, который позволяет хранить истор
 
 	// Установить переменные окружения
 
-(После строчки)
-
-# User specific environment and startup programs
+(После строчки) # User specific environment and startup programs
 
 <br/>
 
