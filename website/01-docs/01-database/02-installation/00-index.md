@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase
+description: Инструкции по инсталляции баз данных oracle 
+keywords: oracle, linux, installation, asm, standby, rac
 permalink: /database/installation/
 ---
 
@@ -151,6 +153,7 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 ## Инсталляция бесплатных версий баз данных Oracle:
 
 <ul>
+    <li><a href="/database/installation/single-instance/centos/7/oracle/xe/18c/"><strong>Инсталляция бесплатной, но ограниченной по ресурсам, базы данных Oracle 18c XE на сервер Centos 7</strong></a></li>
 	<li><a href="http://odba.ru/showthread.php?t=742"><strong>Инструкция по инсталляции базы данных Oracle 11g XE на сервер Oracle Enterprise Linux 5.8</strong></a></li>
 	<li><a href="http://odba.ru/showthread.php?t=400"><strong>Инструкция по инсталляции базы данных Oracle 10g XE на сервер Oracle Enterprise Linux 4.8</strong></a></li>
 	<li><a href="http://odba.ru/showthread.php?t=296"><strong>Инсталляция Oracle Database 10g Express Edition в ОС Windows 2003 Server </strong></a></li>

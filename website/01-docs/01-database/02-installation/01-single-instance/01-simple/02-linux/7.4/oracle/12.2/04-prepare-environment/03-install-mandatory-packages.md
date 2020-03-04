@@ -165,6 +165,7 @@ rlwrap - пакет, который позволяет хранить истор
 
 <br/>
 
+	# yum install -y gcc
     # yum install -y automake
     # autoreconf --install
     # automake  --add-missing
