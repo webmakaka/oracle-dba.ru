@@ -1,5 +1,17 @@
 <footer class="site-footer">
     <div class="wrapper">
+
+        <div align="center">
+            {% if page.keywords %}
+            <p>
+              <strong>Tags:</strong> {{ page.keywords | strip_html | strip_newlines |
+              truncate: 160 }} {% endif %}
+            </p>
+          </div>
+
+          <br /> <br />
+
+
         <!-- disqus -->
 
         <div id="disqus_thread"></div>
@@ -26,13 +38,7 @@
 
         <!-- Google Analinics  -->
 
-        <div align="center">
-            {% if page.keywords %}
-            <p>
-              <strong>Tags:</strong> {{ page.keywords | strip_html | strip_newlines |
-              truncate: 160 }} {% endif %}
-            </p>
-          </div>
+
 
         <br />
 
