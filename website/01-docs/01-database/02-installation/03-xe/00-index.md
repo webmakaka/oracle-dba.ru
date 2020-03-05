@@ -51,11 +51,12 @@ https://www.oracle.com/database/technologies/xe-downloads.html
 
 <br/>
 
+### Работа в подготовленной для базе данных виртуальной машине
+
 	$ sudo su -
 
 	// Отключаем selinux
 	# sed -i.bkp -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
-
 
 <br/>
 
@@ -160,13 +161,12 @@ rlwrap - пакет, который позволяет хранить истор
 
 <br/>
 
-	// Установить переменные окружения
+	// Установливаем переменные окружения
+	$ vi ~/.bash_profile
 
-(После строчки) # User specific environment and startup programs
+(Добавить после строчки) # User specific environment and startup programs
 
 <br/>
-
-	$ vi ~/.bash_profile
 
 ```
 ############################################
@@ -183,7 +183,7 @@ rlwrap - пакет, который позволяет хранить истор
 
     export PATH=$PATH:$ORACLE_HOME/bin
     export LD_LIBRARY_PATH=$ORACLE_HOME/lib
-
+	
 	alias sqlplus='rlwrap sqlplus'
     alias rman='rlwrap rman'
 
