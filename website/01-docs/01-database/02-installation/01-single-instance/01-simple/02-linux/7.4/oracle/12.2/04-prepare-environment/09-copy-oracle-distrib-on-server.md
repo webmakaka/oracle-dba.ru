@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Копирование дистрибутивов базы данных на сервер
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Копирование дистрибутивов базы данных на сервер
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Копирование дистрибутивов базы данных на сервер
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Копирование дистрибутивов
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/copy-oracle-distrib-on-server/
 ---
 

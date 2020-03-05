@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Настройка автозапуска Oracle после перезагрузки
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка автозапуска Oracle после перезагрузки
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка автозапуска Oracle после перезагрузки
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, автозапуск Oracle
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/autorstart-oracle-after-restart/
 ---
 

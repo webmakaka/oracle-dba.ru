@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Подготовка жестких дисков к инсталляции базы данных
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Подготовка жестких дисков к инсталляции базы данных
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Подготовка жестких дисков к инсталляции базы данных
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Подготовка жестких дисков
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/prepare-hdd-to-install-oracle/
 ---
 

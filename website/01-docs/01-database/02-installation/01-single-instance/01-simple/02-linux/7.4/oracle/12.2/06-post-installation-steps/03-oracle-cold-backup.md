@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Создание резервной копии созданной базы данных (холодный бекап)
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Создание резервной копии созданной базы данных (холодный бекап)
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Создание резервной копии созданной базы данных (холодный бекап)
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, холодный бекап
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-cold-backup/
 ---
 

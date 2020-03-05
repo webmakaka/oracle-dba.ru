@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Создание экземпляра базы данных (Instance)
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Создание экземпляра базы данных (Instance)
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Создание экземпляра базы данных (Instance)
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Создание Instance
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-instance-creation/
 ---
 

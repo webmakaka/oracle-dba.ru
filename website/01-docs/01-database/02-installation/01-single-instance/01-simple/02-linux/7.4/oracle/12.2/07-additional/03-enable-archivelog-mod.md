@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Включить режим работы ARCHIVELOG
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Включить режим работы ARCHIVELOG
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Включить режим работы ARCHIVELOG
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, ARCHIVELOG
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/enable-archivelog-mod/
 ---
 

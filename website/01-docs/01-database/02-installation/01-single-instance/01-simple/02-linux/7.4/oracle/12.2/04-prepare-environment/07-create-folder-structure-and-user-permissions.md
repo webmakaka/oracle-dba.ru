@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Создание структуры каталогов и назначение необходимых прав
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Создание структуры каталогов и назначение необходимых прав
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Создание структуры каталогов и назначение необходимых прав
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, создание каталогов, назначение прав
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/create-folder-structure-and-user-permissions/
 ---
 

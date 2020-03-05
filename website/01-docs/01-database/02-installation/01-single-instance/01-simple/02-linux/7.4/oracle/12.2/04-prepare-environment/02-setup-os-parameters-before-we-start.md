@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Установка параметров ОС перед стартом
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Установка параметров ОС перед стартом
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Установка параметров ОС перед стартом
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Настройка операционной системы
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/setup-os-parameters-before-we-start/
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Настройка сетевых интерфейсов
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка сетевых интерфейсов
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка сетевых интерфейсов
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Настройка сетевых интерфейсов
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/network-interfaces/
 ---
 

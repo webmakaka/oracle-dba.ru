@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Инсталляция обязательных пакетов
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция обязательных пакетов
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция обязательных пакетов
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Инсталляция обязательных пакетов
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/install-mandatory-packages/
 ---
 

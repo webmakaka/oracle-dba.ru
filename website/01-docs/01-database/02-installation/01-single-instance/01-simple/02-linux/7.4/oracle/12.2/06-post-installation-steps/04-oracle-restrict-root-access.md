@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Запретить удаленное подключение к серверу баз данных пользователем root
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Запретить удаленное подключение к серверу баз данных пользователем root
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Запретить удаленное подключение к серверу баз данных пользователем root
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, запрет root
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-restrict-root-access/
 ---
 

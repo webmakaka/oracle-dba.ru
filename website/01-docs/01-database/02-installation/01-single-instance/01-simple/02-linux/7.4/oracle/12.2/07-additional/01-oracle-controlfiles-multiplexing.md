@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Мультиплексирование controlfiles
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Мультиплексирование controlfiles
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Мультиплексирование controlfiles
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Мультиплексирование controlfiles
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-controlfiles-multiplexing/
 ---
 

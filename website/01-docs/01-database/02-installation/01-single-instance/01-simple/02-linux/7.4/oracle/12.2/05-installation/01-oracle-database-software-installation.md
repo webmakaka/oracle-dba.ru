@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Инсталляция СУБД Oracle (DataBase SoftWare)
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция СУБД Oracle (DataBase SoftWare)
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция СУБД Oracle (DataBase SoftWare)
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Инсталляция DataBase SoftWare
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-database-software-installation/
 ---
 

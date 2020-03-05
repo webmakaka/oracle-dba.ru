@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle DataBase 12.2 - Oracle Linux 7.4 - Расширение табличных пространств (создание дополнительных файлов для табличных пространств)
+title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Расширение табличных пространств (создание дополнительных файлов для табличных пространств)
+description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Расширение табличных пространств (создание дополнительных файлов для табличных пространств)
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, tablespaces
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-additionals-datafiles/
 ---
 
