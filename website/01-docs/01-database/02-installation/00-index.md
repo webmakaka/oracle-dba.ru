@@ -35,11 +35,11 @@ https://github.com/oraclebase/vagrant/tree/master/database/ol8_19
 
 <ul>
 	<li>
-		<a href="//sysadm.ru/linux/servers/virtual/virtualbox/install/centos/6/">Инсталляция VirtualBox на Centos 6.4 Server без графического интерфейса (GUI)</a>
+		<a href="//sysadm.ru/linux/virtual/virtualbox/install/centos/6/">Инсталляция VirtualBox на Centos 6.4 Server без графического интерфейса (GUI)</a>
 	</li>
     
 	<li>
-		<a href="//sysadm.ru/linux/servers/virtual/virtualbox/install/ubuntu/14.04/">Инсталляция VirtualBox в операционной системе Ubuntu в консоли</a>
+		<a href="//sysadm.ru/linux/virtual/virtualbox/install/ubuntu/14.04/">Инсталляция VirtualBox в операционной системе Ubuntu в консоли</a>
 	</li>
 
   <li><a href="/database/installation/virtualbox-machines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle под Windows</a></li>

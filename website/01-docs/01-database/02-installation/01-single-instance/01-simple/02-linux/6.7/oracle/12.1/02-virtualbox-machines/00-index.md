@@ -9,7 +9,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/v
 <br/>
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри  
-<a href="//sysadm.ru/linux/servers/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 
 <br/>
@@ -184,7 +184,7 @@ Name:                eth0
 
 
 Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
-<a href="//sysadm.ru/linux/servers/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
 <br/>
 
