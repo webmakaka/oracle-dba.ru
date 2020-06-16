@@ -109,7 +109,8 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/prepare-asm-d
 
 
 <br/>
-Маркируем диски как ASM диски:
+
+**Маркируем диски как ASM диски:**
 
 
     # /etc/init.d/oracleasm createdisk ASMDISK1 /dev/sdc1
@@ -124,6 +125,7 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/prepare-asm-d
 
 
 <br/>
+
 // Посмотреть список дисков
 
     # /etc/init.d/oracleasm listdisks
@@ -134,12 +136,20 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/prepare-asm-d
     ASMDISK5
     ASMDISK6
 
+
 <br/>
-// файл логов
+
+### Рекомендации
+
+**Перестартовать oracleasm**
+
+    # /etc/init.d/oracleasm restart
+
+<br/>
+
+**Проверить логи**
 
     # less /var/log/oracleasm
 
 <br/>
-// В некоторых случаях, необходимо перестартовать oracleasm
 
-    # /etc/init.d/oracleasm restart
