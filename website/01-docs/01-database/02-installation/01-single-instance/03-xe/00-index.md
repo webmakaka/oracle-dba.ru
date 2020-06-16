@@ -24,53 +24,47 @@ permalink: /database/installation/single-instance/centos/7/oracle/xe/18c/
 Дистрибутивы базы данных:  
 https://www.oracle.com/database/technologies/xe-downloads.html
 
-
-
 Поднять чистую виртуальную машину, предлагаю с помощью vagrant скрипта
-
 
 <a href="https://sysadm.ru/linux/virtual/vagrant/install/ubuntu/">Инсталляция Vargant в Ubuntu 18.04</a>
 
+<br/>
+
+    // Также потребуется доп. плагин
+    $ vagrant plugin install vagrant-hostmanager
 
 <br/>
 
-	// Также потребуется доп. плагин
-	$ vagrant plugin install vagrant-hostmanager
+    $ mkdir ~/vagrant-oracle-xe-centos7 && cd ~/vagrant-oracle-xe-centos7
+    $ git clone https://bitbucket.org/oracle-dba/vagrant-centos7.git .
+    $ cd centos7/
 
 <br/>
 
-
-	$ mkdir ~/vagrant-oracle-xe-centos7 && cd ~/vagrant-oracle-xe-centos7
-	$ git clone https://bitbucket.org/oracle-dba/vagrant-centos7.git .
-	$ cd centos7/
-
-<br/>
-
-	$ vagrant up
-	$ vagrant ssh 
+    $ vagrant up
+    $ vagrant ssh
 
 <br/>
 
 ### Работа в подготовленной для базе данных виртуальной машине
 
-	$ sudo su -
+    $ sudo su -
 
-	// Отключаем selinux
-	# sed -i.bkp -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
-
-<br/>
-
-	// Отключаем firewall
-	# systemctl disable firewalld
-	# systemctl stop firewalld
+    // Отключаем selinux
+    # sed -i.bkp -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 
 <br/>
 
-	// Подключаем репозиторий с нужными пакетами
-	# vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
+    // Отключаем firewall
+    # systemctl disable firewalld
+    # systemctl stop firewalld
 
 <br/>
 
+    // Подключаем репозиторий с нужными пакетами
+    # vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
+
+<br/>
 
 ```
 [OEL_INTERNET]
@@ -87,23 +81,22 @@ enabled=1
 
 <br/>
 
-	# yum install -y wget
+    # yum install -y wget
 
 <br/>
 
-	# mkdir /distrib
-	# cd /distrib/
+    # mkdir /distrib
+    # cd /distrib/
 
-	# wget https://download.oracle.com/otn-pub/otn_software/db-express/oracle-database-xe-18c-1.0-1.x86_64.rpm
+    # wget https://download.oracle.com/otn-pub/otn_software/db-express/oracle-database-xe-18c-1.0-1.x86_64.rpm
 
 
-	// Проверка скачанного архива. Первый раз контрольная сумма не совпала
-	# sha256sum oracle-database-xe-18c-1.0-1.x86_64.rpm 
+    // Проверка скачанного архива. Первый раз контрольная сумма не совпала
+    # sha256sum oracle-database-xe-18c-1.0-1.x86_64.rpm
 
-	# yum -y localinstall oracle-database-xe-18c-1.0-1.x86_64.rpm 
+    # yum -y localinstall oracle-database-xe-18c-1.0-1.x86_64.rpm
 
-	# /etc/init.d/oracle-xe-18c configure
-
+    # /etc/init.d/oracle-xe-18c configure
 
 <br/>
 
@@ -111,28 +104,25 @@ enabled=1
 
 <br/>
 
-	$ vi /etc/oratab
-
+    $ vi /etc/oratab
 
 <br/>
 
-	XE:/opt/oracle/product/18c/dbhomeXE:N
+    XE:/opt/oracle/product/18c/dbhomeXE:N
 
 заменить на
 
-	# XE:/opt/oracle/product/18c/dbhomeXE:N
-	XE:/opt/oracle/product/18c/dbhomeXE:Y
-
-
+    # XE:/opt/oracle/product/18c/dbhomeXE:N
+    XE:/opt/oracle/product/18c/dbhomeXE:Y
 
 <br/>
 
 ### Инсталляция rlwrap
 
-rlwrap - пакет, который позволяет хранить историю команд в SQL*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
+rlwrap - пакет, который позволяет хранить историю команд в SQL\*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
 
-	# yum install -y \
-	readline-devel.x86_64
+    # yum install -y \
+    readline-devel.x86_64
 
 <br/>
 
@@ -144,7 +134,7 @@ rlwrap - пакет, который позволяет хранить истор
 
 <br/>
 
-	# yum install gcc
+    # yum install gcc
     # yum install -y automake
     # autoreconf --install
     # automake  --add-missing
@@ -155,14 +145,13 @@ rlwrap - пакет, который позволяет хранить истор
 
 ### Работа с базой
 
-	// Переключиться на своего пользователя
-	# su - vagrant
-
+    // Переключиться на своего пользователя
+    # su - vagrant
 
 <br/>
 
-	// Установливаем переменные окружения
-	$ vi ~/.bash_profile
+    // Установливаем переменные окружения
+    $ vi ~/.bash_profile
 
 (Добавить после строчки) # User specific environment and startup programs
 
@@ -173,7 +162,7 @@ rlwrap - пакет, который позволяет хранить истор
 #### Oracle Parameters
 
     umask 022
-       
+
     export ORACLE_BASE=/opt/oracle
     export ORACLE_HOME=$ORACLE_BASE/product/18c/dbhomeXE
     export ORACLE_SID=XE
@@ -183,39 +172,37 @@ rlwrap - пакет, который позволяет хранить истор
 
     export PATH=$PATH:$ORACLE_HOME/bin
     export LD_LIBRARY_PATH=$ORACLE_HOME/lib
-	
+
 	alias sqlplus='rlwrap sqlplus'
     alias rman='rlwrap rman'
 
 ############################################
 ```
 
-	// Применить переменные окружения к текущим настройкам bash
+    // Применить переменные окружения к текущим настройкам bash
     $ source ~/.bash_profile
 
 <br/>
 
-	// Подключаюсь учетной записью system и паролем manager
-	$ sqlplus system/manager
+    // Подключаюсь учетной записью system и паролем manager
+    $ sqlplus system/manager
 
-	SQL> select status from v$instance;
+    SQL> select status from v$instance;
 
-	SQL> select name from v$pdbs;
+    SQL> select name from v$pdbs;
 
-	NAME
-	--------------------------------------------------------------------------------
-	PDB$SEED
-	XEPDB1
+    NAME
+    --------------------------------------------------------------------------------
+    PDB$SEED
+    XEPDB1
 
-	SQL> conn sys/manager@//localhost:1521/XEPDB1 as sysdba
-	Connected.
+    SQL> conn sys/manager@//localhost:1521/XEPDB1 as sysdba
+    Connected.
 
 <br/>
 
-	// Подключение к базе утилитой RMAN
-	$ rman target sys/manager
-
-
+    // Подключение к базе утилитой RMAN
+    $ rman target sys/manager
 
 <br/>
 <br/>

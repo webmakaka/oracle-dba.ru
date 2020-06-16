@@ -1,19 +1,16 @@
 ---
 layout: page
-title:  Настройка параметров Instance после создания дупликата на standby
+title: Настройка параметров Instance после создания дупликата на standby
+description: Настройка параметров Instance после создания дупликата на standby
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка параметров Instance после создания дупликата на standby
 
-
-
-
 ### STANDBY
 
-
     SQL> alter system set LOG_ARCHIVE_CONFIG="DG_CONFIG=(master, slave)" scope=both;
-
 
 Сам я хрен знает сколько времени сидел из-за того, что неправильно указывал SERVICE. В общем значение SERVICE из tnanames.ora. Я же ставил в поле SERVICE - db_unique_name.
 
@@ -31,8 +28,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/po
 
     SQL> alter system set FAL_SERVER="master" scope=both;
     SQL> alter system set FAL_CLIENT="slave" scope=both;
-
-
 
 ### Донастройка Listener на standby
 

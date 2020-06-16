@@ -4,10 +4,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Предварительные настро
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-os-parameters-before-begin/
 ---
 
-
-
-# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Предварительные настройки
-
+# [Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM)]: Предварительные настройки
 
 <br/>
 
@@ -27,11 +24,10 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
     # cp /etc/selinux/config /etc/selinux/config.bkp
     # sed -i.gres "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 
-Следующие 2 команды -  1 создает резервную копию файла, меняет значение timeout с 5 на 0
+Следующие 2 команды - 1 создает резервную копию файла, меняет значение timeout с 5 на 0
 
     # cp /etc/grub.conf /etc/grub.conf.bkp
     # sed -i.gres "s/timeout=5/timeout=0/g" /etc/grub.conf
-
 
 Выключаю firewall
 

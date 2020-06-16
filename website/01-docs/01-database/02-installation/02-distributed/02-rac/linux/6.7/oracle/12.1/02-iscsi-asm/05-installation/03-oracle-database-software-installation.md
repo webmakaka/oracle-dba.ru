@@ -4,9 +4,7 @@ title: Oracle RAC 12.1 ISCSI + ASM - Инсталляция Database Software
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/
 ---
 
-
-# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Инсталляция Database Software
-
+# [Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM)]: Инсталляция Database Software
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -15,28 +13,25 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 	</tr>
 </table>
 
-
 <br/>
 
-	$ cd /tmp/oracle/12.1/database
+    $ cd /tmp/oracle/12.1/database
 
 Чтобы не набирать ORACLE_HOME в окне, выполните команду
 
-	$ export ORACLE_HOME=/u01/app/oracle/product/rac/12.1
+    $ export ORACLE_HOME=/u01/app/oracle/product/rac/12.1
 
 Определите системную переменную DISPLAY следующим образом.
 
-	$ export DISPLAY=192.168.1.5:0.0
+    $ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 
-	$ ./runInstaller
-
+    $ ./runInstaller
 
 <br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_01.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_02.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
@@ -44,13 +39,11 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_04.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_05.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_06.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_07.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_08.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
@@ -64,7 +57,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/03-oracle-database-software-installation/oracle-database-software-installation_13.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-
 <br/>
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
@@ -74,8 +66,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 	</tr>
 </table>
 
-	# /u01/app/oracle/product/rac/12.1/root.sh
-
+    # /u01/app/oracle/product/rac/12.1/root.sh
 
 <br/>
 

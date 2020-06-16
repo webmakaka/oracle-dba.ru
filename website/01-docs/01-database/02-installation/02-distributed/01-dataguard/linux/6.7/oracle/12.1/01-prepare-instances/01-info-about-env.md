@@ -1,43 +1,37 @@
 ---
 layout: page
 title: Описание системы, которое будет настраиваться
+description: Описание системы, которое будет настраиваться
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/info-about-env/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Описание системы, которое будет настраиваться
 
-
-
 <br/>
 
-
-1) Устанавливаю 2 сервера как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
-
+1. Устанавливаю 2 сервера как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 **На втором (StandBy) не создаю instance. Он будет скопирован с первого**
 
-
-    Primary:  
+    Primary:
     Hostname: moscow
-    IP: 192.168.1.11  
+    IP: 192.168.1.11
     DB_Name: orcl12
     DB_UNIQUE_NAME: master
 
-
 <br/>
 
-    StandBy:  
-    Hostname: piter  
-    IP: 192.168.1.12  
+    StandBy:
+    Hostname: piter
+    IP: 192.168.1.12
     DB_Name: orcl12
     DB_UNIQUE_NAME: slave
-
 
 <br/>
 
 DB_UNIQUE_NAME - можно задать при создании instance. При выборе - выбрать Advanced.
 
 <img src="https://img.oracledba.net/oracle-database-installation/distributed/dataguard/linux/6.7/oracle/12.1/db-unique-name.png" border="0" alt="oracle database software installation"><br/><br/>
-
 
 Либо манипуляциями с редактированием pfile.

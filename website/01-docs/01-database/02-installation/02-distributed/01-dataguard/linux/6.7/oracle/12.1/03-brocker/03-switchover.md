@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Приступаем к switchover на Primary
+description: Приступаем к switchover на Primary
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/broker/switchover/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Приступаем к switchover на Primary
-
 
 <br/>
 
@@ -16,7 +17,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     DGMGRL> connect /
 
 <br/>
-
 
     DGMGRL> SHOW DATABASE VERBOSE MASTER
 
@@ -74,15 +74,12 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     SQL> SELECT TYPE, MEMBER FROM V$LOGFILE;
 
-
 <br/>
 
 **2. Ensure the LogXptMode Property is set to SYNC.**
 
-
     DGMGRL> EDIT DATABASE master SET PROPERTY 'LogXptMode'='SYNC';
     DGMGRL> EDIT DATABASE slave SET PROPERTY 'LogXptMode'='SYNC';
-
 
 <br/>
 
@@ -91,18 +88,15 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     DGMGRL> EDIT DATABASE master SET PROPERTY FastStartFailoverTarget='slave';
     DGMGRL> EDIT DATABASE slave SET PROPERTY FastStartFailoverTarget='master';
 
-
 <br/>
 
 **4.Upgrade the protection mode to MAXAVAILABILITY, if necessary.**
 
     DGMGRL> EDIT CONFIGURATION SET PROTECTION MODE AS MAXAVAILABILITY;
 
-
 <br/>
 
 **5. Enable Flashback Database on the Primary and Standby Databases.**
-
 
 <br/>
 
@@ -114,11 +108,9 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     SQL> ALTER DATABASE FLASHBACK ON;
 
-
 <br/>
 
 **Standby**
-
 
     SQL> alter database recover managed standby database cancel;
 
@@ -129,7 +121,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     SQL> ALTER DATABASE FLASHBACK ON;
 
     SQL> alter database recover managed standby database using current logfile disconnect;
-
 
 <br/>
 
@@ -155,7 +146,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     Database Status:
     WARNING
 
-
 <br/>
 
     DGMGRL> START OBSERVER;
@@ -175,9 +165,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
 На втором сервере поднимать OBSERVER не нужно.
 
-
 <br/>
-
 
     DGMGRL> show database master
 
@@ -190,7 +178,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     Database Status:
     SUCCESS
-
 
 <br/>
 
@@ -264,7 +251,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     	connect to instance "orcl12" of database "slave"
 
-
 <br/>
 
 ### Поехали
@@ -282,7 +268,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
         New primary database "slave" is opening...
         Oracle Clusterware is restarting database "master" ...
         Switchover succeeded, new primary is "slave"
-
 
 <br/>
 
@@ -302,19 +287,15 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     Configuration Status:
     SUCCESS   (status updated 50 seconds ago)
 
-
 <br/>
 
-
 **На бывшем primary (master)**
-
 
     SQL> select open_mode, database_role from v$database;
 
     OPEN_MODE	     DATABASE_ROLE
     -------------------- ----------------
     READ ONLY WITH APPLY PHYSICAL STANDBY
-
 
 **На бывшем standby (slave)**
 
@@ -329,7 +310,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 Попереключаем журналы
 
     SQL> alter system switch logfile;
-
 
 На обоих инстансах одинаковое количество архивлогов.
 
@@ -366,21 +346,16 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     6 rows selected.
 
-
 <br/>
 
-### Делаю  Switchover обратно, чтобы работало как прежде
-
+### Делаю Switchover обратно, чтобы работало как прежде
 
     $ dgmgrl
 
     DGMGRL> connect sys/manager@primary
     DGMGRL> switchover to master;
 
-
 При switchover у меня один из инстансов отвалился. Пришлось его руками поднимать и перестартовывать listener. Я сначала подумал, что придется выполнять операцию заново но не пришлось.
-
-
 
     DGMGRL> show configuration
 
@@ -395,7 +370,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     Configuration Status:
     SUCCESS   (status updated 13 seconds ago)
-
 
 <br/>
 
@@ -428,10 +402,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     Database Status:
     SUCCESS
-
-
-
-
 
 <br/><br/>
 

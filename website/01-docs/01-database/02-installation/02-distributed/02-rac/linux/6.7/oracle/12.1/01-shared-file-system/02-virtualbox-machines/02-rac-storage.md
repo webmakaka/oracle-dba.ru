@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Конфиги виртуальных машин для storage
+description: Oracle RAC 12.1 SHARED FILE SYSTEM - Конфиги виртуальных машин для storage
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, SHARED FILE SYSTEM
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/vm/storage/
 ---
 
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Конфиги виртуальных машин для storage
-
 
     # su - vmadm
 
@@ -13,11 +14,9 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
     $ vm=vm_oel_storage
 
-
-Создаем каталоги для виртуальной машины  и для snapshots
+Создаем каталоги для виртуальной машины и для snapshots
 
     $ mkdir -p ${VM_HOME}/${vm}/snapshots
-
 
 ### Создание и регистрация виртуальной машины:
 
@@ -27,35 +26,25 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --basefolder ${VM_HOME}/${vm} \
     --register
 
-
-
 ### Устанавливаем планку оперативной памяти:
-
 
     $ VBoxManage modifyvm ${vm} --memory 512
 
-
 ### Подключаю видеокарту на 32 MB:
 
-
     $ VBoxManage modifyvm ${vm} --vram 32
-
 
 ### Снимаю sound карту, вытаскиваем дисковвод:
 
     $ VBoxManage modifyvm ${vm} --floppy disabled --audio none
 
-
 ### Подключаю контроллер жестких дисков (SAS):
-
 
     $ VBoxManage storagectl ${vm} \
     --add sas \
     --name "SAS Controller"
 
-
 ### Создание и подключение жестких дисков:
-
 
 Создаю виртуальные жесткие диски. Размер (size), рекомендуется задавать согласно имеющихся ресурсов. Иначе возможны проблемы и крах виртуальной машины):
 
@@ -67,7 +56,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     do VBoxManage createhd --filename ${vm}_dsk_dsk$i.vdi --size 40960 --format VDI --variant Standard
     done
 
-
 ### Подключаю диски к SAS контроллеру:
 
 Подключить 8 дисков 1 командой:
@@ -76,17 +64,13 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     do let port=$i-1; VBoxManage storageattach ${vm} --storagectl "SAS Controller" --port $port --type hdd --medium ${vm}_dsk_dsk$i.vdi
     done
 
-
 ### Подключаю IDE контроллер к которому будет позднее подключен DVD-ROM:
-
 
     $ VBoxManage storagectl ${vm} \
     --add ide \
     --name "IDE Controller"
 
-
 ### Подключаю к IDE контроллеру DVD образ инсталлируемой операционной системы:
-
 
     $ VBoxManage storageattach ${vm} \
     --storagectl "IDE Controller" \
@@ -95,9 +79,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --type dvddrive \
     --medium  /home/marley/Downloads/OracleLinux6U7/x64/OracleLinux-R6-U7-Server-x86_64-dvd.iso
 
-
 ### Подключение сетевых интерфейсов:
-
 
     $ VBoxManage modifyvm ${vm} \
     --nictype1 82540EM \
@@ -109,27 +91,20 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --nic2 bridged \
     --bridgeadapter2 eth0
 
-
 <br/>
 
 ### Определяем порядок устройств, с которых будет произведена попытка стартовать систему:
-
 
     $ VBoxManage modifyvm ${vm} \
     --boot1 disk \
     --boot2 dvd
 
-
 ### Определяем каталог для снапшотов:
-
 
     $ VBoxManage modifyvm ${vm} \
     --snapshotfolder ${VM_HOME}/${vm}/snapshots
 
-
-
 ### Предоставим возможность подключения к машине по RDP:
-
 
     $ VBoxManage modifyvm ${vm} \
     --vrde on \
@@ -138,13 +113,9 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --vrdeaddress 192.168.1.5 \
     --vrdeport 3389
 
-
-
 ### Показать результат созданнойвиртуальной машины:
 
-
     $ VBoxManage showvminfo ${vm}
-
 
 <br/>
 
@@ -154,8 +125,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 ### Стартуем виртуальную машину с возможностью подключения по RDP:
 
-
     $ VBoxHeadless --startvm ${vm}
-
 
 Устанавливать операционную следует на 1 диск.

@@ -76,7 +76,7 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 <br/><br/>
 
-<h2>Инсталляция GRID:</h2>
+## Инсталляция GRID:
 
 <ul>
 	<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/grid-installation/">Инсталляция GRID</a></li>
@@ -85,7 +85,7 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 <br/><br/>
 
-<h2>Создание дисковых групп ASM:</h2>
+## Создание дисковых групп ASM:
 
 <ul>
 	<li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/asm-diskgroup-creation/">Создание дисковых групп ASM</a></li>
@@ -94,18 +94,16 @@ https://docs.google.com/document/d/1iGmRtwwcC9FGESnlR7v5qrcLKOzGIoh1GNeU5N0Q5cQ/
 
 <br/><br/>
 
-<h2>Инсталляция СУБД Oracle (DataBase SoftWare):</h2>
+## Инсталляция СУБД Oracle (DataBase SoftWare):
+
 <ul>
-
     <li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/oracle-database-software-installation/">Инсталляция СУБД Oracle (DataBase SoftWare)</a></li>
-
 </ul>
 
 <br/><br/>
 
-<h2>Создание экземпляра базы данных (Instance):</h2>
+## Создание экземпляра базы данных (Instance):
+
 <ul>
-
     <li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/oracle-instance-creation/">Создание экземпляра базы данных (Instance)</a></li>
-
 </ul>

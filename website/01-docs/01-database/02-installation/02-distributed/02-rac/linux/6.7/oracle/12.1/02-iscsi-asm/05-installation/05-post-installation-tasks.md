@@ -4,12 +4,9 @@ title: Oracle RAC 12.1 ISCSI + ASM - После инсталляции
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/post-installation-tasks/
 ---
 
-
-# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: После инсталляции
-
+# [Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM)]: После инсталляции
 
 <br/>
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 
@@ -20,20 +17,18 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 </table>
 
-	$ vi /etc/oratab
+    $ vi /etc/oratab
 
 Заменить:
 
-	+ASM1:/u01/app/grid/12.1:N
-	-MGMTDB:/u01/app/grid/12.1:N
-	rac12:/u01/app/oracle/product/rac/12.1:N
-
+    +ASM1:/u01/app/grid/12.1:N
+    -MGMTDB:/u01/app/grid/12.1:N
+    rac12:/u01/app/oracle/product/rac/12.1:N
 
 на
 
-	+ASM1:/u01/app/grid/12.1:Y
-	-MGMTDB:/u01/app/grid/12.1:Y
-	rac12:/u01/app/oracle/product/rac/12.1:Y
-
+    +ASM1:/u01/app/grid/12.1:Y
+    -MGMTDB:/u01/app/grid/12.1:Y
+    rac12:/u01/app/oracle/product/rac/12.1:Y
 
 Правда я пока не знаю каким боком здесь ASM и что за MGMTDB.

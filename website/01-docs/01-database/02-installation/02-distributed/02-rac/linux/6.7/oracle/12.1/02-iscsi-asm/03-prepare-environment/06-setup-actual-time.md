@@ -4,13 +4,11 @@ title: Oracle RAC 12.1 ISCSI + ASM - Настройка сервисов отв�
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-actual-time/
 ---
 
-# [Инсталляция Oracle RAC 12.1 ISCSI + ASM]: Настройка сервисов отвечающих за синхронизацию времени
+# [Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM)]: Настройка сервисов отвечающих за синхронизацию времени
 
 <br/>
 
-
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);"><strong>Настройка времени</strong></span>
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 <tr>
@@ -18,8 +16,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 	<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1, rac2, storage</strong></span></td>
 </tr>
 </table>
-
-
 
 Внесите изменения в файл параметров ntpd
 
@@ -32,17 +28,14 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 на
 
-	# Drop root to id 'ntp:ntp' by default.
-	# OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid -g"
-	OPTIONS="-x -u ntp:ntp -p /var/run/ntpd.pid -g"
+    # Drop root to id 'ntp:ntp' by default.
+    # OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid -g"
+    OPTIONS="-x -u ntp:ntp -p /var/run/ntpd.pid -g"
 
 <br/>
 
-
-	# chkconfig --level 345 ntpd on
-	# service ntpd restart
-
-
+    # chkconfig --level 345 ntpd on
+    # service ntpd restart
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 <tr>
@@ -51,21 +44,19 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 </tr>
 </table>
 
+    # cd /etc
+    # cp ntp.conf ntp.conf.bak
 
-	# cd /etc
-	# cp ntp.conf ntp.conf.bak
-
-	# vi ntp.conf
+    # vi ntp.conf
 
 Оставляю только:
 
-	server rac1-priv-storage
-	restrict rac1-priv-storage mask 255.255.255.255 nomodify notrap noquery
+    server rac1-priv-storage
+    restrict rac1-priv-storage mask 255.255.255.255 nomodify notrap noquery
 
 <br/>
 
-	# service ntpd restart
-
+    # service ntpd restart
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 <tr>
@@ -74,32 +65,29 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 </tr>
 </table>
 
+    # cd /etc
+    # cp ntp.conf ntp.conf.bak
 
-	# cd /etc
-	# cp ntp.conf ntp.conf.bak
+    # vi ntp.conf
 
-	# vi ntp.conf
+    Оставляю только:
 
-	Оставляю только:
-
-	server rac2-priv-storage
-	restrict rac2-priv-storage mask 255.255.255.255 nomodify notrap noquery
+    server rac2-priv-storage
+    restrict rac2-priv-storage mask 255.255.255.255 nomodify notrap noquery
 
 <br/>
 
-	# service ntpd restart
-
+    # service ntpd restart
 
 Проверка:
 
-
-	# ntpq -p
-	     remote           refid      st t when poll reach   delay   offset  jitter
-	==============================================================================
-	 rac1-priv-stora .INIT.          16 u    -   64    0    0.000    0.000   0.000
-
+    # ntpq -p
+         remote           refid      st t when poll reach   delay   offset  jitter
+    ==============================================================================
+     rac1-priv-stora .INIT.          16 u    -   64    0    0.000    0.000   0.000
 
 <br/>
 
-	# ntpq -pn
- 	# ntpq -c peers
+    # ntpq -pn
+
+# ntpq -c peers

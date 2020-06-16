@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - После инсталляции
+description: Oracle RAC 12.1 SHARED FILE SYSTEM - После инсталляции
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, SHARED FILE SYSTEM
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/post-installation-tasks/
 ---
 
-
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: После инсталляции
 
-
 <br/>
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 
@@ -20,20 +19,18 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 </table>
 
-	$ vi /etc/oratab
+    $ vi /etc/oratab
 
 Заменить:
 
-	+ASM1:/u01/app/grid/12.1:N
-	-MGMTDB:/u01/app/grid/12.1:N
-	rac12:/u01/app/oracle/product/rac/12.1:N
-
+    +ASM1:/u01/app/grid/12.1:N
+    -MGMTDB:/u01/app/grid/12.1:N
+    rac12:/u01/app/oracle/product/rac/12.1:N
 
 на
 
-	+ASM1:/u01/app/grid/12.1:Y
-	-MGMTDB:/u01/app/grid/12.1:Y
-	rac12:/u01/app/oracle/product/rac/12.1:Y
-
+    +ASM1:/u01/app/grid/12.1:Y
+    -MGMTDB:/u01/app/grid/12.1:Y
+    rac12:/u01/app/oracle/product/rac/12.1:Y
 
 Правда я пока не знаю каким боком здесь ASM и что за MGMTDB.

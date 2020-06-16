@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Монтирование RAID на узлах кластера
+description: Oracle RAC 12.1 SHARED FILE SYSTEM - Монтирование RAID на узлах кластера
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, SHARED FILE SYSTEM
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/mount-raid-on-nodes/
 ---
 
-
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Монтирование RAID на узлах кластера
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 
@@ -16,8 +16,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 </tr>
 
 </table>
-
-
 
     # mkdir /u02
 
@@ -51,8 +49,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     storage:/raid         118G   60M  112G   1% /u02
 
 <br/>
-
-
 
     # chown -R oracle12:oinstall /u02
     # chmod -R 775 /u02

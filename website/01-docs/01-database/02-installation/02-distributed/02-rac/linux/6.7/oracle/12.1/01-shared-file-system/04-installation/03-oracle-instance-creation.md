@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Создание экземпляра (instance) базы данных
+description: Oracle RAC 12.1 SHARED FILE SYSTEM - Создание экземпляра (instance) базы данных
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, SHARED FILE SYSTEM
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-instance-creation/
 ---
 
-
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Создание экземпляра (instance) базы данных
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -17,33 +17,30 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 <br/>
 
-	# mkdir -p /u02/fast_recovery_area
-	# chown -R oracle12:dba /u02/fast_recovery_area
+    # mkdir -p /u02/fast_recovery_area
+    # chown -R oracle12:dba /u02/fast_recovery_area
 
 
-	# mkdir -p /u02/oradata
-	# chown -R oracle12:dba /u02/oradata
-
-<br/>
-
-	# su - oracle12
+    # mkdir -p /u02/oradata
+    # chown -R oracle12:dba /u02/oradata
 
 <br/>
 
-	$ export DISPLAY=192.168.1.5:0.0
+    # su - oracle12
 
 <br/>
 
-	$ dbca
+    $ export DISPLAY=192.168.1.5:0.0
 
+<br/>
+
+    $ dbca
 
 <br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/03-oracle-instance-creation/oracle-instance-creation_01.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/03-oracle-instance-creation/oracle-instance-creation_02.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/03-oracle-instance-creation/oracle-instance-creation_03.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
@@ -81,59 +78,50 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/03-oracle-instance-creation/oracle-instance-creation_20.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
+    $ sqlplus / as sysdba
+
+    SQL*Plus: Release 12.1.0.2.0 Production on Tue Aug 25 20:08:26 2015
+
+    Copyright (c) 1982, 2014, Oracle.  All rights reserved.
 
 
-	$ sqlplus / as sysdba
-
-	SQL*Plus: Release 12.1.0.2.0 Production on Tue Aug 25 20:08:26 2015
-
-	Copyright (c) 1982, 2014, Oracle.  All rights reserved.
-
-
-	Connected to:
-	Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
-	With the Partitioning, Real Application Clusters, OLAP, Advanced Analytics
-	and Real Application Testing options
-
+    Connected to:
+    Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+    With the Partitioning, Real Application Clusters, OLAP, Advanced Analytics
+    and Real Application Testing options
 
 <br/>
 
-	SQL> select status from v$instance;
+    SQL> select status from v$instance;
 
-	STATUS
-	------------
-	OPEN
-
-
-<br/>
-
-	SQL> col INST_NUMBER format 5;
-	SQL> col INST_NAME format a30;
+    STATUS
+    ------------
+    OPEN
 
 <br/>
 
-	SQL> SELECT * FROM v$active_instances;
+    SQL> col INST_NUMBER format 5;
+    SQL> col INST_NAME format a30;
 
 <br/>
 
-	INST_NUMBER INST_NAME			       CON_ID
-	----------- ------------------------------ ----------
-		  0 rac1.localdomain:rac121		    0
-
-
-		  0 rac2.localdomain:rac122		    0
-
-
+    SQL> SELECT * FROM v$active_instances;
 
 <br/>
 
-	https://192.168.1.11:5500/em/
-	https://192.168.1.12:5500/em/
-
-	https://rac12-scan:5500/em/
-
+    INST_NUMBER INST_NAME			       CON_ID
+    ----------- ------------------------------ ----------
+    	  0 rac1.localdomain:rac121		    0
 
 
+    	  0 rac2.localdomain:rac122		    0
+
+<br/>
+
+    https://192.168.1.11:5500/em/
+    https://192.168.1.12:5500/em/
+
+    https://rac12-scan:5500/em/
 
 <br/>
 

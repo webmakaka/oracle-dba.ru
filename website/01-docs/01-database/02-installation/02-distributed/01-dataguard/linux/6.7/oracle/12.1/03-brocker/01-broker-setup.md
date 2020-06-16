@@ -1,17 +1,16 @@
 ---
 layout: page
 title: Установка брокера (DGMGRL)
+description: Установка брокера (DGMGRL)
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/broker/setup/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Устанавливаем Broker
 
-
-
 <br/>
 
 ### Primary и Standby
-
 
 Для начала мне пришось выполнить команду на primary и standby:
 
@@ -22,12 +21,9 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     SQL> ALTER SYSTEM set dg_broker_config_file1='+DATA/db_brocker1.dat' SCOPE=both;
     SQL> ALTER SYSTEM set dg_broker_config_file2='+ARCH/db_brocker2.dat' SCOPE=both;
 
-
-
 Запускаю broker
 
     SQL> ALTER SYSTEM SET dg_broker_start=TRUE SCOPE=both;
-
 
 <br/>
 
@@ -51,7 +47,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     Password:
     Connected as SYSDBA.
 
-
 <br/>
 
     DGMGRL> show configuration
@@ -69,12 +64,10 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
 <br/>
 
-
 // standby - в данном случае service прописанный в tnsnames
 
     DGMGRL> ADD DATABASE 'slave' AS CONNECT IDENTIFIER IS standby maintained as physical;
     Database "slave" added
-
 
 <br/>
 
@@ -112,7 +105,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     Configuration Status:
     SUCCESS   (status updated 30 seconds ago)
 
-
 <br/>
 
     DGMGRL> show database master
@@ -126,7 +118,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
     Database Status:
     SUCCESS
-
 
 <br/>
 
@@ -146,16 +137,13 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     Database Status:
     SUCCESS
 
-
 <br/>
 
 Логи:
 
     $ less /u01/oracle/diag/rdbms/master/orcl12/trace/drcorcl12.log
 
-
 <br/>
-
 
 <br/>
 
@@ -164,11 +152,9 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     SQL> show parameter dg_broker_config_file1
     SQL> show parameter dg_broker_start
 
-
 <br/>
 
 ### Команды для информации:
-
 
     SQL> show parameter broker
 
@@ -181,12 +167,9 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
     dg_broker_start 		     boolean	 TRUE
     use_dedicated_broker		     boolean	 FALSE
 
-
-
 Остановить bkoker
 
     SQL> ALTER SYSTEM SET dg_broker_start=FALSE SCOPE=both;
-
 
 Выключить конфигурацию:
 
@@ -195,7 +178,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 Удалить конфигурацию:
 
     DGMGRL> REMOVE CONFIGURATION;
-
 
 Получить подробную информации по базе:
 
@@ -209,12 +191,10 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
 ### Ошибки:
 
-
 **Ошибка 1:**
 
     DGMGRL> create configuration 'DG_ORCL12' as primary database is 'master' connect identifier is master;
     Error: ORA-16698: LOG_ARCHIVE_DEST_n parameter set for object to be added
-
 
 You must clear any remote redo transport destinations on the primary database that do not have the NOREGISTER attribute, before a configuration can be created. Otherwise, the following error message is returned when you attempt to create the configuration:
 
@@ -226,10 +206,9 @@ You must clear any remote redo transport destinations on the primary database th
 
     SQL> ALTER SYSTEM SET LOG_ARCHIVE_DEST_2=" ";
 
-
 <br/>
 
- **Ошибка 2**  
+**Ошибка 2**
 
      DGMGRL> show database slave
 
@@ -256,12 +235,8 @@ You must clear any remote redo transport destinations on the primary database th
      Database Status:
      ERROR
 
- На standby
+На standby
 
     SQL> alter database recover managed standby database using current logfile disconnect;
-
-
-
-
 
 http://docs.oracle.com/cd/B28359_01/server.111/b28295/dgmgrl.htm#i78344

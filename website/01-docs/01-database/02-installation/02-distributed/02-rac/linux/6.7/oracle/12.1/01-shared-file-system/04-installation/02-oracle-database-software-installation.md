@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция Database Software
+description: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция Database Software
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, SHARED FILE SYSTEM
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/oracle-database-software-installation/
 ---
 
-
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Инсталляция Database Software
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -15,22 +15,19 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 	</tr>
 </table>
 
+<br/>
+
+    $ cd /tmp/oracle/12.1/database
 
 <br/>
 
-	$ cd /tmp/oracle/12.1/database
+    $ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 
-	$ export DISPLAY=192.168.1.5:0.0
-
-<br/>
-
-	$ ./runInstaller
-
+    $ ./runInstaller
 
 <br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_01.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
@@ -46,24 +43,19 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_07.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
-
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_08.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_09.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_10.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
-
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_11.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_12.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_13.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/02-oracle-database-software-installation/oracle-database-software-installation_14.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
-
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -72,4 +64,4 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 	</tr>
 </table>
 
-	# /u01/app/oracle/product/rac/12.1/root.sh
+    # /u01/app/oracle/product/rac/12.1/root.sh

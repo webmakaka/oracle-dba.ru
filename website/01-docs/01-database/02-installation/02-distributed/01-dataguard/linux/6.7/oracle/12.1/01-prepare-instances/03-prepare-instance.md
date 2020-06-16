@@ -1,62 +1,58 @@
 ---
 layout: page
 title: Предварительные шаги по настройке параметров instance
+description: Предварительные шаги по настройке параметров instance
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/prepare-instance/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Предварительные шаги по настройке параметров instance
 
-
 ### Primary
 
+<br/>
+
+    SQL> show parameter db_name
+
+    NAME				     TYPE	 VALUE
+    ------------------------------------ ----------- ------------------------------
+    db_name 			     string	 orcl12
 
 <br/>
 
-	SQL> show parameter db_name
+    SQL> show parameter db_unique_name
 
-	NAME				     TYPE	 VALUE
-	------------------------------------ ----------- ------------------------------
-	db_name 			     string	 orcl12
-
-
-<br/>
-
-	SQL> show parameter db_unique_name
-
-	NAME				     TYPE	 VALUE
-	------------------------------------ ----------- ------------------------------
-	db_unique_name			     string	 master
-
+    NAME				     TYPE	 VALUE
+    ------------------------------------ ----------- ------------------------------
+    db_unique_name			     string	 master
 
 <br/>
 
 **ENABLE ARCHIVELOG**
 
-
-	SQL> archive log list;
-	Database log mode	       No Archive Mode
-	Automatic archival	       Disabled
-	Archive destination	       USE_DB_RECOVERY_FILE_DEST
-	Oldest online log sequence     8
-	Current log sequence	       10
-
-<br/>
-
-	SQL> shutdown immediate;
-	SQL> startup mount;
-	SQL> alter database archivelog;
-	SQL> alter database open;
+    SQL> archive log list;
+    Database log mode	       No Archive Mode
+    Automatic archival	       Disabled
+    Archive destination	       USE_DB_RECOVERY_FILE_DEST
+    Oldest online log sequence     8
+    Current log sequence	       10
 
 <br/>
 
-	SQL> archive log list;
-	Database log mode	       Archive Mode
-	Automatic archival	       Enabled
-	Archive destination	       USE_DB_RECOVERY_FILE_DEST
-	Oldest online log sequence     8
-	Next log sequence to archive   10
-	Current log sequence	       10
+    SQL> shutdown immediate;
+    SQL> startup mount;
+    SQL> alter database archivelog;
+    SQL> alter database open;
 
+<br/>
+
+    SQL> archive log list;
+    Database log mode	       Archive Mode
+    Automatic archival	       Enabled
+    Archive destination	       USE_DB_RECOVERY_FILE_DEST
+    Oldest online log sequence     8
+    Next log sequence to archive   10
+    Current log sequence	       10
 
 <br/>
 
@@ -64,60 +60,56 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/pr
 
 Режим force logging нужен для принудительной записи транзакций в redo logs даже для операций, выполняемых с опцией NOLOGGING. Отсутствие этого режима может привести к тому, что на standby базе будут повреждены некоторые файлы данных, т.к. при «накатке» архивных журналов из них нельзя будет получить данные о транзакциях, выполненных с опцией NOLOGGING.
 
-	SQL> select force_logging from v$database;
+    SQL> select force_logging from v$database;
 
-	FORCE_LOGGING
-	---------------------------------------
-	NO
-
-
-<br/>
-
-	SQL> alter database force logging;
-
+    FORCE_LOGGING
+    ---------------------------------------
+    NO
 
 <br/>
 
-	SQL> select force_logging from v$database;
+    SQL> alter database force logging;
 
-	FORCE_LOGGING
-	---------------------------------------
-	YES
+<br/>
 
+    SQL> select force_logging from v$database;
+
+    FORCE_LOGGING
+    ---------------------------------------
+    YES
 
 <br/>
 
 ### Посмотреть на свежие архивлоги
 
-	SQL> alter system switch logfile;
+    SQL> alter system switch logfile;
 
 <br/>
 
-	SQL> select name from v$archived_log;
+    SQL> select name from v$archived_log;
 
-	NAME
-	--------------------------------------------------------------------------------
-	+ARCH/MASTER/ARCHIVELOG/2015_08_12/thread_1_seq_8.260.887572251
-
-
-<br/>
-
-	$ cd ~
-	$ . asm.sh
+    NAME
+    --------------------------------------------------------------------------------
+    +ARCH/MASTER/ARCHIVELOG/2015_08_12/thread_1_seq_8.260.887572251
 
 <br/>
 
-	$ asmcmd
+    $ cd ~
+    $ . asm.sh
 
 <br/>
 
-	ASMCMD> ls
-	ARCHIVELOG/
-	CONTROLFILE/
+    $ asmcmd
 
-	ASMCMD> cd ARCHIVELOG
+<br/>
 
-	ASMCMD> cd 2015_08_12
+    ASMCMD> ls
+    ARCHIVELOG/
+    CONTROLFILE/
 
-	ASMCMD> ls
-	thread_1_seq_9.260.887541937
+    ASMCMD> cd ARCHIVELOG
+
+    ASMCMD> cd 2015_08_12
+
+    ASMCMD> ls
+    thread_1_seq_9.260.887541937

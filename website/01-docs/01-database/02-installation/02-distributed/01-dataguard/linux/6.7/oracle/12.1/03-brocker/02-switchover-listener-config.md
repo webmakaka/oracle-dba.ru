@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Переконфигурирование Listener для Switchover
+description: Переконфигурирование Listener для Switchover
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/broker/switchover-listener-config/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Переконфигурирование Listener для Switchover
-
 
 <br/>
 
@@ -16,43 +17,41 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
 <br/>
 
-	$ vi listener.ora
+    $ vi listener.ora
 
 <br/>
 
 LISTENER =
 (ADDRESS_LIST=
-		(ADDRESS=(PROTOCOL=tcp)(HOST=moscow.localdomain)(PORT=1521))
-		(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
+(ADDRESS=(PROTOCOL=tcp)(HOST=moscow.localdomain)(PORT=1521))
+(ADDRESS=(PROTOCOL=ipc)(KEY=extproc)))
 
 SID_LIST_LISTENER=
-			(SID_LIST=
-					(SID_DESC=
-						(GLOBAL_DBNAME=master_DGMGRL)
-						(ORACLE_HOME=/u01/oracle/database/12.1)
-						(SID_NAME=orcl12)
-					)
-                    (SID_DESC=
-                        (GLOBAL_DBNAME=slave_DGMGRL)
-                        (ORACLE_HOME=/u01/oracle/database/12.1)
-                        (SID_NAME=orcl12)
-                    )
-			)
+(SID_LIST=
+(SID_DESC=
+(GLOBAL_DBNAME=master_DGMGRL)
+(ORACLE_HOME=/u01/oracle/database/12.1)
+(SID_NAME=orcl12)
+)
+(SID_DESC=
+(GLOBAL_DBNAME=slave_DGMGRL)
+(ORACLE_HOME=/u01/oracle/database/12.1)
+(SID_NAME=orcl12)
+)
+)
 
 <br/>
 
 ### Перенастройка Listener на Standby
 
-
-*_DGMGRL - название взято из конфига брокера.
-
+\*\_DGMGRL - название взято из конфига брокера.
 
     $ cd /u01/oracle/database/12.1/network/admin/
     $ cp listener.ora listener.ora.bkp
 
 <br/>
 
-	$ vi listener.ora
+    $ vi listener.ora
 
 <br/>
 
@@ -79,7 +78,6 @@ SID_LIST_LISTENER=
 
     $ lsnrctl stop
     $ lsnrctl start
-
 
 <br/>
 

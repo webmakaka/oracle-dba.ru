@@ -1,21 +1,19 @@
 ---
 layout: page
 title: BACKUPы на DataGuard
+description: BACKUPы на DataGuard
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/backups/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: BACKUPы на DataGuard
 
-
 Смысл в том, что:
 
-1) Бекапы всеравно нужно делать.  
-2) FRA может заполниться архивлогами. Если не предпринять меры, то сервер остановится.  
-
+1. Бекапы всеравно нужно делать.
+2. FRA может заполниться архивлогами. Если не предпринять меры, то сервер остановится.
 
 Следующим образом предлагает делать бекапы автор курса [Udemy] easy way to set oracle active dataguard.
-
-
 
 <br/>
 
@@ -27,7 +25,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/ba
     db_recovery_file_dest_size	     big integer 40000M
     recovery_parallelism		     integer	 0
 
-
 <br/>
 
 ### ALL DB:
@@ -35,7 +32,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/ba
     RMAN> CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE DISK CLEAR;
 
     RMAN> CONFIGURE CHANNEL DEVICE TYPE DISK FORMAT '+ARCH/%d_DB_%u_%s_%p';
-
 
 <br/>
 
@@ -54,7 +50,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/ba
     RMAN> CONFIGURE BACKUP OPTIMIZATION ON;
 
     RMAN> CONFIGURE ARCHIVELOG DELETION POLICY TO NONE;
-
 
 <br/>
 
@@ -83,7 +78,6 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/ba
        CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET PARALLELISM 2;
        BACKUP ARCHIVELOG ALL FORMAT '+ARCH/ARCH0_%D_%u' DELETE ALL INPUT;
     }
-
 
 <br/>
 

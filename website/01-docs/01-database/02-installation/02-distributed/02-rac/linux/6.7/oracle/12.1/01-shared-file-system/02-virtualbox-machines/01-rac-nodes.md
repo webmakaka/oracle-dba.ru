@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Конфиги виртуальных машин для узлов кластера
+description: Oracle RAC 12.1 SHARED FILE SYSTEM - Конфиги виртуальных машин для узлов кластера
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, SHARED FILE SYSTEM
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/vm/rac-nodes/
 ---
 
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Конфиги виртуальных машин для инсталляции узлов кластера
-
 
     # su - vmadm
 
@@ -13,11 +14,9 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
     $ vm=vm_oel_rac1
 
-
-Создаем каталоги для виртуальной машины  и для snapshots
+Создаем каталоги для виртуальной машины и для snapshots
 
     $ mkdir -p ${VM_HOME}/${vm}/snapshots
-
 
 ### Создание и регистрация виртуальной машины:
 
@@ -27,41 +26,31 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --basefolder ${VM_HOME}/${vm} \
     --register
 
-
-
 ### Устанавливаем планку оперативной памяти:
-
 
     $ VBoxManage modifyvm ${vm} --memory 4608
 
-
 ### Подключаю видеокарту на 32 MB:
 
-
     $ VBoxManage modifyvm ${vm} --vram 32
-
 
 ### Снимаю sound карту, вытаскиваем дисковвод:
 
     $ VBoxManage modifyvm ${vm} --floppy disabled --audio none
 
-
 ### Подключаю контроллер жестких дисков (SAS):
-
 
     $ VBoxManage storagectl ${vm} \
     --add sas \
     --name "SAS Controller"
 
-
 ### Создание и подключение жестких дисков:
-
 
 Создаю виртуальные жесткие диски. Размер (size), рекомендуется задавать согласно имеющихся ресурсов. Иначе возможны проблемы и крах виртуальной машины):
 
     $ cd ${VM_HOME}/${vm}/${vm}
 
-	$ VBoxManage createhd \
+    $ VBoxManage createhd \
     --filename ${vm}_dsk1.vdi \
     --size 40960 \
     --format VDI \
@@ -73,36 +62,27 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --format VDI \
     --variant Standard
 
-
-
-
 ### Подключаю диски к SAS контроллеру:
 
+    $ VBoxManage storageattach ${vm} \
+    --storagectl "SAS Controller" \
+    --port 0 \
+    --type hdd \
+    --medium ${vm}_dsk1.vdi
 
-	$ VBoxManage storageattach ${vm} \
-	--storagectl "SAS Controller" \
-	--port 0 \
-	--type hdd \
-	--medium ${vm}_dsk1.vdi
-
-	$ VBoxManage storageattach ${vm} \
-	--storagectl "SAS Controller" \
-	--port 1 \
-	--type hdd \
-	--medium ${vm}_dsk2.vdi
-
-
+    $ VBoxManage storageattach ${vm} \
+    --storagectl "SAS Controller" \
+    --port 1 \
+    --type hdd \
+    --medium ${vm}_dsk2.vdi
 
 ### Подключаю IDE контроллер к которому будет позднее подключен DVD-ROM:
-
 
     $ VBoxManage storagectl ${vm} \
     --add ide \
     --name "IDE Controller"
 
-
 ### Подключаю к IDE контроллеру DVD образ инсталлируемой операционной системы:
-
 
     $ VBoxManage storageattach ${vm} \
     --storagectl "IDE Controller" \
@@ -111,9 +91,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --type dvddrive \
     --medium  /home/marley/Downloads/OracleLinux6U7/x64/OracleLinux-R6-U7-Server-x86_64-dvd.iso
 
-
 ### Подключение сетевых интерфейсов:
-
 
 Наберите команду;
 
@@ -121,7 +99,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 Обратите внимание на значение:
 
-Name:                eth0
+Name: eth0
 
 Я использую eth0 как основной физический интерфейс, который будут использовать виртуальные машины в качестве моста.
 
@@ -142,27 +120,20 @@ Name:                eth0
     --nic3 bridged \
     --bridgeadapter3 eth0
 
-
 <br/>
 
 ### Определяем порядок устройств, с которых будет произведена попытка стартовать систему:
-
 
     $ VBoxManage modifyvm ${vm} \
     --boot1 disk \
     --boot2 dvd
 
-
 ### Определяем каталог для снапшотов:
-
 
     $ VBoxManage modifyvm ${vm} \
     --snapshotfolder ${VM_HOME}/${vm}/snapshots
 
-
-
 ### Предоставим возможность подключения к машине по RDP:
-
 
     $ VBoxManage modifyvm ${vm} \
     --vrde on \
@@ -171,20 +142,16 @@ Name:                eth0
     --vrdeaddress 192.168.1.5 \
     --vrdeport 3389
 
-Здесь мы указываем:  
+Здесь мы указываем:
 
 --vrdeaddress - ip адрес машины, на которой установлен vitrualbox  
 --vrdeauthtype null - аутентификация не требуется.  
 --vrdemulticon on - разрешено множественное подключение к виртуальным машинам.  
---vrdeport порт к которому можно будет подключиться при старте виртуальной машины.  
-
-
+--vrdeport порт к которому можно будет подключиться при старте виртуальной машины.
 
 ### Показать результат созданнойвиртуальной машины:
 
-
     $ VBoxManage showvminfo ${vm}
-
 
 <br/>
 
@@ -194,17 +161,13 @@ Name:                eth0
 
 ### Стартуем виртуальную машину с возможностью подключения по RDP:
 
-
     $ VBoxHeadless --startvm ${vm}
 
-
 Подключаюсь по RDP к виртуальной машине. В Windows это консоль для удаленного подключения (mstsc вроде), в linux remmina или rdesktop.
-
 
 В первом окне нажимаю tab и дописываю linux text, чтобы инсталляция проходила в удобном для меня режиме. Устанавливать операционную следует на 1 диск. Второй будет для Oracle.
 
 Таких виртуальных машин должно быть 2. После инсталляции предлагаю клонировать.
-
 
     $ vboxmanage clonevm vm_oel_rac1 --name vm_oel_rac2 --register
     $ vm=vm_oel_rac2
@@ -223,8 +186,6 @@ Name:                eth0
 
 Нужно отредактировать или удалить содержимое файла в котором явно прописывается какому интерфейсу какой mac адрес соответствует.
 
-
      # cat /dev/null > /etc/udev/rules.d/70-persistent-net.rules
-
 
 И перезагрузиться.

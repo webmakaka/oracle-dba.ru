@@ -1,180 +1,162 @@
 ---
 layout: page
-title:  Запросы для получения данных о работе DataGuard
+title: Запросы для получения данных о работе DataGuard
+description: Запросы для получения данных о работе DataGuard
+keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/queries/
 ---
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Запросы для получения данных о работе DataGuard
 
+    SQL> select name, db_unique_name, database_role, protection_mode from v$database;
 
-
-	SQL> select name, db_unique_name, database_role, protection_mode from v$database;
-
-	NAME	  DB_UNIQUE_NAME		 DATABASE_ROLE	  PROTECTION_MODE
-	--------- ------------------------------ ---------------- --------------------
-	ORCL12	  slave 			 PHYSICAL STANDBY MAXIMUM PERFORMANCE
-
+    NAME	  DB_UNIQUE_NAME		 DATABASE_ROLE	  PROTECTION_MODE
+    --------- ------------------------------ ---------------- --------------------
+    ORCL12	  slave 			 PHYSICAL STANDBY MAXIMUM PERFORMANCE
 
 <br/>
 
-
-	SQL> SELECT 'Last Applied: ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
-	FROM v$archived_log
-	WHERE sequence# = (select max(sequence#) FROM v$archived_log where applied='YES')
-	UNION
-	SELECT 'Last Received: ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
-	FROM v$archived_log
-	WHERE sequence# = (select max(sequence#) FROM v$archived_log);
-
-<br/>
-
-	LOGS		TIME
-	--------------- -----------------------------
-	Last Applied:	15-AUG-2015:17:27:19
-	Last Received:	15-AUG-2015:17:27:19
-
+    SQL> SELECT 'Last Applied: ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
+    FROM v$archived_log
+    WHERE sequence# = (select max(sequence#) FROM v$archived_log where applied='YES')
+    UNION
+    SELECT 'Last Received: ' Logs, to_char(next_time, 'DD-MON-YYYY:HH24:MI:SS') Time
+    FROM v$archived_log
+    WHERE sequence# = (select max(sequence#) FROM v$archived_log);
 
 <br/>
 
-	SQL> SELECT name, value, datum_time, time_computed FROM V$DATAGUARD_STATS;
+    LOGS		TIME
+    --------------- -----------------------------
+    Last Applied:	15-AUG-2015:17:27:19
+    Last Received:	15-AUG-2015:17:27:19
 
 <br/>
 
-
-	SQL> SELECT to_char(COMPLETION_TIME,'dd-mon-yyyy hh24:mi:ss') FROM V$ARCHIVED_LOG WHERE APPLIED='YES';
-
-	TO_CHAR(COMPLETION_TIME,'DD-M
-	-----------------------------
-	13-aug-2015 19:47:34
-	13-aug-2015 19:47:35
-
+    SQL> SELECT name, value, datum_time, time_computed FROM V$DATAGUARD_STATS;
 
 <br/>
 
-	SQL> select switchover_status from v$database;
+    SQL> SELECT to_char(COMPLETION_TIME,'dd-mon-yyyy hh24:mi:ss') FROM V$ARCHIVED_LOG WHERE APPLIED='YES';
 
-	SWITCHOVER_STATUS
-	--------------------
-	NOT ALLOWED
-
-<br/>
-
-	select     ds.dest_id id
-	,     ad.status
-	,     ds.database_mode db_mode
-	,     ad.archiver type
-	,     ds.recovery_mode
-	,     ds.protection_mode
-	,     ds.standby_logfile_count "SRLs"
-	,     ds.standby_logfile_active active
-	,     ds.archived_seq#
-	from     v$archive_dest_status     ds
-	,     v$archive_dest          ad
-	where     ds.dest_id = ad.dest_id
-	and     ad.status != 'INACTIVE'
-	order by
-	     ds.dest_id;
+    TO_CHAR(COMPLETION_TIME,'DD-M
+    -----------------------------
+    13-aug-2015 19:47:34
+    13-aug-2015 19:47:35
 
 <br/>
 
+    SQL> select switchover_status from v$database;
 
-	ID STATUS    DB_MODE	     TYPE	RECOVERY_MODE
-	---------- --------- --------------- ---------- -----------------------
-	PROTECTION_MODE 	   SRLs     ACTIVE ARCHIVED_SEQ#
-	-------------------- ---------- ---------- -------------
-	1 VALID     OPEN_READ-ONLY  ARCH	MANAGED REAL TIME APPLY
-	MAXIMUM PERFORMANCE	      0 	 0	      50
-
-	2 DEFERRED  UNKNOWN	     LGWR	IDLE
-	MAXIMUM PERFORMANCE	      0 	 0	       0
-
-	32 VALID     UNKNOWN	     ARCH	IDLE
-	MAXIMUM PERFORMANCE	      0 	 0	      50
-
-
-
+    SWITCHOVER_STATUS
+    --------------------
+    NOT ALLOWED
 
 <br/>
 
-	select * from v$recovery_progress;
+    select     ds.dest_id id
+    ,     ad.status
+    ,     ds.database_mode db_mode
+    ,     ad.archiver type
+    ,     ds.recovery_mode
+    ,     ds.protection_mode
+    ,     ds.standby_logfile_count "SRLs"
+    ,     ds.standby_logfile_active active
+    ,     ds.archived_seq#
+    from     v$archive_dest_status     ds
+    ,     v$archive_dest          ad
+    where     ds.dest_id = ad.dest_id
+    and     ad.status != 'INACTIVE'
+    order by
+         ds.dest_id;
 
 <br/>
 
-	SELECT to_char(COMPLETION_TIME,'dd-mon-yyyy hh24:mi:ss') FROM V$ARCHIVED_LOG WHERE APPLIED='YES';
-	select timestamp, facility, dest_id, message_num, error_code, message from v$dataguard_status order by timestamp;
+    ID STATUS    DB_MODE	     TYPE	RECOVERY_MODE
+    ---------- --------- --------------- ---------- -----------------------
+    PROTECTION_MODE 	   SRLs     ACTIVE ARCHIVED_SEQ#
+    -------------------- ---------- ---------- -------------
+    1 VALID     OPEN_READ-ONLY  ARCH	MANAGED REAL TIME APPLY
+    MAXIMUM PERFORMANCE	      0 	 0	      50
+
+    2 DEFERRED  UNKNOWN	     LGWR	IDLE
+    MAXIMUM PERFORMANCE	      0 	 0	       0
+
+    32 VALID     UNKNOWN	     ARCH	IDLE
+    MAXIMUM PERFORMANCE	      0 	 0	      50
 
 <br/>
 
-
-	SQL> SELECT PROCESS, STATUS, THREAD#, SEQUENCE#, BLOCK#, BLOCKS FROM V$MANAGED_STANDBY;
-
-	PROCESS   STATUS	  THREAD#  SEQUENCE#	 BLOCK#     BLOCKS
-	--------- ------------ ---------- ---------- ---------- ----------
-	ARCH	  CLOSING		1	  49	      1 	 2
-	ARCH	  CONNECTED		0	   0	      0 	 0
-	ARCH	  CONNECTED		0	   0	      0 	 0
-	ARCH	  CLOSING		1	  50	      1 	26
-	MRP0	  APPLYING_LOG		1	  51	   2486     102400
-	RFS	  IDLE			0	   0	      0 	 0
-	RFS	  IDLE			1	  51	   2486 	 1
-	RFS	  IDLE			0	   0	      0 	 0
-
-	8 rows selected.
-
-
-
+    select * from v$recovery_progress;
 
 <br/>
 
-	SQL>  select * from v$archive_gap;
-
-	no rows selected
-
+    SELECT to_char(COMPLETION_TIME,'dd-mon-yyyy hh24:mi:ss') FROM V$ARCHIVED_LOG WHERE APPLIED='YES';
+    select timestamp, facility, dest_id, message_num, error_code, message from v$dataguard_status order by timestamp;
 
 <br/>
 
-	SQL> select message from v$dataguard_status;
+    SQL> SELECT PROCESS, STATUS, THREAD#, SEQUENCE#, BLOCK#, BLOCKS FROM V$MANAGED_STANDBY;
 
-	MESSAGE
-	--------------------------------------------------------------------------------
-	ARC0: Archival started
-	ARC1: Archival started
-	ARC2: Archival started
-	ARC3: Archival started
-	ARC1: Becoming the 'no FAL' ARCH
-	ARC2: Becoming the heartbeat ARCH
-	ARC2: Becoming the active heartbeat ARCH
-	ARC4: Archival started
-	Error 12154 received logging on to the standby
-	FAL[client, ARC0]: Error 12154 connecting to master for fetching gap sequence
-	Managed Standby Recovery not using Real Time Apply
+    PROCESS   STATUS	  THREAD#  SEQUENCE#	 BLOCK#     BLOCKS
+    --------- ------------ ---------- ---------- ---------- ----------
+    ARCH	  CLOSING		1	  49	      1 	 2
+    ARCH	  CONNECTED		0	   0	      0 	 0
+    ARCH	  CONNECTED		0	   0	      0 	 0
+    ARCH	  CLOSING		1	  50	      1 	26
+    MRP0	  APPLYING_LOG		1	  51	   2486     102400
+    RFS	  IDLE			0	   0	      0 	 0
+    RFS	  IDLE			1	  51	   2486 	 1
+    RFS	  IDLE			0	   0	      0 	 0
 
-	MESSAGE
-	--------------------------------------------------------------------------------
-	Attempt to start background Managed Standby Recovery process
-	MRP0: Background Managed Standby Recovery process started
-	Managed Standby Recovery starting Real Time Apply
-	Media Recovery Waiting for thread 1 sequence 36
-
-	15 rows selected.
-
+    8 rows selected.
 
 <br/>
 
-	SQL> SELECT THREAD#, SEQUENCE#, APPLIED FROM V$ARCHIVED_LOG;
+    SQL>  select * from v$archive_gap;
 
-	   THREAD#  SEQUENCE# APPLIED
-	---------- ---------- ---------
-		 1	   34 YES
-		 1	   35 YES
-
-
+    no rows selected
 
 <br/>
 
+    SQL> select message from v$dataguard_status;
 
-	SQL> SELECT RECOVERY_MODE FROM V$ARCHIVE_DEST_STATUS WHERE DEST_ID=2;
+    MESSAGE
+    --------------------------------------------------------------------------------
+    ARC0: Archival started
+    ARC1: Archival started
+    ARC2: Archival started
+    ARC3: Archival started
+    ARC1: Becoming the 'no FAL' ARCH
+    ARC2: Becoming the heartbeat ARCH
+    ARC2: Becoming the active heartbeat ARCH
+    ARC4: Archival started
+    Error 12154 received logging on to the standby
+    FAL[client, ARC0]: Error 12154 connecting to master for fetching gap sequence
+    Managed Standby Recovery not using Real Time Apply
 
-	RECOVERY_MODE
-	-----------------------
-	IDLE
+    MESSAGE
+    --------------------------------------------------------------------------------
+    Attempt to start background Managed Standby Recovery process
+    MRP0: Background Managed Standby Recovery process started
+    Managed Standby Recovery starting Real Time Apply
+    Media Recovery Waiting for thread 1 sequence 36
+
+    15 rows selected.
+
+<br/>
+
+    SQL> SELECT THREAD#, SEQUENCE#, APPLIED FROM V$ARCHIVED_LOG;
+
+       THREAD#  SEQUENCE# APPLIED
+    ---------- ---------- ---------
+    	 1	   34 YES
+    	 1	   35 YES
+
+<br/>
+
+    SQL> SELECT RECOVERY_MODE FROM V$ARCHIVE_DEST_STATUS WHERE DEST_ID=2;
+
+    RECOVERY_MODE
+    -----------------------
+    IDLE

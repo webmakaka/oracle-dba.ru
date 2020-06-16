@@ -1,17 +1,14 @@
 ---
 layout: page
 title: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция Grid
+description: Oracle RAC 12.1 SHARED FILE SYSTEM - Инсталляция Grid
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, SHARED FILE SYSTEM
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-file-system/grid-installation/
 ---
 
-
-
 # [Инсталляция Oracle RAC 12.1 SHARED FILE SYSTEM]: Инсталляция Grid
 
-
 <br/>
-
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -20,42 +17,33 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 	</tr>
 </table>
 
-
 Войдите в систему пользователем, от имени которого будет будет происходить инсталляция базы данных.
 
-	# su - oracle12
+    # su - oracle12
 
 <br/>
 
-	$ cd /tmp/oracle/12.1/grid
-
-
+    $ cd /tmp/oracle/12.1/grid
 
 Чтобы не набирать путь установки grid в окне, выполните команду
 
-	$ export ORACLE_HOME=/u01/app/grid/12.1
-
+    $ export ORACLE_HOME=/u01/app/grid/12.1
 
 Определите системную переменную DISPLAY следующим образом.
 
-	$ export DISPLAY=192.168.1.5:0.0
+    $ export DISPLAY=192.168.1.5:0.0
 
-
-В данном случае 192.168.1.5 - ip адрес компьютера, с которого происходит процесс управления установкой.  
-
+В данном случае 192.168.1.5 - ip адрес компьютера, с которого происходит процесс управления установкой.
 
 <br/>
 
-	$ ./runInstaller
-
-
+    $ ./runInstaller
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/01-grid-installation/grid-installation_01.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/01-grid-installation/grid-installation_02.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/01-grid-installation/grid-installation_03.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/01-grid-installation/grid-installation_04.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
@@ -76,7 +64,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/01-grid-installation/grid-installation_12.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/01-grid-installation/grid-installation_13.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
-
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/01-shared-file-system/01-grid-installation/grid-installation_14.png" border="0" alt="Oracle RAC installation Shared File System"><br/><br/>
 
