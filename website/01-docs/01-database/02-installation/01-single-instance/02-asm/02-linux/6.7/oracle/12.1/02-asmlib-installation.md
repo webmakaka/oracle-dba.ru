@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Инсталляция ASMLIB для работы ASM
+description: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Инсталляция ASMLIB для работы ASM
+keywords: Oracle DataBase 12.1, Centos 6.7, ASM, GRID
 permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-installation/
 ---
 
@@ -8,9 +10,7 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-instal
 
 <br/>
 
-
- <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/install-mandatory-packages/">Обязательные для установки Oracle DataBase пакеты должны быть установлены</a>
-
+<a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/install-mandatory-packages/">Обязательные для установки Oracle DataBase пакеты должны быть установлены</a>
 
 <br/><br/>
 
@@ -35,7 +35,6 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-instal
 
     # yum install -y nfs-utils.x86_64
 
-
 <br/>
 
 ### Необходимо установить 3 пакета для ASM:
@@ -44,8 +43,7 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-instal
 
 http://www.oracle.com/technetwork/server-storage/linux/asmlib/rhel6-1940776.html
 
-Скачать: oracleasmlib-*.x86_64.rpm
-
+Скачать: oracleasmlib-\*.x86_64.rpm
 
     # cd /tmp
     # wget http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el6.x86_64.rpm

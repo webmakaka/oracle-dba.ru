@@ -1,55 +1,47 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Инсталляция GRID
+description: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Инсталляция GRID
+keywords: Oracle DataBase 12.1, Centos 6.7, ASM, GRID
 permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/grid-installation/
 ---
 
-
 # <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Инсталляция GRID
-
-
 
 Войдите в систему пользователем, от имени которого будет будет происходить инсталляция базы данных.
 
-	# su - oracle12
+    # su - oracle12
 
 <br/>
 
-	$ . asm.sh
+    $ . asm.sh
 
 Проверка:
 
-	$ echo $ORACLE_SID
-	+ASM
+    $ echo $ORACLE_SID
+    +ASM
 
 <br/>
 
-	$ cd /tmp/oracle/12.1/grid
-
+    $ cd /tmp/oracle/12.1/grid
 
 Определите системную переменную DISPLAY следующим образом.
 
-	$ export DISPLAY=192.168.1.5:0.0
+    $ export DISPLAY=192.168.1.5:0.0
 
 В данном случае 192.168.1.5 - ip адрес компьютера, с которого происходит процесс управления установкой.
 
-	$ ./runInstaller
-
+    $ ./runInstaller
 
 <br/><br/>
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_01.png" border="0" alt="Grid installation"><br/><br/>
 
-
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_02.png" border="0" alt="Grid installation"><br/><br/>
-
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_03.png" border="0" alt="Grid installation"><br/><br/>
 
-
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_04.png" border="0" alt="Grid installation"><br/><br/>
-
-
 
 > INS-30011: The string password entered does not conform to the Oracle recommended standards.
 
@@ -57,10 +49,7 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/grid-installa
 
 > Action: Provide a password that conforms to the Oracle recommended standards.
 
-
-
 <br/><br/>
-
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_05.png" border="0" alt="Grid installation"><br/><br/>
 
@@ -70,13 +59,11 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/grid-installa
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_08.png" border="0" alt="Grid installation"><br/><br/>
 
-
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_09.png" border="0" alt="Grid installation"><br/><br/>
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_10.png" border="0" alt="Grid installation"><br/><br/>
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_11.png" border="0" alt="Grid installation"><br/><br/>
-
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_12.png" border="0" alt="Grid installation"><br/><br/>
 
@@ -88,144 +75,130 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/grid-installa
 
 <img src="https://img.oracledba.net/oracle-database-installation/asm/linux/6.7/oracle/12.1/01-grid-installation/grid-installation_16.png" border="0" alt="Grid installation"><br/><br/>
 
-
-
-
 <br/>
 
 ### Проверка работы служб crsctl
 
-
-	$ crsctl check has
-	CRS-4638: Oracle High Availability Services is online
-
+    $ crsctl check has
+    CRS-4638: Oracle High Availability Services is online
 
 <br/>
 
-
-	$ crsctl check css
-	CRS-4529: Cluster Synchronization Services is online
-
-<br/>
-
-
-
-	$ crsctl stat res
-	NAME=ora.DATA.dg
-	TYPE=ora.diskgroup.type
-	TARGET=ONLINE
-	STATE=ONLINE on localhost
-
-	NAME=ora.LISTENER.lsnr
-	TYPE=ora.listener.type
-	TARGET=ONLINE
-	STATE=ONLINE on localhost
-
-	NAME=ora.asm
-	TYPE=ora.asm.type
-	TARGET=ONLINE
-	STATE=ONLINE on localhost
-
-	NAME=ora.cssd
-	TYPE=ora.cssd.type
-	TARGET=ONLINE
-	STATE=ONLINE on localhost
-
-	NAME=ora.diskmon
-	TYPE=ora.diskmon.type
-	TARGET=OFFLINE
-	STATE=OFFLINE
-
-	NAME=ora.evmd
-	TYPE=ora.evm.type
-	TARGET=ONLINE
-	STATE=ONLINE on localhost
-
-	NAME=ora.ons
-	TYPE=ora.ons.type
-	TARGET=OFFLINE
-	STATE=OFFLINE
-
-	NAME=ora.ora121.db
-	TYPE=ora.database.type
-	TARGET=ONLINE
-	STATE=ONLINE on localhost
-
-
+    $ crsctl check css
+    CRS-4529: Cluster Synchronization Services is online
 
 <br/>
 
-	$ crsctl stat res -t
-	--------------------------------------------------------------------------------
-	Name           Target  State        Server                   State details
-	--------------------------------------------------------------------------------
-	Local Resources
-	--------------------------------------------------------------------------------
-	ora.DATA.dg
-	               ONLINE  ONLINE       localhost                STABLE
-	ora.LISTENER.lsnr
-	               ONLINE  ONLINE       localhost                STABLE
-	ora.asm
-	               ONLINE  ONLINE       localhost                Started,STABLE
-	ora.ons
-	               OFFLINE OFFLINE      localhost                STABLE
-	--------------------------------------------------------------------------------
-	Cluster Resources
-	--------------------------------------------------------------------------------
-	ora.cssd
-	      1        ONLINE  ONLINE       localhost                STABLE
-	ora.diskmon
-	      1        OFFLINE OFFLINE                               STABLE
-	ora.evmd
-	      1        ONLINE  ONLINE       localhost                STABLE
-	ora.orcl.db
-	      1        ONLINE  ONLINE       localhost                Open,STABLE
-	-------------------------------------------------------------------------------
+    $ crsctl stat res
+    NAME=ora.DATA.dg
+    TYPE=ora.diskgroup.type
+    TARGET=ONLINE
+    STATE=ONLINE on localhost
 
+    NAME=ora.LISTENER.lsnr
+    TYPE=ora.listener.type
+    TARGET=ONLINE
+    STATE=ONLINE on localhost
 
-<br/>
+    NAME=ora.asm
+    TYPE=ora.asm.type
+    TARGET=ONLINE
+    STATE=ONLINE on localhost
 
-	$ ps -fea | grep asm_
-	oracle12  1914     1  0 10:17 ?        00:00:00 asm_pmon_+ASM
-	oracle12  1916     1  0 10:17 ?        00:00:00 asm_psp0_+ASM
-	oracle12  1918     1 10 10:17 ?        00:04:16 asm_vktm_+ASM
-	oracle12  1922     1  0 10:17 ?        00:00:02 asm_gen0_+ASM
-	oracle12  1924     1  0 10:17 ?        00:00:00 asm_mman_+ASM
-	oracle12  1928     1  0 10:17 ?        00:00:00 asm_diag_+ASM
-	oracle12  1930     1  0 10:17 ?        00:00:00 asm_dia0_+ASM
-	oracle12  1932     1  0 10:17 ?        00:00:00 asm_dbw0_+ASM
-	oracle12  1934     1  0 10:17 ?        00:00:00 asm_lgwr_+ASM
-	oracle12  1936     1  0 10:17 ?        00:00:00 asm_ckpt_+ASM
-	oracle12  1938     1  0 10:17 ?        00:00:00 asm_smon_+ASM
-	oracle12  1940     1  0 10:17 ?        00:00:00 asm_lreg_+ASM
-	oracle12  1942     1  0 10:17 ?        00:00:00 asm_pxmn_+ASM
-	oracle12  1944     1  0 10:17 ?        00:00:00 asm_rbal_+ASM
-	oracle12  1946     1  0 10:17 ?        00:00:00 asm_gmon_+ASM
-	oracle12  1948     1  0 10:17 ?        00:00:00 asm_mmon_+ASM
-	oracle12  1950     1  0 10:17 ?        00:00:00 asm_mmnl_+ASM
-	oracle12  7312     1  0 10:50 ?        00:00:00 asm_asmb_+ASM
-	oracle12  7765 29253  0 10:57 pts/0    00:00:00 grep asm_
+    NAME=ora.cssd
+    TYPE=ora.cssd.type
+    TARGET=ONLINE
+    STATE=ONLINE on localhost
 
+    NAME=ora.diskmon
+    TYPE=ora.diskmon.type
+    TARGET=OFFLINE
+    STATE=OFFLINE
 
+    NAME=ora.evmd
+    TYPE=ora.evm.type
+    TARGET=ONLINE
+    STATE=ONLINE on localhost
+
+    NAME=ora.ons
+    TYPE=ora.ons.type
+    TARGET=OFFLINE
+    STATE=OFFLINE
+
+    NAME=ora.ora121.db
+    TYPE=ora.database.type
+    TARGET=ONLINE
+    STATE=ONLINE on localhost
 
 <br/>
 
-	$ sqlplus / as sysdba
-
-	SQL> set linesize 200;
-	SQL> set pagesize 0;
-	SQL>  col  name format a20;
-	SQL>  col  name state a20;
+    $ crsctl stat res -t
+    --------------------------------------------------------------------------------
+    Name           Target  State        Server                   State details
+    --------------------------------------------------------------------------------
+    Local Resources
+    --------------------------------------------------------------------------------
+    ora.DATA.dg
+                   ONLINE  ONLINE       localhost                STABLE
+    ora.LISTENER.lsnr
+                   ONLINE  ONLINE       localhost                STABLE
+    ora.asm
+                   ONLINE  ONLINE       localhost                Started,STABLE
+    ora.ons
+                   OFFLINE OFFLINE      localhost                STABLE
+    --------------------------------------------------------------------------------
+    Cluster Resources
+    --------------------------------------------------------------------------------
+    ora.cssd
+          1        ONLINE  ONLINE       localhost                STABLE
+    ora.diskmon
+          1        OFFLINE OFFLINE                               STABLE
+    ora.evmd
+          1        ONLINE  ONLINE       localhost                STABLE
+    ora.orcl.db
+          1        ONLINE  ONLINE       localhost                Open,STABLE
+    -------------------------------------------------------------------------------
 
 <br/>
 
-	SQL>  select name, state from v$asm_diskgroup;
-
+    $ ps -fea | grep asm_
+    oracle12  1914     1  0 10:17 ?        00:00:00 asm_pmon_+ASM
+    oracle12  1916     1  0 10:17 ?        00:00:00 asm_psp0_+ASM
+    oracle12  1918     1 10 10:17 ?        00:04:16 asm_vktm_+ASM
+    oracle12  1922     1  0 10:17 ?        00:00:02 asm_gen0_+ASM
+    oracle12  1924     1  0 10:17 ?        00:00:00 asm_mman_+ASM
+    oracle12  1928     1  0 10:17 ?        00:00:00 asm_diag_+ASM
+    oracle12  1930     1  0 10:17 ?        00:00:00 asm_dia0_+ASM
+    oracle12  1932     1  0 10:17 ?        00:00:00 asm_dbw0_+ASM
+    oracle12  1934     1  0 10:17 ?        00:00:00 asm_lgwr_+ASM
+    oracle12  1936     1  0 10:17 ?        00:00:00 asm_ckpt_+ASM
+    oracle12  1938     1  0 10:17 ?        00:00:00 asm_smon_+ASM
+    oracle12  1940     1  0 10:17 ?        00:00:00 asm_lreg_+ASM
+    oracle12  1942     1  0 10:17 ?        00:00:00 asm_pxmn_+ASM
+    oracle12  1944     1  0 10:17 ?        00:00:00 asm_rbal_+ASM
+    oracle12  1946     1  0 10:17 ?        00:00:00 asm_gmon_+ASM
+    oracle12  1948     1  0 10:17 ?        00:00:00 asm_mmon_+ASM
+    oracle12  1950     1  0 10:17 ?        00:00:00 asm_mmnl_+ASM
+    oracle12  7312     1  0 10:50 ?        00:00:00 asm_asmb_+ASM
+    oracle12  7765 29253  0 10:57 pts/0    00:00:00 grep asm_
 
 <br/>
 
-	column path format a30
+    $ sqlplus / as sysdba
+
+    SQL> set linesize 200;
+    SQL> set pagesize 0;
+    SQL>  col  name format a20;
+    SQL>  col  name state a20;
 
 <br/>
 
-	SQL> select name, path from v$asm_disk;
+    SQL>  select name, state from v$asm_diskgroup;
+
+<br/>
+
+    column path format a30
+
+<br/>
+
+    SQL> select name, path from v$asm_disk;
