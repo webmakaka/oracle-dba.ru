@@ -1,13 +1,12 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
+title: Инсталляция Oracle DataBase 11.2.0.3.2 в Oracle Linux 6.3 - Инсталляция обязательных пакетов
+description: Инсталляция Oracle DataBase 11.2.0.3.2 в операционной системе Oracle Linux 6.3 - Инсталляция обязательных пакетов
+keywords: Oracle DataBase 11.2, Oracle Linux 6.3, Инсталляция обязательных пакетов
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/install-mandatory-packages/
 ---
 
-# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>:  Инсталляция обязательных пакетов
-
-
-
+# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Инсталляция обязательных пакетов
 
 База данных Oracle, требует, чтобы в системе были обязательно установлены некоторые компоненты. Пакеты можно скачать с публичного репозитория (из интернет) или взять с диска, на котором и располагается дистрибутив операционной системы.
 
@@ -15,12 +14,12 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/i
 
 **Вариант 1: Инсталляция пакетов с DVD диска Oracle Linux (Не рекомендуется):**
 
-	# mkdir /mnt/cdrom
-	# mount -t iso9660 -o ro /dev/cdrom /mnt/cdrom
+    # mkdir /mnt/cdrom
+    # mount -t iso9660 -o ro /dev/cdrom /mnt/cdrom
 
 <br/>
 
-	# vi /etc/yum.repos.d/oracleLinuxRepoDVD.repo
+    # vi /etc/yum.repos.d/oracleLinuxRepoDVD.repo
 
 <br/>
 
@@ -30,12 +29,11 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/i
     gpgcheck=0
     enabled=1
 
-
 <br/>
 
 **Вариант 2: Инсталляция пакетов из репозитория Oracle Linux в интернете:**
 
-	# vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
+    # vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
 
 <br/>
 
@@ -46,14 +44,12 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/i
     gpgcheck=1
     enabled=1
 
-
 <br/>
 
-	# yum repolist
-	# yum update -y
+    # yum repolist
+    # yum update -y
 
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
 
@@ -99,31 +95,30 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 <br/><br/>
 
-	# yum install -y \
-	binutils.x86_64 \
-	compat-libcap1.x86_64 \
-	compat-libstdc++-33.i686 \
-	compat-libstdc++-33.x86_64 \
-	gcc.x86_64 \
-	gcc-c++.x86_64 \
-	glibc.i686 \
-	glibc.x86_64 \
-	glibc-devel.i686 \
-	glibc-devel.x86_64 \
-	ksh.x86_64 \
-	libgcc.i686 \
-	libgcc.x86_64 \
-	libstdc++.i686 \
-	libstdc++.x86_64 \
-	libstdc++-devel.i686 \
-	libstdc++-devel.x86_64 \
-	libaio.i686 \
-	libaio.x86_64 \
-	libaio-devel.i686 \
-	libaio-devel.x86_64 \
-	make.x86_64 \
-	sysstat.x86_64
-
+    # yum install -y \
+    binutils.x86_64 \
+    compat-libcap1.x86_64 \
+    compat-libstdc++-33.i686 \
+    compat-libstdc++-33.x86_64 \
+    gcc.x86_64 \
+    gcc-c++.x86_64 \
+    glibc.i686 \
+    glibc.x86_64 \
+    glibc-devel.i686 \
+    glibc-devel.x86_64 \
+    ksh.x86_64 \
+    libgcc.i686 \
+    libgcc.x86_64 \
+    libstdc++.i686 \
+    libstdc++.x86_64 \
+    libstdc++-devel.i686 \
+    libstdc++-devel.x86_64 \
+    libaio.i686 \
+    libaio.x86_64 \
+    libaio-devel.i686 \
+    libaio-devel.x86_64 \
+    make.x86_64 \
+    sysstat.x86_64
 
 <br/>
 
@@ -135,48 +130,42 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 Дополнительные пакеты:
 
+    # yum install -y \
+    	mc \
+    	nano \
+    	vim \
+    	emacs \
+    	wget \
+    	xinetd \
+    	screen \
+    	ntp \
+    	unzip
 
-	# yum install -y \
-		mc \
-		nano \
-		vim \
-		emacs \
-		wget \
-		xinetd \
-		screen \
-		ntp \
-		unzip
-
-rlwrap - пакет, который позволяет хранить историю команд в SQL*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
-
+rlwrap - пакет, который позволяет хранить историю команд в SQL\*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
 
     # yum install -y \
-	readline-devel.x86_64
+    readline-devel.x86_64
 
 <br/>
 
-	# cd /tmp
-	# wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+    # cd /tmp
+    # wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
 
 <br/>
 
-
-	# tar zxvf rlwrap-0.37.tar.gz
-	# cd rlwrap-0.37
-	# ./configure
-	# make
-	# make check
-	# make instal
-
-
+    # tar zxvf rlwrap-0.37.tar.gz
+    # cd rlwrap-0.37
+    # ./configure
+    # make
+    # make check
+    # make instal
 
 <br/><br/>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+    <h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 

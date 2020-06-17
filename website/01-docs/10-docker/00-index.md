@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Docker Containers and Oracle
+description: Docker Containers and Oracle
+keywords: Oracle, Docker, Containers
 permalink: /docker/
 ---
 
@@ -19,4 +21,3 @@ permalink: /docker/
 ## Weblogic
 
 ### [WebLogic 12.2.1 inside Docker Containers](/docker/weblogic/)
-

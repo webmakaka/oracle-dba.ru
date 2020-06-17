@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Сессии к базе данных Oracle
+description: Сессии к базе данных Oracle
+keywords: Oracle Database, Sessions
 permalink: /docs/architecture/schemas/sessions/
 ---
 
-
 # Сессии к базе данных Oracle
-
 
 <h3>Список:</h3>
 
@@ -17,11 +17,7 @@ permalink: /docs/architecture/schemas/sessions/
 <li><a href="#sessions4">Убийство всех сессий к одной схеме</a></li>
 </ul>
 
-
-
-
 <h3><a name="sessions1">Посмотреть текущие сессии к базе данных</a></h3>
-
 
     SELECT t.SID, t.SERIAL#, t.osuser as "User", t.MACHINE as "PC", t.PROGRAM as "Program"
     FROM v$session t
@@ -30,31 +26,22 @@ permalink: /docs/architecture/schemas/sessions/
     --WHERE username = 'схема' -- посмотреть сессии к схеме (пользователь)
     ORDER BY 4 ASC;
 
-
-
 <br/>
 <h3><a name="sessions2">Найти блокирующую сессию</a></h3>
-
-
 
     SELECT status, SECONDS_IN_WAIT, BLOCKING_SESSION, SEQ#
     FROM v$session
     WHERE username= upper('scott');
 
-
 <br/>
 <h3><a name="sessions3">Убить сессию</a></h3>
 
-
     ALTER SYSTEM KILL SESSION 'SID,Serial#' IMMEDIATE;
-
 
 Заменить 'SID' и 'Serial#' на текущие значения сессии.
 
-
 <br/>
 <h3><a name="sessions4">Убийство всех сессий к определенной схеме</a></h3>
-
 
     define USERNAME = "USER_NAME"
 

@@ -1,29 +1,26 @@
 ---
 layout: page
 title: Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)
+description: Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)
+keywords: Oracle Database, Oracle Client, Инсталляция, Windows 7
 permalink: /client/installation/windows/7/oracle/12.1/
 ---
 
 # [Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)]
 
-
 В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, пишите мне адрес эл. почты:
-
 
 <div>
 	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
-
 <br/>
 
-
-Oracle Clietn необходим для удаленного подключения к базе данных разного рода программ. Программы, написанные на Java - так называемые (тонкие клиенты), могут  обходится и без клиента. Например, SQL Developer и JDeveloper. Это также относится и к web приложениям, которые запущены непосредственно на сервере, такие как APEX, Enterprise Manager, iSQLPLUS.
+Oracle Clietn необходим для удаленного подключения к базе данных разного рода программ. Программы, написанные на Java - так называемые (тонкие клиенты), могут обходится и без клиента. Например, SQL Developer и JDeveloper. Это также относится и к web приложениям, которые запущены непосредственно на сервере, такие как APEX, Enterprise Manager, iSQLPLUS.
 
 Для подключения остальных программ TOAD, PL/SQL Developer, SQL PLUS и большинства других, требуется библиотека oci.dll (oracle call interface), которая собственно и предоставляет такую возможность и разумеется она включена в набор всевозможных дополнительных программ, которые объединены под одним общим названием Oracle Client.
 
 Скачать дистрибутив Oracle Client можно с rutracker или более позднюю версию с официального сайта. Если у Вас есть доступ к MetaLink, рекомендуется качать самую последнюю версию именно оттуда.
-
 
 Oracle client для Windows  
 hxxp://rutracker.org/forum/viewtopic.php?t=4803357
@@ -39,9 +36,7 @@ winnt_12102_client32.zip
 
 Для начала, нужно установить 1 библиотеку в Windows 2008. Без нее установка 32-х битного клиента завершится ошибкой. При этом 64 битному клиенту эта библиотека не требуется.
 
-
 https://www.microsoft.com/en-gb/download/details.aspx?id=5555
-
 
 <br/>
 
@@ -56,11 +51,9 @@ C:\WINDOWS\system32\drivers\etc\hosts
     127.0.0.1   	localhost
     192.168.1.11	oracle12.localdomain oracle12
 
-
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/01-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
-
 
 <br/><br/>
 
@@ -68,12 +61,9 @@ C:\WINDOWS\system32\drivers\etc\hosts
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/02-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
 
-
-
 <br/>
 
 ### Инсталляция Oracle Client
-
 
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/03-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
@@ -109,7 +99,6 @@ C:\WINDOWS\system32\drivers\etc\hosts
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/08-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
 
-
 Вообще нужен только Oracle Call Interface. Но для удобства настройки и работы, лично я устанавливаю 3 компонента:
 
 <ul>
@@ -117,7 +106,6 @@ C:\WINDOWS\system32\drivers\etc\hosts
 <li>Oracle Call Interface (OCI)</li>
 <li>Connection Manager</li>
 </ul>
-
 
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/09-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
@@ -135,11 +123,9 @@ C:\WINDOWS\system32\drivers\etc\hosts
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/11-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
 
-
 <br/>
 
 ### Генерация конфига в мастере для подключения к базе:
-
 
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/12-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
@@ -192,8 +178,6 @@ C:\WINDOWS\system32\drivers\etc\hosts
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/20-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
-
-
 
 Параметры подключения можно посмотреть на сервере в файле tnsnames.ora
 
@@ -273,11 +257,9 @@ C:\WINDOWS\system32\drivers\etc\hosts
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/33-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
 
-
 <br/>
 
 ### В результате инсталлируются библиотеки и генерируется файл tnsnames.ora
-
 
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/34-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
@@ -288,7 +270,6 @@ C:\WINDOWS\system32\drivers\etc\hosts
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/35-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
-
 
     ORCL12 =
       (DESCRIPTION =
@@ -304,14 +285,12 @@ C:\WINDOWS\system32\drivers\etc\hosts
 
 ### Проверка
 
-
     C:\> tnsping oracl12
 
-
 system - login  
-manager - password  
+manager - password
 
-    C:\>sqlplus /nolog  
+    C:\>sqlplus /nolog
     SQL> conn system/manager@oracle12
 
 <div>
@@ -330,14 +309,11 @@ manager - password
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/38-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
 
-
 <br/>
 
 ### Переменные Oracle в реестре
 
 Вместо AMERICAN_AMERICA.WE8MSWIN1252 устанавливаю AMERICAN_AMERICA.AL32UTF8
-
-
 
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/39-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
@@ -355,12 +331,9 @@ manager - password
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/41-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">
 </div>
 
-
-
 <br/>
 
 ### Подкючаемся к базе с помощью PL/SQL Developer
-
 
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/42-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">

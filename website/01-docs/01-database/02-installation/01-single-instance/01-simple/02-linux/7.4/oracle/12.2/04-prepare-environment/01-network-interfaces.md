@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка сетевых интерфейсов
+title: Инсталляция Oracle DataBase 12.2 в Oracle Linux 7.4 - Настройка сетевых интерфейсов
 description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка сетевых интерфейсов
 keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Настройка сетевых интерфейсов
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/network-interfaces/
@@ -10,7 +10,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/n
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
+    <h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 
@@ -24,13 +24,11 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/n
 
 ### Настраиваем сетевые интерфейсы и параметры работы сетевых служб.
 
-
 <br/>
 
     # cd /etc/sysconfig/network-scripts/
     # cp ifcfg-enp0s3 ifcfg-enp0s3.orig
     # cp ifcfg-enp0s8 ifcfg-enp0s8.orig
-
 
 в
 
@@ -68,7 +66,6 @@ ONBOOT="yes"
 
 <br/>
 
-
 Далее подключаюсь уже к серверу по SSH и работаю с ним удаленно:
 
     $ ssh root@192.168.56.101
@@ -78,7 +75,6 @@ ONBOOT="yes"
 ### Продолжаем настраивать параметры сетевого окружения
 
 Необходимо выбрать подходящее имя для сервера, которое бы отражало его роль и назначение в сети.
-
 
     # hostnamectl set-hostname oracle12serv.localdomain
 
@@ -96,8 +92,6 @@ ONBOOT="yes"
 
     ## IPs Public Network (hosts file, DNS)
     192.168.56.101 oracle12serv.localdomain oracle12serv
-
-
 
 <br/>
 

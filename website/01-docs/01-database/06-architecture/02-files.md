@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Файлы базы данных Oracle
+description: Файлы базы данных Oracle
+keywords: Oracle Database, Files
 permalink: /docs/architecture/files/
 ---
 
-<h3>Файлы базы данных Oracle</h3><br/>
+# Файлы базы данных Oracle
 
 <br/>
 

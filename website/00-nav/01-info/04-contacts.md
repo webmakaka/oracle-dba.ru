@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Контакты
+description: Контакты
+keywords: Контакты, электронная почта
 permalink: /contacts/
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Инсталляция обязательных пакетов
+title: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Инсталляция обязательных пакетов
+description: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Инсталляция обязательных пакетов
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, (ISCSI + ASM)
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/install-mandatory-packages/
 ---
 

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Oracle DataBase - Администрирование (Инсталляция, Backup, Upgrade, Сеть)
+description: Oracle DataBase - Администрирование (Инсталляция, Backup, Upgrade, Сеть)
+keywords: Oracle Database, Администрирование, Инсталляция, Backup, Upgrade, Сеть
 permalink: /database/adm/
 ---
 
-
 # Oracle DataBase - Администрирование (Инсталляция, Backup, Upgrade, Сеть)
-
 
 <br/>
 
@@ -16,8 +16,6 @@ permalink: /database/adm/
     <li><a href="/database/ready-to-use/"><strong>VirtualBox и Docker</strong></a></li>
 </ul>
 
-
-
 <br/>
 
 ### Инсталляция Oracle DataBase:
@@ -26,7 +24,6 @@ permalink: /database/adm/
     <li><a href="/database/installation/"><strong>Инсталляция Oracle DataBase</strong></a></li>
 </ul>
 
-
 <br/>
 
 ### Upgrade Oracle DataBase:
@@ -34,7 +31,6 @@ permalink: /database/adm/
 <ul>
     <li><a href="/database/upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
 </ul>
-
 
 <br/>
 
@@ -46,12 +42,9 @@ permalink: /database/adm/
     </li>
 </ul>
 
-
-
 <br/>
 
 ### Oracle Networking:
-
 
 <ul>
     <li>
@@ -59,12 +52,9 @@ permalink: /database/adm/
     </li>
 </ul>
 
-
-
 <br/>
 
 ### Восстановление файлов и данных:
-
 
 <ul>
     <li>
@@ -75,11 +65,9 @@ permalink: /database/adm/
     </li>
 </ul>
 
-
 <br/>
 
 ### Настройка производительности баз данных Oracle:
-
 
 <ul>
     <li>
@@ -89,9 +77,6 @@ permalink: /database/adm/
         <a href="/docs/architecture/performance/collect-session-statistics/">Собрать статистику пользовательской сессии</a>
     </li>
 </ul>
-
-
-
 
 <br/>
 

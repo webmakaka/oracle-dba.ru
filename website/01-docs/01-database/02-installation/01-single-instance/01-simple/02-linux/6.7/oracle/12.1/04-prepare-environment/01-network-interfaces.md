@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Настройка сетевых интерфейсов
+title: Инсталляция Oracle DataBase 12c в Oracle Linux 6.7 - Настройка сетевых интерфейсов
+description: Инсталляция Oracle DataBase 12c в операционной системе Oracle Linux 6.7 - Настройка сетевых интерфейсов
+keywords: Oracle DataBase 12c, Oracle Linux 6.7, Настройка сетевых интерфейсов
 permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/network-interfaces/
 ---
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Настройка сетевых интерфейсов
-
-
 
 ### Настраиваем сетевые интерфейсы и параметры работы сетевых служб.
 
@@ -23,8 +23,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/n
     NETMASK=255.255.255.0
     GATEWAY=192.168.1.1
 
-
-
 <br/><br/>
 Если вы подключились к серверу по RDP, я бы рекомендовал после ввода настроек сетевого интерфейса, перестартовать службу network и подключиться к серверу по ssh. И дальнейшие команды выполнять командами copy + paste.
 
@@ -32,10 +30,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/n
 
 Перестартовать службы отвечающую за параметры сетевых интерфейсов, можно с помощью команды:
 
-
     # service network restart
-
-
 
 <br/>
 Подключиться к серверу можно командой
@@ -53,8 +48,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/n
 
 <br/><br/>
 
-Не рекомендуется в hostname использовать знак нижнего подчеркивания (_).(Enterprise Manager и другие web приложения не смогут подключиться к базе по http/https)
-
+Не рекомендуется в hostname использовать знак нижнего подчеркивания (\_).(Enterprise Manager и другие web приложения не смогут подключиться к базе по http/https)
 
     # vi /etc/sysconfig/network
 
@@ -64,16 +58,13 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/n
     NETWORKING_IPV6=no
     HOSTNAME=oracle12serv.localdomain
 
-
 <br/>
 
     # vi /etc/resolv.conf
 
 <br/>
 
-
     nameserver 192.168.1.1
-
 
 <br/>
 
@@ -81,13 +72,11 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/n
 
 <br/>
 
-
     ## Localdomain and Localhost (hosts file, DNS)
     127.0.0.1 localhost.localdomain localhost
 
     ## IPs Public Network (hosts file, DNS)
     192.168.1.11 oracle12serv.localdomain oracle12serv
-
 
 Проверяем правильно ли все работает.
 

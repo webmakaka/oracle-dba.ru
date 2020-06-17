@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Инсталляция Database Software
+title: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Инсталляция Database Software
+description: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Инсталляция Database Software
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, (ISCSI + ASM)
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/oracle-database-software-installation/
 ---
 

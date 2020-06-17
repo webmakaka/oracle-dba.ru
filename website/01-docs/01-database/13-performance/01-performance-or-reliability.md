@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Выбор между производительностью и надежностью ОRАСLЕ
+description: Выбор между производительностью и надежностью ОRАСLЕ
+keywords: Oracle Database, Выбор между производительностью и надежностью ОRАСLЕ
 permalink: /docs/architecture/performance/performance-or-reliability/
 ---
 

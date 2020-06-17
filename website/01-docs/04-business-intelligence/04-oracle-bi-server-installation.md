@@ -1,77 +1,69 @@
 ---
 layout: page
 title: Инсталляция Oracle BI EE (OBIEE)
-permalink: /docs/business-intelligence/oracle-bi-server-installation/
+description: Инсталляция Oracle BI EE (OBIEE)
+keywords: Oracle Business Intelligence, OBIEE, инсталляция
+permalink: /business-intelligence/oracle-bi-server-installation/
 ---
 
+# Инсталляция Oracle BI EE (OBIEE)
 
-
-<h2>Инсталляция Oracle BI EE (OBIEE)</h2>
-
-	# mkdir -p /u01/app/oracle/oraclebi/11.1
-	# mkdir -p /u01/app/oracle/oraclebi/oraInventory
-	# chown -R oraclebi:oraclebi /u01/app/oracle/oraclebi
-	# chmod -R 775 /u01/app/oracle/oraclebi
+    # mkdir -p /u01/app/oracle/oraclebi/11.1
+    # mkdir -p /u01/app/oracle/oraclebi/oraInventory
+    # chown -R oraclebi:oraclebi /u01/app/oracle/oraclebi
+    # chmod -R 775 /u01/app/oracle/oraclebi
 
 <br/>
 
-	# mkdir -p /u02/oracle_bi_domains/bifoundation_domain
-	# chown -R oraclebi:oraclebi  /u02/oracle_bi_domains
+    # mkdir -p /u02/oracle_bi_domains/bifoundation_domain
+    # chown -R oraclebi:oraclebi  /u02/oracle_bi_domains
 
-
+<br/>
 
 Следующие пакеты должны быть установлены на OEL6:
 
-
-	# yum install -y \
-	binutils.x86_64 \
-	compat-libcap1 \
-	list compat-libstdc++-33 \
-	gcc \
-	gcc-c++ \
-	glibc \
-	glibc-devel \
-	libaio \
-	libaio-devel \
-	libgcc \
-	libstdc++ \
-	libstdc++-devel \
-	libXext.i686 \
-	libXtst.i686 \
-	openmotif.x86_64 \
-	redhat-lsb-core.x86_64 \
-	openmotif-2.2.3.x86_64 \
-	openmotif22.x86_64 \
-	sysstat
+    # yum install -y \
+    binutils.x86_64 \
+    compat-libcap1 \
+    list compat-libstdc++-33 \
+    gcc \
+    gcc-c++ \
+    glibc \
+    glibc-devel \
+    libaio \
+    libaio-devel \
+    libgcc \
+    libstdc++ \
+    libstdc++-devel \
+    libXext.i686 \
+    libXtst.i686 \
+    openmotif.x86_64 \
+    redhat-lsb-core.x86_64 \
+    openmotif-2.2.3.x86_64 \
+    openmotif22.x86_64 \
+    sysstat
 
 <br/>
 
-	# yum list binutils
-
+    # yum list binutils
 
 -- uln-internal-setup - Не нашел в стандартном репозитории, в остальных искать не стал.
 
+Копирую на сервер в каталог /tmp/\_oralce_bi
 
-
-Копирую на сервер в каталог /tmp/_oralce_bi
-
-
-	bi_linux_x86_111170_64_disk1_1of2.zip
-	bi_linux_x86_111170_64_disk1_2of2.zip
-	bi_linux_x86_111170_64_disk2_1of2.zip
-	bi_linux_x86_111170_64_disk2_2of2.zip
-	bi_linux_x86_111170_64_disk3.zip
-
+    bi_linux_x86_111170_64_disk1_1of2.zip
+    bi_linux_x86_111170_64_disk1_2of2.zip
+    bi_linux_x86_111170_64_disk2_1of2.zip
+    bi_linux_x86_111170_64_disk2_2of2.zip
+    bi_linux_x86_111170_64_disk3.zip
 
 и разархивирую
 
-
-	$ unzip bi_linux_x86_111170_64_disk1_1of2.zip; \
-	bi_linux_x86_111170_64_disk1_2of2.zip; \
-	bi_linux_x86_111170_64_disk2_1of2.zip; \
-	bi_linux_x86_111170_64_disk2_2of2.zip; \
-	bi_linux_x86_111170_64_disk3.zip
-
+    $ unzip bi_linux_x86_111170_64_disk1_1of2.zip; \
+    bi_linux_x86_111170_64_disk1_2of2.zip; \
+    bi_linux_x86_111170_64_disk2_1of2.zip; \
+    bi_linux_x86_111170_64_disk2_2of2.zip; \
+    bi_linux_x86_111170_64_disk3.zip
 
 Если не разархивировать все архивы, в процессе инсталляции появится сообщение с предложением указать источник нахождения нужных для инсталляции файлов.
 
@@ -79,33 +71,24 @@ permalink: /docs/business-intelligence/oracle-bi-server-installation/
 
 <img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation-next-disk.png" alt="oracle bi installation"><br/><br/>
 
-
-
-	$ cd bishiphome/Disk1/
-
-
+    $ cd bishiphome/Disk1/
 
 <br/>
 
-	$ export DISPLAY=192.168.1.5:0.0
+    $ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 
-	$ ./runInstaller
-
+    $ ./runInstaller
 
 <br/><br/>
-
 
 <br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_01.png" alt="oracle bi installation"><br/><br/>
 
 <br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_02.png" alt="oracle bi installation"><br/><br/>
 
-
-	# cd /u01/app/oracle/oraclebi/oraInventory/
-	# ./createCentralInventory.sh
-
-
+    # cd /u01/app/oracle/oraclebi/oraInventory/
+    # ./createCentralInventory.sh
 
 Данные которые я вводил:<br/><br/>
 
@@ -114,14 +97,12 @@ Domai Home Location: /u02/oracle_bi_domains/bifoundation_domain<br/>
 Oracle Instance Location: /u01/app/oracle/oraclebi/11.1/instance1<br/>
 Oracle Instance Name: Instance1<br/><br/>
 
-
 Connect String: oracle112:1521:ora112.localdomain<br/>
 BIPLATFORM Schema Username: dev_biplatform<br/><br/>
 
 MD5 Schema Username: dev_MDS
 
 <br/><br/>
-
 
 <br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_03.png" alt="oracle bi installation"><br/><br/>
 
@@ -201,8 +182,6 @@ Type: Enterprise Install - Create New BI System
 
 
 </pre>
-
-
 
 <br/><img src="https://img.oracledba.net/img/oracle/middleware/oracle-bi/oracle-bi-installation/oracle-bi-installation_21.png" alt="oracle bi installation"><br/><br/>
 

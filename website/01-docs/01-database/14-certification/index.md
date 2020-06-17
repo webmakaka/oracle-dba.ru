@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Сертификация Oracle DBA
+description: Сертификация Oracle DBA
+keywords: Oracle Database, Certification
 permalink: /database/certification/
 ---
-
 
 # Сертификация Oracle DBA
 
@@ -11,26 +12,20 @@ permalink: /database/certification/
 
 Если есть желание работать на международном уровне, а не на локальном и получать за свою работу более достойную З/П, необходимо продемонстрировать свою профессиональную подготовку. Собственно админам Oracle нужно получить OCP. Для этого нужно сдать экзамены 1Z0-051, 1Z0-052, 1Z0-053.
 
-
 <div align="center">
-<p>
-<img src="https://img.oracledba.net/images/docs/01-oracle-database/01-beginning/08-cert/sql.jpg" alt="sql" border="0">
-<img src="https://img.oracledba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration1.jpg" alt="administration" border="0">
 
-</p>
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/01-beginning/08-cert/sql.jpg" alt="sql" border="0">
+
+<img src="https://img.oracledba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration1.jpg" alt="administration" border="0">
 
 <br/>
 
-<p>
-
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/01-beginning/08-cert/administration2.jpg" alt="administration" border="0">
 
-</p>
 </div>
 
 <br/><br/>
 <strong>Книги по сертификации:</strong>
-
 
 <ul>
 	<li>OCA Oracle Database 11g SQL Fundamentals I Exam Guide (Exam 1Z0-051)</li>
@@ -45,9 +40,7 @@ permalink: /database/certification/
 Может кому-нибудь будет полезен сайт для поиска --> bookfinder.com<br/>
 Дешевле, чем на eBay и Amazon.
 <br/>
-<br/>За 3 тома по сертификации Oracle (которые изображены выше) с доставкой я заплатил чуть меньше 75$
-
-
+<br/>За 3 тома по сертификации Oracle (которые изображены выше) с доставкой я заплатил чуть меньше 75\$
 
 <br/>
 
@@ -109,8 +102,6 @@ permalink: /database/certification/
 	<li><a href="https://img.oracledba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-620.pdf">1Z0-620</a></li>
 	<li><a href="https://img.oracledba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-640.pdf">1Z0-640</a></li>
 </ul>
-
-
 
 <br/>
 

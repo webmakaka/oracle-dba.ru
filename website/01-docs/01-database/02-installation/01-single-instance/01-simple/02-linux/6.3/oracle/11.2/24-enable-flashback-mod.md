@@ -1,78 +1,64 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
+title: Инсталляция Oracle DataBase 11.2.0.3.2 в Oracle Linux 6.3 - Включить режим работы FLASH BACK
+description: Инсталляция Oracle DataBase 11.2.0.3.2 в операционной системе Oracle Linux 6.3 - Включить режим работы FLASH BACK
+keywords: Oracle DataBase 11.2, Oracle Linux 6.3, Включить режим работы FLASH BACK
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/enable-flashback-mod/
 ---
 
-# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Включить режим работы FLASH BACK:
-
+# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Включить режим работы FLASH BACK
 
 <br/>
-
 
 FlashBack бывает полезен, когда нужно откатить изменения или посмотреть предыдущее состояние объектов в базе данных.
 Как следствие растет нагрузка на сервер, т.к. приходится хранить дополнительную информацию.
 
-
-	$ sqlplus / as sysdba
-
-
+    $ sqlplus / as sysdba
 
 <br/>
 
-
-	SQL> shutdown immediate;
-	SQL> startup mount exclusive;
-	SQL> alter database flashback on;
-	SQL> alter database open;
-
+    SQL> shutdown immediate;
+    SQL> startup mount exclusive;
+    SQL> alter database flashback on;
+    SQL> alter database open;
 
 <br/>
 
-	SQL> select flashback_on from v$database;
+    SQL> select flashback_on from v$database;
 
 <br/>
 
-	FLASHBACK_ON
-	------------------
-	YES
-
-
+    FLASHBACK_ON
+    ------------------
+    YES
 
 UNDO_RETENTION - (при включенном FLASHBACK) определяет минимальное время в секундах, за которое можно отменить (посмотреть) изменение в базе данных. При этом данные будут храниться в UNDO_TABLESPACE (необходимо обеспечить достаточный размер табличного пространства) и перезаписываться по мере необходимости, обеспечивая минимальное значение, указанное в UNDO_RETENTION. Не поддерживается для LOB.
 
-
 Задаю параметр UNDO_RETENTION равный 30 минутам
 
-
-	SQL> alter system set UNDO_RETENTION = 1800;
-	SQL> alter tablespace UNDO RETENTION GUARANTEE;
-
+    SQL> alter system set UNDO_RETENTION = 1800;
+    SQL> alter tablespace UNDO RETENTION GUARANTEE;
 
 <br/>
 
-	SQL> show parameter UNDO_RETENTION
-
-
-<br/>
-
-	NAME                                 TYPE        VALUE
-	------------------------------------ ----------- ------------------------------
-	undo_retention                       integer     1800
-
+    SQL> show parameter UNDO_RETENTION
 
 <br/>
 
-	SQL> quit
+    NAME                                 TYPE        VALUE
+    ------------------------------------ ----------- ------------------------------
+    undo_retention                       integer     1800
 
+<br/>
+
+    SQL> quit
 
 <br/><br/>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+    <h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 

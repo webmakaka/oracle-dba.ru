@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Oracle DataBase - Основы
+description: Oracle DataBase - Основы
+keywords: Oracle Database, Основы
 permalink: /database/basics/
 ---
 
-
 # Oracle DataBase - Основы
-
 
 <br/>
 
@@ -15,7 +15,6 @@ permalink: /database/basics/
 <ul>
     <li><a href="/database/beginning/">Первое знакомство с Oracle DataBase</a></li>
 </ul>
-
 
 <br/>
 
@@ -26,7 +25,6 @@ permalink: /database/basics/
         <a href="/docs/startup-and-shutdown-oracle-instance/">Режимы запуска и останова базы данных Oracle</a>
     </li>
 </ul>
-
 
 <br/><br/>
 
@@ -47,8 +45,6 @@ permalink: /database/basics/
     </li>
 
 </ul>
-
-
 
 <br/>
 
@@ -72,12 +68,9 @@ permalink: /database/basics/
     </li>
 </ul>
 
-
-
 <br/>
 
 ### Индексы:
-
 
 <ul>
     <li>
@@ -85,11 +78,9 @@ permalink: /database/basics/
     </li>
 </ul>
 
-
 <br/>
 
 ### Пользователи, схемы и их сессии к базе данных Oracle:
-
 
 <ul>
     <li>
@@ -103,18 +94,12 @@ permalink: /database/basics/
     </li>
 </ul>
 
-
-
-
 <br/>
 
 ### Транзакции:
-
 
 <ul>
     <li>
         <a href="/docs/architecture/transactions/simple-transaction/">Простая транзакция базы данных Oracle</a><br/>
     </li>
 </ul>
-
-

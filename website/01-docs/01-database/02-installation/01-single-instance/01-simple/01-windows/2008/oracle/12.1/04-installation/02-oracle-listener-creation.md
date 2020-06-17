@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Создание службы удаленного подключения к серверу (Listener)
+description: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Создание службы удаленного подключения к серверу (Listener)
+keywords: Oracle DataBase, Installation, Windows 2008, Listener
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-listener-creation/
 ---
 
 # <a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/">[Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server]</a>: Создание службы удаленного подключения к серверу (Listener)
 
 <br/>
-
 
 <div class="linuxCommand">
 $ netca

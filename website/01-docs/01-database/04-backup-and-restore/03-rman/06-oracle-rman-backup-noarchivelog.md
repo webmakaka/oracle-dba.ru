@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Создание резервных копий с помощью утилиты RMAN (NOARCHIVELOG)
+description: Создание резервных копий с помощью утилиты RMAN (NOARCHIVELOG)
+keywords: Oracle Database, RMAN, создание резервных копий, NOARCHIVELOG
 permalink: /database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/
 ---
 
@@ -12,7 +14,7 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/
 
 <br/>
 
-    RMAN> shutdown immediate;  
+    RMAN> shutdown immediate;
     RMAN> startup mount;
 
 <br/>
@@ -72,7 +74,6 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/
 
 # Понадобилось восстановить базу из холодного бекапа. Не ту, что описывалась выше. И да, на тестовом окружении.
 
-
     $ rman target /
     RMAN> shutdown immediate;
     RMAN> startup mount
@@ -89,7 +90,6 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/
     ORA-01113: file 1 needs media recovery
     ORA-01110: data file 1: '/u02/oracle/oradata/12.1/orcl12/DATAFILE/data/system01.dbf'
 
-
 <br/>
 
 И тут я приуныл.  
@@ -98,7 +98,6 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/
 <br/>
 
 Проблема решилась следующим способом.
-
 
     RMAN> list backup;
 
@@ -149,7 +148,6 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/
     RMAN> shutdown immediate;
 
     RMAN> startup nomount;
-
 
 Не знаю, может быть даже можно было просто восстановить, без явного указания ссылки где брать controlfile.
 

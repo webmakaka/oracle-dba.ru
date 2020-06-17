@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Материалы по Oracle Golden Gate
+description: Материалы по Oracle Golden Gate
+keywords: Oracle Golden Gate
 permalink: /golden-gate/
 ---
 
@@ -8,11 +10,11 @@ permalink: /golden-gate/
 
 <br/>
 
-### Введение в Oracle GoldenGate:Интеграция данных в реальном времени
+### Введение в Oracle GoldenGate - Интеграция данных в реальном времени
 
 <ul>
     <li>
-        <a href="https://www.youtube.com/watch?v=nv3Ccs-_4vo">[Вебинар] Введение в Oracle GoldenGate:Интеграция данных в реальном времени</a>
+        <a href="https://www.youtube.com/watch?v=nv3Ccs-_4vo">[Вебинар] Введение в Oracle GoldenGate - Интеграция данных в реальном времени</a>
     </li>
     <li>
         <a href="http://www.osp.ru/netcat_files/18/10/GoldenGate_BigData_and_Cloud_public.pdf">Презентация: Новые возможности платформы Oracle 12c для хранилищ данных и интеграции</a> ||

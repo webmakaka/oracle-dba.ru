@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Sheduler
+title: Oracle Database Sheduler
+description: Oracle Database Sheduler
+keywords: Oracle Database, Sheduler
 permalink: /docs/architecture/other/sheduler/
 ---
 
-<h2>Sheduler</h2>
-
+# Oracle Database Sheduler
 
 Sheduler - помогает автоматизировать задания внутри базы данных Oracle. Состоит из
 пяти базовых компонентов:
@@ -17,7 +18,6 @@ Sheduler - помогает автоматизировать задания вн
 <li>событий</li>
 <li>цепочек</li>
 </ul>
-
 
     SQL> set pagesize 0;
     SQL> SELECT owner, job_name, job_type FROM dba_scheduler_jobs;

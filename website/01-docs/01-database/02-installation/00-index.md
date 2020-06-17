@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase
-description: Инструкции по инсталляции баз данных oracle 
-keywords: oracle, linux, installation, asm, standby, rac
+description: Инструкции по инсталляции баз данных oracle
+keywords: Oracle, linux, installation, asm, standby, rac
 permalink: /database/installation/
 ---
 
@@ -10,10 +10,9 @@ permalink: /database/installation/
 
 P.S.
 
-Коллеги, выложили видео с информацией, как развернуть базу с помощью Vagrant + ssh скриптов. Используется Oracle Linux 8 и база Oracle 19C. Для инсталляции необходимо скопировать дистрибутив в нужный каталог и запустить vagrant. Все остальное, скрипты сделают самостоятельно. 
+Коллеги, выложили видео с информацией, как развернуть базу с помощью Vagrant + ssh скриптов. Используется Oracle Linux 8 и база Oracle 19C. Для инсталляции необходимо скопировать дистрибутив в нужный каталог и запустить vagrant. Все остальное, скрипты сделают самостоятельно.
 
 https://www.youtube.com/watch?v=0ogLoZfYOYs&t=0s
-
 
 https://github.com/oraclebase/vagrant/tree/master/database/ol8_19
 

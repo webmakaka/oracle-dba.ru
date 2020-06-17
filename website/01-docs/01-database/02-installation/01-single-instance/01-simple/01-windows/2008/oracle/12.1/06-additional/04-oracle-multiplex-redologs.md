@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Мультиплексирование redologs
+description: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Мультиплексирование redologs
+keywords: Oracle DataBase, Installation, Windows 2008, Мультиплексирование redologs
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-multiplex-redologs/
 ---
 

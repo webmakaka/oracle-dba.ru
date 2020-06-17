@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase Server 12.1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle DataBase Server 12.1 в Windows 2008 Server
+description: Инсталляция Oracle DataBase Server 12.1 в Windows 2008 Server
+keywords: Oracle DataBase, Installation, Windows 2008
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/
 ---
 
-# [Инсталляция Oracle DataBase Server 12.1 в Microsoft Windows 2008 Server]
-
-
+# Инсталляция Oracle DataBase Server 12.1 в Windows 2008 Server
 
 <br/>
 
@@ -16,49 +16,44 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, пишите мне адрес эл. почты:
 
-
 <div>
 	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
-
-
 <br/><br/>
+
 <h2>Документация:</h2>
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/docs/">Официальная документация</a><br/></li>
 </ul>
 
-
 <br/><br/>
-<h2>Дистрибутивы:</h2>
 
+<h2>Дистрибутивы:</h2>
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/distrib/">Дистрибутивы баз данных и дополнительное программное обеспечение</a><br/></li>
 </ul>
 
-
-
 <br/><br/>
+
 <h2>Перед инсталляцией:</h2>
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/steps-before-installaion/">Перед инсталляцией</a></li>
 </ul>
 
-
-
 <br/><br/>
+
 <h2>Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server:</h2>
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/virtualbox-machines/windows/2008/">Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server</a></li>
 </ul>
 
-
 <br/><br/>
+
 <h2>Инсталляция базы данных:</h2>
 <ul>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-database-software-installation/">Инсталляция СУБД Oracle (DataBase SoftWare)</a></li>
@@ -66,17 +61,16 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-instance-creation/">Создание экземпляра базы данных (Instance)</a></li>
 </ul>
 
-
 <br/><br/>
+
 <h2>После инсталляции:</h2>
 <ul>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/steps-after-installation/">После инсталляции</a></li>
 </ul>
 
-
 <br/><br/>
-<h2>Обеспечение дополнительной отказоустойчивости и надежности:</h2>
 
+<h2>Обеспечение дополнительной отказоустойчивости и надежности:</h2>
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-setup-fast-recovery-area-params/">Задание параметров FAST RECOVERY AREA</a></li>
@@ -89,16 +83,16 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-additionals-datafiles/">Расширение табличных пространств (создание дополнительных файлов для табличных пространств)</a></li>
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/enable-flashback-mod/">Включить режим работы FLASH BACK</a></li>
 
-	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-final-hot-backup/">Контрольный backup (горячий backup)</a></li>
+    <li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-final-hot-backup/">Контрольный backup (горячий backup)</a></li>
 
 </ul>
 
-
 <br/><br/>
+
 <h2>Подключиться к базе с клиентского компьютера:</h2>
 
 <ul>
 
-	<li><a href="/client/installation/windows/7/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
+    <li><a href="/client/installation/windows/7/oracle/12.1/">Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)</a> (C 64 битным клиентом не работают такие программы как PL/SQL Developer)</li>
 
 </ul>

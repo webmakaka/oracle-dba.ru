@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Включить режим работы FLASH BACK
+description: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Включить режим работы FLASH BACK
+keywords: Oracle DataBase, Installation, Windows 2008, Включить FLASH BACK
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/enable-flashback-mod/
 ---
 
@@ -11,50 +13,42 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 FlashBack бывает полезен, когда нужно откатить изменения или посмотреть предыдущее состояние объектов в базе данных.
 Как следствие растет нагрузка на сервер, т.к. приходится хранить дополнительную информацию.
 
-
-	sqlplus / as sysdba
-
+    sqlplus / as sysdba
 
 <br/>
 
-	SQL> shutdown immediate;
-	SQL> startup mount exclusive;
-	SQL> alter database flashback on;
-	SQL> alter database open;
+    SQL> shutdown immediate;
+    SQL> startup mount exclusive;
+    SQL> alter database flashback on;
+    SQL> alter database open;
 
 <br/>
 
-	SQL> select flashback_on from v$database;
-
-
+    SQL> select flashback_on from v$database;
 
 <br/>
 
-	FLASHBACK_ON
-	------------------
-	YES
-
-
+    FLASHBACK_ON
+    ------------------
+    YES
 
 UNDO_RETENTION - (при включенном FLASHBACK) определяет минимальное время в секундах, за которое можно отменить (посмотреть) изменение в базе данных. При этом данные будут храниться в UNDO_TABLESPACE (необходимо обеспечить достаточный размер табличного пространства) и перезаписываться по мере необходимости, обеспечивая минимальное значение, указанное в UNDO_RETENTION. Не поддерживается для LOB.
 
-
 Задаю параметр UNDO_RETENTION равный 30 минутам
 
-	SQL> alter system set UNDO_RETENTION = 1800;
-	SQL> alter tablespace UNDO RETENTION GUARANTEE;
+    SQL> alter system set UNDO_RETENTION = 1800;
+    SQL> alter tablespace UNDO RETENTION GUARANTEE;
 
 <br/>
 
-	SQL> show parameter UNDO_RETENTION
+    SQL> show parameter UNDO_RETENTION
 
 <br/>
 
-	NAME                                 TYPE        VALUE
-	------------------------------------ ----------- ------------------------------
-	undo_retention                       integer     1800
-
+    NAME                                 TYPE        VALUE
+    ------------------------------------ ----------- ------------------------------
+    undo_retention                       integer     1800
 
 <br/>
 
-	SQL> quit
+    SQL> quit

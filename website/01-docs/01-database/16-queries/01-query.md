@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Некоторые запросы к базе данных Oracle
+description: Некоторые запросы к базе данных Oracle
+keywords: Oracle Database, Некоторые запросы к базе данных Oracle
 permalink: /docs/architecture/queries/query/
 ---
-
 
 # Некоторые запросы к базе данных Oracle:
 
@@ -12,7 +13,6 @@ permalink: /docs/architecture/queries/query/
 // Какие компоненты установлены:
 
     SQL> select comp_id, comp_name, version, status from dba_registry;
-
 
 <br/>
 
@@ -38,13 +38,11 @@ permalink: /docs/architecture/queries/query/
 
 http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
-
 <br/>
 
 Отключение корзины
 
     SQL> alter system set RECYCLEBIN=off scope=BOTH;
-
 
 <br/>
 
@@ -53,20 +51,17 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
     SQL> select object_name, object_type from DBA_OBJECTS
     WHERE status = 'INVALID';
 
-
 <br/>
 
 Задать каталог где будут создаваться фийлы
 
-    SQL> alter system set db_create_file_dest="/u01/datafiles";  
-
+    SQL> alter system set db_create_file_dest="/u01/datafiles";
 
 <br/>
 
 Посмотреть параметры
 
     SQL> show parameter db_create_file_dest
-
 
 <br/>
 
@@ -79,7 +74,6 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
     AND t.name='CPU used by this session'
     ORDER BY s.value desc;
 
-
 <br/>
 
 Создание и использование последовательностей (sequence)
@@ -87,14 +81,12 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
     create sequence dept_seq start with 200 increment by 10;
     insert into departments valuse (dept_seq.netxval, .......)
 
-
 <br/>
 
 Показать залоченные объекты
 
     select * from source_locked l
     where l.object_name = 'PRINT'
-
 
 <!--
 

@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Создание копии базы данных из бекапа с помощью RMAN на том же сервере
+title: Создание копии базы данных Oracle из бекапа с помощью RMAN на том же сервере
+description: Создание копии базы данных Oracle из бекапа с помощью RMAN на том же сервере
+keywords: Oracle Database, RMAN, Создание копии
 permalink: /database/backup-and-restore/rman/duplicate-database/
 ---
 
-# Создание копии базы данных из бекапа с помощью RMAN на том же сервере:
+# Создание копии базы данных Oracle из бекапа с помощью RMAN на том же сервере
 
 <br/>
 

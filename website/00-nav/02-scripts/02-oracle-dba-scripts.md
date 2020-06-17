@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Коллекция скриптов для Oracle DBA
+description: Коллекция скриптов для Oracle DBA
+keywords: Oracle, DBA скрипты
 permalink: /scripts/oracle-dba-scripts/
 ---
 
 # Коллекция скриптов для Oracle DBA
-
 
 <br/>
 
@@ -13,9 +14,7 @@ permalink: /scripts/oracle-dba-scripts/
 
 Коллекция скриптов от Sr.Oracle DBA
 
-
 https://bitbucket.org/plsql/dba-scripts-archive-for-oracle
-
 
 <br/>
 
@@ -30,7 +29,5 @@ https://bitbucket.org/plsql/oracle-dba-scripts
 https://bitbucket.org/plsql/oracle-dba-scripts-1
 
 https://bitbucket.org/plsql/oracledba
-
-
 
 Пока нет особого желания разбирать коллекции, определять, что важно а что нет.

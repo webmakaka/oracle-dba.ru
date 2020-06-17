@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Библиотека Oracle DBA
+description: Библиотека Oracle DBA
+keywords: Oracle DataBase, Библиотека Oracle DBA
 permalink: /database/beginning/library/
 ---
 
-# С чего начать изучение Oracle?
+# Библиотека Oracle DBA
 
 Если Вы только приступаете к изучению основ работы с базами данных Oracle, я бы рекомендовал следующее:
 

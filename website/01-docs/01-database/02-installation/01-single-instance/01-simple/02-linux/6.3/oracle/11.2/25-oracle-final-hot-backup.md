@@ -1,98 +1,84 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
+title: Инсталляция Oracle DataBase 11.2.0.3.2 в Oracle Linux 6.3 - Контрольный backup (горячий backup)
+description: Инсталляция Oracle DataBase 11.2.0.3.2 в операционной системе Oracle Linux 6.3 - Контрольный backup (горячий backup)
+keywords: Oracle DataBase 11.2, Oracle Linux 6.3, Горячий backup, Hot backup
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-final-hot-backup/
 ---
 
-# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Контрольный backup (горячий backup):
-
-
-<br/>
-
-	$ cd /u03/orabackups
+# <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Контрольный backup (горячий backup)
 
 <br/>
 
-	$ vi rmanscript.rman
-
+    $ cd /u03/orabackups
 
 <br/>
 
-	RUN {
-	CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
-	BACKUP FULL DATABASE TAG "FULL_DATABASE" PLUS ARCHIVELOG TAG "FULL_DATABASE_ARCHIVELOGS";
-	}
+    $ vi rmanscript.rman
 
+<br/>
+
+    RUN {
+    CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
+    BACKUP FULL DATABASE TAG "FULL_DATABASE" PLUS ARCHIVELOG TAG "FULL_DATABASE_ARCHIVELOGS";
+    }
 
 Проверка синтаксиса созданного файла сценария
 
-
-	$ rman CHECKSYNTAX @rmanscript.rman
-
+    $ rman CHECKSYNTAX @rmanscript.rman
 
 Выполнение скрипта резервного копирования
 
-	$ rman target / @rmanscript.rman
-
+    $ rman target / @rmanscript.rman
 
 Посмотреть список бекапов:
 
-
-	RMAN> rman target /
-
-<br/>
-
-	RMAN> list backup of database summary;
+    RMAN> rman target /
 
 <br/>
 
-	List of Backups
-	===============
-	Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
-	------- -- -- - ----------- ------------------- ------- ------- ---------- ---
-	1       B  F  A DISK        10.06.2012 22:05:45 1       1       NO         TAG20120610T220429
-	6       B  F  A DISK        10.06.2012 22:12:46 1       1       NO         TAG20120610T221132
-	10      B  F  A DISK        10.06.2012 23:21:10 1       1       YES        FULL_DATABASE
+    RMAN> list backup of database summary;
 
+<br/>
 
+    List of Backups
+    ===============
+    Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
+    ------- -- -- - ----------- ------------------- ------- ------- ---------- ---
+    1       B  F  A DISK        10.06.2012 22:05:45 1       1       NO         TAG20120610T220429
+    6       B  F  A DISK        10.06.2012 22:12:46 1       1       NO         TAG20120610T221132
+    10      B  F  A DISK        10.06.2012 23:21:10 1       1       YES        FULL_DATABASE
 
 Следующей командой я сообщаю, что все бекапы кроме последного, следует поменить как obsolete.
 
-
-	RMAN> CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
-
+    RMAN> CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
 
 Теперь прошу RMAN удалить устаревшие бекапы (без подтверждения).
 
-
-	RMAN> delete noprompt obsolete;
-
-<br/>
-
-	RMAN> list backup of database summary;
+    RMAN> delete noprompt obsolete;
 
 <br/>
 
-	List of Backups
-	===============
-	Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
-	------- -- -- - ----------- ------------------- ------- ------- ---------- ---
-	10      B  F  A DISK        10.06.2012 23:21:10 1       1       YES        FULL_DATABASE
-
+    RMAN> list backup of database summary;
 
 <br/>
 
-	RMAN>  quit
+    List of Backups
+    ===============
+    Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
+    ------- -- -- - ----------- ------------------- ------- ------- ---------- ---
+    10      B  F  A DISK        10.06.2012 23:21:10 1       1       YES        FULL_DATABASE
 
+<br/>
 
+    RMAN>  quit
 
 <br/><br/>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+    <h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 

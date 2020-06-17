@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Поиск одинаковых записей в базе данных (поиск дубликатов)
+description: Поиск одинаковых записей в базе данных (поиск дубликатов)
+keywords: Oracle Database, поиск дубликатов
 permalink: /docs/architecture/other/poisk-dublikatov/
 ---
 
-
-<h3>Поиск одинаковых записей в базе данных (поиск дубликатов)</h3><br/>
+# Поиск одинаковых записей в базе данных (поиск дубликатов)
 
     select do, count(*)
     from region

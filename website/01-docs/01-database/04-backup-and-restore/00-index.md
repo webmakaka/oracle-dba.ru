@@ -6,9 +6,7 @@ keywords: oracle, backup, restore
 permalink: /database/backup-and-restore/
 ---
 
-
 # Backup и Restore Oracle DataBase
-
 
 <br/>
 
@@ -23,7 +21,6 @@ permalink: /database/backup-and-restore/
     </li>
 </ul>
 
-
 <br/>
 
 ### Резервное копирование базы Oracle средствами операционной системы:
@@ -36,9 +33,7 @@ permalink: /database/backup-and-restore/
 
 <br/>
 
-
 ### Backup и Restore Oracle DataBase с помощью RMAN
-
 
 <ul>
     <li>
@@ -46,12 +41,9 @@ permalink: /database/backup-and-restore/
     </li>
 </ul>
 
-
-
 <br/>
 
 ### Oracle Data Pump (Export / Import схем) (с 11 версии Oracle)
-
 
 <ul>
     <li>
@@ -61,7 +53,6 @@ permalink: /database/backup-and-restore/
         <a href="http://odba.ru/showthread.php?t=28">Утилиты IMP/EXP</a> (Для версий до 11)
     </li>
 </ul>
-
 
 <br/>
 

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Версии Weblogic
+description: Версии Weblogic
+keywords: Oracle Weblogic Server, WLS, Версии
 permalink: /middleware/weblogic/weblogic-versions/
 ---
 
-
-## Версии Weblogic
-
+# Версии Weblogic
 
 <br/>
 

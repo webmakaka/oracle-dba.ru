@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Команды для анализа использования UNDOTBS
+description: Команды для анализа использования UNDOTBS
+keywords: Oracle Database, UNDOTBS
 permalink: /docs/architecture/tablespaces/undo-tablespace/
 ---
 

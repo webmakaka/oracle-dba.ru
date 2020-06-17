@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Создание дисковых групп ASM
+title: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Создание дисковых групп ASM
+description: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Создание дисковых групп ASM
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, (ISCSI + ASM)
 permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asm-disk-groups-creation/
 ---
 

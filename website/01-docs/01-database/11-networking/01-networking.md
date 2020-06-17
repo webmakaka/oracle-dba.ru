@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Настройка сети (Настройка слущающего процесса Listener)
+description: Настройка сети (Настройка слущающего процесса Listener)
+keywords: Oracle Database, Network, Listener
 permalink: /docs/architecture/networking/
 ---
 

@@ -1,16 +1,14 @@
 ---
 layout: page
-title: Ловец ошибок
+title: Oracle Database, Ловец ошибок
+description: Oracle Database, Ловец ошибок
+keywords: Oracle Database, Ловец ошибок
 permalink: /docs/architecture/other/oracle-err-catcher/
 ---
 
-
-<h2>Ловец ошибок:</h2>
-
+# Oracle Database, Ловец ошибок
 
 <strong>Создаем таблицу для записи сообщений об ошибках.</strong>
-
-
 
     CREATE TABLE error_logs (
     id           NUMBER(10)      NOT NULL,
@@ -20,7 +18,6 @@ permalink: /docs/architecture/other/oracle-err-catcher/
     created_date DATE            NOT NULL,
     created_by   VARCHAR2(50)    NOT NULL);
 
-
 <br/>
 
     ALTER TABLE error_logs ADD (CONSTRAINT error_logs_pk PRIMARY KEY (id));
@@ -29,11 +26,8 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
     CREATE SEQUENCE error_logs_seq;
 
-
-
 <br/><br/>
 <strong>err.pks</strong>
-
 
     CREATE OR REPLACE PACKAGE dsp AS
     -- --------------------------------------------------------------------------
@@ -86,10 +80,8 @@ permalink: /docs/architecture/other/oracle-err-catcher/
     END dsp;
     /
 
-
 <br/>
 <strong>dsp.pkb</strong>
-
 
     CREATE OR REPLACE PACKAGE BODY dsp AS
     -- --------------------------------------------------------------------------
@@ -402,9 +394,7 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
 <br/>
 
-
 <strong>err.pks</strong>
-
 
     CREATE OR REPLACE PACKAGE err AS
     -- --------------------------------------------------------------------------
@@ -436,11 +426,8 @@ permalink: /docs/architecture/other/oracle-err-catcher/
     END err;
     /
 
-
 <br/>
 <strong>err.pkb</strong>
-
-
 
     CREATE OR REPLACE PACKAGE BODY err AS
     -- --------------------------------------------------------------------------
@@ -563,16 +550,13 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
 <br/>
 
-
     execute err.line(\'This is an error\');
-
 
 <br/>
 
 <strong>@list_error_logs.sql</strong>
 
- <br/><br/>
-
+<br/><br/>
 
     set feedback off
     alter session set nls_timestamp_format=\'DD-MON-YYYY HH:MI:SS\';
@@ -605,8 +589,6 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
 <br/>
 
-
-
     SQL> @list_error_logs.sql all
 
         ID PREFIX               DATA                           ERROR_LEVEL CREATED_DATE         CREATED_BY
@@ -615,9 +597,7 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
     1 row selected.
 
-
 <br/>
-
 
     CREATE OR REPLACE PROCEDURE exception_job_proc AS
     BEGIN
@@ -635,13 +615,9 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
 <br/>
 
-
-
     EXEC exception_job_proc
 
-
  <br/>
-
 
     SQL> @list_error_logs.sql exception_job_proc
 

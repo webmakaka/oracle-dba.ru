@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях
+description: Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях
+keywords: Oracle DataBase, Вопросы на интервью
 permalink: /database/beginning/questions-on-interview/
 ---
 
-<h3>Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях:</h3>>
-
-
+# Вопросы, которые задают претендентам на позицию Oracle DBA на собеседованиях
 
 СОБИРАЕМ ВОПРОСЫ!
-
 
 <h3>Yandex:</h3>
 
@@ -19,12 +18,9 @@ permalink: /database/beginning/questions-on-interview/
 
 <br/><br/>
 
-
-На сервере СУБД на диске заканчивается место (используется Linux). Вы выяснили, что процесс lns1 начал по какой-то причине очень активно писать в файл <diagnostic_dest>/dbname/sid/trace/<sid>_lns1_<pid>.trc, из-за чего стало заканчиваться место на диске.
+На сервере СУБД на диске заканчивается место (используется Linux). Вы выяснили, что процесс lns1 начал по какой-то причине очень активно писать в файл <diagnostic*dest>/dbname/sid/trace/<sid>\_lns1*<pid>.trc, из-за чего стало заканчиваться место на диске.
 <br/><br/>
 Каким образом средствами ОС освободить место на диске(процесс lns1 завершать (штатно или kill-ом ) нельзя)?
-
-
 
 <br/>
 <br/><br/>
@@ -32,27 +28,21 @@ permalink: /database/beginning/questions-on-interview/
 <br/><br/>
 Могут ли две функции (stored functions) одного пользователя Oracle иметь одинаковые имена?
 
-
 <br/>
 <br/><br/>
 Вопрос 3:
 <br/><br/>
 
-
 Тезисно опишите отличия взаимодействия СУБД Оракл (версии 10.2 и старше) с ОС Linux в случае использования AMM (Automatic Memory, начиная с версии 11.1) и ASMM (Automatic Shared Memory Management), СУБД Оракл и ОС Linux 64битные.
-
 
 <br/>
 <br/><br/>
 Вопрос 4:
 <br/><br/>
 
-
 Есть БД Оракл размером 7 ТБ, в которой в том числе хранятся данные в 10 партиционированных таблицах (range partitions, 1 партиция — одни сутки) за 3 года. Вам необходимо поднять частичную копию этой БД, в которой присутствовали бы данные только за последний месяц. На сервере, где необходимо поднять БД-копию, места для полного восстановления исходной БД недостаточно.
 <br/><br/>
 Каким образом вы будете решать эту задачу?
-
-
 
 <br/>
 <br/><br/>
@@ -60,12 +50,10 @@ permalink: /database/beginning/questions-on-interview/
 <br/><br/>
 Чем отличаются в плане выполнения запроса операции hash join от nested loops. какая выполняется быстрее, при каких условиях?
 
-
 <br/>
 <br/><br/>
 Вопрос 6:
 <br/><br/>
-
 
 Дана PL/SQL-коллекция, объявленная следующим образом:
 
@@ -76,21 +64,19 @@ permalink: /database/beginning/questions-on-interview/
        lstN TNumList;
     ...
 
-
 <br/>
 
- Перечислите, какие из 5-ти логических выражений истинны независимо от содержимого переменной lstN:
+Перечислите, какие из 5-ти логических выражений истинны независимо от содержимого переменной lstN:
 
- lstN.Limit is not NULL
+lstN.Limit is not NULL
 
- lstN.First = 1 or lstN.First is NULL
+lstN.First = 1 or lstN.First is NULL
 
- lstN.Trim is NULL
+lstN.Trim is NULL
 
- Nvl(lstN.Last,0) = lstN.Count
+Nvl(lstN.Last,0) = lstN.Count
 
- lstN.Prior(lstN.First) is NULL
-
+lstN.Prior(lstN.First) is NULL
 
 <br/>
 <br/><br/>

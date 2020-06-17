@@ -1,33 +1,26 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Создание экземпляра базы данных (Instance)
+title: Инсталляция Oracle DataBase 12c в Oracle Linux 6.7 - Создание экземпляра базы данных (Instance)
+description: Инсталляция Oracle DataBase 12c в операционной системе Oracle Linux 6.7 - Создание экземпляра базы данных (Instance)
+keywords: Oracle DataBase 12c, Oracle Linux 6.7, Instance
 permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-instance-creation/
 ---
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Создание экземпляра базы данных (Instance)
 
-
-
 Выполните команду:
 
-	$ dbca
-
+    $ dbca
 
 <br/><br/>
 
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_01.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_02.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_03.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_04.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
-
 
 <pre>
 
@@ -47,7 +40,6 @@ Oracle предлагает создать экземпляр базы данн�
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_06.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_07.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_08.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
@@ -55,7 +47,6 @@ Oracle предлагает создать экземпляр базы данн�
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_09.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_10.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_11.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
@@ -83,13 +74,9 @@ Application Express -  приложение, с помощью которого 
 
 <br/><br/>
 
-
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_12.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_13.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
 
 <pre>
 
@@ -100,11 +87,7 @@ Application Express -  приложение, с помощью которого 
 
 <br/><br/>
 
-
-
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_14.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_15.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
@@ -112,11 +95,10 @@ Application Express -  приложение, с помощью которого 
 Если в базе будет использоваться кириллица, рекомендуется выбрать кодировку, которая поддерживает данную возможность. Unicode, где каждый символ кодируется 2 байтами, вполне подходит для этой задачи.
 
 </pre>
+
 <br/><br/>
 
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_16.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
 
 <ul>
 	<li>Dedicated Server Mode - для каждого соединения создается отдельный сервис. </li>
@@ -124,8 +106,6 @@ Application Express -  приложение, с помощью которого 
 </ul>
 
 <br/><br/>
-
-
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_17.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
@@ -138,17 +118,10 @@ Application Express -  приложение, с помощью которого 
 На этом шаге прогресс установки как бы останавливается и ничего не происходит какое-то время. Нужно подождать.
 <br/><br/>
 
-
-
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_21.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
-
-
 
 Под Firefox у меня Enterprise Manager не запустился. Правда он у меня перегружен всякими плагинами, блокирующими и активные компоненты сайтов.
 <br/><br/>
-
 
 <br/><br/>
 
@@ -156,9 +129,7 @@ https://192.168.1.11:5500/em
 
 <br/><br/>
 
-
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_22.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
-
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_24.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
@@ -166,25 +137,23 @@ https://192.168.1.11:5500/em
 
 <img src="https://img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/6.7/oracle/12.1/04_instance_creation/oracle12R1_database_instance_creation_26.png" border="0" alt="Oracle 12 relese 1 Instance Creation"><br/><br/>
 
-
-
 <br/><br/>
 
-	$ sqlplus / as sysdba
+    $ sqlplus / as sysdba
 
-	SQL*Plus: Release 12.1.0.2.0 Production on Tue Sep 15 22:14:27 2015
+    SQL*Plus: Release 12.1.0.2.0 Production on Tue Sep 15 22:14:27 2015
 
-	Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+    Copyright (c) 1982, 2014, Oracle.  All rights reserved.
 
 
-	Connected to:
-	Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
-	With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+    Connected to:
+    Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+    With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
 
 <br/>
 
-	SQL> select status from v$instance;
+    SQL> select status from v$instance;
 
-	STATUS
-	------------
-	OPEN
+    STATUS
+    ------------
+    OPEN

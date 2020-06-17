@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Первое знакомство с Oracle DataBase
+description: Первое знакомство с Oracle DataBase
+keywords: Oracle DataBase, Первое знакомство
 permalink: /database/beginning/
 ---
 
-
-### Первое знакомство с Oracle DataBase:
-
+# Первое знакомство с Oracle DataBase:
 
 <ul>
     <li><a href="/database/beginning/intro/">Пара слов о базах данных Oracle</a></li>

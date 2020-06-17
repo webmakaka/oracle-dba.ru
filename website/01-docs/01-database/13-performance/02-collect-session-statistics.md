@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Собрать статистику пользовательской сессии
+description: Собрать статистику пользовательской сессии
+keywords: Oracle Database, Собрать статистику пользовательской сессии
 permalink: /docs/architecture/performance/collect-session-statistics/
 ---
 

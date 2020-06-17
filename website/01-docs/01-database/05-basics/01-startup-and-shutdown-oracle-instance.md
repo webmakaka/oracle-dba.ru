@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Режимы запуска и останова базы данных Oracle
+description: Режимы запуска и останова базы данных Oracle
+keywords: Oracle Database, start and stop database
 permalink: /docs/startup-and-shutdown-oracle-instance/
 ---
 

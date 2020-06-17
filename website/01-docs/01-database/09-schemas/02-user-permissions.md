@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Управление доступом к базе данных Oracle
+description: Управление доступом к базе данных Oracle
+keywords: Oracle Database, Управление доступом
 permalink: /docs/architecture/schemas/user-permissions/
 ---
 
-
 # Управление доступом к базе данных Oracle:
 
-
 Полномочия – это право на выполнение конкретного типа SQL-оператора или на доступ к объекту базы данных, принадлежащему другому пользователю. В базе данных Oracle необходимо явно предоставить пользователю полномочия для выполнения любых действий, включая подключение к базе данных или выборку, изменение и обновление данных в любой таблице, кроме собственной.
-
 
 Существуют два основных типа полномочий Oracle: системные полномочия и объектные полномочия. Для предоставления пользователям как системных, так и объектынх полномочий служит оператор GRANT.
 
@@ -21,7 +20,6 @@ permalink: /docs/architecture/schemas/user-permissions/
 Второй класс системных полномоичий предоставляет пользователям право на выполнение операций, которыевлияют на объекты в любой схеме. Примерами этого типа системных полномочий служат ANALYZE ANY TABLE, GRANT ANY PRIVILEGE, INSERT ANY TABLE, DELETE ANY TABLE и т.п. Системные полномочия являются очень мощным средством и выдача их не тому пользователю может оказать разруши тельное влияние на базу данных.
 
 Ниже перечислены некоторые наиболее часто используемые полномочия базы данных Oracle:
-
 
 <ul>
 <li> ADVISOR</li>
@@ -38,7 +36,6 @@ permalink: /docs/architecture/schemas/user-permissions/
 <li> INSERT ANY TABLE</li>
 </ul>
 
-
 <strong>Пример: </strong><br/>
 
     GRANT CREATE SESSION TO scott;
@@ -48,9 +45,7 @@ permalink: /docs/architecture/schemas/user-permissions/
 
 Объектыне полномочия – это полномочия по отношению к различным типам объектов базы данных. Объектыные полномочия дают пользователю возможность выполнять действия с конкретной таблицей, представлением, материализованным представлением, последовательностью, процедурой, функцией или пакетом. Следовательно, всем пользователям базы данных нужны объектные полномочия.
 
-
 Для выдачи объектных полномочий можно использовать следующие SQL-операторы.
-
 
 <ul>
 <li> ALTER </li>
@@ -62,12 +57,10 @@ permalink: /docs/architecture/schemas/user-permissions/
 <li> INDEX</li>
 </ul>
 
-
 <strong>Пример: </strong>
 
     GRANT SELECT, UPDATE
     ON table_name TO scott;
-
 
 <br/>
 <h3>Основные представления привелегий пользователей:</h3>
@@ -86,9 +79,7 @@ USER_SYS_PRIVS - Перечень системынх привилегий пре
 <br/>
 <h2>Получить список всех ролей, системных и объектных привилегий пользователя. (Запускаетс под учетной записью пользователя)</h2>
 
-
 <h3>Способ 1:</h3>
-
 
     SET feedback off
     SET serveroutput ON
@@ -110,34 +101,24 @@ USER_SYS_PRIVS - Перечень системынх привилегий пре
     END;
     /
 
-
-
 <br/><br/>
 <strong>Result:</strong>
-
 
     grant UNLIMITED TABLESPACE to PLSQL_PROJECT;
     grant CREATE SESSION to PLSQL_PROJECT;
     grant CREATE TABLE to PLSQL_PROJECT;
 
-
 <h3>Способ 2:</h3>
-
 
 Our task is get all privileges granted for user and create report based on this information. As you know privileges gives on user directly or on his role. Privileges divided by 2 part: system and object.
 
 Let see example, create report for user Scott
 
-
-
 <strong>1.Create repository table for store data:</strong>
-
 
     create table vm_user_privs(privilege varchar2(100),user_name varchar2(100),object_name varchar2(100));
 
-
 <strong>2. Main script:</strong>
-
 
     declare
     cursor c_user is
@@ -162,8 +143,6 @@ Let see example, create report for user Scott
     end loop;
     close c_user;
     end;
-
-
 
 <strong>3. See result:</strong>
 

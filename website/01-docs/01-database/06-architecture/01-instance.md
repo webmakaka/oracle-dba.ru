@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Экземпляр базы данных Oracle (Oracle DataBase Instance)
+description: Экземпляр базы данных Oracle (Oracle DataBase Instance)
+keywords: Oracle Database, Instance
 permalink: /docs/architecture/instance/
 ---
 

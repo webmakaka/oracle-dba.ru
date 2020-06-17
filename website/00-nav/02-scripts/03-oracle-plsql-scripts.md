@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Коллекция PL/SQL скриптов
+description: Коллекция PL/SQL скриптов
+keywords: Oracle, PL/SQL скрипты
 permalink: /scripts/oracle-plsql-scripts/
 ---
 

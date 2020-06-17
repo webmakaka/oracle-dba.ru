@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Сегменты > Экстенты > Блоки
+description: Сегменты > Экстенты > Блоки
+keywords: Oracle Database, Сегменты, Экстенты, Блоки
 permalink: /docs/architecture/tablespaces/segments-extents-and-blocks/
 ---
 

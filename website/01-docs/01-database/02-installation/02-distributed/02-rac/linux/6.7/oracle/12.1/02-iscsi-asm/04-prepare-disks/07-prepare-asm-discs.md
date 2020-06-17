@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Настройка ASM на узлах кластера, маркировка дисков как ASM
+title: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Настройка ASM на узлах кластера, маркировка дисков как ASM
+description: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Настройка ASM на узлах кластера, маркировка дисков как ASM
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, (ISCSI + ASM)
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-asm-discs/
 ---
 
@@ -54,11 +56,11 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 # Маркируем диски как ASM диски:
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
-
-<tr>
-<td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
-<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1</strong></span></td>
-</tr>
+    <tr>
+    <td style="color: rgb(255, 255, 255);" bgcolor="#386351" width="14%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>Server:</strong></span></td>
+    <td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>rac1</strong></span></td>
+    </tr>
+</table>
 
 <br/>
 

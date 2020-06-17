@@ -1,32 +1,29 @@
 ---
 layout: page
 title: Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
+description: Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
+keywords: Oracle Database, RMAN Catalog
 permalink: /database/backup-and-restore/rman/rman-catalog-installation/
 ---
 
-
 # Создание RMAN Catalog (Для хранение информации о бекапах в специальной базе Oracle)
 
-
 <br/>
 
-1) Устанавливаю 2 сервера как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
+1. Устанавливаю 2 сервера как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 
-    Типичный сервер баз данных oracle:  
+    Типичный сервер баз данных oracle:
     Hostname: moscow
-    IP: 192.168.1.11  
+    IP: 192.168.1.11
     Instance Name: orcl12
 
-
 <br/>
 
-    Сервер хранения бекапов:  
-    Hostname: piter  
-    IP: 192.168.1.12  
+    Сервер хранения бекапов:
+    Hostname: piter
+    IP: 192.168.1.12
     Instance Name: catalog
-
-
 
 <br/>
 
@@ -61,7 +58,6 @@ permalink: /database/backup-and-restore/rman/rman-catalog-installation/
 
     SQL> GRANT CONNECT, RESOURCE, RECOVERY_CATALOG_OWNER TO RMAN;
 
-
 <br/>
 
     SQL> exit
@@ -78,7 +74,6 @@ permalink: /database/backup-and-restore/rman/rman-catalog-installation/
 
     RMAN> exit;
 
-
 <br/>
 
     $ sqlplus rman/rman123
@@ -91,21 +86,19 @@ permalink: /database/backup-and-restore/rman/rman-catalog-installation/
 
     SQL> select * from rc_database;
 
-
 <br/>
 
 ### Настройка tnsnames.ora на обоих серверах
 
-
-	$ cd $ORACLE_HOME/network/admin
-
-<br/>
-
-	$ vi tnsnames.ora
+    $ cd $ORACLE_HOME/network/admin
 
 <br/>
 
-	***
+    $ vi tnsnames.ora
+
+<br/>
+
+    ***
 
     RMAN12 =
       (DESCRIPTION =
@@ -127,12 +120,10 @@ $ sqlplus rman/rman123@rman12
 
 -->
 
-
 // Проверка подключения
 
     $ rman catalog rman/rman123@rman12 target /
     RMAN> register database;
-
 
 <br/>
 
@@ -151,7 +142,6 @@ $ sqlplus rman/rman123@rman12
 
 <br/>
 
-
     SQL> select * from rc_database;
 
         DB_KEY  DBINC_KEY	    DBID NAME	  RESETLOGS_CHANGE# RESETLOGS_TIME
@@ -160,17 +150,13 @@ $ sqlplus rman/rman123@rman12
     -------------
     	 1	    2 3487575625 ORCL12 	    1594143 16/08/2015 21:29:45
 
-
-
-
  <br/>
 
- Можно сделать экспорт схемы на сервере с каталогом.
+Можно сделать экспорт схемы на сервере с каталогом.
 
 ### на piter
 
      $ expdb system/manager DIRECTORY=DATA_PUMP_DIR SCHEMAS=RMAN DUMPFILE=rman_dump.dmp LOGFILE=rman_log.log
-
 
 ### на moscow
 
@@ -198,7 +184,6 @@ $ sqlplus rman/rman123@rman12
     File Size(MB) Tablespace           Maxsize(MB) Tempfile Name
     ---- -------- -------------------- ----------- --------------------
     1    197      TEMP                 32767       +DATA/ORCL12/TEMPFILE/temp.265.887923853
-
 
 <br/>
 

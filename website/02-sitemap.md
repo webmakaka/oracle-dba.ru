@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Карта Сайта
+description: Карта Сайта
+keywords: Карта Сайта, sitemap
 permalink: /sitemap/
 ---
 
@@ -30,7 +32,7 @@ permalink: /sitemap/
 
 <div align="center">
 
-    <a href="/docs/business-intelligence/"><img src="/img/oracle-bi.png" border="0" alt="Oracle Business Intelligence  Logo"></a>
+    <a href="/business-intelligence/"><img src="/img/oracle-bi.png" border="0" alt="Oracle Business Intelligence  Logo"></a>
 
 </div>
 

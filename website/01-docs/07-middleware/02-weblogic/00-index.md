@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Oracle Weblogic Server (WLS)
+description: Oracle Weblogic Server (WLS)
+keywords: Oracle Weblogic Server, WLS
 permalink: /middleware/weblogic/
 ---
 

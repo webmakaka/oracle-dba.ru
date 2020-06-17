@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper
+title: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper
+description: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Настройка правил монтирования SCSI дисков на узлах кластера с помощью Device Mapper
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, (ISCSI + ASM)
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/setup-mounting-rules-by-device-mapper/
 ---
 

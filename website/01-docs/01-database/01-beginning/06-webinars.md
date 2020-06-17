@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Записи вебинаров по Oracle
+description: Записи вебинаров по Oracle
+keywords: Oracle DataBase, Записи вебинаров
 permalink: /database/beginning/webinars/
 ---
 
-### Записи вебинаров по Oracle:
-
+# Записи вебинаров по Oracle
 
 <div style="padding:10px; border:thin solid black;">
 
@@ -37,13 +38,10 @@ permalink: /database/beginning/webinars/
 
 </div>
 
-
-
 <br/><br/>
+
 <hr>
 <br/><br/>
-
-
 
 <div style="padding:10px; border:thin solid black;">
 
@@ -61,13 +59,10 @@ permalink: /database/beginning/webinars/
 
 </div>
 
-
-
 <br/><br/>
+
 <hr>
 <br/><br/>
-
-
 
 <div style="padding:10px; border:thin solid black;">
 
@@ -85,12 +80,10 @@ permalink: /database/beginning/webinars/
 
 </div>
 
-
-
 <br/><br/>
+
 <hr>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
     <h3>Учимся администрировать Oracle 11g: служба EM Database Control  </h3>
@@ -108,10 +101,11 @@ permalink: /database/beginning/webinars/
 
 
     <br/><br/>
+
 </div>
 
-
 <br/><br/>
+
 <hr/>
 <br/><br/>
 
@@ -138,9 +132,9 @@ permalink: /database/beginning/webinars/
 </div>
 
 <br/><br/>
+
 <hr/>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
     <h3>Бесплатный вебинар "Высокопроизводительный Oracle 11g: оптимизация SQL-запросов"</h3>
@@ -180,8 +174,8 @@ permalink: /database/beginning/webinars/
 
 </div>
 
-
 <br/><br/>
+
 <hr/>
 <br/><br/>
 

@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Практический обучающий курс для партнеров Oracle по серверу приложений Weblogic
+description: Практический обучающий курс для партнеров Oracle по серверу приложений Weblogic
+keywords: Oracle Weblogic Server, WLS, Обучающий курс
 permalink: /middleware/weblogic/weblogic-seminar/
 ---
 
-
 # Практический обучающий курс для партнеров Oracle по серверу приложений Weblogic
 
-
 <br/>
-
 
 ### Презентации:
 
@@ -32,7 +31,6 @@ permalink: /middleware/weblogic/weblogic-seminar/
 
 <strong><a href="https://img.oracledba.net/files/docs/02-oracle-application-server/weblogic/03-seminar/Presentations/09-WLS11gR1 Labs - High Availability.pdf">9) WebLogic High Availability InfrastructureWebLogic Server 11gR1 Labs</a></strong><br/>
 
-
 <br/>
 <h3>Лабораторные:</h3>
 
@@ -45,7 +43,6 @@ permalink: /middleware/weblogic/weblogic-seminar/
 <strong><a href="https://img.oracledba.net/files/docs/02-oracle-application-server/weblogic/03-seminar/Lab_Guides/WLS_11gR1 Diagnostics Lab.pdf">4) WebLogic Server 11gR1 Diagnostics Lab</a></strong><br/>
 
 <strong><a href="https://img.oracledba.net/files/docs/02-oracle-application-server/weblogic/03-seminar/Lab_Guides/WLS_11gR1 Cluster Lab.pdf">5) WebLogic Server 11gR1 Clustering Labs</a></strong><br/>
-
 
 <br/>
 <h3>Файлы с программами для лабораторыных:</h3>

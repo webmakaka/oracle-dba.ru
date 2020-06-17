@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Дистрибутивы
+description: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Дистрибутивы
+keywords: Oracle DataBase, Installation, Windows 2008, Дистрибутивы
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/distrib/
 ---
 
@@ -8,7 +10,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам  с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
+Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
 
 Если контракта у вас нет, простой регистрации на сайте Oracle будет недостаточно, чтобы скачать последние версии даже для изучения.
 
@@ -18,7 +20,6 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <strong>VirtualBox:</strong><br/>
 http://www.virtualbox.org/wiki/Downloads
-
 
 <br/><br/>
 
@@ -34,7 +35,6 @@ hxxp://rutracker.org/forum/viewtopic.php?p=60527998#60527998
 Для инсталляции достаточно:<br/>
 linuxamd64_12c_database_1of2.zip<br/>
 linuxamd64_12c_database_2of2.zip
-
 
 <br/><br/>
 

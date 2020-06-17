@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Табличные пространства Oracle
+description: Табличные пространства Oracle
+keywords: Oracle Database, Tablespaces
 permalink: /docs/architecture/tablespaces/about-tablespaces/
 ---
 
-<h2>Табличные пространства Oracle</h2><br/>
+# Табличные пространства Oracle
+
+<br/>
 
 <table class="FormalWide" title="Tablespace Names Used with Oracle Real Application Clusters Databases" summary="This table is described in the preceding text" dir="ltr" frame="border" rules="all" width="100%" cellpadding="3" cellspacing="0" border="1">
 <colgroup><col width="24%">
@@ -99,7 +103,7 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 
 Каждая база данных Oracle содержит набор таблиц, доступных только для чтения и известных как словарь данных (data dictionary), который содержит метаданные (информацию о различных компонентах базы данных). Словарь данных Oracle – сердце системы управления базой данных.
 
-Словарь данных создается при создании экземпляра базы данных выполнением инструкций в файле $ORACLE_HOME/rdbms/admin/catalog.sql
+Словарь данных создается при создании экземпляра базы данных выполнением инструкций в файле \$ORACLE_HOME/rdbms/admin/catalog.sql
 
 Oracle не позволяет обращаться к таблицам словаря данных напрямую. Он создает представления на базе этих таблиц и общедоступные синонины для тих представлений, к которым могут обращаться пользователи. Существует три набора представлений словаря данных: USER, ALL и DBA – каждый из которых содержит сходный набор представлений со сходным набором столбцов.
 

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Простая транзакция базы данных Oracle
+description: Простая транзакция базы данных Oracle
+keywords: Oracle Database, Транзакция
 permalink: /docs/architecture/transactions/simple-transaction/
 ---
 

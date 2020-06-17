@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Переименование instance в Oracle 11 в linux
+description: Переименование instance в Oracle 11 в linux
+keywords: Oracle Database, Переименование instance
 permalink: /database/tricks/rename-oracle-instance/
 ---
 
+# Переименование instance в Oracle 11 в linux
 
-## Переименую базу в primary (исключительно для удобства) на сервере.
-
+**Переименую базу в primary (исключительно для удобства) на сервере**
 
 1)
 
@@ -67,8 +69,6 @@ permalink: /database/tricks/rename-oracle-instance/
     [oracle11@oracle11 ~]$ cd /u01/app/oracle/product/11.2/dbs/
     [oracle11@oracle11 dbs]$ orapwd file=orapwprimary password=master entries=1
 
-
-
 <br/>
 
     vi /u01/app/oracle/product/11.2/dbs/initprimary.ora
@@ -77,7 +77,6 @@ permalink: /database/tricks/rename-oracle-instance/
 
     *.db_name='primary'
 
-
 <br/>
 
     $ vi ~/.bash_profile
@@ -85,11 +84,9 @@ permalink: /database/tricks/rename-oracle-instance/
     ORACLE_SID=primary
     ORACLE_UNQNAME=primary
 
-
 <br/>
 
     $ source ~/.bash_profile
-
 
 <br/>
 
@@ -112,7 +109,6 @@ permalink: /database/tricks/rename-oracle-instance/
 
     SQL> shutdown immediate;
     SQL> startup;
-
 
 Необходимо, чтобы сервер был стартован из spfile
 

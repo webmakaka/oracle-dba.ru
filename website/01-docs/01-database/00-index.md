@@ -1,17 +1,16 @@
 ---
 layout: page
 title: Oracle DataBase
+description: Oracle DataBase
+keywords: Oracle Database
 permalink: /database/
 ---
 
-
 # Oracle DataBase
-
 
 <br/>
 
 ### Основы, архитектура
-
 
 <ul>
     <li><a href="/database/basics/"><strong>Основы, архитектура</strong></a></li>
@@ -25,7 +24,6 @@ permalink: /database/
     <li><a href="/database/adm/"><strong>Администрирование (Инсталляция, Backup, Upgrade, Сеть)</strong></a></li>
 </ul>
 
-
 <br/>
 
 ### Что-то новенькое, связанное с DataBase (по крайней мере для меня):
@@ -33,7 +31,6 @@ permalink: /database/
 <ul>
     <li><a href="//files.oracledba.net/docs/ru/multitenant/multitenant-wp-t-2995359-ru.pdf"><strong>Архитектура Oracle Multitenant</strong></a></li>
 </ul>
-
 
 <br/>
 
@@ -45,11 +42,9 @@ permalink: /database/
     </li>
 </ul>
 
-
 <br/>
 
 ### Разное:
-
 
 <ul>
     <li>
@@ -63,20 +58,17 @@ permalink: /database/
     </li>
 </ul>
 
-
 <br/>
 
 ### Некоторые запросы к базе данных Oracle:
 
 <ul>
     <li><a href="/docs/architecture/queries/query/">Некоторые запросы к базе данных Oracle</a></li>
-</ul>    
-    
+</ul>
 
 <br/>
 
 ### Tricks:
-
 
 <ul>
     <li>
@@ -89,8 +81,6 @@ permalink: /database/
         <a href="http://docs.oracle.com/cd/B28359_01/backup.111/b28270/rcmdupdb.htm#BRADV168">Duplicating a Database 11G</a>
     </li>
 </ul>
-
-
 
 <br/>
 

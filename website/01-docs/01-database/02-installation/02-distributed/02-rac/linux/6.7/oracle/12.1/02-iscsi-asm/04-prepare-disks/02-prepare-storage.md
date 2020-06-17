@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Подготовка сервера storage
+title: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Подготовка сервера storage
+description: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Подготовка сервера storage
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, (ISCSI + ASM)
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/prepare-storage/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Официальная документация
+title: Инсталляция Oracle DataBase 12.2 в Oracle Linux 7.4 - Официальная документация
 description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Официальная документация
 keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Официальная документация
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/docs/
@@ -10,7 +10,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/d
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
+    <h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 

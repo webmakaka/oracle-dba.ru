@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
+title: Инсталляция Oracle DataBase 11.2.0.3.2 в Oracle Linux 6.3 - Создание службы удаленного подключения к серверу (Listener)
+description: Инсталляция Oracle DataBase 11.2.0.3.2 в операционной системе Oracle Linux 6.3 - Создание службы удаленного подключения к серверу (Listener)
+keywords: Oracle DataBase 11.2, Oracle Linux 6.3, Listener
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-listener-creation/
 ---
 
 # <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Создание службы удаленного подключения к серверу (Listener)
 
-
-	$ netca
-
+    $ netca
 
 <br/><br/>
 
@@ -21,15 +21,12 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 <img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_listener_creation_07.PNG" border="0" alt="Создание службы удаленного подключения к серверу (Listener)"><br/><br/>
 <img src="https://img.oracledba.net/img/oracle/database/simple/11.2/oracle11_database_listener_creation_08.PNG" border="0" alt="Создание службы удаленного подключения к серверу (Listener)"><br/><br/>
 
-
-
 <br/><br/>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+    <h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 

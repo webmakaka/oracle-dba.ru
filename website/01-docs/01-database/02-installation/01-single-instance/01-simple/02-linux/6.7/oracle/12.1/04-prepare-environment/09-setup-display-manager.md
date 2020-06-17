@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Настройка Display Manger
+title: Инсталляция Oracle DataBase 12c в Oracle Linux 6.7 - Настройка Display Manger
+description: Инсталляция Oracle DataBase 12c в операционной системе Oracle Linux 6.7 - Настройка Display Manger
+keywords: Oracle DataBase 12c, Oracle Linux 6.7, Display Manger
 permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/setup-display-manager/
 ---
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Настройка Display Manger
 
-
-
 ### Подготовка и проверка
 
-192.168.1.5 -  ip адрес компьютера, с которого происходит процесс управления установкой.<br/>
+192.168.1.5 - ip адрес компьютера, с которого происходит процесс управления установкой.<br/>
 192.168.1.11 - ip адрес сервера<br/>
 
 <br/>
@@ -32,19 +32,15 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
     <img src="https://img.oracledba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
 </div>
 
-
 <br/>
-
 
 <br/>
 
 ## Если установка происходит с Linux машины
 
-
 ### На клиенте:
 
-	$ sudo apt-get install -y gdm
-
+    $ sudo apt-get install -y gdm
 
 <br/>
 
@@ -55,7 +51,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 <br/>
 <br/>
 
-Думаю, лучше выбрать lightdm  (gdm в последний раз у меня не захотел рабоать). Точнее, я настроил gdm также как описано здесь, далее копался хрен знает сколько времени и потом решил попробоваь lightdm. После перезагрузки service стал слушать порт 6000).
+Думаю, лучше выбрать lightdm (gdm в последний раз у меня не захотел рабоать). Точнее, я настроил gdm также как описано здесь, далее копался хрен знает сколько времени и потом решил попробоваь lightdm. После перезагрузки service стал слушать порт 6000).
 
 <br/>
 
@@ -66,30 +62,28 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
     # dpkg-reconfigure gdm
     # dpkg-reconfigure lightdm
 
-
 <br/>
 
 ### Если выбран lightgdm
 
-
-	# vi /etc/lightdm/lightdm.conf
+    # vi /etc/lightdm/lightdm.conf
 
 <br/>
 
-	###########################
+    ###########################
 
-	[SeatDefaults]
-	user-session=ubuntu
-	greeter-session=unity-greeter
-	xserver-allow-tcp=true
+    [SeatDefaults]
+    user-session=ubuntu
+    greeter-session=unity-greeter
+    xserver-allow-tcp=true
 
-	###########################
+    ###########################
 
 <br/>
 
 ### Если выбран gdm
 
-	# vi /etc/gdm/custom.conf
+    # vi /etc/gdm/custom.conf
 
 <br/>
 
@@ -115,10 +109,6 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 	[debug]
 	########################### -->
 
-
-
-
-
 <!--
 <br/>
 
@@ -136,11 +126,9 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 Если не поможет, то: -->
 
-
 <br/>
 
     # sudo restart lightdm
-
 
 или
 
@@ -153,46 +141,41 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
     $ ps ax | grep dm
     $ ps lf -C Xorg
 
-
 Должна быть строчка "listen tcp"
 
 <br/>
 
-	$ sudo apt-get install -y nmap nc
+    $ sudo apt-get install -y nmap nc
 
 <br/>
 
-	$ netstat -an | grep -F 6000
+    $ netstat -an | grep -F 6000
 
 <br/>
 
-	tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN
-	tcp6       0      0 :::6000                 :::*                    LISTEN
-
-
-<br/>
-
-	# nmap -p 6000 192.168.1.5
+    tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN
+    tcp6       0      0 :::6000                 :::*                    LISTEN
 
 <br/>
 
-	Starting Nmap 5.21 ( http://nmap.org ) at 2013-08-18 04:13 MSK
-	Nmap scan report for 192.168.1.5
-	Host is up (0.000044s latency).
-	PORT     STATE SERVICE
-	6000/tcp open  X11
-
+    # nmap -p 6000 192.168.1.5
 
 <br/>
 
-	$ nc -vv 192.168.1.5 6000
-	Connection to 192.168.1.200 6000 port [tcp/x11] succeeded!=
-
+    Starting Nmap 5.21 ( http://nmap.org ) at 2013-08-18 04:13 MSK
+    Nmap scan report for 192.168.1.5
+    Host is up (0.000044s latency).
+    PORT     STATE SERVICE
+    6000/tcp open  X11
 
 <br/>
 
-	$ xhost +192.168.1.11
+    $ nc -vv 192.168.1.5 6000
+    Connection to 192.168.1.200 6000 port [tcp/x11] succeeded!=
 
+<br/>
+
+    $ xhost +192.168.1.11
 
 <br/>
 
@@ -202,28 +185,27 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/>
 
-
 -- если не установили ранее, установите пакет xdpyinfo. Он нужен для отображения окон на клиентской машине.
 
 <br/>
 
-	# yum install -y xdpyinfo
+    # yum install -y xdpyinfo
 
 <br/>
 
-	# yum install -y xclock
+    # yum install -y xclock
 
 <br/>
 
-	$ export DISPLAY=192.168.1.5:0.0
+    $ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 
-	$ xclock
+    $ xclock
 
 -- можно даже проще, просто выполните команду:
 
-	$ xclock -display 192.168.1.5:0
+    $ xclock -display 192.168.1.5:0
 
 <br/><br/>
 

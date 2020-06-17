@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 Дистрибутивы и дополнительное ПО
+title: Инсталляция Oracle DataBase 11.2.0.3.2 в Oracle Linux 6.3 - Дистрибутивы и дополнительное ПО
+description: Инсталляция Oracle DataBase 11.2.0.3.2 в операционной системе Oracle Linux 6.3 - Дистрибутивы и дополнительное ПО
+keywords: Oracle DataBase 11.2, Oracle Linux 6.3, Дистрибутивы и дополнительное ПО
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2//distrib/
 ---
 
-
 # <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Дистрибутивы и дополнительное ПО
 
-Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам  с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
-
+Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
 
 Если контракта у вас нет, простой регистрации на сайте Oracle будет недостаточно, чтобы скачать последние версии даже для изучения.
 
@@ -16,30 +16,20 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2//
 
 <br/><br/>
 
-
 <strong>VirtualBox:</strong><br/>
 hxxp://www.virtualbox.org/wiki/Downloads
-
-
 
 <strong>Дистрибутивы операционной системы Oracle Linux Server 6 Update 3 (x86_x64):</strong><br/>
 hxxp://rutracker.org/forum/viewtopic.php?t=4112274
 
-
-
-
 <strong>upd: Oracle Linux Server 6 Update 4 (x86_x64):</strong><br/>
 hxxp://rutracker.org/forum/viewtopic.php?t=4407896
-
-
 
 <strong>Дистрибутивы базы данных Oracle (11.2.0.3) Linux x64:</strong><br/>
 hxxp://rutracker.org/forum/viewtopic.php?t=3749965
 
-
 <strong>upd: Oracle (11.2.0.4) Linux x64:</strong><br/>
 hxxp://rutracker.org/forum/viewtopic.php?t=4522137
-
 
 <br/><br/>
 
@@ -73,33 +63,24 @@ p10098816_112020_Linux-x86-64_7of7.zip
 <strong>Putty:</strong><br/>
 http://www.putty.org/
 
-
 <strong>winscp:</strong><br/>
 http://winscp.net/eng/download.php
-
-
 
 <strong>XMing</strong> (необходимо установить XMing, дополнительные шрифты и рекомендую перезагрузить компьютер):<br/>
 http://sourceforge.net/projects/xming/<br/>
 http://sourceforge.net/projects/xming/files/Xming-fonts/
 
-
 Далее, необходимо настроить правила доступа.<br/>
 В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)
 
-
 <img src="https://img.oracledba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
 
-
-
-
 <br/><br/>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+    <h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 

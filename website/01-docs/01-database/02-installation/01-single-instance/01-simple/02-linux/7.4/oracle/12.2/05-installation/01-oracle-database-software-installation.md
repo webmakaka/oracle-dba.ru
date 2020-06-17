@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция СУБД Oracle (DataBase SoftWare)
+title: Инсталляция Oracle DataBase 12.2 в Oracle Linux 7.4 - Инсталляция СУБД Oracle (DataBase SoftWare)
 description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция СУБД Oracle (DataBase SoftWare)
 keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Инсталляция DataBase SoftWare
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-database-software-installation/
@@ -10,7 +10,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
+    <h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 
@@ -20,51 +20,42 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Инсталляция СУБД Oracle (DataBase SoftWare)
 
-
 <br/>
 
 ### Проверка конфигурации перед инсталляцией:
 
-
 Если переменная DISPLAY не задана.
 
-	$ export DISPLAY=192.168.1.5:0.0
+    $ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 
-	$ cd /distrib/oracle/12.2/database/
+    $ cd /distrib/oracle/12.2/database/
 
 <br/>
 
-	$ ./runInstaller -executeSysPrereqs
-
+    $ ./runInstaller -executeSysPrereqs
 
 <br/>
 
-	Starting Oracle Universal Installer...
+    Starting Oracle Universal Installer...
 
-	Checking Temp space: must be greater than 500 MB.   Actual 26663 MB    Passed
-	Checking swap space: must be greater than 150 MB.   Actual 3967 MB    Passed
-	Checking monitor: must be configured to display at least 256 colors.    Actual 16777216    Passed
-	Exiting Oracle Universal Installer, log for this session can be found at /tmp/OraInstall2015-09-15_09-20-12PM/installActions2015-09-15_09-20-12PM.log
-
-
+    Checking Temp space: must be greater than 500 MB.   Actual 26663 MB    Passed
+    Checking swap space: must be greater than 150 MB.   Actual 3967 MB    Passed
+    Checking monitor: must be configured to display at least 256 colors.    Actual 16777216    Passed
+    Exiting Oracle Universal Installer, log for this session can be found at /tmp/OraInstall2015-09-15_09-20-12PM/installActions2015-09-15_09-20-12PM.log
 
 <br/>
 
 ### Запуск программы инсталляции базы данных:
 
-
 <br/>
 
-	$ ./runInstaller
-
+    $ ./runInstaller
 
 В некоторых случаях приходится запускать инсталляцию с игнорированием системных сообщений
 
-
-	$ ./runInstaller -ignoreSysPrereqs
-
+    $ ./runInstaller -ignoreSysPrereqs
 
 <br/><br/>
 Если все нормально, появится картинка:
@@ -93,7 +84,6 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_11.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-
 <br/><br/>
 
 После появления следующего окна, необходимо выполнить под учетной записью root следующие скрипты. Рекомендуется подключиться к серверу баз данных еще одной сессией и выполнить команды в ней.
@@ -102,12 +92,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/02-database-software-installation/database-software-installation_12.png" border="0" alt="Oracle DataBase 12.2 SoftWare installation"><br/><br/>
 
-
-
     # /u01/oraInventory/orainstRoot.sh
     # /u01/oracle/database/12.2/root.sh
-
-
 
 <br/><br/>
 

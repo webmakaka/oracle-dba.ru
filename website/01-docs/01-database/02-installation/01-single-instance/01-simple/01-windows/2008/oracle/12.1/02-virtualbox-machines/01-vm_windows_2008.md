@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server
+description: Создание виртуальной машины VirtualBox для инсталляции базы данных Oracle в Windows 2008 Server
+keywords: Oracle DataBase, Installation, Windows 2008, VirtualBox
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/virtualbox-machines/windows/2008/
 ---
 
@@ -11,31 +13,25 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 О том как инсталлировал virtualbox, переменные и каталоги, смотри  
 <a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
 
-
 Задаем переменную с именем создаваемой виртуальной машины, чтобы в дальнейшем лишний раз не подставлять данное значение в команды.
 
     # su - vmadm
     $ vm=vm_win2k8_oradb12.1
     $ echo $vm
 
-
 Создаем каталоги для виртуальной машины и для snapshots
 
-	$ mkdir -p ${VM_HOME}/${vm}/snapshots
+    $ mkdir -p ${VM_HOME}/${vm}/snapshots
 
 <br/>
 
 ### Создание и регистрация виртуальной машины:
 
-
 Узнать список поддерживаемых операционных систем
 
-
-	$ VBoxManage list ostypes
-
+    $ VBoxManage list ostypes
 
 Для виртуальной машины Windows 2k8
-
 
     $ VBoxManage createvm \
     --name ${vm} \
@@ -43,31 +39,27 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
     --basefolder ${VM_HOME}/${vm} \
     --register
 
-
 Выбираю материнскую плату с более современным чипсетом . По умолчанию piix3
 
-	$ VBoxManage modifyvm ${vm}  --chipset piix3
+    $ VBoxManage modifyvm ${vm}  --chipset piix3
 
 Устанавливаю процессоры.
 
-	$ VBoxManage modifyvm ${vm}  --cpus 2
+    $ VBoxManage modifyvm ${vm}  --cpus 2
 
 Устанавливаем планку оперативной памяти
 
-	$ VBoxManage modifyvm ${vm} --memory 4096
-
+    $ VBoxManage modifyvm ${vm} --memory 4096
 
 Подключаем видеокарту на 32 MB
 
-	$ VBoxManage modifyvm ${vm} --vram 32
+    $ VBoxManage modifyvm ${vm} --vram 32
 
 Снимаем sound карту, вытаскиваем дисковвод
 
-	$ VBoxManage modifyvm ${vm} --floppy disabled --audio none
-
+    $ VBoxManage modifyvm ${vm} --floppy disabled --audio none
 
 Подключаю контроллер жестких дисков (SATA). (С подключенным контроллером SAS, Windows не видит жесткие диски)
-
 
     $ VBoxManage storagectl ${vm} \
     --add sata \
@@ -75,17 +67,15 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Создаю виртуальные жесткие диски. Размер (size), рекомендуется задавать согласно имеющихся ресурсов. Иначе возможны проблемы и крах виртуальной машины):
 
-	$ cd ${VM_HOME}/${vm}/${vm}
-
+    $ cd ${VM_HOME}/${vm}/${vm}
 
 Если не хочется копипастить 8 раз одно и тоже, можно воспользоваться всего одной командой:
 
 Создать диски 1 командой:
 
-    $ for i in $(seq 1 8 )  
+    $ for i in $(seq 1 8 )
     do VBoxManage createhd --filename ${vm}_dsk_dsk$i.vdi --size 40960 --format VDI --variant Standard
     done
-
 
 Подключить диски 1 командой:
 
@@ -93,13 +83,11 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
     do VBoxManage storageattach ${vm} --storagectl "SATA Controller" --device 0 --port $i --type hdd --medium ${vm}_dsk_dsk$i.vdi
     done
 
-
 Подключаем IDE контроллер к которому будет позднее подключен DVD-ROM:
 
     $ VBoxManage storagectl ${vm} \
     --add ide \
     --name "IDE Controller"
-
 
 Подключаю к IDE контроллеру DVD образ инсталлируемой операционной системы:
 
@@ -114,7 +102,6 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 (Мой компьютер подключен к маршрутизатору (обычный домашний роутер). Обмен данных между моим компьютером и виртуальной машиной будет проходить через него. Если вы не используете маршрутизатор или коммутатор, вам нужно создать сетевые интерфейсы с параметром не bridget а internal connection.)
 
-
 Наберите команду;
 
     $ VBoxManage list bridgedifs
@@ -123,18 +110,14 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
     Name:            eth0
 
-
 Я использую eth0 как основной физический интерфейс, который будут использовать виртуальные машины в качестве моста.
 
-
 Подключаю к виртуальной машине 2 виртуальных сетевых интерфеса “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridget:
-
 
     $ VBoxManage modifyvm ${vm} \
     --nictype1 82540EM \
     --nic1 bridged \
     --bridgeadapter1 eth0
-
 
 Подключаем к IDE контроллеру DVD образ инсталлируемой операционной системы:
 
@@ -143,17 +126,13 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
     --nic2 bridged \
     --bridgeadapter2 eth0
 
-
 Определяем порядок устройств, с которых будет произведена попытка стартовать систему
-
 
     $ VBoxManage modifyvm ${vm} \
     --boot1 disk \
     --boot2 dvd
 
-
 Определяем каталог для снапшотов
-
 
     $ VBoxManage modifyvm ${vm} \
     --snapshotfolder ${VM_HOME}/${vm}/snapshots
@@ -162,7 +141,6 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Предоставим возможность подключения к машине по RDP:
 
-
     $ VBoxManage modifyvm ${vm} \
     --vrde on \
     --vrdemulticon on \
@@ -170,28 +148,22 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
     --vrdeaddress 192.168.1.5 \
     --vrdeport 3389
 
-
 Здесь мы указываем:
-
 
 --vrdeaddress - ip адрес машины, на которой установлен vitrualbox.  
 --vrdeauthtype null - аутентификация не требуется.  
 --vrdemulticon on - разрешено множественное подключение к виртуальным машинам.  
---vrdeport порт к которому можно будет подключиться при старте виртуальной машины.  
-
+--vrdeport порт к которому можно будет подключиться при старте виртуальной машины.
 
 Показать результат созданнойвиртуальной машины:
 
     $ VBoxManage showvminfo ${vm}  | less
 
-
 Создание снапшота перед инсталляцией ОС
 
     $ VBoxManage snapshot ${vm} take before_os_installation
 
-
 ## ВИРТУАЛЬНАЯ МАШИНА ГОТОВА ДЛЯ ИНСТАЛЛЯЦИИ ОПЕРАЦИОННОЙ СИСТЕМЫ
-
 
 Стартуем виртуальную машину с возможность подключения по RDP
 
@@ -199,11 +171,9 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Посмотреть стартованные виртуальные машины можно командой
 
-$ vboxmanage list runningvms
-
+\$ vboxmanage list runningvms
 
 Если работаете в linux, подключиться к виртуальной машине можно с помощью rdesktop
-
 
     $ rdesktop \
     -r sound:local \
@@ -211,26 +181,20 @@ $ vboxmanage list runningvms
     -g  1600x1024 \
     192.168.1.5:3389
 
-
 Если нужно подключиться с определенной “геометрией”, используйте параметр  
--g  1600x1024
-
+-g 1600x1024
 
 Если нужно работать в полноэкранном режиме, нужно убрать ключ -g и заменить его ключом -f
 
 Для выхода из полноэкранного режима - CTRL+ALT+ENTER
 
-
 rdesktop - всевозможные ключи:<br/>
 http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 
-
 В Windows для этого вполне подойдет Remote Desktop Connecton (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
-
 
 Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
 <a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
-
 
 Для нормальной работы в Windows также нужно будет установить VirtualBox Guest Additions  
 http://download.virtualbox.org/virtualbox/4.3.30/

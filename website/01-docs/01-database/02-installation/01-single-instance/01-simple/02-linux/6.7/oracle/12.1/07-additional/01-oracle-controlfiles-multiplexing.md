@@ -1,97 +1,84 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux -  Мультиплексирование controlfiles
+title: Инсталляция Oracle DataBase 12c в Oracle Linux 6.7 - Мультиплексирование controlfiles
+description: Инсталляция Oracle DataBase 12c в операционной системе Oracle Linux 6.7 - Мультиплексирование controlfiles
+keywords: Oracle DataBase 12c, Oracle Linux 6.7, Мультиплексирование controlfiles
 permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/oracle-controlfiles-multiplexing/
 ---
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Мультиплексирование controlfiles
 
-
-
-	$ mkdir -p /u02/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE
-	$ mkdir -p /u03/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE
-
-
+    $ mkdir -p /u02/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE
+    $ mkdir -p /u03/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE
 
 <br/>
 
-	$ sqlplus / as sysdba
-
-
+    $ sqlplus / as sysdba
 
 <br/>
 
-	SQL> select name from v$CONTROLFILE;
+    SQL> select name from v$CONTROLFILE;
 
 <br/>
 
-	NAME
-	--------------------------------------------------------------------------------
-	/u02/oracle/oradata/12.1/orcl12/control01.ctl
-	/u02/oracle/oradata/12.1/orcl12/control02.ctl
-
-
-<br/>
-
-
-	SQL> shutdown immediate;
-
-
+    NAME
+    --------------------------------------------------------------------------------
+    /u02/oracle/oradata/12.1/orcl12/control01.ctl
+    /u02/oracle/oradata/12.1/orcl12/control02.ctl
 
 <br/>
 
-	SQL> quit
+    SQL> shutdown immediate;
 
 <br/>
 
-
-	$ cp /u02/oracle/oradata/12.1/${ORACLE_SID}/control01.ctl /u02/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE/control01.ctl
-
-	$ cp /u02/oracle/oradata/12.1/${ORACLE_SID}/control01.ctl /u02/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE/control02.ctl
-
-	$ cp /u02/oracle/oradata/12.1/${ORACLE_SID}/control01.ctl /u03/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE/control03.ctl
-
+    SQL> quit
 
 <br/>
 
-	$ sqlplus / as sysdba
+    $ cp /u02/oracle/oradata/12.1/${ORACLE_SID}/control01.ctl /u02/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE/control01.ctl
+
+    $ cp /u02/oracle/oradata/12.1/${ORACLE_SID}/control01.ctl /u02/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE/control02.ctl
+
+    $ cp /u02/oracle/oradata/12.1/${ORACLE_SID}/control01.ctl /u03/oracle/oradata/12.1/${ORACLE_SID}/CONTROLFILE/control03.ctl
 
 <br/>
 
-	SQL> startup nomount;
+    $ sqlplus / as sysdba
 
 <br/>
 
-	SQL> ALTER SYSTEM SET control_files = '/u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control01.ctl', '/u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control02.ctl', '/u03/oracle/oradata/12.1/orcl12/CONTROLFILE/control03.ctl' scope=spfile;
-
-
-<br/>
-
-	SQL> shutdown immediate;
+    SQL> startup nomount;
 
 <br/>
 
-	SQL> startup;
+    SQL> ALTER SYSTEM SET control_files = '/u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control01.ctl', '/u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control02.ctl', '/u03/oracle/oradata/12.1/orcl12/CONTROLFILE/control03.ctl' scope=spfile;
 
 <br/>
 
-	SQL> SELECT name FROM v$CONTROLFILE;
+    SQL> shutdown immediate;
 
 <br/>
 
-	NAME
-	--------------------------------------------------------------------------------
-	/u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control01.ctl
-	/u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control02.ctl
-	/u03/oracle/oradata/12.1/orcl12/CONTROLFILE/control03.ctl
-
+    SQL> startup;
 
 <br/>
 
-	SQL> quit
+    SQL> SELECT name FROM v$CONTROLFILE;
 
+<br/>
+
+    NAME
+    --------------------------------------------------------------------------------
+    /u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control01.ctl
+    /u02/oracle/oradata/12.1/orcl12/CONTROLFILE/control02.ctl
+    /u03/oracle/oradata/12.1/orcl12/CONTROLFILE/control03.ctl
+
+<br/>
+
+    SQL> quit
 
 Удаляем старые controlfile
 
-	$ rm /u02/oracle/oradata/12.1/orcl12/control01.ctl
-	$ rm /u02/oracle/oradata/12.1/orcl12/control02.ctl
+    $ rm /u02/oracle/oradata/12.1/orcl12/control01.ctl
+    $ rm /u02/oracle/oradata/12.1/orcl12/control02.ctl

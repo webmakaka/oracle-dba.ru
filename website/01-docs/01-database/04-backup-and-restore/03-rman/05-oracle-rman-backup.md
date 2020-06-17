@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Создание резервных копий с помощью утилиты RMAN (Recovery Manager)
+description: Создание резервных копий с помощью утилиты RMAN (Recovery Manager)
+keywords: Oracle Database, RMAN, создание резервных копий
 permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 ---
 
 # Создание резервных копий с помощью утилиты RMAN (Recovery Manager)
-
 
 ### Бекапы могут храниться в backup set (по умолчанию) и image copies:
 
@@ -14,13 +15,11 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 <li>image copies - отличаются от копий, создаваемых, например с помощью команды cp, лишь тем, что информация о них заносится в управляющий файл или каталог восстановления.</li>
 </ul>
 
-
 Команда:<br/>
 
     RMAN> BACKUP AS BACKUPSET DATABASE;
 
 Создаст резернвую копию как backup set
-
 
 Команда:<br/>
 
@@ -36,40 +35,32 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 
 Предоставит информацию о имеющихся backup set
 
-
 Команда:
 
     RMAN> LIST COPY;
 
 Предоставит информацию о имеющихся image copies
 
-
-
 Показать полный список архивных журналов
 
     RMAN> list archivelog all;
-
 
 Можно сделать бекап отдельно datafile.
 
     RMAN> backup datafile 6;
 
-
 Номер можно посмотреть в
 
     RMAN> report schema;
-
 
 Можно сделать бекап отдельно tablespace.
 
     RMAN> backup tablespace USERS, TEMP;
 
-
 Можно также для экономии места делать архивировать бекапы
 
     RMAN> CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
     RMAN> BACKUP AS COMPRESSED BACKUPSET DATAFILE 1;
-
 
 <br/>
 <h3>Бекапы могут иметь статус:</h3>
@@ -79,10 +70,8 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 	<li>OBSOLETE (Устаревшие) - резервная копия считается устаревшей, если она уже больше не требуется для восстановления базы данных согласно используемой политике сохранности (retention policy).</li>
 </ul>
 
-
     RMAN> report obsolete;
     RMAN> list expired backup;
-
 
 <br/>
 <h3>Получить информацию о файлах, которые нуждаются в бекапе</h3>
@@ -107,28 +96,24 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 
 <br/>
 
-TAG "ARCHIVELOG_BACKUP" - определяет имя для создаваетого бекапа архивлогов как  "ARCHIVELOG_BACKUP".
+TAG "ARCHIVELOG_BACKUP" - определяет имя для создаваетого бекапа архивлогов как "ARCHIVELOG_BACKUP".
 <br/>
 
 С указанием временных интервалов
 
     RMAN> backup archivelog from time 'SYSDATE -1' DELETE ALL INPUT;
 
-
 // Затрудняюсь сказать, что значат парамерты в коце
 
     RMAN> backup as compressed backupset archivelog from time 'sysdate -2' not backed up 3 times;
-
 
 Если ввести команду:
 
     RMAN> LIST BACKUPSET TAG "ARCHIVELOG_BACKUP";
 
-
 Можно быстро найти бекап по имени.
 <br/>
 <br/>
-
 
     List of Backup Sets
     ===================
@@ -176,14 +161,11 @@ TAG "ARCHIVELOG_BACKUP" - определяет имя для создавает�
       1    246     8734000    15.04.2012 14:01:51 8771516    16.04.2012 10:10:40
       1    247     8771516    16.04.2012 10:10:40 8776238    16.04.2012 12:57:02
 
-
-
 <br/>
 
 ### Создать копию текущего CONTROLFILE
 
     RMAN> BACKUP CURRENT CONTROLFILE TAG "CONTROLFILE";
-
 
 <br/>
 
@@ -197,7 +179,6 @@ TAG "ARCHIVELOG_BACKUP" - определяет имя для создавает�
 
 Полный бекап (FULL BACKUP) - включает все файлы данных, управляющий файл (controlfile) и файл серверных параметров (spfile).
 
-
     RMAN> BACKUP FULL DATABASE TAG "FULL_DATABASE_BACKUP" PLUS ARCHIVELOG TAG "FULL_ARCHIVELOGS_BACKUP";
 
 <br/>
@@ -205,7 +186,6 @@ TAG "ARCHIVELOG_BACKUP" - определяет имя для создавает�
     RMAN> LIST BACKUP SUMMARY;
 
 <br/>
-
 
     List of Backups
     ===============
@@ -219,7 +199,6 @@ TAG "ARCHIVELOG_BACKUP" - определяет имя для создавает�
     205     B  F  A DISK        13.04.2012 18:41:28 1       1       YES        FULL_DATABASE_BACKUP
     206     B  F  A DISK        13.04.2012 18:41:35 1       1       YES        FULL_DATABASE_BACKUP
     207     B  A  A DISK        13.04.2012 18:41:37 1       1       YES        FULL_ARCHIVELOGS_BACKUP
-
 
 <br/><br/>
 
@@ -235,7 +214,6 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
     RMAN> LIST BACKUP SUMMARY;
 
 <br/>
-
 
     List of Backups
     ===============
@@ -339,18 +317,15 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
       SPFILE db_unique_name: ORA112
       Control File Included: Ckp SCN: 8639845      Ckp time: 13.04.2012 18:46:45
 
-
 <br/>
 
 ### Создание сразу нескольких копий:
 
     RMAN> BACKUP AS BACKUPSET COPIES 2 DATABASE FORMAT '/tmp/1/%U' , '/tmp/2/%U';
 
-
 <br/>
 
 ### Получить данные по результам выполнения команд резервного копирования:
-
 
     SQL> set pagesize 0;
     SQL> select start_time as "Data", status as "Result" from v$rman_backup_job_details order by 1 desc;

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Удаление объектов RMAN (Recovery Manager)
+description: Удаление объектов RMAN (Recovery Manager)
+keywords: Oracle Database, RMAN, Delete
 permalink: /database/backup-and-restore/rman/oracle-rman-delete/
 ---
 
-
 # Удаление объектов RMAN (Recovery Manager)
-
 
 // Удалить устаревшие бэкапы с подтверждением удаления
 
@@ -28,7 +28,6 @@ permalink: /database/backup-and-restore/rman/oracle-rman-delete/
 // Удалить backupset с определенным ID
 
     RMAN> delete backupset 20;
-
 
 // Удалить все архивные журналы.
 

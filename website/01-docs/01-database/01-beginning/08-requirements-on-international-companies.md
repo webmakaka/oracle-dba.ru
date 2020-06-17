@@ -1,15 +1,16 @@
 ---
 layout: page
 title: Требования к кандидатам на позицию Oracle DBA в иностранных компаниях
+description: Требования к кандидатам на позицию Oracle DBA в иностранных компаниях
+keywords: Oracle DataBase, Требования к кандидатам
 permalink: /database/beginning/requirements-on-international-companies/
 ---
 
-<h3>Требования к кандидатам на позицию Oracle DBA в иностранных компаниях:</h3>>
+# Требования к кандидатам на позицию Oracle DBA в иностранных компаниях
 
+<br/>
 
-
-<br/><br/><br/>
-<h2>Oracle DBA JOB: </h2>
+## Oracle DBA JOB
 
 <br/><br/>
 
@@ -17,7 +18,7 @@ permalink: /database/beginning/requirements-on-international-companies/
 
 02/22/13 9:46 AM
 
-Greetings Andrey,
+Greetings ****,
 
 My name is Jayanta and I'm an IT recruiter at Pyramid Consulting, Inc. Our records show that you are an experienced IT professional with experience relevant to one of my current contract openings.
 
@@ -99,9 +100,7 @@ www.pyramidci.com
 
 </pre>
 
-
 <br/><br/>
-
 
 <pre>
 

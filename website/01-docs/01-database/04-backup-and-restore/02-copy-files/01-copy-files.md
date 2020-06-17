@@ -1,19 +1,18 @@
 ---
 layout: page
 title: Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)
+description: Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)
+keywords: Oracle Database, Резервное копирование средствами операционной системы
 permalink: /database/backup-and-restore/copy/
 ---
 
-
-### Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)
-
+# Пример резервного копирования базы Oracle средствами операционной системы ( NOARCHIVELOG)
 
 **Никому не рекомендуется так делать!**
 
 Нужно поднять базу из скопированных файлов на каком-нибудь другом сервере
 
 Глупость это все - копировать файлы по отдельности. Если база не в ASM, просто копируются все файлы на другой сервер и меняются некоторые параметры в конфигах. Если с ASM, то RMAN.
-
 
     SQL> archive log list;
     Database log mode	       No Archive Mode
@@ -22,7 +21,6 @@ permalink: /database/backup-and-restore/copy/
     Oldest online log sequence     7
     Current log sequence	       9
 
-
 Если нет, можно перевести в режим NOARCHIVELOG следующими командами.
 
     SQL> shutdown immediate;
@@ -30,9 +28,7 @@ permalink: /database/backup-and-restore/copy/
     SQL> alter database noarchivelog;
     SQL> alter database open;
 
-
 <br/>
-
 
     $ mkdir -p /tmp/backups/ORCL12/{DATAFILE,CONTROLFILE,PARAMETERFILE}
 
@@ -43,8 +39,6 @@ permalink: /database/backup-and-restore/copy/
 <br/>
 
     SQL> ALTER DATABASE BACKUP CONTROLFILE TO TRACE as '/tmp/backups/ORCL12/CONTROLFILE/controlfile.txt';
-
-
 
 <br/>
 
@@ -72,8 +66,6 @@ permalink: /database/backup-and-restore/copy/
     ---- -------- -------------------- ----------- --------------------
     1    197      TEMP                 32767       +DATA/ORCL12/TEMPFILE/temp.265.888429595
 
-
-
 <br/>
 
 ### Создание консистентного бекапа.
@@ -81,7 +73,6 @@ permalink: /database/backup-and-restore/copy/
     RMAN> shutdown immediate;
 
 <br/>
-
 
     $ export ORACLE_HOME=$GRID_HOME
     $ export ORACLE_SID=+ASM
@@ -104,14 +95,12 @@ permalink: /database/backup-and-restore/copy/
     $ asmcmd ls +DATA/ORCL12/PARAMETERFILE
     spfile.266.888429941
 
-
 <br/>
 
      $ asmcmd cp +DATA/ORCL12/DATAFILE/SYSAUX.257.888429347 /tmp/backups/ORCL12/DATAFILE
      $ asmcmd cp +DATA/ORCL12/DATAFILE/SYSTEM.258.888429421 /tmp/backups/ORCL12/DATAFILE
      $ asmcmd cp +DATA/ORCL12/DATAFILE/UNDOTBS1.260.888429497 /tmp/backups/ORCL12/DATAFILE
      $ asmcmd cp +DATA/ORCL12/DATAFILE/USERS.259.888429497 /tmp/backups/ORCL12/DATAFILE
-
 
 <br/>
 
@@ -121,31 +110,24 @@ permalink: /database/backup-and-restore/copy/
 
      $ asmcmd cp +DATA/ORCL12/PARAMETERFILE/spfile.266.888429941 /tmp/backups/ORCL12/PARAMETERFILE
 
-
  <br/>
 
     $ cd /tmp/backups/
     $ tar -cvzpf ORCL12.tar.gz ./ORCL12
 
-
 <br/>
 
 ### Восстановление из бекапа
 
-
     $ ssh oracle12@piter "mkdir -p /tmp/backups/"
     $ scp ORCL12.tar.gz oracle12@192.168.1.12:/tmp/backups
 
-
- Восстанавливаю на другом сервере с тем же инстансом:
+Восстанавливаю на другом сервере с тем же инстансом:
 
     $ cd /tmp/backups/
     $ tar -xvzpf ORCL12.tar.gz ./
 
-
-
 Купирую теперь уже на ASM.
-
 
     $ export ORACLE_HOME=$GRID_HOME
     $ export ORACLE_SID=+ASM
@@ -161,7 +143,6 @@ permalink: /database/backup-and-restore/copy/
 <br/>
 
     $ asmcmd mkdir +ARCH/ORCL12/ARCHIVELOG
-
 
 Команда cp не может скопировать на ASM файлы без цифр. Приходится копировать без них. Из-за этого потом придется еще и пересоздавать контролфайл.
 
@@ -210,7 +191,6 @@ $ asmcmd cp /tmp/backups/ORCL12/DATAFILE/USERS.259.888345795 +DATA/ORCL12/DATAFI
 
     *.control_files='+DATA/ORCL12/CONTROLFILE/current.261.888429547','+ARCH/ORCL12/CONTROLFILE/current.256.888429547'
 
-
 Получилось:
 
     ORCL12.__data_transfer_cache_size=0
@@ -241,39 +221,31 @@ $ asmcmd cp /tmp/backups/ORCL12/DATAFILE/USERS.259.888345795 +DATA/ORCL12/DATAFI
     *.sga_target=1148m
     *.undo_tablespace='UNDOTBS1'
 
-
-
-
-
 <br/>
 
     $ export ORACLE_HOME=/u01/oracle/database/12.1
     $ export ORACLE_SID=ORCL12
 
+<br/>
+
+    $ sqlplus / as sysdba
 
 <br/>
 
-	$ sqlplus / as sysdba
-
-<br/>
-
-	SQL> startup nomount pfile=/tmp/backups/ORCL12/PARAMETERFILE/pfile.txt
+    SQL> startup nomount pfile=/tmp/backups/ORCL12/PARAMETERFILE/pfile.txt
 
 <br/>
 
     SQL> create spfile from memory;
     SQL> shutdown immediate;
 
-
 <br/>
-
 
     $ cd /tmp/backups/ORCL12/CONTROLFILE
     $ cp controlfile.txt controlfile.txt.bkp
     $ vi controlfile.txt
 
 Взял часть кода "RESETLOGS case". Пришлось удалить цифры в названии файлов данных. Выполняю по частям в консоли:
-
 
     SQL> STARTUP NOMOUNT
 
@@ -307,7 +279,6 @@ $ asmcmd cp /tmp/backups/ORCL12/DATAFILE/USERS.259.888345795 +DATA/ORCL12/DATAFI
     CHARACTER SET AL32UTF8
     ;
 
-
 <br/>
 
     SQL> select status from v$instance;
@@ -315,7 +286,6 @@ $ asmcmd cp /tmp/backups/ORCL12/DATAFILE/USERS.259.888345795 +DATA/ORCL12/DATAFI
     STATUS
     ------------
     MOUNTED
-
 
 <br/>
 
@@ -327,7 +297,6 @@ $ asmcmd cp /tmp/backups/ORCL12/DATAFILE/USERS.259.888345795 +DATA/ORCL12/DATAFI
     +DATA/ORCL12/ONLINELOG/group_3.264.888429575
 
 <br/>
-
 
     SQL> RECOVER DATABASE USING BACKUP CONTROLFILE UNTIL CANCEL
     ORA-00279: change 1678308 generated at 08/22/2015 18:18:48 needed for thread 1
@@ -341,9 +310,7 @@ $ asmcmd cp /tmp/backups/ORCL12/DATAFILE/USERS.259.888345795 +DATA/ORCL12/DATAFI
     ORA-17503: ksfdopn:2 Failed to open file +ARCH
     ORA-15045: ASM file name '+ARCH' is not in reference form
 
-
 На каком-то сайте написано, что можно игнорировать такого рода ошибки. Данная база никогда не работала в режиме Archivelog. Впрочем база открылась.
-
 
 <br/>
 
@@ -352,15 +319,12 @@ $ asmcmd cp /tmp/backups/ORCL12/DATAFILE/USERS.259.888345795 +DATA/ORCL12/DATAFI
 
 <br/>
 
-
     SQL> ALTER TABLESPACE TEMP ADD TEMPFILE '+DATA/ORCL12/TEMPFILE/temp' SIZE 206569472  REUSE AUTOEXTEND ON NEXT 655360  MAXSIZE 32767M;
 
 <br/>
 
     SQL> create spfile from memory;
 
-
 <br/>
-
 
 После всех шагов, нужно сделать бекап

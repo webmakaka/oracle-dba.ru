@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция Oracle Linux 7.4
+title: Инсталляция Oracle DataBase 12.2 в Oracle Linux 7.4 - Инсталляция Oracle Linux 7.4
 description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Инсталляция Oracle Linux 7.4
 keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Инсталляция
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oel-7.4-installation/
@@ -10,7 +10,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
+    <h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 
@@ -26,12 +26,9 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 UPD. Можно и в графическом режиме установить сервер без GUI.
 
-
 <img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-01.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
 
-
 <img src="//img.oracledba.net/01-database/02-installation/01-single-instance/01-simple/02-linux/7.4/oracle/12.2/01-oel-7.4-installation/oel-7.4-installation-02.png" border="0" alt="Oracle Linux 7.4 installation"><br/><br/>
-
 
 <br/>
 
@@ -46,7 +43,6 @@ UPD. Можно и в графическом режиме установить �
 Все. Поехали устанавливать.
 
     (b)
-
 
 <br/>
 

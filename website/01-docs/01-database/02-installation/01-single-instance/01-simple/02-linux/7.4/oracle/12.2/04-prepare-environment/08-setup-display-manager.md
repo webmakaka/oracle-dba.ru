@@ -1,17 +1,16 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка Display Manger
+title: Инсталляция Oracle DataBase 12.2 в Oracle Linux 7.4 - Настройка Display Manger
 description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка Display Manger
 keywords: Oracle DataBase 12.2, Oracle Linux 7.4, Display Manger
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/setup-display-manager/
 ---
 
-
 <br/>
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
+    <h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 
@@ -25,9 +24,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/s
 
 ### Подготовка и проверка
 
-192.168.1.5 -  ip адрес компьютера, с которого происходит процесс управления установкой.<br/>
+192.168.1.5 - ip адрес компьютера, с которого происходит процесс управления установкой.<br/>
 192.168.56.101 - ip адрес сервера<br/>
-
 
 <br/>
 
@@ -48,7 +46,6 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
     <img src="https://img.oracledba.net/img/oracle/database/simple/12.1/XMing.png" border="0" alt="XMing">
 </div>
 
-
 <br/>
 
 ## Если установка происходит с Linux машины
@@ -57,12 +54,11 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 ### Подготовка клиента Oracle Linux 7.3 с gnome environment
 
-
     # yum install -y nmap nc xclock
 
 <br/>
 
-	# vi /etc/gdm/custom.conf
+    # vi /etc/gdm/custom.conf
 
 <br/>
 
@@ -74,16 +70,13 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
     [xdmcp]
     Enable=true
 
-
 <br/>
 
     # service gdm restart
 
-
 <br/>
 
     $ xclock -display 192.168.1.5:0
-
 
 Если часы появились, все ок и больше ничего не нужно.
 
@@ -95,19 +88,15 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/>
 
-
 <br/>
 
 ### Подготовка клиента Ubuntu
 
-
-$ sudo apt-get install -y nmap nc xclock
-
+\$ sudo apt-get install -y nmap nc xclock
 
 <div align="center">
 <img src="https://img.oracledba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
 </div>
-
 
 <br/>
 
@@ -120,13 +109,11 @@ $ sudo apt-get install -y nmap nc xclock
     # dpkg-reconfigure gdm
     # dpkg-reconfigure lightdm
 
-
 <br/>
 
-	# vi /etc/lightdm/lightdm.conf
+    # vi /etc/lightdm/lightdm.conf
 
 <br/>
-
 
 {% highlight shell %}
 
@@ -141,7 +128,6 @@ xserver-allow-tcp=true
 
 {% endhighlight %}
 
-
 <br/>
 
     # sudo restart lightdm
@@ -152,7 +138,6 @@ xserver-allow-tcp=true
 
 Если часы появились, все ок и больше ничего не нужно.
 
-
 <br/>
 
 <div align="center">
@@ -161,7 +146,6 @@ xserver-allow-tcp=true
 
 <br/>
 
-
 <br/>
 
 ### Если часы не появились:
@@ -169,23 +153,20 @@ xserver-allow-tcp=true
     $ ps ax | grep dm
     $ ps lf -C Xorg
 
-
 Не должно быть строчки "no-listen tcp" (Или что-то похожее так)
 
+<br/>
+
+    $ netstat -an | grep -F 6000
 
 <br/>
 
-	$ netstat -an | grep -F 6000
+    tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN
+    tcp6       0      0 :::6000                 :::*                    LISTEN
 
 <br/>
 
-	tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN
-	tcp6       0      0 :::6000                 :::*                    LISTEN
-
-
-<br/>
-
-	# nmap -p 6000 192.168.1.5
+    # nmap -p 6000 192.168.1.5
 
 <br/>
 
@@ -195,12 +176,10 @@ xserver-allow-tcp=true
     PORT     STATE SERVICE
     6000/tcp open  X11
 
-
 <br/>
 
-	$ nc -vv 192.168.1.5 6000
-	Connection to 192.168.1.200 6000 port [tcp/x11] succeeded!=
-
+    $ nc -vv 192.168.1.5 6000
+    Connection to 192.168.1.200 6000 port [tcp/x11] succeeded!=
 
 <br/>
 
@@ -210,12 +189,9 @@ xserver-allow-tcp=true
 
     # xhost +
 
-
 <!-- $ xhost +192.168.56.101
 
 <br/> -->
-
-
 
 <br/>
 
@@ -227,13 +203,12 @@ xserver-allow-tcp=true
 
 <br/>
 
-	# nmap -p 6000 192.168.1.5
+    # nmap -p 6000 192.168.1.5
 
 результат
 
     ***
     6000/tcp open  X11
-
 
 <br/>
 
@@ -243,7 +218,7 @@ xserver-allow-tcp=true
 
 <br/>
 
-	# yum install -y xdpyinfo xclock
+    # yum install -y xdpyinfo xclock
     # su - oracle12
 
 <br/>
@@ -254,7 +229,7 @@ xserver-allow-tcp=true
 
 Можно, также попробовать
 
-	$ export DISPLAY=192.168.1.5:0.0
+    $ export DISPLAY=192.168.1.5:0.0
 
 <br/>
 

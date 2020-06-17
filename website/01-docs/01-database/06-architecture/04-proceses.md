@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Процессы Oracle
+description: Структуры памяти Oracle
+keywords: Oracle Database, Память
 permalink: /docs/architecture/proceses/
 ---
 
@@ -88,7 +90,7 @@ permalink: /docs/architecture/proceses/
 
 <br/>
 
-Посмотреть все доступные фоновые процессы Oracle можно, выполнив запрос к представлению v$BGPROCESS
+Посмотреть все доступные фоновые процессы Oracle можно, выполнив запрос к представлению v\$BGPROCESS
 
     SQL> SELECT name, description FROM v$BGPROCESS ORDER BY 1;
 

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA
+description: Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA
+keywords: Oracle Database, RMAN, создание резервных копий, Бекап в FRA
 permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example1/
 ---
 

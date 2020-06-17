@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Разместить резюме на нашем сайте
+description: Разместить резюме на нашем сайте
+keywords: Oracle, Разместить резюме на нашем сайте
 permalink: /resume/
 ---
 
@@ -10,13 +12,13 @@ permalink: /resume/
 
 При желании это может быть ссылка на сайт поиска работы, аккаунт в социальной сети, профиль в linkedin.
 
-Вы также сможете указать, например, информацию в вашем профиле linedin, что вы учавствуете в этом проекте. 
+Вы также сможете указать, например, информацию в вашем профиле linedin, что вы учавствуете в этом проекте.
 
 Какие условия?  
 Написать 5 статей (совсем необязательно больших) и разместить их у нас.
 
 Какие материалы могут быть интересны?  
-Peformance tuning, администрирование weblogic, Enterprise Manager, SOA, RPAS, GoldenGate, ATG, PeopleSoft, BPM, BI, Hudson,  особенности Oralce HTTP сервер, Oracle Linux, Oracle VM, Jdeveloper, SQL Developer и многое другое, о чем я не знаю или не вспомнил.
+Peformance tuning, администрирование weblogic, Enterprise Manager, SOA, RPAS, GoldenGate, ATG, PeopleSoft, BPM, BI, Hudson, особенности Oralce HTTP сервер, Oracle Linux, Oracle VM, Jdeveloper, SQL Developer и многое другое, о чем я не знаю или не вспомнил.
 
 Если интересно, заходите в чат или пишите на адрес электронной почты.
 

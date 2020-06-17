@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Утилита RMAN (Recovery Manager)
+description: Утилита RMAN (Recovery Manager)
+keywords: Oracle Database, RMAN, backup, restore
 permalink: /database/backup-and-restore/rman/about-oracle-rman/
 ---
 
@@ -15,7 +17,6 @@ permalink: /database/backup-and-restore/rman/about-oracle-rman/
 Команда <strong>Recover </strong>- применяет к восстановленной из бекапа базе данных сохраненные архивные журналы,
 чтобы база данных была актуальна на какой-то более приемлемый момент времени, нежели чем на момент создания бекапа. Если архивных журналов нет, то и применять нечего.
 
-
 <br/>
 
 // Подключиться к консоли rman
@@ -26,16 +27,13 @@ permalink: /database/backup-and-restore/rman/about-oracle-rman/
 
     $ rman target sys/manager@service
 
-
 // Писать output в файл
 
     $ rman target / Log /tmp/rman.log
 
-
 // Писать output в консоль и в лог
 
     $ rman target / | tee /tmp/rman.log
-
 
 // Показывает с какими файлами данных можно выполнять резервные копии. Т.е. того инстанса к которому подключились.
 
@@ -73,10 +71,6 @@ permalink: /database/backup-and-restore/rman/about-oracle-rman/
     1    537      TEMP                 32767       /u02/oradata/ora112/temp01.dbf
     2    2048     MY_TEMP              2048        /u02/oradata/ora112/my_temp01.dbf
 
-
-
-
-
 // Посмотреть значения параметров бекапа, установленных по умолчанию.
 
     RMAN> show all;
@@ -101,7 +95,6 @@ permalink: /database/backup-and-restore/rman/about-oracle-rman/
     CONFIGURE ARCHIVELOG DELETION POLICY TO NONE;
     CONFIGURE SNAPSHOT CONTROLFILE NAME TO '/u01/oracle/database/12.1/dbs/snapcf_orcl12.f'; # default
 
-
 <br/>
 
 // Задать значение (просто пример)
@@ -118,15 +111,12 @@ permalink: /database/backup-and-restore/rman/about-oracle-rman/
 
 <br/>
 
-
 // Сбросить
 
     RMAN> CONFIGURE RETENTION POLICY CLEAR;
 
-
 Но все это, как мне видится не особо и нужно.
 Параметры бекапа следует явно задавать в скриптах.
-
 
 ### В 11 версии работа еще больше упростилась.
 

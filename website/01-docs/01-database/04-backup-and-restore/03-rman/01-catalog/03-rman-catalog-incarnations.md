@@ -1,18 +1,16 @@
 ---
 layout: page
-title: Пример с инкарнациями
+title: Oracle Database - Инкарнации базы данных
+description: Oracle Database - Инкарнации базы данных
+keywords: Oracle Database, поменять db_unique_name в RMAN каталоге
 permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
 ---
 
-
-# Инкарнации базы данных
-
+# Oracle Database - Инкарнации базы данных
 
     $ rman target / catalog rman/rman123@rman12
 
-
 Новая инкарнация создается при неполном восстановлении базы, когда база открывается с опцией resetlogs. Т.е. данные из redologs удаляются. Вроде как у базы, начинается новая жизнь. Историю жизней базы, можно посмотреть следующими способами.
-
 
     RMAN> LIST INCARNATION OF DATABASE;
 
@@ -23,7 +21,6 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     1       16      ORCL12   3487575625       PARENT  1          07/07/2014 05:38:47
     1       2       ORCL12   3487575625       CURRENT 1594143    16/08/2015 21:29:45
 
-
 <br/>
 
         SQL> select incarnation#, resetlogs_change# from v$database_incarnation;
@@ -33,14 +30,11 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
         	   1		     1
         	   2	       1594143
 
-
 В общем смысл инкарнаций в том, что база откатывается на какое-то состояние в прошлом и уже с этого состояния идет новая жизнь. Как снапшоты на виртуалках, когда то к одному состоянию откатился, потом к другому. В результате получается какое-то дерево с разными ветками. Насколько это часто используется в базах? нечасто. Ну вот сами подумайте, как можно на production базе делать какие-то откаты и работать с какой-то точки? Должны быть серьезные причины для этого. Видел один или два раза давно как потерян был архив лог а база требовала восстановления. Вот откатывали на состояние предшествующее этому архивлогу и делали инкарнацию. Но, как мне видится, это все были костыли из за того, что не подготовили сервер с доп избыточностью. И делали это исколючительно для того, чтобы не потерять всю базу.
-
 
 <br/>
 
     RMAN> backup database;
-
 
 <br/>
 
@@ -54,7 +48,6 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     ----------
          89402
 
-
 <br/>
 
      SQL> select current_scn from v$database;
@@ -62,7 +55,6 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
      CURRENT_SCN
      -----------
          1891044
-
 
 <br/>
 
@@ -79,7 +71,6 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     CURRENT_SCN
     -----------
         1891093
-
 
 <br/>
 
@@ -105,7 +96,6 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     ------------ -----------------
        1		     1
        2	       1594143
-
 
 <br/>
 
@@ -137,9 +127,7 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     ------------
     MOUNTED
 
-
 <br/>
-
 
     SQL> alter database open resetlogs;
 
@@ -167,9 +155,7 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
      EDITIONABLE					    VARCHAR2(1)
      ORACLE_MAINTAINED				    VARCHAR2(1)
 
-
 <br/>
-
 
     SQL> select count(1) from test;
 
@@ -177,12 +163,9 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     ----------
     	 0
 
-
 <br/>
 
-
 Теперь откатываемся на момент предшествующий удалению данных из таблицы.
-
 
     RUN {
         set until scn=1891044;
@@ -204,9 +187,7 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     RMAN-03002: failure of restore command at 08/18/2015 08:31:19
     RMAN-06004: ORACLE error from recovery catalog database: RMAN-20208: UNTIL CHANGE is before RESETLOGS change
 
-
 <br/>
-
 
     RMAN> LIST INCARNATION OF DATABASE;
 
@@ -218,9 +199,7 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
     1       2       ORCL12   3487575625       PARENT  1594143    16/08/2015 21:29:45
     1       255     ORCL12   3487575625       CURRENT 1891094    18/08/2015 08:26:32
 
-
 <br/>
-
 
 // пример который должен быть выполнен
 
@@ -229,7 +208,6 @@ permalink: /database/backup-and-restore/rman/rman-incarnations-sample/
 // выполняю
 
     RMAN> reset database to incarnation 2;
-
 
 <br/>
 

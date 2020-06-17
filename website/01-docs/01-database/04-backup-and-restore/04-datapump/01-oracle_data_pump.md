@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Утилиты экспорта и импорта данных Data Pump
+title: Утилиты экспорта и импорта данных в базе данных Oracle - Data Pump
+description: Утилиты экспорта и импорта данных в базе данных Oracle - Data Pump
+keywords: Oracle Database, экспорт, импорт, Data Pump
 permalink: /database/backup-and-restore/oracle-data-pump/
 ---
 
-# Утилиты экспорта и импорта данных Data Pump
+# Утилиты экспорта и импорта данных в базе данных Oracle - Data Pump
 
 В состав технологии Data Pump входят утилиты: Data Pump Export (expdp) и Data Pump Import (impdp).
 

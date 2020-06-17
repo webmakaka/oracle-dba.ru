@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Основные view RMAN
+description: Основные view RMAN
+keywords: Oracle Database, RMAN
 permalink: /database/backup-and-restore/rman/rman-view/
 ---
 

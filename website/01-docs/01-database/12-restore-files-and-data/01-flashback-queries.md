@@ -1,6 +1,8 @@
 ---
 layout: page
 title: FlashBack queries
+description: FlashBack queries
+keywords: Oracle Database, FlashBack queries
 permalink: /docs/architecture/restore-files-and-data/flashback-queries/
 ---
 

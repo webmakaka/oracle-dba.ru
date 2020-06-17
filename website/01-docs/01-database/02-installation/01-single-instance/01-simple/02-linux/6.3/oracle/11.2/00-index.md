@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
+title: Инсталляция Oracle DataBase 11.2.0.3.2 в Oracle Linux 6.3
+description: Инсталляция Oracle DataBase 11.2.0.3.2 в операционной системе Oracle Linux 6.3
+keywords: Oracle DataBase 11.2, Oracle Linux 6.3, Install
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 ---
 
-### Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
-
-
+# Инсталляция Oracle DataBase Server 11.2.0.3.2 в операционной системе Oracle Linux 6.3 x86_64
 
 <div style="padding:10px; border:thin solid black;">
 
@@ -26,7 +26,6 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
 </div>
 
-
 <strong>Самые последние версии (на момент написания):</strong>
 
 <ul>
@@ -42,21 +41,17 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 
 При помощью консоли putty на сервере выполняются команды. Xming нужен для получения графических изображений.
 
-
-
 <br/><br/>
+
 <h2>Документация:</h2>
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/docs/">Официальная документация</a><br/></li>
 </ul>
 
-
-
 <br/><br/>
 
 <h2>Дистрибутивы:</h2>
-
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/distrib/">Дистрибутивы баз данных и дополнительное программное обеспечение</a><br/></li>
@@ -65,7 +60,6 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 <br/><br/>
 
 <h2>Подготовка операционной системы Linux к инсталляции базы данных Oracle:</h2>
-
 
 <ul>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/setup-os-parameters-before-we-start/">Настройка некоторых параметров операционной системы</a></li>
@@ -78,7 +72,6 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/create-folder-structure-and-user-permissions/">Создание структуры каталогов и назначение необходимых прав</a></li>
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a></li>
 </ul>
-
 
 <br/><br/>
 
@@ -114,14 +107,12 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/
 	<li><a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/oracle-final-hot-backup/">Контрольный backup (горячий backup)</a></li>
 </ul>
 
-
 <br/><br/>
 <br/><br/>
-
 
 <div style="padding:10px; border:thin solid black;">
 
-	<h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
+    <h3>Рекомендую обратиться сразу к последней версии документа, где используются более новые версии программного обеспечения</h3>
 
     <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
 

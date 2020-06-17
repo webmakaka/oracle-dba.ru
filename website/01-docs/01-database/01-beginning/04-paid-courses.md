@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Oracle Видеокурсы на английском (без ссылок на скачку)
+description: Oracle Видеокурсы на английском (без ссылок на скачку)
+keywords: Oracle DataBase, Видеокурсы на английском
 permalink: /database/beginning/library/paid-video-courses/
 ---
 
-
 <br/>
 
-
 ### Cbtnuggets:
-
 
 <ul>
 	<li>Oracle Database 11g SQL Fundamentals 1 (1Z0-051)</li>
@@ -18,14 +17,11 @@ permalink: /database/beginning/library/paid-video-courses/
 
 </ul>
 
-
-
 <br/>
 
 ### Udemy
 
 На udemy имеются платные и бесплатные видеокурсы.
-
 
 **Что заинтересовало меня по теме Oracle:**
 
@@ -37,17 +33,17 @@ permalink: /database/beginning/library/paid-video-courses/
 
     <li><strong>Oracle 11g Certified Professional Exam Prep II</strong></li>
 
-	<li><strong>Oracle Performance Tuning</strong></li>
+    <li><strong>Oracle Performance Tuning</strong></li>
 
-	<li><strong>Easy way to set Oracle Active Dataguard</strong> (можно посмотреть начинающим)</li>
+    <li><strong>Easy way to set Oracle Active Dataguard</strong> (можно посмотреть начинающим)</li>
 
-	<li><strong>Oracle Real Application Cluster</strong> (можно посмотреть начинающим)</li>
+    <li><strong>Oracle Real Application Cluster</strong> (можно посмотреть начинающим)</li>
 
-	<li><strong>Practice with Oracle RMAN</strong></li>
+    <li><strong>Practice with Oracle RMAN</strong></li>
 
-	<li><strong>Oracle WebLogic 12c for Administrators</strong></li>
+    <li><strong>Oracle WebLogic 12c for Administrators</strong></li>
 
-	<li><strong>Oracle Coherence Quickstart</strong></li>
+    <li><strong>Oracle Coherence Quickstart</strong></li>
 
     <li><strong>Oracle Business Intelligence Enterprise Edition (OBIEE) 11g</strong> (так себе)</li>
 
@@ -60,23 +56,27 @@ permalink: /database/beginning/library/paid-video-courses/
 ### Pluralsight Oracle Courses
 
 <br/>
-Beginner:
+
+**Beginner:**
+
 <br/><br/>
 
 <ul>
 
-	<li><strong>Oracle Developer Essentials: Views, Synonyms and Triggers</strong></li>
-	<li><strong>Oracle Developer Essentials: Data Types</strong></li>
-	<li><strong>Oracle Database 12c Fundamentals</strong></li>
-	<li><strong>Oracle PL/SQL Fundamentals - Part 1</strong></li>
+    <li><strong>Oracle Developer Essentials: Views, Synonyms and Triggers</strong></li>
+    <li><strong>Oracle Developer Essentials: Data Types</strong></li>
+    <li><strong>Oracle Database 12c Fundamentals</strong></li>
+    <li><strong>Oracle PL/SQL Fundamentals - Part 1</strong></li>
+
  	<li><strong>Oracle Database 12c Performance Tuning and Optimization</strong></li>
  	<li><strong>Oracle Database 12c: Installation and Upgrade</strong></li>
 
 </ul>
 
-
 <br/><br/>
-Intermediate:
+
+**Intermediate:**
+
 <br/><br/>
 
 <ul>
@@ -92,21 +92,14 @@ Intermediate:
 	<li><strong>Introduction to Dates, Times and Intervals in Oracle</strong></li>
 </ul>
 
-
-
 <br/><br/>
 
-
 ### InfiniteSkills:
-
 
 <ul>
 	<li>Learning Oracle 12c Training Video</li>
 	<li>Oracle 11g Real Application Cluster Training Video</li>
 </ul>
-
-
-
 
 <br/><br/>
 

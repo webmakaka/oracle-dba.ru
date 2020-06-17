@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Oracle DataBase 12c - Linux - Инсталляция обязательных пакетов
+title: Инсталляция Oracle DataBase 12c в Oracle Linux 6.7 - Инсталляция обязательных пакетов
+description: Инсталляция Oracle DataBase 12c в операционной системе Oracle Linux 6.7 - Инсталляция обязательных пакетов
+keywords: Oracle DataBase 12c, Oracle Linux 6.7, Инсталляция обязательных пакетов
 permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/install-mandatory-packages/
 ---
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Инсталляция обязательных пакетов
-
 
 <br/>
 
@@ -17,15 +18,12 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
 
 **Вариант 1: Инсталляция пакетов с DVD диска Oracle Linux (Не рекомендуется):**
 
-
-	# mkdir /mnt/cdrom
-	# mount -t iso9660 -o ro /dev/cdrom /mnt/cdrom
-
+    # mkdir /mnt/cdrom
+    # mount -t iso9660 -o ro /dev/cdrom /mnt/cdrom
 
 <br/>
 
-	# vi /etc/yum.repos.d/oracleLinuxRepoDVD.repo
-
+    # vi /etc/yum.repos.d/oracleLinuxRepoDVD.repo
 
 <br/>
 
@@ -35,14 +33,13 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
     gpgcheck=0
     enabled=1
 
-
 <br/>
 
 **Вариант 2: Инсталляция пакетов из репозитория Oracle Linux в интернете:**
 
 Шаг следует выполнять, если в файловой системе нет файла с описанием, где Oracle Linux должен брать нужные пакеты. При установке от и до по этой инструкции, его выполнять не нужно.
 
-	# vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
+    # vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
 
 <br/>
 
@@ -55,15 +52,13 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
 
 <br/>
 
-	# yum repolist
-
+    # yum repolist
 
 <br/>
 
 ### Обновление пакетов
 
-	# yum update -y
-
+    # yum update -y
 
 <br/>
 
@@ -83,15 +78,13 @@ Offtopic: (Рекомендуется пропустить! Просто для 
 
 Имеется только один минус, возможно, что он сделает не все так как вы хотите. Т.е. будет выполнена подготовка окружения “по умолчанию”.
 
-
 Offtopic: END
 
 </div>
 
 <br/><br/>
 
-
-Следующие пакеты должны быть установлены:   (http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
+Следующие пакеты должны быть установлены: (http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
 
 binutils-2.20.51.0.2-5.11.el6 (x86_64)<br/>
 compat-libcap1-1.10-1 (x86_64)<br/>
@@ -117,49 +110,47 @@ libaio-devel-0.3.107-10.el6.i686<br/>
 make-3.81-19.el6<br/>
 sysstat-9.0.4-11.el6 (x86_64)<br/>
 
-
 <br/><br/>
 
 Посмотреть пакеты в репозитории можно следующей командой:
 
-	# yum search all binutils
+    # yum search all binutils
 
 <br/>
 
 Инсталляция всех необходимых пакетов одной командой:
 
-	# yum install -y \
-	binutils.x86_64 \
-	compat-libcap1.x86_64 \
-	compat-libstdc++-33.i686 \
-	compat-libstdc++-33.x86_64 \
-	gcc.x86_64 \
-	gcc-c++.x86_64 \
-	glibc.i686 \
-	glibc.x86_64 \
-	glibc-devel.i686 \
-	glibc-devel.x86_64 \
-	ksh.x86_64 \
-	libgcc.i686 \
-	libgcc.x86_64 \
-	libstdc++.i686 \
-	libstdc++.x86_64 \
-	libstdc++-devel.i686 \
-	libstdc++-devel.x86_64 \
-	libaio.i686 \
-	libaio.x86_64 \
-	libaio-devel.i686 \
-	libaio-devel.x86_64 \
-	make.x86_64 \
-	sysstat.x86_64
+    # yum install -y \
+    binutils.x86_64 \
+    compat-libcap1.x86_64 \
+    compat-libstdc++-33.i686 \
+    compat-libstdc++-33.x86_64 \
+    gcc.x86_64 \
+    gcc-c++.x86_64 \
+    glibc.i686 \
+    glibc.x86_64 \
+    glibc-devel.i686 \
+    glibc-devel.x86_64 \
+    ksh.x86_64 \
+    libgcc.i686 \
+    libgcc.x86_64 \
+    libstdc++.i686 \
+    libstdc++.x86_64 \
+    libstdc++-devel.i686 \
+    libstdc++-devel.x86_64 \
+    libaio.i686 \
+    libaio.x86_64 \
+    libaio-devel.i686 \
+    libaio-devel.x86_64 \
+    make.x86_64 \
+    sysstat.x86_64
 
 <br/>
-
 
 Следующий пакет нужен для старта графической консоли
 
     # yum install -y \
-	xdpyinfo
+    xdpyinfo
 
 <br/>
 
@@ -177,31 +168,28 @@ sysstat-9.0.4-11.el6 (x86_64)<br/>
 
 ### Инсталляция rlwrap
 
-rlwrap - пакет, который позволяет хранить историю команд в SQL*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
+rlwrap - пакет, который позволяет хранить историю команд в SQL\*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
 
-
-	# yum install -y \
-	readline-devel.x86_64
+    # yum install -y \
+    readline-devel.x86_64
 
 <br/>
 
 **Если сайт будет недоступен, можно попробовать вариант установки rlwrap из github ниже, но он пока не тестировался !!!**
 
-	# cd /tmp
-	# wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+    # cd /tmp
+    # wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
 
 <br/>
 
-	# tar zxvf rlwrap-0.37.tar.gz
-	# cd rlwrap-0.37
-	# ./configure
-	# make && make check && make install
-
+    # tar zxvf rlwrap-0.37.tar.gz
+    # cd rlwrap-0.37
+    # ./configure
+    # make && make check && make install
 
 <br/>
 
 ### Установка rlwrap из github (не тестировалось!)
-
 
 <br/>
 

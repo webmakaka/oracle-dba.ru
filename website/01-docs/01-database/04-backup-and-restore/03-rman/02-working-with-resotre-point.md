@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Работа с точками восстановления
+description: Работа с точками восстановления
+keywords: Oracle Database, Работа с точками восстановления
 permalink: /database/backup-and-restore/rman/restore-points/
 ---
 
@@ -8,7 +10,6 @@ permalink: /database/backup-and-restore/rman/restore-points/
 
 Чтобы не запоминать бездушный номар SCN, ему можно задать имя.
 Например "Before_Upgrade". И в командах rman, можно также использовать понятные человеку слова исключительно для для удобства работы человека.
-
 
 // Создание точки восстановления
 
@@ -25,7 +26,6 @@ permalink: /database/backup-and-restore/rman/restore-points/
 // Удалить точку восстановления
 
     SQL> drop restore point 'pointName'
-
 
 // Откатиться на точку восстановления (при включенном flashback)
 

@@ -1,14 +1,17 @@
 ---
 layout: page
 title: Создание табличных пространств
+description: Создание табличных пространств
+keywords: Oracle Database, Tablespaces
 permalink: /docs/architecture/tablespaces/create-new-tablespace/
 ---
 
 <hr>
+
 Взято http://subscribe.ru/archive/comp.soft.db.oraclefromzero/200304/03160028.html<br/>
 Несколько подредактировано.
 
-### Обзор табличных пространств
+# Обзор табличных пространств
 
 <p>Табличное пространство Oracle является самым нижним логическим слоем структуры
   данных. Оно состоит из одного или более файлов данных. В ранних версиях СУРБД

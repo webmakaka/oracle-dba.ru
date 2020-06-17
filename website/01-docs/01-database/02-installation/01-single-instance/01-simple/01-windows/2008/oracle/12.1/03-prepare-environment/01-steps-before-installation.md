@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Перед инсталляцией
+description: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Перед инсталляцией
+keywords: Oracle DataBase, Installation, Windows 2008, VirtualBox
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/steps-before-installaion/
 ---
 
@@ -9,7 +11,6 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <br/>
 
 <strong>Подключаемся под учетной записью Administrator</strong>
-
 
 <br/><br/>
 
@@ -23,9 +24,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <strong>Инициируем жесткие диски</strong>
 <br/><br/>
 
-
 <img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_02.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-
 
 <img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_03.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
 
@@ -33,18 +32,13 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <strong>Убеждаемся, что сервер имеет статический IP адрес</strong>
 <br/><br/>
 
-
 <img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_04.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-
 
 <br/><br/>
 <strong>Убеждаемся, что название компьютера и домен выбраны правильно</strong>
 <br/><br/>
 
-
 <img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/before_installation/oracle12R1_database_before_installation_05.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
-
-
 
 <br/><br/>
 <strong>Копируем дистрибутивы базы данных на сервер</strong>

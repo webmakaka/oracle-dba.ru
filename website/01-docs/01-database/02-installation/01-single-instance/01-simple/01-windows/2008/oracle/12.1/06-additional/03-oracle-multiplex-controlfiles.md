@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Мультиплексирование controlfiles
+description: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Мультиплексирование controlfiles
+keywords: Oracle DataBase, Installation, Windows 2008, Мультиплексирование controlfiles
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-multiplex-controlfiles/
 ---
 
@@ -8,12 +10,11 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-	CMD> sqlplus / as sysdba
+    CMD> sqlplus / as sysdba
 
 <br/>
 
-	SQL> select name from v$CONTROLFILE;
-
+    SQL> select name from v$CONTROLFILE;
 
 <br/>
 
@@ -22,25 +23,20 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
     E:\APP\ORACLE\ORADATA\ORA121\CONTROL01.CTL
     E:\APP\ORACLE\ORADATA\ORA121\CONTROL02.CTL
 
+<br/>
 
+    SQL> shutdown immediate;
 
 <br/>
 
-	SQL> shutdown immediate;
-
-<br/>
-
-	SQL> quit
+    SQL> quit
 
 <br/>
 
     md e:\app\oracle\oradata\ora121\control
     md f:\app\oracle\oradata\ora121\control
 
-
-
 <br/>
-
 
     copy e:\app\oracle\oradata\ora121\CONTROL01.CTL e:\app\oracle\oradata\ora121\control\CONTROL01.CTL /y
     copy e:\app\oracle\oradata\ora121\CONTROL01.CTL e:\app\oracle\oradata\ora121\control\CONTROL02.CTL /y
@@ -48,32 +44,27 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-	sqlplus / as sysdba
+    sqlplus / as sysdba
 
 <br/>
 
-	SQL> startup nomount;
+    SQL> startup nomount;
 
 <br/>
 
     SQL> ALTER SYSTEM SET control_files = 'e:\app\oracle\oradata\ora121\control\CONTROL01.CTL', 'e:\app\oracle\oradata\ora121\control\CONTROL02.CTL', 'f:\app\oracle\oradata\ora121\control\CONTROL03.CTL' scope=spfile;
 
+<br/>
 
+    SQL> shutdown immediate;
 
 <br/>
 
-	SQL> shutdown immediate;
+    SQL> startup;
 
 <br/>
 
-	SQL> startup;
-
-
-<br/>
-
-	SQL> SELECT name FROM v$CONTROLFILE;
-
-
+    SQL> SELECT name FROM v$CONTROLFILE;
 
 <br/>
 
@@ -85,7 +76,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-	SQL> quit
+    SQL> quit
 
 Удаляем старые controlfile
 

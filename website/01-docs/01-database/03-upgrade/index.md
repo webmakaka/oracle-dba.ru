@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Лабораторные по обновлению и миграции на Oracle 12c
+description: Лабораторные по обновлению и миграции на Oracle 12c
+keywords: Oracle DataBase, лабораторные, миграция на Oracle 12c
 permalink: /database/upgrade/
 ---
 

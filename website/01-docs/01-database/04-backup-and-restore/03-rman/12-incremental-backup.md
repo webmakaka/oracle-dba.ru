@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Создание инкрементальной копии базы данных с помощью RMAN
+description: Создание инкрементальной копии базы данных с помощью RMAN
+keywords: Oracle Database, RMAN, Incremental
 permalink: /database/backup-and-restore/rman/incremental-backup/
 ---
 
 # Создание инкрементальной копии базы данных с помощью RMAN:
-
 
     RUN {
     CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
@@ -17,13 +18,9 @@ permalink: /database/backup-and-restore/rman/incremental-backup/
 
     BACKUP INCREMENTAL LEVEL 1 DATABASE PLUS ARCHIVELOG TAG "LEVEL 1";
 
-
 Создать кумулятивный (включает в себя измениния отраженные в инкрементальных бекапах ) бекап с уровнем 1
 
     RMAN> backup incremental level 1 cumulative database;
-
-
-
 
 // Сброс базы данных до инкарнации 3
 

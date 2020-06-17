@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 12.1 ISCSI + ASM - Инсталляция ASMLIB на узлах кластера
+title: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Инсталляция ASMLIB на узлах кластера
+description: Инсталляция Oracle RAC 12.1 в Oracle Linux 6.7 (ISCSI + ASM) - Инсталляция ASMLIB на узлах кластера
+keywords: Oracle DataBase 12.1, Oracle Linux 6.7, RAC, (ISCSI + ASM), ASMLIB
 permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/asmlib-installation/
 ---
 

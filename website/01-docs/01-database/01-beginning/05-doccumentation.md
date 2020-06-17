@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Ссылки на документацию по Oracle
+description: Ссылки на документацию по Oracle
+keywords: Oracle DataBase, Ссылки на документацию
 permalink: /database/beginning/doccumentation/
 ---
 
-
-### Ссылки на документацию по Oracle:
+# Ссылки на документацию по Oracle
 
 <br/>
 <h3>Документация</h3>

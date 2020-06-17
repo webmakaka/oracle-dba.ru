@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server
+title: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Инсталляция СУБД Oracle (DataBase SoftWare)
+description: Инсталляция Oracle Database 12c Release 1 в Microsoft Windows 2008 Server - Инсталляция СУБД Oracle (DataBase SoftWare)
+keywords: Oracle DataBase, Installation, Windows 2008, DataBase SoftWare
 permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.1/oracle-database-software-installation/
 ---
 
@@ -8,13 +10,11 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-
 <strong>Копируем содержимое архивов в 1 каталог</strong>
 <br/><br/>
 
 <strong>Запускаем setup.exe</strong>
 <br/><br/>
-
 
 <img src="https://img.oracledba.net/database/windows/2008/oracle/12.1/install/software/oracle12R1_database_software_installation_on_wondows_01.png" border="0" alt="Oracle 12 relese 1 installation on Windows"><br/><br/>
 
