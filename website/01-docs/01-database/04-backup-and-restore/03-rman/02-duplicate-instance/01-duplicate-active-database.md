@@ -3,12 +3,12 @@ layout: page
 title: Создание копии активной базы данных Oracle с помощью RMAN
 description: Создание копии активной базы данных Oracle с помощью RMAN
 keywords: Oracle Database, RMAN, Создание копии активной базы данных
-permalink: /database/backup-and-restore/rman/duplicate-active-database/
+permalink: /database/backup-and-restore/rman/duplicate-instance/duplicate-active-database/
 ---
 
 # Создание копии активной базы данных Oracle с помощью RMAN
 
-Тоже самое, что и в предыдущем документе, тоже самое, что и при dataguard.
+Тоже самое, что и в <a href="/database/backup-and-restore/rman/duplicate-instance/duplicate-database-from-backup/">предыдущем документе</a>, тоже самое, что и при dataguard.
 
 Только RMAN script другой.
 

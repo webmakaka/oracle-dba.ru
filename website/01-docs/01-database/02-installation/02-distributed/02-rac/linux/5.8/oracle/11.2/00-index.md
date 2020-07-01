@@ -6,19 +6,11 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 
 # [Инсталляция Oracle RAC 11.2]: В конфигурации с использованием iSCSI и ASM в операционной системе Oracle Linux 5.8 x86_64
 
-
 <br/>
-
 
 В документе описывается один из способов инсталляции базы данных Oracle в операционной системе Oracle Linux в конфигурации Real Application Cluster (RAC).
 
-
-В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, пишите мне адрес эл. почты:
-
-
-<div>
-	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
-</div>
+В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, <a href="/chat/">пишите в чат или на адрес эл. почты</a>.
 
 <br/><br/>
 
@@ -28,7 +20,6 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/docs/">Официальная документация</a><br/></li>
 </ul>
 
-
 <br/>
 
 ### Описание окружения для инсталляции Oracle RAC:
@@ -37,10 +28,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/environment-description/">Описание окружения для инсталляции Oracle RAC</a><br/></li>
 </ul>
 
-
 <br/><br/>
-<h2>Дистрибутивы:</h2>
 
+<h2>Дистрибутивы:</h2>
 
 <ul>
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/distrib/">Дистрибутивы баз данных и дополнительное программное обеспечение</a><br/></li>
@@ -68,11 +58,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/copy-oracle-distrib-on-server/">Копирование дистрибутивов базы данных на сервер</a><br/></li>
 </ul>
 
-
 <br/>
 
 ### Инсталляция RAC и создание экземпляров баз данных:
-
 
 <ul>
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/grid-installation/">Инсталляция Grid</a><br/></li>
@@ -80,14 +68,13 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-instance-creation/">Создание экземпляра (instance) базы данных</a><br/></li>
 </ul>
 
-
 <br/>
 
 ### Шаги, выполняемые после развертывания RAC:
 
-
 <ul>
 
-	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/post-installation-tasks/">После инсталляции</a><br/></li>
-	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/patching/">Применение патчей (11.2.0.3.2)</a><br/></li>
+    <li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/post-installation-tasks/">После инсталляции</a><br/></li>
+    <li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/patching/">Применение патчей (11.2.0.3.2)</a><br/></li>
+
 </ul>

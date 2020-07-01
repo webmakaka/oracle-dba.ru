@@ -28,11 +28,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/
 
 У меня нет environment, где бы я постоянно работал с dataguard. Здесь я постараюсь его настроить. Буду обновлять по мере появления новых знаний.
 
-В случае обнаружения ошибок, неточностей, опечаток или вам известны лучшие способы, пишите мне на адрес эл. почты:
-
-<div>
-	<img src="/img/a3333333mail.gif" alt="Marley" border="0">
-</div>
+В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, <a href="/chat/">пишите в чат или на адрес эл. почты</a>.
 
 <br/>
 
@@ -140,7 +136,7 @@ db_unique_name - это уникальное имя для каждого экз
 <ul>
 	<!-- <li><a href="https://pierreforstmanndotcom.wordpress.com/2014/11/28/create-a-physical-standby-database-with-oracle-12-1-0-2-and-rman-active-duplication/" rel="nofollow">[ENG] Create a physical standby database with Oracle 12.1.0.2 and RMAN active duplication</a></li> -->
 
-    <li><a href="http://habrahabr.ru/post/120495/" rel="nofollow">[HabraHabr] Еще раз про Oracle standby</a></li>
+    <li><a href="https://habr.com/ru/post/120495/" rel="nofollow">[HabraHabr] Еще раз про Oracle standby</a></li>
 
     <li><a href="http://docs.oracle.com/cd/B19306_01/server.102/b14239/toc.htm" rel="nofollow">[ENG] Data Guard Concepts and Administration</a></li>
 
