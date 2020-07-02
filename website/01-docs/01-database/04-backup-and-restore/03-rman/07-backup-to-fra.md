@@ -1,20 +1,16 @@
 ---
 layout: page
-title: Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA
-description: Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA
+title: Скрипт RMAN для создания бекапов. Бекап в FRA
+description: Скрипт RMAN для создания бекапов. Бекап в FRA
 keywords: Oracle Database, RMAN, создание резервных копий, Бекап в FRA
-permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example1/
+permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/backup-to-fra/
 ---
 
-# Скрипт RMAN для создания бекапов.
-
-### Пример 1. Бекап в FRA
+# Скрипт RMAN для создания бекапов. Бекап в FRA
 
 <br/>
 
 **База в режиме работы ARCHIVELOG**
-
-<br/>
 
 <br/>
 
@@ -30,34 +26,36 @@ permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example
 
 <br/>
 
-    RUN {
+```
+RUN {
 
-    ALLOCATE CHANNEL c1 DEVICE TYPE DISK;
+ALLOCATE CHANNEL c1 DEVICE TYPE DISK;
 
-    CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
-    CONFIGURE BACKUP OPTIMIZATION ON;
-    CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
+CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
+CONFIGURE BACKUP OPTIMIZATION ON;
+CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
 
-    BACKUP FULL DATABASE TAG "FULL_DATABASE_DATAFILES";
+BACKUP FULL DATABASE TAG "FULL_DATABASE_DATAFILES";
 
-    SQL 'ALTER SYSTEM ARCHIVE LOG CURRENT';
+SQL 'ALTER SYSTEM ARCHIVE LOG CURRENT';
 
-    BACKUP ARCHIVELOG ALL TAG "FULL_DATABASE_ARCHIVELOGS";
+BACKUP ARCHIVELOG ALL TAG "FULL_DATABASE_ARCHIVELOGS";
 
-    BACKUP CURRENT CONTROLFILE TAG "FULL_DATABASE_CONTROLFILE";
+BACKUP CURRENT CONTROLFILE TAG "FULL_DATABASE_CONTROLFILE";
 
-    BACKUP SPFILE TAG "FULL_DATABASE_SPFILE";
+BACKUP SPFILE TAG "FULL_DATABASE_SPFILE";
 
-    DELETE NOPROMPT OBSOLETE;
+DELETE NOPROMPT OBSOLETE;
 
 
-    CONFIGURE RETENTION POLICY CLEAR;
-    CONFIGURE BACKUP OPTIMIZATION CLEAR;
-    CONFIGURE DEVICE TYPE DISK CLEAR;
+CONFIGURE RETENTION POLICY CLEAR;
+CONFIGURE BACKUP OPTIMIZATION CLEAR;
+CONFIGURE DEVICE TYPE DISK CLEAR;
 
-    RELEASE CHANNEL c1;
+RELEASE CHANNEL c1;
 
-    }
+}
+```
 
 Проверка синтаксиса созданного файла сценария
 
@@ -77,17 +75,19 @@ permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/example
 
 <br/>
 
-    RMAN> LIST BACKUP SUMMARY;
+```
+RMAN> LIST BACKUP SUMMARY;
 
 
-    List of Backups
-    ===============
-    Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
-    ------- -- -- - ----------- ------------------- ------- ------- ---------- ---
-    48      B  F  A DISK        19/08/2015 15:34:49 1       1       YES        FULL_DATABASE_DATAFILES
-    50      B  A  A DISK        19/08/2015 15:35:03 1       1       YES        FULL_DATABASE_ARCHIVELOGS
-    51      B  F  A DISK        19/08/2015 15:35:07 1       1       YES        FULL_DATABASE_CONTROLFILE
-    52      B  F  A DISK        19/08/2015 15:35:08 1       1       YES        FULL_DATABASE_SPFILE
+List of Backups
+===============
+Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
+------- -- -- - ----------- ------------------- ------- ------- ---------- ---
+48      B  F  A DISK        19/08/2015 15:34:49 1       1       YES        FULL_DATABASE_DATAFILES
+50      B  A  A DISK        19/08/2015 15:35:03 1       1       YES        FULL_DATABASE_ARCHIVELOGS
+51      B  F  A DISK        19/08/2015 15:35:07 1       1       YES        FULL_DATABASE_CONTROLFILE
+52      B  F  A DISK        19/08/2015 15:35:08 1       1       YES        FULL_DATABASE_SPFILE
+```
 
 <br/>
 

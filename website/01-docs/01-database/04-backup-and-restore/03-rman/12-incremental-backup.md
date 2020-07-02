@@ -8,11 +8,13 @@ permalink: /database/backup-and-restore/rman/incremental-backup/
 
 # Создание инкрементальной копии базы данных с помощью RMAN:
 
-    RUN {
+```
+RUN {
     CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
     BACKUP INCREMENTAL LEVEL 0 DATABASE PLUS ARCHIVELOG TAG "LEVEL 0";
     BACKUP CURRENT CONTROLFILE SPFILE;
-    }
+}
+```
 
 <br/>
 

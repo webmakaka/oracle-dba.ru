@@ -13,11 +13,11 @@ permalink: /database/backup-and-restore/rman/restore-points/
 
 // Создание точки восстановления
 
-    SQL> create restore point 'pointName';
+    SQL> create restore point <pointName>;
 
 // Создание точки восстановления с гарантией отката (при включенном flashback)
 
-    SQL> create restore point 'pointName' guarantee flashback database;
+    SQL> create restore point <pointName> guarantee flashback database;
 
 // Показать точки восстановления
 
@@ -25,11 +25,11 @@ permalink: /database/backup-and-restore/rman/restore-points/
 
 // Удалить точку восстановления
 
-    SQL> drop restore point 'pointName'
+    SQL> drop restore point <pointName>
 
 // Откатиться на точку восстановления (при включенном flashback)
 
     SQL> shutdown immediate;
     SQL> startup mount exclusive;
-    SQL> flashback database to restore point 'pointName';
+    SQL> flashback database to restore point <pointName>;
     SQL> alter database open;

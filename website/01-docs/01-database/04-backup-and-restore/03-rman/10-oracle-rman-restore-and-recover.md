@@ -25,33 +25,36 @@ permalink: /database/backup-and-restore/rman/oracle-rman-restore-and-recover/
 
 <br/>
 
-    Starting restore at 13.04.2012 18:48:51
-    using channel ORA_DISK_1
+```
+Starting restore at 13.04.2012 18:48:51
+using channel ORA_DISK_1
 
 
-    List of Backups
-    ===============
-    Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
-    ------- -- -- - ----------- ------------------- ------- ------- ---------- ---
-    214     B  F  A DISK        13.04.2012 18:46:40 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
-    213     B  F  A DISK        13.04.2012 18:45:57 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
-    210     B  F  A DISK        13.04.2012 18:45:21 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
-    211     B  F  A DISK        13.04.2012 18:45:23 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
-    212     B  F  A DISK        13.04.2012 18:45:24 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
+List of Backups
+===============
+Key     TY LV S Device Type Completion Time     #Pieces #Copies Compressed Tag
+------- -- -- - ----------- ------------------- ------- ------- ---------- ---
+214     B  F  A DISK        13.04.2012 18:46:40 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
+213     B  F  A DISK        13.04.2012 18:45:57 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
+210     B  F  A DISK        13.04.2012 18:45:21 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
+211     B  F  A DISK        13.04.2012 18:45:23 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
+212     B  F  A DISK        13.04.2012 18:45:24 1       1       YES        FULL_DATABASE_BEFORE_UPGRADE
 
-    List of Archived Log Copies for database with db_unique_name ORA112
-    =====================================================================
+List of Archived Log Copies for database with db_unique_name ORA112
+=====================================================================
 
-    Key     Thrd Seq     S Low Time
-    ------- ---- ------- - -------------------
-    295     1    242     A 13.04.2012 18:45:06
-            Name: /u02/oradata/ora112/archivelogs/1_242_0767676036.arc
+Key     Thrd Seq     S Low Time
+------- ---- ------- - -------------------
+295     1    242     A 13.04.2012 18:45:06
+        Name: /u02/oradata/ora112/archivelogs/1_242_0767676036.arc
 
-    Media recovery start SCN is 8639788
-    Recovery must be done beyond SCN 8639822 to clear datafile fuzziness
-    Finished restore at 13.04.2012 18:48:51
+Media recovery start SCN is 8639788
+Recovery must be done beyond SCN 8639822 to clear datafile fuzziness
+Finished restore at 13.04.2012 18:48:51
+```
 
 <br/><br/>
+
 **Команда:**<br/>
 
 RESTORE DATABASE PREVIEW - представляет детальный отчет обо всех резервных копиях, которые потребуются для успешного выолпнения команды RESTORE.
@@ -60,84 +63,86 @@ RESTORE DATABASE PREVIEW - представляет детальный отче�
 
 <br/>
 
-    Starting restore at 13.04.2012 18:51:29
-    using channel ORA_DISK_1
+```
+Starting restore at 13.04.2012 18:51:29
+using channel ORA_DISK_1
 
 
-    List of Backup Sets
-    ===================
+List of Backup Sets
+===================
 
 
-    BS Key  Type LV Size       Device Type Elapsed Time Completion Time
-    ------- ---- -- ---------- ----------- ------------ -------------------
-    214     Full    191.88M    DISK        00:00:40     13.04.2012 18:46:40
-            BP Key: 226   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
-            Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh18jk_.bkp
-      List of Datafiles in backup set 214
-      File LV Type Ckp SCN    Ckp Time            Name
-      ---- -- ---- ---------- ------------------- ----
-      1       Full 8639822    13.04.2012 18:46:00 /u02/oradata/ora112/system01.dbf
-      9       Full 8639822    13.04.2012 18:46:00 /u01/app/oracle/product/11.2/dbs/my_data04.dbf
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ -------------------
+214     Full    191.88M    DISK        00:00:40     13.04.2012 18:46:40
+        BP Key: 226   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
+        Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh18jk_.bkp
+    List of Datafiles in backup set 214
+    File LV Type Ckp SCN    Ckp Time            Name
+    ---- -- ---- ---------- ------------------- ----
+    1       Full 8639822    13.04.2012 18:46:00 /u02/oradata/ora112/system01.dbf
+    9       Full 8639822    13.04.2012 18:46:00 /u01/app/oracle/product/11.2/dbs/my_data04.dbf
 
-    BS Key  Type LV Size       Device Type Elapsed Time Completion Time
-    ------- ---- -- ---------- ----------- ------------ -------------------
-    213     Full    121.24M    DISK        00:00:32     13.04.2012 18:45:57
-            BP Key: 225   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
-            Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh059r_.bkp
-      List of Datafiles in backup set 213
-      File LV Type Ckp SCN    Ckp Time            Name
-      ---- -- ---- ---------- ------------------- ----
-      2       Full 8639802    13.04.2012 18:45:25 /u02/oradata/ora112/sysaux01.dbf
-      3       Full 8639802    13.04.2012 18:45:25 /u02/oradata/ora112/undotbs01.dbf
-      4       Full 8639802    13.04.2012 18:45:25 /u02/oradata/ora112/users01.dbf
-      8       Full 8639802    13.04.2012 18:45:25 /u01/app/oracle/product/11.2/dbs/my_data03.dbf
-      14      Full 8639802    13.04.2012 18:45:25 /u02/oradata/ORA112/datafile/o1_mf_my_data_7oy0k0vr_.dbf
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ -------------------
+213     Full    121.24M    DISK        00:00:32     13.04.2012 18:45:57
+        BP Key: 225   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
+        Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh059r_.bkp
+    List of Datafiles in backup set 213
+    File LV Type Ckp SCN    Ckp Time            Name
+    ---- -- ---- ---------- ------------------- ----
+    2       Full 8639802    13.04.2012 18:45:25 /u02/oradata/ora112/sysaux01.dbf
+    3       Full 8639802    13.04.2012 18:45:25 /u02/oradata/ora112/undotbs01.dbf
+    4       Full 8639802    13.04.2012 18:45:25 /u02/oradata/ora112/users01.dbf
+    8       Full 8639802    13.04.2012 18:45:25 /u01/app/oracle/product/11.2/dbs/my_data03.dbf
+    14      Full 8639802    13.04.2012 18:45:25 /u02/oradata/ORA112/datafile/o1_mf_my_data_7oy0k0vr_.dbf
 
-    BS Key  Type LV Size       Device Type Elapsed Time Completion Time
-    ------- ---- -- ---------- ----------- ------------ -------------------
-    210     Full    1.02M      DISK        00:00:00     13.04.2012 18:45:21
-            BP Key: 222   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
-            Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh01to_.bkp
-      List of Datafiles in backup set 210
-      File LV Type Ckp SCN    Ckp Time            Name
-      ---- -- ---- ---------- ------------------- ----
-      5       Full 8639798    13.04.2012 18:45:21 /u02/oradata/ora112/my_indexes01.dbf
-      7       Full 8639798    13.04.2012 18:45:21 /u01/app/oracle/product/11.2/dbs/my_data02.dbf
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ -------------------
+210     Full    1.02M      DISK        00:00:00     13.04.2012 18:45:21
+        BP Key: 222   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
+        Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh01to_.bkp
+    List of Datafiles in backup set 210
+    File LV Type Ckp SCN    Ckp Time            Name
+    ---- -- ---- ---------- ------------------- ----
+    5       Full 8639798    13.04.2012 18:45:21 /u02/oradata/ora112/my_indexes01.dbf
+    7       Full 8639798    13.04.2012 18:45:21 /u01/app/oracle/product/11.2/dbs/my_data02.dbf
 
-    BS Key  Type LV Size       Device Type Elapsed Time Completion Time
-    ------- ---- -- ---------- ----------- ------------ -------------------
-    211     Full    1.28M      DISK        00:00:01     13.04.2012 18:45:23
-            BP Key: 223   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
-            Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh02yy_.bkp
-      List of Datafiles in backup set 211
-      File LV Type Ckp SCN    Ckp Time            Name
-      ---- -- ---- ---------- ------------------- ----
-      6       Full 8639799    13.04.2012 18:45:22 /u02/oradata/ora112/my_data01.dbf
-      12      Full 8639799    13.04.2012 18:45:22 /u01/app/oracle/product/11.2/dbs/my_data07.dbf
-      13      Full 8639799    13.04.2012 18:45:22 /u01/app/oracle/product/11.2/dbs/my_data08.dbf
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ -------------------
+211     Full    1.28M      DISK        00:00:01     13.04.2012 18:45:23
+        BP Key: 223   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
+        Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh02yy_.bkp
+    List of Datafiles in backup set 211
+    File LV Type Ckp SCN    Ckp Time            Name
+    ---- -- ---- ---------- ------------------- ----
+    6       Full 8639799    13.04.2012 18:45:22 /u02/oradata/ora112/my_data01.dbf
+    12      Full 8639799    13.04.2012 18:45:22 /u01/app/oracle/product/11.2/dbs/my_data07.dbf
+    13      Full 8639799    13.04.2012 18:45:22 /u01/app/oracle/product/11.2/dbs/my_data08.dbf
 
-    BS Key  Type LV Size       Device Type Elapsed Time Completion Time
-    ------- ---- -- ---------- ----------- ------------ -------------------
-    212     Full    1.02M      DISK        00:00:00     13.04.2012 18:45:24
-            BP Key: 224   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
-            Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh044h_.bkp
-      List of Datafiles in backup set 212
-      File LV Type Ckp SCN    Ckp Time            Name
-      ---- -- ---- ---------- ------------------- ----
-      10      Full 8639800    13.04.2012 18:45:24 /u01/app/oracle/product/11.2/dbs/my_data05.dbf
-      11      Full 8639800    13.04.2012 18:45:24 /u01/app/oracle/product/11.2/dbs/my_data06.dbf
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ -------------------
+212     Full    1.02M      DISK        00:00:00     13.04.2012 18:45:24
+        BP Key: 224   Status: AVAILABLE  Compressed: YES  Tag: FULL_DATABASE_BEFORE_UPGRADE
+        Piece Name: /u03/oracle_backups/fra/ORA112/backupset/2012_04_13/o1_mf_nnndf_FULL_DATABASE_BEFORE_7rjh044h_.bkp
+    List of Datafiles in backup set 212
+    File LV Type Ckp SCN    Ckp Time            Name
+    ---- -- ---- ---------- ------------------- ----
+    10      Full 8639800    13.04.2012 18:45:24 /u01/app/oracle/product/11.2/dbs/my_data05.dbf
+    11      Full 8639800    13.04.2012 18:45:24 /u01/app/oracle/product/11.2/dbs/my_data06.dbf
 
-    List of Archived Log Copies for database with db_unique_name ORA112
-    =====================================================================
+List of Archived Log Copies for database with db_unique_name ORA112
+=====================================================================
 
-    Key     Thrd Seq     S Low Time
-    ------- ---- ------- - -------------------
-    295     1    242     A 13.04.2012 18:45:06
-            Name: /u02/oradata/ora112/archivelogs/1_242_0767676036.arc
+Key     Thrd Seq     S Low Time
+------- ---- ------- - -------------------
+295     1    242     A 13.04.2012 18:45:06
+        Name: /u02/oradata/ora112/archivelogs/1_242_0767676036.arc
 
-    Media recovery start SCN is 8639788
-    Recovery must be done beyond SCN 8639822 to clear datafile fuzziness
-    Finished restore at 13.04.2012 18:51:29
+Media recovery start SCN is 8639788
+Recovery must be done beyond SCN 8639822 to clear datafile fuzziness
+Finished restore at 13.04.2012 18:51:29
+```
 
 <br/><br/>
 

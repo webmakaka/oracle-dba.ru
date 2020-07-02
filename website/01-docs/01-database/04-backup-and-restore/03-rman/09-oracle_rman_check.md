@@ -61,7 +61,10 @@ With VALIDATE you can be sure that you will be able to use that backup to restor
 
     RMAN> VALIDATE RECOVERY AREA;
 
-RMAN читает все блоки и проверяет их на поврежденность. <br/>
+RMAN читает все блоки и проверяет их на поврежденность.
+
+<br/>
+
 Если находятся поврежденные блоки, то информация о них попадает в V\$DATABASE_BLOCK_CORRUPTION<br/>
 
     RMAN> BACKUP VALIDATE DATABASE;
