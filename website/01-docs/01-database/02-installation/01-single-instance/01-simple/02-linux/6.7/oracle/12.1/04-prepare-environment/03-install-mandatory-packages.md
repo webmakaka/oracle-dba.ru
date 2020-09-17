@@ -182,6 +182,12 @@ rlwrap - пакет, который позволяет хранить истор
 
 <br/>
 
+Если не работает вышеуказанный сайт, исходники можно взять здесь:
+
+    https://github.com/hanslub42/rlwrap
+
+<br/>
+
     # tar zxvf rlwrap-0.37.tar.gz
     # cd rlwrap-0.37
     # ./configure

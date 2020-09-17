@@ -77,6 +77,12 @@ SP2-0667: Message file sp1<lang>.msb not found<br/>
 
 <br/>
 
+Если не работает вышеуказанный сайт, исходники можно взять здесь:
+
+    https://github.com/hanslub42/rlwrap
+
+<br/>
+
     # tar zxvf rlwrap-0.37.tar.gz
     # cd rlwrap-0.37
     # ./configure
@@ -97,19 +103,21 @@ SP2-0667: Message file sp1<lang>.msb not found<br/>
 
 <br/>
 
-    #################################
-    ## Oracle Instant Client
+```
+#################################
+## Oracle Instant Client
 
-    export SQLPATH=/u01/app/oracle/instantclient/11.2
-    export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
-    export TNS_ADMIN=${SQLPATH}
-    export LD_LIBRARY_PATH=${SQLPATH}
-    export PATH=${SQLPATH}:${PATH}
+export SQLPATH=/u01/app/oracle/instantclient/11.2
+export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+export TNS_ADMIN=${SQLPATH}
+export LD_LIBRARY_PATH=${SQLPATH}
+export PATH=${SQLPATH}:${PATH}
 
-    alias sqlplus='rlwrap sqlplus'
-    alias rman='rlwrap rman'
+alias sqlplus='rlwrap sqlplus'
+alias rman='rlwrap rman'
 
-    #################################
+#################################
+```
 
 <br/>
 

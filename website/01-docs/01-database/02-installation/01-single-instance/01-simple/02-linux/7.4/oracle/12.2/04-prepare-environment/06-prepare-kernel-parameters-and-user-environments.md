@@ -106,7 +106,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 4.  Отредактируйте файл /etc/profile
 
-        	# vi /etc/profile
+    # vi /etc/profile
 
 В конце файла перед следующими командами.
 
@@ -131,7 +131,6 @@ fi
 <br/>
 
 5. Отредактируйте файл /home/oracle/.bash_profile
-
 
     # su - oracle12
 

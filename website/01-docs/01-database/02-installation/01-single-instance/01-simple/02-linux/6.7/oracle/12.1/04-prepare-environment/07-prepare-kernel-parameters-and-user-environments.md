@@ -11,10 +11,10 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/p
 Перед тем как вносить изменения в конфигурационные файлы, рекомедуется сделать их резервные копии:
 
     # {
-    cp /etc/sysctl.conf /etc/sysctl.conf.bkp.$(date +%Y-%m-%d)
-    cp /etc/security/limits.conf /etc/security/limits.conf.bkp.$(date +%Y-%m-%d)
-    cp /etc/pam.d/login /etc/pam.d/login.bkp.$(date +%Y-%m-%d)
-    cp /etc/profile /etc/profile.bkp.$(date +%Y-%m-%d)
+        cp /etc/sysctl.conf /etc/sysctl.conf.bkp.$(date +%Y-%m-%d)
+        cp /etc/security/limits.conf /etc/security/limits.conf.bkp.$(date +%Y-%m-%d)
+        cp /etc/pam.d/login /etc/pam.d/login.bkp.$(date +%Y-%m-%d)
+        cp /etc/profile /etc/profile.bkp.$(date +%Y-%m-%d)
     }
 
 ### Создание пользователей и групп
@@ -136,7 +136,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/p
 
 5. Отредактируйте файл /home/oracle/.bash_profile
 
-
     # su - oracle12
 
 <br/>
@@ -149,27 +148,29 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/p
 
 Добавьте
 
-    ############################################
-    #### Oracle 12 Parameters
+```
+############################################
+#### Oracle 12 Parameters
 
-    umask 022
+umask 022
 
-    export ORACLE_BASE=/u01/oracle
-    export ORACLE_HOME=$ORACLE_BASE/database/12.1
-    export ORACLE_SID=orcl12
-    export ORACLE_UNQNAME=orcl12
-    export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
-    export NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
+export ORACLE_BASE=/u01/oracle
+export ORACLE_HOME=$ORACLE_BASE/database/12.1
+export ORACLE_SID=orcl12
+export ORACLE_UNQNAME=orcl12
+export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+export NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
 
-    export PATH=$PATH:$ORACLE_HOME/bin
-    export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export PATH=$PATH:$ORACLE_HOME/bin
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
-    export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
+export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
 
-    alias sqlplus='rlwrap sqlplus'
-    alias rman='rlwrap rman'
+alias sqlplus='rlwrap sqlplus'
+alias rman='rlwrap rman'
 
-    ############################################
+############################################
+```
 
 Применить переменные, определенные в файле .bash_profile к текущей сессии bash можно следующей командой:
 

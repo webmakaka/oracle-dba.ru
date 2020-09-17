@@ -48,39 +48,41 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/pr
 
 <br/>
 
-    #######################################################
-    #### Oracle 12.1 Parameters ###########################
+```
+#######################################################
+#### Oracle 12.1 Parameters ###########################
 
-    	umask 022
+	umask 022
 
-    	export ORACLE_BASE=/u01/oracle
-    	export ORACLE_HOME=$ORACLE_BASE/database/12.1
+	export ORACLE_BASE=/u01/oracle
+	export ORACLE_HOME=$ORACLE_BASE/database/12.1
 
-    	export GRID_HOME=$ORACLE_BASE/grid/12.1
+	export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-    	export ORACLE_SID=orcl12
-    	export ORACLE_UNQNAME=master
-    	export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+	export ORACLE_SID=orcl12
+	export ORACLE_UNQNAME=master
+	export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
-    	export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
-    	export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+	export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
+	export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
-    	export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
+	export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
 
 
-    	# rlwrap aliases
+	# rlwrap aliases
 
-    	alias sqlplus='rlwrap sqlplus'
-    	alias rman='rlwrap rman'
-    	alias asmcmd='rlwrap asmcmd'
-    	alias dgmgrl='rlwrap dgmgrl'
+	alias sqlplus='rlwrap sqlplus'
+	alias rman='rlwrap rman'
+	alias asmcmd='rlwrap asmcmd'
+	alias dgmgrl='rlwrap dgmgrl'
 
-    	# my alases
+	# my alases
 
-    	alias alert='tail -f $ORACLE_BASE/diag/rdbms/$ORACLE_SID/$ORACLE_SID/trace/alert_$ORACLE_SID.log'
+	alias alert='tail -f $ORACLE_BASE/diag/rdbms/$ORACLE_SID/$ORACLE_SID/trace/alert_$ORACLE_SID.log'
 
-    #### Oracle 12.1 Parameters ###########################
-    #######################################################
+#### Oracle 12.1 Parameters ###########################
+#######################################################
+```
 
 <br/>
 
@@ -95,43 +97,45 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/pr
 
 <br/>
 
-\$ vi ~/.bash_profile
+    $ vi ~/.bash_profile
 
 <br/>
 
-    #######################################################
-    #### Oracle 12.1 Parameters ###########################
+```
+#######################################################
+#### Oracle 12.1 Parameters ###########################
 
-    	umask 022
+	umask 022
 
-    	export ORACLE_BASE=/u01/oracle
-    	export ORACLE_HOME=$ORACLE_BASE/database/12.1
+	export ORACLE_BASE=/u01/oracle
+	export ORACLE_HOME=$ORACLE_BASE/database/12.1
 
-    	export GRID_HOME=$ORACLE_BASE/grid/12.1
+	export GRID_HOME=$ORACLE_BASE/grid/12.1
 
-    	export ORACLE_SID=orcl12
-    	export ORACLE_UNQNAME=slave
-    	export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+	export ORACLE_SID=orcl12
+	export ORACLE_UNQNAME=slave
+	export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
 
-    	export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
-    	export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+	export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin
+	export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 
-    	export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
+	export NLS_DATE_FORMAT='dd/mm/yyyy hh24:mi:ss'
 
 
-    	# rlwrap aliases
+	# rlwrap aliases
 
-    	alias sqlplus='rlwrap sqlplus'
-    	alias rman='rlwrap rman'
-    	alias asmcmd='rlwrap asmcmd'
-    	alias dgmgrl='rlwrap dgmgrl'
+	alias sqlplus='rlwrap sqlplus'
+	alias rman='rlwrap rman'
+	alias asmcmd='rlwrap asmcmd'
+	alias dgmgrl='rlwrap dgmgrl'
 
-    	# my alases
+	# my alases
 
-    	alias alert='tail -f $ORACLE_BASE/diag/rdbms/$ORACLE_SID/$ORACLE_SID/trace/alert_$ORACLE_SID.log'
+	alias alert='tail -f $ORACLE_BASE/diag/rdbms/$ORACLE_SID/$ORACLE_SID/trace/alert_$ORACLE_SID.log'
 
-    #### Oracle 12.1 Parameters ###########################
-    #######################################################
+#### Oracle 12.1 Parameters ###########################
+#######################################################
+```
 
 <br/>
 

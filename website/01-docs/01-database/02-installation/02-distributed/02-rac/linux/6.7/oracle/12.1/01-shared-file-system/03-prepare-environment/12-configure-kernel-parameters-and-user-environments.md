@@ -155,47 +155,48 @@ unset pathmunge
 
     # User specific environment and startup programs
 
+```
+############################################
+#### Oracle 12 Parameters rac1
 
-    ############################################
-    #### Oracle 12 Parameters rac1
+    umask 022
 
-       umask 022
+    # Different Parameters
 
-       # Different Parameters
+    export ORACLE_SID=rac121
+    export ORACLE_UNQNAME=rac121
+    export ORACLE_HOSTNAME=rac1.localdomain
 
-        export ORACLE_SID=rac121
-        export ORACLE_UNQNAME=rac121
-        export ORACLE_HOSTNAME=rac1.localdomain
+    # Grid
 
-       # Grid
+    export GRID_HOME=/u01/app/grid/12.1
+    export CRS_HOME=${GRID_HOME}/crs
 
-        export GRID_HOME=/u01/app/grid/12.1
-        export CRS_HOME=${GRID_HOME}/crs
+    # DataBase
 
-       # DataBase
+    export ORACLE_BASE=/u01/app/oracle
+    export ORACLE_HOME=${ORACLE_BASE}/product/rac/12.1
 
-       export ORACLE_BASE=/u01/app/oracle
-       export ORACLE_HOME=${ORACLE_BASE}/product/rac/12.1
+    # NLS
 
-       # NLS
+    export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+    export NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
 
-       export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
-       export NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
+    # Other
+    export ORACLE_OWNER=oracle12
 
-       # Other
-       export ORACLE_OWNER=oracle12
+    # Alias
 
-       # Alias
+    alias sqlplus='rlwrap sqlplus'
+    alias rman='rlwrap rman'
 
-        alias sqlplus='rlwrap sqlplus'
-        alias rman='rlwrap rman'
+    # Path
 
-       # Path
+    export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+    export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin:$CRS_HOME/bin
 
-       export LD_LIBRARY_PATH=$ORACLE_HOME/lib
-       export PATH=$PATH:$ORACLE_HOME/bin:$GRID_HOME/bin:$CRS_HOME/bin
-
-    ############################################
+############################################
+```
 
 <br/><br/>
 
