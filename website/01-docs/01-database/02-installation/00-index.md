@@ -180,9 +180,13 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 ### Real Application Cluster (RAC)
 
 <ul>
-
-    <li><a href="/database/installation/distributed/rac/">Инсталляция Real Application Cluster (RAC)</a></li>
-
+    <li>
+        <a href="/database/installation/distributed/rac/">Инсталляция Real Application Cluster (RAC)</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/watch?v=Tmm9o5MusA8">[YouTube] Vagrant Oracle Real Application Clusters (RAC) Build
+        </a>
+    </li>
 </ul>
 
 <br/>
