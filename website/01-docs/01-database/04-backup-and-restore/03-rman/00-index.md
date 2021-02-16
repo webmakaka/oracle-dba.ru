@@ -39,10 +39,13 @@ permalink: /database/backup-and-restore/rman/
         <a href="/database/backup-and-restore/rman/oracle-rman-backup-noarchivelog/">Создание резервных копий с помощью утилиты RMAN (NOARCHIVELOG)</a>
     </li>
     <li>
-        <a href="/database/backup-and-restore/rman/oracle_rman_scripts_example/backup-to-fra/">Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA (ARCHIVELOG)</a>
+        <a href="/database/backup-and-restore/rman/backup-to-fra/">Скрипт RMAN для создания бекапов. Пример 1. Бекап в FRA (ARCHIVELOG)</a>
     </li>
     <li>
-        <a href="/database/backup-and-restore/rman/oracle_rman_scripts_example/backup-to-folder/">Скрипт RMAN для создания бекапов. Пример 2. Бекап в каталог (ARCHIVELOG)</a>
+        <a href="/database/backup-and-restore/rman/backup-to-folder/">Скрипт RMAN для создания бекапов. Пример 2. Бекап в каталог (ARCHIVELOG)</a>
+    </li>
+     <li>
+        <a href="/database/backup-and-restore/rman/backup-sample-script/">Пример shell скрипта для backup</a>
     </li>
     <li>
         <a href="/database/backup-and-restore/rman/incremental-backup/">Создание инкрементальной копии базы данных с помощью RMAN</a>

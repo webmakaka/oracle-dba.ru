@@ -3,7 +3,7 @@ layout: page
 title: Скрипт RMAN для создания бекапов. Бекап в каталог
 description: Скрипт RMAN для создания бекапов. Бекап в каталог
 keywords: Oracle Database, RMAN, создание резервных копий, Бекап в каталог
-permalink: /database/backup-and-restore/rman/oracle_rman_scripts_example/backup-to-folder/
+permalink: /database/backup-and-restore/rman/backup-to-folder/
 ---
 
 # Скрипт RMAN для создания бекапов. Бекап в каталог
