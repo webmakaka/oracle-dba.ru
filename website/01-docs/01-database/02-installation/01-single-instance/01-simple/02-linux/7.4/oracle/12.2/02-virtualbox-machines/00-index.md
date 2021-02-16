@@ -23,7 +23,7 @@ permalink: /database/installation/single-instance/simple/oel/7.4/oracle/db/12.2/
 <br/>
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри  
-<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/devops/linux/virtual/virtualbox/">здесь</a>
 
 <br/>
 
@@ -212,7 +212,7 @@ vboxnet0 - виртуальный адаптер хостовой машины.
 ## ВИРТУАЛЬНАЯ МАШИНА ГОТОВА ДЛЯ ИНСТАЛЛЯЦИИ ОПЕРАЦИОННОЙ СИСТЕМЫ
 
 Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
-<a href="//sysadm.ru/linux/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/devops/linux/virtual/virtualbox/">здесь</a>
 
 <br/>
 
