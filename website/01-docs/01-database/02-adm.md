@@ -48,7 +48,7 @@ permalink: /database/adm/
 
 <ul>
     <li>
-        <a href="/docs/architecture/networking/">Конфигурационные файлы listener.ora, tnsnames.ora и утилита LSNRCTL</a>
+        <a href="/database/network/listener/">Конфигурационные файлы listener.ora, tnsnames.ora и утилита LSNRCTL</a>
     </li>
 </ul>
 
