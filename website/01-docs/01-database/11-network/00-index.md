@@ -15,6 +15,7 @@ permalink: /database/network/listener/
 По умолчанию файлы хранятся:
 
 <br/>
+
 /u01/app/oracle/product/11.2/network/admin
 
 <br/>
@@ -79,6 +80,11 @@ SID2 =
     )
   )
 ```
+
+<br/>
+
+    // Должен работать (Но это не точно)
+    $ tnsping SID2
 
 <br/>
 
@@ -211,3 +217,28 @@ Listener is enabled.
 [Подключиться к базе данных Oracle из командной строки](https://odba.ru/showthread.php?t=66)
 
 [Возможно полезный пример с настройкой клиента](https://odba.ru/showthread.php?t=294&page=2)
+
+<br/>
+
+### Способ настроить tnsnames, предложенный в чате:
+
+```
+connect / as sysdba
+alter session set container=pdb_a;
+alter system register;
+```
+
+<br/>
+
+После этого она зарегается в листенере, если до этого её не было.
+
+в tnsnames.ora: (ip адрес только поправь)
+
+```
+pdb_a =
+(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP) (HOST=10.1.1.14) (PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=pdb_a)))
+```
+
+<br/>
+
+https://t.me/oracle_dba_ru/7971
