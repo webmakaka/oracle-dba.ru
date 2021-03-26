@@ -214,6 +214,8 @@ Listener is enabled.
 
 <br/>
 
+### Дополнительно
+
 [Подключиться к базе данных Oracle из командной строки](https://odba.ru/showthread.php?t=66)
 
 [Возможно полезный пример с настройкой клиента](https://odba.ru/showthread.php?t=294&page=2)
@@ -232,7 +234,11 @@ alter system register;
 
 После этого она зарегается в листенере, если до этого её не было.
 
-в tnsnames.ora: (ip адрес только поправь)
+<br/>
+
+В tnsnames.ora: (ip адрес только поправь)
+
+<br/>
 
 ```
 pdb_a =
