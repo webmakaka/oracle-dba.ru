@@ -10,21 +10,27 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
 <strong>Создаем таблицу для записи сообщений об ошибках.</strong>
 
-    CREATE TABLE error_logs (
-    id           NUMBER(10)      NOT NULL,
-    prefix       VARCHAR2(50),
-    data         VARCHAR2(2000)  NOT NULL,
-    error_level  NUMBER(2)       NOT NULL,
-    created_date DATE            NOT NULL,
-    created_by   VARCHAR2(50)    NOT NULL);
+```sql
+CREATE TABLE error_logs (
+id           NUMBER(10)      NOT NULL,
+prefix       VARCHAR2(50),
+data         VARCHAR2(2000)  NOT NULL,
+error_level  NUMBER(2)       NOT NULL,
+created_date DATE            NOT NULL,
+created_by   VARCHAR2(50)    NOT NULL);
+```
 
 <br/>
 
-    ALTER TABLE error_logs ADD (CONSTRAINT error_logs_pk PRIMARY KEY (id));
+```sql
+ALTER TABLE error_logs ADD (CONSTRAINT error_logs_pk PRIMARY KEY (id));
+```
 
 <br/>
 
-    CREATE SEQUENCE error_logs_seq;
+```sql
+CREATE SEQUENCE error_logs_seq;
+```
 
 <br/><br/>
 <strong>err.pks</strong>

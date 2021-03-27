@@ -8,7 +8,9 @@ permalink: /docs/architecture/other/poisk-dublikatov/
 
 # Поиск одинаковых записей в базе данных (поиск дубликатов)
 
-    select do, count(*)
-    from region
-    group by do
-    having count(*) > 1;
+```sql
+select do, count(*)
+from region
+group by do
+having count(*) > 1;
+```
