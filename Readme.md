@@ -40,3 +40,14 @@ Docker и docker-compose должны быть уже установлены.
     # systemctl status oracle-dba.ru.service
 
 http://localhost:4009
+
+<br/>
+
+---
+
+<br/>
+
+**Marley**
+
+Any questions in english: <a href="https://oracledba.net/chat/">Telegram Chat</a>  
+Любые вопросы на русском: <a href="https://oracle-dba.ru/chat/">Телеграм чат</a>
