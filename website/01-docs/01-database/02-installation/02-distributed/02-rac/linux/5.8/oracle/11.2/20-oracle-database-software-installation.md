@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Инсталляция Database Software
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Инсталляция Database Software
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Инсталляция Database Software
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Инсталляция Database Software
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-database-software-installation/
 ---
 
 # <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция Database Software
 
+<br/>
+
+    $ cd /tmp/database
 
 <br/>
 
-	$ cd /tmp/database
-
-<br/>
-
-	$ ./runInstaller
-
+    $ ./runInstaller
 
 <br/><br/>
 
@@ -31,78 +31,71 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-d
 <img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_11.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
 <img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_database_software_installation_12.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
 
-
-
 node1
 
-	# /u01/app/oracle/product/rac/11.2/root.sh
+    # /u01/app/oracle/product/rac/11.2/root.sh
 
-	Performing root user operation for Oracle 11g
+    Performing root user operation for Oracle 11g
 
-	The following environment variables are set as:
-	    ORACLE_OWNER= oracle11
-	    ORACLE_HOME=  /u01/app/oracle/product/rac/11.2
+    The following environment variables are set as:
+        ORACLE_OWNER= oracle11
+        ORACLE_HOME=  /u01/app/oracle/product/rac/11.2
 
-	Enter the full pathname of the local bin directory: [/usr/local/bin]:
-	The contents of "dbhome" have not changed. No need to overwrite.
-	The contents of "oraenv" have not changed. No need to overwrite.
-	The contents of "coraenv" have not changed. No need to overwrite.
+    Enter the full pathname of the local bin directory: [/usr/local/bin]:
+    The contents of "dbhome" have not changed. No need to overwrite.
+    The contents of "oraenv" have not changed. No need to overwrite.
+    The contents of "coraenv" have not changed. No need to overwrite.
 
-	Entries will be added to the /etc/oratab file as needed by
-	Database Configuration Assistant when a database is created
-	Finished running generic part of root script.
-	Now product-specific root actions will be performed.
-	Finished product-specific root actions.
-
-
-<br/>
-
-
-
-	# /u01/app/oracle/product/rac/11.2/root.sh
-
-	Performing root user operation for Oracle 11g
-
-	The following environment variables are set as:
-	    ORACLE_OWNER= oracle11
-	    ORACLE_HOME=  /u01/app/oracle/product/rac/11.2
-
-	Enter the full pathname of the local bin directory: [/usr/local/bin]:
-	The contents of "dbhome" have not changed. No need to overwrite.
-	The contents of "oraenv" have not changed. No need to overwrite.
-	The contents of "coraenv" have not changed. No need to overwrite.
-
-	Entries will be added to the /etc/oratab file as needed by
-	Database Configuration Assistant when a database is created
-	Finished running generic part of root script.
-	Now product-specific root actions will be performed.
-	Finished product-specific root actions.
-
+    Entries will be added to the /etc/oratab file as needed by
+    Database Configuration Assistant when a database is created
+    Finished running generic part of root script.
+    Now product-specific root actions will be performed.
+    Finished product-specific root actions.
 
 <br/>
 
-	$ olsnodes
-	node1
-	node2
+    # /u01/app/oracle/product/rac/11.2/root.sh
+
+    Performing root user operation for Oracle 11g
+
+    The following environment variables are set as:
+        ORACLE_OWNER= oracle11
+        ORACLE_HOME=  /u01/app/oracle/product/rac/11.2
+
+    Enter the full pathname of the local bin directory: [/usr/local/bin]:
+    The contents of "dbhome" have not changed. No need to overwrite.
+    The contents of "oraenv" have not changed. No need to overwrite.
+    The contents of "coraenv" have not changed. No need to overwrite.
+
+    Entries will be added to the /etc/oratab file as needed by
+    Database Configuration Assistant when a database is created
+    Finished running generic part of root script.
+    Now product-specific root actions will be performed.
+    Finished product-specific root actions.
+
+<br/>
+
+    $ olsnodes
+    node1
+    node2
 
 
-	node_name -- displays information for the particular node
+    node_name -- displays information for the particular node
 
-	g -- more details
-	i -- with VIP
-	l -- local node name
-	n -- with node number
-	p -- private interconnect
-	s -- status of the node (ACTIVE or INACTIVE)
-	t -- type of the node (PINNED or UNPINNED)
-	v -- verbose
+    g -- more details
+    i -- with VIP
+    l -- local node name
+    n -- with node number
+    p -- private interconnect
+    s -- status of the node (ACTIVE or INACTIVE)
+    t -- type of the node (PINNED or UNPINNED)
+    v -- verbose
 
 Разработчики в своих скриптах жестко закодили путь olsnodes.
 Если olsnodes не будет найден в каталоге /u01/app/grid/11.2/crs, развертывание Enterprise Manager закончится ошибкой.
 На поиск причин, почему при инсталляции валится EM, у меня ушло около суток. Надеюсь это кому-нибудь поможет.
 
-
 На обоих нодах:
 
-	# cp /u01/app/grid/11.2/bin/olsnodes /u01/app/grid/11.2/crs
-	# chown oracle11:dba /u01/app/grid/11.2/crs/olsnodes
+    # cp /u01/app/grid/11.2/bin/olsnodes /u01/app/grid/11.2/crs
+    # chown oracle11:dba /u01/app/grid/11.2/crs/olsnodes

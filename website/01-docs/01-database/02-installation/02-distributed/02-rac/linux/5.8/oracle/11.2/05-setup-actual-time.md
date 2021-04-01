@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Настройка сервисов отвечающих за синхронизацию времени
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Настройка сервисов отвечающих за синхронизацию времени
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Настройка сервисов отвечающих за синхронизацию времени
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Настройка сервисов отвечающих за синхронизацию времени
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-actual-time/
 ---
 
@@ -8,11 +10,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-ac
 
 <br/>
 
-
-
-
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);"><strong>Настройка времени</strong></span>
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 <tr>
@@ -20,7 +18,6 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-ac
 	<td height="20" bgcolor="#a2bcb1" width="60%"><span style="font-family: Arial,Helvetica,sans-serif; font-size: 14px;"><strong>node1, node2, storage</strong></span></td>
 </tr>
 </table>
-
 
 Указать доступные ntp сервера
 
@@ -31,7 +28,6 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-ac
     server 0.rhel.pool.ntp.org
     server 1.rhel.pool.ntp.org
     server 2.rhel.pool.ntp.org
-
 
 <!--
 Настраиваем планировщик заданий
@@ -62,6 +58,5 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-ac
     OPTIONS="-x -u ntp:ntp -p /var/run/ntpd.pid"
 
 <br/>
-
 
     # service ntpd restart

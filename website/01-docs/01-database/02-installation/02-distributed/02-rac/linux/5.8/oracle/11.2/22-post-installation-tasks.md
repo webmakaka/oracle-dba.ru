@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - После инсталляции
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - После инсталляции
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - После инсталляции
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, После инсталляции
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/post-installation-tasks/
 ---
 
@@ -8,11 +10,11 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/post-ins
 
 <br/>
 
-1)
+1.
 
 node1
 
-	$ vi /etc/oratab
+    $ vi /etc/oratab
 
 Заменить:
 
@@ -24,14 +26,11 @@ racnode:/u01/app/oracle/product/database/11.2:N
 +ASM1:/u01/app/grid/11.2:Y
 racnode:/u01/app/oracle/product/database/11.2:Y
 
-
 <br/>
-
 
 node2
 
-
-	$ vi /etc/oratab
+    $ vi /etc/oratab
 
 Заменить:
 
@@ -43,22 +42,20 @@ racnode:/u01/app/oracle/product/database/11.2:N
 +ASM2:/u01/app/grid/11.2:Y
 racnode:/u01/app/oracle/product/database/11.2:Y
 
-
-
-2) Убедитесь, что удается подключиться к узлам кластера командой sqlplus
-Если нет,
+2. Убедитесь, что удается подключиться к узлам кластера командой sqlplus
+   Если нет,
 
 Покажет какие процессы запущены.
 
-	ps -eaf | grep ora*
+    ps -eaf | grep ora*
 
 Из этого можно будет понять какое имя у экземпляра.
 
 Откорректируйте
 
-	vi /home/oracle11/.bash_profile
+    vi /home/oracle11/.bash_profile
 
 <br/>
 
-	export ORACLE_SID=racnode1
-	export ORACLE_UNQNAME=racnode1
+    export ORACLE_SID=racnode1
+    export ORACLE_UNQNAME=racnode1

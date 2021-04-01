@@ -1,22 +1,20 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Проверка конфигурации кластера перед инсталляцией RAC
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Проверка конфигурации кластера перед инсталляцией RAC
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Проверка конфигурации кластера перед инсталляцией RAC
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Проверка конфигурации кластера перед инсталляцией RAC
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/check-environment-before-install/
 ---
 
 # <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Проверка конфигурации кластера перед инсталляцией RAC
-
 
 <br/>
 
 Скачайте с сайта oracle последнюю версию «Oracle Cluster Verification Utility»  
 http://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-homepage-099973.html
 
-
-
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
 <strong>Инсталляция cvuqdisk-1.0.9-1.rpm</strong></span>
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -25,38 +23,35 @@ http://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-hom
 	</tr>
 </table>
 
-
 Нужно установить пакет cvuqdisk-1.0.9-1.rpm на всех узлах кластера
 
-Ранее, я скопировал данный пакет на один из серверов linux.  
+Ранее, я скопировал данный пакет на один из серверов linux.
 
 Забираю их следующей командой:
 
-	# scp marley@192.168.1.5:/mnt/dsk2/_ISO/oracle/linux/cvupack_Linux_x86_64.zip /tmp/
+    # scp marley@192.168.1.5:/mnt/dsk2/_ISO/oracle/linux/cvupack_Linux_x86_64.zip /tmp/
 
 <br/>
 
-	# cd /tmp
+    # cd /tmp
 
 <br/>
 
-	# mkdir cvupack
-	# mv cvupack_Linux_x86_64.zip ./cvupack
-	# cd /tmp/cvupack
-	# unzip cvupack_Linux_x86_64.zip
+    # mkdir cvupack
+    # mv cvupack_Linux_x86_64.zip ./cvupack
+    # cd /tmp/cvupack
+    # unzip cvupack_Linux_x86_64.zip
 
 <br/>
 
-	# rpm -Uvh /tmp/cvupack/rpm/cvuqdisk-1.0.9-1.rpm
+    # rpm -Uvh /tmp/cvupack/rpm/cvuqdisk-1.0.9-1.rpm
 
 <br/>
 
-	# chown -R oracle11:oinstall /tmp/cvupack
-
+    # chown -R oracle11:oinstall /tmp/cvupack
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
 <strong>Проверка правильности конфигурации подготовленных узлов кластера</strong></span>
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -65,60 +60,55 @@ http://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-hom
 	</tr>
 </table>
 
-
-	# su - oracle11
-
-<br/>
-
-	$ cd /tmp/cvupack/bin
+    # su - oracle11
 
 <br/>
 
-	$ ./cluvfy stage -pre crsinst -n node1,node2
+    $ cd /tmp/cvupack/bin
+
+<br/>
+
+    $ ./cluvfy stage -pre crsinst -n node1,node2
 
 Если возникли ошибки, можно получить лог с более детальным отчетом о возникших проблемах:
 
-	$ ./cluvfy stage -pre crsinst -n node1,node2 -r 11gR2  -verbose > /tmp/log.log
+    $ ./cluvfy stage -pre crsinst -n node1,node2 -r 11gR2  -verbose > /tmp/log.log
 
 <br/>
 
-	***
+    ***
 
-	Check: Membership of user "oracle11" in group "oinstall" [as Primary]
-	  Node Name         User Exists   Group Exists  User in Group  Primary       Status
-	  ----------------  ------------  ------------  ------------  ------------  ------------
-	  devsp038          yes           yes           yes           no            failed
-	  devsp037          yes           yes           yes           no            failed
-	Result: Membership check for user "oracle11" in group "oinstall" [as Primary] failed
+    Check: Membership of user "oracle11" in group "oinstall" [as Primary]
+      Node Name         User Exists   Group Exists  User in Group  Primary       Status
+      ----------------  ------------  ------------  ------------  ------------  ------------
+      devsp038          yes           yes           yes           no            failed
+      devsp037          yes           yes           yes           no            failed
+    Result: Membership check for user "oracle11" in group "oinstall" [as Primary] failed
 
-	***
-
-<br/>
-
-	$ id
-	uid=502(oracle11) gid=500(dba) groups=500(dba),1003(oinstall)
-
+    ***
 
 <br/>
 
-	# usermod -g oinstall oracle11
-	# usermod -G dba oracle11
+    $ id
+    uid=502(oracle11) gid=500(dba) groups=500(dba),1003(oinstall)
 
 <br/>
 
-	# su - oracle11
-	$ id
-	uid=502(oracle11) gid=1003(oinstall) groups=500(dba),1003(oinstall)
+    # usermod -g oinstall oracle11
+    # usermod -G dba oracle11
 
+<br/>
+
+    # su - oracle11
+    $ id
+    uid=502(oracle11) gid=1003(oinstall) groups=500(dba),1003(oinstall)
 
 Результатом проверки должна быть следующее сообщение.
 Pre-check for cluster services setup was successful.
-
-
 
 Интересно следующее, в самой консоли, требуется, чтобы основная группа была dba.
 
 Поэтому:
 
-	# usermod -g dba oracle11
-	# usermod -G oinstall oracle11
+    # usermod -g dba oracle11
+    # usermod -G oinstall oracle11

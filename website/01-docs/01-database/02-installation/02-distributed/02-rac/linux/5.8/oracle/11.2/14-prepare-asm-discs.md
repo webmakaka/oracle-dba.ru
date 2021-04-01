@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Инсталляция asmlib
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Инсталляция asmlib
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Инсталляция asmlib
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Инсталляция asmlib
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/prepare-asm-discs/
 ---
 
 # <a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">[Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64]</a>: Инсталляция asmlib
 
-
 <br/>
-
 
 <strong>Необходимо установить 3 пакета:</strong><br/>
 
@@ -20,10 +20,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/prepare-
 
 <br/>
 
-	# yum search oracleasm
-	# yum search oracleasmlib
-	# yum search oracleasm-support
-
+    # yum search oracleasm
+    # yum search oracleasmlib
+    # yum search oracleasm-support
 
 Те пакеты, которые не удастся найти в репозитории Oracle, рекомендуется скачать с официального сайта:<br/>
 
@@ -45,15 +44,12 @@ http://www.oracle.com/technetwork/server-storage/linux/downloads/rhel5-084877.ht
 
 </table>
 
-
 Для начала следует понять, какое ядро linux поддерживается инсталлируемыми пакетами.
-
 
 Проверяем, какое ядро используется на нашей виртуальной машине:
 
-	# uname -rm
-	2.6.32-300.10.1.el5uek x86_64
-
+    # uname -rm
+    2.6.32-300.10.1.el5uek x86_64
 
 В репозитории последние пакеты oracleasm для ядра.
 oracleasm-2.6.18-308.el5.x86_64
@@ -62,55 +58,52 @@ oracleasm-2.6.18-308.el5.x86_64
 
 В файле grub.conf нужно указать, какое ядро следует использовать и после этого перезагружить узел.
 
-	# vi /etc/grub.conf
+    # vi /etc/grub.conf
 
 <br/>
 
-	default=1
-	timeout=0
-	splashimage=(hd0,0)/boot/grub/splash.xpm.gz
-	hiddenmenu
-	title Oracle Linux Server (2.6.32-300.10.1.el5uek)
-	        root (hd0,0)
-	        kernel /boot/vmlinuz-2.6.32-300.10.1.el5uek ro root=LABEL=/
-	        initrd /boot/initrd-2.6.32-300.10.1.el5uek.img
-	title Oracle Linux Server-base (2.6.18-308.el5)
-	        root (hd0,0)
-	        kernel /boot/vmlinuz-2.6.18-308.el5 ro root=LABEL=/
-	        initrd /boot/initrd-2.6.18-308.el5.img
+    default=1
+    timeout=0
+    splashimage=(hd0,0)/boot/grub/splash.xpm.gz
+    hiddenmenu
+    title Oracle Linux Server (2.6.32-300.10.1.el5uek)
+            root (hd0,0)
+            kernel /boot/vmlinuz-2.6.32-300.10.1.el5uek ro root=LABEL=/
+            initrd /boot/initrd-2.6.32-300.10.1.el5uek.img
+    title Oracle Linux Server-base (2.6.18-308.el5)
+            root (hd0,0)
+            kernel /boot/vmlinuz-2.6.18-308.el5 ro root=LABEL=/
+            initrd /boot/initrd-2.6.18-308.el5.img
 
 <br/>
 
-	# reboot
+    # reboot
 
 После перезагрузки:
 
-	# uname -rm
-	2.6.18-308.el5 x86_64
+    # uname -rm
+    2.6.18-308.el5 x86_64
 
 Для инсталляции достаточно будет выполнить следующие команы:
 
-	# cd /tmp
-	# wget http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el5.x86_64.rpm
+    # cd /tmp
+    # wget http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el5.x86_64.rpm
 
 <br/>
 
-	# yum install -y \
-	oracleasm-2.6.18-308.el5.x86_64 \
-	oracleasmlib-2.0.4-1.el5.x86_64.rpm \
-	oracleasm-support.x86_64
-
+    # yum install -y \
+    oracleasm-2.6.18-308.el5.x86_64 \
+    oracleasmlib-2.0.4-1.el5.x86_64.rpm \
+    oracleasm-support.x86_64
 
 Убедитесь, что установлены следующие пакеты на обоих узлах кластера
 
-	# rpm -qa | grep oracleasm
-	oracleasm-support-2.1.7-1.el5
-	oracleasm-2.6.18-308.el5-2.0.5-1.el5
-	oracleasmlib-2.0.4-1.el5
-
+    # rpm -qa | grep oracleasm
+    oracleasm-support-2.1.7-1.el5
+    oracleasm-2.6.18-308.el5-2.0.5-1.el5
+    oracleasmlib-2.0.4-1.el5
 
 <br/><br/>
-
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
 <strong>Конфигурирование Oracle ASM</strong></span>
@@ -124,39 +117,32 @@ oracleasm-2.6.18-308.el5.x86_64
 
 </table>
 
-
-	# /etc/init.d/oracleasm configure
+    # /etc/init.d/oracleasm configure
 
 <br/>
 
-	Default user to own the driver interface []: oracle11
-	Default group to own the driver interface []: dba
-	Start Oracle ASM library driver on boot (y/n) [n]: y
-	Scan for Oracle ASM disks on boot (y/n) [y]: y
-	Writing Oracle ASM library driver configuration: done
-	Initializing the Oracle ASMLib driver:                 	[  OK  ]
-	Scanning the system for Oracle ASMLib disks:           	[  OK  ]
-
+    Default user to own the driver interface []: oracle11
+    Default group to own the driver interface []: dba
+    Start Oracle ASM library driver on boot (y/n) [n]: y
+    Scan for Oracle ASM disks on boot (y/n) [y]: y
+    Writing Oracle ASM library driver configuration: done
+    Initializing the Oracle ASMLib driver:                 	[  OK  ]
+    Scanning the system for Oracle ASMLib disks:           	[  OK  ]
 
 Если [FAILED], можно посмотреть логи
 
-	# less /var/log/oracleasm
+    # less /var/log/oracleasm
 
 Ошибка может возникнуть, если указаны неправильные параметры user, group или выбран неправильная версия драйвера Oracle ASM (драйвер должен соответствовать ядру).
 
-
-	# /etc/init.d/oracleasm status
-	Checking if ASM is loaded: yes
-	Checking if /dev/oracleasm is mounted: yes
-
-
+    # /etc/init.d/oracleasm status
+    Checking if ASM is loaded: yes
+    Checking if /dev/oracleasm is mounted: yes
 
 <br/><br/>
 
-
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
 <strong>Добавление дисков в пул ASM</strong></span>
-
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 	<tr>
@@ -165,28 +151,23 @@ oracleasm-2.6.18-308.el5.x86_64
 	</tr>
 </table>
 
-
-
-	# fdisk /dev/{подмонтированный диск1}
+    # fdisk /dev/{подмонтированный диск1}
 
 <br/>
 
-	# ls /dev/asm*
-
+    # ls /dev/asm*
 
 Маркируем диски как ASM диски:
 
+    # /etc/init.d/oracleasm createdisk VOL1 /dev/asm-disk1
+    # /etc/init.d/oracleasm createdisk VOL2 /dev/asm-disk2
+    # /etc/init.d/oracleasm createdisk VOL3 /dev/asm-disk3
+    # /etc/init.d/oracleasm createdisk VOL4 /dev/asm-disk4
+    # /etc/init.d/oracleasm createdisk VOL5 /dev/asm-disk5
+    # /etc/init.d/oracleasm createdisk VOL6 /dev/asm-disk6
+    # /etc/init.d/oracleasm createdisk VOL7 /dev/asm-disk7
 
-	# /etc/init.d/oracleasm createdisk VOL1 /dev/asm-disk1
-	# /etc/init.d/oracleasm createdisk VOL2 /dev/asm-disk2
-	# /etc/init.d/oracleasm createdisk VOL3 /dev/asm-disk3
-	# /etc/init.d/oracleasm createdisk VOL4 /dev/asm-disk4
-	# /etc/init.d/oracleasm createdisk VOL5 /dev/asm-disk5
-	# /etc/init.d/oracleasm createdisk VOL6 /dev/asm-disk6
-	# /etc/init.d/oracleasm createdisk VOL7 /dev/asm-disk7
-
-	Marking disk "VOL1" as an ASM disk:                    	[  OK  ]
-
+    Marking disk "VOL1" as an ASM disk:                    	[  OK  ]
 
 <!--
 // Посмотреть метку диска
@@ -197,37 +178,33 @@ oracleasm-2.6.18-308.el5.x86_64
 
 // Если нужно удалить
 
-	# /etc/init.d/oracleasm deletedisk VOL1
-	# dd if=/dev/zero of=/dev/sdi1
-
-
+    # /etc/init.d/oracleasm deletedisk VOL1
+    # dd if=/dev/zero of=/dev/sdi1
 
 // Посмотреть список дисков ASM
 
-	# /etc/init.d/oracleasm listdisks
+    # /etc/init.d/oracleasm listdisks
 
-	VOL1
-	VOL2
-	VOL3
-	VOL4
-	VOL5
-	VOL6
-	VOL7
+    VOL1
+    VOL2
+    VOL3
+    VOL4
+    VOL5
+    VOL6
+    VOL7
 
 // Или так
 
-	# ls /dev/oracleasm/disks/
-	VOL1  VOL2  VOL3  VOL4  VOL5  VOL6  VOL7
-
+    # ls /dev/oracleasm/disks/
+    VOL1  VOL2  VOL3  VOL4  VOL5  VOL6  VOL7
 
 // файл логов
 
-	# less /var/log/oracleasm
+    # less /var/log/oracleasm
 
 // В некоторых случаях, необходимо перестартовать oracleasm
 
-	# /etc/init.d/oracleasm restart
-
+    # /etc/init.d/oracleasm restart
 
 <br/><br/>
 
@@ -243,27 +220,24 @@ oracleasm-2.6.18-308.el5.x86_64
 
 </table>
 
-
 node1:
 
-	# /etc/init.d/oracleasm scandisks
+    # /etc/init.d/oracleasm scandisks
 
 node2:
 
-	# /etc/init.d/oracleasm scandisks
+    # /etc/init.d/oracleasm scandisks
 
 node1:
 
-	# /etc/init.d/oracleasm listdisks
+    # /etc/init.d/oracleasm listdisks
 
 node2:
 
-	# /etc/init.d/oracleasm listdisks
-
+    # /etc/init.d/oracleasm listdisks
 
 Нужно убедиться что диски подмонтированы на обоих серверах.
 Если нет, перезагрузить узлы (после установки приоритетов автостарта пакетов, см. ниже)
-
 
 <br/><br/>
 
@@ -279,11 +253,10 @@ node2:
 
 </table>
 
-
-	# cd /etc/rc3.d
+    # cd /etc/rc3.d
 
 например:
 
-	S60iscsi
-	S65iscsid
-	S80oracleasm
+    S60iscsi
+    S65iscsid
+    S80oracleasm

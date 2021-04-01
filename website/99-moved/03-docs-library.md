@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Библиотека Oracle DBA
-description: Библиотека Oracle DBA
-keywords: Oracle DataBase, Библиотека Oracle DBA
+title: Библиотека Oracle DBA - Перенесено
+description: Библиотека Oracle DBA - Перенесено
+keywords: Oracle DataBase, Библиотека Oracle DBA, перенесено
 permalink: /docs/library/
 ---
 

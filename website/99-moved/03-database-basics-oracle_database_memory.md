@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Структуры памяти Oracle
-description: Структуры памяти Oracle
-keywords: Oracle Database, Память
+title: Структуры памяти Oracle - Перенесено
+description: Структуры памяти Oracle - Перенесено
+keywords: Oracle Database, Память, перенесено
 permalink: /database/basics/oracle_database_memory/
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Инсталляция необходимых пакетов
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Инсталляция необходимых пакетов
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Инсталляция необходимых пакетов
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Инсталляция необходимых пакетов
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/install-mandatory-packages/
 ---
 

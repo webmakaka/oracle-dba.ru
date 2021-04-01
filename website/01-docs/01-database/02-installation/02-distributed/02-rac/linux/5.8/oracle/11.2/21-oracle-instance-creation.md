@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Создание экземпляра (instance) базы данных
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Создание экземпляра (instance) базы данных
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Создание экземпляра (instance) базы данных
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Создание экземпляра (instance) базы данных
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-instance-creation/
 ---
 
@@ -8,12 +10,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-i
 
 <br/>
 
-	$ dbca
-
-
+    $ dbca
 
 <br/><br/>
-
 
 <img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_instance_installation_01.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
 <img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_instance_installation_02.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
@@ -38,46 +37,43 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/oracle-i
 <img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_instance_installation_21.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
 <img src="https://img.oracledba.net/img/oracle/database/rac/11.2/rac_instance_installation_22.PNG" border="0" alt="Oracle RAC installation"><br/><br/>
 
+    $ sqlplus / as sysdba
+
+    SQL*Plus: Release 11.2.0.3.0 Production on Fri May 25 16:20:47 2012
+
+    Copyright (c) 1982, 2011, Oracle.  All rights reserved.
 
 
-	$ sqlplus / as sysdba
-
-	SQL*Plus: Release 11.2.0.3.0 Production on Fri May 25 16:20:47 2012
-
-	Copyright (c) 1982, 2011, Oracle.  All rights reserved.
-
-
-	Connected to:
-	Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
-	With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
-	Data Mining and Real Application Testing options
+    Connected to:
+    Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+    With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+    Data Mining and Real Application Testing options
 
 <br/>
 
-	SQL> select status from v$instance;
+    SQL> select status from v$instance;
 
 <br/>
 
-	STATUS
-	------------------------------------
-	OPEN
+    STATUS
+    ------------------------------------
+    OPEN
 
 <br/>
 
-	col  INST_NUMBER format 5;
-	col  INST_NAME format a30;
+    col  INST_NUMBER format 5;
+    col  INST_NAME format a30;
 
 <br/>
 
-	SELECT * FROM v$active_instances;
+    SELECT * FROM v$active_instances;
 
 <br/>
 
-	INST_NUMBER INST_NAME
-	----------- ------------------------------
-	          1 node1.localdomain:racnode1
-	          2 node2.localdomain:racnode2
-
+    INST_NUMBER INST_NAME
+    ----------- ------------------------------
+              1 node1.localdomain:racnode1
+              2 node2.localdomain:racnode2
 
 <br/><br/>
 

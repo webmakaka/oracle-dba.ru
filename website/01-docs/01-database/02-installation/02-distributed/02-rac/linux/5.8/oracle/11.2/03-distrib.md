@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Дистрибутивы и дополнительное ПО
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Дистрибутивы и дополнительное ПО
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Дистрибутивы и дополнительное ПО
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Описание окружения для инсталляции Oracle RAC, Дистрибутивы и дополнительное ПО
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/distrib/
 ---
 
@@ -8,8 +10,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/distrib/
 
 <br/>
 
-
-Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам  с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
+Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
 <br/><br/>
 Если контракта у вас нет, простой регистрации на сайте Oracle будет недостаточно, чтобы скачать последние версии даже для изучения.
 <br/><br/>
@@ -67,7 +68,6 @@ http://sourceforge.net/projects/xming/
 
 <strong>VirtualBox:</strong><br/>
 http://www.virtualbox.org/wiki/Downloads
-
 
 <br/><br/>
 <strong>Oracle Patches (OPatch и PSU, которые использовались для инсталляции)</strong><br/>

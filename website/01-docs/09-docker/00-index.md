@@ -2,7 +2,7 @@
 layout: page
 title: Docker Containers and Oracle
 description: Docker Containers and Oracle
-keywords: Oracle, Docker, Containers
+keywords: Oracle database, Docker, Containers
 permalink: /docker/
 ---
 

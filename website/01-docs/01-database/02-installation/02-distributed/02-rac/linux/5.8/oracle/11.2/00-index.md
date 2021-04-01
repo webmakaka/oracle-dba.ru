@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 x86_64
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM)
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM)
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Официальная документация
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Официальная документация
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Официальная документация
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/docs/
 ---
 

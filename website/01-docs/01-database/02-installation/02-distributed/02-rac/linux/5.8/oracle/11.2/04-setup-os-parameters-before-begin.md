@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Oracle RAC 11.2 ISCSI + ASM - Предварительные настройки
+title: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Предварительные настройки
+description: Инсталляция Oracle RAC 11.2 в операционной системе Oracle Linux 5.8 (ISCSI + ASM) - Предварительные настройки
+keywords: database, installation, distributed, rac, linux, 5.8, oracle, 11.2, Предварительные настройки
 permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-os-parameters-before-begin/
 ---
 
@@ -15,11 +17,10 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-os
     # cp /etc/selinux/config /etc/selinux/config.bkp
     # sed -i.gres "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 
-Следующие 2 команды -  1 создает резервную копию файла, меняет значение timeout с 5 на 0
+Следующие 2 команды - 1 создает резервную копию файла, меняет значение timeout с 5 на 0
 
     # cp /etc/grub.conf /etc/grub.conf.bkp
     # sed -i.gres "s/timeout=5/timeout=0/g" /etc/grub.conf
-
 
 Выключаю firewall
 
