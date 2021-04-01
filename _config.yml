@@ -5,11 +5,11 @@ description: Администрирование баз данных Oracle
 
 keywords: Oracle, DataBase, ASM, RAC, DataGuard, Weblogic, GoldenGate
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://oracle-dba.ru" # the base hostname & protocol for your site
+baseurl: '' # the subpath of your site, e.g. /blog/
+url: 'https://oracle-dba.ru' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-sitemap
