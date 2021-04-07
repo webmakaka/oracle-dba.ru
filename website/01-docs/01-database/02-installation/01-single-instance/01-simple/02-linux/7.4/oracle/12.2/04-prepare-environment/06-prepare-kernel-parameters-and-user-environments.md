@@ -8,16 +8,6 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/p
 
 <br/>
 
-<div style="padding:10px; border:thin solid black;">
-
-    <h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
-
-    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
-
-</div>
-
-<br/>
-
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>:: Конфигурирование системных пользователей, настройка параметров системы
 
 <br/>
@@ -132,7 +122,7 @@ fi
 
 5. Отредактируйте файл /home/oracle/.bash_profile
 
-    # su - oracle12
+   # su - oracle12
 
 <br/>
 

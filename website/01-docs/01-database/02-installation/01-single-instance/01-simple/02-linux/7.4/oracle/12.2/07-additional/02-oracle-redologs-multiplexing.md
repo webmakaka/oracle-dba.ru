@@ -8,16 +8,6 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
-<div style="padding:10px; border:thin solid black;">
-
-    <h3>Этот материал в разработке. Рекомендую обратиться к последней версии документа.</h3>
-
-    <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">Ссылка на документ по инсталляции Oracle.</a>
-
-</div>
-
-<br/>
-
 # <a href="/database/installation/single-instance/simple/linux/7.4/oracle/12.2/">[Инсталляция Oracle DataBase Server 12.2 в Oracle Linux 7.4]</a>: Мультиплексирование redologs
 
 <br/>
@@ -79,10 +69,9 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 2. Нужно пересоздать группу 2 и файлы данной группы.<br/>
    Удаляем файлы группы 2
 
+   SQL> alter database drop logfile group 2;
 
-    SQL> alter database drop logfile group 2;
-
-    SQL> quit
+   SQL> quit
 
 <br/>
 
