@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Процессы Oracle
-description: Структуры памяти Oracle
-keywords: Oracle Database, Память
+description: Процессы Oracle
+keywords: Oracle Database, процессы
 permalink: /docs/architecture/proceses/
 ---
 
