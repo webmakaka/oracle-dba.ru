@@ -11,19 +11,19 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/distrib/
 <br/>
 
 Последние версии БД Oracle и пакеты критических исправлений доступны коммерческим подписчикам с активным контрактом на техническую поддержку. Если у вас есть контракт на техподдержку, вы можете скачать дистрибутивы базы данных непосредственно с сайта support.oracle.com.
-<br/><br/>
+
 Если контракта у вас нет, простой регистрации на сайте Oracle будет недостаточно, чтобы скачать последние версии даже для изучения.
-<br/><br/>
+
 Тем не менее, ссылки на дистрибутивы последних версий приведены чуть ниже.
-<br/><br/>
+
 Каких-либо ключей для активации нет. Для разработки (development) дистрибутивы можно использовать бесплатно, но для использования по основному их назначению (production), требуется приобрести лицензию.
 
-<br/><br/>
+<br/>
 
 <strong>Дистрибутивы операционной системы Oracle Linux 5.8:</strong><br/>
 http://rutracker.org/forum/viewtopic.php?t=3971967
 
-<br/><br/>
+<br/>
 
 <strong>Дистрибутивы базы данных Oracle:</strong><br/>
 http://rutracker.org/forum/viewtopic.php?t=3749965
@@ -53,22 +53,23 @@ p10098816_112020_Linux-x86-64_6of7.zip
 p10098816_112020_Linux-x86-64_7of7.zip
 </pre>
 
-<br/><br/>
+<br/>
 
 <strong>Putty:</strong><br/>
 http://www.putty.org/
 
-<br/><br/>
+<br/>
 
 <strong>XMing (Необходимо установить XMing и дополнительные шрифты, без них на одном из шагов инсталляции
 при нажатии на кнопку, ничего не происходит:</strong><br/>
 http://sourceforge.net/projects/xming/
 
-<br/><br/>
+<br/>
 
 <strong>VirtualBox:</strong><br/>
 http://www.virtualbox.org/wiki/Downloads
 
-<br/><br/>
+<br/>
+
 <strong>Oracle Patches (OPatch и PSU, которые использовались для инсталляции)</strong><br/>
 (патчи удалил)

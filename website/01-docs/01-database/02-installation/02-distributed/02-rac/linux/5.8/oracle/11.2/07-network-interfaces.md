@@ -12,48 +12,51 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
 
 ### Настройка на storage, node1, node2:
 
+<br/>
+
     # vi /etc/hosts
 
 <br/>
 
-    ###############################################
-    ## Localdomain and Localhost (hosts file, DNS)
+```
+###############################################
+## Localdomain and Localhost (hosts file, DNS)
 
-    127.0.0.1 localhost.localdomain localhost
-    ::1            localhost6.localdomain6 localhost6
+127.0.0.1 localhost.localdomain localhost
+::1            localhost6.localdomain6 localhost6
 
-    ###############################################
-    ## Virtual VIP IPs Public Network (hosts file, DNS)
+###############################################
+## Virtual VIP IPs Public Network (hosts file, DNS)
 
-    192.168.1.21 node1-vip.localdomain node1-vip
-    192.168.1.22 node2-vip.localdomain node2-vip
+192.168.1.21 node1-vip.localdomain node1-vip
+192.168.1.22 node2-vip.localdomain node2-vip
 
-    ###############################################
-    ## eth0 Public Network (hosts file, DNS)
+###############################################
+## eth0 Public Network (hosts file, DNS)
 
-    192.168.1.11 node1.localdomain node1
-    192.168.1.12 node2.localdomain node2
-    192.168.1.15 storage.localdomain storage
+192.168.1.11 node1.localdomain node1
+192.168.1.12 node2.localdomain node2
+192.168.1.15 storage.localdomain storage
 
-    ################################################
-    ## eth1 Interconnect Private Network  (hosts file, DNS)
+################################################
+## eth1 Interconnect Private Network  (hosts file, DNS)
 
-    192.168.2.11 node1-priv
-    192.168.2.12 node2-priv
+192.168.2.11 node1-priv
+192.168.2.12 node2-priv
 
-    #################################################
-    ## eth2 Network to nas Private Network (hosts file, DNS)
+#################################################
+## eth2 Network to nas Private Network (hosts file, DNS)
 
-    192.168.3.11 node1-priv-storage
-    192.168.3.12 node2-priv-storage
+192.168.3.11 node1-priv-storage
+192.168.3.12 node2-priv-storage
 
-    #################################################
-    ## SCAN and GNS (DNS, DHCP)
+#################################################
+## SCAN and GNS (DNS, DHCP)
 
-    # empty
+# empty
 
-    #################################################
-    #################################################
+#################################################
+```
 
 <br/>
 
@@ -79,7 +82,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
     NETWORKING_IPV6=no
     HOSTNAME=node1.localdomain
 
-(public)
+<br/>
+
+**(public)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
@@ -94,7 +99,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
 
 <br/>
 
-(private-interconnect)
+**(private-interconnect)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth1
 
@@ -108,7 +113,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
 
 <br/>
 
-(private-storage)
+**(private-storage)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth2
 
@@ -132,7 +137,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
     NETWORKING_IPV6=no
     HOSTNAME=node2.localdomain
 
-(public)
+<br/>
+
+**(public)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
@@ -147,7 +154,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
 
 <br/>
 
-(private-interconnect)
+**(private-interconnect)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth1
 
@@ -159,7 +166,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
     IPADDR=192.168.2.12
     NETMASK=255.255.255.0
 
-(private-storage)
+<br/>
+
+**(private-storage)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth2
 
@@ -170,6 +179,8 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
     BOOTPROTO="static"
     IPADDR=192.168.3.12
     NETMASK=255.255.255.0
+
+<br/>
 
 Перестартовать сетевые интерфейсы, можно с помощью следующей команды:
 
@@ -187,7 +198,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
     NETWORKING_IPV6=no
     HOSTNAME=storage.localdomain
 
-(public)
+<br/>
+
+**(public)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
@@ -200,7 +213,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/network-
     NETMASK=255.255.255.0
     GATEWAY=192.168.1.1
 
-(private-storage)
+<br/>
+
+**(private-storage)**
 
     # vi /etc/sysconfig/network-scripts/ifcfg-eth1
 

@@ -2,7 +2,7 @@
 layout: page
 title: Инсталляция Oracle DataBase 11.2.0.3.2 в Oracle Linux 6.3 - Настройка сетевых интерфейсов
 description: Инсталляция Oracle DataBase 11.2.0.3.2 в операционной системе Oracle Linux 6.3 - Настройка сетевых интерфейсов
-keywords: Oracle DataBase 11.2, Oracle Linux 6.3, Настройка сетевых интерфейсов
+keywords: database, installation, Oracle DataBase 11.2, Oracle Linux 6.3, Настройка сетевых интерфейсов
 permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/network-interface/
 ---
 
@@ -15,6 +15,8 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/n
 Задайте параметры, согласно характеристикам Вашей сети.
 
 Не рекомендуется в hostname использовать знак нижнего подчеркивания (\_). (Enterprise Manager и другие web приложения не смогут подключиться к базе по http/https)
+
+<br/>
 
     # vi /etc/sysconfig/network
 
@@ -56,12 +58,16 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/n
 
 <br/>
 
-    ## Localdomain and Localhost (hosts file, DNS)
-    127.0.0.1 localhost.localdomain localhost
-    ::1            localhost6.localdomain6 localhost6
+```
+## Localdomain and Localhost (hosts file, DNS)
+127.0.0.1 localhost.localdomain localhost
+::1            localhost6.localdomain6 localhost6
 
-    ## IPs Public Network (hosts file, DNS)
-    192.168.1.10 oracle112.localdomain oracle112
+## IPs Public Network (hosts file, DNS)
+192.168.1.10 oracle112.localdomain oracle112
+```
+
+<br/>
 
 Перестартовать сетевые интерфейсы, можно с помощью следующей команды:
 

@@ -20,13 +20,15 @@ DNS сервер настраивается только с целью, чтоб
 
 <br/>
 
-    ###############################################
-    ## Localdomain and Localhost (hosts file, DNS)
+```
+###############################################
+## Localdomain and Localhost (hosts file, DNS)
 
-    127.0.0.1 localhost.localdomain localhost
-    ::1            localhost6.localdomain6 localhost6
+127.0.0.1 localhost.localdomain localhost
+::1            localhost6.localdomain6 localhost6
 
-    ###############################################
+###############################################
+```
 
 <br/>
 

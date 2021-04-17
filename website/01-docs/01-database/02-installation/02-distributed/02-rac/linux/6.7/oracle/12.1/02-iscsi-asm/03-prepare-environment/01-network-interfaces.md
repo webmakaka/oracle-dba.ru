@@ -259,48 +259,53 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 </table>
 
-    # vi /etc/hosts
+<br/>
+
+```
+# vi /etc/hosts
+```
 
 <br/>
 
-    ##########################################################
-    ## Localdomain and Localhost (hosts file, DNS)
+```
+##########################################################
+## Localdomain and Localhost (hosts file, DNS)
 
-    127.0.0.1 localhost.localdomain localhost
+127.0.0.1 localhost.localdomain localhost
 
-    ##########################################################
-    ## Virtual VIP IPs Public Network (hosts file, DNS)
+##########################################################
+## Virtual VIP IPs Public Network (hosts file, DNS)
 
-    192.168.1.21 rac1-vip.localdomain rac1-vip
-    192.168.1.22 rac2-vip.localdomain rac2-vip
+192.168.1.21 rac1-vip.localdomain rac1-vip
+192.168.1.22 rac2-vip.localdomain rac2-vip
 
-    ##########################################################
-    ## eth0 Public Network (hosts file, DNS)
+##########################################################
+## eth0 Public Network (hosts file, DNS)
 
-    192.168.1.11 rac1.localdomain rac1
-    192.168.1.12 rac2.localdomain rac2
-    192.168.1.15 storage.localdomain storage
+192.168.1.11 rac1.localdomain rac1
+192.168.1.12 rac2.localdomain rac2
+192.168.1.15 storage.localdomain storage
 
-    ##########################################################
-    ## eth1 Interconnect Private Network  (hosts file, DNS)
+##########################################################
+## eth1 Interconnect Private Network  (hosts file, DNS)
 
-    192.168.2.11 rac1-priv-interconnect
-    192.168.2.12 rac2-priv-interconnect
+192.168.2.11 rac1-priv-interconnect
+192.168.2.12 rac2-priv-interconnect
 
-    ##########################################################
-    ## eth2 Network to nas Private Network (hosts file, DNS)
+##########################################################
+## eth2 Network to nas Private Network (hosts file, DNS)
 
-    192.168.3.11 rac1-priv-storage
-    192.168.3.12 rac2-priv-storage
+192.168.3.11 rac1-priv-storage
+192.168.3.12 rac2-priv-storage
 
-    ##########################################################
-    ## SCAN and GNS (DNS, DHCP)
+##########################################################
+## SCAN and GNS (DNS, DHCP)
 
-    ## Должны быть прописаны в DNS
+## Должны быть прописаны в DNS
 
-    # 192.168.1.31	rac12-scan.localdomain	rac-scan
-    # 192.168.1.32	rac12-scan.localdomain	rac-scan
-    # 192.168.1.33	rac12-scan.localdomain	rac-scan
+# 192.168.1.31	rac12-scan.localdomain	rac-scan
+# 192.168.1.32	rac12-scan.localdomain	rac-scan
+# 192.168.1.33	rac12-scan.localdomain	rac-scan
 
-    ##########################################################
-    ##########################################################
+##########################################################
+```
