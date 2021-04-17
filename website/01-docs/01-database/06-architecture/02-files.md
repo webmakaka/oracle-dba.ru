@@ -2,7 +2,7 @@
 layout: page
 title: Файлы базы данных Oracle
 description: Файлы базы данных Oracle
-keywords: Oracle Database, Files
+keywords: Oracle Database, Файлы базы данных Oracle,
 permalink: /docs/architecture/files/
 ---
 
@@ -35,7 +35,7 @@ permalink: /docs/architecture/files/
 <h3>Необязательные файлы:</h3>
 
 <ul>
-	<li><a href="#files5">Архивные файлы журналов повтора (Archive Log Files)</a>(в том смысле, что база может работать без них)</li>
+	<li><a href="#files5">Архивные файлы журналов повтора (Archive Log Files)</a> (необязательные в том смысле, что база может быть настроена для работы без данных файлов)</li>
 	<li><a href="#files6">Alert log и трассировочные файлы (trace file)</a> (Alertlog - можно удалить, трассировочные по умолчанию не создаются) </li>
 	<li><a href="#files7">Файлы паролей (Password File)</a>(Обычно не используются)</li>
 </ul>
@@ -54,21 +54,25 @@ permalink: /docs/architecture/files/
 
 Следующий запрос, покажет, где находятся файлы данных. <br/>
 
-<br/><br/>
+<br/>
 
-    SQL> set linesize 200;
-    SQL> set pagesize 0;
-    SQL> col  name format a40;
-    SQL> select file#, name, status from v$datafile;
+```sql
+SQL> set linesize 200;
+SQL> set pagesize 0;
+SQL> col  name format a40;
+SQL> select file#, name, status from v$datafile;
+```
 
 <br/>
 
-     1 /u02/oradata/ora112/system01.dbf         SYSTEM
-     2 /u02/oradata/ora112/sysaux01.dbf         ONLINE
-     3 /u02/oradata/ora112/undotbs01.dbf        ONLINE
-     4 /u02/oradata/ora112/users01.dbf          ONLINE
-     5 /u02/oradata/ora112/my_indexes01.dbf     ONLINE
-     6 /u02/oradata/ora112/my_data01.dbf        ONLINE
+```
+1 /u02/oradata/ora112/system01.dbf         SYSTEM
+2 /u02/oradata/ora112/sysaux01.dbf         ONLINE
+3 /u02/oradata/ora112/undotbs01.dbf        ONLINE
+4 /u02/oradata/ora112/users01.dbf          ONLINE
+5 /u02/oradata/ora112/my_indexes01.dbf     ONLINE
+6 /u02/oradata/ora112/my_data01.dbf        ONLINE
+```
 
 <br/>
 <h3><a name="files2">Оперативные файлы журналов повтора (Online Redo Log Files)</a></h3>
@@ -81,19 +85,25 @@ permalink: /docs/architecture/files/
 
 Поскольку файлы повтора необходимы для выполнения восстановления базы данных и являются критичными, их объединяют в группы. Запись происходит одновременно в файлы одной группы.<br/>
 
-    SQL> set linesize 200;
-    SQL> set pagesize 0;
-    SQL> col  member format a50;
-    SQL> select group#, member from v$logfile order by group#;
+<br/>
+
+```
+SQL> set linesize 200;
+SQL> set pagesize 0;
+SQL> col  member format a50;
+SQL> select group#, member from v$logfile order by group#;
+```
 
 <br/>
 
-     1 /u02/oradata/ora112/redo01.log
-     1 /u01/app/oracle/fast_recovery_area/redo01.log
-     2 /u01/app/oracle/fast_recovery_area/redo02.log
-     2 /u02/oradata/ora112/redo02.log
-     3 /u01/app/oracle/fast_recovery_area/redo03.log
-     3 /u02/oradata/ora112/redo03.log
+```
+1 /u02/oradata/ora112/redo01.log
+1 /u01/app/oracle/fast_recovery_area/redo01.log
+2 /u01/app/oracle/fast_recovery_area/redo02.log
+2 /u02/oradata/ora112/redo02.log
+3 /u01/app/oracle/fast_recovery_area/redo03.log
+3 /u02/oradata/ora112/redo03.log
+```
 
 <br/>
 <h3><a name="files3">Управляющие файлы (Control Files)</a></h3>
@@ -103,16 +113,20 @@ permalink: /docs/architecture/files/
 
 База данных Oracle может иметь один или несколько управляющих файлов. Если имеется несколько управляющих файлов, все они должны быть абсолютно идентичными. При каждом запуске базы данных Oracle читает информацию управляющего файла, а при каждом изменении размещения или добавления новых файлов данных и журналов базы данных обновляет управляющий файл.<br/><br/>
 
-    SQL> set linesize 200;
-    SQL> set pagesize 0;
-    SQL> col  name format a100;
-    SQL> select name from v$controlfile;
+```
+SQL> set linesize 200;
+SQL> set pagesize 0;
+SQL> col  name format a100;
+SQL> select name from v$controlfile;
+```
 
 <br/>
 
-    /u02/oradata/ora112/control01.ctl
-    /u02/oradata/ora112/control03.ctl
-    /u01/app/oracle/fast_recovery_area/ora112/control02.ctl
+```
+/u02/oradata/ora112/control01.ctl
+/u02/oradata/ora112/control03.ctl
+/u01/app/oracle/fast_recovery_area/ora112/control02.ctl
+```
 
 <br/>
 <h3><a name="files4">Файлы параметров pfile, spfie (Parameter Files)</a></h3><br/>
@@ -124,53 +138,67 @@ permalink: /docs/architecture/files/
     <li>pfile - текстовый файл с параметрами, будет использоваться при старте, если не будет найден spfile.</li>
 </ul>
 
-<br/><br/>
+<br/>
 
-    $ ls /u01/app/oracle/product/11.2/dbs/*.ora
-    /u01/app/oracle/product/11.2/dbs/init.ora
-    /u01/app/oracle/product/11.2/dbs/spfileora112.ora
+```
+$ ls /u01/app/oracle/product/11.2/dbs/*.ora
+/u01/app/oracle/product/11.2/dbs/init.ora
+/u01/app/oracle/product/11.2/dbs/spfileora112.ora
+```
 
-<br/><br/>
+<br/>
 
 При старте, Oracle считает файл spfileora112.ora. (файл серверных параметров). Преимущество spfile заключается в том, что при работе с базой данных, любые изменения в базе касающиеся изменения параметра системы, автоматически записываются в данный файл.
 
 Если используется pfile, для сохранения изменений, необходимо либо "руками вносить эти изменения" в текстовый файл, либо в консоли выполнять команды для создания данных файлов Ораклом.
 
-// создания pfile из памяти (в 11 версии Oracle)
+<br/>
 
-    SQL> create pfile from memory;
-
-<br/><br/>
-
-// создать pfile из spfile
-
-    SQL> Create pfile from spfile;
-
-<br/><br/>
-
-Как я могу узнать, что моя база данных использует PFILE или SPFILE?:
-
-Выполните следующий запрос, чтобы увидеть какой файл параметров был использован:
-
-    SELECT DECODE(value, NULL, 'PFILE', 'SPFILE') "Init File Type"
-    FROM sys.v_$parameter WHERE name = 'spfile';
+```
+// создание pfile из памяти (в 11 версии Oracle)
+SQL> create pfile from memory;
+```
 
 <br/>
 
-    Init F
-    ------
-    SPFILE
+```
+// создать pfile из spfile
+SQL> Create pfile from spfile;
+```
+
+<br/>
+
+### Как я могу узнать, что моя база данных использует PFILE или SPFILE?
+
+Выполните следующий запрос, чтобы увидеть какой файл параметров был использован:
+
+```sql
+SELECT DECODE(value, NULL, 'PFILE', 'SPFILE') "Init File Type"
+FROM sys.v_$parameter WHERE name = 'spfile';
+```
+
+<br/>
+
+```
+Init F
+------
+SPFILE
+```
+
+<br/>
+
+```
+SQL> show parameter spfile;
+```
 
 <br/><br/>
 
-    SQL> show parameter spfile;
-
-<br/><br/>
-
-    NAME                                 TYPE        VALUE
-    ------------------------------------ ----------- ------------------------------
-    spfile                               string      /u01/app/oracle/product/11.2/d
-                                                     bs/spfileora112.ora
+```
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+spfile                               string      /u01/app/oracle/product/11.2/d
+                                                    bs/spfileora112.ora
+```
 
 <br/>
 <h3><a name="files5">Архивные файлы журналов повтора (Archive Log Files)</a></h3>
@@ -181,52 +209,71 @@ permalink: /docs/architecture/files/
 
 Архивные файлы журналов повтора жизненно важны при восстановлении. Если часть базы данных потеряна или повреждена, то для устранения повреждений обычно требуется несколько архивных журналов или туева хуча этих журналов. Файлы журналов повтора должны применяться к базе данных последовательно. Если один из архивных файлов журналов повтора пропущен, то остальные архивные файлы журналов не могут использоваться. Храните все свои архивные файлы журналов повтора с момента выполнения последней резервной копии. Файлы журналов постепенно накапливаются и разрастаются. Иногда необходимо их удалять. Все операции с данными файлами по применению их к базе выполняются исключительно средствами базы данных. А копировать и переносить их при желании можно как угодно. Бездумно удалять их руками не рекомендуется.<br/>
 
-    SQL> set linesize 200;
-    SQL> set pagesize 0;
-    SQL> col  name format a100;
-    SQL> select name from v$archived_log;
+```
+SQL> set linesize 200;
+SQL> set pagesize 0;
+SQL> col  name format a100;
+SQL> select name from v$archived_log;
+```
 
 <br/>
 
-    ...
-    /u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_22/o1_mf_1_11_7dq050f1_.arc
-    /u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_23/o1_mf_1_12_7dsykrjd_.arc
-    /u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_24/o1_mf_1_13_7dw3fy96_.arc
-    /u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_24/o1_mf_1_14_7dw3ys4f_.arc
-    /u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_26/o1_mf_1_15_7f04bqyq_.arc
-    ...
+```
+...
+/u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_22/o1_mf_1_11_7dq050f1_.arc
+/u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_23/o1_mf_1_12_7dsykrjd_.arc
+/u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_24/o1_mf_1_13_7dw3fy96_.arc
+/u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_24/o1_mf_1_14_7dw3ys4f_.arc
+/u01/app/oracle/fast_recovery_area/ORA112/archivelog/2011_11_26/o1_mf_1_15_7f04bqyq_.arc
+...
+```
 
 <br/>
 <h3><a name="files6">Alert log и трассировочные файлы (trace file)</a></h3>
 
 При работе базы данных события и ошибки регистрируются в текстовых файлах на сервере базы данных. Файл журнала предупреждений (alert log) нужен администратору базы данных для отслеживания важнейших действий с базой данных - наподобие открытия и закрытия базы данных, установления параметров загрузки базы данных и переключения оперативных журналов повтора. Также в эти файлы записываются многие ошибки базы данных для последующего расследования их причин. Любые структурные изменения базы данных также регистрируются в файле журнала предупреждений.
 
+<br/>
+
+```
 // в 11 версии базы данных по умолчанию:
+$ ls /u01/app/oracle/diag/rdbms/rdb115/RDB115/trace
+alert_${SID_NAME}.log
+```
 
-    $ ls /u01/app/oracle/diag/rdbms/rdb115/RDB115/trace
-    alert_${SID_NAME}.log
+<br/>
 
+```
 // в 11 версии появилась XML версия. По умолчанию:
+$ ls /u01/app/oracle/diag/rdbms/ora112/ora112/alertlog.xml
+```
 
-    $ ls /u01/app/oracle/diag/rdbms/ora112/ora112/alert
-    log.xml
+<br/>
 
-Когда возникает ошибка базы данных, может генерироваться файл трассировки (trace file). Они содержит подробную информацию о возникновении ошибки.<br/><br/>
+Когда возникает ошибка базы данных, может генерироваться файл трассировки (trace file). Они содержит подробную информацию о возникновении ошибки.
 
+<br/>
+
+```
 // в 11 версии базы данных по умолчанию трассировочные файлы хранятся
+/u01/app/oracle/diag/rdbms/ora112/ora112/trace
+```
 
-    /u01/app/oracle/diag/rdbms/ora112/ora112/trace
+<br/>
 
-// Следующий запрос покажет расположение трассировочных файлов.
-
-    SQL> show parameter dump_dest
+```
+// Следующая команда выведет информацию по расположению трассировочных файлов
+SQL> show parameter dump_dest
+```
 
 <br/>
 <h3><a name="files7">Файлы паролей (Password File)</a></h3>
 
 Необязательный файл, используется для защиты информации о подключениях привилегированных пользователей. Если отсутствует, то вы можете выполнять администрирование своей базы данных, только локально. Кроме того, с его помощью контролируется количество привилегированных подключений для управления в одно и то же время.
 
-<br/><br/>
+<br/>
 
-    $ ls /u01/app/oracle/product/11.2/dbs/orapw*
-    /u01/app/oracle/product/11.2/dbs/orapwora112
+```
+$ ls /u01/app/oracle/product/11.2/dbs/orapw*
+/u01/app/oracle/product/11.2/dbs/orapwora112
+```
