@@ -36,7 +36,7 @@ P.S. Я уже достаточно давно перебрался в разр�
 
 <br/>
 
-### Notes for Professionals (Free Materials)
+### Notes for Professionals (Бесплатные шпаргалки)
 
 <div align="center">
 
