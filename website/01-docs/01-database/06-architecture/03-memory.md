@@ -8,14 +8,22 @@ permalink: /docs/architecture/memory/
 
 # Структуры памяти Oracle
 
-    SQL> SELECT component, current_size, min_size, max_size
-    FROM v$sga_dynamic_components;
+<br/>
+
+```sql
+SQL> SELECT component, current_size, min_size, max_size
+FROM v$sga_dynamic_components;
+```
 
 <br/>
 
-    SQL> SELECT name, value
-    FROM v$pgastat
-    WHERE name in ('maximum PGA allocated','total PGA allocated');
+```sql
+SQL> SELECT name, value
+FROM v$pgastat
+WHERE name in ('maximum PGA allocated','total PGA allocated');
+```
+
+<br/>
 
 Oracle использует часть выделенной ему памяти для хранения как кода программ, так и данных, что позволяет существенно ускорить обработку, чем если бы пришлось постоянно извлекать данные с диска. Эти структуры памяти позволяют Oracle разделять один и тот же исполняемый код между несколькими пользователями, не тратя времени на подготовительные процедуры перед вызовом каждой порции кода.
 
