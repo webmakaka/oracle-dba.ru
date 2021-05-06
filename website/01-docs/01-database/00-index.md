@@ -10,10 +10,10 @@ permalink: /database/
 
 <br/>
 
-### Основы, архитектура
+### Библиотека книг и видеокурсов
 
 <ul>
-    <li><a href="/database/basics/"><strong>Основы, архитектура</strong></a></li>
+    <li><a href="/database/library/"><strong>здесь</strong></a></li>
 </ul>
 
 <br/>
@@ -22,6 +22,14 @@ permalink: /database/
 
 <ul>
     <li><a href="/database/adm/"><strong>Администрирование (Инсталляция, Backup, Upgrade, Сеть)</strong></a></li>
+</ul>
+
+<br/>
+
+### Основы, архитектура
+
+<ul>
+    <li><a href="/database/basics/"><strong>Основы, архитектура</strong></a></li>
 </ul>
 
 <br/>

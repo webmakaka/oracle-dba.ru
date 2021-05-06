@@ -8,4 +8,4 @@ permalink: /docs/library/
 
 # Библиотека Oracle DBA
 
-Перенесено <a href="/database/beginning/library/">сюда</a>
+Перенесено <a href="/database/library/">сюда</a>

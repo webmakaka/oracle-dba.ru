@@ -1,10 +1,50 @@
 ---
 layout: page
-title: Oracle Видеокурсы на английском (без ссылок на скачку)
-description: Oracle Видеокурсы на английском (без ссылок на скачку)
-keywords: Oracle DataBase, Видеокурсы на английском
-permalink: /database/beginning/library/paid-video-courses/
+title: Библиотека Oracle DBA - видеокурсы
+description: Библиотека Oracle DBA - видеокурсы
+keywords: Oracle DataBase, Библиотека Oracle DBA, видеокурсы
+permalink: /database/library/videos/
 ---
+
+# Библиотека Oracle DBA - видеокурсы
+
+<br/>
+
+### [Мирончик Игорь] Oracle19с от инсталяции до восстановления [RUS, 2021]
+
+https://www.youtube.com/watch?v=QH0quIRqBO4
+
+https://www.youtube.com/watch?v=NklyqvC9FMI
+
+https://www.youtube.com/watch?v=7NFr9WvFkXo
+
+https://www.youtube.com/watch?v=2aq3SDmJgs4
+
+https://www.youtube.com/watch?v=Du4g3S3SZPo
+
+<br/>
+
+### [Мирончик И.] Администрирование Oracle 10g, 11g
+
+<ul>
+	<li><strong>Основы администрирования БД Oracle</strong></li>
+    <li><a href="http://www.youtube.com/view_play_list?p=6F78CB4058D30626"><strong>здесь</strong></a></li>
+
+</ul>
+
+<br/>
+
+### Видеокурсы от "Специалист":
+
+Вы можете постараться найти курсы от обучающего центра специалист. Все 5 частей. По 11 версии.
+
+<br/><br/>
+
+<div style="padding:10px; border:thin solid black;">
+
+    <h3>Порекомендуйте хорошие материалы по изучению базы данных Oracle, серверов приложений, BI, etc</h3>
+
+</div>
 
 <br/>
 
@@ -100,7 +140,3 @@ permalink: /database/beginning/library/paid-video-courses/
 	<li>Learning Oracle 12c Training Video</li>
 	<li>Oracle 11g Real Application Cluster Training Video</li>
 </ul>
-
-<br/><br/>
-
-Захотите разобрать примеры и поделиться результатами, пишите.

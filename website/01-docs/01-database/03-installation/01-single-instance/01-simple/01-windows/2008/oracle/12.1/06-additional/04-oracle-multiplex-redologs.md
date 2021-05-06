@@ -28,10 +28,12 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-    SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
-    from v$log a, v$logfile b
-    where a.group# = b.group#
-    order by 1;
+```sql
+SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
+from v$log a, v$logfile b
+where a.group# = b.group#
+order by 1;
+```
 
 <br/>
 
@@ -134,10 +136,12 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-    SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
-    from v$log a, v$logfile b
-    where a.group# = b.group#
-    order by 1,2;
+```sql
+SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
+from v$log a, v$logfile b
+where a.group# = b.group#
+order by 1,2;
+```
 
 <br/>
 

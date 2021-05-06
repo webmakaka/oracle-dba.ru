@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Библиотека Oracle DBA
-description: Библиотека Oracle DBA
-keywords: Oracle DataBase, Библиотека Oracle DBA
-permalink: /database/beginning/library/
+title: Библиотека Oracle DBA - книги
+description: Библиотека Oracle DBA - книги
+keywords: Oracle DataBase, Библиотека Oracle DBA, книги
+permalink: /database/library/books/
 ---
 
-# Библиотека Oracle DBA
+# Библиотека Oracle DBA - Книги
 
 Если Вы только приступаете к изучению основ работы с базами данных Oracle, я бы рекомендовал следующее:
 
@@ -27,26 +27,6 @@ permalink: /database/beginning/library/
 <br/>
 
 Разумеется я говорю о книге Сема Алапати: Oracle DataBase 11g Руководство Администратора Баз Данных. Качество книги - отличное.
-
-<br/>
-
-### Видеокурсы от "Специалист":
-
-Вы можете постараться найти курсы от обучающего центра специалист.
-
-<br/>
-
-В свободном доступе можно найти почти все. По крайней мере раньше было можно найти точно.
-
-<br/>
-
-### Можно также посмотреть курсы Игоря Мирончика:
-
-<ul>
-	<li><strong>Основы администрирования БД Oracle</strong></li>
-    <li><a href="http://www.youtube.com/view_play_list?p=6F78CB4058D30626"><strong>[Мирончик И.] Администрирование Oracle 10g, 11g</strong></a></li>
-
-</ul>
 
 <br/>
 
@@ -97,7 +77,7 @@ permalink: /database/beginning/library/
 
 <div style="padding:10px; border:thin solid black;">
 
-    <h3>Порекомендуйте хорошие материалы по изучению базы данных Oracle, серверов приложений, BI , etc</h3>
+    <h3>Порекомендуйте хорошие материалы по изучению базы данных Oracle, серверов приложений, BI, etc</h3>
 
 </div>
 

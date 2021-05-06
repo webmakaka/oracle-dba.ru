@@ -10,4 +10,4 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/v
 
 <br/>
 
-Перенесено <a href="/database/beginning/library/">сюда</a>
+Перенесено <a href="/database/installation/virtualbox-machines/oracle-linux/">сюда</a>

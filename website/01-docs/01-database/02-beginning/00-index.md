@@ -13,9 +13,7 @@ permalink: /database/beginning/
 
     <li><a href="/database/beginning/starting-on/">С чего начать изучение Oracle?</a> (мнение администратора сайта)</li>
 
-    <li><a href="/database/beginning/library/">Библиотека</a> (Каталог обучающих материалов)</li>
-
-    <li><a href="/database/beginning/library/paid-video-courses/">Oracle Видеокурсы на английском (без ссылок на скачку, сами найдете если нужно)</a> (Каталог обучающих материалов)</li>
+    <li><a href="/database/library/">Библиотека</a> (Каталог обучающих материалов)</li>
 
     <li><a href="/database/beginning/doccumentation/">Ссылки на документацию по Oracle</a></li>
 

@@ -28,10 +28,12 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 <br/>
 
-    SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
-    from v$log a, v$logfile b
-    where a.group# = b.group#
-    order by 1;
+```sql
+SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
+from v$log a, v$logfile b
+where a.group# = b.group#
+order by 1;
+```
 
 <br/>
 
@@ -63,7 +65,11 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 Добавляем новую группу, перечисляем файлы новой группы и определяем их размер.
 
-    SQL> alter database add logfile group 1 ('/u02/oradata/ora112/redologs/redo01.log' , '/u03/oradata/ora112/redologs/redo01.log') size 100M;
+<br/>
+
+```sql
+SQL> alter database add logfile group 1 ('/u02/oradata/ora112/redologs/redo01.log' , '/u03/oradata/ora112/redologs/redo01.log') size 100M;
+```
 
 <br/>
 
@@ -87,7 +93,9 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 <br/>
 
-    SQL> alter database add logfile group 2 ('/u02/oradata/ora112/redologs/redo02.log' , '/u03/oradata/ora112/redologs/redo02.log ') size 100M;
+```sql
+SQL> alter database add logfile group 2 ('/u02/oradata/ora112/redologs/redo02.log' , '/u03/oradata/ora112/redologs/redo02.log ') size 100M;
+```
 
 <br/>
 
@@ -118,7 +126,9 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 <br/>
 
-    SQL> alter database add logfile group 3 ('/u02/oradata/ora112/redologs/redo03.log', '/u03/oradata/ora112/redologs/redo03.log ') size 100M;
+```sql
+SQL> alter database add logfile group 3 ('/u02/oradata/ora112/redologs/redo03.log', '/u03/oradata/ora112/redologs/redo03.log ') size 100M;
+```
 
 <br/>
 
@@ -131,10 +141,12 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 <br/>
 
-    SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
-    from v$log a, v$logfile b
-    where a.group# = b.group#
-    order by 1,2;
+```sql
+SQL> select a.group#, member, a.status, bytes/1024/1024 as "MB"
+from v$log a, v$logfile b
+where a.group# = b.group#
+order by 1,2;
+```
 
 <br/>
 
