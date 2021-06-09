@@ -29,7 +29,7 @@ Docker и docker-compose должны быть уже установлены.
 
 <br/>
 
-### Как сервис
+### Запустить как сервис (не предполагает внесение изменений)
 
     # vi /etc/systemd/system/oracle-dba.ru.service
 

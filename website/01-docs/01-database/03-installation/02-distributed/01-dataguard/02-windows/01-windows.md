@@ -14,7 +14,7 @@ permalink: /database/installation/distributed/dataguard/windows/oracle/
 
 <br/>
 
-Создаем БД на том же сервере (можно как выше, но можно и проще):
+Создаем БД на том же сервере:
 
 Останавливаем StandBy Fbid
 
@@ -146,7 +146,7 @@ alter database open;
 
 <br/>
 
-### тест
+### Тест
 
 ```
 select flashback_on from v$database;
@@ -251,8 +251,7 @@ Media recovery complete.
 <br/>
 
 ```
-SQL> alter system set log_archive_dest_1='location=D:\oradata\report\fast_recove
-ry_area\report\ARCHIVELOG' scope=memory;
+SQL> alter system set log_archive_dest_1='location=D:\oradata\report\fast_recovery_area\report\ARCHIVELOG' scope=memory;
 ```
 
 <br/>
