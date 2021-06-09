@@ -24,12 +24,14 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/o
 
 <br/>
 
-    RUN {
+```
+RUN {
     CONFIGURE DEVICE TYPE DISK BACKUP TYPE TO COMPRESSED BACKUPSET;
     BACKUP FULL DATABASE TAG "FULL_DATABASE" PLUS ARCHIVELOG TAG "FULL_DATABASE_ARCHIVELOGS";
     BACKUP CURRENT CONTROLFILE TAG "FULL_DATABASE_CONTROLFILE";
     BACKUP SPFILE TAG "FULL_DATABASE_SPFILE";
-    }
+}
+```
 
 Проверка синтаксиса созданного файла сценария
 

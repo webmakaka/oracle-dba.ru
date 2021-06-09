@@ -166,11 +166,8 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 ### DataGuard (Standby)
 
 <ul>
-
     <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/">Oracle Active Data Guard (Beta версия докумена)</a></li>
-
     <li><a href="http://odba.ru/showthread.php?t=469">Oracle Data Guard: Развертывание физического Standby средствами Oracle Database</a></li>
-
 </ul>
 
 <br/>
@@ -196,5 +193,5 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 
 <ul>
 <li><a href="http://odba.ru/forumdisplay.php?f=116">GoldenGate</a></li>
-<li>[HabraHabr] <a href="http://habrahabr.ru/post/238521/" rel="nofollow">Настройка двухсторонней синхронизации БД Oracle (Oracle Streams)</a></li>
+<li>[HabraHabr] <a href="https://habr.com/ru/post/238521/" rel="nofollow">Настройка двухсторонней синхронизации БД Oracle (Oracle Streams)</a></li>
 </ul>
