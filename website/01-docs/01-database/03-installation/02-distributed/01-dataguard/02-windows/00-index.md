@@ -10,4 +10,4 @@ permalink: /database/installation/distributed/dataguard/windows/
 
 <br/>
 
-### [Создание Snapshot StandBy (Сервер отчетов)](/database/installation/distributed/dataguard/windows/oracle/)
+### [Создание Snapshot StandBy (Сервер отчетов)](/database/installation/distributed/dataguard/windows/2008/oracle/11.2/)

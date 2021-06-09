@@ -3,7 +3,7 @@ layout: page
 title: Создание Snapshot StandBy (Сервер отчетов) в операционной системе Windows
 description: Создание Snapshot StandBy (Сервер отчетов) в операционной системе Windows
 keywords: Oracle DataBase, Windows, DataGuard, Snapshot StandBy
-permalink: /database/installation/distributed/dataguard/windows/oracle/
+permalink: /database/installation/distributed/dataguard/windows/2008/oracle/11.2/
 ---
 
 # Создание Snapshot StandBy (Сервер отчетов)
@@ -11,6 +11,20 @@ permalink: /database/installation/distributed/dataguard/windows/oracle/
 <br/>
 
 ### Beta версия докумена. Необходимо проверить на реальных серверах! Если кто будет делать по этой версии документа, отпишитесь, что да как, где, что поправить.
+
+<br/>
+
+**Последний раз делалось: ~ 2015-2016**
+
+<br/>
+
+**Автор:**
+
+Виктор (Телеграмм @Vict0rGI)
+
+<br/>
+
+Одна из разновидностей(Флэшбэк) позволяет все правки в течении дня на сервере стэндбай хранить во временном флэше(размер!!!) ночью подкатывать до актуальной, только используя архивлоги.
 
 <br/>
 
@@ -417,6 +431,14 @@ exit;
 
 ```
 host ocopy D:\ORADATA\FBID\FAST_RECOVERY_AREA\FBID\ARCHIVELOG\LOG_1_44833_797622543.DBF \\S00000DPM001\ORACLE\FBID\ARCH\LOG_1_44833_797622543.DBF
+```
+
+<br/>
+
+**RestTest10Arch.sql**
+
+```
+host ocopy D:\ORADATA\XXXX\FAST_RECOVERY_AREA\XXXX\ARCHIVELOG\LOG_1_48611_797622543.DBF  \\S00000DPM001\ORACLE\XXXX\ARCH\LOG_1_48611_797622543.DBF
 ```
 
 <br/>
