@@ -14,3 +14,7 @@ from region
 group by do
 having count(*) > 1;
 ```
+
+<br/>
+
+См. также [здесь](//plsql.ru/other/interview-questions/plsql/).
