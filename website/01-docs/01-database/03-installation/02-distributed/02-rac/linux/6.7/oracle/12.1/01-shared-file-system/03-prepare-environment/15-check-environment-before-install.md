@@ -15,6 +15,8 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 	</tr>
 </table>
 
+<br/>
+
 Возможно, что лучше скачать с сайта Oracle последнюю версию «Oracle Cluster Verification Utility»
 
 http://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-homepage-099973.html
