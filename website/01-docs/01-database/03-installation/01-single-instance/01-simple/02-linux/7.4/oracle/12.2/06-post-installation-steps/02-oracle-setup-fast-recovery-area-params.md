@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase 12.2 в Oracle Linux 7.4 - Задание параметров FAST RECOVERY AREA
-description: Инсталляция Oracle DataBase 12.2 в операционной системе Oracle Linux 7.4 - Настройка автозапуска Oracle после перезагрузки
-keywords: Oracle DataBase 12.2, Oracle Linux 7.4, FAST RECOVERY AREA, FRA
+description: Инсталляция Oracle DataBase 12.2 в Oracle Linux 7.4 - Задание параметров FAST RECOVERY AREA
+keywords: Oracle DataBase 12.2, Oracle Linux 7.4, fast recovery area, FRA
 permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/oracle-setup-fast-recovery-area-params/
 ---
 
