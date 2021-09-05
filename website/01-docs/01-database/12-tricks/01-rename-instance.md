@@ -1,24 +1,20 @@
 ---
 layout: page
-title: Переименование instance в Oracle 11 в linux
-description: Переименование instance в Oracle 11 в linux
+title: Переименование instance Oracle 11 в linux
+description: Переименование instance Oracle 11 в linux
 keywords: Oracle Database, Переименование instance
 permalink: /database/tricks/rename-oracle-instance/
 ---
 
-# Переименование instance в Oracle 11 в linux
+# Переименование instance Oracle 11 в linux
 
 **Переименую базу в primary (исключительно для удобства) на сервере**
 
-1)
-
-    $ rman target /
+1.  $ rman target /
     RMAN> backup full database noexclude include current controlfile spfile;
     RMAN> quit;
 
-2)
-
-    $ sqlplus / as sysdba
+2.  $ sqlplus / as sysdba
     SQL> shutdown immediate;
     SQL> startup mount;
 

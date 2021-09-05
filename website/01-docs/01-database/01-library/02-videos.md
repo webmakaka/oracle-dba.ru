@@ -10,7 +10,7 @@ permalink: /database/library/videos/
 
 <br/>
 
-### [Мирончик Игорь] Oracle19с от инсталяции до восстановления [RUS, 2021]
+### [Мирончик Игорь] Oracle19с от инсталляции до восстановления [RUS, 2021]
 
 https://www.youtube.com/watch?v=QH0quIRqBO4
 
@@ -84,10 +84,6 @@ https://www.youtube.com/watch?v=Du4g3S3SZPo
     <li><strong>Oracle WebLogic 12c for Administrators</strong></li>
 
     <li><strong>Oracle Coherence Quickstart</strong></li>
-
-    <li><strong>Oracle Business Intelligence Enterprise Edition (OBIEE) 11g</strong> (так себе)</li>
-
-    <li><strong>Oracle E-Business Suite R12 Applications DBA</strong> (так себе)</li>
 
 </ul>
 

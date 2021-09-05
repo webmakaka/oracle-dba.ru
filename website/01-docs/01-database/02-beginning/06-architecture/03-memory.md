@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Структуры памяти Oracle
-description: Структуры памяти Oracle
+title: Структуры памяти Oracle DataBase
+description: Структуры памяти Oracle DataBase
 keywords: Oracle Database, Память
 permalink: /docs/architecture/memory/
 ---
 
-# Структуры памяти Oracle
+# Структуры памяти Oracle DataBase
 
 <br/>
 
@@ -76,7 +76,7 @@ SGA не является однородной областью. На самом
 
 <br/><br/>
 
-Ниже перечислены основные компоненты SGA.
+**Ниже перечислены основные компоненты SGA.**
 
 <br/><br/>
 

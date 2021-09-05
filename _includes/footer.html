@@ -1,12 +1,15 @@
 <footer class="site-footer">
   <div class="wrapper">
+    {% if page.keywords %}
+
     <div align="center">
-      {% if page.keywords %}
       <p>
         <strong>Tags:</strong> {{ page.keywords | strip_html | strip_newlines |
-        truncate: 160 }} {% endif %}
+        truncate: 160 }}
       </p>
     </div>
+
+    {% endif %}
 
     <br />
     <br />

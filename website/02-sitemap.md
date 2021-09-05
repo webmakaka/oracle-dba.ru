@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Карта Сайта
-description: Карта Сайта
+title: Карта Сайта Oracle DBA
+description: Карта Сайта Oracle DBA
 keywords: Карта Сайта, sitemap
 permalink: /sitemap/
 ---

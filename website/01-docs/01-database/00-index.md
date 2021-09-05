@@ -80,7 +80,7 @@ permalink: /database/
 
 <ul>
     <li>
-        <a href="/database/tricks/rename-oracle-instance/">Переименование instance в Oracle 11 в linux</a>
+        <a href="/database/tricks/rename-oracle-instance/">Переименование instance Oracle 11 в linux</a>
     </li>
     <li>
         <a href="https://newbiedba.wordpress.com/2013/05/17/oracle-11gr2-using-rman-to-duplicate-a-live-database/">Oracle 11gR2 – Using RMAN to duplicate a live database (нужно проверить)</a>

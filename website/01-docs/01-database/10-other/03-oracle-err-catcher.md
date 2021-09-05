@@ -8,6 +8,16 @@ permalink: /docs/architecture/other/oracle-err-catcher/
 
 # Oracle Database, Ловец ошибок
 
+<br/>
+
+### Пример 1
+
+https://www.youtube.com/watch?v=8WlQqDcvddI
+
+<br/>
+
+### Пример 2
+
 <strong>Создаем таблицу для записи сообщений об ошибках.</strong>
 
 ```sql

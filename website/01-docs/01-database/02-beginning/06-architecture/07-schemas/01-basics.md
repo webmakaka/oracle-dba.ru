@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Oracle Схемы
-description: Oracle Схемы
+title: Схема (shema) в базе данных Oracle
+description: Схема (shema) в базе данных Oracle
 keywords: Oracle Database, shemas
 permalink: /docs/architecture/schemas/basics/
 ---
 
-# Oracle Схемы
+# Схема (shema) в базе данных Oracle
 
 Под термином схема в базе данных Oracle понимается - созданная учетная запись пользователя и объекты, которые ей принадлежат (например, индексы, триггеры, хранимые процедуры).
 

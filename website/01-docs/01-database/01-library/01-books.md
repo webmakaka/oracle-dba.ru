@@ -30,6 +30,13 @@ permalink: /database/library/books/
 
 <br/>
 
+### Лучшие книги по Oracle Performance Tuning:
+
+- cbo fundamentals от Jonathan Lewis
+- troubleshooting oracle performance от кристиана Антонини
+
+<br/>
+
 ### Книги полезные для администратора баз данных Oracle (на русском языке):
 
 <ul>
@@ -54,9 +61,8 @@ permalink: /database/library/books/
 ### Классика Oracle:
 
 <ul>
-<li>Oracle. Проектирование баз данных (RUS 1999)</li>
-<li>Том Кайт - Oracle для профессионалов (RUS 2003)</li>
-
+	<li>Oracle. Проектирование баз данных (RUS 1999)</li>
+	<li>Том Кайт - Oracle для профессионалов (RUS 2003)</li>
 </ul>
 
 <br/>

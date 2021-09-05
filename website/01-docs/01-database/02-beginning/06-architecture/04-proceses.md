@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Процессы Oracle
-description: Процессы Oracle
+title: Процессы Oracle DataBase
+description: Процессы Oracle DataBase
 keywords: Oracle Database, процессы
 permalink: /docs/architecture/proceses/
 ---
+
+<br/>
 
 <div style="padding:10px; border:thin solid black;">
 
@@ -43,7 +45,7 @@ permalink: /docs/architecture/proceses/
 
 <br/>
 
-# Процессы Oracle
+# Процессы Oracle DataBase
 
 Попробуем самостоятельно переписать материал. Нужно отметить, что в книге он был описан достаточно сложно.
 
@@ -143,7 +145,11 @@ permalink: /docs/architecture/proceses/
 
 После LGWR записывает эти изменения в redolog файлы.
 
-    SQL> select group#, member from v$logfile order by group#;
+```
+SQL> select group#, member from v$logfile order by group#;
+```
+
+<br/>
 
 Но делает это не сразу а при выполнении следующих условий:
 
