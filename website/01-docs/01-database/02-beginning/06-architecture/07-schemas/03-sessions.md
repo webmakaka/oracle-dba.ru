@@ -33,9 +33,9 @@ permalink: /docs/architecture/schemas/sessions/
 <h3><a name="sessions2">Найти блокирующую сессию</a></h3>
 
 ```sql
-    SELECT status, SECONDS_IN_WAIT, BLOCKING_SESSION, SEQ#
-    FROM v$session
-    WHERE username= upper('scott');
+SELECT status, SECONDS_IN_WAIT, BLOCKING_SESSION, SEQ#
+FROM v$session
+WHERE username=upper('scott');
 ```
 
 <br/>

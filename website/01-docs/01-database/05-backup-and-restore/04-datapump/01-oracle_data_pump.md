@@ -139,10 +139,10 @@ $ nohup expdp scott/tiger job_name=scott_export_job_01 dumpfile=dpdumps:scott_YY
 	<li>METADATA_ONLY – указывает, что требуется экспортировать только метаданные.</li>
 </ul>
 
-Пример:
+**Пример:**
 
 ```
-nohup expdp scott/tiger dumpfile=dpdumps:mydump01.dmp logfile=dplogs:mydump01.log CONTENT=DATA_ONLY &
+$ nohup expdp scott/tiger dumpfile=dpdumps:mydump01.dmp logfile=dplogs:mydump01.log CONTENT=DATA_ONLY &
 ```
 
 <br/>
@@ -199,13 +199,19 @@ nohup expdp scott/tiger dumpfile=dpdumps:mydump01.dmp logfile=dplogs:mydump01.lo
 
 ## Data Pump Import
 
-    $ nohup impdp scott/tiger dumpfile=datapumps:mydump01.dmp logfile=datapumps:mydump01.log &
+```
+$ nohup impdp scott/tiger dumpfile=datapumps:mydump01.dmp logfile=datapumps:mydump01.log &
+```
 
 Иногда, (в моем случае при неудачном импорте) можно вытащить из файла дампа весь код DDL.
 
 Для этого можно воспользоваться параметром SQLFILE.
 
-    $ nohup impdp scott/tiger dumpfile=datapumps:mydump01.dmp logfile=datapumps:mydump01.log sqlfile=datapumps:scott.sql job_name=scott_import_job_01 &
+<br/>
+
+```
+$ nohup impdp scott/tiger dumpfile=datapumps:mydump01.dmp logfile=datapumps:mydump01.log sqlfile=datapumps:scott.sql job_name=scott_import_job_01 &
+```
 
 Создается файл scott.sql с DDL.
 
@@ -244,7 +250,8 @@ INCLUDE=TABLE:”NOT LIKE ‘PER%’”
 ### Параметры переопределения
 
 <br/>
-<h3>Параметр REMAP_TABLE</h3>
+
+### Параметр REMAP_TABLE
 
 Параметр REMAP_TABLE позволяет переименовывать таблицу при выполнении операции импорта с сипользованием метода переноса табличных пространств.
 
@@ -289,6 +296,7 @@ INCLUDE=TABLE:”NOT LIKE ‘PER%’”
 Ниже приведено краткое описание того, что собой представляет кадый элемент.
 
 <strong>1) Название_трансовармации.</strong> Существуют всего четыре опции, которые могут указываться на месте этого элемента. Эти опции позволяют, соответственно, изменять четыре основных вида характеристик объекта.
+
 <br/><br/>
 
 <ul>
@@ -317,28 +325,34 @@ INCLUDE=TABLE:”NOT LIKE ‘PER%’”
 
 Представление DBA_DATAPUMP_JOBS позволяет получать сводную информацию обо всех выполняющихся в текущий момент заданиях Data Pump.
 
-    SQL> set pagesize 0;
-    SQL> set linesize 220;
-    SQL> col owner_name format a20;
-    SQL> col job_name format a20;
-    SQL> col operation format a20;
-    SQL> col state format a20;
+<br/>
 
-    SQL> SELECT owner_name, job_name, operation, state
-    FROM dba_datapump_jobs
-    WHERE state = 'EXECUTING';
+```sql
+SQL> set pagesize 0;
+SQL> set linesize 220;
+SQL> col owner_name format a20;
+SQL> col job_name format a20;
+SQL> col operation format a20;
+SQL> col state format a20;
+
+SQL> SELECT owner_name, job_name, operation, state
+FROM dba_datapump_jobs
+WHERE state = 'EXECUTING';
+```
 
 <br/>
 
 ```
-    SYS                  IMP_M2M_SVT          IMPORT               EXECUTING
+SYS                  IMP_M2M_SVT          IMPORT               EXECUTING
 ```
 
 <br/>
 
 Представление DBA_DATAPUMP_SESSIONS позволяет выяснять, какие пользователькие сеансы в текущий момент подключены к заданию Data Pump Export или Data Pump Import
 
-```
+<br/>
+
+```sql
 SQL> SELECT sid, serial#
 FROM v$session s, dba_datapump_sessions d
 WHERE s.saddr = d.saddr;
@@ -351,11 +365,24 @@ WHERE s.saddr = d.saddr;
 Ниже приведен типичный сценарий, который можнро использовать для получения информаци
 о том, сколько времени осталось до завершения выполнения задания Data Pump:
 
-    SQL> SELECT opname, target_desc, sofar, totalwork, start_time, time_remaining
-    FROM v$session_longops;
+<br/>
+
+```sql
+SQL> SELECT opname, target_desc, sofar, totalwork, start_time, time_remaining
+FROM v$session_longops;
+```
+
+<br/>
 
 <ul>
 	<li>OPNAME - имя задания Data Pump</li>
 	<li>TOTALWORK - показывает, сколько всего мегабайт было насчитано для выполнения данного задания;</li>
 	<li>SOFA - показывает, сколько пока было передано мегабайт во время выполнения данного задания;</li>
 </ul>
+
+<br/>
+
+### Дополнительно
+
+**Oracle Data Pump 21c and Cloud Object Stores**  
+https://www.youtube.com/watch?v=6S2N1-V5qc8
