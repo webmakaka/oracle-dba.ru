@@ -14,6 +14,16 @@ permalink: /golden-gate/
 
 <ul>
     <li>
+        <a href="https://www.youtube.com/watch?v=FGCje1AUQV0">[YouTube] Golden Gate Video | Replicate Oracle to PostgreSQL using Golden Gate [ENG, 2020]</a>
+        <a href="https://t.me/oracle_dba_ru/14014">[TelegramLink] GoldenGate for PostgreSQL 19.1+</a>
+    </li>
+
+</ul>
+
+<br/>
+
+<ul>
+    <li>
         <a href="https://www.youtube.com/watch?v=nv3Ccs-_4vo">[Вебинар] Введение в Oracle GoldenGate - Интеграция данных в реальном времени</a>
     </li>
     <li>
