@@ -10,6 +10,11 @@ permalink: /database/backup-and-restore/rman/duplicate-instance/duplicate-databa
 
 <br/>
 
+**Делалось:**  
+17.08.2015
+
+<br/>
+
 ### Имеется 1 сервер Oracle 12c, установленный как <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">здесь</a>
 
 <br/>
@@ -34,11 +39,11 @@ permalink: /database/backup-and-restore/rman/duplicate-instance/duplicate-databa
 ```
 COPY12 =
     (DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
-    (CONNECT_DATA =
-        (SERVER = DEDICATED)
-        (SERVICE_NAME = copy12)
-    )
+        (ADDRESS = (PROTOCOL = TCP)(HOST = moscow.localdomain)(PORT = 1521))
+        (CONNECT_DATA =
+            (SERVER = DEDICATED)
+            (SERVICE_NAME = copy12)
+        )
     )
 ```
 
@@ -150,6 +155,8 @@ VALID_NODE_CHECKING_REGISTRATION_LISTENER=SUBNET
 <br/>
 
     $ lsnrctl services
+
+<br/>
 
 ```
 ***
@@ -335,6 +342,8 @@ GROUP#    THREAD#	      MB STATUS   MEMBER
 <br/>
 
     $ vi duplicate-rman-script.rman
+
+<br/>
 
 Данные задаются в соответствии запроса report shema;
 Идентификатор файлов данных (1,3,4....) см. в report shema;

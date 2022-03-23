@@ -275,3 +275,114 @@ WHERE a.tablespace_name=b.tablespace_name;
     ------------------------------- ---------- ---------- ----------
     TEMP                                    54          0         54
     MY_TEMP                               2048          0       2048
+
+<br/>
+
+## Из вопросов
+
+Как правильно считать используемое место в tablespace?
+
+<br/>
+
+**Не запускалось на сервере (Нужно проверить):**
+
+https://t.me/oracle_dba_ru/14189
+
+<br/>
+
+```sql
+select a.tablespace_name,
+       round(a.bytes_alloc / (1024 * 1024)) "TOTAL ALLOC (MB)",
+       round(a.physical_bytes / (1024 * 1024)) "TOTAL PHYS ALLOC (MB)",
+       round(nvl(b.tot_used, 0) / (1024 * 1024)) "USED (MB)",
+       round((nvl(b.tot_used, 0) / a.bytes_alloc) * 100) "% USED",
+       round((a.bytes_alloc / (1024 * 1024)) - (nvl(b.tot_used, 0) / (1024 * 1024))) "TOTAL FREE (MB)"
+from   (select tablespace_name,
+               sum(bytes) physical_bytes,
+               sum(decode(autoextensible, 'NO', bytes, 'YES', maxbytes)) bytes_alloc
+        from   dba_data_files
+        group  by tablespace_name
+        union all
+        select tablespace_name,
+               sum(bytes) physical_bytes,
+               sum(decode(autoextensible, 'NO', bytes, 'YES', maxbytes)) bytes_alloc
+        from   DBA_TEMP_FILES
+        group  by tablespace_name
+       ) a,
+       (select tablespace_name, sum(bytes) tot_used
+        from   dba_segments
+        group  by tablespace_name
+        union all
+        SELECT tablespace_name,allocated_space-free_space FROM DBA_TEMP_FREE_SPACE
+       ) b
+where  a.tablespace_name = b.tablespace_name(+)
+and    a.tablespace_name not like 'UNDO%'
+order  by 5 desc;
+```
+
+<br/>
+
+**Не запускалось на сервере (Нужно проверить):**
+
+https://t.me/oracle_dba_ru/14206
+
+Это отчет, такой же переделанный немного стоит в качестве метрики в OEM13.
+
+<br/>
+
+```sql
+Select
+       'Табличное пространство: '||ts.tablespace_name||CHR(13)||
+       ' Всего : '||size_info.megs_alloc||'MB ('||round(size_info.megs_alloc/1024,2)||'Gb)'||CHR(13)||
+       ' Свободно : '||size_info.megs_free||'MB ('||round(size_info.megs_free/1024,2)||'Gb)'||CHR(13)||
+       ' Использованно : '||size_info.megs_used||'MB ('||round(size_info.megs_used/1024,2)||'Gb)'||CHR(13)||
+       ' Свободно/Занято: '|| size_info.pct_free||'%/'||size_info.pct_used||'%'||CHR(13)||
+       ' Максимально возможный размер : '||size_info.max||'MB '||'('||round(size_info.max/1024,2)||'Gb)'||CHR(13)||
+       ' Свободно с учетом авторасширения: '||
+         case to_char(size_info.max-size_info.megs_alloc)
+          when '0' then 'АВТОРАСШИРЕНИЕ ОТКЛЮЧЕНО!!! всего осталось: '||to_char(size_info.megs_free)||'MB ('||to_char(round(size_info.megs_free/1024,2))||'Gb)'
+          else to_char(size_info.max-size_info.megs_alloc)||'MB ('||to_char(round((size_info.max-size_info.megs_alloc)/1024,2))||'Gb) '
+         end as "INFO"
+From
+      (
+      select  a.tablespace_name,
+             round(a.bytes_alloc / 1024 / 1024) megs_alloc,
+             round(nvl(b.bytes_free, 0) / 1024 / 1024) megs_free,
+             round((a.bytes_alloc - nvl(b.bytes_free, 0)) / 1024 / 1024) megs_used,
+             round((nvl(b.bytes_free, 0) / a.bytes_alloc) * 100) Pct_Free,
+            100 - round((nvl(b.bytes_free, 0) / a.bytes_alloc) * 100) Pct_used,
+             round(maxbytes/1048576) Max
+      from  ( select  f.tablespace_name,
+                     sum(f.bytes) bytes_alloc,
+                     sum(decode(f.autoextensible, 'YES',f.maxbytes,'NO', f.bytes)) maxbytes
+              from dba_data_files f
+              group by tablespace_name) a,
+            (
+             select ts.name tablespace_name, sum(fs.blocks) * ts.blocksize bytes_free
+             from   DBA_LMT_FREE_SPACE fs, sys.ts$ ts
+             where  ts.ts# = fs.tablespace_id
+             group by ts.name, ts.blocksize
+            ) b
+      where a.tablespace_name = b.tablespace_name (+)
+      union all
+      select h.tablespace_name,
+             round(sum(h.bytes_free + h.bytes_used) / 1048576) megs_alloc,
+             round(sum((h.bytes_free + h.bytes_used) - nvl(p.bytes_used, 0)) / 1048576) megs_free,
+             round(sum(nvl(p.bytes_used, 0))/ 1048576) megs_used,
+             round((sum((h.bytes_free + h.bytes_used) - nvl(p.bytes_used, 0)) / sum(h.bytes_used + h.bytes_free)) * 100) Pct_Free,
+             100 - round((sum((h.bytes_free + h.bytes_used) - nvl(p.bytes_used, 0)) / sum(h.bytes_used + h.bytes_free)) * 100) pct_used,
+             round(sum(decode(f.autoextensible, 'YES', f.maxbytes, 'NO', f.bytes) / 1048576)) max
+      from   sys.v_$TEMP_SPACE_HEADER h, dba_temp_files f, sys.v_$Temp_extent_pool p
+      where  p.file_id(+) = h.file_id
+      and    p.tablespace_name(+) = h.tablespace_name
+      and    f.file_id = h.file_id
+      and    f.tablespace_name = h.tablespace_name
+      group by h.tablespace_name
+      ) size_info,
+      sys.dba_tablespaces ts, sys.dba_tablespace_groups tsg
+where ts.tablespace_name = size_info.tablespace_name
+and   ts.tablespace_name = tsg.tablespace_name (+)
+and size_info.max-size_info.megs_alloc<20480 and size_info.megs_free<20480 -- выведет все которые меньще 20 гигабайт меянть в 2х местах (в данном случае 20Гб - 20480)
+and (ts.tablespace_name not like 'TEMP%' and ts.tablespace_name not like '%UNDO%' and ts.tablespace_name not in('CWMLITE','DRSYS','ODM')) -- не учитывать эти табличные пространства
+order by ts.tablespace_name;
+```

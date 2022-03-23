@@ -1,129 +1,113 @@
 <header class="site-header">
-    <div class="wrapper">
-        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <div class="wrapper">
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
-        <nav class="site-nav">
-            <div class="trigger">
-                <ul class="nav nav-tabs">
-                    <!-- <li><a href="{{ site.baseurl }}/job/">Предложить работу</a></li> -->
+    <nav class="site-nav">
+      <div class="trigger">
+        <ul class="nav nav-tabs">
+          <!-- <li><a href="{{ site.baseurl }}/job/">Предложить работу</a></li> 
                     <li><a href="/vagrant/">Vagrant</a></li>
                     <li><a href="/docker/">Docker</a></li>
-                    <li><a href="/kubernetes/">Kubernetes</a></li>
-                    <li class="dropdown">
-                        <a
-                            href="{{ site.baseurl }}/info/how-to-add-information-on-site/"
-                            data-toggle="dropdown"
-                            class="dropdown-toggle"
-                            >Добавить знания<b class="caret"></b
-                        ></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a
-                                    href="{{ site.baseurl }}/info/how-to-add-information-on-site/"
-                                    >Добавить свои знания на сайт</a
-                                >
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a
-                                    href="{{ site.baseurl }}/info/blog-on-subdomain/"
-                                    >Завести свой блог на поддомене</a
-                                >
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="{{ site.baseurl }}/resume/"
-                                    >Разместить резюме на нашем сайте</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="/kubernetes/">Kubernetes</a></li>-->
+          <li class="dropdown">
+            <a
+              href="{{ site.baseurl }}/info/how-to-add-information-on-site/"
+              data-toggle="dropdown"
+              class="dropdown-toggle"
+              >Добавить знания<b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="{{ site.baseurl }}/info/how-to-add-information-on-site/"
+                  >Добавить свои знания на сайт</a
+                >
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="{{ site.baseurl }}/info/blog-on-subdomain/"
+                  >Завести свой блог на поддомене</a
+                >
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="{{ site.baseurl }}/resume/"
+                  >Разместить резюме на нашем сайте</a
+                >
+              </li>
+            </ul>
+          </li>
 
-                    <li class="dropdown">
-                        <a
-                            href="#"
-                            data-toggle="dropdown"
-                            class="dropdown-toggle"
-                            >Общение<b class="caret"></b
-                        ></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ site.baseurl }}/chat/">Чат</a></li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="http://odba.ru/" rel="nofollow"
-                                    >Форум</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle"
+              >Общение<b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/chat/">Чат</a></li>
+              <li class="divider"></li>
+              <li>
+                <a href="http://odba.ru/" rel="nofollow">Форум</a>
+              </li>
+            </ul>
+          </li>
 
-                    <li class="dropdown">
-                        <a
-                            href="{{ site.baseurl }}/scripts/oracle-dba-scripts/"
-                            data-toggle="dropdown"
-                            class="dropdown-toggle"
-                            >Скрипты<b class="caret"></b
-                        ></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a
-                                    href="{{ site.baseurl }}/scripts/oracle-database-samples-schemas/"
-                                    >Демонстрационные СХЕМЫ</a
-                                >
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a
-                                    href="{{ site.baseurl }}/scripts/oracle-dba-scripts/"
-                                    >Коллекция скриптов для Oracle DBA</a
-                                >
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a
-                                    href="{{ site.baseurl }}/scripts/oracle-plsql-scripts/"
-                                    >Коллекция PL/SQL скриптов</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
+          <li class="dropdown">
+            <a
+              href="{{ site.baseurl }}/scripts/oracle-dba-scripts/"
+              data-toggle="dropdown"
+              class="dropdown-toggle"
+              >Скрипты<b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="{{ site.baseurl }}/scripts/oracle-database-samples-schemas/"
+                  >Демонстрационные СХЕМЫ</a
+                >
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="{{ site.baseurl }}/scripts/oracle-dba-scripts/"
+                  >Коллекция скриптов для Oracle DBA</a
+                >
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="{{ site.baseurl }}/scripts/oracle-plsql-scripts/"
+                  >Коллекция PL/SQL скриптов</a
+                >
+              </li>
+            </ul>
+          </li>
 
-                    <li class="dropdown pull-right">
-                        <a
-                            href="{{ site.baseurl }}/sitemap/"
-                            data-toggle="dropdown"
-                            class="dropdown-toggle"
-                            >Карта сайта<b class="caret"></b
-                        ></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="{{ site.baseurl }}/sitemap/"
-                                    >Все разделы</a
-                                >
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="{{ site.baseurl }}/database/"
-                                    >DataBase</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="{{ site.baseurl }}/middleware/weblogic/"
-                                    >WebLogic</a
-                                >
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a
-                                    href="{{ site.baseurl }}/business-intelligence/"
-                                    >Business Intelligence</a
-                                >
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+          <li class="dropdown pull-right">
+            <a
+              href="{{ site.baseurl }}/sitemap/"
+              data-toggle="dropdown"
+              class="dropdown-toggle"
+              >Карта сайта<b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="{{ site.baseurl }}/sitemap/">Все разделы</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="{{ site.baseurl }}/database/">DataBase</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/middleware/weblogic/">WebLogic</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="{{ site.baseurl }}/business-intelligence/"
+                  >Business Intelligence</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
