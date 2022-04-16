@@ -128,3 +128,16 @@ permalink: /database/library/books/
 откат к определенной дате, Upgrade до следующей версии.
 
 </div>
+
+<br/>
+
+### [Offtopic] Материалы по PostgreSQL
+
+<br/>
+
+В связи с понятно какими событиями.
+
+<br/>
+
+**Администрирование PostgreSQL 10. Настройка и мониторинг**  
+https://postgrespro.ru/education/courses/DBA2

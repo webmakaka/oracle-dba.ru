@@ -33,8 +33,11 @@ Oracle 11, Windows Server
 есть полный инкрементальный бэкап level 0,
  и один следующий за ним инкрементальный коммулятивный бэкап level 1
 archive.log включены в бэкап
+
 Восстановление самих бэкапов (2 папки с файлами бэкапов) на сервер происходило с ленты.
+
 Был создан pfile из spfile исходной БД. Откорректирован в соответствии с новыми путями и именами.
+
 На новом сервере был запущен ряд команд по развертыванию из бэкапа:
 
 1. Startup nomount pfile -мой pfile
@@ -46,6 +49,7 @@ archive.log включены в бэкап
 4. catalog start with '\мой backupset'
 
 5. запускаю скрипт
+
 run {
 SET NEWNAME FOR DATABASE   TO  '\oradata\мой_сид\%b';
 SET NEWNAME FOR tempfile  1 TO  '\oradata\мой_сид\%b';
@@ -58,6 +62,7 @@ switch tempfile all;
 
 
 Но, боюсь запускать следующий шаг
+
 run {
 set until sequence xxxxx thread 1;
 recover database;
