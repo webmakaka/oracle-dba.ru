@@ -32,8 +32,8 @@ permalink: /database/library/books/
 
 ### Лучшие книги по Oracle Performance Tuning:
 
-- cbo fundamentals от Jonathan Lewis
-- troubleshooting oracle performance от кристиана Антонини
+- Jonathan Lewis "Cost Based Optimizer fundamentals"
+- Christian Antognini "Troubleshooting Oracle performance"
 
 <br/>
 
