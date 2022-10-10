@@ -53,7 +53,7 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
 <br/>
 
-Задать каталог где будут создаваться фийлы
+Задать каталог где будут создаваться файлы
 
     SQL> alter system set db_create_file_dest="/u01/datafiles";
 
@@ -87,6 +87,34 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
     select * from source_locked l
     where l.object_name = 'PRINT'
+
+<br/>
+
+// Топ 10 таблиц, выросших больше всего за месяц
+
+```sql
+select *
+from (select c.TABLESPACE_NAME,
+c.segment_name "Object Name",
+b.object_type,
+sum(space_used_delta) / 1024 / 1024 "Growth(MB)"
+from dba_hist_snapshot sn,
+dba_hist_seg_stat a,
+dba_objects b,
+dba_segments c
+where begin_interval_time > trunc(sysdate) - 30
+and sn.snap_id = a.snap_id
+and b.object_id = a.obj#
+and b.owner = c.owner
+and b.object_name = c.segment_name
+—and c.owner = user
+group by c.TABLESPACE_NAME, c.segment_name, b.object_type)
+order by 4 desc;
+```
+
+<br/>
+
+https://t.me/oracle_dba_ru/26798
 
 <!--
 
