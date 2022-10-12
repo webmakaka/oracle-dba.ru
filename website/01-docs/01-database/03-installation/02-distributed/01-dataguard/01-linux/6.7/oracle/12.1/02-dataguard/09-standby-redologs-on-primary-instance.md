@@ -8,6 +8,8 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/st
 
 # [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Создание standby redologs на primary
 
+<br/>
+
 A standby redo log is required for the maximum protection and maximum availability modes and the LGWR ASYNC transport mode is recommended for all databases. Data Guard can recover and apply more redo data from a standby redo log than from archived redo log files alone.
 
 Написано в статье на habrahabr
@@ -20,35 +22,47 @@ A standby redo log is required for the maximum protection and maximum availabili
 
 ### НА Primary
 
-    SQL> select max (bytes), count (1) from v$log;
+```
+SQL> select max (bytes), count (1) from v$log;
 
-    MAX(BYTES)   COUNT(1)
-    ---------- ----------
-      52428800	    3
-
-<br/>
-
-    $ cd ~
-    $ . asm.sh
+MAX(BYTES)   COUNT(1)
+---------- ----------
+    52428800	    3
+```
 
 <br/>
 
-    $ asmcmd
-    ASMCMD> mkdir +DATA/MASTER/STANDBYLOGS/
-    ASMCMD> mkdir +ARCH/MASTER/STANDBYLOGS/
-    ASMCMD> exit
+```
+$ cd ~
+$ . asm.sh
+```
 
 <br/>
 
-    $ source ~/.bash_profile
+```
+$ asmcmd
+ASMCMD> mkdir +DATA/MASTER/STANDBYLOGS/
+ASMCMD> mkdir +ARCH/MASTER/STANDBYLOGS/
+ASMCMD> exit
+```
 
 <br/>
 
-    $ sqlplus / as sysdba
+```
+$ source ~/.bash_profile
+```
 
 <br/>
 
-    $ alter system set standby_file_management=manual scope=both;
+```
+$ sqlplus / as sysdba
+```
+
+<br/>
+
+```
+$ alter system set standby_file_management=manual scope=both;
+```
 
 <br/>
 
@@ -65,37 +79,43 @@ A standby redo log is required for the maximum protection and maximum availabili
 
 -->
 
-    SQL>
-    ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 ('+ARCH/MASTER/STANDBYLOGS/stby_4.log', '+DATA/MASTER/STANDBYLOG/stby_4.log') SIZE 52428800;
-    ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 ('+ARCH/MASTER/STANDBYLOGS/stby_5.log', '+DATA/MASTER/STANDBYLOG/stby_5.log') SIZE 52428800;
-    ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 ('+ARCH/MASTER/STANDBYLOGS/stby_6.log', '+DATA/MASTER/STANDBYLOG/stby_6.log') SIZE 52428800;
-    ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 ('+ARCH/MASTER/STANDBYLOGS/stby_7.log', '+DATA/MASTER/STANDBYLOG/stby_7.log') SIZE 52428800;
+```
+SQL>
+ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 ('+ARCH/MASTER/STANDBYLOGS/stby_4.log', '+DATA/MASTER/STANDBYLOG/stby_4.log') SIZE 52428800;
+ALTER DATABASE ADD STANDBY LOGFILE GROUP 5 ('+ARCH/MASTER/STANDBYLOGS/stby_5.log', '+DATA/MASTER/STANDBYLOG/stby_5.log') SIZE 52428800;
+ALTER DATABASE ADD STANDBY LOGFILE GROUP 6 ('+ARCH/MASTER/STANDBYLOGS/stby_6.log', '+DATA/MASTER/STANDBYLOG/stby_6.log') SIZE 52428800;
+ALTER DATABASE ADD STANDBY LOGFILE GROUP 7 ('+ARCH/MASTER/STANDBYLOGS/stby_7.log', '+DATA/MASTER/STANDBYLOG/stby_7.log') SIZE 52428800;
+```
 
 <br/>
 
-    SQL> alter system set standby_file_management=auto scope=both;
+```
+SQL> alter system set standby_file_management=auto scope=both;
+```
 
 <br/>
 
 // Какую-то полезную информацию можно посмотреть в представлении v\$standby_log.
 
-    show parameter standby_file_management
+```
+show parameter standby_file_management
 
-    NAME				     TYPE	 VALUE
-    ------------------------------------ ----------- ------------------------------
-    standby_file_management 	     string	 AUTO
+NAME				     TYPE	 VALUE
+------------------------------------ ----------- ------------------------------
+standby_file_management 	     string	 AUTO
+```
 
 <br/>
 
-    SQL> select group#,status,bytes/1024/1024 mb from v$standby_log;
+```
+SQL> select group#,status,bytes/1024/1024 mb from v$standby_log;
 
-        GROUP# STATUS	      MB
-    ---------- ---------- ----------
-    	 4 UNASSIGNED	      50
-    	 5 UNASSIGNED	      50
-    	 6 UNASSIGNED	      50
-    	 7 UNASSIGNED	      50
+    GROUP# STATUS	      MB
+---------- ---------- ----------
+        4 UNASSIGNED	      50
+        5 UNASSIGNED	      50
+        6 UNASSIGNED	      50
+        7 UNASSIGNED	      50
 
-
-
-    	SQL> select TYPE, MEMBER from v$logfile where TYPE='STANDBY';
+SQL> select TYPE, MEMBER from v$logfile where TYPE='STANDBY';
+```
