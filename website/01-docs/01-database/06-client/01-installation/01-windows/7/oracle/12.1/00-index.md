@@ -2,13 +2,13 @@
 layout: page
 title: Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)
 description: Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)
-keywords: Oracle Database, Oracle Client, Инсталляция, Windows 7
+keywords: Oracle Database, Oracle Client, Инсталляция, Windows 7, Инсталляция PL/SQL Developer
 permalink: /client/installation/windows/7/oracle/12.1/
 ---
 
 # [Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)]
 
-В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, <a href="/chat/">пишите в чат или на адрес эл. почты</a>.
+В случае обнаружения ошибок, неточностей, опечаток или Вам известны лучшие способы, <a href="/chat/">пишите в чат</a>.
 
 <br/>
 
