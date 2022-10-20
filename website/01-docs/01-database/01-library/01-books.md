@@ -30,6 +30,12 @@ permalink: /database/library/books/
 
 <br/>
 
+### Ядро
+
+[Джонатан Льюис] Ядро Oracle. Внутреннее устройство для администраторов и разработчиков баз данных / пер. с англ. Киселев А. Н. – М.: ДМК Пресс, 2015. – 372 с.: ил. ISBN 978-5-97060-169-3
+
+<br/>
+
 ### Лучшие книги по Oracle Performance Tuning:
 
 - Jonathan Lewis "Cost Based Optimizer fundamentals"
@@ -69,7 +75,7 @@ permalink: /database/library/books/
 
 ### Книги, рекомендованные моими коллегами, разработчиками Oracle:
 
-<strong>Cost-Based Oracle Foundaments/Oracle основы стоимостной оптимизации</strong>
+<strong>Cost-Based Oracle Foundaments / Oracle основы стоимостной оптимизации</strong>
 
 <br/><br/>
 
