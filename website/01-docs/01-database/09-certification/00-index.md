@@ -65,7 +65,7 @@ permalink: /database/certification/
 	<li><a href="https://img.oracledba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-052.pdf">1Z0-052</a></li>
 	<li><a href="https://img.oracledba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-055.pdf">1Z0-055</a></li>
 	<li><a href="/files/cert/1Z0-071_ALL.7z">1Z0-071</a></li>
-	<li><a href="/files/cert/EXAM+1z0-071+sample.pdf">1Z0-071</a></li>
+	<li><a href="/files/cert/EXAM_1z0-071_sample.pdf">1Z0-071</a></li>
 	<li><a href="https://img.oracledba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-140.pdf">1Z0-140</a></li>
 	<li><a href="https://img.oracledba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-141.pdf">1Z0-141</a></li>
 	<li><a href="https://img.oracledba.net/files/docs/01-oracle-database/01-beginning/08-cert/examples/1Z0-147.pdf">1Z0-147</a></li>

@@ -153,6 +153,8 @@ rlwrap - пакет, который позволяет хранить истор
     // Установливаем переменные окружения
     $ vi ~/.bash_profile
 
+<br/>
+
 (Добавить после строчки) # User specific environment and startup programs
 
 <br/>
