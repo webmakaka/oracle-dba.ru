@@ -207,7 +207,11 @@ rlwrap - пакет, который позволяет хранить истор
     $ rman target sys/manager
 
 <br/>
-<br/>
 
 Возможно, будет полезно:  
 https://www.youtube.com/watch?v=XB1ZakqiTa8
+
+<br/>
+
+Долго обсуждали в чате проблему с запуском базы скриптом:  
+https://dba.stackexchange.com/questions/318523/database-alters-mount-mode-after-reboot/318623#318623
