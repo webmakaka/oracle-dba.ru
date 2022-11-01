@@ -120,3 +120,13 @@ permalink: /database/backup-and-restore/rman/
         <a href="/database/backup-and-restore/rman/duplicate-instance/duplicate-active-database/">Создание копии активной базы данных с помощью RMAN</a>
     </li>
 </ul>
+
+<br/>
+
+### Подключение в баш скрипте
+
+```
+// Как в баш скрипте залогиниться в rman, например, с паролем !!PASSword!!
+// Всю строку подключения в одинарный апостроф, пароль в двойную кавычку
+rman target 'sys/"!!PASSword!!"@MYBASE'
+```
