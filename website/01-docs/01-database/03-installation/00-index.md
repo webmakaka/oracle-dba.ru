@@ -8,7 +8,7 @@ permalink: /database/installation/
 
 # Инсталляция Oracle DataBase
 
-Подготовленная виртуальная машина Virtual Box от инженеров компании Oracle, можно скачать по следующему URL:
+Подготовленную виртуальную машина VirtualBox от инженеров компании Oracle, можно скачать по следующему URL:
 
 https://www.oracle.com/database/technologies/databaseappdev-vm.html
 
