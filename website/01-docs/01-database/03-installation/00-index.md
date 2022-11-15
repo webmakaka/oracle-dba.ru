@@ -8,6 +8,12 @@ permalink: /database/installation/
 
 # Инсталляция Oracle DataBase
 
+Подготовленная виртуальная машина Virtual Box от инженеров компании Oracle, можно скачать по следующему URL:
+
+https://www.oracle.com/database/technologies/databaseappdev-vm.html
+
+<br/>
+
 P.S.
 
 Коллеги, выложили видео с информацией, как развернуть базу с помощью Vagrant + ssh скриптов. Используется Oracle Linux 8 и база Oracle 19C. Для инсталляции необходимо скопировать дистрибутив в нужный каталог и запустить vagrant. Все остальное, скрипты сделают самостоятельно.
