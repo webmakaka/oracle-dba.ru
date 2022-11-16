@@ -78,7 +78,7 @@ permalink: /database/adm/
     </li>
 </ul>
 
-<br/>
+<!-- <br/>
 
 ### Мониторинг:
 
@@ -88,4 +88,4 @@ permalink: /database/adm/
     <li>
         <a href="http://odba.ru/showthread.php?t=744">Инсталляция Oracle Enterprise Manager Cloud control 12c в операционной системе Oracle Linux 5.8 x86 64 bit</a>
     </li>
-</ul>
+</ul> -->

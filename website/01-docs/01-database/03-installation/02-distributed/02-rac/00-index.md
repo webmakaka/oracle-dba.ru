@@ -31,14 +31,14 @@ RAC - несколько инстансов на разных серверах �
 
 </ul>
 
-<br/>
+<!-- <br/>
 
 ### Инсталляция Oracle RAC 10g R2
 
 <ul>
 	<li><a href="http://odba.ru/showthread.php?t=412">Real Application Cluster 10g R2 [OEL5.5 x86_64, DataBase 10.2.0.5., NFS]</a></li>
 	<li><a href="http://odba.ru/showthread.php?t=370">Real Application Cluster [OEL4.8 x86_64, Oracle Clusterware, Oracle DataBase 10g]</a></li>
-</ul>
+</ul> -->
 
 <br/>
 

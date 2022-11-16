@@ -212,13 +212,13 @@ End points: TCP:1521
 Listener is enabled.
 ```
 
-<br/>
+<!-- <br/>
 
 ### Дополнительно
 
 [Подключиться к базе данных Oracle из командной строки](https://odba.ru/showthread.php?t=66)
 
-[Возможно полезный пример с настройкой клиента](https://odba.ru/showthread.php?t=294&page=2)
+[Возможно полезный пример с настройкой клиента](https://odba.ru/showthread.php?t=294&page=2) -->
 
 <br/>
 

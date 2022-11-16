@@ -49,9 +49,9 @@ permalink: /database/backup-and-restore/
     <li>
         <a href="/database/backup-and-restore/oracle-data-pump/">Утилиты экспорта и импорта данных Data Pump (Резервное копирование объектов схемы)</a>
     </li>
-    <li>
+    <!-- <li>
         <a href="http://odba.ru/showthread.php?t=28">Утилиты IMP/EXP</a> (Для версий до 11)
-    </li>
+    </li> -->
 </ul>
 
 <br/>
