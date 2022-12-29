@@ -73,7 +73,7 @@ permalink: /database/library/books/
 
 <div style="padding:10px; border:thin solid black;" align="center">
 
-  <h3><a href="//plsql.ru/beginning/library/">Ссылки на материалы по изучению Oracle SQL и PL/SQL теперь собираются здесь</a></h3>
+  <h3><a href="//plsql.ru/library/">Ссылки на материалы по изучению Oracle SQL и PL/SQL теперь собираются здесь</a></h3>
 
 </div>
 
