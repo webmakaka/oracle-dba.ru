@@ -30,6 +30,7 @@ permalink: /database/adm/
 
 <ul>
     <li><a href="/database/upgrade/"><strong>Лабораторные по обновлению и миграции на Oracle 12c</strong></a></li>
+    <li><a href="https://www.oracle.com/downloads/community/vts-hands-on-labs-downloads.html"><strong>Oracle Database 19c (19.9.0) Upgrade and Migration hands-on Lab</strong></a></li>
 </ul>
 
 <br/>
