@@ -8,6 +8,10 @@ permalink: /database/library/books/
 
 # Библиотека Oracle DBA - Книги
 
+[Материалы по SQL и PL/SQL лежат здесь](//plsql.ru/library/)
+
+<br/>
+
 Если Вы только приступаете к изучению основ работы с базами данных Oracle, я бы рекомендовал следующее:
 
 <br/>
@@ -136,6 +140,9 @@ permalink: /database/library/books/
 В связи с понятно какими событиями.
 
 <br/>
+
+**PostgreSQL 15 изнутри**
+https://postgrespro.ru/education/books/internals
 
 **Администрирование PostgreSQL 10. Настройка и мониторинг**  
 https://postgrespro.ru/education/courses/DBA2
