@@ -10,31 +10,66 @@ permalink: /docs/architecture/queries/query/
 
 <br/>
 
+```sql
+-- Какие компоненты установлены
+SQL> select comp_id, comp_name, version, status from dba_registry;
+```
+
+<br/>
+
 // Какие компоненты установлены:
 
-    SQL> select comp_id, comp_name, version, status from dba_registry;
+```sql
+--  Версия БД с учетом установленных PSU.
+-- 12 и 21+ версий
+declare
+  l_rel int;
+  l_ver varchar2(30);
+begin
+  select  to_number(substr(version,1,instr(version,'.')-1)) into l_rel from v$instance;
+  $IF DBMS_DB_VERSION.version = 11 $THEN
+    select version into l_ver from v$instance;
+  $ELSIF DBMS_DB_VERSION.version = 12 $THEN
+    select full_ver
+    into l_ver
+    from (SELECT t.version||'.'||bundle_id full_ver,t.description
+          FROM   dba_registry_sqlpatch t
+          where  flags = 'NB'
+          order by action_time desc)
+    where rownum=1;
+  $ELSIF DBMS_DB_VERSION.version > 12 $THEN
+    select version_full into l_ver from v$instance;
+  $END
+  DBMS_OUTPUT.PUT_LINE( l_ver);
+end;
+/
+```
+
+https://t.me/oracle_dba_ru/39524
 
 <br/>
 
 // Tracking Oracle Option Usage (Какие опции Oracle DataBase использовались):
 
-    select samp.dbid, fu.name, samp.version, detected_usages, total_samples,
-      decode(to_char(last_usage_date, 'MM/DD/YYYY, HH:MI:SS'),
-             NULL, 'FALSE',
-             to_char(last_sample_date, 'MM/DD/YYYY, HH:MI:SS'), 'TRUE',
-             'FALSE')
-      currently_used, first_usage_date, last_usage_date, aux_count,
-      feature_info, last_sample_date, last_sample_period,
-      sample_interval, mt.description
-     from wri$_dbu_usage_sample samp, wri$_dbu_feature_usage fu,
-          wri$_dbu_feature_metadata mt
-     where
-      samp.dbid    = fu.dbid and
-      samp.version = fu.version and
-      fu.name      = mt.name and
-      fu.name not like '_DBFUS_TEST%' and  /* filter out test features */
-      bitand(mt.usg_det_method, 4) != 4    /* filter out disabled features */
-    /
+```sql
+select samp.dbid, fu.name, samp.version, detected_usages, total_samples,
+  decode(to_char(last_usage_date, 'MM/DD/YYYY, HH:MI:SS'),
+          NULL, 'FALSE',
+          to_char(last_sample_date, 'MM/DD/YYYY, HH:MI:SS'), 'TRUE',
+          'FALSE')
+  currently_used, first_usage_date, last_usage_date, aux_count,
+  feature_info, last_sample_date, last_sample_period,
+  sample_interval, mt.description
+  from wri$_dbu_usage_sample samp, wri$_dbu_feature_usage fu,
+      wri$_dbu_feature_metadata mt
+  where
+  samp.dbid    = fu.dbid and
+  samp.version = fu.version and
+  fu.name      = mt.name and
+  fu.name not like '_DBFUS_TEST%' and  /* filter out test features */
+  bitand(mt.usg_det_method, 4) != 4    /* filter out disabled features */
+/
+```
 
 http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
@@ -42,51 +77,65 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
 Отключение корзины
 
-    SQL> alter system set RECYCLEBIN=off scope=BOTH;
+```sql
+SQL> alter system set RECYCLEBIN=off scope=BOTH;
+```
 
 <br/>
 
 Найти невалидные объекты
 
-    SQL> select object_name, object_type from DBA_OBJECTS
-    WHERE status = 'INVALID';
+```sql
+SQL> select object_name, object_type from DBA_OBJECTS
+WHERE status = 'INVALID';
+```
 
 <br/>
 
 Задать каталог где будут создаваться файлы
 
-    SQL> alter system set db_create_file_dest="/u01/datafiles";
+```sql
+SQL> alter system set db_create_file_dest="/u01/datafiles";
+```
 
 <br/>
 
 Посмотреть параметры
 
-    SQL> show parameter db_create_file_dest
+```sql
+SQL> show parameter db_create_file_dest
+```
 
 <br/>
 
 Выявление пользоавтелей, наиболее интенсивно эксплуатирующих ресурсы ЦП
 
-    SQL> SELECT n.username, s.sid, s.value
-    FROM v$sesstat s, v$statname t, v$session n
-    WHERE s.statistic# = t.statistic#
-    AND n.sid = s.sid
-    AND t.name='CPU used by this session'
-    ORDER BY s.value desc;
+```sql
+SQL> SELECT n.username, s.sid, s.value
+FROM v$sesstat s, v$statname t, v$session n
+WHERE s.statistic# = t.statistic#
+AND n.sid = s.sid
+AND t.name='CPU used by this session'
+ORDER BY s.value desc;
+```
 
 <br/>
 
 Создание и использование последовательностей (sequence)
 
-    create sequence dept_seq start with 200 increment by 10;
-    insert into departments valuse (dept_seq.netxval, .......)
+```sql
+create sequence dept_seq start with 200 increment by 10;
+insert into departments valuse (dept_seq.netxval, .......)
+```
 
 <br/>
 
 Показать залоченные объекты
 
-    select * from source_locked l
-    where l.object_name = 'PRINT'
+```sql
+select * from source_locked l
+where l.object_name = 'PRINT'
+```
 
 <br/>
 
