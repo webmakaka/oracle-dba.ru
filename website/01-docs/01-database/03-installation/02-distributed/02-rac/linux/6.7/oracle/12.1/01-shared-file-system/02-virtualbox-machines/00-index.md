@@ -11,7 +11,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 <br/>
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри здесь.  
-https://sysadm.ru/adm/virtual/virtualbox/
+https://sysadm.ru/virtual/virtualbox/
 
 Конфиги виртуальных машин:
 
