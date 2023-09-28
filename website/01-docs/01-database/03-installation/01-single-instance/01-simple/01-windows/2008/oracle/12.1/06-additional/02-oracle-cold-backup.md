@@ -12,39 +12,57 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Выполните следующие команды:
 
-    sqlplus / as sysdba
+<br/>
+
+```
+sqlplus / as sysdba
+```
 
 <br/>
 
-    SQL> shutdown immediate;
-    SQL> startup mount;
-    SQL> quit
+```
+SQL> shutdown immediate;
+SQL> startup mount;
+SQL> quit
+```
 
 <br/>
 
-    $ rman target /
+```
+$ rman target /
+```
 
 <br/>
 
-    RMAN> backup full database noexclude include current controlfile spfile TAG "FULL_COLD_BACKUP";
+```
+RMAN> backup full database noexclude include current controlfile spfile TAG "FULL_COLD_BACKUP";
+```
 
 <br/>
 
-    ****
-    channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
-    Finished backup at 25-AUG-13
+```
+****
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 25-AUG-13
+```
 
 <br/>
 
-    RMAN> sql 'alter database open';
+```
+RMAN> sql 'alter database open';
+```
 
 <br/>
 
-    RMAN> quit
+```
+RMAN> quit
+```
 
 <br/>
 
-    sqlplus / as sysdba
+```
+sqlplus / as sysdba
+```
 
 <br/>
 
@@ -52,20 +70,26 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 <br/>
 
-    SQL> SELECT
-        TO_CHAR(SPACE_USED, '999,999,999,999') AS "Used",
-        TO_CHAR(SPACE_LIMIT - SPACE_USED + SPACE_RECLAIMABLE, '999,999,999,999')
-           AS "Free",
-        ROUND((SPACE_USED - SPACE_RECLAIMABLE)/SPACE_LIMIT * 100, 1)
-           AS "Used %"
-        FROM V$RECOVERY_FILE_DEST;
+```sql
+SQL> SELECT
+    TO_CHAR(SPACE_USED, '999,999,999,999') AS "Used",
+    TO_CHAR(SPACE_LIMIT - SPACE_USED + SPACE_RECLAIMABLE, '999,999,999,999')
+        AS "Free",
+    ROUND((SPACE_USED - SPACE_RECLAIMABLE)/SPACE_LIMIT * 100, 1)
+        AS "Used %"
+    FROM V$RECOVERY_FILE_DEST;
+```
 
 <br/>
 
-    Used             Free                 Used %
-    ---------------- ---------------- ----------
-         520,380,416   20,974,837,760        2.3
+```
+Used             Free                 Used %
+---------------- ---------------- ----------
+        520,380,416   20,974,837,760        2.3
+```
 
 <br/>
 
-    SQL> quit
+```
+SQL> quit
+```
