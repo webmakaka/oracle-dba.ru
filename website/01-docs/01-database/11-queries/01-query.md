@@ -11,6 +11,47 @@ permalink: /docs/architecture/queries/query/
 <br/>
 
 ```sql
+-- какой сегмент попадает на битые блоки
+SELECT e.owner, e.segment_type, e.segment_name, e.partition_name, c.file#
+     , greatest(e.block_id, c.block#) corr_start_block#
+     , least(e.block_id+e.blocks-1, c.block#+c.blocks-1) corr_end_block#
+     , least(e.block_id+e.blocks-1, c.block#+c.blocks-1)
+       - greatest(e.block_id, c.block#) + 1 blocks_corrupted
+     , null description
+  FROM dba_extents e, v$database_block_corruption c
+ WHERE e.file_id = c.file#
+   AND e.block_id <= c.block# + c.blocks - 1
+   AND e.block_id + e.blocks - 1 >= c.block#
+UNION
+SELECT s.owner, s.segment_type, s.segment_name, s.partition_name, c.file#
+     , header_block corr_start_block#
+     , header_block corr_end_block#
+     , 1 blocks_corrupted
+     , 'Segment Header' description
+  FROM dba_segments s, v$database_block_corruption c
+ WHERE s.header_file = c.file#
+   AND s.header_block between c.block# and c.block# + c.blocks - 1
+UNION
+SELECT null owner, null segment_type, null segment_name, null partition_name, c.file#
+     , greatest(f.block_id, c.block#) corr_start_block#
+     , least(f.block_id+f.blocks-1, c.block#+c.blocks-1) corr_end_block#
+     , least(f.block_id+f.blocks-1, c.block#+c.blocks-1)
+       - greatest(f.block_id, c.block#) + 1 blocks_corrupted
+     , 'Free Block' description
+  FROM dba_free_space f, v$database_block_corruption c
+ WHERE f.file_id = c.file#
+   AND f.block_id <= c.block# + c.blocks - 1
+   AND f.block_id + f.blocks - 1 >= c.block#
+order by file#, corr_start_block#;
+```
+
+<br/>
+
+https://t.me/oracle_dba_ru/49323
+
+<br/>
+
+```sql
 -- Какие компоненты установлены
 SQL> select comp_id, comp_name, version, status from dba_registry;
 ```
@@ -49,9 +90,8 @@ https://t.me/oracle_dba_ru/39524
 
 <br/>
 
-// Tracking Oracle Option Usage (Какие опции Oracle DataBase использовались):
-
 ```sql
+-- Tracking Oracle Option Usage (Какие опции Oracle DataBase использовались):
 select samp.dbid, fu.name, samp.version, detected_usages, total_samples,
   decode(to_char(last_usage_date, 'MM/DD/YYYY, HH:MI:SS'),
           NULL, 'FALSE',
@@ -75,42 +115,37 @@ http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
 <br/>
 
-Отключение корзины
-
 ```sql
+-- Отключение корзины
 SQL> alter system set RECYCLEBIN=off scope=BOTH;
 ```
 
 <br/>
 
-Найти невалидные объекты
-
 ```sql
+-- Найти невалидные объекты
 SQL> select object_name, object_type from DBA_OBJECTS
 WHERE status = 'INVALID';
 ```
 
 <br/>
 
-Задать каталог где будут создаваться файлы
-
 ```sql
+-- Задать каталог где будут создаваться файлы
 SQL> alter system set db_create_file_dest="/u01/datafiles";
 ```
 
 <br/>
 
-Посмотреть параметры
-
 ```sql
+-- Посмотреть параметры
 SQL> show parameter db_create_file_dest
 ```
 
 <br/>
 
-Выявление пользоавтелей, наиболее интенсивно эксплуатирующих ресурсы ЦП
-
 ```sql
+-- Выявление пользователей, наиболее интенсивно эксплуатирующих ресурсы ЦП
 SQL> SELECT n.username, s.sid, s.value
 FROM v$sesstat s, v$statname t, v$session n
 WHERE s.statistic# = t.statistic#
@@ -121,27 +156,24 @@ ORDER BY s.value desc;
 
 <br/>
 
-Создание и использование последовательностей (sequence)
-
 ```sql
+-- Создание и использование последовательностей (sequence)
 create sequence dept_seq start with 200 increment by 10;
 insert into departments valuse (dept_seq.netxval, .......)
 ```
 
 <br/>
 
-Показать залоченные объекты
-
 ```sql
+-- Показать залоченные объекты
 select * from source_locked l
 where l.object_name = 'PRINT'
 ```
 
 <br/>
 
-// Топ 10 таблиц, выросших больше всего за месяц
-
 ```sql
+-- Топ 10 таблиц, выросших больше всего за месяц
 select *
 from (select c.TABLESPACE_NAME,
 c.segment_name "Object Name",
