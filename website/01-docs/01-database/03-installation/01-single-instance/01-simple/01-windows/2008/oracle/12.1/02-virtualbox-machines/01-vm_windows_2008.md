@@ -11,7 +11,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <br/>
 
 О том как инсталлировал virtualbox, переменные и каталоги, смотри  
-<a href="//sysadm.ru/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/server/linux/virtual/virtualbox/">здесь</a>
 
 Задаем переменную с именем создаваемой виртуальной машины, чтобы в дальнейшем лишний раз не подставлять данное значение в команды.
 
@@ -194,7 +194,7 @@ http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 В Windows для этого вполне подойдет Remote Desktop Connecton (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 
 Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
-<a href="//sysadm.ru/virtual/virtualbox/">здесь</a>
+<a href="//sysadm.ru/server/linux/virtual/virtualbox/">здесь</a>
 
 Для нормальной работы в Windows также нужно будет установить VirtualBox Guest Additions  
 http://download.virtualbox.org/virtualbox/4.3.30/
