@@ -130,3 +130,9 @@ permalink: /database/backup-and-restore/rman/
 // Всю строку подключения в одинарный апостроф, пароль в двойную кавычку
 rman target 'sys/"!!PASSword!!"@MYBASE'
 ```
+
+<br/>
+
+### "Моднейший" RMAN скрипт для создания резерных копий Oracle. Шлет уведомления в телегу об ошибках при создании бэкапа
+
+https://github.com/wildmakaka/oracle-rman-with-telegram-notifications
