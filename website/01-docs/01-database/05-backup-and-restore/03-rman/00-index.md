@@ -133,6 +133,6 @@ rman target 'sys/"!!PASSword!!"@MYBASE'
 
 <br/>
 
-### "Моднейший" RMAN скрипт для создания резерных копий Oracle. Шлет уведомления в телеграм об ошибках при создании бэкапа
+### "Моднейший" RMAN скрипт для создания резервных копий Oracle. Шлет уведомления в телеграм об ошибках при создании бэкапа
 
 https://github.com/wildmakaka/oracle-rman-with-telegram-notifications
