@@ -46,7 +46,7 @@ RAC - несколько инстансов на разных серверах �
 
 <ul>
 
-  <li><a href="https://logic.edchen.org/how-to-build-19c-rac-1-of-4-preparing-two-database-servers/" rel="nofollow">How to Build 19c RAC</a></li>
+  <li><a href="https://www.howtosop.com/how-to-build-19c-rac-1-of-4-preparing-two-database-servers/" rel="nofollow">How to Build 19c RAC</a></li>
 
   <li><a href="https://en.wikibooks.org/wiki/RAC_Attack_-_Oracle_Cluster_Database_at_Home/RAC_Attack_12c/Create_VirtualBox_VM">RAC Attack - Oracle Cluster Database at Home/RAC Attack 12c/Create VirtualBox VM</a></li>
 
