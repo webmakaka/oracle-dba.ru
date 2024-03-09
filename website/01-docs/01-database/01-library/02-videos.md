@@ -24,16 +24,6 @@ https://www.youtube.com/watch?v=Du4g3S3SZPo
 
 <br/>
 
-### [Мирончик И.] Администрирование Oracle 10g, 11g
-
-<ul>
-	<li><strong>Основы администрирования БД Oracle</strong></li>
-    <li><a href="http://www.youtube.com/view_play_list?p=6F78CB4058D30626"><strong>здесь</strong></a></li>
-
-</ul>
-
-<br/>
-
 ### Видеокурсы от "Специалист":
 
 Вы можете постараться найти курсы от обучающего центра специалист. Все 5 частей. По 11 версии.

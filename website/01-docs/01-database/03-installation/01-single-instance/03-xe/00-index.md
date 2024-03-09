@@ -26,7 +26,7 @@ https://www.oracle.com/database/technologies/xe-downloads.html
 
 Поднять чистую виртуальную машину, предлагаю с помощью vagrant скрипта
 
-<a href="https://sysadm.ru/server/linux/virtual/vagrant/setup/ubuntu/">Инсталляция Vargant в Ubuntu 20.04.1</a>
+<a href="https://gitops.ru/tools/virtual/vagrant/setup/ubuntu/">Инсталляция Vargant в Ubuntu 20.04.1</a>
 
 <br/>
 
