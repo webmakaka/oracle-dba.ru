@@ -82,7 +82,9 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 
 ### Подготовка клиента Ubuntu
 
-\$ sudo apt-get install -y nmap nc xclock
+```
+$ sudo apt-get install -y nmap nc xclock
+```
 
 <div align="center">
 <img src="https://img.oracledba.net/img/oracle/database/simple/11.2/gdm.png" border="0" alt="Oracle installation">
