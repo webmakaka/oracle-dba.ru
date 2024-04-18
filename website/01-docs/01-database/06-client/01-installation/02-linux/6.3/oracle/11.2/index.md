@@ -205,3 +205,11 @@ Connected.
 <br/>
 
 ### [Установка Oracle Instant Client в Debian / Ubuntu](https://web.archive.org/web/20230128040957/https://debianworld.ru/articles/ustanovka-oracle-instant-client-v-debian-ubuntu/)
+
+<br/>
+
+### Таблица совместимости oracle instant client с базами oracle на 2024.04.18
+
+<div align="center">
+<img src="/img/instant-client-compatibility.png" border="0" alt="Oracle Instance"><br/>
+</div>
