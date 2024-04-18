@@ -33,73 +33,99 @@ SP2-0667: Message file sp1<lang>.msb not found<br/>
 
 <br/>
 
-    # mkdir -p /u01/app/oracle/instantclient
+```
+# mkdir -p /u01/app/oracle/instantclient
+```
 
 <br/>
 
-    # unzip instantclient-basic-linux.x64-11.2.0.3.0.zip
-    # unzip instantclient-sqlplus-linux.x64-11.2.0.3.0.zip
-    # mv instantclient_11_2/ 11.2
-    # mv 11.2/ /u01/app/oracle/instantclient
+```
+# unzip instantclient-basic-linux.x64-11.2.0.3.0.zip
+# unzip instantclient-sqlplus-linux.x64-11.2.0.3.0.zip
+# mv instantclient_11_2/ 11.2
+# mv 11.2/ /u01/app/oracle/instantclient
+```
 
 <br/>
 
-    # chown -R oracle11 /u01/app/oracle/instantclient/
+```
+# chown -R oracle11 /u01/app/oracle/instantclient/
+```
 
 <br/>
 
-    # vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
+```
+# vi /etc/yum.repos.d/oracleLinuxRepoINTERNET.repo
+```
 
 <br/>
 
-    [OEL_INTERNET]
-    name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
-    gpgcheck=1
-    enabled=1
+```
+[OEL_INTERNET]
+name=Oracle Enterprise Linux $releasever - $basearch
+baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
+gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
+gpgcheck=1
+enabled=1
+```
 
 <br/>
 
-    # yum install -y \
-    gcc \
-    make \
-    readline-devel.x86_64
+```
+# yum install -y \
+gcc \
+make \
+readline-devel.x86_64
+```
 
 <br/>
 
-    # yum install -y libaio-devel
+```
+# yum install -y libaio-devel
+```
 
 <br/>
 
-    # cd /tmp
-    # wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+```
+# cd /tmp
+# wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+```
 
 <br/>
 
 Если не работает вышеуказанный сайт, исходники можно взять здесь:
 
-    https://github.com/hanslub42/rlwrap
+```
+https://github.com/hanslub42/rlwrap
+```
 
 <br/>
 
-    # tar zxvf rlwrap-0.37.tar.gz
-    # cd rlwrap-0.37
-    # ./configure
+```
+# tar zxvf rlwrap-0.37.tar.gz
+# cd rlwrap-0.37
+# ./configure
+```
 
 <br/>
 
-    # make && make check && make install
+```
+# make && make check && make install
+```
 
 <br/>
 
 Если с sqlplus будет работать один конкретный пользователь. Данные записи следует добавить в его профиль.
 
-    # su - oracle11
+```
+# su - oracle11
+```
 
 <br/>
 
-    $ vi ~/.bash_profile
+```
+$ vi ~/.bash_profile
+```
 
 <br/>
 
@@ -121,33 +147,43 @@ alias rman='rlwrap rman'
 
 <br/>
 
-    $ source ~/.bash_profile
+```
+$ source ~/.bash_profile
+```
 
 <br/>
 
-    # sqlplus /nolog
+```
+# sqlplus /nolog
+```
 
 <br/>
 
-    SQL> conn system/system@oracle112:1521/ora112.localdomain
-    Connected.
+```
+SQL> conn system/system@oracle112:1521/ora112.localdomain
+Connected.
+```
 
 <br/>
 
 ### Создание файла (tnsnames.ora) с параметрами подключения к базе данных
 
-    # vi /u01/app/oracle/instantclient/11.2/tnsnames.ora
+```
+# vi /u01/app/oracle/instantclient/11.2/tnsnames.ora
+```
 
 <br/>
 
-    oracle11 =
-      (DESCRIPTION =
-        (ADDRESS = (PROTOCOL = TCP)(HOST = oracle112.localdomain)(PORT = 1521))
-        (CONNECT_DATA =
-          (SERVER = DEDICATED)
-          (SERVICE_NAME = ora112.localdomain)
-        )
-      )
+```
+oracle11 =
+    (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = oracle112.localdomain)(PORT = 1521))
+    (CONNECT_DATA =
+        (SERVER = DEDICATED)
+        (SERVICE_NAME = ora112.localdomain)
+    )
+    )
+```
 
 <br/>
 
@@ -155,9 +191,17 @@ alias rman='rlwrap rman'
 
 <br/>
 
-    # sqlplus /nolog
+```
+# sqlplus /nolog
+```
 
 <br/>
 
-    SQL> conn system/system@oracle11
-    Connected.
+```
+SQL> conn system/system@oracle11
+Connected.
+```
+
+<br/>
+
+### [Установка Oracle Instant Client в Debian / Ubuntu](https://web.archive.org/web/20230128040957/https://debianworld.ru/articles/ustanovka-oracle-instant-client-v-debian-ubuntu/)
