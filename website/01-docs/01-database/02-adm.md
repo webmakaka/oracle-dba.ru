@@ -68,16 +68,7 @@ permalink: /database/adm/
 
 <br/>
 
-### Настройка производительности баз данных Oracle:
-
-<ul>
-    <li>
-        <a href="/docs/architecture/performance/performance-or-reliability/">Выбор между производительностью и надежностью ОRАСLЕ</a>
-    </li>
-    <li>
-        <a href="/docs/architecture/performance/collect-session-statistics/">Собрать статистику пользовательской сессии</a>
-    </li>
-</ul>
+### [Настройка производительности баз данных Oracle](/database/performance/)
 
 <!-- <br/>
 
