@@ -8,6 +8,8 @@ permalink: /database/performance/
 
 # Настройка производительности баз данных Oracle
 
+<br/>
+
 <ul>
     <li>
         <a href="/database/performance/performance-or-reliability/">Выбор между производительностью и надежностью ОRАСLЕ</a>
