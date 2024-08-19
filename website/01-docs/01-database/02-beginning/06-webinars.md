@@ -12,13 +12,11 @@ permalink: /database/beginning/webinars/
 
     <h3>Dev Labs 2014 - Oracle. New feature of Oracle Database 11g... (Валерий Ковальчук)</h3>
 
-
     <br/><br/>
 
     <div align="center">
         <iframe width="853" height="480" src="https://www.youtube.com/embed/gMnNIwh3XCs" frameborder="0" allowfullscreen></iframe>
     </div>
-
 
     <br/><br/>
 
@@ -26,7 +24,9 @@ permalink: /database/beginning/webinars/
 
     <br/><br/>
 
-    <iframe width="640" height="480" src="https://www.youtube.com/embed/6lSyqJXXM8s" frameborder="0" allowfullscreen></iframe>
+    <div align="center">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/6lSyqJXXM8s" frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <br/><br/>
 
@@ -34,7 +34,9 @@ permalink: /database/beginning/webinars/
 
     <br/><br/>
 
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/F4Mf0YiyFPI" frameborder="0" allowfullscreen></iframe>
+    <div align="center">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/F4Mf0YiyFPI" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 </div>
 
