@@ -112,6 +112,6 @@ permalink: /database/certification/
 <br/>
 
 <ul>
-    <li><a href="//files.oracle-adf.com/pdf/exam/1z0-554-exam-study-guide.pdf" rel="nofollow">Oracle Application Development Framework 11g Essentials – Exam Guide</a></li>
-    <li><a href="//files.oracle-adf.com/pdf/exam/1Z0-554.pdf" rel="nofollow">Oracle 1z0-554</a></li>
+    <li><a href="//oracle-adf.javadev.org/files/pdf/exam/1z0-554-exam-study-guide.pdf" rel="nofollow">Oracle Application Development Framework 11g Essentials – Exam Guide</a></li>
+    <li><a href="//oracle-adf.javadev.org/files/pdf/exam/1Z0-554.pdf" rel="nofollow">Oracle 1z0-554</a></li>
 </ul>

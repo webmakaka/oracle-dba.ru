@@ -52,8 +52,8 @@ permalink: /sitemap/
 
 <h1>Программирование для баз данных Oracle:</h1>
 <ul>
-	<li><a href="https://plsql.ru/">Программирование на PL/SQL</a></li>
-	<li><a href="https://oracle-adf.ru/">Программирование на Java с использованием технологии Oracle ADF</a></li>
+	<li><a href="//plsql.ru/">Программирование на PL/SQL</a></li>
+	<li><a href="//oracle-adf.javadev.ru">Программирование на Java с использованием технологии Oracle ADF</a></li>
 </ul>
 
 <br/><br/>
