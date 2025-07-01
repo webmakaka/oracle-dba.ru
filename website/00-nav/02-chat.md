@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Телеграм и Discord чат для админов Oracle, тех кто работает с продуктами Oracle, программирует на PL/SQL и просто интересующихся
-description: Телеграм и Discord чат для админов Oracle, тех кто работает с продуктами Oracle, программирует на PL/SQL и просто интересующихся
+title: Телеграм чат для админов Oracle, тех кто работает с продуктами Oracle, программирует на PL/SQL и просто интересующихся
+description: Телеграм чат для админов Oracle, тех кто работает с продуктами Oracle, программирует на PL/SQL и просто интересующихся
 keywords: Oracle, Чат, Telegram, Discord
 permalink: /chat/
 ---

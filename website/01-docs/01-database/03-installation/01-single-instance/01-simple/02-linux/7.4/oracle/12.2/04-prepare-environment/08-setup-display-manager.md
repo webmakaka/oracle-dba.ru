@@ -145,7 +145,7 @@ xserver-allow-tcp=true
     $ ps ax | grep dm
     $ ps lf -C Xorg
 
-Не должно быть строчки "no-listen tcp" (Или что-то похожее так)
+Не должно быть строчки "no-listen tcp" (Или что-то похожее)
 
 <br/>
 
