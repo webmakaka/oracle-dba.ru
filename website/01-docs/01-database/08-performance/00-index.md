@@ -18,7 +18,7 @@ permalink: /database/performance/
         <a href="/database/performance/collect-session-statistics/">Собрать статистику пользовательской сессии</a>
     </li>
      <li>
-        <a href="/database/performance/change-sga-pga-values/">Изменить параметы SGA и PGA (Oracle 11.2)</a>
+        <a href="/database/performance/change-sga-pga-values/">Изменить параметры SGA и PGA (Oracle 11.2)</a>
     </li>
      <li>
         <a href="/database/performance/awr/">Подготовка отчета Automatic Workload Repository (AWR) - Windows - Oracle 10.2</a>

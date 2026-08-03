@@ -8,7 +8,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/p
 
 # <a href="/database/installation/single-instance/simple/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Oracle Linux 6.7]</a>: Конфигурирование системных пользователей, настройка параметров системы
 
-Перед тем как вносить изменения в конфигурационные файлы, рекомедуется сделать их резервные копии:
+Перед тем как вносить изменения в конфигурационные файлы, рекомендуется сделать их резервные копии:
 
     # {
         cp /etc/sysctl.conf /etc/sysctl.conf.bkp.$(date +%Y-%m-%d)
@@ -56,7 +56,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/p
 
 <br/>
 
-Количество байт отперативной памяти, можно узнать командой
+Количество байт оперативной памяти, можно узнать командой
 
     # free -b
     4152623104 / 2 = 2076311552

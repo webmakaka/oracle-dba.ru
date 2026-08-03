@@ -45,6 +45,6 @@ permalink: /middleware/weblogic/weblogic-seminar/
 <strong><a href="https://img.oracledba.net/files/docs/02-oracle-application-server/weblogic/03-seminar/Lab_Guides/WLS_11gR1 Cluster Lab.pdf">5) WebLogic Server 11gR1 Clustering Labs</a></strong><br/>
 
 <br/>
-<h3>Файлы с программами для лабораторыных:</h3>
+<h3>Файлы с программами для лабораторных:</h3>
 
 <strong><a href="https://img.oracledba.net/files/docs/02-oracle-application-server/weblogic/03-seminar/Labs/Labs.tar.gz">Файлы</a></strong><br/>

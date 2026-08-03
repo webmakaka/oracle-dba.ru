@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Настройка сетевых служб Oracle для создания дупликата primary на standby
-description: Настройка сетевых служб Oracle для создания дупликата primary на standby
+title: Настройка сетевых служб Oracle для создания дубликата primary на standby
+description: Настройка сетевых служб Oracle для создания дубликата primary на standby
 keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/
 ---
 
-# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка сетевых служб Oracle для создания дупликата primary на standby
+# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Настройка сетевых служб Oracle для создания дубликата primary на standby
 
 <br/>
 

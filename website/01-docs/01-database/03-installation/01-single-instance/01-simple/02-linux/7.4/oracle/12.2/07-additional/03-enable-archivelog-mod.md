@@ -28,7 +28,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/e
 
 <br/>
 
-Влючить archivelog (если выключен)
+Включить archivelog (если выключен)
 
     SQL> shutdown immediate;
     SQL> startup mount exclusive;

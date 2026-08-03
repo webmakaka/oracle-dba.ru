@@ -27,7 +27,7 @@ RAC - несколько инстансов на разных серверах �
 ### Инсталляция Oracle RAC 11G R2
 
 <ul>
-	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно передалать в части монтирования дисков к нодам сервера)</li>
+	<li><a href="/database/installation/distributed/rac/linux/5.8/oracle/11.2/">Инсталляция Oracle DataBase Real Application Cluster 11G R2 x86 64 bit в операционной системе Oracle Linux 5.8 x86 64 bit [iSCSI и ASM]</a> (Наверное, нужно переделать в части монтирования дисков к нодам сервера)</li>
 
 </ul>
 

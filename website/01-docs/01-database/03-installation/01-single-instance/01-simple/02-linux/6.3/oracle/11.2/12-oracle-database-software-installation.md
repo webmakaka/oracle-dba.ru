@@ -30,7 +30,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
 
 В данном случае 192.168.1.200 - ip адрес компьютера, с которого происходит процесс управления установкой. На этом компьютере должен быть стартован xserver, например XMing (под windows).
 
-Если установка происходит с linux, можно посмотреть инстукции как и что настраивается в версии докумена с базой oracle 12.
+Если установка происходит с linux, можно посмотреть инструкции как и что настраивается в версии документа с базой oracle 12.
 
 ### Проверка конфигурации перед инсталляцией:
 
@@ -45,7 +45,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
     Checking monitor: must be configured to display at least 256 colors.    Actual 65536    Passed
     Exiting Oracle Universal Installer, log for this session can be found at /tmp/OraInstall2012-06-10_03-03-29AM/installActions2012-06-10_03-03-29AM.log
 
-### Запус программы инсталляции базы данных:
+### Запуск программы инсталляции базы данных:
 
     $ ./runInstaller
 

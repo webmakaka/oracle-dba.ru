@@ -21,7 +21,7 @@ RAC выглядит приблизительно следующим образ�
 <hr>
 <br/><br/>
 
-В документи приводится пример пример развертывания <strong>Oracle Real Applicatoin Cluster 11.2 </strong> с использованием 4 виртуальных машин virtualbox, созданных "приблизительно" следующим образом:<br/>
+В документе приводится пример развертывания <strong>Oracle Real Application Cluster 11.2 </strong> с использованием 4 виртуальных машин virtualbox, созданных "приблизительно" следующим образом:<br/>
 https://docs.google.com/document/d/1ZU6Hk5DYitFYwlRFqN2qmJr6maPpvgsVc6ZTiZ1kYVA/edit
 
 <br/><br/>

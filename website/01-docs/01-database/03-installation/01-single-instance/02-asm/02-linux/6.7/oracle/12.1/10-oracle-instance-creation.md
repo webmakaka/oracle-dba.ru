@@ -8,7 +8,7 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/oracle-instan
 
 # <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Создание экземпляра базы данных (Instance)
 
-Определите системную переменную DISPLAY следующим образом (если она не поределена).
+Определите системную переменную DISPLAY следующим образом (если она не определена).
 
     $ export DISPLAY=192.168.1.5:0.0
 

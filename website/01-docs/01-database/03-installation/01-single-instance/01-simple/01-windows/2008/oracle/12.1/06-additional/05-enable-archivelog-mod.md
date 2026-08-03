@@ -24,7 +24,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
     ------------
     NOARCHIVELOG
 
-Влючить archivelog (если выключен)
+Включить archivelog (если выключен)
 
     SQL> shutdown immediate;
     SQL> startup mount exclusive;

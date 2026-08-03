@@ -8,7 +8,7 @@ permalink: /database/backup-and-restore/rman/low-space-in-fra/
 
 # Недостаточно свободного места в Fast Recovery Area
 
-**Специфицеское решение, когда база работает в ARCHIVELOG режиме**
+**Специфическое решение, когда база работает в ARCHIVELOG режиме**
 
 База данных переставала работать т.к. не могла записать файл архивлога в
 специально отведенное для этого место.
@@ -52,7 +52,7 @@ permalink: /database/backup-and-restore/rman/low-space-in-fra/
 
 3. backup database
 
-Количество бекапо, которые нужно оставить указываем в 1.
+Количество бекапов, которые нужно оставить указываем в 1.
 
 4. RMAN> CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
 

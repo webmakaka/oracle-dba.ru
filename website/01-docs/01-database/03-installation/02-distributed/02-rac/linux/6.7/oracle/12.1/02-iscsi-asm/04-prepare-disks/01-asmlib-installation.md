@@ -17,7 +17,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 </table>
 
-В Oracle Linux 6 oracleasm kernel driver встроены в ядро UEK и как следствиет не требует инсталляции.
+В Oracle Linux 6 oracleasm kernel driver встроены в ядро UEK и как следствие не требует инсталляции.
 
 Необходимо с сайта Oracle:
 

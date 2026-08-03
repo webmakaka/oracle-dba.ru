@@ -178,7 +178,7 @@ ORCL12.__streams_pool_size=0
 
     RMAN> restore spfile from '/tmp/backups/ORCL12/PARAMETERFILE/bkp_21_20150821_5_1_PARAM';
 
-Если меяется то:
+Если меняется то:
 
     RMAN> startup nomount pfile='/tmp/initorcl12.ora'
 

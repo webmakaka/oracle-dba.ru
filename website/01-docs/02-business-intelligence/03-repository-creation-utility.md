@@ -8,7 +8,7 @@ permalink: /business-intelligence/repository-creation-utility/
 
 # Создание схемы в базе данных для приложения OBIEE с помощью Repository Creation Utility (RCU)
 
-Дистрибутив RCU спраятали, что его не так просто и найти.
+Дистрибутив RCU спрятали, что его не так просто и найти.
 
 Скачал следующим образом:  
 Зашел на сайт Oracle по следующей ссылке:  

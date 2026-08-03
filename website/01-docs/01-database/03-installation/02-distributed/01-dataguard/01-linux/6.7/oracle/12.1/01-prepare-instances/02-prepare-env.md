@@ -93,7 +93,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/pr
 **Standby (piter)**
 
 Разница только в ORACLE_UNQNAME и ссылке на alert.log
-(Путь до alert.log меняется при создании дупликата. Нужно как-то пофиксить позднее)
+(Путь до alert.log меняется при создании дубликата. Нужно как-то пофиксить позднее)
 
 <br/>
 

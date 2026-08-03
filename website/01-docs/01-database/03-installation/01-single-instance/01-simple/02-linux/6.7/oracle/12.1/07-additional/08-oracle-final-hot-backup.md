@@ -47,7 +47,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/o
 
 <br/>
 
-Следующей командой я сообщаю, что все бекапы кроме последного, следует поменить как obsolete.
+Следующей командой я сообщаю, что все бекапы кроме последнего, следует поменять как obsolete.
 
     RMAN> CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
 

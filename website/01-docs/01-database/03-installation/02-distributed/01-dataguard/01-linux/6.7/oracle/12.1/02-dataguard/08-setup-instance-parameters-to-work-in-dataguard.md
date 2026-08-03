@@ -22,7 +22,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/se
 
 <br/>
 
-Можно использовать defer, чтобы в лог постоянно не писалось, что имеются проблеымы с коннектом к standby.
+Можно использовать defer, чтобы в лог постоянно не писалось, что имеются проблемы с коннектом к standby.
 
     -- SQL> alter system set log_archive_dest_state_2="defer" scope=both;
 
@@ -32,7 +32,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/se
 
 <br/>
 
-Следующие параметры будт использоваться (насколько я понял) в случае, если INSTANCE будет переключе в режим STANDBY
+Следующие параметры будет использоваться (насколько я понял) в случае, если INSTANCE будет переключен в режим STANDBY
 
     SQL> alter system set FAL_SERVER="slave" scope=both;
     SQL> alter system set FAL_CLIENT="master" scope=both;

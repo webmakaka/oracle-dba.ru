@@ -38,7 +38,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     # fdisk /dev/sdg
     # fdisk /dev/sdh
 
-Повторяем на всех вышеперечисленных дискахдисках
+Повторяем на всех вышеперечисленных дисках
 
     WARNING: DOS-compatible mode is deprecated. It's strongly recommended to
              switch off the mode (command 'c') and change display units to

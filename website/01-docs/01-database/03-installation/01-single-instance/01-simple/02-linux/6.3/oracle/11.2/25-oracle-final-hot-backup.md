@@ -49,7 +49,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/o
     6       B  F  A DISK        10.06.2012 22:12:46 1       1       NO         TAG20120610T221132
     10      B  F  A DISK        10.06.2012 23:21:10 1       1       YES        FULL_DATABASE
 
-Следующей командой я сообщаю, что все бекапы кроме последного, следует поменить как obsolete.
+Следующей командой я сообщаю, что все бекапы кроме последнего, следует поменять как obsolete.
 
     RMAN> CONFIGURE RETENTION POLICY TO REDUNDANCY 1;
 

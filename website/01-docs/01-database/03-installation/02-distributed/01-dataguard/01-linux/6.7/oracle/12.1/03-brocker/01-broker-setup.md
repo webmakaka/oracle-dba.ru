@@ -12,7 +12,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 
 ### Primary и Standby
 
-Для начала мне пришось выполнить команду на primary и standby:
+Для начала мне пришлось выполнить команду на primary и standby:
 
     SQL> ALTER SYSTEM SET LOG_ARCHIVE_DEST_2=" ";
 

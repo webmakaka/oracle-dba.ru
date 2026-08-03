@@ -64,7 +64,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/01-grid-installation/grid-installation_11.png" border="0" alt="Oracle RAC installation ISCSI ASM"><br/><br/>
 
-Если ASM диски не отображаются, можно следать следующее:
+Если ASM диски не отображаются, можно сделать следующее:
 
 <br/>
 

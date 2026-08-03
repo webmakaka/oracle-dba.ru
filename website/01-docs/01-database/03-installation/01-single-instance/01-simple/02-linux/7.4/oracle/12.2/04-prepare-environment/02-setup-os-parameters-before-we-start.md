@@ -12,7 +12,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/s
 
 <br/>
 
-Некоторые комментарии к следующей команде. Создаю резервную копию файла /etc/selinux/config, и меняю значение парамета SELINUX с enforcing на disabled
+Некоторые комментарии к следующей команде. Создаю резервную копию файла /etc/selinux/config, и меняю значение параметра SELINUX с enforcing на disabled
 
     # sed -i.bkp.$(date +%Y-%m-%d) -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 

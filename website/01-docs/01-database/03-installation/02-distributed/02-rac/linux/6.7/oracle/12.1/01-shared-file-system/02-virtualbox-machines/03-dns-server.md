@@ -34,7 +34,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
     $ VBoxManage modifyvm ${vm} --vram 32
 
-### Снимаю sound карту, вытаскиваем дисковвод:
+### Снимаю sound карту, вытаскиваем дисковод:
 
     $ VBoxManage modifyvm ${vm} --floppy disabled --audio none
 
@@ -110,7 +110,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
     --vrdeaddress 192.168.1.5 \
     --vrdeport 3389
 
-### Показать результат созданнойвиртуальной машины:
+### Показать результат созданной виртуальной машины:
 
     $ VBoxManage showvminfo ${vm}
 

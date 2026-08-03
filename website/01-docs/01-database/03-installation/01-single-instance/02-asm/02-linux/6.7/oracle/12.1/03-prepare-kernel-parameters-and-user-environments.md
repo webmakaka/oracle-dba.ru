@@ -8,7 +8,7 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/prepare-kerne
 
 # <a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">[Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID]</a>: Конфигурирование системных пользователей, настройка параметров системы
 
-Перед тем как вносить изменения в конфигурационные файлы, рекомедуется сделать их резервные копии:
+Перед тем как вносить изменения в конфигурационные файлы, рекомендуется сделать их резервные копии:
 
     # {
     cp /etc/sysctl.conf /etc/sysctl.conf.bkp.$(date +%Y-%m-%d)
@@ -83,7 +83,7 @@ https://docs.oracle.com/html/E10880_02/giinstaller_errormessages.htm
 
 <br/>
 
-Количество байт отперативной памяти, можно узнать командой
+Количество байт оперативной памяти, можно узнать командой
 
     # free -b
     4152623104 / 2 = 2076311552
@@ -216,7 +216,7 @@ https://docs.oracle.com/html/E10880_02/giinstaller_errormessages.htm
 
     $ chmod +x ~/asm.sh
 
-Чтобы использовались переменные указанные в файле asm.sh достаточно выполнить команы:
+Чтобы использовались переменные указанные в файле asm.sh достаточно выполнить команды:
 
     $ . asm.sh
 

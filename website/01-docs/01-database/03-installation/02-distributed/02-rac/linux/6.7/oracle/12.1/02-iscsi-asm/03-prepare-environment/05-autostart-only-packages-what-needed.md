@@ -22,7 +22,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 </table>
 
-// Посмотреть какие программы сейча автостартуют при запуске операционной системы.
+// Посмотреть какие программы сейчас автостартуют при запуске операционной системы.
 
     # chkconfig --list | grep '3:on\|4:on\|5:on'  |awk '{print $1}' | sort
 

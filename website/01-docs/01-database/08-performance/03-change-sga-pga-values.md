@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Изменить параметы SGA и PGA
-description: Изменить параметы SGA и PGA
-keywords: Oracle Database, Изменить параметы SGA и PGA
+title: Изменить параметры SGA и PGA
+description: Изменить параметры SGA и PGA
+keywords: Oracle Database, Изменить параметры SGA и PGA
 permalink: /database/performance/change-sga-pga-values/
 ---
 
-# Изменить параметы SGA и PGA (Oracle 11.2)
+# Изменить параметры SGA и PGA (Oracle 11.2)
 
 <br/>
 

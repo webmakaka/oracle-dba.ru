@@ -8,7 +8,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/p
 
 # <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Конфигурирование системных пользователей, настройка параметров системы
 
-Перед тем как вносить изменения в конфигурационные файлы, рекомедуется сделать их резервные копии:
+Перед тем как вносить изменения в конфигурационные файлы, рекомендуется сделать их резервные копии:
 
     # {
     cp /etc/sysctl.conf /etc/sysctl.conf.bkp
@@ -57,7 +57,7 @@ kernel.shmmax = RAM (in bytes) / 2
 
 <br/>
 
-Количество байт отперативной памяти, можно узнать командой
+Количество байт оперативной памяти, можно узнать командой
 
     # free -b
 

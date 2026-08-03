@@ -61,7 +61,7 @@ GRID INFRASTRUCTURE PATCH SET UPDATE 11.2.0.3.2 (INCLUDES DB PSU 11.2.0.3.2)
     # chown -R oracle11:dba /u01/app/grid/11.2/OPatch
     # chown -R oracle11:dba /u01/app/oracle/product/rac/11.2/OPatch
 
-Проверка, что опатчи имеют нужные нам версии 11.2.0.3.0
+Проверка, что патчи имеют нужные нам версии 11.2.0.3.0
 
 <br/>
 
@@ -135,7 +135,7 @@ Validation of Oracle Inventory
 
     sql> SELECT * FROM dba_registry_history ORDER BY action_time DESC;
 
-Впрочем, при вызове sqlplus всеравно отображается версия 11.2.0.3.0
+Впрочем, при вызове sqlplus все равно отображается версия 11.2.0.3.0
 
     SQL> COL PRODUCT FORMAT A35
     SQL> COL VERSION FORMAT A15

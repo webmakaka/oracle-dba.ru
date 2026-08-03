@@ -8,7 +8,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/s
 
 # <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">[Инсталляция Oracle DataBase Server 11.2.0.3 в Oracle Linux 6.3]</a>: Установка параметров ОС перед стартом
 
-Некоторые комментарии к следующей команде. Создаем резервную копию файла /etc/selinux/config, и меняем значение парамета SELINUX с enforcing на disabled
+Некоторые комментарии к следующей команде. Создаем резервную копию файла /etc/selinux/config, и меняем значение параметра SELINUX с enforcing на disabled
 
     # sed -i.bkp -e "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 

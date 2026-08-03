@@ -10,7 +10,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/ba
 
 Смысл в том, что:
 
-1. Бекапы всеравно нужно делать.
+1. Бекапы все равно нужно делать.
 2. FRA может заполниться архивлогами. Если не предпринять меры, то сервер остановится.
 
 Следующим образом предлагает делать бекапы автор курса [Udemy] easy way to set oracle active dataguard.

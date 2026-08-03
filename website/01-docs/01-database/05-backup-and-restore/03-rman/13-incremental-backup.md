@@ -20,7 +20,7 @@ RUN {
 
     BACKUP INCREMENTAL LEVEL 1 DATABASE PLUS ARCHIVELOG TAG "LEVEL 1";
 
-Создать кумулятивный (включает в себя измениния отраженные в инкрементальных бекапах ) бекап с уровнем 1
+Создать кумулятивный (включает в себя изменения отраженные в инкрементальных бекапах ) бекап с уровнем 1
 
     RMAN> backup incremental level 1 cumulative database;
 

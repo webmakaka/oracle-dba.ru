@@ -92,7 +92,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
     # vi /etc/tgt/targets.conf
 
-Обязательно должна быть разкомментирована строка:
+Обязательно должна быть раскомментирована строка:
 
     default-driver iscsi
 

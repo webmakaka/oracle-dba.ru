@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Создание каталогов на standby, котырые есть на primary
-description: Создание каталогов на standby, котырые есть на primary
+title: Создание каталогов на standby, которые есть на primary
+description: Создание каталогов на standby, которые есть на primary
 keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/create-foder-structure-like-on-primary/
 ---
 
-# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Создание каталогов на standby, котырые есть на primary
+# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Создание каталогов на standby, которые есть на primary
 
 Смысл шага в том, что если, например указан каталог в который нужно скопировать файлы, а на сервере такого каталога нет, процедура копирования сломается.
 

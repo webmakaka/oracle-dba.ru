@@ -152,7 +152,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 <br/><br/>
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
-<strong>Проверка правильности приоритера старта пакетов</strong></span>
+<strong>Проверка правильности приоритета старта пакетов</strong></span>
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 

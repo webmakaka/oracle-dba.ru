@@ -20,7 +20,7 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asm-disk-grou
 
 <img src="https://img.oracledba.net/images/docs/01-oracle-database/02-installation/03-oracle-database-installation/02-distributed/02-rac/linux/6.7/oracle/12.1/02-iscsi-asm/02-asm-disks-group-creation/asm-disks-group-creation_04.png" border="0" alt="Создание дисковых групп ASM"><br/><br/>
 
-Да я согласен, что для OCR выделнно слишком уж много ресурсов. Реально нужно что-то приблизительно 3 по 300 MB.
+Да я согласен, что для OCR выделено слишком уж много ресурсов. Реально нужно что-то приблизительно 3 по 300 MB.
 
 Просто получить какую-то информацию о дисковых группах
 

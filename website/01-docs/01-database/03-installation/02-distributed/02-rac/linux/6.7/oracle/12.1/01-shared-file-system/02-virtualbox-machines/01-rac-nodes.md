@@ -34,7 +34,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
     $ VBoxManage modifyvm ${vm} --vram 32
 
-### Снимаю sound карту, вытаскиваем дисковвод:
+### Снимаю sound карту, вытаскиваем дисковод:
 
     $ VBoxManage modifyvm ${vm} --floppy disabled --audio none
 
@@ -103,7 +103,7 @@ Name: eth0
 
 Я использую eth0 как основной физический интерфейс, который будут использовать виртуальные машины в качестве моста.
 
-Подключаю к виртуальной машине 3 виртуальных сетевых “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridget (3 адаптера нужные в случае необходимости установить RAC):
+Подключаю к виртуальной машине 3 виртуальных сетевых “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridge (3 адаптера нужные в случае необходимости установить RAC):
 
     $ VBoxManage modifyvm ${vm} \
     --nictype1 82540EM \
@@ -149,7 +149,7 @@ Name: eth0
 --vrdemulticon on - разрешено множественное подключение к виртуальным машинам.  
 --vrdeport порт к которому можно будет подключиться при старте виртуальной машины.
 
-### Показать результат созданнойвиртуальной машины:
+### Показать результат созданной виртуальной машины:
 
     $ VBoxManage showvminfo ${vm}
 

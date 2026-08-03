@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Установка hostname и hosts
-description: нсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Установка hostname и hosts
+description: инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID - Установка hostname и hosts
 keywords: Oracle DataBase 12.1, Centos 6.7, ASM, GRID
 permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/prepare/
 ---

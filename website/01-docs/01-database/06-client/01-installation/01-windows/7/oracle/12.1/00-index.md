@@ -331,7 +331,7 @@ manager - password
 
 <br/>
 
-### Подкючаемся к базе с помощью PL/SQL Developer
+### Подключаемся к базе с помощью PL/SQL Developer
 
 <div>
 	<img src="https://img.oracledba.net/02-client/installation/windows/7/oracle/12.1/42-oracle_client_12_installation_on_windows_7.png" border="0" alt="Инсталляция Oracle Client 12C (32 bit) в операционной системе Windows 7 (64 bit)">

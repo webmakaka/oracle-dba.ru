@@ -10,9 +10,9 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/setup-os
 
 <br/>
 
-Следующие команды выполняются на всех виртаульных машинах
+Следующие команды выполняются на всех виртуальных машинах
 
-Некоторые комментарии к следующим 2 командам - 1 создает резервную копию файла /etc/selinux/config, а вторая заменяет значение парамета SELINUX с enforcing на disabled
+Некоторые комментарии к следующим 2 командам - 1 создает резервную копию файла /etc/selinux/config, а вторая заменяет значение параметра SELINUX с enforcing на disabled
 
     # cp /etc/selinux/config /etc/selinux/config.bkp
     # sed -i.gres "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config

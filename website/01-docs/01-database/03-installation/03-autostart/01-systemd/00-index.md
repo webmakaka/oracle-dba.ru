@@ -12,7 +12,7 @@ permalink: /database/installation/autostart/systemd/
 
 ### LISTENER
 
-Созать файл: **/lib/systemd/system/listener.service**
+Создать файл: **/lib/systemd/system/listener.service**
 
 <br/>
 
@@ -37,7 +37,7 @@ WantedBy=multi-user.target
 
 ### DATABASE
 
-Созать файл: **/lib/systemd/system/oracle.service**
+Создать файл: **/lib/systemd/system/oracle.service**
 
 <br/>
 

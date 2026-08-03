@@ -56,7 +56,7 @@ oracleasm-2.6.18-308.el5.x86_64
 
 Необходимо выбрать нужное ядро.
 
-В файле grub.conf нужно указать, какое ядро следует использовать и после этого перезагружить узел.
+В файле grub.conf нужно указать, какое ядро следует использовать и после этого перезагрузить узел.
 
     # vi /etc/grub.conf
 
@@ -84,7 +84,7 @@ oracleasm-2.6.18-308.el5.x86_64
     # uname -rm
     2.6.18-308.el5 x86_64
 
-Для инсталляции достаточно будет выполнить следующие команы:
+Для инсталляции достаточно будет выполнить следующие команды:
 
     # cd /tmp
     # wget http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el5.x86_64.rpm
@@ -242,7 +242,7 @@ node2:
 <br/><br/>
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
-<strong>Проверка правильности приоритера старта пакетов</strong></span>
+<strong>Проверка правильности приоритета старта пакетов</strong></span>
 
 <table cellpadding="4" cellspacing="2" align="center" border="0" width="100%">
 

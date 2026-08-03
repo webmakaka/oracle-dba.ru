@@ -112,7 +112,7 @@ SQL> select file_name, tablespace_name FROM DBA_DATA_FILES;
 
 Словарь данных создается при создании экземпляра базы данных выполнением инструкций в файле \$ORACLE_HOME/rdbms/admin/catalog.sql
 
-Oracle не позволяет обращаться к таблицам словаря данных напрямую. Он создает представления на базе этих таблиц и общедоступные синонины для тих представлений, к которым могут обращаться пользователи. Существует три набора представлений словаря данных: USER, ALL и DBA – каждый из которых содержит сходный набор представлений со сходным набором столбцов.
+Oracle не позволяет обращаться к таблицам словаря данных напрямую. Он создает представления на базе этих таблиц и общедоступные синонимы для тих представлений, к которым могут обращаться пользователи. Существует три набора представлений словаря данных: USER, ALL и DBA – каждый из которых содержит сходный набор представлений со сходным набором столбцов.
 
 <br/>
 
@@ -335,7 +335,7 @@ Select
        'Табличное пространство: '||ts.tablespace_name||CHR(13)||
        ' Всего : '||size_info.megs_alloc||'MB ('||round(size_info.megs_alloc/1024,2)||'Gb)'||CHR(13)||
        ' Свободно : '||size_info.megs_free||'MB ('||round(size_info.megs_free/1024,2)||'Gb)'||CHR(13)||
-       ' Использованно : '||size_info.megs_used||'MB ('||round(size_info.megs_used/1024,2)||'Gb)'||CHR(13)||
+       ' Использовано : '||size_info.megs_used||'MB ('||round(size_info.megs_used/1024,2)||'Gb)'||CHR(13)||
        ' Свободно/Занято: '|| size_info.pct_free||'%/'||size_info.pct_used||'%'||CHR(13)||
        ' Максимально возможный размер : '||size_info.max||'MB '||'('||round(size_info.max/1024,2)||'Gb)'||CHR(13)||
        ' Свободно с учетом авторасширения: '||
@@ -382,7 +382,7 @@ From
       sys.dba_tablespaces ts, sys.dba_tablespace_groups tsg
 where ts.tablespace_name = size_info.tablespace_name
 and   ts.tablespace_name = tsg.tablespace_name (+)
-and size_info.max-size_info.megs_alloc<20480 and size_info.megs_free<20480 -- выведет все которые меньще 20 гигабайт меянть в 2х местах (в данном случае 20Гб - 20480)
+and size_info.max-size_info.megs_alloc<20480 and size_info.megs_free<20480 -- выведет все которые меньше 20 гигабайт менять в 2х местах (в данном случае 20Гб - 20480)
 and (ts.tablespace_name not like 'TEMP%' and ts.tablespace_name not like '%UNDO%' and ts.tablespace_name not in('CWMLITE','DRSYS','ODM')) -- не учитывать эти табличные пространства
 order by ts.tablespace_name;
 ```

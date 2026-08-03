@@ -50,7 +50,7 @@ permalink: /database/installation/virtualbox-machines/windows/2008/
 
     $ VBoxManage modifyvm ${vm} --vram 32
 
-Снимаем sound карту, вытаскиваем дисковвод
+Снимаем sound карту, вытаскиваем дисковод
 
     $ VBoxManage modifyvm ${vm} --floppy disabled --audio none
 
@@ -95,7 +95,7 @@ permalink: /database/installation/virtualbox-machines/windows/2008/
 
 ### Подключение сетевых интерфейсов:
 
-(Мой компьютер подключен к маршрутизатору (обычный домашний роутер). Обмен данных между моим компьютером и виртуальной машиной будет проходить через него. Если вы не используете маршрутизатор или коммутатор, вам нужно создать сетевые интерфейсы с параметром не bridget а internal connection.)
+(Мой компьютер подключен к маршрутизатору (обычный домашний роутер). Обмен данных между моим компьютером и виртуальной машиной будет проходить через него. Если вы не используете маршрутизатор или коммутатор, вам нужно создать сетевые интерфейсы с параметром не bridge а internal connection.)
 
 Наберите команду;
 
@@ -107,7 +107,7 @@ permalink: /database/installation/virtualbox-machines/windows/2008/
 
 Я использую eth0 как основной физический интерфейс, который будут использовать виртуальные машины в качестве моста.
 
-Подключаю к виртуальной машине 2 виртуальных сетевых интерфеса “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridget:
+Подключаю к виртуальной машине 2 виртуальных сетевых интерфейса “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridge:
 
     $ VBoxManage modifyvm ${vm} \
     --nictype1 82540EM \
@@ -163,7 +163,7 @@ permalink: /database/installation/virtualbox-machines/windows/2008/
 
 ВИРТУАЛЬНАЯ МАШИНА ГОТОВА ДЛЯ ИНСТАЛЛЯЦИИ ОПЕРАЦИОННОЙ СИСТЕМЫ
 
-Показать результат созданнойвиртуальной машины:
+Показать результат созданной виртуальной машины:
 
     $ VBoxManage showvminfo ${vm}  | less
 
@@ -193,7 +193,7 @@ permalink: /database/installation/virtualbox-machines/windows/2008/
 rdesktop - всевозможные ключи:<br/>
 http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 
-В Windows для этого вполне подойдет Remote Desktop Connecton (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
+В Windows для этого вполне подойдет Remote Desktop Connection (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 
-Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин:<br/>
+Более подробный документ с созданием снапшотов и резервных копий виртуальных машин:<br/>
 https://docs.google.com/document/d/1ZU6Hk5DYitFYwlRFqN2qmJr6maPpvgsVc6ZTiZ1kYVA/edit

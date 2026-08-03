@@ -8,11 +8,11 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/
 
 # Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7
 
-### Beta версия докумена. Необходимо проверить на реальных серверах! Если кто будет делать по этой версии документа, отпишитесь, что да как, где, что поправить.
+### Beta версия документа. Необходимо проверить на реальных серверах! Если кто будет делать по этой версии документа, отпишитесь, что да как, где, что поправить.
 
 <br/>
 
-Технология Oracle Data Guard предалагает решение для обеспечения высокой доступности, повышенной производительности и автоматического преодоления последствий сбоя.
+Технология Oracle Data Guard предлагает решение для обеспечения высокой доступности, повышенной производительности и автоматического преодоления последствий сбоя.
 
 Изменения в основной базе данных могут быть переданы в резервные базы данных с гарантией отсутствия потерь данных в процессе передачи.
 
@@ -79,13 +79,13 @@ db_unique_name - это уникальное имя для каждого экз
 
 <ul>
 
-    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/create-foder-structure-like-on-primary/">Создание каталогов на standby, котырые есть на primary</a></li>
+    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/create-foder-structure-like-on-primary/">Создание каталогов на standby, которые есть на primary</a></li>
 
     <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/copy-passwords-file/">Копирование файла паролей с primary на standby</a></li>
 
     <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/startup-instance-on-standby/">Стартую instance на standby</a></li>
 
-    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/">Настройка сетевых служб Oracle для создания дупликата primary на standby</a></li>
+    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/setup-oracle-network-services/">Настройка сетевых служб Oracle для создания дубликата primary на standby</a></li>
 
     <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/setup-instance-parameters-to-work-in-dataguard/">Настройка параметров instance на primary для работы в DataGuard конфигурации</a></li>
 
@@ -93,9 +93,9 @@ db_unique_name - это уникальное имя для каждого экз
 
     <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/rman-connection-check/">Проверка подключения RMAN к обоим Instance</a></li>
 
-    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/run-rman-script-for-duplicate-instance/">Создание rman скрипта для создания дупликата primary и его выполнение</a></li>
+    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/run-rman-script-for-duplicate-instance/">Создание rman скрипта для создания дубликата primary и его выполнение</a></li>
 
-    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/">Настройка параметров Instance после создания дупликата на standby</a></li>
+    <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/post-duplicate-steps-on-standby/">Настройка параметров Instance после создания дубликата на standby</a></li>
 
     <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/check-redo-apply/">Проверка применения redo</a></li>
 
@@ -131,7 +131,7 @@ db_unique_name - это уникальное имя для каждого экз
 <br/>
 <br/>
 
-**Материалы по теме: (Сортирока от более полезных, к менее)**:
+**Материалы по теме: (Сортировка от более полезных, к менее)**:
 
 <ul>
 	<!-- <li><a href="https://pierreforstmanndotcom.wordpress.com/2014/11/28/create-a-physical-standby-database-with-oracle-12-1-0-2-and-rman-active-duplication/" rel="nofollow">[ENG] Create a physical standby database with Oracle 12.1.0.2 and RMAN active duplication</a></li> -->

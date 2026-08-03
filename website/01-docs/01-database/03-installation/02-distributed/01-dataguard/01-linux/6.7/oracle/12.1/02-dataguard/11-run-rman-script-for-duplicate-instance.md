@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Создание rman скрипта для создания дупликата primary и его выполнение
-description: Создание rman скрипта для создания дупликата primary и его выполнение
+title: Создание rman скрипта для создания дубликата primary и его выполнение
+description: Создание rman скрипта для создания дубликата primary и его выполнение
 keywords: Oracle DataBase 12.1, Centos 6.7, DataGuard
 permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/run-rman-script-for-duplicate-instance/
 ---
 
-# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Создание rman скрипта для создания дупликата primary и его выполнение
+# [Инсталляция Oracle Active DataGuard 12.1 в операционной системе Centos 6.7]: Создание rman скрипта для создания дубликата primary и его выполнение
 
 ### На Primary
 

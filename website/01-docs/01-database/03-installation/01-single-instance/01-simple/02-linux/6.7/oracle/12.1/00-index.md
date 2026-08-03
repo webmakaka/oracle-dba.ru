@@ -160,6 +160,6 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/
 
 <div style="padding:10px; border:thin solid black;" align="center">
 
-  <h3>Есди есть предложения по улучшению, пишите!</h3>
+  <h3>Если есть предложения по улучшению, пишите!</h3>
 
 </div>

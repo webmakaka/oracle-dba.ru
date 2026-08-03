@@ -19,13 +19,13 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 
     RMAN> BACKUP AS BACKUPSET DATABASE;
 
-Создаст резернвую копию как backup set
+Создаст резервную копию как backup set
 
 Команда:<br/>
 
     RMAN> BACKUP AS COPY DATABASE;
 
-Создаст резернвую копию как image copies
+Создаст резервную копию как image copies
 
 <br/>
 
@@ -66,7 +66,7 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 <h3>Бекапы могут иметь статус:</h3>
 
 <ul>
-	<li>EXPIRED (Истекшие) - RMAN маркирует бекапы и копии данных как expired в случае, если при запуске CROSSCHECK (проверка бекапов) будут найдены ссылки на отсутсвующие или недоступные файлы.</li>
+	<li>EXPIRED (Истекшие) - RMAN маркирует бекапы и копии данных как expired в случае, если при запуске CROSSCHECK (проверка бекапов) будут найдены ссылки на отсутствующие или недоступные файлы.</li>
 	<li>OBSOLETE (Устаревшие) - резервная копия считается устаревшей, если она уже больше не требуется для восстановления базы данных согласно используемой политике сохранности (retention policy).</li>
 </ul>
 
@@ -87,7 +87,7 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 <br/>
 <h3>Создать резервную копию архивных журналов:</h3>
 
-Архивлоги можно как влкючать в backup так и не включать.
+Архивлоги можно как включать в backup так и не включать.
 <br/>
 Можно выполнить отдельно резервное копирование архивлогов.
 <br/>
@@ -96,14 +96,14 @@ permalink: /database/backup-and-restore/rman/oracle-rman-backup/
 
 <br/>
 
-TAG "ARCHIVELOG_BACKUP" - определяет имя для создаваетого бекапа архивлогов как "ARCHIVELOG_BACKUP".
+TAG "ARCHIVELOG_BACKUP" - определяет имя для создаваемого бекапа архивлогов как "ARCHIVELOG_BACKUP".
 <br/>
 
 С указанием временных интервалов
 
     RMAN> backup archivelog from time 'SYSDATE -1' DELETE ALL INPUT;
 
-// Затрудняюсь сказать, что значат парамерты в коце
+// Затрудняюсь сказать, что значат параметры в конце
 
     RMAN> backup as compressed backupset archivelog from time 'sysdate -2' not backed up 3 times;
 
@@ -239,7 +239,7 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
 
 <br/>
 
-Получить информацю о созданном бекапе.
+Получить информацию о созданном бекапе.
 
     RMAN> LIST BACKUP TAG "FULL_DATABASE_BEFORE_UPGRADE";
 
@@ -325,7 +325,7 @@ S - Статус бекапа: A (available), U (unavailable), or X (all backup 
 
 <br/>
 
-### Получить данные по результам выполнения команд резервного копирования:
+### Получить данные по результатам выполнения команд резервного копирования:
 
     SQL> set pagesize 0;
     SQL> select start_time as "Data", status as "Result" from v$rman_backup_job_details order by 1 desc;

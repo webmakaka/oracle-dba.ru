@@ -55,7 +55,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
     $ VBoxManage modifyvm ${vm} --vram 32
 
-Снимаем sound карту, вытаскиваем дисковвод
+Снимаем sound карту, вытаскиваем дисковод
 
     $ VBoxManage modifyvm ${vm} --floppy disabled --audio none
 
@@ -100,7 +100,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 ### Подключение сетевых интерфейсов:
 
-(Мой компьютер подключен к маршрутизатору (обычный домашний роутер). Обмен данных между моим компьютером и виртуальной машиной будет проходить через него. Если вы не используете маршрутизатор или коммутатор, вам нужно создать сетевые интерфейсы с параметром не bridget а internal connection.)
+(Мой компьютер подключен к маршрутизатору (обычный домашний роутер). Обмен данных между моим компьютером и виртуальной машиной будет проходить через него. Если вы не используете маршрутизатор или коммутатор, вам нужно создать сетевые интерфейсы с параметром не bridge а internal connection.)
 
 Наберите команду;
 
@@ -112,7 +112,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 Я использую eth0 как основной физический интерфейс, который будут использовать виртуальные машины в качестве моста.
 
-Подключаю к виртуальной машине 2 виртуальных сетевых интерфеса “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridget:
+Подключаю к виртуальной машине 2 виртуальных сетевых интерфейса “Intel® 82540EM Gigabit Ethernet Controller”, работающих как bridge:
 
     $ VBoxManage modifyvm ${vm} \
     --nictype1 82540EM \
@@ -155,7 +155,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 --vrdemulticon on - разрешено множественное подключение к виртуальным машинам.  
 --vrdeport порт к которому можно будет подключиться при старте виртуальной машины.
 
-Показать результат созданнойвиртуальной машины:
+Показать результат созданной виртуальной машины:
 
     $ VBoxManage showvminfo ${vm}  | less
 
@@ -191,9 +191,9 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 rdesktop - всевозможные ключи:<br/>
 http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 
-В Windows для этого вполне подойдет Remote Desktop Connecton (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
+В Windows для этого вполне подойдет Remote Desktop Connection (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 
-Более подробный документ с созданием снапшотов и резервныхкопий виртуальных машин смотри
+Более подробный документ с созданием снапшотов и резервных копий виртуальных машин смотри
 <a href="//sysadm.ru/server/linux/virtual/virtualbox/">здесь</a>
 
 Для нормальной работы в Windows также нужно будет установить VirtualBox Guest Additions  
