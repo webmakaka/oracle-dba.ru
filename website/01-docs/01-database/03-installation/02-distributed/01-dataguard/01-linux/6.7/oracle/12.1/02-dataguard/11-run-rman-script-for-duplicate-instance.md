@@ -50,7 +50,7 @@ RMAN automatically copies the server parameter file to the standby host, starts 
 
 DORECOVER option to recover the database after standby creation
 
-http://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm
+https://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm
 
 Если мы хотим разместить нашу standby базу в каталогах, отличных от тех, в которых размещена основная база, нам понадобятся дополнительные параметры:
 

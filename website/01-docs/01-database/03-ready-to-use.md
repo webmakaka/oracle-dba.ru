@@ -14,7 +14,7 @@ permalink: /database/ready-to-use/
 
 Со всем нужным и ненужным. Данный вариант используется для демонстраций работы всех возможностей. Поэтому здесь есть и GUI, и SQL Developer, и наверное еще много чего.
 
-Скачать можно здесь <a href="http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html" rel="nofollow">в docker контейнере</a>.
+Скачать можно здесь <a href="https://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html" rel="nofollow">в docker контейнере</a>.
 
 <br/>
 

@@ -26,7 +26,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/a
 <!-- Скрипт следующего содержания мы добавим в автозагрузку (выполнив команды после данного скрипта):
 
 
-<script src="http://gist-it.appspot.com/https://github.com/oradev/oracle-dba-scripts/blob/master/oracle_12R1_startup_and_shutdown_script">
+<script src="https://gist-it.appspot.com/https://github.com/oradev/oracle-dba-scripts/blob/master/oracle_12R1_startup_and_shutdown_script">
 </script> -->
 
     # cd /tmp

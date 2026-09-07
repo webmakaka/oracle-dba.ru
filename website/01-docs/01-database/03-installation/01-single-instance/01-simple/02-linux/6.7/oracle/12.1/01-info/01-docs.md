@@ -11,7 +11,7 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/d
 <br/>
 
 <h3>Oracle Database 12c Documentation</h3>
-http://www.oracle.com/technetwork/database/enterprise-edition/documentation/database-093888.html
+https://www.oracle.com/technetwork/database/enterprise-edition/documentation/database-093888.html
 
 <h3>Oracle Database Quick Installation Guide</h3>
-http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm
+https://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm

@@ -16,7 +16,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/d
 
 ### Oracle® Database Quick Installation Guide 11g Release 2 (11.2) for Linux x86-64
 
-http://docs.oracle.com/cd/E11882_01/install.112/e24326/toc.htm
+https://docs.oracle.com/cd/E11882_01/install.112/e24326/toc.htm
 
 <br/><br/>
 <br/><br/>

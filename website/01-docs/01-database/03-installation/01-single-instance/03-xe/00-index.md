@@ -69,8 +69,8 @@ https://www.oracle.com/database/technologies/xe-downloads.html
 ```
 [OEL_INTERNET]
 name=Oracle Enterprise Linux $releasever - $basearch
-baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL7/latest/$basearch/
-gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol7
+baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL7/latest/$basearch/
+gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol7
 gpgcheck=1
 enabled=1
 ```

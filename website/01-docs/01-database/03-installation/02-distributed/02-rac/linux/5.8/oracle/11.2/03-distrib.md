@@ -21,12 +21,12 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/distrib/
 <br/>
 
 <strong>Дистрибутивы операционной системы Oracle Linux 5.8:</strong><br/>
-http://rutracker.org/forum/viewtopic.php?t=3971967
+https://rutracker.org/forum/viewtopic.php?t=3971967
 
 <br/>
 
 <strong>Дистрибутивы базы данных Oracle:</strong><br/>
-http://rutracker.org/forum/viewtopic.php?t=3749965
+https://rutracker.org/forum/viewtopic.php?t=3749965
 
 <br/><br/>
 <strong>Содержимое архивов:</strong>
@@ -56,18 +56,18 @@ p10098816_112020_Linux-x86-64_7of7.zip
 <br/>
 
 <strong>Putty:</strong><br/>
-http://www.putty.org/
+https://www.putty.org/
 
 <br/>
 
 <strong>XMing (Необходимо установить XMing и дополнительные шрифты, без них на одном из шагов инсталляции
 при нажатии на кнопку, ничего не происходит:</strong><br/>
-http://sourceforge.net/projects/xming/
+https://sourceforge.net/projects/xming/
 
 <br/>
 
 <strong>VirtualBox:</strong><br/>
-http://www.virtualbox.org/wiki/Downloads
+https://www.virtualbox.org/wiki/Downloads
 
 <br/>
 

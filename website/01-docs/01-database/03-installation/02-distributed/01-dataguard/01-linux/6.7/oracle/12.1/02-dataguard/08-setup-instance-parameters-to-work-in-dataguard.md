@@ -57,7 +57,7 @@ standby_file_management='AUTO' – задаем режим автоматиче�
 
 СМ:
 
-http://docs.oracle.com/cd/B19306_01/server.102/b14239/log_arch_dest_param.htm
+https://docs.oracle.com/cd/B19306_01/server.102/b14239/log_arch_dest_param.htm
 
 <br/>
 

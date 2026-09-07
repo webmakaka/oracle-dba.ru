@@ -45,8 +45,8 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/i
 
     [OEL_INTERNET]
     name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
+    baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
+    gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
     gpgcheck=1
     enabled=1
 
@@ -84,7 +84,7 @@ Offtopic: END
 
 <br/><br/>
 
-Следующие пакеты должны быть установлены: (http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
+Следующие пакеты должны быть установлены: (https://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
 
 binutils-2.20.51.0.2-5.11.el6 (x86_64)<br/>
 compat-libcap1-1.10-1 (x86_64)<br/>
@@ -178,7 +178,7 @@ rlwrap - пакет, который позволяет хранить истор
 **Если сайт будет недоступен, можно попробовать вариант установки rlwrap из github ниже, но он пока не тестировался !!!**
 
     # cd /tmp
-    # wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+    # wget https://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
 
 <br/>
 

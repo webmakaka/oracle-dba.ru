@@ -155,24 +155,24 @@ Type: Enterprise Install - Create New BI System
                 Instance Name: instance1
         Configure Components
                 WebLogic Console
-                        http://oraclebi.localdomain:7001/console
+                        https://oraclebi.localdomain:7001/console
                 Oracle Enterprise Manager
-                        http://oraclebi.localdomain:7001/em
+                        https://oraclebi.localdomain:7001/em
                 Business Intelligence Enterprise Edition
-                        http://oraclebi.localdomain:9704/analytics
+                        https://oraclebi.localdomain:9704/analytics
                 Business Intelligence Publisher
-                        http://oraclebi.localdomain:9704/xmlpserver
+                        https://oraclebi.localdomain:9704/xmlpserver
                 Real-Time Decisions
-                        http://oraclebi.localdomain:9704/ui
+                        https://oraclebi.localdomain:9704/ui
                 Calculation Manager
-                        http://oraclebi.localdomain:9704/workspace
+                        https://oraclebi.localdomain:9704/workspace
                 Financial Reports
-                        http://oraclebi.localdomain:9704/workspace
+                        https://oraclebi.localdomain:9704/workspace
                 Workspace
-                        http://oraclebi.localdomain:9704/workspace
+                        https://oraclebi.localdomain:9704/workspace
                 Essbase Suite
                 APS
-                        http://oraclebi.localdomain:9704/aps
+                        https://oraclebi.localdomain:9704/aps
                 Essbase Server
                 Essbase Studio
                         oraclebi.localdomain

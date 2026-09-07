@@ -20,8 +20,8 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-instal
 
     [OEL6]
     name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
+    baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
+    gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
     gpgcheck=1
     enabled=1
 
@@ -41,12 +41,12 @@ permalink: /database/installation/single/asm/linux/6.7/oracle/12.1/asmlib-instal
 
 Необходимо с сайта Oracle:
 
-http://www.oracle.com/technetwork/server-storage/linux/asmlib/rhel6-1940776.html
+https://www.oracle.com/technetwork/server-storage/linux/asmlib/rhel6-1940776.html
 
 Скачать: oracleasmlib-\*.x86_64.rpm
 
     # cd /tmp
-    # wget http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el6.x86_64.rpm
+    # wget https://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el6.x86_64.rpm
 
 <br/>
 

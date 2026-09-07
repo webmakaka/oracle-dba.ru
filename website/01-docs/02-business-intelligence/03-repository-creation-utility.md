@@ -12,17 +12,17 @@ permalink: /business-intelligence/repository-creation-utility/
 
 Скачал следующим образом:  
 Зашел на сайт Oracle по следующей ссылке:  
-http://www.oracle.com/technetwork/middleware/soasuite/downloads/index.html
+https://www.oracle.com/technetwork/middleware/soasuite/downloads/index.html
 
 Поставил галочку о принятии условий.
 
 Далее скачал дистрибутив по ссылке:
 
 Linux:  
-http://download.oracle.com/otn/linux/middleware/11g/111170/ofm_rcu_linux_11.1.1.7.0_64_disk1_1of1.zip
+https://download.oracle.com/otn/linux/middleware/11g/111170/ofm_rcu_linux_11.1.1.7.0_64_disk1_1of1.zip
 
 Windows:  
-http://download.oracle.com/otn/nt/middleware/11g/111170/ofm_rcu_win_11.1.1.7.0_32_disk1_1of1.zip
+https://download.oracle.com/otn/nt/middleware/11g/111170/ofm_rcu_win_11.1.1.7.0_32_disk1_1of1.zip
 
     # groupadd -g 1001 oraclebi
     # useradd -g oraclebi -d /home/oraclebi -m oraclebi

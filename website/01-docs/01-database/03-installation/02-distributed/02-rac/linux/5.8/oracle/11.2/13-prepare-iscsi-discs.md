@@ -382,7 +382,7 @@ default-driver iscsi
     oracleasm-read-label: Unable to open device "/dev/sdb": No such file or directory
 
 Попробуйте настроить правила, подобным образом, что и в инструкции для Oracle 12C.
-http://oracle-dba.ru/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/
+https://oracle-dba.ru/database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-asm/mount-iscsi-on-nodes/
 
 <br/><br/>
 
@@ -419,4 +419,4 @@ http://oracle-dba.ru/database/installation/distributed/rac/linux/6.7/oracle/12.1
 <br/><br/>
 
 Посмотреть перед тем как использовать:<br/>
-http://www.oracle-base.com/articles/linux/udev-scsi-rules-configuration-in-oracle-linux-5-and-6.php
+https://www.oracle-base.com/articles/linux/udev-scsi-rules-configuration-in-oracle-linux-5-and-6.php

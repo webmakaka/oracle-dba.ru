@@ -19,12 +19,12 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 <br/><br/>
 
 <strong>VirtualBox:</strong><br/>
-http://www.virtualbox.org/wiki/Downloads
+https://www.virtualbox.org/wiki/Downloads
 
 <br/><br/>
 
 <strong>Дистрибутивы базы данных Oracle (12.1) Windows x64:</strong><br/>
-http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
+https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
 
 <br/><br/>
 
@@ -43,13 +43,13 @@ linuxamd64_12c_database_2of2.zip
 <br/><br/>
 
 <strong>Putty (Консоль управления, для ввода команд):</strong><br/>
-http://www.putty.org/
+https://www.putty.org/
 
 <br/><br/>
 
 <strong>XMing (Для отображения графических окон в процессе инсталляции)</strong> (необходимо установить XMing, дополнительные шрифты и перезагрузить компьютер):<br/>
-http://sourceforge.net/projects/xming/<br/>
-http://sourceforge.net/projects/xming/files/Xming-fonts/
+https://sourceforge.net/projects/xming/<br/>
+https://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/><br/>
 
@@ -61,4 +61,4 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 <br/><br/>
 
 <strong>winscp (Для копирования файлов на сервер):</strong><br/>
-http://winscp.net/eng/download.php
+https://winscp.net/eng/download.php

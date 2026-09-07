@@ -149,4 +149,4 @@ Let see example, create report for user Scott
     select * from vm_user_privs
 
 Thank's to<br/>
-http://ocp.community.ge/post/Script-generate-all-user-privileges-in-one-report.aspx
+https://ocp.community.ge/post/Script-generate-all-user-privileges-in-one-report.aspx

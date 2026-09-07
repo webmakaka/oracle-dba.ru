@@ -76,7 +76,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
 <br/>
 
-    Starting Nmap 5.21 ( http://nmap.org ) at 2013-08-18 04:13 MSK
+    Starting Nmap 5.21 ( https://nmap.org ) at 2013-08-18 04:13 MSK
     Nmap scan report for 192.168.1.5
     Host is up (0.000044s latency).
     PORT     STATE SERVICE
@@ -96,8 +96,8 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 # Windows
 
 Устанавливаем XMing и доп шрифты. :<br/>
-http://sourceforge.net/projects/xming/<br/>
-http://sourceforge.net/projects/xming/files/Xming-fonts/
+https://sourceforge.net/projects/xming/<br/>
+https://sourceforge.net/projects/xming/files/Xming-fonts/
 
 Перезагружаемся. Если не перезагрузить, при инсталляции в 10 версии RAC, возникали проблемы (кнопка не отображались на последнем шаге инсталляции).
 

@@ -39,7 +39,7 @@ Docker и docker-compose должны быть уже установлены.
     # systemctl start  oracle-dba.ru.service
     # systemctl status oracle-dba.ru.service
 
-http://localhost:4009
+https://localhost:4009
 
 <br/>
 

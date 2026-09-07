@@ -24,7 +24,7 @@ permalink: /middleware/rcu/
 <br/>
 
 Скачиваю отсюда:  
-http://www.oracle.com/technetwork/middleware/data-integrator/downloads/index.html
+https://www.oracle.com/technetwork/middleware/data-integrator/downloads/index.html
 
 Repository Creation Utility (RCU) (11.1.1.9.0) для Linux (x64)
 

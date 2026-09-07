@@ -11,10 +11,10 @@ permalink: /database/installation/oracle-client-installation/linux/6.3/oracle/11
 <br/>
 
 Distrib:<br/>
-http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
+https://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
 
 Info:<br/>
-http://docs.oracle.com/cd/E11882_01/server.112/e16604/apd.htm
+https://docs.oracle.com/cd/E11882_01/server.112/e16604/apd.htm
 
 <br/>
 
@@ -63,8 +63,8 @@ SP2-0667: Message file sp1<lang>.msb not found<br/>
 ```
 [OEL_INTERNET]
 name=Oracle Enterprise Linux $releasever - $basearch
-baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
-gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
+baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
+gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
 gpgcheck=1
 enabled=1
 ```
@@ -88,7 +88,7 @@ readline-devel.x86_64
 
 ```
 # cd /tmp
-# wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+# wget https://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
 ```
 
 <br/>

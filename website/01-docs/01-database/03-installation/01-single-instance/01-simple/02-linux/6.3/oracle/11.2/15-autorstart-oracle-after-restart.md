@@ -27,7 +27,7 @@ permalink: /database/installation/single-instance/simple/linux/6.3/oracle/11.2/a
 
     # vi /etc/rc.d/init.d/startupOracleDatabase11GR2
 
-<!-- <script src="http://gist-it.appspot.com/https://github.com/oradev/oracle-dba-scripts/blob/master/oracle_11GR2_startup_and_shutdown_script">
+<!-- <script src="https://gist-it.appspot.com/https://github.com/oradev/oracle-dba-scripts/blob/master/oracle_11GR2_startup_and_shutdown_script">
 </script> -->
 
 содержимое:

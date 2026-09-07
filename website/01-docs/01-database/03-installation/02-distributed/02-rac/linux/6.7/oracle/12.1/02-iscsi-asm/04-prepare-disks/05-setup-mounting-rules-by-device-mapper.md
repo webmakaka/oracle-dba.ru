@@ -109,6 +109,6 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 <!--
 
-http://www.hhutzler.de/blog/rac-11-2-0-4-setup-using-openfiler-with-multipathed-iscsi-disks/
+https://www.hhutzler.de/blog/rac-11-2-0-4-setup-using-openfiler-with-multipathed-iscsi-disks/
 
 -->

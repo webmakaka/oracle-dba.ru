@@ -111,7 +111,7 @@ select samp.dbid, fu.name, samp.version, detected_usages, total_samples,
 /
 ```
 
-http://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
+https://www.remote-dba.net/oracle_10g_tuning/t_tracking_auditing_option_usage.htm
 
 <br/>
 

@@ -12,4 +12,4 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 <strong>Real Application Clusters Installation Guide<br/></strong>
 
-http://docs.oracle.com/database/121/RILIN/toc.htm
+https://docs.oracle.com/database/121/RILIN/toc.htm

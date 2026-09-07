@@ -138,8 +138,8 @@ db_unique_name - это уникальное имя для каждого экз
 
     <li><a href="https://habr.com/ru/post/120495/" rel="nofollow">[HabraHabr] Еще раз про Oracle standby</a></li>
 
-    <li><a href="http://docs.oracle.com/cd/B19306_01/server.102/b14239/toc.htm" rel="nofollow">[ENG] Data Guard Concepts and Administration</a></li>
+    <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14239/toc.htm" rel="nofollow">[ENG] Data Guard Concepts and Administration</a></li>
 
-    <li><a href="http://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm" rel="nofollow">[ENG] Creating a Standby Database with Active Database Duplication</a></li>
+    <li><a href="https://docs.oracle.com/cd/B28359_01/server.111/b28294/rcmbackp.htm" rel="nofollow">[ENG] Creating a Standby Database with Active Database Duplication</a></li>
 
 </ul>

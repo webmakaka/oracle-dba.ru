@@ -22,8 +22,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/s
 ## Если установка происходит с Windows машины
 
 Устанавливаем XMing и доп шрифты. :<br/>
-http://sourceforge.net/projects/xming/<br/>
-http://sourceforge.net/projects/xming/files/Xming-fonts/
+https://sourceforge.net/projects/xming/<br/>
+https://sourceforge.net/projects/xming/files/Xming-fonts/
 
 Перезагружаемся. Если не перезагрузить, при инсталляции в 10 версии RAC, возникали проблемы (кнопка не отображались на последнем шаге инсталляции).
 
@@ -162,7 +162,7 @@ xserver-allow-tcp=true
 
 <br/>
 
-    Starting Nmap 6.40 ( http://nmap.org ) at 2017-11-23 09:02 MSK
+    Starting Nmap 6.40 ( https://nmap.org ) at 2017-11-23 09:02 MSK
     Nmap scan report for 10.14.3.43
     Host is up (0.000048s latency).
     PORT     STATE SERVICE

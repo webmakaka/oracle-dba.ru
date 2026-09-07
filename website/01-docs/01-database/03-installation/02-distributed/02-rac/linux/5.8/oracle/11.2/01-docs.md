@@ -13,4 +13,4 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/docs/
 <strong>Oracle Real Application Clusters Installation Guide<br/>
 11g Release 2 (11.2) for Linux and UNIX<br/></strong>
 
-http://docs.oracle.com/cd/E11882_01/install.112/e24660/toc.htm
+https://docs.oracle.com/cd/E11882_01/install.112/e24660/toc.htm

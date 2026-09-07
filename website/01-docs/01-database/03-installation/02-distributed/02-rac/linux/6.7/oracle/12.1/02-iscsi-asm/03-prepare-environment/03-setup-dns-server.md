@@ -35,8 +35,8 @@ DNS сервер настраивается только с целью, чтоб
 
     [OEL6]
     name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
+    baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
+    gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
     gpgcheck=1
     enabled=1
 

@@ -61,14 +61,14 @@ p10098816_112020_Linux-x86-64_7of7.zip
 <br/>
 
 <strong>Putty:</strong><br/>
-http://www.putty.org/
+https://www.putty.org/
 
 <strong>winscp:</strong><br/>
-http://winscp.net/eng/download.php
+https://winscp.net/eng/download.php
 
 <strong>XMing</strong> (необходимо установить XMing, дополнительные шрифты и рекомендую перезагрузить компьютер):<br/>
-http://sourceforge.net/projects/xming/<br/>
-http://sourceforge.net/projects/xming/files/Xming-fonts/
+https://sourceforge.net/projects/xming/<br/>
+https://sourceforge.net/projects/xming/files/Xming-fonts/
 
 Далее, необходимо настроить правила доступа.<br/>
 В самом простом варианте, правой кнопкой мыши по ярлыку xming. Зайти в свойства и в target дописать -ac (т.е. без контроля доступа)

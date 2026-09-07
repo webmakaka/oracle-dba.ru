@@ -15,10 +15,10 @@ permalink: /business-intelligence/installation/
 Для инсталляции Oracle BI используется сервер баз данных, описание инсталляции которого приведено <a href="/database/installation/single-instance/simple/linux/6.3/oracle/11.2/">здесь</a>.<br/><br/>
 
 Distrib:<br/>
-http://www.oracle.com/technetwork/middleware/bi-enterprise-edition/downloads/bi-downloads-1923016.html
+https://www.oracle.com/technetwork/middleware/bi-enterprise-edition/downloads/bi-downloads-1923016.html
 
 Docs:<br/>
-http://docs.oracle.com/cd/E28280_01/bi.1111/e10539/toc.htm
+https://docs.oracle.com/cd/E28280_01/bi.1111/e10539/toc.htm
 
 <br/><br/>
 

@@ -27,8 +27,8 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/install-
 
     [OEL_INTERNET]
     name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL5/latest/x86_64/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-el5
+    baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL5/latest/x86_64/
+    gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-el5
     gpgcheck=1
     enabled=1
 
@@ -176,7 +176,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/install-
 rlwrap - пакет, который позволяет хранить историю команд в SQL\*PLUS и RMAN в Linux (его необходимо прописывать отдельной строкой в bash профиле). Установив данный пакет, вы сможете использовать кнопки вверх, вниз для просмотра истории введенных команд, правильную работу команды backspace и др.
 
     # cd /tmp
-    # wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+    # wget https://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
 
 <br/>
 

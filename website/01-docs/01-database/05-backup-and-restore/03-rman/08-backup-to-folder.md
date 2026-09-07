@@ -362,6 +362,6 @@ run {
 
 см.
 
-http://gavinsoorma.com/2013/02/restoring-a-asm-backup-to-non-asm-and-restoring-from-rac-to-single-instance/
+https://gavinsoorma.com/2013/02/restoring-a-asm-backup-to-non-asm-and-restoring-from-rac-to-single-instance/
 
-http://docs.oracle.com/cd/B12037_01/server.101/b10735/recov.htm
+https://docs.oracle.com/cd/B12037_01/server.101/b10735/recov.htm

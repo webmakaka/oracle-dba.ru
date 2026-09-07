@@ -69,15 +69,9 @@ https://github.com/oraclebase/vagrant/tree/master/database/ol8_19
 	<li><a href="/database/installation/single-instance/simple/windows/2008/oracle/12.1/"><strong>Инсталляция Oracle Database 12c Release 1 в операционной системе Microsoft Windows 2008 Server</strong></a> (может где и напутал вначале)</li>
 </ul>
 
-<!-- <li><a href="http://odba.ru/showthread.php?t=294"><strong>Инсталляция Oracle Database 11g Release 2 в операционной системе Microsoft Windows 2003 Server</strong></a></li>
-
-    <li><a href="http://odba.ru/showthread.php?t=297"><strong>Инсталляция Oracle Database 10g Release 2 в операционной системе Microsoft Windows 2003 Server</strong></a> </li> -->
-
 <br/>
 
 ### Могут поднадобиться:
-
-<!-- <li><a href="http://odba.ru/showthread.php?t=331"><strong>Команды редактора VI</strong></a></li> -->
 
 <br/>
 
@@ -102,8 +96,6 @@ https://github.com/oraclebase/vagrant/tree/master/database/ol8_19
 <br/><br/>
 
 <ul>
-
-<!-- <li><a href="http://odba.ru/showthread.php?t=60">Информация о ASM (Automatic Storage Management) </a></li> -->
 
 <li><a href="/database/installation/single/asm/linux/6.7/oracle/12.1/">Инсталляция Oracle DataBase Server 12.1 в Centos 6.7 с использованием ASM и GRID</a></li>
 
@@ -146,14 +138,6 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 
 **Instantclient** - альтернатива стандартному Oracle Client. Проще в установке на Linux (если нужно поставить client на Ubuntu, то лучше использовать его). А так это минимальный набор библиотек для удаленного подключения к серверу баз данных. В дополнение, я обычно устанавливаю утилиту командной строки SQLPlus. И все, больше ничего для нормальной работы и не требуется.
 
-<!-- <br/>
-
-## Инсталляция базы данных Oracle в других операционных системах:
-
-<ul>
-	<li><a href="http://odba.ru/showthread.php?t=303"><strong>Инсталляция Oracle Database 11g Release 2 в Oracle Solaris 10</strong></a> (Необходимо переделать!)</li>
-</ul> -->
-
 <br/>
 
 ## Инсталляция бесплатных версий баз данных Oracle:
@@ -161,9 +145,6 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 <ul>
     <li><a href="https://www.youtube.com/watch?v=kiuIwHxFvpg"><strong>[YouTube] Oracle Database 21c Express Edition (XE) Installation (Linux)</strong></a></li>
     <li><a href="/database/installation/single-instance/centos/7/oracle/xe/18c/"><strong>Инсталляция бесплатной, но ограниченной по ресурсам, базы данных Oracle 18c XE на сервер Centos 7</strong></a></li>
-	<!-- <li><a href="http://odba.ru/showthread.php?t=742"><strong>Инструкция по инсталляции базы данных Oracle 11g XE на сервер Oracle Enterprise Linux 5.8</strong></a></li>
-	<li><a href="http://odba.ru/showthread.php?t=400"><strong>Инструкция по инсталляции базы данных Oracle 10g XE на сервер Oracle Enterprise Linux 4.8</strong></a></li>
-	<li><a href="http://odba.ru/showthread.php?t=296"><strong>Инсталляция Oracle Database 10g Express Edition в ОС Windows 2003 Server </strong></a></li> -->
 </ul>
 
 <br/>
@@ -176,7 +157,6 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 
 <ul>
     <li><a href="/database/installation/distributed/dataguard/linux/6.7/oracle/12.1/">Oracle Active Data Guard (Beta версия документа)</a></li>
-    <!-- <li><a href="http://odba.ru/showthread.php?t=469">Oracle Data Guard: Развертывание физического Standby средствами Oracle Database</a></li> -->
 </ul>
 
 <br/>
@@ -211,6 +191,5 @@ Oracle Client нужен, чтобы подключиться к базе с п�
 У Oracle было решение по репликации данных между базами данных под названием Streams. Большая корпорация купила конкурента этой технологии, одного из лидеров по этому классу задач - Golden Gate. Со Streams не работал, Golden Gate настраивать приходилось.
 
 <ul>
-<!-- <li><a href="http://odba.ru/forumdisplay.php?f=116">GoldenGate</a></li> -->
 <li>[HabraHabr] <a href="https://habr.com/ru/post/238521/" rel="nofollow">Настройка двухсторонней синхронизации БД Oracle (Oracle Streams)</a></li>
 </ul>

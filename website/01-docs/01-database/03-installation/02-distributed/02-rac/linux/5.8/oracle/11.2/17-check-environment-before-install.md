@@ -11,7 +11,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/check-en
 <br/>
 
 Скачайте с сайта oracle последнюю версию «Oracle Cluster Verification Utility»  
-http://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-homepage-099973.html
+https://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-homepage-099973.html
 
 <span style="font-size: 20px; text-align: left; line-height: 130%; font-family: Arial,Helvetica,sans-serif; color: rgb(153, 0, 0);">
 <strong>Инсталляция cvuqdisk-1.0.9-1.rpm</strong></span>

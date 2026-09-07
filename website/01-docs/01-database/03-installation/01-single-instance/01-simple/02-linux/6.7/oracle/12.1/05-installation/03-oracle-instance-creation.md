@@ -55,16 +55,16 @@ Oracle предлагает создать экземпляр базы данн�
 Предлагается выбрать дополнительные компоненты. Если не предполагается их использовать, то скорее всего их и не следует устанавливать.
 
 Oracle Text  - обеспечивает индексирование слов и поиск
-http://docs.oracle.com/cd/B10501_01/text.920/a96517/cdefault.htm
+https://docs.oracle.com/cd/B10501_01/text.920/a96517/cdefault.htm
 
 Oracle OLAP - многомерный анализ данных, для аналитических приложений.
-http://www.oracle.com/technetwork/documentation/olap-101824.html
+https://www.oracle.com/technetwork/documentation/olap-101824.html
 
 Oracle Spatial -  для Geographic Information System (GIS) (Наверное, что-то вроде карт google maps)
-http://docs.oracle.com/html/A88805_01/sdo_intr.htm
+https://docs.oracle.com/html/A88805_01/sdo_intr.htm
 
 Oracle Multimedia - нужна в случае, если предполагается хранить в базе картинки, аудио, видео.
-http://docs.oracle.com/cd/E11882_01/appdev.112/e10777/ch_intr.htm#i610845
+https://docs.oracle.com/cd/E11882_01/appdev.112/e10777/ch_intr.htm#i610845
 
 Oracle JVM - нужна если нужно вызывать программы (процедуры, функции и т.д.), написанные на java непосредственно внутри базы данных.
 

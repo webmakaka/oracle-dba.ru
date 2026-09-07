@@ -19,7 +19,7 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 Возможно, что лучше скачать с сайта Oracle последнюю версию «Oracle Cluster Verification Utility»
 
-http://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-homepage-099973.html
+https://www.oracle.com/technetwork/products/clustering/downloads/cvu-download-homepage-099973.html
 
 <br/>
 

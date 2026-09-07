@@ -239,4 +239,4 @@ You must clear any remote redo transport destinations on the primary database th
 
     SQL> alter database recover managed standby database using current logfile disconnect;
 
-http://docs.oracle.com/cd/B28359_01/server.111/b28295/dgmgrl.htm#i78344
+https://docs.oracle.com/cd/B28359_01/server.111/b28295/dgmgrl.htm#i78344

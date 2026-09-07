@@ -8,7 +8,7 @@ permalink: /docs/architecture/tablespaces/create-new-tablespace/
 
 <hr>
 
-Взято http://subscribe.ru/archive/comp.soft.db.oraclefromzero/200304/03160028.html<br/>
+Взято https://subscribe.ru/archive/comp.soft.db.oraclefromzero/200304/03160028.html<br/>
 Несколько подредактировано.
 
 # Обзор табличных пространств
@@ -424,7 +424,7 @@ permalink: /docs/architecture/tablespaces/create-new-tablespace/
 <pre>
 
 Locally vs. Dictionary Managed Tablespaces
-http://www.orafaq.com/node/3
+https://www.orafaq.com/node/3
 
 </pre>
 

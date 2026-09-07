@@ -12,8 +12,8 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 
 ### Oracle Database 12c Documentation
 
-http://www.oracle.com/technetwork/database/enterprise-edition/documentation/database-093888.html
+https://www.oracle.com/technetwork/database/enterprise-edition/documentation/database-093888.html
 
 ### Oracle® Database Installation Guide 12c Release 1 (12.1) for Microsoft Windows
 
-http://docs.oracle.com/cd/E16655_01/install.121/e17735/toc.htm
+https://docs.oracle.com/cd/E16655_01/install.121/e17735/toc.htm

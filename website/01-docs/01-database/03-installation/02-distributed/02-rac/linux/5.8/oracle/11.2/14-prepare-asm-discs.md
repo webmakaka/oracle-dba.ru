@@ -26,7 +26,7 @@ permalink: /database/installation/distributed/rac/linux/5.8/oracle/11.2/prepare-
 
 Те пакеты, которые не удастся найти в репозитории Oracle, рекомендуется скачать с официального сайта:<br/>
 
-http://www.oracle.com/technetwork/server-storage/linux/downloads/rhel5-084877.html
+https://www.oracle.com/technetwork/server-storage/linux/downloads/rhel5-084877.html
 
 (по этой ссылке, уже скорее всего ничего не скачать)
 
@@ -87,7 +87,7 @@ oracleasm-2.6.18-308.el5.x86_64
 Для инсталляции достаточно будет выполнить следующие команды:
 
     # cd /tmp
-    # wget http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el5.x86_64.rpm
+    # wget https://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el5.x86_64.rpm
 
 <br/>
 

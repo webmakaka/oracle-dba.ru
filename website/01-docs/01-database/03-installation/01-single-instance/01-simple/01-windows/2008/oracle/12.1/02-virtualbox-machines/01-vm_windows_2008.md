@@ -189,7 +189,7 @@ permalink: /database/installation/single-instance/simple/windows/2008/oracle/12.
 Для выхода из полноэкранного режима - CTRL+ALT+ENTER
 
 rdesktop - всевозможные ключи:<br/>
-http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
+https://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 
 В Windows для этого вполне подойдет Remote Desktop Connection (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 
@@ -197,4 +197,4 @@ http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html<br/>
 <a href="https://sysadm.ru/server/linux/virtual/virtualbox/">здесь</a>
 
 Для нормальной работы в Windows также нужно будет установить VirtualBox Guest Additions  
-http://download.virtualbox.org/virtualbox/4.3.30/
+https://download.virtualbox.org/virtualbox/4.3.30/

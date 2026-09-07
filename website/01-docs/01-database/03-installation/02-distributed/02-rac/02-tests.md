@@ -607,4 +607,4 @@ ora.scan3.vip
 
     srvctl status scan
 
-http://sosdba.wordpress.com/tag/11g/
+https://sosdba.wordpress.com/tag/11g/

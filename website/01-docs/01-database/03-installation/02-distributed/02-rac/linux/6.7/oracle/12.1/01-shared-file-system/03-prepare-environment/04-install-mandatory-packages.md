@@ -26,8 +26,8 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/shared-f
 
     [OEL6]
     name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
+    baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL6/latest/$basearch/
+    gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6
     gpgcheck=1
     enabled=1
 
@@ -179,7 +179,7 @@ rlwrap - пакет, который позволяет хранить истор
 <br/>
 
     # cd /tmp
-    # wget http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
+    # wget https://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.37.tar.gz
 
 <br/>
 

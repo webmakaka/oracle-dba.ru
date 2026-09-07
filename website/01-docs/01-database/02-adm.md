@@ -69,15 +69,3 @@ permalink: /database/adm/
 <br/>
 
 ### [Настройка производительности баз данных Oracle](/database/performance/)
-
-<!-- <br/>
-
-### Мониторинг:
-
-Я мониторил: свободное место в FRA, актуальность бекапов, чтобы не было такого, что бекап не делался более 3 дней + бизнес задачи.
-
-<ul>
-    <li>
-        <a href="http://odba.ru/showthread.php?t=744">Инсталляция Oracle Enterprise Manager Cloud control 12c в операционной системе Oracle Linux 5.8 x86 64 bit</a>
-    </li>
-</ul> -->

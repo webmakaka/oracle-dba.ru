@@ -377,7 +377,7 @@ $ VBoxManage modifyvm ${vm} \
 Для выхода из полноэкранного режима - CTRL+ALT+ENTER
 
 rdesktop - всевозможные ключи:  
-http://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html
+https://manpages.ubuntu.com/manpages/lucid/man1/rdesktop.1.html
 
 В Windows для этого вполне подойдет Remote Desktop Connection (mstsc.exe). В Linux есть аналогичная программа для подключения к удаленным рабочим столам - Remmina.
 

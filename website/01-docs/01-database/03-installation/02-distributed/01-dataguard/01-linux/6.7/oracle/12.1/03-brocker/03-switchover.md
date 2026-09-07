@@ -406,7 +406,7 @@ permalink: /database/installation/distributed/dataguard/linux/6.7/oracle/12.1/br
 <br/><br/>
 
 Помогла статья:  
-http://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker.html
+https://oracleinstance.blogspot.ru/2010/01/configuration-of-10g-data-guard-broker.html
 
 Что такое OBSERVER и зачем он нужен я пока не знаю.  
 Можно ли сделать проще? Этого я тоже не знаю.

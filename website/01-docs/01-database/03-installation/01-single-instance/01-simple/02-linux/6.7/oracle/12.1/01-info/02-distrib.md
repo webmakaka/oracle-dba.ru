@@ -19,12 +19,12 @@ permalink: /database/installation/single-instance/simple/linux/6.7/oracle/12.1/d
 ### Программное обеспечение:
 
 <strong>VirtualBox:</strong><br/>
-http://www.virtualbox.org/wiki/Downloads
+https://www.virtualbox.org/wiki/Downloads
 
 <br/>
 
 <strong>Дистрибутивы операционной системы Oracle Linux Server 6 Update 7 (x86_x64):</strong><br/>
-http://linux.oracle.com
+https://linux.oracle.com
 
 <strong>Резервный источники для скачивания:</strong><br/>
 hxxp://rutracker.org/forum/viewtopic.php?t=4603407
@@ -32,7 +32,7 @@ hxxp://rutracker.org/forum/viewtopic.php?t=4603407
 <br/>
 
 <strong>Дистрибутивы базы данных Oracle (12.1) Linux x64:</strong><br/>
-http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
+https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
 
 <strong>Резервный источники для скачивания:</strong><br/>
 hxxp://rutracker.org/forum/viewtopic.php?p=65149195#65149195
@@ -47,13 +47,13 @@ linuxamd64_12c_database_2of2.zip
 ### Если компьютер с которого происходит управление инсталляцией под Windows:
 
 <strong>Putty (SSH Клиент):</strong><br/>
-http://www.putty.org/
+https://www.putty.org/
 
 <br/>
 
 <strong>XMing (Для отображения графических окон в процессе инсталляции)</strong> (необходимо установить XMing, дополнительные шрифты и перезагрузить компьютер):<br/>
-http://sourceforge.net/projects/xming/<br/>
-http://sourceforge.net/projects/xming/files/Xming-fonts/
+https://sourceforge.net/projects/xming/<br/>
+https://sourceforge.net/projects/xming/files/Xming-fonts/
 
 <br/><br/>
 
@@ -65,7 +65,7 @@ http://sourceforge.net/projects/xming/files/Xming-fonts/
 <br/><br/>
 
 <strong>winscp (Для копирования файлов на сервер):</strong><br/>
-http://winscp.net/eng/download.php
+https://winscp.net/eng/download.php
 
 <br/>
 

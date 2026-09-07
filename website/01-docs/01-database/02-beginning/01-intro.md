@@ -36,7 +36,7 @@ Oracle - достаточно сложная БД. Без глубоких зн�
 <h3>Где скачать дистрибутивы Oracle</h3>
 
 <ul>
-<li>Получить дистрибутивы операционной системы Oracle Linux, можно на сайте <a href="http://linux.oracle.com/">linux.oracle.com</a>. После регистрации, Вы сможете скачать Oracle Linux и бесплатно использовать его как основную платформу для инсталляций ваших баз данных Oracle. Upd. <a href="https://yum.oracle.com/oracle-linux-isos.html">Еще 1 ссылка на образы с oracle linux. Качается без регистрации</a></li>
+<li>Получить дистрибутивы операционной системы Oracle Linux, можно на сайте <a href="https://linux.oracle.com/">linux.oracle.com</a>. После регистрации, Вы сможете скачать Oracle Linux и бесплатно использовать его как основную платформу для инсталляций ваших баз данных Oracle. Upd. <a href="https://yum.oracle.com/oracle-linux-isos.html">Еще 1 ссылка на образы с oracle linux. Качается без регистрации</a></li>
 
 <li>Дистрибутивы баз данных можно получить на сайте <a href="https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html">oracle.com</a>. Здесь также требуется регистрация на сайте.</li>
 
@@ -46,8 +46,8 @@ Oracle - достаточно сложная БД. Без глубоких зн�
 <h3>Виртуальные машины для инсталляций</h3>
 
 <ul>
-<li>В целях изучения или исследований, имеет смысл использовать виртуальные машины. Например, <a href="http://www.virtualbox.org/wiki/Downloads">Oracle VirtualBox</a></li>
+<li>В целях изучения или исследований, имеет смысл использовать виртуальные машины. Например, <a href="https://www.virtualbox.org/wiki/Downloads">Oracle VirtualBox</a></li>
 </ul>
 
-Вы можете скачать уже <a href="http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html"> подготовленную виртуальную машину</a>. <br/>
+Вы можете скачать уже <a href="https://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html"> подготовленную виртуальную машину</a>. <br/>
 На следующих страницах сайта, будет рассмотрен пошаговый вариант инсталляции базы данных.

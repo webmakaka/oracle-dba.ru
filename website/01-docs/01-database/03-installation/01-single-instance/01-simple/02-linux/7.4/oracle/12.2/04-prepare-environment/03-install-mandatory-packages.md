@@ -28,8 +28,8 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/i
 
     [OEL_INTERNET]
     name=Oracle Enterprise Linux $releasever - $basearch
-    baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL7/latest/$basearch/
-    gpgkey=http://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol7
+    baseurl=https://public-yum.oracle.com/repo/OracleLinux/OL7/latest/$basearch/
+    gpgkey=https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol7
     gpgcheck=1
     enabled=1
 
@@ -45,7 +45,7 @@ permalink: /database/installation/single-instance/simple/linux/7.4/oracle/12.2/i
 
 <br/>
 
-Следующие пакеты должны быть установлены: (http://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
+Следующие пакеты должны быть установлены: (https://docs.oracle.com/cd/E16655_01/install.121/e17718/toc.htm#BABGGEBA)
 
 binutils-2.20.51.0.2-5.11.el6 (x86_64)<br/>
 compat-libcap1-1.10-1 (x86_64)<br/>

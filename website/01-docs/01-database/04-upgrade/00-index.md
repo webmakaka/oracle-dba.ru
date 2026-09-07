@@ -12,8 +12,8 @@ permalink: /database/upgrade/
 
 **Ссылки:**
 
-http://www.oracle.com/technetwork/community/developer-vm/vts-hol-2415742.html  
-http://rutracker.org/forum/viewtopic.php?t=5040373
+https://www.oracle.com/technetwork/community/developer-vm/vts-hol-2415742.html  
+https://rutracker.org/forum/viewtopic.php?t=5040373
 
 <br/>
 
