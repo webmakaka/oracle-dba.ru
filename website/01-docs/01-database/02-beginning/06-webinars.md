@@ -53,7 +53,7 @@ permalink: /database/beginning/webinars/
     <br/><br/>
 
     <div align="center">
-        <iframe width="640" height="480" src="//www.youtube.com/embed/EK7d2RF5kGg?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/EK7d2RF5kGg?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
 <br/><br/>
@@ -75,7 +75,7 @@ permalink: /database/beginning/webinars/
     <br/><br/>
 
     <div align="center">
-        <iframe width="640" height="480" src="//www.youtube.com/embed/PFOtf0PXb5I?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/PFOtf0PXb5I?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
 <br/><br/>
