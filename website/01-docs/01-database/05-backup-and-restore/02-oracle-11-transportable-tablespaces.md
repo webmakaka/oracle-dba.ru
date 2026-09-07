@@ -9,9 +9,15 @@ permalink: /database/backup-and-restore/oracle-11-transportable-tablespaces/
 # Транспортируемые табличные пространства (Transportable tablespaces) в Oracle 11g
 
 Оригинал:<br/>
-https://habr.com/ru/post/148535/<br/><br/>
 
-Marley: Я никогда не пользовался данной возможностью. Всегда обходиться утилитами dpdump и dpimp. Правильность я не проверял.<br/>
+<a href="https://habr.com/ru/articles/148535/">здесь</a>
+
+<br/><br/>
+
+Marley: Я никогда не пользовался данной возможностью. Всегда обходиться утилитами dpdump и dpimp. Правильность я не проверял.
+
+<br/>
+
 Утилиты imp и exp имеет смысл использовать только, если вы работаете с 9 версией базы.
 
 <br/><br/>
