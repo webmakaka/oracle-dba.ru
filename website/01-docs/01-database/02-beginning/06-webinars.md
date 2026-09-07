@@ -98,7 +98,7 @@ permalink: /database/beginning/webinars/
     <br/><br/>
 
     <div align="center">
-    	<iframe width="560" height="315" src="http://www.youtube.com/embed/zoFqnjkLdtI" frameborder="0" allowfullscreen></iframe>
+    	<iframe width="560" height="315" src="https://www.youtube.com/embed/zoFqnjkLdtI" frameborder="0" allowfullscreen></iframe>
     </div>
 
 
@@ -122,7 +122,7 @@ permalink: /database/beginning/webinars/
     <br/><br/>
 
     <div align="center">
-    	<iframe width="560" height="315" src="http://www.youtube.com/embed/MxCeLSRpF2Q" frameborder="0" allowfullscreen></iframe>
+    	<iframe width="560" height="315" src="https://www.youtube.com/embed/MxCeLSRpF2Q" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <br/><br/>
@@ -169,7 +169,7 @@ permalink: /database/beginning/webinars/
     <br/><br/>
 
     <div align="center">
-    	<iframe width="560" height="315" src="http://www.youtube.com/embed/Y-5n8-2hq7o" frameborder="0" allowfullscreen></iframe>
+    	<iframe width="560" height="315" src="https://www.youtube.com/embed/Y-5n8-2hq7o" frameborder="0" allowfullscreen></iframe>
     </div>
 
 
@@ -213,7 +213,7 @@ permalink: /database/beginning/webinars/
     <br/><br/><br/>
 
     <div align="center">
-    	<iframe width="560" height="315" src="http://www.youtube.com/embed/89Jtz4FWGQM" frameborder="0" allowfullscreen></iframe>
+    	<iframe width="560" height="315" src="https://www.youtube.com/embed/89Jtz4FWGQM" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <br/><br/>

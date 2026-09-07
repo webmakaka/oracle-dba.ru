@@ -4,7 +4,7 @@
 
 ### Запустить oracle-dba.ru на своем хосте с использованием docker контейнера (на примере ubuntu like дистрибутивов):
 
-Инсталлируете <a href="//sysadm.ru/devops/containers/docker/setup/ubuntu/">docker</a> и docker-compose.
+Инсталлируете <a href="https://sysadm.ru/devops/containers/docker/setup/ubuntu/">docker</a> и docker-compose.
 
 <br/>
 

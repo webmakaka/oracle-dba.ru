@@ -30,9 +30,9 @@ permalink: /info/info/contacts/
 Способы работы с git:
 
 <ul>
-    <li><a href="http://www.youtube.com/watch?v=4TrOCv5Kukk">Webcast • Get Started with GitHub Pages • Featuring Dani Traphagen</a></li>
-    <li><a href="http://www.youtube.com/watch?v=ifAEho6BmH0">Webcast • Sharing and Collaborating on Projects with GitHub</a></li>
-    <li><a href="http://www.youtube.com/watch?v=lbLdbvIMHvw">Webcast • Getting Started with Code Collaboration (December 2014)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=4TrOCv5Kukk">Webcast • Get Started with GitHub Pages • Featuring Dani Traphagen</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ifAEho6BmH0">Webcast • Sharing and Collaborating on Projects with GitHub</a></li>
+    <li><a href="https://www.youtube.com/watch?v=lbLdbvIMHvw">Webcast • Getting Started with Code Collaboration (December 2014)</a></li>
 
 </ul>
 

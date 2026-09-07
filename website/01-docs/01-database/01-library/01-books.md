@@ -8,7 +8,7 @@ permalink: /database/library/books/
 
 # Библиотека Oracle DBA - Книги
 
-[Материалы по SQL и PL/SQL лежат здесь](//plsql.ru/library/)
+[Материалы по SQL и PL/SQL лежат здесь](https://plsql.ru/library/)
 
 <br/>
 
@@ -77,7 +77,7 @@ permalink: /database/library/books/
 
 <div style="padding:10px; border:thin solid black;" align="center">
 
-  <h3><a href="//plsql.ru/library/">Ссылки на материалы по изучению Oracle SQL и PL/SQL теперь собираются здесь</a></h3>
+  <h3><a href="https://plsql.ru/library/">Ссылки на материалы по изучению Oracle SQL и PL/SQL теперь собираются здесь</a></h3>
 
 </div>
 
