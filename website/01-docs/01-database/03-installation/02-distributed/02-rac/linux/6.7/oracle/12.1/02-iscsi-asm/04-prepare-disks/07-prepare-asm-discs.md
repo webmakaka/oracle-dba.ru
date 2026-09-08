@@ -33,23 +33,31 @@ permalink: /database/installation/distributed/rac/linux/6.7/oracle/12.1/iscsi-as
 
 Проверка:
 
-    # /etc/init.d/oracleasm status
+```
+# /etc/init.d/oracleasm status
 
-    Checking if ASM is loaded: yes
-    Checking if /dev/oracleasm is mounted: yes
+Checking if ASM is loaded: yes
+Checking if /dev/oracleasm is mounted: yes
+```
 
-Если используется Divice Mapper, то выполняем следующий шаг, иначе при инсталляции возникнет ошибка: <a href="https://oracledba.net/docs/errors/ins-32148/Execution-of-GI-Install-script-failed-on-nodes/">[INS-32148] Execution of 'GI Install' script failed on nodes: [rac2]</a>
+<br/>
 
-    # vi /etc/sysconfig/oracleasm
+Если используется Divice Mapper, то выполняем следующий шаг, иначе при инсталляции возникнет ошибка: [INS-32148] Execution of 'GI Install' script failed on nodes: [rac2]
 
-    ***
-    ORACLEASM_SCANORDER=”dm”
-    ORACLEASM_SCANEXCLUDE=”sd”
-    ***
+```shell
+# vi /etc/sysconfig/oracleasm
+
+***
+ORACLEASM_SCANORDER=”dm”
+ORACLEASM_SCANEXCLUDE=”sd”
+***
+```
 
 Перестартовываем сервис asmlib:
 
-    # /etc/init.d/oracleasm restart
+```shell
+# /etc/init.d/oracleasm restart
+```
 
 <br/>
 

@@ -41,9 +41,7 @@ RAC - несколько инстансов на разных серверах �
 
   <li><a href="https://en.wikibooks.org/wiki/RAC_Attack_-_Oracle_Cluster_Database_at_Home/RAC_Attack_12c/Create_VirtualBox_VM">RAC Attack - Oracle Cluster Database at Home/RAC Attack 12c/Create VirtualBox VM</a></li>
 
-  <li><a href="https://www.lab128.com/rac12_installation_using_vb/article_text.html">Oracle RAC 12c Database on Linux Using VirtualBox (GUI, Sharde Virtual Disk)</a></li>
-
-  <li>[HabraHabr] <a href="https://habrahabr.ru/post/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a></li>
+  <li>[HabraHabr] <a href="https://habr.com/ru/articles/233801/">How-to: Разворачиваем Oracle Real Application Cluster 11g на VirtualBox</a></li>
 
 </ul>
 
