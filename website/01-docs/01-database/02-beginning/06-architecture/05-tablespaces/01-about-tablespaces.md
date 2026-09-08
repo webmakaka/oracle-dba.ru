@@ -22,7 +22,7 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 <tbody>
 <tr align="left" valign="top">
 <td headers="r1c1-t4" align="left">
-<p><code>SYSTEM</code><a name="sthref399"></a><a name="sthref400"></a></p>
+<p><code>SYSTEM</code></p>
 </td>
 <td headers="r2c1-t4 r1c2-t4" align="left">
 <p>A mandatory tablespace that consists of the data dictionary, including definitions of tables, views, and stored procedures needed by the database. Oracle Database automatically maintains information in this tablespace.</p>
@@ -30,7 +30,7 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 </tr>
 <tr align="left" valign="top">
 <td headers="r1c1-t4" align="left">
-<p><code>SYSAUX</code><a name="sthref401"></a><a name="sthref402"></a></p>
+<p><code>SYSAUX</code></p>
 </td>
 <td headers="r3c1-t4 r1c2-t4" align="left">
 <p>A mandatory, auxiliary system tablespace that is used by many Oracle Database features and products. This tablespace contains content that was previously stored in the <code>DRSYS</code>, <code>CWMLITE</code>, <code>XDB</code>, <code>ODM</code>, <code>OEM_REPOSITORY</code>, and <code>SYSTEM</code> tablespaces.</p>
@@ -38,7 +38,7 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 </tr>
 <tr align="left" valign="top">
 <td headers="r1c1-t4" align="left">
-<p><code>USERS<a name="sthref403"></a><a name="sthref404"></a></code></p>
+<p><code>USERS</code></p>
 </td>
 <td headers="r4c1-t4 r1c2-t4" align="left">
 <p>An user-created tablespace that consists of application data. As you create and enter data into tables, Oracle Database fills this space with your data.</p>
@@ -46,7 +46,7 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 </tr>
 <tr align="left" valign="top">
 <td headers="r1c1-t4" align="left">
-<p><code>TEMP</code> <a name="sthref405"></a><a name="sthref406"></a><a name="sthref407"></a></p>
+<p><code>TEMP</code> </p>
 </td>
 <td headers="r5c1-t4 r1c2-t4" align="left">
 <p>A mandatory tablespace that contains temporary tables and indexes created during SQL statement processing. You may have to expand this tablespace if you run SQL statements that involve significant sorting, such as <code>ANALYZE COMPUTE STATISTICS</code> on a very large table, or the constructs <code>GROUP BY</code>, <code>ORDER</code> <code>BY</code>, or <code>DISTINCT</code>.</p>
@@ -54,7 +54,7 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 </tr>
 <tr align="left" valign="top">
 <td headers="r1c1-t4" align="left">
-<p><code>UNDOTBS<a name="sthref408"></a><a name="sthref409"></a></code><span class="italic">n</span></p>
+<p><code>UNDOTBS</code><span class="italic">n</span></p>
 </td>
 <td headers="r6c1-t4 r1c2-t4" align="left">
 <p>System-managed tablespaces that contain undo data for each instance. Each Oracle RAC instance uses a different value for <span class="italic">n</span> in the tablespace name. These tablespaces are used for automatic undo management.</p>
@@ -62,7 +62,7 @@ permalink: /docs/architecture/tablespaces/about-tablespaces/
 </tr>
 <tr align="left" valign="top">
 <td headers="r1c1-t4" align="left">
-<p><code>RBS<a name="sthref410"></a><a name="sthref411"></a></code></p>
+<p><code>RBS</code></p>
 </td>
 <td headers="r7c1-t4 r1c2-t4" align="left">
 <p>A system tablespace that contains rollback segments. If you do not use automatic undo management, then you must configure the <code>RBS</code> tablespace. The <code>RBS</code> tablespace should only be used when needed for compatibility with earlier versions of Oracle Database.</p>

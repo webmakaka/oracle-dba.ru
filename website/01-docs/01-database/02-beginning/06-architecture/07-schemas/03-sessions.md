@@ -18,7 +18,7 @@ permalink: /docs/architecture/schemas/sessions/
     <li><a href="#sessions5">Отследить, какой запрос выполняет приложение</a></li>
 </ul>
 
-<h3><a name="sessions1">Посмотреть текущие сессии к базе данных</a></h3>
+<h3 id="sessions1">Посмотреть текущие сессии к базе данных</h3>
 
 ```sql
     SELECT t.SID, t.SERIAL#, t.osuser as "User", t.MACHINE as "PC", t.PROGRAM as "Program"
@@ -30,7 +30,7 @@ permalink: /docs/architecture/schemas/sessions/
 ```
 
 <br/>
-<h3><a name="sessions2">Найти блокирующую сессию</a></h3>
+<h3 id="sessions2">Найти блокирующую сессию</h3>
 
 ```sql
 SELECT status, SECONDS_IN_WAIT, BLOCKING_SESSION, SEQ#
@@ -39,14 +39,14 @@ WHERE username=upper('scott');
 ```
 
 <br/>
-<h3><a name="sessions3">Убить сессию</a></h3>
+<h3 id="sessions3">Убить сессию</h3>
 
     ALTER SYSTEM KILL SESSION 'SID,Serial#' IMMEDIATE;
 
 Заменить 'SID' и 'Serial#' на текущие значения сессии.
 
 <br/>
-<h3><a name="sessions4">Убийство всех сессий к определенной схеме</a></h3>
+<h3 id="sessions4">Убийство всех сессий к определенной схеме</h3>
 
 ```sql
 define USERNAME = "USER_NAME"
@@ -60,7 +60,7 @@ end;
 ```
 
 <br/>
-<h3><a name="sessions5">Отследить, какой запрос выполняет приложение</a></h3>
+<h3 id="sessions5">Отследить, какой запрос выполняет приложение</h3>
 
 ```sql
 SELECT PROCESS pid, sess.process, sess.status, sess.username, sess.schemaname, sql.sql_text

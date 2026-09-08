@@ -17,4 +17,4 @@ having count(*) > 1;
 
 <br/>
 
-См. также [здесь](//plsql.ru/other/interview-questions/plsql/).
+См. также [здесь](https://plsql.ru/other/interview-questions/plsql/).
